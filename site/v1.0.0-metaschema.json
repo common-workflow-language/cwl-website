@@ -4,28 +4,28 @@
             "basename": "link_res.yml", 
             "nameroot": "link_res", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/link_res.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/link_res.yml", 
             "secondaryFiles": [
                 {
                     "basename": "link_res_schema.yml", 
                     "nameroot": "link_res_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/link_res_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/link_res_schema.yml"
                 }, 
                 {
                     "basename": "link_res_src.yml", 
                     "nameroot": "link_res_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/link_res_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/link_res_src.yml"
                 }, 
                 {
                     "basename": "link_res_proc.yml", 
                     "nameroot": "link_res_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/link_res_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/link_res_proc.yml"
                 }
             ], 
             "class": "File"
@@ -35,48 +35,48 @@
             "nameroot": "salad", 
             "class": "File", 
             "nameext": ".md", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/salad.md"
+            "location": "../v1.0/salad/schema_salad/metaschema/salad.md"
         }, 
         {
             "basename": "metaschema_base.yml", 
             "nameroot": "metaschema_base", 
             "class": "File", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/metaschema_base.yml"
+            "location": "../v1.0/salad/schema_salad/metaschema/metaschema_base.yml"
         }, 
         {
             "basename": "import_include.md", 
             "nameroot": "import_include", 
             "class": "File", 
             "nameext": ".md", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/import_include.md"
+            "location": "../v1.0/salad/schema_salad/metaschema/import_include.md"
         }, 
         {
             "basename": "field_name.yml", 
             "nameroot": "field_name", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/field_name.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/field_name.yml", 
             "secondaryFiles": [
                 {
                     "basename": "field_name_src.yml", 
                     "nameroot": "field_name_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/field_name_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/field_name_src.yml"
                 }, 
                 {
                     "basename": "field_name_schema.yml", 
                     "nameroot": "field_name_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/field_name_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/field_name_schema.yml"
                 }, 
                 {
                     "basename": "field_name_proc.yml", 
                     "nameroot": "field_name_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/field_name_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/field_name_proc.yml"
                 }
             ], 
             "class": "File"
@@ -85,28 +85,28 @@
             "basename": "ident_res.yml", 
             "nameroot": "ident_res", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/ident_res.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/ident_res.yml", 
             "secondaryFiles": [
                 {
                     "basename": "ident_res_proc.yml", 
                     "nameroot": "ident_res_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/ident_res_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/ident_res_proc.yml"
                 }, 
                 {
                     "basename": "ident_res_schema.yml", 
                     "nameroot": "ident_res_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/ident_res_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/ident_res_schema.yml"
                 }, 
                 {
                     "basename": "ident_res_src.yml", 
                     "nameroot": "ident_res_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/ident_res_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/ident_res_src.yml"
                 }
             ], 
             "class": "File"
@@ -115,28 +115,28 @@
             "basename": "vocab_res.yml", 
             "nameroot": "vocab_res", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/vocab_res.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/vocab_res.yml", 
             "secondaryFiles": [
                 {
                     "basename": "vocab_res_schema.yml", 
                     "nameroot": "vocab_res_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/vocab_res_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/vocab_res_schema.yml"
                 }, 
                 {
                     "basename": "vocab_res_proc.yml", 
                     "nameroot": "vocab_res_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/vocab_res_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/vocab_res_proc.yml"
                 }, 
                 {
                     "basename": "vocab_res_src.yml", 
                     "nameroot": "vocab_res_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/vocab_res_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/vocab_res_src.yml"
                 }
             ], 
             "class": "File"
@@ -145,28 +145,28 @@
             "basename": "typedsl_res.yml", 
             "nameroot": "typedsl_res", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/typedsl_res.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/typedsl_res.yml", 
             "secondaryFiles": [
                 {
                     "basename": "typedsl_res_proc.yml", 
                     "nameroot": "typedsl_res_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/typedsl_res_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/typedsl_res_proc.yml"
                 }, 
                 {
                     "basename": "typedsl_res_src.yml", 
                     "nameroot": "typedsl_res_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/typedsl_res_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/typedsl_res_src.yml"
                 }, 
                 {
                     "basename": "typedsl_res_schema.yml", 
                     "nameroot": "typedsl_res_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/typedsl_res_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/typedsl_res_schema.yml"
                 }
             ], 
             "class": "File"
@@ -175,33 +175,33 @@
             "basename": "map_res.yml", 
             "nameroot": "map_res", 
             "nameext": ".yml", 
-            "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/map_res.yml", 
+            "location": "../v1.0/salad/schema_salad/metaschema/map_res.yml", 
             "secondaryFiles": [
                 {
                     "basename": "map_res_proc.yml", 
                     "nameroot": "map_res_proc", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/map_res_proc.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/map_res_proc.yml"
                 }, 
                 {
                     "basename": "map_res_src.yml", 
                     "nameroot": "map_res_src", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/map_res_src.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/map_res_src.yml"
                 }, 
                 {
                     "basename": "map_res_schema.yml", 
                     "nameroot": "map_res_schema", 
                     "class": "File", 
                     "nameext": ".yml", 
-                    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/map_res_schema.yml"
+                    "location": "../v1.0/salad/schema_salad/metaschema/map_res_schema.yml"
                 }
             ], 
             "class": "File"
         }
     ], 
     "class": "File", 
-    "location": "../common-workflow-language/v1.0/salad/schema_salad/metaschema/metaschema.yml"
+    "location": "../v1.0/salad/schema_salad/metaschema/metaschema.yml"
 }
