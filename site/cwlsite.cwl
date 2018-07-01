@@ -65,7 +65,7 @@ steps:
     scatterMethod: dotproduct
     in:
       schema: { source: schemas, valueFrom: $(self.schema_in) }
-      target: { source: schemas, valueFrom: $(self.rdfs_target) }
+      target: { source: schemas, valueFrom: $(self.context_target) }
     out: [out, targetdir]
     run: makecontext.cwl
 
