@@ -168,6 +168,9 @@ join the [mailing list common-workflow-language on Google Groups](https://groups
 [fork the repository](https://github.com/common-workflow-language/common-workflow-language)
 and send a pull request!
 
+Besides the web interface for the mailing list, one can also join by sending a blank email to 
+common-workflow-language+subscribe@googlegroups.com and replying to the automated message.
+
 ### Code of Conduct
 
 The CWL Project is dedicated to providing a harassment-free experience for
