@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -Rf draft-3 v1.0 v1.1.0-dev1 env3 temp
+rm -Rf draft-3 v1.0 v1.1.0-dev1 temp
 
 git clone https://github.com/common-workflow-language/common-workflow-language.git \
 	temp
