@@ -9,4 +9,4 @@ mv temp/draft-3 ./
 git clone https://github.com/common-workflow-language/cwl-v1.1.git \
 	v1.1.0-dev1
 
-cwltool --cache cache --outdir common-workflow-language.github.io site/cwlsite.cwl site/cwlsite-job.yaml
+cwltool $@ --cache cache --outdir common-workflow-language.github.io site/cwlsite.cwl site/cwlsite-job.yaml

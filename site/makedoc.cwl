@@ -51,5 +51,5 @@ outputs:
     type: File
     outputBinding:
       outputEval: ${ return inputs.extra; }
-baseCommand: [python, "-mschema_salad.makedoc"]
+baseCommand: schema-salad-doc
 stdout: $(inputs.target)
