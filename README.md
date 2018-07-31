@@ -112,6 +112,7 @@ A collection of existing references to CWL can be found at http://www.citeulike.
 
 |Software|Description|
 |--------|-----------|
+|[cwldep](https://github.com/common-workflow-language/cwldep)|CWL dependency manager, for importing tool wrappers and workflows into your own project.|
 |[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
 |[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|generates ZSH auto completions from CWL command line tool descriptions|
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
@@ -168,7 +169,7 @@ join the [mailing list common-workflow-language on Google Groups](https://groups
 [fork the repository](https://github.com/common-workflow-language/common-workflow-language)
 and send a pull request!
 
-Besides the web interface for the mailing list, one can also join by sending a blank email to 
+Besides the web interface for the mailing list, one can also join by sending a blank email to
 common-workflow-language+subscribe@googlegroups.com and replying to the automated message.
 
 ### Code of Conduct
