@@ -5,10 +5,12 @@
             "secondaryFiles": {"$import": "v1.0.0-deps.json"}
         },
         "context_target": "v1.0/cwl-context.json",
-        "rdfs_target": "v1.0/cwl.ttl"
+    "rdfs_target": "v1.0/cwl.ttl",
+        "graph_target": "v1.0/cwl.svg"
     }, {
         "schema_in": {$import: v1.0.0-metaschema.json},
         "context_target": "v1.0/salad-context.json",
-        "rdfs_target": "v1.0/salad.ttl"
+        "rdfs_target": "v1.0/salad.ttl",
+        "graph_target": "v1.0/salad.svg"
     }
 ]
