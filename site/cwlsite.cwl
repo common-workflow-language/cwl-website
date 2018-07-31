@@ -26,6 +26,7 @@ inputs:
           schema_in: File
           context_target: string
           rdfs_target: string
+          graph_target: string
   brandimg: File
   empty:
     type: string?
@@ -52,43 +53,44 @@ hints:
 
 steps:
   rdfs:
-    scatter: [schema, target]
-    scatterMethod: dotproduct
+    scatter: ver
     in:
-      schema: { source: schemas, valueFrom: $(self.schema_in) }
-      target: { source: schemas, valueFrom: $(self.rdfs_target) }
+      ver: schemas
+      schema: { valueFrom: $(inputs.ver.schema_in) }
+      target: { valueFrom: $(inputs.ver.rdfs_target) }
     out: [out, targetdir]
     run: makerdfs.cwl
 
   context:
-    scatter: [schema, target]
-    scatterMethod: dotproduct
+    scatter: ver
     in:
-      schema: { source: schemas, valueFrom: $(self.schema_in) }
-      target: { source: schemas, valueFrom: $(self.context_target) }
+      ver: schemas
+      schema: { valueFrom: $(inputs.ver.schema_in) }
+      target: { valueFrom: $(inputs.ver.context_target) }
     out: [out, targetdir]
     run: makecontext.cwl
 
-  docs:
-    scatter:
-      - source
-      - target
-      - renderlist
-      - redirect
-      - brandlink
-      - brand
-      - primtype
-      - extra
-    scatterMethod: dotproduct
+  inheritance:
+    scatter: ver
     in:
-      source: { source: render, valueFrom: $(self.source) }
-      target: { source: render, valueFrom: $(self.target) }
-      renderlist: { source: render, valueFrom: $(self.renderlist) }
-      redirect: { source: render, valueFrom: $(self.redirect) }
-      brandlink: { source: render, valueFrom: $(self.brandlink) }
-      brand: { source: render, valueFrom: $(self.brandimg) }
-      primtype: { source: render, valueFrom: $(self.primtype) }
-      extra: { source: render, valueFrom: $(self.extra) }
+      ver: schemas
+      schema: { valueFrom: $(inputs.ver.schema_in) }
+      target: { valueFrom: $(inputs.ver.graph_target) }
+    out: [svg, targetdir]
+    run: inheritance.cwl
+
+  docs:
+    scatter: ver
+    in:
+      ver: render
+      source:     { valueFrom: $(inputs.ver.source) }
+      target:     { valueFrom: $(inputs.ver.target) }
+      renderlist: { valueFrom: $(inputs.ver.renderlist) }
+      redirect:   { valueFrom: $(inputs.ver.redirect) }
+      brandlink:  { valueFrom: $(inputs.ver.brandlink) }
+      brand:      { valueFrom: $(inputs.ver.brandimg) }
+      primtype:   { valueFrom: $(inputs.ver.primtype) }
+      extra:      { valueFrom: $(inputs.ver.extra) }
     out: [out, targetdir, extra_out]
     run:  makedoc.cwl
 
@@ -98,11 +100,11 @@ steps:
         source: docs/out
         valueFrom: $(self[0])
       secondary:
-        source: [docs/out, rdfs/out, context/out, brandimg, docs/extra_out]
+        source: [docs/out, rdfs/out, context/out, brandimg, docs/extra_out, inheritance/svg]
         linkMerge: merge_flattened
         valueFrom: $(self.slice(1))
       dirs:
-        source: [docs/targetdir, rdfs/targetdir, context/targetdir, empty, docs/targetdir]
+        source: [docs/targetdir, rdfs/targetdir, context/targetdir, empty, docs/targetdir, inheritance/targetdir]
         linkMerge: merge_flattened
         valueFrom: $(self.slice(1))
     out: [dir]
