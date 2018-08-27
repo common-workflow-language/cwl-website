@@ -151,9 +151,10 @@ A collection of existing references to CWL can be found at http://www.citeulike.
 
 |Name|Details|
 |-------|-----------|
+|[Bio-compute objects](https://osf.io/h59uh/)|"a step towards evaluation and validation of bio-medical scientific computations", CWL and researchobject.org participants are cooperating with this effort|
 |[GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas/)|a minimal common API for submitting a single job to a remote execution endpoint. Many contributions from CWL project participants.|
 |[GA4GH Workflow Execution API](https://github.com/ga4gh/workflow-execution-schemas)|a minimal common API for submitting workflow requests to workflow execution systems in a standardized way. Many contributions from CWL project participants.|
-|[Bio-compute objects](https://hive.biochemistry.gwu.edu/htscsrs?pageid=biocompute)|"a step towards evaluation and validation of bio-medical scientific computations", CWL and researchobject.org participants are cooperating with this effort|
+|[ResearchObjects.org](http://www.researchobject.org/)|"an emerging approach to the publication, and exchange of scholarly information on the Web." CWL participants and RO enthusiasts have created [CWLProv](https://w3id.org/cwl/prov/), a Profile for provenance research object of a CWL workflow run.|
 
 <a name="Support"></a>
 ## Support, Community and Contributing
