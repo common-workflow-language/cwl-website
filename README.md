@@ -20,7 +20,7 @@ meet the needs of data-intensive science, such as Bioinformatics, Medical
 Imaging, Astronomy, Physics, and Chemistry.
 
 <a href="https://open-stand.org/about-us/principles"><img align="left"
-src="https://standards.ieee.org/images/openstand/128x128-blue2.png" alt="Open Stand badge"></a>
+src="https://open-stand.org/wp-content/uploads/2012/08/128x128-blue.png" alt="Open Stand badge"></a>
 CWL is developed by a multi-vendor working group consisting of
 organizations and individuals aiming to enable scientists to share data
 analysis workflows.  [The CWL project is maintained on
