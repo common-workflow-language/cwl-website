@@ -117,6 +117,8 @@ A collection of existing references to CWL can be found at http://www.citeulike.
 |[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|generates ZSH auto completions from CWL command line tool descriptions|
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
+|[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
+
 
 ### Converters and code generators
 
@@ -151,9 +153,10 @@ A collection of existing references to CWL can be found at http://www.citeulike.
 
 |Name|Details|
 |-------|-----------|
+|[Bio-compute objects](https://osf.io/h59uh/)|"a step towards evaluation and validation of bio-medical scientific computations", CWL and researchobject.org participants are cooperating with this effort|
 |[GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas/)|a minimal common API for submitting a single job to a remote execution endpoint. Many contributions from CWL project participants.|
 |[GA4GH Workflow Execution API](https://github.com/ga4gh/workflow-execution-schemas)|a minimal common API for submitting workflow requests to workflow execution systems in a standardized way. Many contributions from CWL project participants.|
-|[Bio-compute objects](https://hive.biochemistry.gwu.edu/htscsrs?pageid=biocompute)|"a step towards evaluation and validation of bio-medical scientific computations", CWL and researchobject.org participants are cooperating with this effort|
+|[ResearchObjects.org](http://www.researchobject.org/)|"an emerging approach to the publication, and exchange of scholarly information on the Web." CWL participants and RO enthusiasts have created [CWLProv](https://w3id.org/cwl/prov/), a profile for provenance research object of a CWL workflow run.|
 
 <a name="Support"></a>
 ## Support, Community and Contributing
