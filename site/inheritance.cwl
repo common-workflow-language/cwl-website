@@ -1,18 +1,19 @@
+#!/usr/bin/env cwl-runner
 cwlVersion: v1.0
 class: CommandLineTool
 requirements:
   ShellCommandRequirement: {}
+  InlineJavascriptRequirement: {}
 inputs:
-  schema:
-    type: File
-  target: string
+  schema: File
+  target_path: string
 outputs:
   svg: stdout
   targetdir:
     type: string
     outputBinding:
-      outputEval: $(inputs.target.match(/^([^/]+)\/[^/]/)[1])
-stdout: $(inputs.target)
+      outputEval: $(inputs.target_path.match(/^([^/]+)\/[^/]/)[1])
+stdout: $(inputs.target_path)
 baseCommand: schema-salad-tool
 arguments:
   - "--print-inheritance-dot"

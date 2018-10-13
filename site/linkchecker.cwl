@@ -1,3 +1,4 @@
+#!/usr/bin/env cwl-runner
 class: CommandLineTool
 cwlVersion: v1.0
 hints:
@@ -8,16 +9,15 @@ hints:
           DEBIAN_FRONTEND=noninteractive apt-get -yq install w3c-linkchecker \
     dockerImageId: commonworkflowlanguage/checklink
 inputs:
-  inp:
+  report:
     type: File
     inputBinding: {position: 1}
-  target: string
 outputs:
-  out:
+  report:
     type: File
     outputBinding:
-      glob: $(inputs.target)
-      loadContents: true
+      glob: linkchecker-report.txt
+      #loadContents: true
       #outputEval: |
       #  ${
       #    return if (self.contents.length > 0) {
@@ -26,4 +26,4 @@ outputs:
       #  }
 baseCommand: checklink
 arguments: ["-X(http.*|mailto:.*)", "-q"]
-stdout: $(inputs.target)
+stdout: linkchecker-report.txt

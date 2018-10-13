@@ -1,5 +1,8 @@
 #!/bin/bash
 
+set -e
+set -x
+
 rm -Rf draft-3 v1.0 v1.1.0-dev1 temp
 
 git clone https://github.com/common-workflow-language/common-workflow-language.git \

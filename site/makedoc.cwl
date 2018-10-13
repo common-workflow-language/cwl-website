@@ -1,7 +1,8 @@
+#!/usr/bin/env cwl-runner
 cwlVersion: v1.0
 class: CommandLineTool
 requirements:
-  - class: InlineJavascriptRequirement
+  InlineJavascriptRequirement:
     expressionLib:
       - $include: cwlpath.js
 inputs:
@@ -31,11 +32,11 @@ inputs:
   target:
     type: string
   primtype:
-    type: ["null", string]
+    type: string?
     inputBinding: {prefix: "--primtype"}
   extra: File
 outputs:
-  out: stdout
+  html: stdout
   targetdir:
     type: string
     outputBinding:
@@ -50,6 +51,6 @@ outputs:
   extra_out:
     type: File
     outputBinding:
-      outputEval: ${ return inputs.extra; }
+      outputEval: $(inputs.extra)
 baseCommand: schema-salad-doc
 stdout: $(inputs.target)
