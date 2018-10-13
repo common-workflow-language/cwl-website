@@ -9,7 +9,7 @@ hints:
           DEBIAN_FRONTEND=noninteractive apt-get -yq install w3c-linkchecker \
     dockerImageId: commonworkflowlanguage/checklink
 inputs:
-  report:
+  inp:
     type: File
     inputBinding: {position: 1}
 outputs:

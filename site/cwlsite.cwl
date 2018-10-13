@@ -65,7 +65,7 @@ steps:
     out: [rdfs, targetdir]
     run: makerdfs.cwl
 
-  context:
+  make_context:
     scatter: [ schema, target_path ]
     scatterMethod: dotproduct
     in:
@@ -75,7 +75,7 @@ steps:
       target_path:
         source: schemas
         valueFrom: $(self.context_target)
-    out: [out, targetdir]
+    out: [jsonld_context, targetdir]
     run: makecontext.cwl
 
   graph_inheritance:
