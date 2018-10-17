@@ -40,6 +40,8 @@ The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
 descriptions.
 
+[**CWL Recommended Practices**](http://www.commonwl.org/user_guide/rec-practices/)
+
 [CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the
 CWL project in Japanese.
 
