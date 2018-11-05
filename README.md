@@ -150,6 +150,8 @@ A collection of existing references to CWL can be found at http://www.citeulike.
 |[CWL for Go](https://github.com/otiai10/cwl.go)|-|
 |[CWL for Scala](https://github.com/broadinstitute/wdl4s)|CWL object model for Scala|
 |[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
+|[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
+
 
 ## Projects the CWL community is participating in
 
