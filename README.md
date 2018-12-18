@@ -45,6 +45,8 @@ descriptions.
 [CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the
 CWL project in Japanese.
 
+A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?unit=15070) is available in Russian as part of the [Управление вычислениями](https://stepik.org/course/1612/syllabus)(Computation Management) free online course.
+
 ## Specification
 
 For developers and advanced users, the current
