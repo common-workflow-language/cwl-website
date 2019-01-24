@@ -4,7 +4,7 @@
   primtype: null
   redirect: []
   renderlist: []
-  source: {class: File, path: ../v1.1.0-dev1/README.md}
+  source: {class: File, path: ../v1.1.0-dev1/index.md}
   target: v1.1.0-dev1/index.html
   extra: {class: File, path: empty}
 - brandimg: '<img src=''../CWL-Logo-Header.png'' style=''height: 61px; margin-top:
