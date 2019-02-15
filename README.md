@@ -24,7 +24,8 @@ Common Workflow Language
 <p style="text-align: center; font-size: 9pt;"><it>Example CWL for BWA modified from this <a href="https://dockstore.org/containers/quay.io/collaboratory/dockstore-tool-bwa-mem:1.0?tab=files">dockstore tool</a></it></p>
 
 # Quick links
-- [Learn CWL](https://www.commonwl.org/user_guide/)
+- [Tutorial](https://www.commonwl.org/user_guide/)
+- [More learning resources](#userguide)
 - Find a [pipeline executor](#implementations) that supports CWL
 - Need help? We are on gitter! [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
   and on github [![GitHub issues](https://img.shields.io/github/issues/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/issues)
@@ -74,20 +75,36 @@ CWL builds on technologies such as [JSON-LD](https://json-ld.org)
 for data modeling and [Docker](https://www.docker.com/) for portable runtime
 environments.
 
-## User Guide
+<a name="userguide"></a>
+# Learning resources
 
+## User Guide
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
 descriptions.
 
 [**CWL Recommended Practices**](http://www.commonwl.org/user_guide/rec-practices/)
 
-[CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the
+## Graphical Editor
+
+<img src="https://github.com/rabix/composer/blob/master/doc/images/workflows.gif" alt="Draw Workflows!" width="400" align="right"/></img>
+
+New to CWL or don't want to write it by hand, or want to quickly sketch out a workflow? CWL has a lot of developer tooling. 
+Try [Rabix Composer](https://github.com/rabix/composer), which allows you to construct CWL documents by 
+drawing pipelines, like you would do on a board. Rabix Composer has wizards/templates that save you from having
+to remember exact CWL syntax, and just fill out values according to the semantics of how you want the
+tool or workflow to behave.
+
+
+## Introductions and tutorials in other languages
+
+[CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the 
 CWL project in Japanese.
 
 A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?unit=15070) is available in Russian as part of the [Управление вычислениями](https://stepik.org/course/1612/syllabus)(Computation Management) free online course.
 
-## Specification
+
+# Specification
 
 For developers and advanced users, the current
 [CWL specification (v1.0.2)](https://www.commonwl.org/v1.0/) provides
