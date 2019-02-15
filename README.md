@@ -43,7 +43,7 @@ _Example CWL for BWA modified from this [dockstore tool](https://dockstore.org/c
 <a name="learnmore"></a>
 # The CWL specification  
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right"
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right" border="5" style="border: 5px solid black; align: right;"
 src="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
 alt="[Video] Common Workflow Language explained in 64 seconds"></a>
 The Common Workflow Language (CWL) lets you describe analysis workflows and 
