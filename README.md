@@ -25,9 +25,9 @@ _Example CWL for BWA modified from this [dockstore tool](https://dockstore.org/c
 
 # Quick links
 - [Learn CWL](https://www.commonwl.org/user_guide/)
-- [Learn about executors that support CWL](#Implementations)
+- Find a [pipeline executor](#implementations) that supports CWL
 - Need help? We are on gitter! [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
-  and on github [![GitHub stars](https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/stargazers)
+  and on github [![GitHub issues](https://img.shields.io/github/issues/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/issues)
 - Getting to be an expert? [Read the full specification](https://www.commonwl.org/v1.0/)
 - Learn more about the [philosophy behind CWL](#learnmore)
 - We are vendor and volunteer supported but if you would like to support our work 
@@ -49,7 +49,6 @@ CWL are portable and scalable across many software and hardware environments,
 from workstations to cluster, cloud, and high performance computing (HPC) 
 environments.  CWL is designed to meet the needs of data-intensive science, 
 such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
-
 <a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right"
 src="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
 alt="[Video] Common Workflow Language explained in 64 seconds"></a>
@@ -106,6 +105,7 @@ doi:[10.6084/m9.figshare.3115156.v2](https://doi.org/10.6084/m9.figshare.3115156
 
 A collection of existing references to CWL can be found at http://www.citeulike.org/group/20713
 
+<a name="implementations"></a> 
 ## Implementations
 
 |Software|Description|CWL support|Platform support|
