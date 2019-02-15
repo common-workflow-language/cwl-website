@@ -21,7 +21,7 @@ Common Workflow Language
 
 ![CWL in a nutshell](site/cwl-example.png)
 
-_Example CWL for BWA modified from this [dockstore tool](https://dockstore.org/containers/quay.io/collaboratory/dockstore-tool-bwa-mem:1.0?tab=files)_
+<p style="text-align: center; font-size: 9pt;"><it>Example CWL for BWA modified from this <a href="https://dockstore.org/containers/quay.io/collaboratory/dockstore-tool-bwa-mem:1.0?tab=files">dockstore tool</a></it></p>
 
 # Quick links
 - [Learn CWL](https://www.commonwl.org/user_guide/)
