@@ -42,6 +42,10 @@ _Example CWL for BWA modified from this [dockstore tool](https://dockstore.org/c
 
 <a name="learnmore"></a>
 # The CWL specification  
+
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right"
+src="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
+alt="[Video] Common Workflow Language explained in 64 seconds"></a>
 The Common Workflow Language (CWL) lets you describe analysis workflows and 
 tools of arbitrary complexity using plain text. CWL is supported by a 
 wide variety of workflow executors and platform vendors, such that workflows written in
@@ -49,9 +53,6 @@ CWL are portable and scalable across many software and hardware environments,
 from workstations to cluster, cloud, and high performance computing (HPC) 
 environments.  CWL is designed to meet the needs of data-intensive science, 
 such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right"
-src="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
-alt="[Video] Common Workflow Language explained in 64 seconds"></a>
 
 
 # Who develops CWL? Can I contribute?
