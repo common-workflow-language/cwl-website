@@ -1,9 +1,9 @@
-Common Workflow Language
-========================
-
 ![Latest release](https://img.shields.io/github/release/common-workflow-language/common-workflow-language.svg?style=flat)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![GitHub stars](https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/stargazers)
+
+Common Workflow Language
+========================
 
 * Describe analysis workflows and tools of arbitrary complexity using plain text
 * Write once, test locally, then scale up and run on cluster, cloud and HPC environments
