@@ -5,6 +5,10 @@ requirements:
   InlineJavascriptRequirement:
     expressionLib:
       - $include: cwlpath.js
+hints:
+  ResourceRequirement:
+   ramMin: 2300
+   ramMax: 2600
 inputs:
   source:
     type: File

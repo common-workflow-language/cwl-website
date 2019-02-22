@@ -8,6 +8,8 @@ hints:
       RUN apt-get update && \
           DEBIAN_FRONTEND=noninteractive apt-get -yq install w3c-linkchecker \
     dockerImageId: commonworkflowlanguage/checklink
+  ResourceRequirement:
+   ramMin: 10
 inputs:
   inp:
     type: File

@@ -4,6 +4,10 @@ class: CommandLineTool
 requirements:
   ShellCommandRequirement: {}
   InlineJavascriptRequirement: {}
+hints:
+  ResourceRequirement:
+   ramMin: 200
+   ramMax: 2700
 inputs:
   schema: File
   target_path: string
