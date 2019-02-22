@@ -3,6 +3,10 @@ cwlVersion: v1.0
 class: CommandLineTool
 requirements:
   InlineJavascriptRequirement: {}
+hints:
+  ResourceRequirement:
+   ramMin: 180
+   ramMax: 2600
 inputs:
   schema:
     type: File
