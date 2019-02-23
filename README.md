@@ -1,25 +1,66 @@
+![Latest release](https://img.shields.io/github/release/common-workflow-language/common-workflow-language.svg?style=flat)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GitHub stars](https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/stargazers)
+
 Common Workflow Language
 ========================
 
-[**Support**](#Support) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GitHub stars](https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/stargazers)
+* Describe analysis workflows and tools of arbitrary complexity using plain text
+* Write once, test locally, then scale up and run on cluster, cloud and HPC environments
+  - No lock in: CWL is supported by a [wide variety](#Implementations) of open-source 
+    and commercial executors and platform vendors
+  - Conformance test suite and [public conformance result display][conf-test] monitors 
+    uniformity of executor behavior
+* Bake input validations into tool description, protect from costly user errors
+* Use docker images to freeze executable, allow users to reproducibly run workflows
+* Nest any tool or workflow to arbitrary depth
+  - Each CWL document can be run by itself, or as part of a larger workflow, thanks to its
+    strict interface specification
+
+[conf-test]: https://ci.commonwl.org/job/cwltool-conformance/lastBuild/version=v1.0/testReport/
+
+![CWL in a nutshell](site/cwl-example.png)
+
+<p style="text-align: center; font-size: 9pt;"><it>Example CWL for BWA modified from this <a href="https://dockstore.org/containers/quay.io/collaboratory/dockstore-tool-bwa-mem:1.0?tab=files">dockstore tool</a></it></p>
+
+# Quick links
+- [Tutorial](https://www.commonwl.org/user_guide/)
+- [More learning resources](#userguide)
+- Find a [pipeline executor](#implementations) that supports CWL
+- Need help? We are on gitter! [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
+  and on github [![GitHub issues](https://img.shields.io/github/issues/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/issues)
+- Getting to be an expert? [Read the full specification](https://www.commonwl.org/v1.0/)
+- Learn more about the [philosophy behind CWL](#learnmore)
+- We are vendor and volunteer supported but if you would like to support our work 
+  we also accept donations through software conservancy!
+
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="Z55VS5LBBSZTJ">
 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" width="92" heigth="26" name="submit" alt="Donate to Common Workflow Language via PayPal">
 </form>
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right"
+
+<a name="learnmore"></a>
+# The CWL specification  
+
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><img align="right" border="5" style="border: 5px solid black; align: right;"
 src="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
 alt="[Video] Common Workflow Language explained in 64 seconds"></a>
-The Common Workflow Language (CWL) is a specification for describing analysis
-workflows and tools in a way that makes them portable and scalable across a
-variety of software and hardware environments, from workstations to cluster,
-cloud, and high performance computing (HPC) environments.  CWL is designed to
-meet the needs of data-intensive science, such as Bioinformatics, Medical
-Imaging, Astronomy, Physics, and Chemistry.
+The Common Workflow Language (CWL) lets you describe analysis workflows and 
+tools of arbitrary complexity using plain text. CWL is supported by a 
+wide variety of workflow executors and platform vendors, such that workflows written in
+CWL are portable and scalable across many software and hardware environments, 
+from workstations to cluster, cloud, and high performance computing (HPC) 
+environments.  CWL is designed to meet the needs of data-intensive science, 
+such as Bioinformatics, Medical Imaging, Astronomy, Physics, and Chemistry.
 
-<a href="https://open-stand.org/about-us/principles"><img align="left"
+
+# Who develops CWL? Can I contribute?
+
+You do. And yes you can!
+
+<a href="https://open-stand.org/about-us/principles"><img align="right"
 src="https://open-stand.org/wp-content/uploads/2012/08/128x128-blue.png" alt="Open Stand badge"></a>
 CWL is developed by a multi-vendor working group consisting of
 organizations and individuals aiming to enable scientists to share data
@@ -34,20 +75,36 @@ CWL builds on technologies such as [JSON-LD](https://json-ld.org)
 for data modeling and [Docker](https://www.docker.com/) for portable runtime
 environments.
 
-## User Guide
+<a name="userguide"></a>
+# Learning resources
 
+## User Guide
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
 descriptions.
 
 [**CWL Recommended Practices**](http://www.commonwl.org/user_guide/rec-practices/)
 
-[CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the
+## Graphical Editor
+
+<img src="https://github.com/rabix/composer/blob/master/doc/images/workflows.gif" alt="Draw Workflows!" width="400" align="right"/></img>
+
+New to CWL or don't want to write it by hand, or want to quickly sketch out a workflow? CWL has a lot of developer tooling. 
+Try [Rabix Composer](https://github.com/rabix/composer), which allows you to construct CWL documents by 
+drawing pipelines, like you would do on a board. Rabix Composer has wizards/templates that save you from having
+to remember exact CWL syntax, and just fill out values according to the semantics of how you want the
+tool or workflow to behave.
+
+
+## Introductions and tutorials in other languages
+
+[CWLの日本語での解説ドキュメント](https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP) is a 15 minute introduction to the 
 CWL project in Japanese.
 
 A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?unit=15070) is available in Russian as part of the [Управление вычислениями](https://stepik.org/course/1612/syllabus)(Computation Management) free online course.
 
-## Specification
+
+# Specification
 
 For developers and advanced users, the current
 [CWL specification (v1.0.2)](https://www.commonwl.org/v1.0/) provides
@@ -66,6 +123,7 @@ doi:[10.6084/m9.figshare.3115156.v2](https://doi.org/10.6084/m9.figshare.3115156
 
 A collection of existing references to CWL can be found at [https://zotero.org/groups/cwl](https://www.zotero.org/groups/2294829/cwl/items)
 
+<a name="implementations"></a> 
 ## Implementations
 
 |Software|Description|CWL support|Platform support|
