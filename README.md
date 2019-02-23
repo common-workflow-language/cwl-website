@@ -64,7 +64,7 @@ Specification, _Common Workflow Language working group_.
 [https://w3id.org/cwl/v1.0/](https://w3id.org/cwl/v1.0/)
 doi:[10.6084/m9.figshare.3115156.v2](https://doi.org/10.6084/m9.figshare.3115156.v2)
 
-A collection of existing references to CWL can be found at http://www.citeulike.org/group/20713
+A collection of existing references to CWL can be found at https://zotero.org/groups/cwl
 
 ## Implementations
 
