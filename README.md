@@ -68,23 +68,29 @@ A collection of existing references to CWL can be found at [https://zotero.org/g
 
 ## Implementations
 
-|Software|Description|CWL support|Platform support|
-|--------|-----------|-----------|----------------|
-|[cwltool](https://github.com/common-workflow-language/cwltool)|Reference implementation of CWL|[![Build Status](https://ci.commonwl.org/job/cwltool-conformance/badge/icon)](https://ci.commonwl.org/job/cwltool-conformance/lastBuild/testReport/)|Linux, OS X, Windows, local execution only|
-|[Arvados](https://arvados.org)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|[![Build Status](https://ci.commonwl.org/job/arvados-conformance/badge/icon)](https://ci.commonwl.org/job/arvados-conformance/lastBuild/testReport/)|AWS, GCP, Azure, Slurm|
-|[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|[![Build Status](https://ci.commonwl.org/job/toil-conformance/badge/icon)](https://ci.commonwl.org/job/toil-conformance/lastBuild/testReport/)|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
-|[Rabix Bunny](https://github.com/rabix/bunny)|An open-source, Java-based implementation of Common Workflow Language with support for multiple drafts/versions. See [Rabix.io](http://rabix.io) for details.|[![Build Status](https://ci.commonwl.org/buildStatus/icon?job=rabix-conformance)](https://ci.commonwl.org/job/rabix-conformance/)|Linux, OS X, [GA4GH TES](https://github.com/ga4gh/task-execution-server) (experimental)|
-|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|[alpha](https://github.com/common-workflow-language/galaxy)|-|
-|[cwl-tes](https://github.com/common-workflow-language/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|[![Build Status](https://travis-ci.org/common-workflow-language/cwl-tes.svg?branch=master)](https://travis-ci.org/common-workflow-language/cwl-tes)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
-|[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|[![Build Status](https://ci.commonwl.org/buildStatus/icon?job=airflow-conformance)](https://ci.commonwl.org/job/airflow-conformance)|Linux, OS X|
-|[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|[Yes](https://reana-workflow-engine-cwl.readthedocs.io/en/latest/developerguide.html#running-cwl-conformance-tests)|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) ([OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
-|[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|[![Build Status](https://ci.commonwl.org/buildStatus/icon?job=cromwell)](https://ci.commonwl.org/job/cromwell) [beta](https://github.com/broadinstitute/cromwell/issues?q=is%3Aopen+is%3Aissue+label%3ACWL)|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
-|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[![Build Status](https://ci.commonwl.org/buildStatus/icon?job=cwlexec)](https://ci.commonwl.org/job/cwlexec)|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+
-|[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon|[alpha](https://github.com/NLeSC/xenon-cwl-runner)|[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine|
-|[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|-|AWS, OpenStack, Azure|
-|[Apache Taverna](https://taverna.incubator.apache.org/)|Domain-independent Workflow Management System|[alpha](https://issues.apache.org/jira/browse/TAVERNA-900)|-|
-|[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.|[![Build Status](http://ci.commonwl.org/buildStatus/icon?job=AWE)](https://ci.commonwl.org/job/AWE/) [beta](https://github.com/MG-RAST/AWE/tree/develop)|-|
-|[yacle](https://github.com/otiai10/yacle)|Yet Another CWL Engine| [![Build Status](https://travis-ci.org/otiai10/yacle.svg?branch=master)](https://travis-ci.org/otiai10/yacle) [![](https://img.shields.io/badge/dynamic/json.svg?label=CWL%20Conformance&url=https%3A%2F%2Fraw.githubusercontent.com%2Fotiai10%2Fyacle%2Fmaster%2F.conformance.json&query=pass&colorB=95c31e&suffix=%20cases)](https://github.com/common-workflow-language/common-workflow-language)  | local |
+In Production:
+
+|Software|Description|Platform support|
+|--------|-----------|----------------|
+|[cwltool](https://github.com/common-workflow-language/cwltool)|Reference implementation of CWL|Linux, OS X, Windows, local execution only|
+|[Arvados](https://arvados.org)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|AWS, GCP, Azure, Slurm|
+|[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
+|[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|Linux, OS X|
+|[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) ([OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
+|[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
+|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+
+
+In Development:
+
+|Software|Description|Platform support|
+|--------|-----------|----------------|
+|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|-|
+|[cwl-tes](https://github.com/common-workflow-language/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
+|[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon|[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine|
+|[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|AWS, OpenStack, Azure|
+|[Apache Taverna](https://taverna.incubator.apache.org/)|Domain-independent Workflow Management System|-|
+|[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.|-|
+|[yacle](https://github.com/otiai10/yacle)|Yet Another CWL Engine| local |
 
 
 ## Repositories of CWL Tools and Workflows
