@@ -49,8 +49,9 @@ A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?uni
 ## Specification
 
 For developers and advanced users, the current
-[CWL specification (v1.0.2)](https://www.commonwl.org/v1.0/) provides
-authoritative documentation of the execution of CWL documents.
+[CWL specification (v1.1)](https://www.commonwl.org/v1.1/) provides
+authoritative documentation of the execution of CWL documents.  The previous version
+[CWL specification (v1.0.2)](https://www.commonwl.org/v1.0/) is also available.
 
 ### Citation
 
