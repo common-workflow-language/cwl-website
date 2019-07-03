@@ -85,7 +85,7 @@ In Development:
 |Software|Description|Platform support|
 |--------|-----------|----------------|
 |[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|-|
-|[cwl-tes](https://github.com/common-workflow-language/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
+|[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
 |[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon|[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine|
 |[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|AWS, OpenStack, Azure|
 |[Apache Taverna](https://taverna.incubator.apache.org/)|Domain-independent Workflow Management System|-|
@@ -129,6 +129,7 @@ In Development:
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
 
 
 ### Converters and code generators
