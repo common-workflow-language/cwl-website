@@ -11,7 +11,7 @@ Common Workflow Language
 
 <a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
 alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
-The Common Workflow Language (CWL) is a specification for describing analysis
+The Common Workflow Language (CWL) is a standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
 variety of software and hardware environments, from workstations to cluster,
 cloud, and high performance computing (HPC) environments.  CWL is designed to
@@ -49,9 +49,9 @@ A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?uni
 ## Specification
 
 For developers and advanced users, the current
-[CWL specification (v1.1)](https://www.commonwl.org/v1.1/) provides
+[CWL Standard (v1.1)](https://www.commonwl.org/v1.1/) provides
 authoritative documentation of the execution of CWL documents.  The previous version
-[CWL specification (v1.0.2)](https://www.commonwl.org/v1.0/) is also available.
+of the [CWL Standard (v1.0.2)](https://www.commonwl.org/v1.0/) is also available.
 
 ### Citation
 
