@@ -91,6 +91,7 @@ In Development:
 |[Apache Taverna](https://taverna.incubator.apache.org/)|Domain-independent Workflow Management System|-|
 |[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.|-|
 |[yacle](https://github.com/otiai10/yacle)|Yet Another CWL Engine| local |
+|[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes|[Kubernetes](https://kubernetes.io)|
 
 
 ## Repositories of CWL Tools and Workflows
