@@ -159,7 +159,7 @@ In Development:
 |[CWL for R](https://github.com/jefferys/cwl)|Parse and work with CWL from R|
 |[buchanae/cwl](https://github.com/buchanae/cwl)|CWL document parsing and processing utilities in Go.|
 |[CWL for Go](https://github.com/otiai10/cwl.go)|-|
-|[CWL for Scala](https://github.com/broadinstitute/wdl4s)|CWL object model for Scala|
+|[CWL for Scala](https://github.com/broadinstitute/cromwell/tree/develop/cwl/src/main/scala/cwl)|CWL object model for Scala|
 |[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
 |[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
 |[Rcwl](https://github.com/hubentu/Rcwl)|Build, read, write and run CWL in R|
