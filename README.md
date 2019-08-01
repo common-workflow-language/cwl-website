@@ -119,7 +119,7 @@ In Development:
 |[vscode-cwl](https://github.com/manabuishii/vscode-cwl)|CWL support in Visual Studio Code|
 |[IntelliJ CWL plugin](https://gitlab.com/AleksandrSl/cwl-plugin)|CWL plugin for [IntelliJ and other JetBrains editors](https://plugins.jetbrains.com/plugin/10040-cwl-plugin)|
 |[bioSyntax](http://bioSyntax.org)|Includes CWL syntax highliting for [gedit](https://wiki.gnome.org/Apps/Gedit)|
-|[sublime-cwl-syntax](https://github.com/manabuishii/sublime-cwl-syntax)|[Sublime Text](https://www.sublimetext.com/) syntax highlighting for CWL|
+|[Rabix Benten](https://github.com/rabix/benten)|\[Pre-alpha] A [language server](https://langserver.org/) for CWL, should support VS Code, vim/neovim, Emacs, Acme, IntelliJ/JetBrains, [and others](https://langserver.org/#implementations-client)|
 
 ### Utilities
 
