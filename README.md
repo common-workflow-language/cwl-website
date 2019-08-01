@@ -146,7 +146,6 @@ In Development:
 |[CTD converter](https://github.com/WorkflowConversion/CTDConverter)|Common Tool Definition (CTD) to CWL converter|
 |[scriptcwl](https://github.com/NLeSC/scriptcwl)|Create CWL workflows by writing a simple Python script|
 |[python-cwlgen](https://github.com/common-workflow-language/python-cwlgen)|Generate of CWL programmatically from Python.|
-|[cwl2nxf](https://github.com/nextflow-io/cwl2nxf)|Convert CWL to run on Nextflow|
 |[cwl-to-parsl](https://github.com/benhg/cwl-to-parsl)|Convert CWL to Parsl|
 |[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
 
