@@ -120,6 +120,7 @@ In Development:
 |[IntelliJ CWL plugin](https://gitlab.com/AleksandrSl/cwl-plugin)|CWL plugin for [IntelliJ and other JetBrains editors](https://plugins.jetbrains.com/plugin/10040-cwl-plugin)|
 |[bioSyntax](http://bioSyntax.org)|Includes CWL syntax highliting for [gedit](https://wiki.gnome.org/Apps/Gedit)|
 |[Rabix Benten](https://github.com/rabix/benten)|\[Pre-alpha] A [language server](https://langserver.org/) for CWL, should support VS Code, vim/neovim, Emacs, Acme, IntelliJ/JetBrains, [and others](https://langserver.org/#implementations-client)|
+|[vue-cwl](https://github.com/TMiguelT/vue-cwl)|Visualizer of CWL workflows for the [Vue JavaScript framework](https://vuejs.org/) using [cwl-svg](https://github.com/rabix/cwl-svg)|
 
 ### Utilities
 
