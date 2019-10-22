@@ -178,9 +178,8 @@ In Development:
 <a name="Support"></a>
 ## Support, Community and Contributing
 
-The recommended place to ask a question about all things CWL is on Biostars. After you have [read previous questions and answers](https://www.biostars.org/t/cwl/) you can [post your question using the 'cwl' tag](https://www.biostars.org/p/new/post/?tag_val=cwl)
-
-[![Biostars CWL](https://www.biostars.org/static/biostar2.logo.png)](https://www.biostars.org/t/cwl/)
+The recommended place to ask a question about all things CWL is on [the CWL Discourse Group](https://cwl.discourse.group/). 
+Previously we used [biostars.org](https://www.biostars.org/t/cwl/) where you can still read older responses.
 
 If you are interested in learning more or contributing ideas or code,
 [come chat with us on Gitter](https://gitter.im/common-workflow-language/common-workflow-language),
