@@ -1,25 +1,47 @@
 Common Workflow Language
 ========================
 
-[**Support**](#Support) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GitHub stars](https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg)](https://github.com/common-workflow-language/common-workflow-language/stargazers)
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<div style="margin-bottom: 1em">
+<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
+<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars"></a>
+<a href="#Support" style="padding-right: 1em"><b>CWL Community Support</b></a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline;">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="Z55VS5LBBSZTJ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" width="92" heigth="26" name="submit" alt="Donate to Common Workflow Language via PayPal">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" width="92" height="26" name="submit" alt="Donate to Common Workflow Language via PayPal" style="position: relative; bottom: -6px;">
 </form>
+</div>
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
-alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
+<div style="float: left;
+border: 5px;
+background-color: #f5ecdf;
+border-style: solid;
+padding: 1em;
+border-width: 1px;
+border-radius: 6px;
+margin-right: 1.5em;
+margin-bottom: 1em;">
+<div><a href="#Getting_Started">Getting Started</a></div>
+<div><a href="#Support">Support, Community and Contributing</a></div>
+<div><a href="#Specification">Specification</a></div>
+<div><a href="#Implementations">Implementations</a></div>
+<div><a href="#Repositories_of_CWL_Tools_and_Workflows">Repositories of CWL Tools and Workflows</a></div>
+<div><a href="#Software_for_working_with_CWL">Software for working with CWL</a></div>
+<div><a href="#Projects_the_CWL_community_is_participating_in">Projects the CWL community is participating in</a></div>
+<div><a href="#Contributers_and_Governance">Contributers and Governance</a></div>
+</div>
+
+<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.webp" type="image/webp"><img align="right"
+src="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.png" alt="Open Stand badge"></picture></a>
+
 The Common Workflow Language (CWL) is an open standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
 variety of software and hardware environments, from workstations to cluster,
 cloud, and high performance computing (HPC) environments.  CWL is designed to
 meet the needs of data-intensive science, such as Bioinformatics, Medical
-Imaging, Astronomy, Physics, and Chemistry.
+Imaging, Astronomy, High Energy Physics, and Machine Learning.
 
-<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.webp" type="image/webp"><img align="left"
-src="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.png" alt="Open Stand badge"></picture></a>
+
 CWL is developed by a multi-vendor working group consisting of
 organizations and individuals aiming to enable scientists to share data
 analysis workflows.  [The CWL project is maintained on
@@ -29,15 +51,17 @@ collaborative open standards development](https://open-stand.org/about-us/princi
 the elected [CWL leadership team](#Leadership_Team), however every-day project decisions are made by the
 [CWL community](#Support) which is open for participation by anyone.
 
-CWL builds on technologies such as [JSON-LD](https://json-ld.org)
-for data modeling and [Docker](https://www.docker.com/) for portable runtime
-environments.
 
-## User Guide
+## Getting Started
+
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
+alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
 
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
 descriptions.
+
+Browse [CWL Implementations](#Implementations) to find a software package that's right for you.
 
 [**CWL Recommended Practices**](http://www.commonwl.org/user_guide/rec-practices/)
 
@@ -45,6 +69,36 @@ descriptions.
 CWL project in Japanese.
 
 A series of [video lessons about CWL](https://stepik.org/lesson/35918/step/1?unit=15070) is available in Russian as part of the [Управление вычислениями](https://stepik.org/course/1612/syllabus)(Computation Management) free online course.
+
+<a name="Support"></a>
+## Support, Community and Contributing
+
+The recommended place to ask a question about all things CWL is on [the CWL Discourse Group](https://cwl.discourse.group/).
+Previously we used [biostars.org](https://www.biostars.org/t/cwl/) where you can still read older responses.
+
+If you are interested in learning more or contributing ideas or code,
+[come chat with us on Gitter](https://gitter.im/common-workflow-language/common-workflow-language),
+check out [#CommonWL on Twitter](https://twitter.com/search?q=%23CommonWL),
+join the [mailing list common-workflow-language on Google Groups](https://groups.google.com/forum/#!forum/common-workflow-language) or
+[fork the repository](https://github.com/common-workflow-language/common-workflow-language)
+and send a pull request!
+
+Besides the web interface for the mailing list, one can also join by sending a blank email to
+common-workflow-language+subscribe@googlegroups.com and replying to the automated message.
+
+### Code of Conduct
+
+The CWL Project is dedicated to providing a harassment-free experience for
+everyone, regardless of gender, gender identity and expression, sexual
+orientation, disability, physical appearance, body size, age, race, or
+religion. We do not tolerate harassment of participants in any form.
+This code of conduct applies to all CWL Project spaces, including the Google
+Group, the Gitter chat room, the Google Hangouts chats, both online and off.
+Anyone who violates this code of conduct may be sanctioned or expelled from
+these spaces at the discretion of the leadership team.
+
+For more details, see our [Code of
+Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/master/CODE_OF_CONDUCT.md).
 
 ## Specification
 
@@ -98,7 +152,7 @@ In Development:
 
 |Repository|Description|
 |----|-----------|
-|[Workflows repository](https://github.com/common-workflow-language/workflows)|Git repository of user contributed tools and workflows.|
+|[Common Workflow Library](https://github.com/common-workflow-library)|Git organization for community maintenance of tools and workflows.|
 |[Dockstore tool registry](https://dockstore.org)|An open platform for sharing Docker-based tools described with the Common Workflow Language used by the GA4GH.|
 |[CWLviewer](https://view.commonwl.org/workflows)|A web application to view and share Common Workflow Language workflows|
 |[cwl-source](https://github.com/xDBio-Inc/cwl-source)|Git repository for collections of tools, workflows, metadata, and input parameter files. Administered by xD Bio Inc. Integrates with [truwl.com](https://truwl.com/)|
@@ -130,6 +184,7 @@ In Development:
 |[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
 |[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|generates ZSH auto completions from CWL command line tool descriptions|
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
+|[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
@@ -175,39 +230,12 @@ In Development:
 |[GA4GH Workflow Execution API](https://github.com/ga4gh/workflow-execution-schemas)|a minimal common API for submitting workflow requests to workflow execution systems in a standardized way. Many contributions from CWL project participants.|
 |[ResearchObjects.org](http://www.researchobject.org/)|"an emerging approach to the publication, and exchange of scholarly information on the Web." CWL participants and RO enthusiasts have created [CWLProv](https://w3id.org/cwl/prov/), a profile for provenance research object of a CWL workflow run.|
 
-<a name="Support"></a>
-## Support, Community and Contributing
+## Contributers and Governance
 
-The recommended place to ask a question about all things CWL is on [the CWL Discourse Group](https://cwl.discourse.group/). 
-Previously we used [biostars.org](https://www.biostars.org/t/cwl/) where you can still read older responses.
+### Participating Organizations
 
-If you are interested in learning more or contributing ideas or code,
-[come chat with us on Gitter](https://gitter.im/common-workflow-language/common-workflow-language),
-check out [#CommonWL on Twitter](https://twitter.com/search?q=%23CommonWL),
-join the [mailing list common-workflow-language on Google Groups](https://groups.google.com/forum/#!forum/common-workflow-language) or
-[fork the repository](https://github.com/common-workflow-language/common-workflow-language)
-and send a pull request!
-
-Besides the web interface for the mailing list, one can also join by sending a blank email to
-common-workflow-language+subscribe@googlegroups.com and replying to the automated message.
-
-### Code of Conduct
-
-The CWL Project is dedicated to providing a harassment-free experience for
-everyone, regardless of gender, gender identity and expression, sexual
-orientation, disability, physical appearance, body size, age, race, or
-religion. We do not tolerate harassment of participants in any form.
-This code of conduct applies to all CWL Project spaces, including the Google
-Group, the Gitter chat room, the Google Hangouts chats, both online and off.
-Anyone who violates this code of conduct may be sanctioned or expelled from
-these spaces at the discretion of the leadership team.
-
-For more details, see our [Code of
-Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/master/CODE_OF_CONDUCT.md).
-
-## Participating Organizations
-
-* [Curoverse](https://curoverse.com)
+* [Arvados Project](https://arvados.org)
+* [Veritas Genetics](https://veritasgenetics.com)
 * [Seven Bridges Genomics](https://www.sevenbridges.com/)
 * [Galaxy Project](https://galaxyproject.org/)
 * [Apache Taverna](https://taverna.incubator.apache.org/)
@@ -230,11 +258,11 @@ Conduct](https://github.com/common-workflow-language/common-workflow-language/bl
 * [DNAnexus](https://www.dnanexus.com/)
 * [CERN](https://home.cern/)
 
-## Individual Contributors
+### Individual Contributors
 
 (Alphabetical)
 
-* Peter Amstutz, Curoverse Inc. / Arvados; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Robin Andeer; https://orcid.org/0000-0003-1132-5305
 * Brad Chapman; https://orcid.org/0000-0002-3026-1856
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
@@ -263,11 +291,11 @@ Conduct](https://github.com/common-workflow-language/common-workflow-language/bl
 * Nebojša Tijanić <nebojsa.tijanic@sbgenomics.com>
 * Hiromu Ochiai; [@otiai10](https://github.com/otiai10) https://orcid.org/0000-0001-6636-856X
 
-## CWL Advisors
+### CWL Advisors
 
 (Alphabetical)
 
-* Peter Amstutz, Curoverse Inc. / Arvados; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Artem Barski, Cincinnati Children's Hospital Medical Center / University of Cincinnati College of Medicine; https://orcid.org/0000-0002-1861-5316
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Kyle Cranmer, New York University; https://orcid.org/0000-0002-5769-7094
@@ -278,7 +306,7 @@ Conduct](https://github.com/common-workflow-language/common-workflow-language/bl
 * Geet Duggal, DNAnexus; https://orcid.org/0000-0003-3485-359X
 * Rob Finn, EMBL-EBI; https://orcid.org/0000-0001-8626-2148
 * Marc Fiume, DNAstack; https://orcid.org/0000-0002-9769-375X
-* Jeff Gentry, Broad Institute; https://orcid.org/0000-0001-5351-8442
+* Jeff Gentry, Foundation Medicine; https://orcid.org/0000-0001-5351-8442
 * Kaushik Ghose, Seven Bridges Genomics, Inc; https://orcid.org/0000-0003-2933-1260
 * Carole Goble, The University of Manchester; https://orcid.org/0000-0003-1219-2137
 * Oliver Hofmann, University of Melbourne / bcbio-nextgen; https://orcid.org/0000-0002-7738-1513
@@ -297,14 +325,14 @@ Conduct](https://github.com/common-workflow-language/common-workflow-language/bl
 
 
 <a name="Leadership_Team"></a>
-## CWL Leadership Team
+### CWL Leadership Team
 
 (Alphabetical)
 
-* Peter Amstutz, Curoverse Inc. / Arvados; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Michael R. Crusoe, CWL Project Lead; https://orcid.org/0000-0002-2961-9670
 * Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; https://orcid.org/0000-0001-7811-8613
-* Jeff Gentry, Broad Institute; https://orcid.org/0000-0001-5351-8442
+* Jeff Gentry, Foundation Medicine; https://orcid.org/0000-0001-5351-8442
 * Hervé Ménager, Institut Pasteur; https://orcid.org/0000-0002-7552-1009
 * Stian Soiland-Reyes, University of Manchester; https://orcid.org/0000-0001-9842-9718
