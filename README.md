@@ -219,6 +219,7 @@ In Development:
 |[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
 |[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
 |[Rcwl](https://github.com/hubentu/Rcwl)|Build, read, write and run CWL in R|
+|[tidycwl](https://sbg.github.io/tidycwl/)|Tidy (R) Common Workflow Language Tools and Workflows|
 
 ## Projects the CWL community is participating in
 
