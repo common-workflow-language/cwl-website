@@ -175,6 +175,7 @@ In Development:
 |[bioSyntax](http://bioSyntax.org)|Includes CWL syntax highliting for [gedit](https://wiki.gnome.org/Apps/Gedit)|
 |[Rabix Benten](https://github.com/rabix/benten)|\[Pre-alpha] A [language server](https://langserver.org/) for CWL, should support VS Code, vim/neovim, Emacs, Acme, IntelliJ/JetBrains, [and others](https://langserver.org/#implementations-client)|
 |[vue-cwl](https://github.com/TMiguelT/vue-cwl)|Visualizer of CWL workflows for the [Vue JavaScript framework](https://vuejs.org/) using [cwl-svg](https://github.com/rabix/cwl-svg)|
+|[cwl-for-remote-container-template](https://github.com/tom-tan/cwl-for-remote-container-template)|A template to write CWL documents with VSCode with remote container extension|
 
 ### Utilities
 
@@ -204,6 +205,7 @@ In Development:
 |[python-cwlgen](https://github.com/common-workflow-language/python-cwlgen)|Generate of CWL programmatically from Python.|
 |[cwl-to-parsl](https://github.com/benhg/cwl-to-parsl)|Convert CWL to Parsl|
 |[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
+|[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
 
 ### Code libraries
 
