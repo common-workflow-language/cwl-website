@@ -13,7 +13,9 @@ render:
 - {$import: cwlsite-draft3-job.json}
 - {$import: cwlsite-v1.0.0-job.json}
 - {$import: cwlsite-v1.1.0-job.yaml}
+- {$import: cwlsite-v1.2-job.yaml}
 schemas:
 - {$import: cwlsite-draft3-schemas.json}
 - {$import: cwlsite-v1.0.0-schemas.json}
 - {$import: cwlsite-v1.1.0-schemas.yaml}
+- {$import: cwlsite-v1.2-schemas.yaml}

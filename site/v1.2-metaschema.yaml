@@ -1,0 +1,246 @@
+{
+    "class": "File",
+    "format": "https://www.iana.org/assignments/media-types/application/cwl",
+    "location": "../v1.2/salad/schema_salad/metaschema/metaschema.yml",
+    "secondaryFiles": [
+        {
+            "nameext": ".md",
+            "basename": "import_include.md",
+            "class": "File",
+            "location": "../v1.2/salad/schema_salad/metaschema/import_include.md",
+            "nameroot": "import_include"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/link_res.yml",
+            "basename": "link_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "link_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/link_res_proc.yml",
+                    "nameroot": "link_res_proc"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "link_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/link_res_src.yml",
+                    "nameroot": "link_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "link_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/link_res_schema.yml",
+                    "nameroot": "link_res_schema"
+                }
+            ],
+            "nameroot": "link_res"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/ident_res.yml",
+            "basename": "ident_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "ident_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/ident_res_schema.yml",
+                    "nameroot": "ident_res_schema"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "ident_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/ident_res_src.yml",
+                    "nameroot": "ident_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "ident_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/ident_res_proc.yml",
+                    "nameroot": "ident_res_proc"
+                }
+            ],
+            "nameroot": "ident_res"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/field_name.yml",
+            "basename": "field_name.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "field_name_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/field_name_proc.yml",
+                    "nameroot": "field_name_proc"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "field_name_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/field_name_schema.yml",
+                    "nameroot": "field_name_schema"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "field_name_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/field_name_src.yml",
+                    "nameroot": "field_name_src"
+                }
+            ],
+            "nameroot": "field_name"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/sfdsl_res.yml",
+            "basename": "sfdsl_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "sfdsl_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/sfdsl_res_src.yml",
+                    "nameroot": "sfdsl_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "sfdsl_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/sfdsl_res_schema.yml",
+                    "nameroot": "sfdsl_res_schema"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "sfdsl_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/sfdsl_res_proc.yml",
+                    "nameroot": "sfdsl_res_proc"
+                }
+            ],
+            "nameroot": "sfdsl_res"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/typedsl_res.yml",
+            "basename": "typedsl_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "typedsl_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/typedsl_res_schema.yml",
+                    "nameroot": "typedsl_res_schema"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "typedsl_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/typedsl_res_src.yml",
+                    "nameroot": "typedsl_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "typedsl_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/typedsl_res_proc.yml",
+                    "nameroot": "typedsl_res_proc"
+                }
+            ],
+            "nameroot": "typedsl_res"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/map_res.yml",
+            "basename": "map_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "map_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/map_res_src.yml",
+                    "nameroot": "map_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "map_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/map_res_schema.yml",
+                    "nameroot": "map_res_schema"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "map_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/map_res_proc.yml",
+                    "nameroot": "map_res_proc"
+                }
+            ],
+            "nameroot": "map_res"
+        },
+        {
+            "nameext": ".md",
+            "basename": "salad.md",
+            "class": "File",
+            "location": "../v1.2/salad/schema_salad/metaschema/salad.md",
+            "nameroot": "salad"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/vocab_res.yml",
+            "basename": "vocab_res.yml",
+            "secondaryFiles": [
+                {
+                    "nameext": ".yml",
+                    "basename": "vocab_res_proc.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/vocab_res_proc.yml",
+                    "nameroot": "vocab_res_proc"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "vocab_res_src.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/vocab_res_src.yml",
+                    "nameroot": "vocab_res_src"
+                },
+                {
+                    "nameext": ".yml",
+                    "basename": "vocab_res_schema.yml",
+                    "class": "File",
+                    "location": "../v1.2/salad/schema_salad/metaschema/vocab_res_schema.yml",
+                    "nameroot": "vocab_res_schema"
+                }
+            ],
+            "nameroot": "vocab_res"
+        },
+        {
+            "nameext": ".yml",
+            "class": "File",
+            "format": "https://www.iana.org/assignments/media-types/application/cwl",
+            "location": "../v1.2/salad/schema_salad/metaschema/metaschema_base.yml",
+            "basename": "metaschema_base.yml",
+            "nameroot": "metaschema_base"
+        }
+    ]
+}

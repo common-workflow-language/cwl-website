@@ -1,0 +1,30 @@
+- basename: Process.yml
+  class: File
+  location: ../v1.2/Process.yml
+  secondaryFiles:
+  - {basename: concepts.md, class: File, location: ../v1.2/concepts.md}
+  - basename: salad
+    class: Directory
+    listing:
+    - basename: schema_salad
+      class: Directory
+      listing:
+      - basename: metaschema
+        class: Directory
+        listing:
+        - {basename: metaschema_base.yml, class: File, location: ../v1.2/salad/schema_salad/metaschema/metaschema_base.yml}
+- basename: CommandLineTool.yml
+  class: File
+  location: ../v1.2/CommandLineTool.yml
+  secondaryFiles:
+  - {basename: contrib.md, class: File, location: ../v1.2/contrib.md}
+  - {basename: concepts.md, class: File, location: ../v1.2/concepts.md}
+  - {basename: invocation.md, class: File, location: ../v1.2/invocation.md}
+  - {basename: intro.md, class: File, location: ../v1.2/intro.md}
+- basename: Workflow.yml
+  class: File
+  location: ../v1.2/Workflow.yml
+  secondaryFiles:
+  - {basename: contrib.md, class: File, location: ../v1.2/contrib.md}
+  - {basename: concepts.md, class: File, location: ../v1.2/concepts.md}
+  - {basename: intro.md, class: File, location: ../v1.2/intro.md}
