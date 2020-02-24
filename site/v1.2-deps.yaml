@@ -28,3 +28,8 @@
   - {basename: contrib.md, class: File, location: ../v1.2/contrib.md}
   - {basename: concepts.md, class: File, location: ../v1.2/concepts.md}
   - {basename: intro.md, class: File, location: ../v1.2/intro.md}
+- basename: Operation.yml
+  class: File
+  location: ../v1.2/Operation.yml
+  secondaryFiles:
+  - {basename: contrib.md, class: File, location: ../v1.2/contrib.md}
