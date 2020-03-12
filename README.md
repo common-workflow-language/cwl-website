@@ -131,10 +131,9 @@ In Production:
 |[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
 |[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|Linux, OS X|
 |[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) ([OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
-|[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
-|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+
 
-In Development:
+
+Partial implementations:
 
 |Software|Description|Platform support|
 |--------|-----------|----------------|
@@ -142,11 +141,11 @@ In Development:
 |[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
 |[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon|[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine|
 |[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|AWS, OpenStack, Azure|
-|[Apache Taverna](https://taverna.incubator.apache.org/)|Domain-independent Workflow Management System|-|
 |[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.|-|
 |[yacle](https://github.com/otiai10/yacle)|Yet Another CWL Engine| local |
 |[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes|[Kubernetes](https://kubernetes.io)|
-
+|[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
+|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+
 
 ## Repositories of CWL Tools and Workflows
 
