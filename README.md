@@ -237,7 +237,7 @@ Partial implementations:
 ### Participating Organizations
 
 * [Arvados Project](https://arvados.org)
-* [Veritas Genetics](https://veritasgenetics.com)
+* [Curii](https://curii.com)
 * [Seven Bridges Genomics](https://www.sevenbridges.com/)
 * [Galaxy Project](https://galaxyproject.org/)
 * [Apache Taverna](https://taverna.incubator.apache.org/)
@@ -264,7 +264,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Robin Andeer; https://orcid.org/0000-0003-1132-5305
 * Brad Chapman; https://orcid.org/0000-0002-3026-1856
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
@@ -297,7 +297,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Artem Barski, Cincinnati Children's Hospital Medical Center / University of Cincinnati College of Medicine; https://orcid.org/0000-0002-1861-5316
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Kyle Cranmer, New York University; https://orcid.org/0000-0002-5769-7094
@@ -331,7 +331,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Michael R. Crusoe, CWL Project Lead; https://orcid.org/0000-0002-2961-9670
 * Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; https://orcid.org/0000-0001-7811-8613
