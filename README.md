@@ -157,6 +157,7 @@ Partial implementations:
 |[cwl-source](https://github.com/xDBio-Inc/cwl-source)|Git repository for collections of tools, workflows, metadata, and input parameter files. Administered by xD Bio Inc. Integrates with [truwl.com](https://truwl.com/)|
 |[GitHub](https://github.com/search?q=extension%3Acwl+cwlVersion)|Search for CWL documents using `extension:cwl cwlVersion + <your search terms>`, for example `extension:cwl cwlVersion picard`.|
 |[Google](https://www.google.com/search?q=filetype%3Acwl+cwlVersion)|Search for CWL documents using `filetype:cwl cwlVersion + <your search terms>`, for example `filetype:cwl cwlVersion picard`.|
+|[Workflow Hub](https://workflowhub.eu/workflows?filter%5Bworkflow_type%5D=CWL)|a European-wide registry of scientific workflows funded by EOSC-Life|
 
 ## Software for working with CWL
 
