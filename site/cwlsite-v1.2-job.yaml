@@ -5,7 +5,7 @@
   redirect: []
   renderlist: []
   source: {class: File, path: ../v1.2/index.md}
-  target: v1.2.0-dev3/index.html
+  target: v1.2.0-dev4/index.html
   extra: {class: File, path: empty}
 - brandimg: '<img src=''../CWL-Logo-Header.png'' style=''height: 61px; margin-top:
     -20px; margin-left: -20px''></img>'
@@ -17,7 +17,7 @@
     class: File
     path: ../v1.2/CommandLineTool-standalone.yml
     secondaryFiles: {$import: v1.2-deps.yaml}
-  target: v1.2.0-dev3/CommandLineTool.html
+  target: v1.2.0-dev4/CommandLineTool.html
   extra:
     class: File
     path: ../v1.2/cwl-runner.cwl
@@ -36,7 +36,7 @@
     class: File
     path: ../v1.2/CommonWorkflowLanguage.yml
     secondaryFiles: {$import: v1.2-deps.yaml}
-  target: v1.2.0-dev3/Workflow.html
+  target: v1.2.0-dev4/Workflow.html
   extra: {class: File, path: empty}
 - brandimg: '<img src=''../CWL-Logo-Header.png'' style=''height: 61px; margin-top:
     -20px; margin-left: -20px''></img>'
@@ -47,5 +47,5 @@
     'https://w3id.org/cwl/salad#SaladRecordSchema', 'https://w3id.org/cwl/salad#SaladEnumSchema',
     'https://w3id.org/cwl/salad#Documentation']
   source: {$import: v1.2-metaschema.yaml}
-  target: v1.2.0-dev3/SchemaSalad.html
+  target: v1.2.0-dev4/SchemaSalad.html
   extra: {class: File, path: empty}
