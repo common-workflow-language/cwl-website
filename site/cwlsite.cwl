@@ -107,6 +107,11 @@ steps:
       brand:      { source: render, valueFrom: $(self.brandimg) }
       primtype:   { source: render, valueFrom: $(self.primtype) }
       extra:      { source: render, valueFrom: $(self.extra) }
+      brandstyle:
+        default: |
+          <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css integrity=sha384-604wwakM23pEysLJAhja8Lm42IIwYrJ0dEAqzFsj9pJ/P5buiujjywArgPCi8eoz crossorigin="anonymous">
+          <link rel="shortcut icon"
+          href="https://www.commonwl.org/user_guide/assets/favicons/cwl/favicon-96x96.png">
     out: [html, targetdir, extra_out]
     run:  makedoc.cwl
 
