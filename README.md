@@ -31,7 +31,7 @@ margin-bottom: 1em;">
 <div><a href="#Contributers_and_Governance">Contributers and Governance</a></div>
 </div>
 
-<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.webp" type="image/webp"><img align="right"
+<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right"
 src="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.png" alt="Open Stand badge"></picture></a>
 
 The Common Workflow Language (CWL) is an open standard for describing analysis
