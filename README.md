@@ -2,8 +2,8 @@ Common Workflow Language
 ========================
 
 <div style="margin-bottom: 1em">
-<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
-<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars"></a>
+<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" width="99" height="20"></a>
+<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars" height="20"></a>
 <a href="#Support" style="padding-right: 1em"><b>CWL Community Support</b></a>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline;">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -32,7 +32,7 @@ margin-bottom: 1em;">
 </div>
 
 <a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right"
-src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.png" alt="Open Stand badge"></picture></a>
+src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
 
 The Common Workflow Language (CWL) is an open standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
@@ -54,7 +54,7 @@ the elected [CWL leadership team](#Leadership_Team), however every-day project d
 
 ## Getting Started
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.png"
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.png" width="413" height="193"
 alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
 
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
