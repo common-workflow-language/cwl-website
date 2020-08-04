@@ -205,6 +205,7 @@ Partial implementations:
 |[cwl-to-parsl](https://github.com/benhg/cwl-to-parsl)|Convert CWL to Parsl|
 |[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
 |[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
+|[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
 
 ### Code libraries
 
