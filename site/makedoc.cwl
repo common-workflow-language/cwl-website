@@ -33,6 +33,9 @@ inputs:
   brandlink:
     type: string
     inputBinding: {prefix: "--brandlink"}
+  brandstyle:
+    type: string
+    inputBinding: {prefix: "--brandstyle"}
   target:
     type: string
   primtype:

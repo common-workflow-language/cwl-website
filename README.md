@@ -2,8 +2,8 @@ Common Workflow Language
 ========================
 
 <div style="margin-bottom: 1em">
-<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter"></a>
-<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars"></a>
+<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" width="99" height="20"></a>
+<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars" height="20"></a>
 <a href="#Support" style="padding-right: 1em"><b>CWL Community Support</b></a>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline;">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -31,8 +31,8 @@ margin-bottom: 1em;">
 <div><a href="#Contributers_and_Governance">Contributers and Governance</a></div>
 </div>
 
-<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.webp" type="image/webp"><img align="right"
-src="https://github.com/common-workflow-language/cwl-website/raw/master/openstand-128x128-blue.png" alt="Open Stand badge"></picture></a>
+<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right"
+src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
 
 The Common Workflow Language (CWL) is an open standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
@@ -54,7 +54,7 @@ the elected [CWL leadership team](#Leadership_Team), however every-day project d
 
 ## Getting Started
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/master/intro_video_screenshot_413x193.png"
+<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.png" width="413" height="193"
 alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
 
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
@@ -98,7 +98,7 @@ Anyone who violates this code of conduct may be sanctioned or expelled from
 these spaces at the discretion of the leadership team.
 
 For more details, see our [Code of
-Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/master/CODE_OF_CONDUCT.md).
+Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md).
 
 ## Specification
 
@@ -157,6 +157,7 @@ Partial implementations:
 |[cwl-source](https://github.com/xDBio-Inc/cwl-source)|Git repository for collections of tools, workflows, metadata, and input parameter files. Administered by xD Bio Inc. Integrates with [truwl.com](https://truwl.com/)|
 |[GitHub](https://github.com/search?q=extension%3Acwl+cwlVersion)|Search for CWL documents using `extension:cwl cwlVersion + <your search terms>`, for example `extension:cwl cwlVersion picard`.|
 |[Google](https://www.google.com/search?q=filetype%3Acwl+cwlVersion)|Search for CWL documents using `filetype:cwl cwlVersion + <your search terms>`, for example `filetype:cwl cwlVersion picard`.|
+|[Workflow Hub](https://workflowhub.eu/workflows?filter%5Bworkflow_type%5D=CWL)|A registry for scientific workflows, sponsored by EOSC Life|
 
 ## Software for working with CWL
 
@@ -201,11 +202,11 @@ Partial implementations:
 |[acd2cwl](https://github.com/common-workflow-language/acd2cwl)|ACD (EMBOSS) to CWL generator|
 |[CTD converter](https://github.com/WorkflowConversion/CTDConverter)|Common Tool Definition (CTD) to CWL converter|
 |[scriptcwl](https://github.com/NLeSC/scriptcwl)|Create CWL workflows by writing a simple Python script|
-|[python-cwlgen](https://github.com/common-workflow-language/python-cwlgen)|Generate of CWL programmatically from Python.|
 |[cwl-to-parsl](https://github.com/benhg/cwl-to-parsl)|Convert CWL to Parsl|
 |[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
 |[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
 |[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
 
 ### Code libraries
 
@@ -238,7 +239,7 @@ Partial implementations:
 ### Participating Organizations
 
 * [Arvados Project](https://arvados.org)
-* [Veritas Genetics](https://veritasgenetics.com)
+* [Curii](https://curii.com)
 * [Seven Bridges Genomics](https://www.sevenbridges.com/)
 * [Galaxy Project](https://galaxyproject.org/)
 * [Apache Taverna](https://taverna.incubator.apache.org/)
@@ -265,7 +266,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Robin Andeer; https://orcid.org/0000-0003-1132-5305
 * Brad Chapman; https://orcid.org/0000-0002-3026-1856
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
@@ -298,7 +299,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Artem Barski, Cincinnati Children's Hospital Medical Center / University of Cincinnati College of Medicine; https://orcid.org/0000-0002-1861-5316
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Kyle Cranmer, New York University; https://orcid.org/0000-0002-5769-7094
@@ -332,7 +333,7 @@ Partial implementations:
 
 (Alphabetical)
 
-* Peter Amstutz, Veritas Genetics / Arvados Project; https://orcid.org/0000-0003-3566-7705
+* Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Michael R. Crusoe, CWL Project Lead; https://orcid.org/0000-0002-2961-9670
 * Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; https://orcid.org/0000-0001-7811-8613
