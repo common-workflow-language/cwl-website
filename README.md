@@ -103,9 +103,9 @@ Conduct](https://github.com/common-workflow-language/common-workflow-language/bl
 ## Specification
 
 For developers and advanced users, the current
-[CWL Standard (v1.1)](https://www.commonwl.org/v1.1/) provides
-authoritative documentation of the execution of CWL documents.  The previous version
-of the [CWL Standard (v1.0.2)](https://www.commonwl.org/v1.0/) is also available.
+[CWL Standards v1.2.0](https://www.commonwl.org/v1.2/) provides
+authoritative documentation of the execution of CWL documents.  The previous versions,
+[CWL Standards v1.0.2](https://www.commonwl.org/v1.0/) and [CWL Standards v1.1.0](https://www.commonwl.org/v1.1/), are also available.
 
 ### Citation
 
