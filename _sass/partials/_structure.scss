@@ -1,0 +1,16 @@
+body {
+  padding: 61px 0 0;
+}
+
+.table {
+	margin: 0 0 1.25rem;
+	
+	th,
+	td {
+		padding: 0.5rem;
+	}
+
+	thead th {
+		border-top: 0;
+	}
+}

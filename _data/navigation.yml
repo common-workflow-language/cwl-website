@@ -1,0 +1,17 @@
+toc:
+  - title: Getting Started
+    url: "/#Getting_Started"
+  - title: Support, Community and Contributing
+    url: "/#Support"
+  - title: Specification
+    url: "/#Specification"
+  - title: Implementations
+    url: "/#Implementations"
+  - title: Repositories of CWL Tools and Workflows
+    url: "/#Repositories_of_CWL_Tools_and_Workflows"
+  - title: Software for working with CWL
+    url: "/#Software_for_working_with_CWL"
+  - title: Projects the CWL community is participating in
+    url: "/#Projects_the_CWL_community_is_participating_in"
+  - title: Contributers and Governance
+    url: "/#Contributers_and_Governance"

@@ -1,0 +1,22 @@
+.home {
+	margin: 20px 0 0;
+}
+
+.social-bar {
+	margin: 0 0 0.875rem 0;	
+}
+
+.cwl-support {
+	padding-right: 1em;
+}
+
+.section {
+	a {
+		visibility: hidden;
+	}
+
+	&:hover a {
+		visibility: visible;
+		color: rgb(201, 201, 201);
+	}
+}
