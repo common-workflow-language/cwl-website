@@ -21,6 +21,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 
 * Organize homepage sections as jekyll collection, instead of includes
 * Reorganize SCSS code and filenames 
+	* Either integrate into minima, or get rid of it entirely
 * Convert content from HTML to Markdown, where practical
   * Homepage sections
 * Reorganize assets files, to ensure no broken links on deployment
@@ -31,6 +32,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 * Improve 404 Page(?)
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
+* Fix content width btwn 576-768px
 
 ## Notes
 
