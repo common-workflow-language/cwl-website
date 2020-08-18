@@ -2,19 +2,21 @@
 	background-color: #f8f8f8;
 	border-bottom: 1px solid #e7e7e7;
 	border-color: #e7e7e7;
+	border-top: 0;
 	left: 0;
 	margin: 0 auto 20px;
+	line-height: initial;
+	min-height: initial;
 	padding: 0;
 	position: fixed;
 	right: 0;
 	top: 0;
 	z-index: 100;
-}
 
-.site-header .container {
-	/*   border: 1px solid green; */
-	margin: 0 auto;
-	width: 1170px;
+	.container {
+		margin: 0 auto;
+		width: 1170px;		
+	}
 }
 
 .navbar-brand {
@@ -33,6 +35,7 @@
 	height: 61px;
 	margin-left: -20px;
 	margin-top: -20px;
+	max-width: unset;
 }
 
 .navbar-header {
