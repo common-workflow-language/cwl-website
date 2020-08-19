@@ -1,9 +1,9 @@
-# _site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor/bundle
-.editorconfig
-scratch
-*.sh
-*_archive*
+# # _site
+# .sass-cache
+# .jekyll-cache
+# .jekyll-metadata
+# vendor/bundle
+# .editorconfig
+# scratch
+# *.sh
+# *_archive*
