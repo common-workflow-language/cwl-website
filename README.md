@@ -29,7 +29,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 * Generate proper favicon files
 * Fill in SEO info
 * Improve Footer
-* Improve 404 Page(?)
+* Improve 404 Page. Make sure Footer stays on bottom
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
 * Fix content width btwn 576-768px
@@ -37,3 +37,4 @@ Rewrite and expansion of the CWL Website in Jekyll
 ## Notes
 
 * Homepage sections retain the `.html` extension instead of `.md`, so the `§` symbol behaves properly
+* Any URLs to the User Guide site have been left with the `https://commonwl.org/` stem instead of `{{ site.url }}`, since the User Guide isn't mirrored on the staging server (and thus the links would break)
