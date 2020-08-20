@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Common Workflow Language
+permalink: '/'
 ---
 
 <div class="social-bar">
