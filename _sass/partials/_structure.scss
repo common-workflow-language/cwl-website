@@ -1,6 +1,49 @@
-body {
-  padding: 61px 0 0;
+// body {
+//   padding: 61px 0 0;
+// }
+
+/**
+ * Fix for Sticky Footer
+ */
+.site-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	padding: 61px 0 0;
 }
+
+.content-wrapper {
+	// Double-check if these are equivalent
+	flex: 1 0 auto;
+	flex: 1;
+}
+
+/**
+ * Header Offset Fix for Anchor Links
+ */
+h2::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -65px; 
+  height: 65px; 
+  visibility: hidden; 
+  pointer-events: none;
+  z-index: 1;
+}
+
+h3::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -65px; 
+  height: 65px; 
+  visibility: hidden; 
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**
+ * Tables
+ */
 
 .table {
 	margin: 0 0 1.25rem;
