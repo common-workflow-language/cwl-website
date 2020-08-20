@@ -40,11 +40,11 @@ CWL is developed by a multi-vendor working group consisting of organizations and
 {% endfor %}
 {% endcomment %}
 
-{%- include home/getting-started.html -%}
-{%- include home/support-community-contributing.html -%}
-{%- include home/specification.html -%}
-{%- include home/implementation.html -%}
-{%- include home/repositories.html -%}
-{%- include home/software-for-working-with-cwl.html -%}
-{%- include home/projects.html -%}
-{%- include home/contributers-and-governance.html -%}
+{% include home/getting-started.html %}
+{% include home/support-community-contributing.html %}
+{% include home/specification.html %}
+{% include home/implementation.html %}
+{% include home/repositories.html %}
+{% include home/software-for-working-with-cwl.html %}
+{% include home/projects.html %}
+{% include home/contributers-and-governance.html %}
