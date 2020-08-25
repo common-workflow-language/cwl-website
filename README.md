@@ -54,7 +54,7 @@ the elected [CWL leadership team](#Leadership_Team), however every-day project d
 
 ## Getting Started
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/86eY8xs-Vo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div style="float: right; clear: right"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/86eY8xs-Vo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
