@@ -31,7 +31,8 @@ margin-bottom: 1em;">
 <div><a href="#Contributers_and_Governance">Contributers and Governance</a></div>
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/86eY8xs-Vo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right"
+src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
 
 The Common Workflow Language (CWL) is an open standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
@@ -53,8 +54,7 @@ the elected [CWL leadership team](#Leadership_Team), however every-day project d
 
 ## Getting Started
 
-<a href="https://www.youtube.com/watch?v=86eY8xs-Vo8"><picture><source srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp" type="image/webp" ><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.png" width="413" height="193"
-alt="[Video] Common Workflow Language explained in 64 seconds"></picture></a>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/86eY8xs-Vo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The [CWL user guide](https://www.commonwl.org/user_guide/) provides a
 gentle introduction to learning how to write CWL command line tool and workflow
