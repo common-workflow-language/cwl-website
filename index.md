@@ -11,7 +11,7 @@ permalink: '/'
 	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline;">
 		<input type="hidden" name="cmd" value="_s-xclick">
 		<input type="hidden" name="hosted_button_id" value="Z55VS5LBBSZTJ">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" width="92" height="26" name="submit" alt="Donate to Common Workflow Language via PayPal" style="position: relative; bottom: -6px;">
+		<input type="image" class="paypal-btn" src="{{ "/assets/img/donate-button2.png" | relative_url }}" name="submit" alt="Donate to Common Workflow Language via PayPal">
 	</form>
 </div>
 
