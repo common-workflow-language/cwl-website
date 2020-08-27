@@ -1,13 +1,32 @@
-title: Your awesome title
+# Welcome to Jekyll!
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: CWL Staging Site
 url: ""
 baseurl: "/cwl-staging"
 author:
-  name: GitHub User
-  email: your-email@domain.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  name: Common Workflow Language (CWL)
+  # email: your-email@domain.com
+description: >- # this means to ignore newlines until "baseurl:"
+  The Common Workflow Language (CWL) is an open standard for describing
+  analysis workflows and tools in a way that makes them portable and scalable
+  across a variety of software and hardware environments, from workstations
+  to cluster, cloud, and high performance computing (HPC) environments.
+  CWL is designed to meet the needs of data-intensive science, such as
+  Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and
+  Machine Learning.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -18,36 +37,11 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    # devto: jekyll
-    # dribbble: jekyll
-    # facebook: jekyll
-    # flickr:   jekyll
-    # instagram: jekyll
-    # linkedin: jekyll
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
-
-    # Mastodon instances
-    # mastodon:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
-
-    # GitLab instances
-    # gitlab:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
+    twitter: commonwl
+    github:  common-workflow-language
+    youtube: CommonWLorgStandard
+    youtube_channel: UCNQreTPvvlM0sdu2dL6Mm3Q
+    # youtube_channel_name: Common Workflow Language
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -57,9 +51,9 @@ minima:
 # Build settings
 theme: minima
 
-plugins:
- - jekyll-feed
- - jekyll-seo-tag
+# plugins:
+#  - jekyll-feed
+#  - jekyll-seo-tag
 
 sass:
   sass_dir: _sass
