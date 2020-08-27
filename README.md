@@ -16,15 +16,11 @@ Rewrite and expansion of the CWL Website in Jekyll
 * Accessibility & Performance Checks
 * Setup proper staging site
 * Add top nav
+	- Search Field is currently non-functional
 
 ### Video Player
 
-* Should this link back to the actual YT Channel? If so, how?
-* Wait - they currently have a YT Vid player up already?? I thought they didn't want that?!
-
-### PayPal Button
-
-* Edit with GIMP to make it 92px wide
+* Need to check in about the details around this again
 
 ## Improvements (Code)
 
@@ -40,6 +36,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
 * Fix content width btwn 576-768px
+* Search field is non-functional
 
 ## Deployment
 
