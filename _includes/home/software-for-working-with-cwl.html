@@ -1,204 +1,71 @@
-<h2 id="Software_for_working_with_CWL" class="section">Software for working with CWL <a href="https://www.commonwl.org/#Software_for_working_with_CWL">§</a></h2><h3 id="Editors_and_viewers" class="section">Editors and viewers <a href="https://www.commonwl.org/#Editors_and_viewers">§</a></h3><table class="table table-striped">
-<thead><tr>
-<th>Software</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/rabix/composer">Rabix Composer</a></td>
-<td>Graphical CWL editor</td>
-</tr>
-<tr>
-<td><a href="https://view.commonwl.org/">CWLviewer</a></td>
-<td>A web application to view and share Common Workflow Language workflows</td>
-</tr>
-<tr>
-<td><a href="https://github.com/manabuishii/language-cwl">atom-cwl</a></td>
-<td>CWL editing mode for Atom</td>
-</tr>
-<tr>
-<td><a href="https://github.com/manabuishii/vim-cwl">vim-cwl</a></td>
-<td>CWL editing mode for Vim</td>
-</tr>
-<tr>
-<td><a href="https://github.com/tom-tan/cwl-mode">cwl-mode</a></td>
-<td>CWL editing mode for Emacs (instructions <a href="https://qiita.com/tm_tn/items/6c9653847412d115bec0">english</a>, <a href="https://qiita.com/tm_tn/items/79eec754338d152b092d">日本語</a>)</td>
-</tr>
-<tr>
-<td><a href="https://github.com/manabuishii/vscode-cwl">vscode-cwl</a></td>
-<td>CWL support in Visual Studio Code</td>
-</tr>
-<tr>
-<td><a href="https://gitlab.com/AleksandrSl/cwl-plugin">IntelliJ CWL plugin</a></td>
-<td>CWL plugin for <a href="https://plugins.jetbrains.com/plugin/10040-cwl-plugin">IntelliJ and other JetBrains editors</a></td>
-</tr>
-<tr>
-<td><a href="http://biosyntax.org/">bioSyntax</a></td>
-<td>Includes CWL syntax highliting for <a href="https://wiki.gnome.org/Apps/Gedit">gedit</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rabix/benten">Rabix Benten</a></td>
-<td>A <a href="https://langserver.org/">language server</a> for CWL. Provides CWL code intelligence for VS Code, vim/neovim, Emacs, Acme, IntelliJ/JetBrains, <a href="https://langserver.org/#implementations-client">and others</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/TMiguelT/vue-cwl">vue-cwl</a></td>
-<td>Visualizer of CWL workflows for the <a href="https://vuejs.org/">Vue JavaScript framework</a> using <a href="https://github.com/rabix/cwl-svg">cwl-svg</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/tom-tan/cwl-for-remote-container-template">cwl-for-remote-container-template</a></td>
-<td>A template to write CWL documents with VSCode with remote container extension</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Utilities" class="section">Utilities <a href="https://www.commonwl.org/#Utilities">§</a></h3><table class="table table-striped">
-<thead><tr>
-<th>Software</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwldep">cwldep</a></td>
-<td>CWL dependency manager, for importing tool wrappers and workflows into your own project.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwltest">cwltest</a></td>
-<td>CWL testing framework,  automated testing of tools and workflows written with CWL</td>
-</tr>
-<tr>
-<td><a href="https://github.com/kloetzl/cwl2zshcomp">cwl2zshcomp</a></td>
-<td>generates ZSH auto completions from CWL command line tool descriptions</td>
-</tr>
-<tr>
-<td><a href="https://github.com/MD-Studio/cerise">Cerise</a></td>
-<td>A REST service for running CWL workflows on remote clusters</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/workflow-service">workflow-service</a></td>
-<td>An implementation of the <a href="https://github.com/ga4gh/workflow-execution-service-schemas">GA4GH Workflow Execution Service (WES)</a> API to run CWL workflows on remote clusters</td>
-</tr>
-<tr>
-<td><a href="https://github.com/tom-tan/cwl-inspector">cwl-inspector</a></td>
-<td>Tool to inspect properties of tools or workflows written in CWL</td>
-</tr>
-<tr>
-<td><a href="http://github.com/common-workflow-language/cwlprov-py">cwlprov-py</a></td>
-<td>Command line tool and Python API to explore <a href="https://w3id.org/cwl/prov/">CWLProv</a> Research Objects containing provenance of Common Workflow Language executions</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwl-utils">cwl-utils</a></td>
-<td>Example scripts using the new Python 3.6+ CWL parsing library</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Converters_and_code_generators" class="section">Converters and code generators <a href="https://www.commonwl.org/#Converters_and_code_generators">§</a></h3><table class="table table-striped">
-<thead><tr>
-<th>Software</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwl-upgrader">cwl-upgrader</a></td>
-<td>Upgrade CWL documents from draft-3 to v1.0</td>
-</tr>
-<tr>
-<td><a href="https://github.com/erasche/argparse2tool#cwl-specific-functionality">argparse2tool</a></td>
-<td>Generate CWL CommandLineTool wrappers (and/or Galaxy tool descriptions) from Python programs that use argparse.  Also supports the <a href="http://click.pocoo.org/5/">click</a> argument parser.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwl2argparse">cwl2argparse</a></td>
-<td>Generate Python argparse code from CWL CommandLineTool description.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/pypi2cwl">pypi2cwl</a></td>
-<td>Automatically run argparse2cwl on any package in PyPi</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/acd2cwl">acd2cwl</a></td>
-<td>ACD (EMBOSS) to CWL generator</td>
-</tr>
-<tr>
-<td><a href="https://github.com/WorkflowConversion/CTDConverter">CTD converter</a></td>
-<td>Common Tool Definition (CTD) to CWL converter</td>
-</tr>
-<tr>
-<td><a href="https://github.com/NLeSC/scriptcwl">scriptcwl</a></td>
-<td>Create CWL workflows by writing a simple Python script</td>
-</tr>
-<tr>
-<td><a href="https://github.com/benhg/cwl-to-parsl">cwl-to-parsl</a></td>
-<td>Convert CWL to Parsl</td>
-</tr>
-<tr>
-<td><a href="https://github.com/Parsoa/Beatrice">Beatrice</a></td>
-<td>Pipeline Assembler For CWL</td>
-</tr>
-<tr>
-<td><a href="https://github.com/tom-tan/zatsu-cwl-generator">zatsu-cwl-generator</a></td>
-<td>A simple CWL document generator from given execution commands</td>
-</tr>
-<tr>
-<td><a href="https://github.com/PMCC-BioinformaticsCore/janis">Janis</a></td>
-<td>A Python API that generates portable CWL and WDL workflows</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwl-utils">cwl-utils</a></td>
-<td>New Python 3.6+ CWL parsing library</td>
-</tr>
-</tbody>
-</table>
-<h3 id="Code_libraries" class="section">Code libraries <a href="https://www.commonwl.org/#Code_libraries">§</a></h3><table class="table table-striped">
-<thead><tr>
-<th>Software</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwltool">cwltool</a></td>
-<td>cwltool (can be <a href="https://www.commonwl.org/(https://github.com/common-workflow-language/cwltool#import-as-a-module">imported as a Python module</a>) and <a href="https://github.com/common-workflow-language/cwltool#extension-points">extended to create custom cwl runners</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/schema_salad">schema salad</a></td>
-<td>Python module and tools for working with the CWL schema.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/common-workflow-language/cwlavro">cwlavro</a></td>
-<td>Java classes for loading CWL documents</td>
-</tr>
-<tr>
-<td><a href="https://github.com/jefferys/cwl">CWL for R</a></td>
-<td>Parse and work with CWL from R</td>
-</tr>
-<tr>
-<td><a href="https://github.com/buchanae/cwl">buchanae/cwl</a></td>
-<td>CWL document parsing and processing utilities in Go.</td>
-</tr>
-<tr>
-<td><a href="https://github.com/otiai10/cwl.go">CWL for Go</a></td>
-<td>-</td>
-</tr>
-<tr>
-<td><a href="https://github.com/broadinstitute/cromwell/tree/develop/cwl/src/main/scala/cwl">CWL for Scala</a></td>
-<td>CWL object model for Scala</td>
-</tr>
-<tr>
-<td><a href="https://github.com/broadinstitute/cwl-proto">cwl-proto</a></td>
-<td>Reading and writing Common Workflow Language to Protocol Buffers</td>
-</tr>
-<tr>
-<td><a href="https://github.com/CBICA/CmdParser">CmdParser</a></td>
-<td>Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser</td>
-</tr>
-<tr>
-<td><a href="https://github.com/hubentu/Rcwl">Rcwl</a></td>
-<td>Build, read, write and run CWL in R</td>
-</tr>
-<tr>
-<td><a href="https://sbg.github.io/tidycwl/">tidycwl</a></td>
-<td>Tidy (R) Common Workflow Language Tools and Workflows</td>
-</tr>
-</tbody>
-</table>
+<h2 id="Software_for_working_with_CWL" class="section">Software for working with CWL <a href="#Software_for_working_with_CWL">§</a></h2>
+
+<h3 id="Editors_and_viewers" class="section">Editors and viewers <a href="#Editors_and_viewers">§</a></h3>
+
+{: .table .table-striped}
+|Software|Description|
+|--- |--- |
+|[Rabix Composer](https://github.com/rabix/composer)|Graphical CWL editor|
+|[CWLviewer](https://view.commonwl.org/)|A web application to view and share Common Workflow Language workflows|
+|[atom-cwl](https://github.com/manabuishii/language-cwl)|CWL editing mode for Atom|
+|[vim-cwl](https://github.com/manabuishii/vim-cwl)|CWL editing mode for Vim|
+|[cwl-mode](https://github.com/tom-tan/cwl-mode)|CWL editing mode for Emacs (instructions [english](https://qiita.com/tm_tn/items/6c9653847412d115bec0), [日本語](https://qiita.com/tm_tn/items/79eec754338d152b092d))|
+|[vscode-cwl](https://github.com/manabuishii/vscode-cwl)|CWL support in Visual Studio Code|
+|[IntelliJ CWL plugin](https://gitlab.com/AleksandrSl/cwl-plugin)|CWL plugin for [IntelliJ and other JetBrains editors](https://plugins.jetbrains.com/plugin/10040-cwl-plugin)|
+|[bioSyntax](http://biosyntax.org/)|Includes CWL syntax highliting for [gedit](https://wiki.gnome.org/Apps/Gedit)|
+|[Rabix Benten](https://github.com/rabix/benten)|A [language server](https://langserver.org/) for CWL. Provides CWL code intelligence for VS Code, vim/neovim, Emacs, Acme, IntelliJ/JetBrains, [and others](https://langserver.org/#implementations-client)|
+|[vue-cwl](https://github.com/TMiguelT/vue-cwl)|Visualizer of CWL workflows for the [Vue JavaScript framework](https://vuejs.org/) using [cwl-svg](https://github.com/rabix/cwl-svg)|
+|[cwl-for-remote-container-template](https://github.com/tom-tan/cwl-for-remote-container-template)|A template to write CWL documents with VSCode with remote container extension|
+
+
+<h3 id="Utilities" class="section">Utilities <a href="#Utilities">§</a></h3>
+
+{: .table .table-striped}
+|Software|Description|
+|--- |--- |
+|[cwldep](https://github.com/common-workflow-language/cwldep) |CWL dependency manager, for importing tool wrappers and workflows into your own project.|
+|[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
+|[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|generates ZSH auto completions from CWL command line tool descriptions|
+|[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
+|[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
+|[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
+|[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
+
+
+<h3 id="Converters_and_code_generators" class="section">Converters and code generators <a href="#Converters_and_code_generators">§</a></h3>
+
+{: .table .table-striped}
+|Software|Description|
+|--- |--- |
+|[cwl-upgrader](https://github.com/common-workflow-language/cwl-upgrader)|Upgrade CWL documents from draft-3 to v1.0|
+|[argparse2tool](https://github.com/erasche/argparse2tool#cwl-specific-functionality) |Generate CWL CommandLineTool wrappers (and/or Galaxy tool descriptions) from Python programs that use argparse.  Also supports the [click](http://click.pocoo.org/5/) argument parser.|
+|[cwl2argparse](https://github.com/common-workflow-language/cwl2argparse)|Generate Python argparse code from CWL CommandLineTool description.|
+|[pypi2cwl](https://github.com/common-workflow-language/pypi2cwl)|Automatically run argparse2cwl on any package in PyPi|
+|[acd2cwl](https://github.com/common-workflow-language/acd2cwl)|ACD (EMBOSS) to CWL generator|
+|[CTD converter](https://github.com/WorkflowConversion/CTDConverter)|Common Tool Definition (CTD) to CWL converter|
+|[scriptcwl](https://github.com/NLeSC/scriptcwl)|Create CWL workflows by writing a simple Python script|
+|[cwl-to-parsl](https://github.com/benhg/cwl-to-parsl)|Convert CWL to Parsl|
+|[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
+|[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
+|[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
+
+
+
+<h3 id="Code_libraries" class="section">Code libraries <a href="#Code_libraries">§</a></h3>
+
+{: .table .table-striped}
+|Software|Description|
+|--- |--- |
+|[cwltool](https://github.com/common-workflow-language/cwltool)|cwltool (can be [imported as a Python module](https://www.commonwl.org/(https://github.com/common-workflow-language/cwltool#import-as-a-module)) and [extended to create custom cwl runners](https://github.com/common-workflow-language/cwltool#extension-points)|
+|[schema salad](https://github.com/common-workflow-language/schema_salad)|Python module and tools for working with the CWL schema.|
+|[cwlavro](https://github.com/common-workflow-language/cwlavro)|Java classes for loading CWL documents|
+|[CWL for R](https://github.com/jefferys/cwl)|Parse and work with CWL from R|
+|[buchanae/cwl](https://github.com/buchanae/cwl)|CWL document parsing and processing utilities in Go.|
+|[CWL for Go](https://github.com/otiai10/cwl.go)|-|
+|[CWL for Scala](https://github.com/broadinstitute/cromwell/tree/develop/cwl/src/main/scala/cwl)|CWL object model for Scala|
+|[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
+|[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
+|[Rcwl](https://github.com/hubentu/Rcwl)|Build, read, write and run CWL in R|
+|[tidycwl](https://sbg.github.io/tidycwl/)|Tidy (R) Common Workflow Language Tools and Workflows|

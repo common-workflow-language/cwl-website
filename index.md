@@ -1,20 +1,11 @@
 ---
 layout: home
 title: Common Workflow Language
+permalink: '/'
 ---
 
-<div class="social-bar">
-	<a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" width="99" height="20"></a>
-	<a href="https://github.com/common-workflow-language/common-workflow-language/stargazers" style="padding-right: 1em"><img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars" height="20"></a>
-	<a href="{{ site.url }}/#Support" class="cwl-support"><b>CWL Community Support</b></a>
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline;">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="Z55VS5LBBSZTJ">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" width="92" height="26" name="submit" alt="Donate to Common Workflow Language via PayPal" style="position: relative; bottom: -6px;">
-	</form>
-</div>
-
-{%- include nav.html -%}
+{%- include social_stats.html -%}
+{%- include nav_toc.html -%}
 
 <p><a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right" src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a></p>
 
@@ -39,11 +30,12 @@ CWL is developed by a multi-vendor working group consisting of organizations and
 {% endfor %}
 {% endcomment %}
 
-{%- include home/getting-started.html -%}
-{%- include home/support-community-contributing.html -%}
-{%- include home/specification.html -%}
-{%- include home/implementation.html -%}
-{%- include home/repositories.html -%}
-{%- include home/software-for-working-with-cwl.html -%}
-{%- include home/projects.html -%}
-{%- include home/contributers-and-governance.html -%}
+{% include home/getting-started.html %}
+{% include twitter_feed.html %}
+{% include home/support-community-contributing.html %}
+{% include home/specification.html %}
+{% include home/implementation.html %}
+{% include home/repositories.html %}
+{% include home/software-for-working-with-cwl.html %}
+{% include home/projects.html %}
+{% include home/contributers-and-governance.html %}
