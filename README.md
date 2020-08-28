@@ -19,7 +19,7 @@ Note: the majority of the checked-off items are completed wrt functionality, and
 * [ ] Donations sub-page
 * [x] ~~Footer~~
 * [x] ~~Latest Tweets~~
-* [ ] Accessibility & Performance Checks
+* [x] Accessibility & Performance Checks
 * [x] Setup staging site
 	* [ ] Setup non-GitHub Pages staging site
 * [x] Add top nav
