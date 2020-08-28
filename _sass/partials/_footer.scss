@@ -1,4 +1,13 @@
 .site-footer {
   background-color: #f5ecdf;
   padding: 10px 0 0;
+
+  a {
+
+    color: #005285;
+
+    &:hover {
+      color: #22527c;      
+    }
+  }
 }

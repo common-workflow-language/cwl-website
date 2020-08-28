@@ -2,23 +2,36 @@
 
 Rewrite and expansion of the CWL Website in Jekyll
 
+## Issues
+
+* Mobile Nav Menu needs alignment fixing
+
 ## Tasks & Ideas
 
-Note: the majority of the checked-off items are stil scratch versions and are not the completed product.
+Note: the majority of the checked-off items are completed wrt functionality, and not content. Some are still rough/scratch versions and are not the completed product.
 
 * [x] Split website into multiple pages
 * [x] Create video player for embedded vids
   * [x] Subtitles
-  * [ ] Full screen button
-* [ ] Explanatory button(?)
+  * [x] Full screen button
 * [x] ~~Nicer PayPal Button~~
+* [ ] Explanatory button(?)
 * [ ] Donations sub-page
 * [x] ~~Footer~~
 * [x] ~~Latest Tweets~~
 * [ ] Accessibility & Performance Checks
-* [ ] Setup proper staging site
+* [x] Setup staging site
+	* [ ] Setup non-GitHub Pages staging site
 * [x] Add top nav
 	* Search Field is currently non-functional
+
+### Content Needed
+
+* Explanatory Button(?)
+* Page Division/Top Nav
+* Footer Text
+* Donations Page?
+* SEO details (see `_config.yml` and [jekyll-seo-tag - Usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) for options)
 
 ### Video Player
 
@@ -38,104 +51,34 @@ Note: the majority of the checked-off items are stil scratch versions and are no
 
 Note: *Implementations* should be plural
 
-### Section/Page Divisions
+### Suggested Page Section Divisions
+
+Possible grouping structure, based on related sections:
 
 1. Getting Started, Community Support, Specification
 2. Implementations, Repos & Software
 3. Projects, Contributers & Governance
 
-Alternate Option:
-
-1. Getting Started, Community Support, Specification
-2. Implementations, Repos & Software, Projects
-3. Contributers & Governance
-
-### Top Nav
-
-* top-nav.yml file not in use. top_nav.html file is in use
-
-Alternate structures:
-
-```yaml
-header_extra:
-  - title: Projects
-    url: "#"
-    type: dropdown
-    subfolderitems:
-      - page: About
-        url: "/#about"
-      - page: Overview
-        url: "/#overview"
-      - page: Guidelines
-        url: "/#guidelines"
-      - page: Project Websites
-        type: "seperator"
-        url: "sep"
-      - page: Harvard PGP
-        url: "https://pgp.med.harvard.edu/"
-      - page: PGP Canada
-        url: "https://personalgenomes.ca/"
-      - page: PGP UK
-        url: "https://www.personalgenomes.org.uk/"
-      - page: Genom Austria
-        url: "http://genomaustria.at/das-projekt/"
-  - title: News
-    url: "/news"
-  - title: Blog
-    url: "/blog"
-  - title: Contact
-    url: "/contact/"
-```
-
-```yaml
-- title: Getting Started
-  url: "/getting-started"
-  type: dropdown
-  sublinks:
-    - title: Getting Started
-      url: "/getting-started"
-    - title: Support, Community and Contributing
-      url: "/getting-started#support"
-    - title: Specification
-      url: "/getting-started#specification"
-- title: Implementations
-  url: "/Implementations"
-  type: dropdown
-  sublinks:
-    - title: Implementations
-      url: "/implementations"
-    - title: Repositories
-      url: "/implementations#repos"
-    - title: Software
-      url: "/implementations#software"
-- title: Community Projects
-  url: "/projects/"
-  sublinks:
-    - title: Projects
-      url: "/projects"
-    - title: Contributers & Governance
-      url: "contributers-and-governance"
-```
-
 ## Improvements (Code)
 
-* Organize homepage sections as jekyll collection, instead of includes
-* Reorganize SCSS code and filenames 
-	* Either integrate into Minima's structure, or get rid of Minima entirely
-* Reorganize assets files, to ensure no broken links on deployment
+* Reorganize assets files, to ensure SEO link consistency on deployment
 	* Otherwise setup 301 Redirects
 * Generate proper favicon files
+	* Should be at least 260x260px
 * Fill in SEO info
-* Improve Footer
 * Improve 404 Page. Make sure Footer stays on bottom
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
 * Fix content width btwn 576-768px
 * Search field is non-functional
+* Check Aria Roles
 
 ## Deployment
 
+* Setup proper staging site (not on GitHub pages)
 * Reactivate `jekyll-seo-tag`
+* Ensure SEO link consistency
+* Google Analytics
 
 ## Notes
 
