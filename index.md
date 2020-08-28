@@ -41,6 +41,9 @@ CWL is developed by a multi-vendor working group consisting of organizations and
 {% endcomment %}
 
 {% include home/getting-started.html %}
+
+<div class="twitter-feed"><a class="twitter-timeline" data-width="280" data-height="600" data-dnt="true" data-theme="light" href="https://twitter.com/commonwl?ref_src=twsrc%5Etfw">Tweets by commonwl</a></div> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 {% include home/support-community-contributing.html %}
 {% include home/specification.html %}
 {% include home/implementation.html %}
