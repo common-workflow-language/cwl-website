@@ -15,7 +15,7 @@ permalink: '/'
 	</form>
 </div>
 
-{%- include nav.html -%}
+{%- include nav_toc.html -%}
 
 <p><a href="https://open-stand.org/about-us/principles"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img align="right" src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a></p>
 
