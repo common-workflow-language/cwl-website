@@ -1,51 +1,51 @@
 .home {
-	margin: 20px 0 0;
+  margin: 20px 0 0;
 }
 
 .social-bar {
-	margin: 0 0 0.875rem 0;	
+  margin: 0 0 0.875rem 0; 
 }
 
 .cwl-support {
-	padding-right: 1em;
+  padding-right: 1em;
 }
 
 .section {
-	a {
-		visibility: hidden;
-	}
+  a {
+    visibility: hidden;
+  }
 
-	&:hover a {
-		visibility: visible;
-		color: rgb(201, 201, 201);
-	}
+  &:hover a {
+    visibility: visible;
+    color: rgb(201, 201, 201);
+  }
 }
 
 .social-bar {
-	align-items: center;
-	display: flex;
-	margin: 17px 0 11px;
+  align-items: center;
+  display: flex;
+  margin: 17px 0 11px;
 }
 
 .paypal-btn {
-	bottom: -6px;
-	bottom: 0;
-	height: 26px;
-	position: relative;
-	vertical-align: middle;
+  bottom: -6px;
+  bottom: 0;
+  height: 26px;
+  position: relative;
+  vertical-align: middle;
 }
 
 .cwl-intro-video {
-	float: right;
-	height: 193px;
-	margin: 0 0 0 26px;
-	width: 413px;
+  float: right;
+  height: 193px;
+  margin: 0 0 0 26px;
+  width: 413px;
 }
 
 
 // Twitter Feed
 .twitter-feed {
-    float: right;
-    clear: both;
-    margin: 38px 0 0 26px;
+  float: right;
+  clear: both;
+  margin: 38px 0 0 26px;
 }

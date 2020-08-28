@@ -6,16 +6,16 @@
  * Fix for Sticky Footer
  */
 .site-wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	padding: 61px 0 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 61px 0 0;
 }
 
 .content-wrapper {
-	// Double-check if these are equivalent
-	flex: 1 0 auto;
-	flex: 1;
+  // Double-check if these are equivalent
+  flex: 1 0 auto;
+  flex: 1;
 }
 
 /**
@@ -46,14 +46,14 @@ h3::before {
  */
 
 .table {
-	margin: 0 0 1.25rem;
-	
-	th,
-	td {
-		padding: 0.5rem;
-	}
+  margin: 0 0 1.25rem;
+  
+  th,
+  td {
+    padding: 0.5rem;
+  }
 
-	thead th {
-		border-top: 0;
-	}
+  thead th {
+    border-top: 0;
+  }
 }

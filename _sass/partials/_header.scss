@@ -1,43 +1,55 @@
 .site-header {
-	background-color: #f8f8f8;
-	border-bottom: 1px solid #e7e7e7;
-	border-color: #e7e7e7;
-	border-top: 0;
-	left: 0;
-	margin: 0 auto 20px;
-	line-height: initial;
-	min-height: initial;
-	padding: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: 100;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e7e7e7;
+  border-color: #e7e7e7;
+  border-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  left: 0;
+  line-height: initial;
+  margin: 0 auto 20px;
+  min-height: initial;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
 
-	.container {
-		margin: 0 auto;
-		width: 1170px;		
-	}
+  .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1170px;
+  }
 }
 
-.navbar-brand {
-	/*     display: block; */
-	display: block;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	height: 50px;
-	line-height: 20px;
-	margin: 0 auto 0 -15px;
-	padding: 15px;
+.logo-container {
+  float: left;
+}
+
+.logo-link {
+  display: block;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 50px;
+  line-height: 20px;
+  margin: 0 auto 0 -15px;
+  padding: 15px;
 }
 
 .site-logo {
-	/* margin: 0 0 0 -20px; */
-	display: block;
-	height: 61px;
-	margin-left: -20px;
-	margin-top: -20px;
-	max-width: unset;
+  /* margin: 0 0 0 -20px; */
+  display: block;
+  height: 61px;
+  margin-left: -20px;
+  margin-top: -20px;
+  max-width: unset;
 }
 
 .navbar-header {
-	float: left;
+  float: left;
 }
+
