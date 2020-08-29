@@ -1,3 +1,5 @@
+<!-- Updating this? Then check https://github.com/common-workflow-language/common-workflow-language/blob/main/README.md to see if some of the changes need to be made there as well. Thanks! -->
+
 Common Workflow Language
 ========================
 
