@@ -1,7 +1,7 @@
-<!-- Updating this? Then check https://github.com/common-workflow-language/common-workflow-language/blob/main/README.md to see if some of the changes need to be made there as well. Thanks! -->
-
 Common Workflow Language
 ========================
+
+<!-- Updating this? Then check https://github.com/common-workflow-language/common-workflow-language/blob/main/README.md to see if some of the changes need to be made there as well. Thanks! -->
 
 <div style="margin-bottom: 1em">
 <a href="https://gitter.im/common-workflow-language/common-workflow-language?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge" style="padding-right: 1em"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter" width="99" height="20"></a>
