@@ -190,6 +190,7 @@ Partial implementations:
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
+|[looper](http://looper.databio.org/)|job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
 
 
 ### Converters and code generators
