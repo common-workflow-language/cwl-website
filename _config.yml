@@ -49,11 +49,20 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
+# theme: minima
 
-# plugins:
-#  - jekyll-feed
-#  - jekyll-seo-tag
+plugins:
+ - jekyll-autoprefixer
+ # - jekyll-seo-tag
+
+exclude:
+  - archive
+  - _archive/
+  - scratch/
+  - _scratch/
+  - README.md
+  - Notes
+  - "*.zip"
 
 sass:
   sass_dir: _sass

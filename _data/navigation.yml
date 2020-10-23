@@ -1,31 +1,31 @@
 header:
   - title: Getting Started
-    url: "/getting-started"
+    url: "/#getting-started"
     type: dropdown
     subfolderitems:
       - page: Getting Started
-        url: "/getting-started"
+        url: "/#getting-started"
       - page: Support, Community and Contributing
-        url: "/getting-started#support"
+        url: "/#support"
       - page: Specification
-        url: "/getting-started#specification"
+        url: "/#specification"
   - title: Implementations
     url: "/Implementations"
     type: dropdown
     subfolderitems:
       - page: Implementations
-        url: "/implementations"
+        url: "/#implementations"
       - page: Repositories
-        url: "/implementations#repos"
+        url: "/#implementations#repos"
       - page: Software
-        url: "/implementations#software"
+        url: "/#implementations#software"
   - title: Community Projects
     url: "/projects/"
     subfolderitems:
       - page: Projects
-        url: "/projects"
+        url: "/#projects"
       - page: Contributers & Governance
-        url: "contributers-and-governance"
+        url: "#contributers-and-governance"
 
 toc:
   - title: Getting Started

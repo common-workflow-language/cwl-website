@@ -6,6 +6,10 @@ Rewrite and expansion of the CWL Website in Jekyll
 
 * Mobile Nav Menu needs alignment fixing
 
+### Local
+
+* Having issues with running github-pages plugin and/or jekyll-redirect-from
+
 ## Tasks & Ideas
 
 Note: the majority of the checked-off items are completed wrt functionality, and not content. Some are still rough/scratch versions and are not the completed product.
@@ -61,10 +65,6 @@ Possible grouping structure, based on related sections:
 
 ## Improvements (Code)
 
-* Reorganize assets files, to ensure SEO link consistency on deployment
-	* Otherwise setup 301 Redirects
-* Generate proper favicon files
-	* Should be at least 260x260px
 * Fill in SEO info
 * Improve 404 Page. Make sure Footer stays on bottom
 * Rename implementation.html to implementations.html
@@ -75,9 +75,11 @@ Possible grouping structure, based on related sections:
 
 ## Deployment
 
+* Reorganize assets files, to ensure SEO link consistency on deployment
+	* Otherwise setup 301 Redirects
 * Setup proper staging site (not on GitHub pages)
 * Reactivate `jekyll-seo-tag`
-* Ensure SEO link consistency
+* Ensure SEO link consistency (i.e. no 404s, same urls, etc)
 * Google Analytics
 
 ## Notes

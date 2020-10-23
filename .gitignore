@@ -7,3 +7,4 @@ vendor/bundle
 scratch
 *.sh
 *_archive*
+*_scratch/*
