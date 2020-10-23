@@ -4,7 +4,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 
 ## Issues
 
-* Mobile Nav Menu needs alignment fixing
+* Mobile Nav Menu needs serious alignment fixing
 
 ### Local
 
@@ -66,7 +66,6 @@ Possible grouping structure, based on related sections:
 ## Improvements (Code)
 
 * Fill in SEO info
-* Improve 404 Page. Make sure Footer stays on bottom
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
 * Fix content width btwn 576-768px
