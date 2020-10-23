@@ -324,7 +324,6 @@ Partial implementations:
 * Tibor Simko, CERN, https://orcid.org/0000-0001-7202-5803
 * Nihar Sheth, DNAnexus; https://orcid.org/0000-0003-4128-4364
 * Stian Soiland-Reyes, University of Manchester; https://orcid.org/0000-0001-9842-9718
-* James Taylor, Johns Hopkins University / Galaxy Project; https://orcid.org/0000-0001-5079-840X
 * Nebojša Tijanić, Seven Bridges
 * Ward Vandewege, Curoverse Inc. / Arvados; https://orcid.org/0000-0002-2527-6949
 * Alexander Wait Zaranek, Curoverse Inc. / Arvados; https://orcid.org/0000-0002-0415-9655
