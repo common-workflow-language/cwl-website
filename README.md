@@ -216,7 +216,7 @@ Partial implementations:
 |--------|-----------|
 |[cwltool](https://github.com/common-workflow-language/cwltool)|cwltool (can be [imported as a Python module]((https://github.com/common-workflow-language/cwltool#import-as-a-module)) and [extended to create custom cwl runners](https://github.com/common-workflow-language/cwltool#extension-points)|
 |[schema salad](https://github.com/common-workflow-language/schema_salad)|Python module and tools for working with the CWL schema.|
-|[cwlavro](https://github.com/common-workflow-language/cwlavro)|Java classes for loading CWL documents|
+|[cwljava](https://github.com/common-workflow-language/cwljava)|Java classes for loading, modifying, and creating CWL v1.2 documents|
 |[CWL for R](https://github.com/jefferys/cwl)|Parse and work with CWL from R|
 |[buchanae/cwl](https://github.com/buchanae/cwl)|CWL document parsing and processing utilities in Go.|
 |[CWL for Go](https://github.com/otiai10/cwl.go)|-|
