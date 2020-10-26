@@ -39,7 +39,11 @@ src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-
 The Common Workflow Language (CWL) is an open standard for describing analysis
 workflows and tools in a way that makes them portable and scalable across a
 variety of software and hardware environments, from workstations to cluster,
-cloud, and high performance computing (HPC) environments.  CWL is designed to
+cloud, and high performance computing (HPC) environments.
+
+CWL is for dataflow style batch analysis, where the units of processing are command line programs.
+
+CWL is designed to
 meet the needs of data-intensive science, such as Bioinformatics, Medical
 Imaging, Astronomy, High Energy Physics, and Machine Learning.
 
