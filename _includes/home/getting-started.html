@@ -4,13 +4,7 @@
       <source srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp" type="image/webp"><img align="right" srcset="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.png" width="413" height="193" alt="[Video] Common Workflow Language explained in 64 seconds"></picture>
   </a></p> -->
 
-<video class="cwl-intro-video" width="413" height="193" controls poster="https://github.com/common-workflow-language/logo/raw/main/intro_video_screenshot_413x193.webp">
-  <source src="{{ "/assets/video/cwl-intro-video.mp4" | relative_url }}" type="video/mp4">
-  <track src="{{ "/assets/video/subtitles.vtt" | relative_url }}" label="English" kind="captions" srclang="en-us" default >
-  <track src="{{ "/assets/video/subtitles2.vtt" | relative_url }}" label="French" kind="captions" srclang="fr_FR" default >
-
-Your browser does not support the video tag.
-</video>
+{% include video-player.html %}
 
 The [CWL user guide]({{ site.url }}/user_guide/) provides a gentle introduction to learning how to write CWL command line tool and workflow descriptions.
 
