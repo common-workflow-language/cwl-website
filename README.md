@@ -329,15 +329,14 @@ Partial implementations:
 * Oliver Hofmann, University of Melbourne / bcbio-nextgen; https://orcid.org/0000-0002-7738-1513
 * Hervé Ménager, Institut Pasteur; https://orcid.org/0000-0002-7552-1009
 * Folker Meyer, Argonne / University of Chicago; https://orcid.org/0000-0003-1112-2284
-* Tom Morris, Curoverse; https://orcid.org/0000-0003-0435-7851
 * Anton Nekrutenko, The Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-5987-8032
 * Brian O'Connor, University of California Santa Cruz; https://orcid.org/0000-0002-7681-6415
 * Tibor Simko, CERN, https://orcid.org/0000-0001-7202-5803
 * Nihar Sheth, DNAnexus; https://orcid.org/0000-0003-4128-4364
 * Stian Soiland-Reyes, University of Manchester; https://orcid.org/0000-0001-9842-9718
 * Nebojša Tijanić, Seven Bridges
-* Ward Vandewege, Curoverse Inc. / Arvados; https://orcid.org/0000-0002-2527-6949
-* Alexander Wait Zaranek, Curoverse Inc. / Arvados; https://orcid.org/0000-0002-0415-9655
+* Ward Vandewege, Curii / Arvados; https://orcid.org/0000-0002-2527-6949
+* Alexander Wait Zaranek, Curii / Arvados; https://orcid.org/0000-0002-0415-9655
 
 
 <a name="Leadership_Team"></a>
