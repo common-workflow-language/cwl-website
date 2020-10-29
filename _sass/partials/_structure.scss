@@ -18,6 +18,33 @@
   flex: 1;
 }
 
+.container-md,
+.container {
+  max-width: initial;
+}
+
+@include media-breakpoint-up(md) {
+  .container-md,
+  .container {
+    max-width: 750px;
+  }
+}
+
+// Content-Area Width
+@include media-breakpoint-up(lg) {
+  .container-lg,
+  .container {
+    max-width: 970px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container-xl,
+  .container {
+    max-width: 1170px;
+  }
+}
+
 /**
  * Header Offset Fix for Anchor Links
  */
