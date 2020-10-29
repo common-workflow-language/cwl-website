@@ -3,49 +3,144 @@
 }
 
 .social-bar {
-  margin: 0 0 0.875rem 0; 
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 17px 0 11px;
+
+  a,
+  form {
+    // margin: 0 0 6px;
+    margin: 0 6px 6px;
+  }
 }
 
 .cwl-support {
-  padding-right: 1em;
+  font-weight: 700;
+  padding: 0 1rem 0 0;
+  // padding-right: 1em;
 }
 
+@include media-breakpoint-up(sm) {
+  .cwl-support {
+    padding: 0;
+  }
+}
 .section {
   a {
     visibility: hidden;
   }
 
   &:hover a {
-    visibility: visible;
     color: rgb(201, 201, 201);
+    visibility: visible;
   }
 }
 
-.social-bar {
-  align-items: center;
-  display: flex;
-  margin: 17px 0 11px;
-}
-
 .paypal-btn {
-  bottom: -6px;
+  // bottom: -6px;
   bottom: 0;
   height: 26px;
   position: relative;
   vertical-align: middle;
 }
 
-.cwl-intro-video {
-  float: right;
-  height: 193px;
-  margin: 0 0 0 26px;
-  width: 413px;
+.toc-nav-container {
+  background-color: $toc--background-color;
+  border: 1px solid $toc--border-color;
+  border-radius: 6px;
+  // border: 5px;
+  color: $blue;
+  float: left;
+  line-height: 1.45;
+  margin-bottom: 1em;
+  margin-right: 1.5em;
+  padding: 1em;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+
+    color: #005285;
+
+    &:hover {
+      color: #22527c;
+    }
+  }
 }
+
+.intro-container p {
+  word-break: break-word;
+}
+
+.open-stand img {
+  margin: 0 0 16px;
+}
+
+@include media-breakpoint-up(sm) {
+  .open-stand {
+    float: right;
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.youtube-container {
+  clear: right;
+  float: right;
+  width: 100%;
+
+  iframe {
+    max-width: 100%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .youtube-container {
+    margin: 0 0 0 36px;
+    width: 50%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .youtube-container {
+    margin: 0 0 0 36px;
+    width: 500px;
+  }
+}
+
+// .cwl-intro-video {
+//   float: right;
+//   height: 193px;
+//   margin: 0 0 0 26px;
+//   width: 413px;
+// }
 
 
 // Twitter Feed
 .twitter-feed {
-  float: right;
   clear: both;
-  margin: 38px 0 0 26px;
+  // margin: 38px 26px;
+  // width: 90%;
+  // float: left;
+  // margin: 38px 0;
+  width: 80%;
+
+  // iframe {
+  //   width: 100% !important;
+  // }
+}
+
+@include media-breakpoint-up(sm) {
+  .twitter-feed {
+    float: right;
+    margin: 0 0 0 36px;
+    width: initial;
+  }
 }

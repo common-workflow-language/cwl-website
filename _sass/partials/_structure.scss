@@ -78,9 +78,23 @@ h3::before {
   th,
   td {
     padding: 0.5rem;
+    width: 30%;
   }
 
   thead th {
     border-top: 0;
+  }
+
+  a {
+    word-break: break-all;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .table {
+    th,
+    td {
+      width: initial;
+    }
   }
 }

@@ -2,9 +2,12 @@
 
 Rewrite and expansion of the CWL Website in Jekyll
 
-## Issues
+## Staging Issues
 
-* Mobile Nav Menu needs alignment fixing
+* Favicon
+* Fix Header Anchor Link IDs
+* Footer Needs Padding on smaller screens
+  * Footer color could be better
 
 ## Tasks & Ideas
 
@@ -61,24 +64,31 @@ Possible grouping structure, based on related sections:
 
 ## Improvements (Code)
 
-* Reorganize assets files, to ensure SEO link consistency on deployment
+* **Reorganize assets files, to ensure SEO link consistency on deployment**
 	* Otherwise setup 301 Redirects
 * Generate proper favicon files
 	* Should be at least 260x260px
-* Fill in SEO info
+* Fill in SEO info in _config.yml
 * Improve 404 Page. Make sure Footer stays on bottom
 * Rename implementation.html to implementations.html
 * Remove incorrect links like `<p><a name="Leadership_Team"></a></p>`
 * Fix content width btwn 576-768px
 * Search field is non-functional
-* Check Aria Roles
+* Should I use mixins at the bottom of the file, or within classes?
+
 
 ## Deployment
 
+* **Reorganize assets files, to ensure SEO link consistency on deployment**
+  * Otherwise setup 301 Redirects
 * Setup proper staging site (not on GitHub pages)
 * Reactivate `jekyll-seo-tag`
 * Ensure SEO link consistency
 * Google Analytics
+* Remove the `<meta name="robots" content="noindex" />` from head.html
+* Check Aria Roles
+
+
 
 ## Notes
 
