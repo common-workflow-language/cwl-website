@@ -1,14 +1,13 @@
 <header class="site-header">
   <div class="container">
-    <div class="logo-container">
-      <a class="logo-link" href="{{ site.url }}{{ site.baseurl }}"><img class="site-logo" src="{{ "/CWL-Logo-Header.png" | relative_url }}" alt="Common Workflow Language logo"></a>
-    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light top-nav">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="nav-wrap">
+      <a class="navbar-brand site-logo-link" href="{{ site.url }}{{ site.baseurl }}"><img class="site-logo-img" src="{{ "/CWL-Logo-Header.png" | relative_url }}" alt="Common Workflow Language logo"></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button></div>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+      <div class="collapse navbar-collapse" id="topNav"> 
         {% include top_nav.html %}
 
         <form class="form-inline my-2 my-lg-0 search-bar-top">

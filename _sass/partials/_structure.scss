@@ -18,25 +18,52 @@
   flex: 1;
 }
 
+.container-md,
+.container {
+  max-width: initial;
+}
+
+@include media-breakpoint-up(md) {
+  .container-md,
+  .container {
+    max-width: 750px;
+  }
+}
+
+// Content-Area Width
+@include media-breakpoint-up(lg) {
+  .container-lg,
+  .container {
+    max-width: 970px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .container-xl,
+  .container {
+    max-width: 1170px;
+  }
+}
+
 /**
  * Header Offset Fix for Anchor Links
  */
-h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -65px; 
-  height: 65px; 
-  visibility: hidden; 
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
   pointer-events: none;
   z-index: 1;
 }
 
-h3::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -65px; 
-  height: 65px; 
-  visibility: hidden; 
+h3::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
   pointer-events: none;
   z-index: 1;
 }
@@ -47,13 +74,35 @@ h3::before {
 
 .table {
   margin: 0 0 1.25rem;
-  
+
   th,
   td {
     padding: 0.5rem;
+    width: 30%;
   }
 
   thead th {
     border-top: 0;
+  }
+
+  a {
+    word-break: break-all;
+  }
+
+  // .table-rows-2 {
+
+  // }
+
+  // .table-rows-3 {
+
+  // }
+}
+
+@include media-breakpoint-up(md) {
+  .table {
+    th,
+    td {
+      width: initial;
+    }
   }
 }
