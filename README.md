@@ -7,6 +7,7 @@ Rewrite and expansion of the CWL Website in Jekyll
 * Fix Header Anchor Link IDs
 * Social Bar spacing (minor issue)
 * CWL Community Support on live site still shows up in `<b>`tags, even though I removed them...
+* Top Nav needs to re-integrate logic checks for http/https
 
 ## Tasks & Ideas
 

@@ -10,37 +10,45 @@ header:
       - page: Specification
         url: "/#specification"
   - title: Implementations
-    url: "/Implementations"
+    url: "/implementations"
     type: dropdown
     subfolderitems:
       - page: Implementations
         url: "/#implementations"
       - page: Repositories
-        url: "/#implementations#repos"
+        url: "/#repos"
       - page: Software
-        url: "/#implementations#software"
+        url: "/#software"
   - title: Community Projects
-    url: "/projects/"
+    url: "/#projects"
+    type: dropdown
     subfolderitems:
       - page: Projects
         url: "/#projects"
       - page: Contributers & Governance
         url: "#contributers-and-governance"
+  # - title: Community Projects
+  #   url: "/#projects"
+  #   subfolderitems:
+  #     - page: Projects
+  #       url: "/#projects"
+  #     - page: Contributers & Governance
+  #       url: "#contributers-and-governance"
 
 toc:
   - title: Getting Started
-    url: "/#Getting_Started"
+    url: "/#getting_started"
   - title: Support, Community and Contributing
-    url: "/#Support"
+    url: "/#support"
   - title: Specification
-    url: "/#Specification"
+    url: "/#specification"
   - title: Implementations
-    url: "/#Implementations"
+    url: "/#implementations"
   - title: Repositories of CWL Tools and Workflows
-    url: "/#Repositories_of_CWL_Tools_and_Workflows"
+    url: "/#repositories_of_cwl_tools_and_workflows"
   - title: Software for working with CWL
-    url: "/#Software_for_working_with_CWL"
+    url: "/#software_for_working_with_cwl"
   - title: Projects the CWL community is participating in
-    url: "/#Projects_the_CWL_community_is_participating_in"
+    url: "/#projects_the_cwl_community_is_participating_in"
   - title: Contributers and Governance
-    url: "/#Contributers_and_Governance"
+    url: "/#contributers_and_governance"

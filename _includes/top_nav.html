@@ -1,46 +1,33 @@
 <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+  <!-- We're doing the header menu -->
   {%- if site.data.navigation.header[0] -%}
+    <!-- Check the items in the header menu -->
     {%- for item in site.data.navigation.header -%}
+      <!-- For Header Items -->
+      <!-- If the item's a dropdown -->
       {%- if item.type contains "dropdown" -%}
+        <!-- Header item says dropdown -->
+        <!-- Make a dropdown li -->
         <li class="dropdown nav-item">
           <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+          <!-- If the dropdown has subpages -->
           {%- if item.subfolderitems[0] -%}
+            <!-- Create a ul for the subpages -->
             <ul class="dropdown-menu">
+              <!-- For each subpage -->
               {%- for entry in item.subfolderitems -%}
-                {%- if entry.url contains "http" or "http" contains entry.url -%}
-                  <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url }}">{{ entry.page }}</a>
-                {%- else -%}
-                  <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a>
-                {%- endif -%}
-
-                    {%- if entry.subfolderitems[0] -%}
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </li>
-                      <ul>
-                      {%- for subentry in entry.subfolderitems %}
-                          <li><a href="{{ site.url }}{{ subentry.url }}">{{ subentry.page }}</a></li>
-                      {%- endfor -%}
-                      </ul>
-                    {%- endif -%}
-                  </li>
+                <!-- If the  subpage has http -->
+                <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
               {%- endfor -%}
+            <!-- Close ul 2 -->
             </ul>
         </li>
+          <!-- done checking if dropdown has subpages  -->
           {%- endif -%}
-          {%- elsif entry.url contains "http" or "http" contains entry.url -%}
-          <li class="nav-item"><a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
-          {%- else -%}
-        <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a>
+        {%- else -%}
+        <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
       {%- endif -%}
     {%- endfor -%}
   {%- endif -%}
+<!-- CLose ul 1 -->
 </ul>
