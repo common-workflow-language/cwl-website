@@ -1,13 +1,17 @@
 .site-footer {
-  background-color: #f5ecdf;
-  padding: 10px 0 0;
+  background-color: $toc--background-color;
+  padding: 10px 15px 0;
 
   a {
-
-    color: #005285;
+    color: $toc--link-color;
 
     &:hover {
-      color: #22527c;      
+      color: $toc--link-hover-color;
     }
   }
+}
+
+.footer-text {
+  margin: 0 auto;
+  text-align: center;
 }

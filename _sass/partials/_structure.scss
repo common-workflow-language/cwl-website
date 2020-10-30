@@ -48,22 +48,22 @@
 /**
  * Header Offset Fix for Anchor Links
  */
-h2::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -65px; 
-  height: 65px; 
-  visibility: hidden; 
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
   pointer-events: none;
   z-index: 1;
 }
 
-h3::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -65px; 
-  height: 65px; 
-  visibility: hidden; 
+h3::before {
+  display: block;
+  content: " ";
+  margin-top: -65px;
+  height: 65px;
+  visibility: hidden;
   pointer-events: none;
   z-index: 1;
 }
@@ -74,7 +74,7 @@ h3::before {
 
 .table {
   margin: 0 0 1.25rem;
-  
+
   th,
   td {
     padding: 0.5rem;
@@ -88,6 +88,14 @@ h3::before {
   a {
     word-break: break-all;
   }
+
+  // .table-rows-2 {
+
+  // }
+
+  // .table-rows-3 {
+
+  // }
 }
 
 @include media-breakpoint-up(md) {

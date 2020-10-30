@@ -55,6 +55,25 @@ minima:
 #  - jekyll-feed
 #  - jekyll-seo-tag
 
+exclude:
+  - archive
+  - _archive/
+  - scratch/
+  - _scratch/
+  - README.md
+  - Notes
+  - "*.sh*"
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
 sass:
   sass_dir: _sass
   style: compressed

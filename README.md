@@ -4,10 +4,9 @@ Rewrite and expansion of the CWL Website in Jekyll
 
 ## Staging Issues
 
-* Favicon
 * Fix Header Anchor Link IDs
-* Footer Needs Padding on smaller screens
-  * Footer color could be better
+* Social Bar spacing (minor issue)
+* CWL Community Support on live site still shows up in `<b>`tags, even though I removed them...
 
 ## Tasks & Ideas
 
@@ -27,6 +26,9 @@ Note: the majority of the checked-off items are completed wrt functionality, and
 	* [ ] Setup non-GitHub Pages staging site
 * [x] Add top nav
 	* Search Field is currently non-functional
+* [ ] GDPR - Waiting for content from Sarah for this
+
+ 
 
 ### Content Needed
 
@@ -35,6 +37,13 @@ Note: the majority of the checked-off items are completed wrt functionality, and
 * Footer Text
 * Donations Page?
 * SEO details (see `_config.yml` and [jekyll-seo-tag - Usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) for options)
+* GDPR if relevant
+
+#### GDPR Resources
+
+* https://www.solodev.com/blog/web-design/gdpr-and-informed-consent-cookies-bar.stml
+* https://www.webtoffee.com/sample-css-code-snippets-for-customizing-pre-defined-templates/
+* https://cookie-script.com/
 
 ### Video Player
 
@@ -75,6 +84,27 @@ Possible grouping structure, based on related sections:
 * Fix content width btwn 576-768px
 * Search field is non-functional
 * Should I use mixins at the bottom of the file, or within classes?
+
+### Table Column Widths
+
+To adjust table column widths, use code similar to the following:
+
+```css
+.table {
+  table-layout: fixed;
+}
+
+.rows-2 th:nth-child(n),
+.rows-2 td:nth-child(n) {
+ border: 1px solid red;
+ width: 30% !important;
+}
+
+.rows-3 th,
+.rows-3 td {
+ width: 30% !important;
+}
+```
 
 
 ## Deployment

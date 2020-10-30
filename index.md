@@ -18,22 +18,6 @@ CWL is developed by a multi-vendor working group consisting of organizations and
 
 {{ intro_paragraphs | markdownify }}
 </div>
-{% comment %}
-<!-- Dynamic version attempt - not yet working -->
-{% for section in site.home-sections %}
-  <p>{{ section.name }}</p>
-  <p>{{ section.content }}</p>
-{% endfor %}
-
-{% for section in site.collections.home-sections %}
-  <p>{{ section.name }}</p>
-  <p>{{ section.content }}</p>
-{% endfor %}
-
-{% for collection in site.collections[0] %}
-  <p>{{ collection.label }}</p>
-{% endfor %}
-{% endcomment %}
 
 {% include home/getting-started.html %}
 {% include home/support-community-contributing.html %}
