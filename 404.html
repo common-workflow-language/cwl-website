@@ -21,11 +21,14 @@ layout: default
     letter-spacing: -1px;
   }
 
+  p {
+    font-size: 1rem;
+  }
+
 </style>
 
 <div class="container-404">
   <h1>404</h1>
-
   <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p>The requested page could not be found. Please visit our <a href="{{ site.url | absolute_url }}">homepage</a> instead.</p>
 </div>

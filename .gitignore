@@ -8,3 +8,14 @@ scratch
 *.sh
 *_archive*
 *_scratch/*
+_Notes
+.ssl/
+
+assets/js/plyr.js
+assets/js/plyr.min.js
+assets/js/video-player.js
+assets/js/video-player1.html
+assets/video/FreeYouTubeSubtitlesDownload_1.0.1.716_r.exe
+assets/video/subtitles.srt
+assets/video/subtitles.txt
+assets/video/subtitles2.srt

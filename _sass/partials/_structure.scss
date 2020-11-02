@@ -49,22 +49,22 @@
  * Header Offset Fix for Anchor Links
  */
 h2::before {
-  display: block;
   content: " ";
-  margin-top: -65px;
+  display: block;
   height: 65px;
-  visibility: hidden;
+  margin-top: -65px;
   pointer-events: none;
+  visibility: hidden;
   z-index: 1;
 }
 
 h3::before {
-  display: block;
   content: " ";
-  margin-top: -65px;
+  display: block;
   height: 65px;
-  visibility: hidden;
+  margin-top: -65px;
   pointer-events: none;
+  visibility: hidden;
   z-index: 1;
 }
 
@@ -74,6 +74,7 @@ h3::before {
 
 .table {
   margin: 0 0 1.25rem;
+  // width: initial;
 
   th,
   td {
@@ -89,12 +90,25 @@ h3::before {
     word-break: break-all;
   }
 
-  // .table-rows-2 {
-
+  // Option to have equal width table cells
+  // &.row-2,
+  // &.rows-3 {
+  //   table-layout: fixed;
+  //   width: initial;
   // }
 
-  // .table-rows-3 {
+  // &.rows-2 {
+  //   th,
+  //   td {
+  //     width: 50%;
+  //   }
+  // }
 
+  // &.rows-3 {
+  //   th,
+  //   td {
+  //     width: 30%;
+  //   }
   // }
 }
 

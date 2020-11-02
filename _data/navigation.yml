@@ -27,14 +27,8 @@ header:
         url: "/#projects"
       - page: Contributers & Governance
         url: "#contributers-and-governance"
-  # - title: Community Projects
-  #   url: "/#projects"
-  #   subfolderitems:
-  #     - page: Projects
-  #       url: "/#projects"
-  #     - page: Contributers & Governance
-  #       url: "#contributers-and-governance"
 
+# Switch to newer urls, instead of retaining old urls
 toc:
   - title: Getting Started
     url: "/#getting_started"
@@ -45,10 +39,10 @@ toc:
   - title: Implementations
     url: "/#implementations"
   - title: Repositories of CWL Tools and Workflows
-    url: "/#repositories_of_cwl_tools_and_workflows"
+    url: "/#repos"
   - title: Software for working with CWL
-    url: "/#software_for_working_with_cwl"
+    url: "/#software"
   - title: Projects the CWL community is participating in
-    url: "/#projects_the_cwl_community_is_participating_in"
+    url: "/#projects"
   - title: Contributers and Governance
-    url: "/#contributers_and_governance"
+    url: "#contributers-and-governance"

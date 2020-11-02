@@ -28,6 +28,19 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and
   Machine Learning.
 
+# SEO - jekyll-seo-tag
+logo: "/CWL-Logo-Header.png"
+twitter:
+  - username: commonwl
+  - card: summary
+social:
+  name: Common Workflow Language (CWL)
+  links:
+    - https://www.youtube.com/c/CommonWLorgStandard
+    - https://twitter.com/commonwl
+locale: en_US
+# google_site_verification: 
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -43,45 +56,25 @@ minima:
     youtube_channel: UCNQreTPvvlM0sdu2dL6Mm3Q
     # youtube_channel_name: Common Workflow Language
 
-# If you want to link only specific pages in your header, uncomment
-# this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
 
 # Build settings
 # theme: minima
 
 plugins:
  - jekyll-autoprefixer
- # - jekyll-seo-tag
+ - jekyll-seo-tag
+ - jekyll-sitemap
 
 exclude:
   - archive
   - _archive/
   - scratch/
   - _scratch/
+  - "assets/video/"
   - README.md
   - Notes
   - "*.zip"
-
-exclude:
-  - archive
-  - _archive/
-  - scratch/
-  - _scratch/
-  - README.md
-  - Notes
   - "*.sh*"
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
 
 sass:
   sass_dir: _sass
