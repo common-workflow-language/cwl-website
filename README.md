@@ -53,6 +53,21 @@ collaborative open standards development](https://open-stand.org/about-us/princi
 the elected [CWL leadership team](#Leadership_Team), however every-day project decisions are made by the
 [CWL community](#Support) which is open for participation by anyone.
 
+## Vision and Mission Statement
+
+### CWL Vision
+
+Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard.  Sharing workflows this way is a usual occurrence and seen as a typical way of working.  The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+
+### CWL Mission Statement 
+
+To support open consensus-based standards for command line data analysis workflows and tools.
+
+Specifically, we support the
+* pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about workflow standards
+* standardization process by stewarding the development and delivery of standards in accordance with the [Open Stand principles](https://open-stand.org/about-us/principles/).  
+* post-standards life cycle by promoting the released standard, developing and maintaining related training and tools, and by tracking deficits and other post-standardization feedback.
+
 
 ## Getting Started
 
