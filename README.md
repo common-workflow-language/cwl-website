@@ -58,14 +58,19 @@ _What this community hopes to have accomplished in the future_
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard.  Sharing workflows this way is a usual occurrence and seen as a typical way of working.  The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
-### CWL Mission Statement 
+### Mission of the CWL Project
+_How we plan to achieve our vision_
 
-To support open consensus-based standards for command line data analysis workflows and tools.
+The CWL project supports open consensus-based standards for command line data analysis
+workflows and tools.
 
 Specifically, we support the
-* pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about workflow standards
-* standardization process by stewarding the development and delivery of standards in accordance with the [Open Stand principles](https://open-stand.org/about-us/principles/).  
-* post-standards life cycle by promoting the released standard, developing and maintaining related training and tools, and by tracking deficits and other post-standardization feedback.
+* pre-standards process by providing a neutral place of convening to discuss, propose and
+test ideas about command-line tool based workflow standards and related topics
+* standardization process by stewarding the development and delivery of standards in
+accordance with the [Open Stand principles](https://open-stand.org/about-us/principles/).  
+* post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining
+related training and tools, and by (3) tracking deficits and other post-standardization feedback.
 
 
 ## Getting Started
