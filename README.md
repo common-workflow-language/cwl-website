@@ -53,9 +53,8 @@ collaborative open standards development](https://open-stand.org/about-us/princi
 the elected [CWL leadership team](#Leadership_Team), however every-day project decisions are made by the
 [CWL community](#Support) which is open for participation by anyone.
 
-## Vision and Mission Statement
-
-### CWL Vision
+## Vision for the CWL Project
+_What this community hopes to have accomplished in the future_
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard.  Sharing workflows this way is a usual occurrence and seen as a typical way of working.  The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
