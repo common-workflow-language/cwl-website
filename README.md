@@ -128,7 +128,7 @@ In Production:
 |Software|Description|Platform support|
 |--------|-----------|----------------|
 |[cwltool](https://github.com/common-workflow-language/cwltool)|Reference implementation of CWL|Linux, OS X, Windows, local execution only|
-|[Arvados](https://arvados.org)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|AWS, GCP, Azure, Slurm|
+|[Arvados](https://arvados.org)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|in the cloud on AWS, Azure and GCP, as well as on premise and hybrid clusters using Slurm|
 |[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
 |[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|Linux, OS X|
 |[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) ([OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
