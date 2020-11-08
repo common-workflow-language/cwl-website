@@ -144,9 +144,10 @@ Partial implementations:
 |[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|AWS, OpenStack, Azure|
 |[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.|-|
 |[yacle](https://github.com/otiai10/yacle)|Yet Another CWL Engine| local |
-|[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes|[Kubernetes](https://kubernetes.io)|
+|[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes
 |[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
-|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+
+|[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+|
+|[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)|[Kubernetes](https://kubernetes.io)|
 
 ## Repositories of CWL Tools and Workflows
 
