@@ -148,6 +148,7 @@ Partial implementations:
 |[Cromwell](https://github.com/broadinstitute/cromwell)|Cromwell workflow engine|Google, HTCondor, Local, LSF, PBS/Torque, SGE, Slurm, TES|
 |[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+|
 |[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)|[Kubernetes](https://kubernetes.io)|
+|[ep3](https://github.com/tom-tan/ep3)|Extremely Pluggable Pipeline Processor|
 
 ## Repositories of CWL Tools and Workflows
 
