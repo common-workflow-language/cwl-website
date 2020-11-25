@@ -334,7 +334,15 @@ Partial implementations:
 <a name="Leadership_Team"></a>
 ### CWL Leadership Team
 
-(Alphabetical)
+CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](#Support)
+but you can also contact the CWL leadership team & Software Freedom Conservancy directly via commonworkflowlanguage@sfconservancy.org.
+This address should be CC'ed regarding all activities that involve activities of Common Workflow Language
+that related to things other than software development and documentation, and particularly any activities
+that expect to make use of Software Freedom Conservancy's non-profit status. 
+
+To contact just the CWL leadership team, please use cwl-leadership@googlegroups.com
+
+The CWL leadership team consists of the following people, listed in alphabetical order by their last name:
 
 * Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
