@@ -85,7 +85,8 @@ join the [mailing list common-workflow-language on Google Groups](https://groups
 and send a pull request!
 
 Besides the web interface for the mailing list, one can also join by sending a blank email to
-common-workflow-language+subscribe@googlegroups.com and replying to the automated message.
+<a href="mailto:common-workflow-language+subscribe@googlegroups.com">common-workflow-language+subscribe@googlegroups.com</a>
+and replying to the automated response.
 
 ### Code of Conduct
 
@@ -335,12 +336,12 @@ Partial implementations:
 ### CWL Leadership Team
 
 CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](#Support)
-but you can also contact the CWL leadership team & Software Freedom Conservancy directly via commonworkflowlanguage@sfconservancy.org.
+but you can also contact the CWL leadership team & Conservancy directly via <a href="mailto:commonworkflowlanguage@sfconservancy.org">commonworkflowlanguage@sfconservancy.org</a>.
 This address should be CC'ed regarding all activities that involve activities of Common Workflow Language
 that related to things other than software development and documentation, and particularly any activities
 that expect to make use of Software Freedom Conservancy's non-profit status. 
 
-To contact just the CWL leadership team, please use cwl-leadership@googlegroups.com
+To contact just the CWL leadership team, please email <a href="mailto:cwl-leadership@googlegroups.com">cwl-leadership@googlegroups.com</a>.
 
 The CWL leadership team consists of the following people, listed in alphabetical order by their last name:
 
