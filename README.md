@@ -192,7 +192,7 @@ Partial implementations:
 |[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
-|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library, includes a script to [cache all software containers](https://github.com/common-workflow-language/cwl-utils#pull-the-all-referenced-software-container-images) for a given CWL document.|
 |[looper](http://looper.databio.org/)|job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
 
 
