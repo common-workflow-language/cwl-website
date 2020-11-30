@@ -212,6 +212,7 @@ Partial implementations:
 |[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
 |[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
+|[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|a tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
 
 ### Code libraries
 
