@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="assets/plyr/plyr.css">
 <div class="youtube-container" width="560" height="315">
   <div class="title-bar"><a>Common Workflow Language explained in 64 seconds</a></div>
-  <video id="player" class="cwl-intro-video" controls poster="/assets/img/intro_video_poster_no_title.png">
+  <video id="player" class="cwl-intro-video" controls poster="{{ "/assets/img/intro_video_poster_no_title.png" | relative_url }}">
     <source src="{{ "/assets/video/cwl-intro-video.mp4" | relative_url }}" type="video/mp4">
     <track src="{{ "/assets/video/subtitles.vtt" | relative_url }}" label="English" kind="captions" srclang="en-us" default >
     <track src="{{ "/assets/video/subtitles2.vtt" | relative_url }}" label="French" kind="captions" srclang="fr_FR" default >
