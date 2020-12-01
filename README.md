@@ -1,19 +1,26 @@
 # Common Workflow Language Website 2.0
 
-A Rewrite and expansion of the [CWL Website](https://commonwl.org), using Jekyll
+A Rewrite and expansion of the [CWL Website](https://commonwl.org), using Jekyll. The current staging site is https://github.com/lunacodes/cwl-staging
 
 ## Staging Issues
 
 * Top Nav needs to re-integrate logic checks for http and https
+
+## Video Player
+
+* Subtitles/Captions needed
+* Move progress bar above controls?
+* Change background color on Play, to avoid whitewash
+* Properly reorganize code
 
 ## Future Tasks & Ideas
 
 * [ ] Custom Video Player & Twitter Feeds
 * [ ] Make Search field functional
 * [ ] Split website into multiple pages
-* [ ] Create video player for embedded vids
+* [x] Create video player for embedded vids
   * [ ] Subtitles
-  * [ ] Full screen button
+  * [x] Full screen button
 * [ ] Explanatory button(?)
 * [ ] Donations sub-page
 * [x] Setup staging site

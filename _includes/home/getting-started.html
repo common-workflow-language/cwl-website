@@ -1,6 +1,37 @@
 <h2 id="getting-started" class="section">Getting Started <a name="#Getting_Started" href="#Getting_Started">§</a></h2>
 
-<div class="youtube-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/86eY8xs-Vo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<link rel="stylesheet" href="assets/plyr/plyr.css">
+<div class="youtube-container" width="560" height="315">
+  <div class="title-bar"><a>Common Workflow Language explained in 64 seconds</a></div>
+  <video id="player" class="cwl-intro-video" controls poster="/assets/img/intro_video_poster_no_title.png">
+    <source src="{{ "/assets/video/cwl-intro-video.mp4" | relative_url }}" type="video/mp4">
+    <track src="{{ "/assets/video/subtitles.vtt" | relative_url }}" label="English" kind="captions" srclang="en-us" default >
+    <track src="{{ "/assets/video/subtitles2.vtt" | relative_url }}" label="French" kind="captions" srclang="fr_FR" default >
+
+  Your browser does not support the video tag.
+  </video>  
+</div>
+
+<script src="assets/plyr/plyr.min.js"></script>
+<script>
+  const player = new Plyr('#player', {
+    controls: [
+      'play-large',
+      'play',
+      'mute',
+      'volume',
+      'progress',
+      'current-time',
+      'duration',
+      // 'restart',
+      'fullscreen',
+      'captions',
+      'settings'
+    ],
+    title: 'Common Workflow Language explained in 64 seconds',
+    options: ['captions', 'quality', 'speed', 'loop'],
+  });
+</script>
 
 The [CWL user guide]({{ site.url }}/user_guide/) provides a gentle introduction to learning how to write CWL command line tool and workflow descriptions.
 
