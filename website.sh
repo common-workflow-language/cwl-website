@@ -14,4 +14,4 @@ git clone https://github.com/common-workflow-language/cwl-v1.1.git \
 git clone https://github.com/common-workflow-language/cwl-v1.2.git \
 	v1.2
 
-cwltool $@ --cache cache --outdir common-workflow-language.github.io site/cwlsite.cwl site/cwlsite-job.yaml
+cwltool $@ --cache cache --relax-path-checks --outdir common-workflow-language.github.io site/cwlsite.cwl site/cwlsite-job.yaml

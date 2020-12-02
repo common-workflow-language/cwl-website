@@ -31,6 +31,8 @@ inputs:
   empty:
     type: string
     default: ""
+  jekyll-site: Directory
+  jekyll-gemdir: Directory
 
 outputs:
   doc_out:
@@ -115,31 +117,32 @@ steps:
     out: [html, targetdir, extra_out]
     run:  makedoc.cwl
 
+  jekyll:
+    in:
+      site: jekyll-site
+      gemdir: jekyll-gemdir
+    out: [generated]
+    run: cwl-jekyll.cwl
+
   merge:
     in:
-      primary:
-        source: docs/html
-        valueFrom: $(self[0])
+      primary: jekyll/generated
       secondary:
         source:
           - docs/html
           - make_rdfs/rdfs
           - make_context/jsonld_context
-          - brandimg
           - docs/extra_out
           - graph_inheritance/svg
         linkMerge: merge_flattened
-        valueFrom: $(self.slice(1))
       dirs:
         source:
           - docs/targetdir
           - make_rdfs/targetdir
           - make_context/targetdir
-          - empty
           - docs/targetdir
           - graph_inheritance/targetdir
         linkMerge: merge_flattened
-        valueFrom: $(self.slice(1))
     out: [dir]
     run: mergesecondary.cwl
 
