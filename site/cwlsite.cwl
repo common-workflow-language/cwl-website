@@ -27,7 +27,6 @@ inputs:
           context_target: string
           rdfs_target: string
           graph_target: string
-  brandimg: File
   empty:
     type: string
     default: ""
