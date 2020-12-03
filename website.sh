@@ -16,9 +16,12 @@ for repo in https://github.com/common-workflow-language/common-workflow-language
     fi
 done
 
-ln -sf common-workflow-language/draft-3 draft-3
-ln -sf common-workflow-language/v1.0 v1.0
-ln -sf cwl-v1.1 v1.1
-ln -sf cwl-v1.2 v1.2
+rm draft-3 v1.0 v1.1 v1.2
+ln -s common-workflow-language/draft-3 draft-3
+ln -s common-workflow-language/v1.0 v1.0
+ln -s cwl-v1.1 v1.1
+ln -s cwl-v1.2 v1.2
 
-cwltool $@ --cache cache --relax-path-checks --outdir common-workflow-language.github.io site/cwlsite.cwl site/cwlsite-job.yaml
+mkdir -p common-workflow-language.github.io
+cd common-workflow-language.github.io
+cwltool $@ --cache ../cache --relax-path-checks ../site/cwlsite.cwl ../site/cwlsite-job.yaml
