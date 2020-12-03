@@ -31,6 +31,10 @@ inputs:
     type: string
     default: ""
   jekyll-site: Directory
+  user_guide: Directory
+  user_guide_targetdir:
+    type: string
+    default: "user_guide"
 
 outputs:
   doc_out:
@@ -121,6 +125,12 @@ steps:
     out: [generated]
     run: cwl-jekyll.cwl
 
+  jekyll_user_guide:
+    in:
+      site: user_guide
+    out: [generated]
+    run: cwl-jekyll.cwl
+
   merge:
     in:
       primary: jekyll/generated
@@ -131,6 +141,7 @@ steps:
           - make_context/jsonld_context
           - docs/extra_out
           - graph_inheritance/svg
+          - jekyll_user_guide/generated
         linkMerge: merge_flattened
       dirs:
         source:
@@ -139,6 +150,7 @@ steps:
           - make_context/targetdir
           - docs/targetdir
           - graph_inheritance/targetdir
+          - user_guide_targetdir
         linkMerge: merge_flattened
     out: [dir]
     run: mergesecondary.cwl
