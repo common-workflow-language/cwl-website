@@ -16,11 +16,12 @@ for repo in https://github.com/common-workflow-language/common-workflow-language
     fi
 done
 
-rm -f draft-3 v1.0 v1.1 v1.2
+rm -f draft-3 v1.0 v1.1 v1.2 content
 ln -s common-workflow-language/draft-3 draft-3
 ln -s common-workflow-language/v1.0 v1.0
 ln -s cwl-v1.1 v1.1
 ln -s cwl-v1.2 v1.2
+ln -s cwl-staging content
 
 if [[ -z "$WORKSPACE" ]] ; then
     WORKSPACE=$PWD
