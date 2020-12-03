@@ -1,47 +1,47 @@
 class: CommandLineTool
 cwlVersion: v1.2
 inputs:
-  site:
-    type: Directory
-    loadListing: shallow_listing
-  gemdir: Directory
+  site: Directory
+
+hints:
+  InplaceUpdateRequirement:
+    inplaceUpdate: true
+  DockerRequirement:
+    dockerFile: |
+      FROM debian:buster
+      RUN apt-get update && apt-get install -yq bundler nodejs locales && gem install bundler
+      RUN echo en_US.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
+      ENV LANG en_US.UTF-8
+      ENV LANGUAGE en_US:en
+      ENV LC_ALL en_US.UTF-8
+
+    dockerImageId: cwl-jekyll-image
+
 requirements:
-  InlineJavascriptRequirement:
-    expressionLib:
-      - |
-        function find_file(items, name) {
-          for (var i = 0; i < items.length; i++) {
-            if (items[i].basename == name) { return items[i]; }
-          }
-          return null;
-        }
 
   InitialWorkDirRequirement:
     listing:
-      - entryname: ".gem"
-        entry: $(inputs.gemdir)
+      - entryname: site
+        entry: $(inputs.site)
+        writable: true
 
-      - entryname: vendor
-        entry: $(find_file(inputs.site.listing, "vendor"))
-
-      - entryname: Gemfile
-        entry: $(find_file(inputs.site.listing, "Gemfile"))
-
-      - entryname: Gemfile.lock
-        entry: $(find_file(inputs.site.listing, "Gemfile.lock"))
-
-      - entryname: .bundle/config
-        entry: |
-          ---
-          BUNDLE_PATH: "vendor/bundle"
   EnvVarRequirement:
     envDef:
-      LANG: en_US.UTF-8
+      BUNDLE_PATH: "$(runtime.outdir)/site/vendor/bundle"
+
+  ShellCommandRequirement: {}
+
+arguments: [cd, site,
+            {shellQuote: false, valueFrom: "&&"},
+            bundle, install,
+            {shellQuote: false, valueFrom: "&&"},
+            bundle, exec, jekyll, build, --disable-disk-cache, --trace, --destination, "../generated"]
+
 outputs:
   generated:
     type: File
     outputBinding:
-      glob: "_site"
+      glob: "generated"
       loadListing: shallow_listing
       outputEval: |-
         ${
@@ -55,4 +55,3 @@ outputs:
           }
         }
         }
-arguments: [bundle, exec, jekyll, build, --trace, --source, $(inputs.site), --destination, "_site"]

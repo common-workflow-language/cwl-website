@@ -1,7 +1,6 @@
 #!/usr/bin/env cwl-runner
 cwl:tool: cwlsite.cwl
-jekyll-site: {class: Directory, location: /home/peter/work/cwl-staging}
-jekyll-gemdir: {class: Directory, location: /home/peter/.gem}
+jekyll-site: {class: Directory, location: ../content}
 render:
 - {$import: cwlsite-draft3-job.json}
 - {$import: cwlsite-v1.0.0-job.json}

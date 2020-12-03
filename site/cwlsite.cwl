@@ -31,7 +31,6 @@ inputs:
     type: string
     default: ""
   jekyll-site: Directory
-  jekyll-gemdir: Directory
 
 outputs:
   doc_out:
@@ -119,7 +118,6 @@ steps:
   jekyll:
     in:
       site: jekyll-site
-      gemdir: jekyll-gemdir
     out: [generated]
     run: cwl-jekyll.cwl
 
