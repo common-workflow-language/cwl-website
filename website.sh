@@ -22,6 +22,10 @@ ln -s common-workflow-language/v1.0 v1.0
 ln -s cwl-v1.1 v1.1
 ln -s cwl-v1.2 v1.2
 
+if [[ -z "$WORKSPACE" ]] ; then
+    WORKSPACE=$PWD
+fi
+
 mkdir -p common-workflow-language.github.io
 cd common-workflow-language.github.io
-cwltool $@ --cache ../cache --relax-path-checks ../site/cwlsite.cwl ../site/cwlsite-job.yaml
+cwltool $@ --cache $WORKSPACE/cache --relax-path-checks $WORKSPACE/site/cwlsite.cwl $WORKSPACE/site/cwlsite-job.yaml
