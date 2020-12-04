@@ -11,7 +11,6 @@ A Rewrite and expansion of the [CWL Website](https://commonwl.org), using Jekyll
 * Subtitles/Captions needed
 * Move progress bar above controls?
 * Change background color on Play, to avoid whitewash
-* Properly reorganize code
 
 ## Future Tasks & Ideas
 
@@ -26,6 +25,7 @@ A Rewrite and expansion of the [CWL Website](https://commonwl.org), using Jekyll
 * [x] Setup staging site
 	* [ ] Setup non-GitHub Pages staging site
 * [ ] GDPR - Waiting for content from Sarah for this
+* [ ] Add Footer Styles
 
 ### Twitter
 

@@ -1,0 +1,30 @@
+<div class="youtube-container" width="560" height="315">
+  <video id="player" class="cwl-intro-video" controls poster="{{ "/assets/img/intro_video_poster.png" | relative_url }}">
+    <source src="{{ "/assets/video/cwl-intro-video.mp4" | relative_url }}" type="video/mp4">
+    <track src="{{ "/assets/video/subtitles.vtt" | relative_url }}" label="English" kind="captions" srclang="en-us" default >
+    <track src="{{ "/assets/video/subtitles2.vtt" | relative_url }}" label="French" kind="captions" srclang="fr_FR" default >
+
+  Your browser does not support the video tag.
+  </video>  
+</div>
+
+<script src="assets/plyr/plyr.min.js"></script>
+<script>
+  const player = new Plyr('#player', {
+    controls: [
+      'play-large',
+      'play',
+      'mute',
+      'volume',
+      'progress',
+      'current-time',
+      'duration',
+      // 'restart',
+      'fullscreen',
+      'captions',
+      'settings'
+    ],
+    title: 'Common Workflow Language explained in 64 seconds',
+    options: ['captions', 'quality', 'speed', 'loop'],
+  });
+</script>

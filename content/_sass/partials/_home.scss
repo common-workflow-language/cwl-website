@@ -93,9 +93,9 @@
 }
 
 .youtube-container {
-  clear: right;
-  float: right;
-  width: 100%;
+  // clear: right;
+  // float: right;
+  // width: 100%;
 
   iframe,
   video {
@@ -103,13 +103,27 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+  .youtube-container {
+    float: right;
+    margin: 0 0 0 36px;
+    width: 55%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .youtube-container {
+    width: 560px;
+  }
+}
+
 // Video Player
 .plyr--video {
-  margin: -43px 0 0;
+  // margin: -43px 0 0;
 }
 
 .plyr__poster {
-  background-image: url('https://i.ytimg.com/vi_webp/86eY8xs-Vo8/maxresdefault.webp');
+  background-image: url('../img/intro_video_poster_title4.png');
   background-position: 50% 3%;
 }
 
@@ -136,32 +150,10 @@
   }
 }
 
-@include media-breakpoint-up(md) {
-  .youtube-container {
-    margin: 0 0 0 36px;
-    width: 50%;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .youtube-container {
-    margin: 0 0 0 36px;
-    width: 560px;
-  }
-}
-
 // Twitter Feed
 .twitter-feed {
   clear: both;
-  // margin: 38px 26px;
-  // width: 90%;
-  // float: left;
-  // margin: 38px 0;
   width: 80%;
-
-  // iframe {
-  //   width: 100% !important;
-  // }
 }
 
 @include media-breakpoint-up(sm) {
@@ -169,5 +161,11 @@
     float: right;
     margin: 0 0 0 36px;
     width: initial;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .twitter-feed {
+    margin: 16px 0 0 36px;
   }
 }
