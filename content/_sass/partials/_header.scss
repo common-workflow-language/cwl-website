@@ -1,0 +1,36 @@
+.site-header {
+  align-items: center;
+  background-color: $header--background-color;
+  border-bottom: 1px solid $header--border-color;
+  border-color: $header--border-color;
+  border-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  left: 0;
+  line-height: initial;
+  margin: 0 auto 20px;
+  min-height: initial;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  .container {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.site-logo {
+  display: block;
+  height: 61px;
+  margin-left: -20px;
+  margin-top: -20px;
+  max-width: unset;
+}
