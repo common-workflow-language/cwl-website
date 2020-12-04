@@ -35,6 +35,10 @@ inputs:
   user_guide_targetdir:
     type: string
     default: "user_guide"
+  novice-tutorial: Directory
+  novice-tutorial-targetdir:
+    type: string
+    default: "novice-tutorial"
 
 outputs:
   doc_out:
@@ -120,14 +124,17 @@ steps:
     run:  makedoc.cwl
 
   jekyll:
-    in:
-      site: jekyll-site
+    in: {site: jekyll-site}
     out: [generated]
     run: cwl-jekyll.cwl
 
   jekyll_user_guide:
-    in:
-      site: user_guide
+    in: {site: user_guide}
+    out: [generated]
+    run: cwl-jekyll.cwl
+
+  jekyll-novice-tutorial:
+    in: {site: novice-tutorial}
     out: [generated]
     run: cwl-jekyll.cwl
 
@@ -142,6 +149,7 @@ steps:
           - docs/extra_out
           - graph_inheritance/svg
           - jekyll_user_guide/generated
+          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
       dirs:
         source:
@@ -151,6 +159,7 @@ steps:
           - docs/targetdir
           - graph_inheritance/targetdir
           - user_guide_targetdir
+          - novice-tutorial-targetdir
         linkMerge: merge_flattened
     out: [dir]
     run: mergesecondary.cwl
