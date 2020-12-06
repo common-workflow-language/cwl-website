@@ -139,7 +139,7 @@ Partial implementations:
 
 |Software|Description|Platform support|
 |--------|-----------|----------------|
-|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|Partial support for importing CWL toosl and workflows is [under development](https://github.com/common-workflow-language/galaxy/pull/47)|
+|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|Partial support for importing CWL tools and workflows is [under development](https://github.com/common-workflow-language/galaxy/pull/47)|
 |[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas)|Alicloud, AWS, Google, HPC, Local, Spark, TES|
 |[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon|[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine|
 |[Consonance](https://github.com/Consonance/consonance)|orchestration tool for running SeqWare workflows and CWL tools|AWS, OpenStack, Azure|
@@ -150,6 +150,7 @@ Partial implementations:
 |[CWLEXEC](https://github.com/IBMSpectrumComputing/cwlexec)|Apache 2.0 licensed CWL executor for IBM Spectrum LSF, supported by IBM for customers with valid contracts.|[IBM Spectrum LSF](https://developer.ibm.com/storage/products/ibm-spectrum-lsf/#) 10.1.0.3+|
 |[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)|[Kubernetes](https://kubernetes.io)|
 |[ep3](https://github.com/tom-tan/ep3)|Extremely Pluggable Pipeline Processor| local |
+|[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System|Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|
 
 ## Repositories of CWL Tools and Workflows
 
@@ -213,6 +214,7 @@ Partial implementations:
 |[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
 |[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|a tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
+|[pegasus-cwl-converter](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|Work in progress tool to convert a CWL workflow into a Pegasus workflow.|
 
 ### Code libraries
 
