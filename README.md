@@ -309,6 +309,7 @@ Partial implementations:
 
 * Peter Amstutz, Curii / Arvados Project; https://orcid.org/0000-0003-3566-7705
 * Artem Barski, Cincinnati Children's Hospital Medical Center / University of Cincinnati College of Medicine; https://orcid.org/0000-0002-1861-5316
+* Lon Blauvelt, University of California Santa Cruz / Toil Project; https://orcid.org/0000-0001-8352-873X 
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Kyle Cranmer, New York University; https://orcid.org/0000-0002-5769-7094
 * Michael R. Crusoe, CWL Project Lead; https://orcid.org/0000-0002-2961-9670
