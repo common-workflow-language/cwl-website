@@ -320,7 +320,7 @@ Partial implementations:
 * Geet Duggal, DNAnexus; https://orcid.org/0000-0003-3485-359X
 * Rob Finn, EMBL-EBI; https://orcid.org/0000-0001-8626-2148
 * Marc Fiume, DNAstack; https://orcid.org/0000-0002-9769-375X
-* Jeff Gentry, Foundation Medicine; https://orcid.org/0000-0001-5351-8442
+* Jeff Gentry, Foundation Medicine, OpenWDL; https://orcid.org/0000-0001-5351-8442
 * Kaushik Ghose, Seven Bridges Genomics, Inc; https://orcid.org/0000-0003-2933-1260
 * Carole Goble, The University of Manchester; https://orcid.org/0000-0003-1219-2137
 * Oliver Hofmann, University of Melbourne / bcbio-nextgen; https://orcid.org/0000-0002-7738-1513
@@ -354,6 +354,6 @@ The CWL leadership team consists of the following people, listed in alphabetical
 * John Chilton, Pennsylvania State University / Galaxy Project; https://orcid.org/0000-0002-6794-0756
 * Michael R. Crusoe, CWL Project Lead; https://orcid.org/0000-0002-2961-9670
 * Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; https://orcid.org/0000-0001-7811-8613
-* Jeff Gentry, Foundation Medicine; https://orcid.org/0000-0001-5351-8442
+* Jeff Gentry, Foundation Medicine, OpenWDL; https://orcid.org/0000-0001-5351-8442
 * Hervé Ménager, Institut Pasteur; https://orcid.org/0000-0002-7552-1009
 * Stian Soiland-Reyes, University of Manchester; https://orcid.org/0000-0001-9842-9718
