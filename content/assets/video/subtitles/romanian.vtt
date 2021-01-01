@@ -1,0 +1,54 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.629
+În multe domenii științifice (bioinformatică, imagistică medicală și astronomie)
+
+00:00:03.629 --> 00:00:06.299
+este necesară analiza unor cantități mari de informații.
+
+00:00:06.299 --> 00:00:10.769
+Aceasta implică frecvent procesarea complexă și repetitivă a datelor în cadrul unor fluxuri de lucru
+
+00:00:10.769 --> 00:00:15.240
+(„workflows”) ce utilizează diferite instrumente software într-o anumită succesiune.
+
+00:00:15.240 --> 00:00:18.930
+Rularea manuală a datelor prin toate aceste instrumente și convertirea rezultatelor in formate compatibile cu
+
+00:00:18.930 --> 00:00:21.949
+etapele următoare sunt mari consumatoare de timp.
+
+00:00:21.949 --> 00:00:26.130
+Sistemele de management al fluxului de lucru („workflow management”) sunt concepute pentru
+
+00:00:26.130 --> 00:00:30.090
+a ameliora această problemă, prin exprimarea formală a acestor fluxuri de lucru și prin furnizarea infrastructurii
+
+00:00:30.090 --> 00:00:34.290
+necesare pentru a le configura, executa și monitoriza.
+Formalizarea fluxurilor de lucru permite cercetătorilor să
+
+00:00:34.290 --> 00:00:38.399
+le partajeze și să le reutilizeze cu ușurință și, în special, să verifice rezultatele publicate ale unor analize de date.
+
+00:00:38.399 --> 00:00:43.110
+Există însă mai multe alternative pentru a descrie fluxurile de analiză bioinformatică, aspect care limitează
+
+00:00:43.110 --> 00:00:46.579
+posibilitatea utilizării lor în scopurile menționate.
+
+00:00:46.579 --> 00:00:50.399
+În prezent, sunt peste o sută de sisteme de management al fluxurilor de lucru, cel mai frecvent
+
+00:00:50.399 --> 00:00:55.020
+fără interoperabilitate între ele.
+A apărut deci necesitatea de a avea un singur standard
+
+00:00:55.020 --> 00:00:58.469
+comun, fiind astfel creat proiectul „Common Workflow Language” (CWL - limbaj comun pentru fluxuri de lucru):
+
+00:00:58.469 --> 00:01:02.430
+un standard deschis, conceput pentru a descrie fluxurile și instrumentele lor de lucru în fișiere
+
+00:01:02.430 --> 00:01:05.539
+de text structurat YAML.

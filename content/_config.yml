@@ -70,7 +70,6 @@ exclude:
   - _archive/
   - scratch/
   - _scratch/
-  # - "assets/video/"
   - README.md
   - Notes
   - "*.zip"

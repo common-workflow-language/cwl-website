@@ -1,8 +1,16 @@
 <div class="youtube-container" width="560" height="315">
   <video id="player" class="cwl-intro-video" controls poster="{{ "/assets/img/intro_video_poster.png" | relative_url }}">
     <source src="{{ "/assets/video/cwl-intro-video.mp4" | relative_url }}" type="video/mp4">
-    <track src="{{ "/assets/video/subtitles.vtt" | relative_url }}" label="English" kind="captions" srclang="en-us" default >
-    <track src="{{ "/assets/video/subtitles2.vtt" | relative_url }}" label="French" kind="captions" srclang="fr_FR" default >
+
+    <track src="{{ "/assets/video/subtitles/chinese_simplified.vtt" | relative_url }}" label="Chinese (Simplified)" kind="subtitles" srclang="zh-Hans">
+    <track src="{{ "/assets/video/subtitles/english.vtt" | relative_url }}" label="English" kind="captions" srclang="en_US" default>
+    <track src="{{ "/assets/video/subtitles/french.vtt" | relative_url }}" label="French" kind="subtitles" srclang="fr_FR">
+    <track src="{{ "/assets/video/subtitles/japanese.vtt" | relative_url }}" label="Japanese" kind="subtitles" srclang="ja">
+    <track src="{{ "/assets/video/subtitles/lithuanian.vtt" | relative_url }}" label="Lithuanian" kind="subtitles" srclang="lt">
+    <track src="{{ "/assets/video/subtitles/romanian.vtt" | relative_url }}" label="Romanian" kind="subtitles" srclang="ro">
+    <track src="{{ "/assets/video/subtitles/russian.vtt" | relative_url }}" label="Russian" kind="subtitles" srclang="ru">
+    <track src="{{ "/assets/video/subtitles/ukranian.vtt" | relative_url }}" label="Ukranian" kind="subtitles" srclang="uk">
+    <track src="{{ "/assets/video/subtitles/urdu.vtt" | relative_url }}" label="urdu.vtt" kind="subtitles" srclang="ur">
 
   Your browser does not support the video tag.
   </video>  
