@@ -53,6 +53,9 @@ collaborative open standards development](https://open-stand.org/about-us/princi
 the elected [CWL leadership team](#Leadership_Team), however every-day project decisions are made by the
 [CWL community](#Support) which is open for participation by anyone.
 
+## CWL 2021 Mini-Conference
+
+The [CWL 2021 Mini-Conference](https://github.com/common-workflow-language/common-workflow-language/wiki/2021-CWL-Mini-Conference) will be on February 8-10th. [The form to sign up to participate](https://forms.gle/WX6SXPVDNPAgxNMC8) is still open!
 
 ## Getting Started
 
