@@ -6,12 +6,17 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  margin: 17px 0 11px;
+  // margin: 17px 0 11px;
+  margin: 18px 0 5px;
 
   a,
   form {
     // margin: 0 0 6px;
     margin: 0 6px 6px;
+  }
+
+  a:first-of-type {
+    margin: 0 6px 6px 0;
   }
 }
 
@@ -29,12 +34,13 @@
 
 .section {
   a {
-    visibility: hidden;
-  }
+    color: transparent;
 
-  &:hover a {
-    color: rgb(201, 201, 201);
-    visibility: visible;
+    &:hover,
+    &:focus {
+      // color: #337ab7;
+      color: #c9c9c9;
+    }
   }
 }
 

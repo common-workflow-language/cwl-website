@@ -89,27 +89,6 @@ h3::before {
   a {
     word-break: break-all;
   }
-
-  // Option to have equal width table cells
-  // &.row-2,
-  // &.rows-3 {
-  //   table-layout: fixed;
-  //   width: initial;
-  // }
-
-  // &.rows-2 {
-  //   th,
-  //   td {
-  //     width: 50%;
-  //   }
-  // }
-
-  // &.rows-3 {
-  //   th,
-  //   td {
-  //     width: 30%;
-  //   }
-  // }
 }
 
 @include media-breakpoint-up(md) {
