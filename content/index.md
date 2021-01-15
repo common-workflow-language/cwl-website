@@ -19,6 +19,7 @@ CWL is developed by a multi-vendor working group consisting of organizations and
 {{ intro_paragraphs | markdownify }}
 </div>
 
+{% include home/announcements.html %}
 {% include home/getting-started.html %}
 {% include home/support-community-contributing.html %}
 {% include home/specification.html %}
