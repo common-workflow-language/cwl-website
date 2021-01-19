@@ -133,10 +133,10 @@ steps:
     out: [generated]
     run: cwl-jekyll.cwl
 
-  jekyll-novice-tutorial:
-    in: {site: novice-tutorial}
-    out: [generated]
-    run: cwl-jekyll.cwl
+#  jekyll-novice-tutorial:
+#    in: {site: novice-tutorial}
+#    out: [generated]
+#    run: cwl-jekyll.cwl
 
   merge:
     in:
@@ -149,7 +149,7 @@ steps:
           - docs/extra_out
           - graph_inheritance/svg
           - jekyll_user_guide/generated
-          - jekyll-novice-tutorial/generated
+#          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
       dirs:
         source:
@@ -159,7 +159,7 @@ steps:
           - docs/targetdir
           - graph_inheritance/targetdir
           - user_guide_targetdir
-          - novice-tutorial-targetdir
+#          - novice-tutorial-targetdir
         linkMerge: merge_flattened
     out: [dir]
     run: mergesecondary.cwl
