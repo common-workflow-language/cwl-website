@@ -98,10 +98,10 @@
   }
 }
 
+
+// Video Player
 .youtube-container {
-  // clear: right;
-  // float: right;
-  // width: 100%;
+  padding: 0 0 15px;
 
   iframe,
   video {
@@ -123,11 +123,7 @@
   }
 }
 
-// Video Player
-.plyr--video {
-  // margin: -43px 0 0;
-}
-
+// Plyr
 .plyr__poster {
   background-image: url('../img/intro_video_poster.png');
   background-position: 50% 3%;
@@ -160,6 +156,10 @@
 .twitter-feed {
   clear: both;
   width: 80%;
+}
+
+.twitter-icon {
+  width: 1.25rem;
 }
 
 @include media-breakpoint-up(sm) {
