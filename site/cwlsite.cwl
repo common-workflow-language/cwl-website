@@ -27,10 +27,18 @@ inputs:
           context_target: string
           rdfs_target: string
           graph_target: string
-  brandimg: File
   empty:
     type: string
     default: ""
+  jekyll-site: Directory
+  user_guide: Directory
+  user_guide_targetdir:
+    type: string
+    default: "user_guide"
+  novice-tutorial: Directory
+  novice-tutorial-targetdir:
+    type: string
+    default: "novice-tutorial"
 
 outputs:
   doc_out:
@@ -116,31 +124,44 @@ steps:
     out: [html, targetdir, extra_out]
     run:  makedoc.cwl
 
+  jekyll:
+    in: {site: jekyll-site}
+    out: [generated]
+    run: cwl-jekyll.cwl
+
+  jekyll_user_guide:
+    in: {site: user_guide}
+    out: [generated]
+    run: cwl-jekyll.cwl
+
+#  jekyll-novice-tutorial:
+#    in: {site: novice-tutorial}
+#    out: [generated]
+#    run: cwl-jekyll.cwl
+
   merge:
     in:
-      primary:
-        source: docs/html
-        valueFrom: $(self[0])
+      primary: jekyll/generated
       secondary:
         source:
           - docs/html
           - make_rdfs/rdfs
           - make_context/jsonld_context
-          - brandimg
           - docs/extra_out
           - graph_inheritance/svg
+          - jekyll_user_guide/generated
+#          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
-        valueFrom: $(self.slice(1))
       dirs:
         source:
           - docs/targetdir
           - make_rdfs/targetdir
           - make_context/targetdir
-          - empty
           - docs/targetdir
           - graph_inheritance/targetdir
+          - user_guide_targetdir
+#          - novice-tutorial-targetdir
         linkMerge: merge_flattened
-        valueFrom: $(self.slice(1))
     out: [dir]
     run: mergesecondary.cwl
 

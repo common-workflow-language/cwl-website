@@ -9,7 +9,9 @@ outputs:
   dir: File
 expression: |
   ${
-    inputs.primary.secondaryFiles = [];
+    if (!inputs.primary.secondaryFiles) {
+      inputs.primary.secondaryFiles = [];
+    }
     for (var i = 0; i < inputs.secondary.length; i++) {
       var k = inputs.secondary[i];
       if (inputs.dirs[i] != "") {
