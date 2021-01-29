@@ -39,6 +39,10 @@ inputs:
   novice-tutorial-targetdir:
     type: string
     default: "novice-tutorial"
+  rnaseq-training: Directory
+  rnaseq-training-targetdir:
+    type: string
+    default: "rnaseq-training"
 
 outputs:
   doc_out:
@@ -133,6 +137,11 @@ steps:
     out: [generated]
     run: cwl-jekyll.cwl
 
+  jekyll-rnaseq-training:
+    in: {site: rnaseq-training}
+    out: [generated]
+    run: cwl-jekyll.cwl
+
 #  jekyll-novice-tutorial:
 #    in: {site: novice-tutorial}
 #    out: [generated]
@@ -149,6 +158,7 @@ steps:
           - docs/extra_out
           - graph_inheritance/svg
           - jekyll_user_guide/generated
+          - jekyll-rnaseq-training/generated
 #          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
       dirs:
@@ -159,6 +169,7 @@ steps:
           - docs/targetdir
           - graph_inheritance/targetdir
           - user_guide_targetdir
+          - rnaseq-training-targetdir
 #          - novice-tutorial-targetdir
         linkMerge: merge_flattened
     out: [dir]
