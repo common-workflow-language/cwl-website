@@ -154,6 +154,7 @@ Partial implementations:
 |[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)|[Kubernetes](https://kubernetes.io)|
 |[ep3](https://github.com/tom-tan/ep3)|Extremely Pluggable Pipeline Processor| local |
 |[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System|Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|
+|[StreamFlow](https://streamflow.di.unito.it/)|Workflow Management System for hybrid HPC-Cloud infrastructures|Full support for CWL 1.2 is currently under development|
 
 ## Repositories of CWL Tools and Workflows
 
