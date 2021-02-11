@@ -25,8 +25,8 @@ header:
     subfolderitems:
       - page: Projects
         url: "/#projects"
-      - page: Contributers & Governance
-        url: "#contributers-and-governance"
+      - page: Contributors & Governance
+        url: "#contributors-and-governance"
 
 # Switch to newer urls, instead of retaining old urls
 toc:
@@ -44,5 +44,5 @@ toc:
     url: "/#Software_for_working_with_CWL"
   - title: Projects the CWL community is participating in
     url: "/#Projects_the_CWL_community_is_participating_in"
-  - title: Contributers and Governance
+  - title: Contributors and Governance
     url: "#Contributers_and_Governance"
