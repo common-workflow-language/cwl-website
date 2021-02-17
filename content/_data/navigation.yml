@@ -1,0 +1,47 @@
+header:
+  - title: Getting Started
+    url: "/#getting-started"
+    type: dropdown
+    subfolderitems:
+      - page: Getting Started
+        url: "/#getting-started"
+      - page: Support, Community and Contributing
+        url: "/#support"
+      - page: Specification
+        url: "/#specification"
+  - title: Implementations
+    url: "/implementations"
+    type: dropdown
+    subfolderitems:
+      - page: Implementations
+        url: "/#implementations"
+      - page: Repositories
+        url: "/#repos"
+      - page: Software
+        url: "/#software"
+  - title: Community Projects
+    url: "/#projects"
+    type: dropdown
+    subfolderitems:
+      - page: Projects
+        url: "/#projects"
+      - page: Contributors & Governance
+        url: "#contributors-and-governance"
+
+toc:
+  - title: Getting Started
+    url: "/#Getting_Started"
+  - title: Support, Community and Contributing
+    url: "/#Support"
+  - title: Specification
+    url: "/#Specification"
+  - title: Implementations
+    url: "/#Implementations"
+  - title: Repositories of CWL Tools and Workflows
+    url: "/#Repositories_of_CWL_Tools_and_Workflows"
+  - title: Software for working with CWL
+    url: "/#Software_for_working_with_CWL"
+  - title: Projects the CWL community is participating in
+    url: "/#Projects_the_CWL_community_is_participating_in"
+  - title: Contributors and Governance
+    url: "#Contributers_and_Governance"

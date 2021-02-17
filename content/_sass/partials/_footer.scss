@@ -1,0 +1,17 @@
+.site-footer {
+  background-color: $toc--background-color;
+  padding: 10px 15px 0;
+
+  a {
+    color: $toc--link-color;
+
+    &:hover {
+      color: $toc--link-hover-color;
+    }
+  }
+}
+
+.footer-text {
+  margin: 0 auto;
+  text-align: center;
+}

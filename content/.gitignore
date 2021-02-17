@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor/bundle
+.editorconfig
+*.bak*
+*.sh
+*_archive*
+*_scratch/*
+*scratch*
+.ssl/
+.xcf
+_Notes
