@@ -68,6 +68,36 @@ h3::before {
   z-index: 1;
 }
 
+.anchorfix {
+  position: relative;
+  top: -65px;
+
+  span {
+    position: relative;
+    top: 65px;
+  }
+}
+
+.longfix {
+  position: relative;
+  top: -100px;
+
+  span {
+    position: relative;
+    top: 100px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .longfix {
+    top: -65px;
+
+    span {
+      top: 65px;
+    }
+  }
+}
+
 /**
  * Tables
  */
@@ -87,7 +117,7 @@ h3::before {
   }
 
   a {
-    word-break: break-all;
+    word-break: normal;
   }
 }
 

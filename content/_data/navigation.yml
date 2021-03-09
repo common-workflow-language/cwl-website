@@ -25,24 +25,23 @@ header:
     subfolderitems:
       - page: Projects
         url: "/#projects"
-      - page: Contributers & Governance
-        url: "#contributers-and-governance"
+      - page: Contributors & Governance
+        url: "#contributors-and-governance"
 
-# Switch to newer urls, instead of retaining old urls
 toc:
   - title: Getting Started
-    url: "/#getting_started"
+    url: "/#Getting_Started"
   - title: Support, Community and Contributing
-    url: "/#support"
+    url: "/#Support"
   - title: Specification
-    url: "/#specification"
+    url: "/#Specification"
   - title: Implementations
-    url: "/#implementations"
+    url: "/#Implementations"
   - title: Repositories of CWL Tools and Workflows
-    url: "/#repos"
+    url: "/#Repositories_of_CWL_Tools_and_Workflows"
   - title: Software for working with CWL
-    url: "/#software"
+    url: "/#Software_for_working_with_CWL"
   - title: Projects the CWL community is participating in
-    url: "/#projects"
-  - title: Contributers and Governance
-    url: "#contributers-and-governance"
+    url: "/#Projects_the_CWL_community_is_participating_in"
+  - title: Contributors and Governance
+    url: "#Contributers_and_Governance"
