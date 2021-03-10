@@ -13,9 +13,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CWL Staging Site
-url: ""
-baseurl: "/cwl-staging"
+title: Common Workflow Language (CWL)
+url: "https://www.commonwl.org"
 author:
   name: Common Workflow Language (CWL)
   # email: your-email@domain.com
