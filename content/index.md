@@ -7,8 +7,10 @@ permalink: '/'
 {%- include social_stats.html -%}
 {%- include nav_toc.html -%}
 
-<p>site url: {{ site.url }}</p>
-<p>baseurl: {{ site.baseurl }}</p>
+<!-- Debug
+  Site Url: {{ site.url }} 
+  Base Url: {{ site.baseurl }}
+-->
 
 <div class="intro-container">
   <a href="https://open-stand.org/about-us/principles" class="open-stand"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
