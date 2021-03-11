@@ -1,3 +1,4 @@
-url: "cwl.test" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/"
+title: CWL Staging Site 2
+url: "https://www.commonwl.org" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/cwl-staging"
 port: 80
