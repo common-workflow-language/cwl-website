@@ -2,11 +2,13 @@
 
 <!-- MarkdownTOC -->
 
-* [Editing the Site](#editing-the-site)
-  * [Config Files & Local Development](#config-files--local-development)
+* [Vision for the CWL Project](#vision-for-the-cwl-project)
+    * [Mission of the CWL Project](#mission-of-the-cwl-project)
+* [Editing the Site - General Flow](#editing-the-site---general-flow)
+    * [Config Files & Local Development](#config-files--local-development)
 * [Directory Structure](#directory-structure)
 * [Video Player - Plyr](#video-player---plyr)
-  * [Plyr API options](#plyr-api-options)
+    * [Plyr API options](#plyr-api-options)
 * [Twitter Feed](#twitter-feed)
 * [SEO Tags](#seo-tags)
 
@@ -18,8 +20,30 @@ This is the repo for the [CWL Website](https://commonwl.org).
 * Staging Branch: https://github.com/common-workflow-language/cwl-website/tree/add-jekyll-site
 * Staging Site: https://www.commonwl.org/cwl-staging/
 
-<a id="editing-the-site"></a>
-## Editing the Site
+<a id="vision-for-the-cwl-project"></a>
+## Vision for the CWL Project
+_What this community hopes to have accomplished in the future_
+
+Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard.  Sharing workflows this way is a usual occurrence and seen as a typical way of working.  The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+
+<a id="mission-of-the-cwl-project"></a>
+### Mission of the CWL Project
+_How we plan to achieve our vision_
+
+The CWL project supports open consensus-based standards for command line data analysis
+workflows and tools.
+
+Specifically, we support the
+* pre-standards process by providing a neutral place of convening to discuss, propose and
+test ideas about command-line tool based workflow standards and related topics
+* standardization process by stewarding the development and delivery of standards in
+accordance with the [Open Stand principles](https://open-stand.org/about-us/principles/).  
+* post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining
+related training and tools, and by (3) tracking deficits and other post-standardization feedback.
+<a id="editing-the-site---general-flow"></a>
+
+<a id="editing-the-site---general-flow"></a>
+## Editing the Site - General Flow
 
 1. On `main`, run a `git fetch --all` and pull in any changes.
 2. Switch to `add-jekyll-site` and then merge the changes via `git merge main`
