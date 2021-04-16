@@ -49,7 +49,7 @@ related training and tools, and by (3) tracking deficits and other post-standard
 2. Switch to `add-jekyll-site` and then merge the changes via `git merge main`
 3. Make sure you're making your changes on the `add-jekyll-site` (or your own branch, which you can merge to `add-jekyll-site`).
 4. Push to `add-jekyll-site` and then check that everything looks good. 
-5. If all is well, head over to the [main repo](https://github.com/common-workflow-language/) and create a Pull Request.
+5. If all is well, head over to the [main repo](https://github.com/common-workflow-language/cwl-website) and create a Pull Request.
 
 <a id="config-files--local-development"></a>
 ### Config Files & Local Development
