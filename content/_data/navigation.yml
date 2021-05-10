@@ -5,6 +5,8 @@ header:
     subfolderitems:
       - page: Getting Started
         url: "/#getting-started"
+      - page: Vision for the CWL Project
+        url: "/#vision-for-cwl"
       - page: Support, Community and Contributing
         url: "/#support"
       - page: Specification
@@ -31,6 +33,8 @@ header:
 toc:
   - title: Getting Started
     url: "/#Getting_Started"
+  - title: Vision for the CWL Project
+    url: "/#vision-for-cwl"
   - title: Support, Community and Contributing
     url: "/#Support"
   - title: Specification
