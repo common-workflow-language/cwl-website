@@ -2,13 +2,14 @@
 
 <!-- MarkdownTOC -->
 
-* [Vision for the CWL Project](#vision-for-the-cwl-project)
-    * [Mission of the CWL Project](#mission-of-the-cwl-project)
+* [Prerequisites](#prerequisites)
+* [Project & Directory Structure](#project--directory-structure)
+	* [Main Website](#main-website)
+* [Running the Site](#running-the-site)
 * [Editing the Site - General Flow](#editing-the-site---general-flow)
-    * [Config Files & Local Development](#config-files--local-development)
-* [Directory Structure](#directory-structure)
+	* [Config Files & Local Development](#config-files--local-development)
 * [Video Player - Plyr](#video-player---plyr)
-    * [Plyr API options](#plyr-api-options)
+	* [Plyr API options](#plyr-api-options)
 * [Twitter Feed](#twitter-feed)
 * [SEO Tags](#seo-tags)
 
@@ -20,60 +21,38 @@ This is the repo for the [CWL Website](https://commonwl.org).
 * Staging Branch: https://github.com/common-workflow-language/cwl-website/tree/add-jekyll-site
 * Staging Site: https://www.commonwl.org/cwl-staging/
 
-<a id="vision-for-the-cwl-project"></a>
-## Vision for the CWL Project
-_What this community hopes to have accomplished in the future_
+<a id="prerequisites"></a>
+## Prerequisites
 
-Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard.  Sharing workflows this way is a usual occurrence and seen as a typical way of working.  The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+You need the following in order to run the site:
 
-<a id="mission-of-the-cwl-project"></a>
-### Mission of the CWL Project
-_How we plan to achieve our vision_
+* [Ruby](https://www.ruby-lang.org/en/downloads/) version **2.4.0** or higher, including all development headers (check your Ruby version using `ruby -v`)
+* [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
+* [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using `gcc -v`,`g++ -v`, and` make -v`)
 
-The CWL project supports open consensus-based standards for command line data analysis
-workflows and tools.
+For Ruby, you may need additional developer packages(e.g. `ruby-dev`, `ruby-bundler`). See the following links, for detailed instructions:
 
-Specifically, we support the
-* pre-standards process by providing a neutral place of convening to discuss, propose and
-test ideas about command-line tool based workflow standards and related topics
-* standardization process by stewarding the development and delivery of standards in
-accordance with the [Open Stand principles](https://open-stand.org/about-us/principles/).  
-* post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining
-related training and tools, and by (3) tracking deficits and other post-standardization feedback.
-<a id="editing-the-site---general-flow"></a>
+* [Jekyll Docs - Installation](https://jekyllrb.com/docs/installation/#requirements)
+* [macOS](https://jekyllrb.com/docs/installation/macos/)
+* [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
+* [Other Linux](https://jekyllrb.com/docs/installation/other-linux/)
+* [Windows](https://jekyllrb.com/docs/installation/windows/)
 
-<a id="editing-the-site---general-flow"></a>
-## Editing the Site - General Flow
+<a id="project--directory-structure"></a>
+## Project & Directory Structure
 
-1. On `main`, run a `git fetch --all` and pull in any changes.
-2. Switch to `add-jekyll-site` and then merge the changes via `git merge main`
-3. Make sure you're making your changes on the `add-jekyll-site` (or your own branch, which you can merge to `add-jekyll-site`).
-4. Push to `add-jekyll-site` and then check that everything looks good. 
-5. If all is well, head over to the [main repo](https://github.com/common-workflow-language/cwl-website) and create a Pull Request.
+The root directory contains the following important files and directories:
 
-<a id="config-files--local-development"></a>
-### Config Files & Local Development
+* `content` - directory for the **main website**
+* `README.md` - general readme for the repo.
+* `site` - directory for the Docs. **Not the main site**
+* `STAGING` - instructions for the staging site.
+* `website.sh` - script that builds the website
 
-The site uses `_config.yml` for the production site, and `_config_staging.yml` for the staging site (which inherits, then overrides `_config.yml`). For ease of local development, you may wish to use a 3rd config file, e.g. `_config_local.yml`. If so, please don't add it to the repo.
+<a id="main-website"></a>
+### Main Website
 
-My `_config_local.yml` currently looks like this:
-
-```yaml
-title: CWL Local Site
-url: "cwl.test"
-baseurl: ""
-port: 80
-```
-
-The command for this is: `bundle exec jekyll serve --config "_config.yml,_config_local.yml"`. (Note the lack of spaces between the two config files).
-
-One quirk of Jekyll local development, is that it will set the hostname to `localhost`, ignoring the `url` variable specified in the config file. To override this, you can add the `--host` flag, e.g. `bundle exec jekyll serve --host cwl.test --config "_config.yml,_config_local.yml"`
-
-
-<a id="directory-structure"></a>
-## Directory Structure
-
-As of March 11 2021, the directory structure looks as follows
+The main website (https://www.commonwl.org/) is generated via [Jekyll](https://jekyllrb.com/). The files for it are found in `/content`, and the directories should look something like this
 
 ```sh
 ├── _data
@@ -97,11 +76,43 @@ As of March 11 2021, the directory structure looks as follows
 └── favicon
 ```
 
-`_data` - includes the data for the two nav menus
-`_includes` - the templates for the site sections. Each homepage section has its own sub-template under `_includes/home`
-`_sass` - the scss styles for the entire site. The `bootstrap` should be left alone.
-`assets` - contains the various images, scripts, video subtitles, etc.
-`favicon` - contains the favicon files for various browsers, generated by [RealFaviconGenerator](https://realfavicongenerator.net/)
+* `_data` - includes the data for the two nav menus
+* `_includes` - the templates for the site sections. Each homepage section has its own sub-template under `_includes/home`
+* `_sass` - the scss styles for the entire site. The `bootstrap` should be left alone.
+* `assets` - contains the various images, scripts, video subtitles, etc.
+* `favicon` - contains the favicon files for various browsers, generated by [RealFaviconGenerator](https://realfavicongenerator.net/)
+
+<a id="running-the-site"></a>
+## Running the Site
+
+After installing the prerequisite software, in your terminal `cd content/`, and run `bundle exec jekyll serve --config "_config.yml,_config_local.yml"` (note the lack of spaces between the two config files). You can then open up `localhost` in your web browser to view the site. It's important to specify the config files, as otherwise Jekyll will generate the site's urls with `commonwl.org`, and you won't be able to run it locally.
+
+If you receive an error message about software dependencies, packages, gems, etc, then run `bundle update` from the `content` directory. (Bundlr will be looking for `Gemfile` and `Gemfile.lock`, and can't run without them).
+
+For convenience, you may wish to specify `--host cwl.test` and `--port 80`, as follows: `bundle exec jekyll serve --config "_config.yml,_config_local.yml --host cwl.test --port 80`. NOTE: you may have to [update your hosts file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), in order for your computer to respect the hostname.
+
+Anything you specify on the command line wil override the settings in your config files. For a full list of command line options, see Jekyll - Configuration Options [Serve Commands](https://jekyllrb.com/docs/configuration/options/#serve-command-options) and [Build Commands](https://jekyllrb.com/docs/configuration/options/#build-command-options)
+
+<a id="editing-the-site---general-flow"></a>
+## Editing the Site - General Flow
+
+1. On `main`, run a `git fetch --all` to see which branches have been updated. 
+2. Run `git pull origin main` to pull in any changes from the production site.
+2. Switch to `add-jekyll-site` and then merge the changes via `git merge main`
+3. Make sure you're making your changes on the `add-jekyll-site` (or your own branch, which you can merge to `add-jekyll-site`).
+4. Push to `add-jekyll-site` and then check that everything looks good. 
+5. If all is well, head over to the [main repo](https://github.com/common-workflow-language/cwl-website) and create a Pull Request.
+
+<a id="config-files--local-development"></a>
+### Config Files & Local Development
+
+The site uses the following config files:
+
+* `_config.yml` - for the production site
+* `_config_local.yml` - for local development
+* `_config_staging.yml` - for the staging site (only appears in `add-jekyll-site` branch)
+
+If you make changes to `_config_local.yml`, please don't commit them to the repo. If you run into an issue with switching branches (you can run `git stash` or `git stash push _config_local.yml` before committing, and then `git stash pop` after, to retrieve it).
 
 <a id="video-player---plyr"></a>
 ## Video Player - Plyr
