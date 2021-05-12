@@ -1,0 +1,25 @@
+body {
+  font-size: 15px;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.row .responsive-table-header,
+.row .responsive-table-row {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  .row .responsive-table-header div,
+  .row .responsive-table-row div {
+    max-width: 100%;
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .row .responsive-table-header div,
+  .row .responsive-table-row div {
+    width: 100%;
+  }
+}

@@ -122,6 +122,7 @@ steps:
       brandstyle:
         default: |
           <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css integrity=sha384-604wwakM23pEysLJAhja8Lm42IIwYrJ0dEAqzFsj9pJ/P5buiujjywArgPCi8eoz crossorigin="anonymous" />
+          <link rel="stylesheet" href=/assets/styles-fix.css />
           <link rel="shortcut icon"
           href="https://www.commonwl.org/user_guide/assets/favicons/cwl/favicon-96x96.png" />
           <link rel="cite-as" href="https://doi.org/10.6084/m9.figshare.3115156.v2" />
