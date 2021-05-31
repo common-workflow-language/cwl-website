@@ -14,6 +14,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Common Workflow Language (CWL)
+baseurl: ""
 url: "https://www.commonwl.org"
 author:
   name: Common Workflow Language (CWL)
