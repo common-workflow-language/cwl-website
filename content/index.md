@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+id: home
 ---
 
 {% include home/intro.html %}

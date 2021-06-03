@@ -13,3 +13,4 @@ The in-progress redesign of the CWL Website
 * Remove unnecessary img files from assets/img/ once final icons are decided on
 * Intro section Text Layout
 * Features vertical spacing
+* Give mobile menu box shadow or border-bottom

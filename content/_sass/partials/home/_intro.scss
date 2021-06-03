@@ -1,7 +1,8 @@
 .cwl-announcement {
   background-color: $cwl-red;
   color: $white;
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: 28px;
   line-height: 1.625;
   padding: 0 1rem;
   text-align: center;
@@ -45,12 +46,15 @@
 
 .feature-item {
   align-items: center;
+  box-shadow: 0 6px 15px #0000001a;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 10px 0;
+  // margin: 10px 0;
+  margin: 1rem;
   padding: 12px;
   text-align: center;
+  width: 100%;
 
   img {
     height: 100px;
@@ -60,8 +64,30 @@
 
 @include media-breakpoint-up(md) {
   .feature-item {
-    flex-basis: 33%;
-    margin: 20px 0;
+    // flex-basis: 33%;
+    flex-basis: 46%;
+    margin: 1rem 0;
+  }
+
+  .feature-title {
+    font-size: 1.3rem;
+    // height: 6rem;
+    height: 3rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .feature-item {
+    // flex-basis: 33%;
+    flex-basis: 29%;
+    // margin: 20px 0;
+    margin: 1rem;
+  }
+
+  .feature-title {
+    font-size: calc(1.3rem + 0.4vw);
+    // height: 4.2rem;
+    height: 4rem;
   }
 }
 
