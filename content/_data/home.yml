@@ -1,0 +1,25 @@
+features:
+  - title: INTEROPERABILITY AND PORTABILITY
+    icon: noun_Interoperability_181229.svg
+    icon-alt: noun_Interoperability_181229.svg
+    text: Portable and interoperable across a variety of software and deployment environments
+  - title: VENDOR NEUTRALITY
+    icon: noun_Scale_380185.svg
+    icon-alt: noun_Scale_380185.svg
+    text: Developed by a multi-vendor working group of organizations and individuals
+  - title: REUSABILITY AND REPRODUCIBILITY
+    icon: noun_ecosystem_cycle_3389565.png
+    icon-alt: noun_ecosystem_cycle_3389565.png
+    text: Enables scientists to reuse and reproduce their data analysis workflows
+  - title: PARALLELIZATION AND SCALE
+    icon: noun_Data_Model_1632661.svg
+    icon-alt: noun_Data_Model_1632661.svg
+    text: Scalable from workstations to cluster, cloud, and high performance computing (HPC) environments
+  - title: ECOSYSTEM SUPPORT
+    icon: noun_Company_ecosystem_1637685.svg
+    icon-alt: noun_Company_ecosystem_1637685.svg
+    text: Supported by an ecosystem of tools, libraries, and editor plugins
+  - title: TRANSPARENT GOVERNANCE
+    icon: noun_group_3144890.svg
+    icon-alt: noun_group_3144890.svg
+    text: Designed with an open and transparent governance

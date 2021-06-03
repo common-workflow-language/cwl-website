@@ -1,14 +1,10 @@
-_site
-.sass-cache
+# Directories
+# *.gem
+# .bundle
 .jekyll-cache
-.jekyll-metadata
-vendor/bundle
-.editorconfig
-*.bak*
-*.sh
-*_archive*
-*_scratch/*
-*scratch*
-.ssl/
-.xcf
-_Notes
+.sass-cache
+_site
+_archive
+
+# Files
+_config_local.yml

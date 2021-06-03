@@ -1,131 +1,14 @@
-// body {
-//   padding: 61px 0 0;
-// }
+.page-section {
+  margin: 2rem 0;
+}
 
-/**
- * Fix for Sticky Footer
- */
-.site-wrapper {
+.section-header {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  padding: 61px 0 0;
 }
 
-.content-wrapper {
-  // Double-check if these are equivalent
-  flex: 1 0 auto;
-  flex: 1;
-}
-
-.container-md,
-.container {
-  max-width: initial;
-}
-
-@include media-breakpoint-up(md) {
-  .container-md,
-  .container {
-    max-width: 750px;
-  }
-}
-
-// Content-Area Width
-@include media-breakpoint-up(lg) {
-  .container-lg,
-  .container {
-    max-width: 970px;
-  }
-}
-
-@include media-breakpoint-up(xl) {
-  .container-xl,
-  .container {
-    max-width: 1170px;
-  }
-}
-
-/**
- * Header Offset Fix for Anchor Links
- */
-h2::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
-}
-
-h3::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
-}
-
-.anchorfix {
-  position: relative;
-  top: -65px;
-
-  span {
-    position: relative;
-    top: 65px;
-  }
-}
-
-.longfix {
-  position: relative;
-  top: -100px;
-
-  span {
-    position: relative;
-    top: 100px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .longfix {
-    top: -65px;
-
-    span {
-      top: 65px;
-    }
-  }
-}
-
-/**
- * Tables
- */
-
-.table {
-  margin: 0 0 1.25rem;
-  // width: initial;
-
-  th,
-  td {
-    padding: 0.5rem;
-    width: 30%;
-  }
-
-  thead th {
-    border-top: 0;
-  }
-
-  a {
-    word-break: normal;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .table {
-    th,
-    td {
-      width: initial;
-    }
-  }
+// Soften table header row bottom border
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: 2px solid $table-border-light;
 }
