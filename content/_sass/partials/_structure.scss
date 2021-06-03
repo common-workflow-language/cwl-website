@@ -1,5 +1,11 @@
 .page-section {
-  margin: 2rem 0;
+  margin: 1rem 0;
+}
+
+@include media-breakpoint-up(md) {
+  .page-section {
+    margin: 2rem 0;
+  }
 }
 
 .section-header {

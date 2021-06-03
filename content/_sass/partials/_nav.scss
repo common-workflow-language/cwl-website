@@ -1,9 +1,21 @@
-.nav-social-icons {
-  margin: 0 1rem;
+.fab {
+  font-size: 2em;
+  margin: $nav-item-margin;
+}
 
-  .fab {
-    font-size: 1.1rem;
-    margin: 0 .5rem;
+.first-icon {
+  margin-left: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-social-icons {
+    margin: 0 1rem;
+
+    .fab {
+      // font-size: 1.1rem;
+      font-size: 1.75rem;
+      margin: 0 .5rem;
+    }
   }
 }
 

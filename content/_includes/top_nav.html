@@ -1,33 +1,42 @@
-<ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
-  <!-- We're doing the header menu -->
-  {%- if site.data.navigation.header[0] -%}
-    <!-- Check the items in the header menu -->
-    {%- for item in site.data.navigation.header -%}
-      <!-- For Header Items -->
-      <!-- If the item's a dropdown -->
-      {%- if item.type contains "dropdown" -%}
-        <!-- Header item says dropdown -->
-        <!-- Make a dropdown li -->
-        <li class="dropdown nav-item">
-          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
-          <!-- If the dropdown has subpages -->
-          {%- if item.subfolderitems[0] -%}
-            <!-- Create a ul for the subpages -->
-            <ul class="dropdown-menu">
-              <!-- For each subpage -->
-              {%- for entry in item.subfolderitems -%}
-                <!-- If the  subpage has http -->
-                <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
-              {%- endfor -%}
-            <!-- Close ul 2 -->
-            </ul>
-        </li>
-          <!-- done checking if dropdown has subpages  -->
-          {%- endif -%}
-        {%- else -%}
-        <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
-      {%- endif -%}
-    {%- endfor -%}
-  {%- endif -%}
-<!-- CLose ul 1 -->
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav sticky-top">
+  <div class="nav-wrap container-fluid">
+    <!-- <a class="navbar-brand" href="#">Common Workflow Language</a> -->
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="topNav">
+      <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
+        {%- if site.data.navigation.header[0] -%}
+          {%- for item in site.data.navigation.header -%}
+            {%- if item.type contains "dropdown" -%}
+              <li class="dropdown nav-item">
+                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+
+                {%- if item.subfolderitems[0] -%}
+                  <ul class="dropdown-menu">
+                    {%- for entry in item.subfolderitems -%}
+                      <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
+                    {%- endfor -%}
+                  </ul>
+              </li>
+                {%- endif -%}
+
+              {%- else -%}
+              <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0 search-bar-top">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+      <div class="nav-social-icons">
+        <a href="{{ site.github_url }}"><i class="fab fa-github first-icon"></i></a>
+        <a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+
+  <div>
+</nav>

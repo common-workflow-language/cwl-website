@@ -1,16 +1,18 @@
-.site-header-logo {
-  // height: 400px;
-  height: 325px;
-  overflow: hidden;
+@include media-breakpoint-up(md) {
+  .site-header-logo {
+    align-items: center;
+    display: flex;
+    height: 300px;
+    overflow: hidden;
 
-  img {
-    // margin: 0 12.5%;
-    // position: relative;
-    // top: -20%;
-    // width: 75%;
-    margin: 0 20%;
-    position: relative;
-    top: -15%;
-    width: 60%;
+    img {
+      height: 360px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .site-header-logo {
+    justify-content: center;
   }
 }

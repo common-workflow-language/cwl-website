@@ -1,47 +1,69 @@
 .cwl-announcement {
   background-color: $cwl-red;
   color: $white;
-  // font-size: 20px;
   font-size: 24px;
   line-height: 1.625;
+  padding: 0 1rem;
   text-align: center;
 }
 
-.intro-container {
-  display: flex;
-  justify-content: space-around;
+
+@include media-breakpoint-up(md) {
+  .intro-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .intro-text {
+    font-size: 20px;
+    text-align: center;
+    width: 34%;
+  }
 }
 
-.intro-text {
-  width: 30%;
+@include media-breakpoint-up(lg) {
+  .intro-text {
+    width: 40%;
+  }
 }
 
-.youtube-container {
-  max-width: 560px;
-}
+// .youtube-container {
+//   max-width: 560px;
+// }
 
 .features-grid {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+@include media-breakpoint-up(md) {
+  .features-grid {
+    justify-content: space-around;
+  }
 }
 
 .feature-item {
   align-items: center;
   display: flex;
-  flex-basis: 33%;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 12px;
   text-align: center;
+
+  img {
+    height: 100px;
+    width: 100px;
+  }
 }
 
-.feature-item img {
-  height: 100px;
-  width: 100px;
+@include media-breakpoint-up(md) {
+  .feature-item {
+    flex-basis: 33%;
+    margin: 20px 0;
+  }
 }
-
 
 // Twitter Feed
 .twitter-feed {

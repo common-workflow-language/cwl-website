@@ -8,9 +8,8 @@
   }
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .youtube-container {
-    float: right;
     margin: 0 0 0 36px;
     width: 55%;
   }
@@ -18,7 +17,8 @@
 
 @include media-breakpoint-up(lg) {
   .youtube-container {
-    width: 560px;
+    // width: 560px;
+    width: 40%;
   }
 }
 
