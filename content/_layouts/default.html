@@ -5,9 +5,11 @@
 
   <body>
 
-  <div class="site-wrapper">
+  <div class="site-wrapper page-{{ page.class }}">
     {%- include top_nav.html -%}
-    {%- include header.html -%}
+    {% if page.class == 'home' or page.title == 'home' %}
+      {%- include header.html -%}
+    {% endif %}
 
     <div class="container content-wrapper">
       <div class="row">

@@ -1,20 +1,3 @@
-// Sticky Footer Fix
-.site-wrapper {
-  min-height: 100vh;
-  position: relative;
-}
-
-.content-wrapper {
-  padding-bottom: 75px;
-}
-
-.site-footer {
-  bottom: 0;
-  height: 50px;
-  position: absolute;
-  width: 100%;
-}
-
 .site-footer {
   background-color: $footer-bg-color;
   padding: 10px 15px 0;

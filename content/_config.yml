@@ -34,6 +34,7 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-titles-from-headings
 
 exclude:
   - _archive/
@@ -46,3 +47,8 @@ exclude:
 sass:
   sass_dir: _sass
   # style: compressed
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: false

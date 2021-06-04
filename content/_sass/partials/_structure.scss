@@ -1,3 +1,38 @@
+// Sticky Footer Fix
+.site-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+.content-wrapper {
+  padding-bottom: 75px;
+}
+
+// Account for footer wrapping
+@include media-breakpoint-up(xxs) {
+  .content-wrapper {
+    padding-bottom: 146px;
+  }
+}
+
+.site-footer {
+  bottom: 0;
+  margin: 24px 0 0;
+  min-height: 50px;
+  // position: absolute;
+  position: relative;
+  width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .page-short .site-footer {
+    position: absolute;
+  }
+}
+
+// End Sticky Footer Fix
+
+// Homepage
 .page-section {
   margin: 1rem 0;
 }
@@ -14,6 +49,33 @@
   flex-direction: column;
 }
 
+// Regular pages
+.post-header {
+  background: $cwl-red;
+  color: $white;
+  left: 0;
+  margin: 0;
+  padding: 10px 0 0 12px;
+  position: absolute;
+  width: 100%;
+
+  .container {
+    padding-left: 0;
+  }
+}
+
+.post-content {
+  position: relative;
+  top: 84px;
+}
+
+@media (min-width: 576px) {
+  .post-header {
+    padding-left: 24px;
+  }
+}
+
+// Tables
 // Soften table header row bottom border
 .table > :not(:last-child) > :last-child > * {
   border-bottom: 2px solid $table-border-light;

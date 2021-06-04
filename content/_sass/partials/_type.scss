@@ -1,3 +1,11 @@
+body {
+  word-break: break-word;
+}
+
+a {
+  word-break: keep-all;
+}
+
 h6,
 .h6,
 h5,
@@ -12,8 +20,3 @@ h1,
 .h1 {
   margin: 0 0 1rem;
 }
-
-// h2,
-// .h2 {
-//   margin: 0 0 1rem;
-// }

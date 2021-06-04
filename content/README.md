@@ -4,13 +4,12 @@ The in-progress redesign of the CWL Website
 
 ## To-Do
 
-* Should navbar have bg color?
-* Add Home link to nav
-* Header logo img is messed up
-  * Prefer png over svg?
-* Header Logo Img needs cropping
-  * How big should it be?
+* Navbar needs box shadow or bottom border - esp on mobile
+* Should Navbar use Home link, Only Site logo, or both?
+  * Add Home logo on left side of nav
 * Remove unnecessary img files from assets/img/ once final icons are decided on
-* Intro section Text Layout
-* Features vertical spacing
-* Give mobile menu box shadow or border-bottom
+* Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
+* Since I'm doing `.page-short .site-footer`, does it even make sense to have the rest of the sticky footer fix??
+  * I can probably just change the classes to `.page-short .class-name`, and have the rest of it behave normally
+    * Need to ensure that doesn't lead to alignment inconsistencies
+  * The `.page-short` class is a useful toggle. Easy to disable, if the page gets sufficient additional content, or enable for new pages.
