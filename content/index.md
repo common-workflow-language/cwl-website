@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-class: home
+class: home has-announcement
 ---
 
 {% include home/intro.html %}

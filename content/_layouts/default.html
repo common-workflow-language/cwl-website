@@ -7,7 +7,7 @@
 
   <div class="site-wrapper page-{{ page.class }}">
     {%- include top_nav.html -%}
-    {% if page.class == 'home' or page.title == 'home' %}
+    {% if page.class contains 'home' or page.title == 'Home' %}
       {%- include header.html -%}
     {% endif %}
 

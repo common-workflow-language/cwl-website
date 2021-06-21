@@ -6,7 +6,7 @@
   </div>
 </header>
 
-{% if page.id == "home" %}
+{% if page.class contains "has-announcement" %}
   <div class="cwl-announcement"><p>CWL Standard 1.2 Released in XX xx, 2021</p></div>
 {% else %}
   <div class="cwl-announcement" style="height: 45px;"></div>

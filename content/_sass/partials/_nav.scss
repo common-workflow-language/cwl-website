@@ -1,3 +1,9 @@
+.top-nav {
+  border-bottom: 1px solid $nav-border-color;
+  box-sizing: content-box;
+  height: 39px;
+}
+
 .fab {
   font-size: 2em;
   margin: $nav-item-margin;
