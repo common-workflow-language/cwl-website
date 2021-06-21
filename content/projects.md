@@ -2,6 +2,7 @@
 layout: page
 permalink: /projects/
 title: Projects
+class: short
 ---
 
 ## Projects the CWL community is participating in 
