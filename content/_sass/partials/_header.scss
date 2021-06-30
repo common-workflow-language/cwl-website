@@ -6,6 +6,7 @@
   overflow: hidden;
 
   img {
+    height: 150px;
     margin: 1rem auto;
     max-width: 100%;
     width: auto;
@@ -14,8 +15,6 @@
 
 @include media-breakpoint-up(sm) {
   .site-header-logo {
-    justify-content: center;
-
     img {
       max-width: 80%;
     }
@@ -24,21 +23,9 @@
 
 @include media-breakpoint-up(md) {
   .site-header-logo {
-    height: auto;
-
     img {
-      height: 260px;
+      height: 200px;
       max-width: initial;
-    }
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .site-header-logo {
-    justify-content: center;
-
-    img {
-      height: 300px;
     }
   }
 }

@@ -1,4 +1,7 @@
-// Sticky Footer Fix
+///////////////////////
+// Sticky Footer Fix //
+///////////////////////
+
 .site-wrapper {
   min-height: 100vh;
   position: relative;
@@ -29,7 +32,9 @@
   }
 }
 
-// End Sticky Footer Fix
+///////////////////////////
+// End Sticky Footer Fix //
+///////////////////////////
 
 // Homepage
 .page-section {
@@ -63,14 +68,44 @@
   }
 }
 
+@include media-breakpoint-up(sm) {
+  .post-header {
+    padding-left: 24px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-title {
+    font-size: 2.25rem;
+  }
+}
+
 .post-content {
   position: relative;
   top: 84px;
 }
 
 @include media-breakpoint-up(sm) {
-  .post-header {
-    padding-left: 24px;
+  .post-content {
+    top: 90px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .post-content {
+    top: 92px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-content {
+    top: 96px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .post-content {
+    top: 102px;
   }
 }
 
