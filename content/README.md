@@ -1,5 +1,11 @@
 # CWL Website 2.0
 
+2.5
+1
+
+Start: 9:30
+
+
 The in-progress redesign of the CWL Website
 
 ## To-Do
@@ -10,10 +16,10 @@ The in-progress redesign of the CWL Website
 * Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
 * Tables
   - Add outer border?
+    - Alternately, remove this from `_structure.scss`? `.table > :not(:last-child) > :last-child > * {border-bottom: 2px solid $table-border-light; }`
+    - That adds a line under the table heading
   - Implementations - increase width of left-column?
-* Ecosystem - increase vert. padding btwn headers & tables
-  - Esp h2 & h3
-* Reduce Mobile Menu left padding on very small screens
+* Are GitHub & Twitter nav icons too big on mobile??
 
 ## Reference
 

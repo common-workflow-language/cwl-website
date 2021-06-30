@@ -6,17 +6,26 @@ a {
   word-break: keep-all;
 }
 
-h6,
-.h6,
-h5,
-.h5,
-h4,
-.h4,
+h1,
+.h1,
 h3,
 .h3,
-h2,
-.h2,
-h1,
-.h1 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   margin: 0 0 1rem;
 }
+
+h2,
+.h2 {
+  margin: 0 0 1.25rem;
+}
+
+table,
+.table {
+  margin: 0 0 2rem;
+}
+

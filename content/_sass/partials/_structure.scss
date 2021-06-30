@@ -144,3 +144,7 @@
 .table > :not(:last-child) > :last-child > * {
   border-bottom: 2px solid $table-border-light;
 }
+
+.table {
+  margin: 0 0 2rem;
+}
