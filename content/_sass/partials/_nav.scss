@@ -36,19 +36,54 @@
 .nav-item {
   background: $nav-bg-color;
 
-  &:hover {
-    background: $cwl-menu-blue;
-  }
+  // &:hover,
+  // &:focus,
+  // &:active {
+  //   // background: $cwl-menu-blue;
+  //   color: #b5314c;
+  // }
 }
 
 .navbar-light .navbar-nav {
   .nav-link {
     &:hover,
-    &:focus {
-      color: $white;
+    &:focus,
+    &:active {
+      color: $cwl-red;
     }
   }
 }
+
+// @include media-breakpoint-up(lg) {
+//   .nav-item {
+//     // background: $nav-bg-color;
+
+//     &:hover {
+//       // background: $nav-bg-color;
+//     }
+
+//     &:focus,
+//     &:active {
+//       // background: $cwl-menu-blue;
+//       background: $nav-bg-color;
+//       color: $nav-link-hover-color-desktop;
+//     }
+//   }
+
+//   .navbar-light .navbar-nav {
+//     .nav-link {
+//       &:hover {
+//         color: $nav-link-hover-color-desktop;
+//       }
+
+//       &:focus,
+//       &:active {
+//         background: $cwl-menu-blue;
+//         color: $white;
+//       }
+//     }
+//   }
+// }
 
 .nav-social-icons {
   margin: 0 auto;
