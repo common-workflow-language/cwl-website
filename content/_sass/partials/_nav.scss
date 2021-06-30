@@ -4,6 +4,52 @@
   height: 39px;
 }
 
+.nav-wrap {
+  background: $nav-bg-color;
+  border: 0;
+  margin: 0 0 0 auto;
+  padding: 0;
+  width: auto;
+}
+
+.navbar-toggler {
+  margin: 0 0.75rem 0 0;
+}
+
+.navbar-collapse {
+  background: $nav-bg-color;
+  border: 1px solid $nav-border-color-2;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-collapse {
+    border: 0;
+  }
+}
+
+.nav-item {
+  background: $nav-bg-color;
+  padding: 0 1.75rem;
+
+  &:hover {
+    background: $cwl-menu-blue;
+  }
+}
+
+.navbar-light .navbar-nav {
+  .nav-link {
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}
+
+.nav-social-icons {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .fab {
   font-size: 2em;
   margin: $nav-item-margin;
@@ -13,22 +59,36 @@
   margin-left: 0;
 }
 
-@include media-breakpoint-up(lg) {
-  .nav-social-icons {
-    margin: 0 1rem;
-
-    .fab {
-      // font-size: 1.1rem;
-      font-size: 1.75rem;
-      margin: 0 .5rem;
-    }
-  }
-}
-
 .fa-twitter {
   color: $twitter-blue;
 }
 
 .fa-github {
   color: $black;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-wrap {
+    border: 0;
+  }
+
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+
+  .nav-social-icons {
+    margin: 0;
+    padding: 0 1rem;
+
+    .fab {
+      font-size: 1.75rem;
+      margin: 0 .5rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-item {
+    padding: 0 0.75rem;
+  }
 }
