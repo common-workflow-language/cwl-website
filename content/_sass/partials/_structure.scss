@@ -36,14 +36,26 @@
 // End Sticky Footer Fix //
 ///////////////////////////
 
-// Homepage
+//////////////
+// Homepage //
+//////////////
+
 .page-section {
   margin: 1rem 0;
 }
 
 @include media-breakpoint-up(md) {
   .page-section {
-    margin: 2rem 0;
+    margin: 2rem auto;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-section {
+    &.indented {
+      // margin: 2rem auto;
+      width: 90%;
+    }
   }
 }
 
@@ -53,7 +65,22 @@
   flex-direction: column;
 }
 
-// Regular pages
+.getting-started {
+  li {
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+
+    &::marker {
+      color: $cwl-red;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+///////////////////
+// Regular pages //
+///////////////////
+
 .post-header {
   background: $cwl-red;
   color: $white;
@@ -109,7 +136,10 @@
   }
 }
 
-// Tables
+////////////
+// Tables //
+////////////
+
 // Soften table header row bottom border
 .table > :not(:last-child) > :last-child > * {
   border-bottom: 2px solid $table-border-light;

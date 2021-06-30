@@ -17,8 +17,9 @@
 }
 
 .navbar-collapse {
-  background: $nav-bg-color;
-  border: 1px solid $nav-border-color-2;
+  // background: $nav-bg-color;
+  background: transparent;
+  border-bottom: 1px solid $nav-border-color-2;
 }
 
 @include media-breakpoint-up(lg) {
@@ -27,9 +28,13 @@
   }
 }
 
+.nav-item,
+.nav-social-icons {
+  padding: $nav-menu-padding;
+}
+
 .nav-item {
   background: $nav-bg-color;
-  padding: 0 1.75rem;
 
   &:hover {
     background: $cwl-menu-blue;
@@ -47,7 +52,6 @@
 
 .nav-social-icons {
   margin: 0 auto;
-  padding: 0 2rem;
 }
 
 .fab {
