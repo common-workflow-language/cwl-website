@@ -5,6 +5,7 @@ title: Projects
 class: short
 ---
 
+{:.cwl-red}
 ## Projects the CWL community is participating in 
 
 {: .table .table-striped .rows-2 }

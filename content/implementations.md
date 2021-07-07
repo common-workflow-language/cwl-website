@@ -4,8 +4,27 @@ permalink: /implementations/
 title: Implementations
 ---
 
-What can execute CWL descriptions?
+## What can execute CWL descriptions?
+CWL provides a
+solution to describing portable, re-usable workflows while also
+being workflow-engine and vendor-neutral.
+CWL has gained much traction and is currently widely
+supported in practice. In addition to the Free and Open Source implementations, certain platforms/engines have in-development or partial support for CWL as well.  
 
+Some workflow users require the maintenance and risk-mitigation
+guarantees offered by commercial operations. There are multiple
+commercially supported systems that support CWL for executing
+workflows and they are available from vendors such as Curii
+(Arvados), DNAnexus, IBM (IBM® Spectrum LSF), Illumina
+(Illumina Connected Analytics), and Seven Bridges.
+
+Wide adoption benefits from our principles: CWL offers 
+conformance tests, but the CWL community does not yet test or certify
+CWL implementations, or specific technology stacks. Instead, 
+plaform/service providers self-certify support for CWL, based on a
+particular technology configuration they deploy and maintain.
+
+{:.cwl-red}
 ### In Production:
 
 {: .table .table-striped .rows-3}
@@ -17,6 +36,7 @@ What can execute CWL descriptions?
 |[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|Linux, OS X|
 |[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) [OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
 
+{:.cwl-red}
 ### Partial implementations:
 
 {: .table .table-striped .rows-3}

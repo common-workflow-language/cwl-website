@@ -4,9 +4,34 @@ permalink: /about/
 title: About
 ---
 
-## Mission Statement
+The problem of standardizing computational reuse is only increasing in prominence and impact.
+The CWL Project began out of a need for a standard to 
+describe multilingual analysis pipelines in a portable and reusable
+manner. Common Workflow Language (CWL) is a family of standards
+for the description of command line tools and of workflows made with these standards.
 
-Needs Content
+The CWL project delivers open standards, open-source code and an open community.
+
+
+## Vision of the CWL Project
+
+### What this community hopes to have accomplished in the future
+
+Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+
+
+## Mission of the CWL Project 
+
+{:.cwl-red}
+### How we plan to achieve our vision
+
+The CWL project supports open consensus-based standards for command line data analysis workflows and tools.
+
+Specifically, we support the
+*    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
+*    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
+*    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
+
 
 ## Timeline
 
@@ -59,6 +84,9 @@ The CWL leadership team consists of the following people, listed in alphabetical
 *   [CERN](https://home.cern/)
 
 ### Individual Contributors 
+The CWL project is grateful to the following self-identified
+CWL Community members and their contributions to the project.
+
 
 (Alphabetical)
 
