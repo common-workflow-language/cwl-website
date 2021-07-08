@@ -1,6 +1,6 @@
 title: Common Workflow Language (CWL)
 baseurl: ""
-# url: "https://www.commonwl.org"
+url: "https://www.commonwl.org"
 author: "Common Workflow Language (CWL)"
 # email:             your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
