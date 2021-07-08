@@ -15,13 +15,17 @@ The preview build of the site is currently found at [https://deploy-preview-75--
     - That adds a line under the table heading
   - Implementations - increase width of left-column?
 * Are GitHub & Twitter nav icons too big on mobile??
+* Add bottom padding to GH & Twitter icons on mobile
+* Add mobile nav close on click/touch outside
+
 
 ### Cleanup
 
 * Remove unnecessary img files from assets/img/ once final icons are decided on
 
-
 ## Reference
+
+### Bootstrap Grid Points
 
 Bootstrap Grid Breakpoints are as follows:
 
@@ -38,3 +42,43 @@ $grid-breakpoints: (
 // scss-docs-end grid-breakpoints
 ```
 
+### Hypothesi.is Annotation Config
+
+The following config options are available for hypothes.is (see [https://h.readthedocs.io/projects/client/en/latest/publishers/config/](https://h.readthedocs.io/projects/client/en/latest/publishers/config/) for more detail):
+
+```
+openSidebar
+showHighlights
+theme
+enableExperimentalNewNoteButton
+usernameUrl
+services
+apiUrl
+authority
+grantToken
+allowLeavingGroups
+enableShareLinks
+groups
+icon
+onLoginRequest
+onLogoutRequest
+onSignupRequest
+onProfileRequest
+onHelpRequest
+branding
+accentColor
+appBackgroundColor
+ctaBackgroundColor
+ctaTextColor
+selectionFontFamily
+annotationFontFamily
+onLayoutChange
+expanded
+height
+width
+externalContainerSelector
+focus
+requestConfigFromFrame
+assetRoot
+sidebarAppUrl
+```

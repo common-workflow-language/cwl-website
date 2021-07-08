@@ -1,14 +1,23 @@
-<script type="application/json" class="js-hypothesis-config">
-	{% if jekyll.environment == "staging" %}
+{% if jekyll.environment == "staging" %}
+	<script type="application/json" class="js-hypothesis-config">
 	{
-		"showHighlights": false,
+		"showHighlights": false
 	}
-	
-	{% elsif jekyll.environment == "development" %}
-	{
-		"showHighlights": false,
-		"theme": "clean"		
-	}
-	{% endif %}
-</script>
+	</script>
+
+	<style>
+		.navbar-toggler {
+		  margin: 10px 3rem 0 0;
+		}
+	</style>
+
+{% elsif jekyll.environment == "development" %}
+	<script type="application/json" class="js-hypothesis-config">
+		{
+			"showHighlights": false,
+			"theme": "clean"
+		}
+	</script>
+{% endif %}
+
 <script src="https://hypothes.is/embed.js" async></script>

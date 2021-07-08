@@ -1,7 +1,20 @@
+.top-nav,
+.navbar-brand,
+.nav-logo {
+  height: $nav-height-mobile;
+}
+
+@include media-breakpoint-up(lg) {
+  .top-nav,
+  .navbar-brand,
+  .nav-logo {
+    height: $nav-height-desktop;
+  }
+}
+
 .top-nav {
   border-bottom: 1px solid $nav-border-color;
   box-sizing: content-box;
-  height: 39px;
 }
 
 .nav-wrap {
@@ -9,15 +22,38 @@
   border: 0;
   margin: 0 0 0 auto;
   padding: 0;
+  // width: 100%;
   width: auto;
 }
 
+.navbar-brand {
+  box-sizing: content-box;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-wrap {
+    border: 0;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.nav-logo {
+  // margin: 0 0 0 6px;
+  margin: 6px 0 0 6px;
+  object-fit: contain;
+}
+
 .navbar-toggler {
-  margin: 0 0.75rem 0 0;
+  margin: 10px 1rem 10px 0;
 }
 
 .navbar-collapse {
-  // background: $nav-bg-color;
   background: transparent;
   border-bottom: 1px solid $nav-border-color-2;
 }
@@ -54,37 +90,6 @@
   }
 }
 
-// @include media-breakpoint-up(lg) {
-//   .nav-item {
-//     // background: $nav-bg-color;
-
-//     &:hover {
-//       // background: $nav-bg-color;
-//     }
-
-//     &:focus,
-//     &:active {
-//       // background: $cwl-menu-blue;
-//       background: $nav-bg-color;
-//       color: $nav-link-hover-color-desktop;
-//     }
-//   }
-
-//   .navbar-light .navbar-nav {
-//     .nav-link {
-//       &:hover {
-//         color: $nav-link-hover-color-desktop;
-//       }
-
-//       &:focus,
-//       &:active {
-//         background: $cwl-menu-blue;
-//         color: $white;
-//       }
-//     }
-//   }
-// }
-
 .nav-social-icons {
   margin: 0 auto;
 }
@@ -92,6 +97,28 @@
 .fab {
   font-size: 2em;
   margin: $nav-item-margin;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+
+  .nav-social-icons {
+    margin: 0 1rem 0 0;
+    padding: 0 1rem;
+
+    .fab {
+      font-size: 1.75rem;
+      margin: 0 $nav-item-margin;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-item {
+    padding: 0 0.75rem;
+  }
 }
 
 .first-icon {
@@ -104,30 +131,4 @@
 
 .fa-github {
   color: $black;
-}
-
-@include media-breakpoint-up(lg) {
-  .nav-wrap {
-    border: 0;
-  }
-
-  .nav-item {
-    padding: 0 0.5rem;
-  }
-
-  .nav-social-icons {
-    margin: 0;
-    padding: 0 1rem;
-
-    .fab {
-      font-size: 1.75rem;
-      margin: 0 .5rem;
-    }
-  }
-}
-
-@include media-breakpoint-up(xl) {
-  .nav-item {
-    padding: 0 0.75rem;
-  }
 }
