@@ -1,18 +1,13 @@
 # CWL Website 2.0
 
-2.5
-1
-
-Start: 9:30
-
-
 The in-progress redesign of the CWL Website
+
+The preview build of the site is currently found at [https://deploy-preview-75--cwl-website.netlify.app/](https://deploy-preview-75--cwl-website.netlify.app/)
 
 ## To-Do
 
 * Add Home logo on left side of nav
 * Homepage: consider adding a max-height query for the header graphic
-* Remove unnecessary img files from assets/img/ once final icons are decided on
 * Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
 * Tables
   - Add outer border?
@@ -20,6 +15,11 @@ The in-progress redesign of the CWL Website
     - That adds a line under the table heading
   - Implementations - increase width of left-column?
 * Are GitHub & Twitter nav icons too big on mobile??
+
+### Cleanup
+
+* Remove unnecessary img files from assets/img/ once final icons are decided on
+
 
 ## Reference
 
