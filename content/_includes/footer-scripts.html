@@ -1,6 +1,6 @@
 <script type="text/javascript" src="{{ "/assets/js/jquery-3.5.1.min.js" | relative_url }}"></script>
 <script type="text/javascript" src="{{ "/assets/js/bootstrap.min.js" | relative_url }}"></script>
 
-{% if (site.url != 'cwl.test') and (site.url != 'commonwl.org') and (site.url != 'www.commonwl.org') %}
+{% if (jekyll.environment == "staging") or (jekyll.environment == "development") %}
   {% include hypothesis.html %}
 {% endif %}

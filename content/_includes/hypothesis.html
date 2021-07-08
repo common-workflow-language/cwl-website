@@ -1,15 +1,14 @@
 <script type="application/json" class="js-hypothesis-config">
-	{% if jekyll.environment == development %}
+	{% if jekyll.environment == "staging" %}
 	{
 		"showHighlights": false,
 	}
 	
-	{% elsif jekyll.environment == staging %}
+	{% elsif jekyll.environment == "development" %}
 	{
 		"showHighlights": false,
 		"theme": "clean"		
 	}
-	
 	{% endif %}
 </script>
 <script src="https://hypothes.is/embed.js" async></script>
