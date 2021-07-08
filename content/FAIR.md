@@ -1,17 +1,15 @@
 ---
 layout: page
 permalink: /FAIR/
-title: CWL and FAIR principles 
+title: FAIR principles for Workflows and CWL 
 ---
 
 
-# FAIR principles for Workflows & CWL
+It is one of the goals of the CWL project to assist workflow engines/platforms and users in realizing the FAIR principles while not imposing a burden for lack of perfection or completion. When considering the FAIR & CWL we examine not just the context of the workflow and tool descriptions, but also the context of creating, sharing, and executing these descriptions; and finally the context not narrowing the adherence of inbound data to the FAIR principles and increasing the adherence of the FAIR principles for the outbound data.
 
-It is one of the goals of the CWL project to assist workflow engines/platforms and users in realizing the FAIR principles[[3]](https://www.zotero.org/google-docs/?lAOCSH) while not imposing a burden for lack of perfection or completion. When considering the FAIR & CWL we examine not just the context of the workflow and tool descriptions, but also the context of creating, sharing, and executing these descriptions; and finally the context not narrowing the adherence of inbound data to the FAIR principles and increasing the adherence of the FAIR principles for the outbound data.
+Rather than attempting to conduct a quantitative study, we focus here on qualitative analysis as the FAIR Principles are just that, principles, and not specific metrics. For specific data types there are specific community led FAIR metrics, but there are no universal FAIR metrics (nor should there be, as “FAIR is not a standard”).
 
-Rather than attempting to conduct a quantitative study, we focus here on qualitative analysis as the FAIR Principles are just that, principles, and not specific metrics. For specific data types there are specific community led FAIR metrics, but there are no universal FAIR metrics (nor should there be, as “FAIR is not a standard”[[4]](https://www.zotero.org/google-docs/?lWwb2Z)).
-
-
+{:.cwl-red}
 ## To be Findable:
 
 
@@ -34,7 +32,7 @@ This is automatic for CWL documents, as the metadata is embedded in the data it 
 
 There are several registries of workflows, and one in particular (Workflow Hub[^2]) has chosen the CWL object model for their workflow metadata model, even for workflows not written using the CWL standards.
 
-
+{:.cwl-red}
 ## To be Accessible
 
 
@@ -63,7 +61,7 @@ For GA4GH DRS “The DRS implementation is responsible for defining and enforcin
 
 Not a guarantee for GA4GH TRS, DRS, or plain HTTP. Possibly guaranteed for workflows registered with the Workflow Hub.
 
-
+{:.cwl-red}
 ## To be Interoperable:
 
 
@@ -72,13 +70,11 @@ Not a guarantee for GA4GH TRS, DRS, or plain HTTP. Possibly guaranteed for workf
 Tool and workflow descriptions that conform to the CWL standards are transformable (inclusive of any embedded metadata) to JSON-LD as a pleasant (and purposeful) side effect of the CWL standards being defined in Salad schema language[^7]. The reference implementation of CWL has such a capability[^8].
 
 “There are three parts to [the CWLProv] profile:
+* CWLProv BagIt, how the resources of an execution are packaged using BagIt
 
-	CWLProv BagIt, how the resources of an execution are packaged using BagIt
+* CWLProv Research Object, how the resources of an execution are related in an RO
 
-	CWLProv Research Object, how the resources of an execution are related in an RO
-
-	CWLProv PROV, how the workflow execution provenance is modelled in W3C PROV“[^9]
-
+* CWLProv PROV, how the workflow execution provenance is modelled in W3C PROV“[^9]
 
 ### I2. (meta)data use vocabularies that follow FAIR principles
 
@@ -89,7 +85,7 @@ The vocabularies used in CWL are RDF schema[^10], Salad (which uses Dublin Core 
 
 All references in the CWL and CWLProv object models are qualified.
 
-
+{:.cwl-red}
 ## To be Reusable:
 
 
@@ -112,7 +108,7 @@ This is not required by the CWL standards. The CWLProv profile is one way for wo
 
 For many (sub)domains, CWL is the relevant standard for workflow and tool description.
 
-
+{:.cwl-red}
 ## Areas of improvement:
 
 F1. A default source for identifiers of CWL tools and workflows could be decided upon and standardized. Likewise there could be an agreed upon registration method and lookup mechanism for these identifiers. This could be a single source or federated.
