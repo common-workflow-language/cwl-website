@@ -6,7 +6,6 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 ## To-Do
 
-* Add Home logo on left side of nav
 * Homepage: consider adding a max-height query for the header graphic
 * Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
 * Tables
@@ -14,14 +13,16 @@ The preview build of the site is currently found at [https://deploy-preview-75--
     - Alternately, remove this from `_structure.scss`? `.table > :not(:last-child) > :last-child > * {border-bottom: 2px solid $table-border-light; }`
     - That adds a line under the table heading
   - Implementations - increase width of left-column?
-* Are GitHub & Twitter nav icons too big on mobile??
-* Add bottom padding to GH & Twitter icons on mobile
+  - Why is table margin repeated in both _structure.scss and _type.scss??
 * Add mobile nav close on click/touch outside
+* Add GH & Twitter icons to nav ul??
+* Accesibility: Skip links
 
 
-### Cleanup
+### Cleanup & Deployment
 
 * Remove unnecessary img files from assets/img/ once final icons are decided on
+* Ensure hypothes.is is off for live site
 
 ## Reference
 
