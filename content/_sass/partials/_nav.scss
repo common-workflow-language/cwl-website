@@ -45,12 +45,13 @@
 
 .nav-logo {
   // margin: 0 0 0 6px;
-  margin: 6px 0 0 6px;
+  // margin: 6px 0 0 6px;
+  margin: 3px 0 3px 6px;
   object-fit: contain;
 }
 
 .navbar-toggler {
-  margin: 10px 1rem 10px 0;
+  margin: 5px 1rem 5px 0;
 }
 
 .navbar-collapse {
@@ -64,20 +65,9 @@
   }
 }
 
-.nav-item,
-.nav-social-icons {
-  padding: $nav-menu-padding;
-}
-
 .nav-item {
   background: $nav-bg-color;
-
-  // &:hover,
-  // &:focus,
-  // &:active {
-  //   // background: $cwl-menu-blue;
-  //   color: #b5314c;
-  // }
+  padding: $nav-item-padding;
 }
 
 .navbar-light .navbar-nav {
@@ -92,6 +82,7 @@
 
 .nav-social-icons {
   margin: 0 auto;
+  padding: $nav-item-padding 0.25rem;
 }
 
 .fab {
