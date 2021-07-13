@@ -1,0 +1,2 @@
+[context.new-site] # "new-site" is the branch name
+  command = "JEKYLL_ENV=staging jekyll build --config _config.yml,_config_staging.yml"

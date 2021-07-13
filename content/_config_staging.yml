@@ -1,4 +1,2 @@
 title: CWL Staging Site
-url: "https://www.commonwl.org" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/cwl-staging"
-port: 80
+url: "https://deploy-preview-75--cwl-website.netlify.app" 

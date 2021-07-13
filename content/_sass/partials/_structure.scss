@@ -1,131 +1,152 @@
-// body {
-//   padding: 61px 0 0;
-// }
+///////////////////////
+// Sticky Footer Fix //
+///////////////////////
 
-/**
- * Fix for Sticky Footer
- */
 .site-wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  padding: 61px 0 0;
+  position: relative;
 }
 
 .content-wrapper {
-  // Double-check if these are equivalent
-  flex: 1 0 auto;
-  flex: 1;
+  padding-bottom: 75px;
 }
 
-.container-md,
-.container {
-  max-width: initial;
-}
-
-@include media-breakpoint-up(md) {
-  .container-md,
-  .container {
-    max-width: 750px;
+// Account for footer wrapping
+@include media-breakpoint-up(xxs) {
+  .content-wrapper {
+    padding-bottom: 146px;
   }
 }
 
-// Content-Area Width
+.site-footer {
+  bottom: 0;
+  margin: 24px 0 0;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .page-short .site-footer {
+    position: absolute;
+  }
+}
+
+///////////////////////////
+// End Sticky Footer Fix //
+///////////////////////////
+
+//////////////
+// Homepage //
+//////////////
+
+.page-section {
+  margin: 1rem 0;
+}
+
+@include media-breakpoint-up(md) {
+  .page-section {
+    margin: 2rem auto;
+  }
+}
+
 @include media-breakpoint-up(lg) {
-  .container-lg,
+  .page-section {
+    &.indented {
+      // margin: 2rem auto;
+      width: 90%;
+    }
+  }
+}
+
+.section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.getting-started,
+.community {
+  li {
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+
+    &::marker {
+      color: $cwl-red;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+
+///////////////////
+// Regular pages //
+///////////////////
+
+.post-header {
+  background: $cwl-red;
+  color: $white;
+  left: 0;
+  margin: 0;
+  padding: 10px 0 0 12px;
+  position: absolute;
+  width: 100%;
+
   .container {
-    max-width: 970px;
+    padding-left: 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .post-header {
+    padding-left: 24px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-title {
+    font-size: 2.25rem;
+  }
+}
+
+.post-content {
+  position: relative;
+  top: 84px;
+}
+
+@include media-breakpoint-up(sm) {
+  .post-content {
+    top: 90px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .post-content {
+    top: 92px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .post-content {
+    top: 96px;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .container-xl,
-  .container {
-    max-width: 1170px;
+  .post-content {
+    top: 102px;
   }
 }
 
-/**
- * Header Offset Fix for Anchor Links
- */
-h2::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
+////////////
+// Tables //
+////////////
+
+// Soften table header row bottom border
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: 2px solid $table-border-light;
 }
-
-h3::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
-}
-
-.anchorfix {
-  position: relative;
-  top: -65px;
-
-  span {
-    position: relative;
-    top: 65px;
-  }
-}
-
-.longfix {
-  position: relative;
-  top: -100px;
-
-  span {
-    position: relative;
-    top: 100px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .longfix {
-    top: -65px;
-
-    span {
-      top: 65px;
-    }
-  }
-}
-
-/**
- * Tables
- */
 
 .table {
-  margin: 0 0 1.25rem;
-  // width: initial;
-
-  th,
-  td {
-    padding: 0.5rem;
-    width: 30%;
-  }
-
-  thead th {
-    border-top: 0;
-  }
-
-  a {
-    word-break: normal;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .table {
-    th,
-    td {
-      width: initial;
-    }
-  }
+  margin: 0 0 2rem;
 }

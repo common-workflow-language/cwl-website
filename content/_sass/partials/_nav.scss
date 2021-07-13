@@ -1,170 +1,125 @@
-.top-nav {
-  background: $header--background-color;
-  justify-content: space-between;
-  max-height: 50px;
-  padding: 0;
-  width: 100%;
-}
-
-.dropdown {
-  color: black;
-  padding: 0 1rem 0 0;
-}
-
-.navbar-nav {
-  align-items: flex-start;
-
-  a {
-    color: $nav--link-color;
-  }
-}
-
-.search-bar-top {
-  display: none;
-  position: absolute;
-  // 34px would match the distance of the logo
-  // right: 34px;
-  right: $navbar--right-spacing;
-}
-
-.site-logo-link {
-  align-items: center;
-  display: flex;
-  font-family: $font-family-sans-serif;
-  height: 50px;
-  line-height: 20px;
-  // margin: 1px 0 0 -5px;
-  margin: 0.5px 0 0 -5px;
-  padding: 0;
-}
-
-.site-logo-img {
-  display: block;
-  height: 61px;
-  margin: 0;
-  max-width: unset;
-  padding: 0;
-}
-
-.navbar-toggler {
-  // margin: 1px 0 0;
-  margin: 0 $navbar--right-spacing 0 0;
-  position: static;
-}
-
-.dropdown-menu {
-  justify-content: flex-end;
-  justify-self: flex-end;
-  // min-width: 60%;
-
-  &.show {
-    display: block;
-  }
-}
-
-.navbar-collapse {
-  background: $header--background-color;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 15px;
-}
-
-.collapse.show .nav-link:last-child {
-  padding: 8px 0 16px;
-}
-
-.site-header .container {
-  max-width: initial;
-}
-
-.nav-wrap {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  // width: 750px;
-  width: 100%;
-}
-
-.navbar-toggler {
-  height: 36px;
-}
-
-.navbar-toggler-icon {
-  padding: 12px 4px;
-
-}
-.navbar-nav {
-  font-size: 15px;
-  margin: 0 auto;
-  padding: 0 0 0 20px;
-  width: 750px;
-}
-
-@include media-breakpoint-up(md) {
-  .nav-wrap,
-  .navbar-nav {
-    width: 750px;
-  }
+.top-nav,
+.navbar-brand,
+.nav-logo {
+  height: $nav-height-mobile;
 }
 
 @include media-breakpoint-up(lg) {
-  .top-nav {
-    margin: 0 auto;
-    max-width: 970px;
-    padding: 0.5rem 1rem 0.5rem 0;
-    width: 100%;
+  .top-nav,
+  .navbar-brand,
+  .nav-logo {
+    height: $nav-height-desktop;
   }
+}
 
+.top-nav {
+  border-bottom: 1px solid $nav-border-color;
+  box-sizing: content-box;
+}
+
+.nav-wrap {
+  background: $nav-bg-color;
+  border: 0;
+  margin: 0 0 0 auto;
+  padding: 0;
+  // width: 100%;
+  width: auto;
+}
+
+.navbar-brand {
+  box-sizing: content-box;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@include media-breakpoint-up(lg) {
   .nav-wrap {
-    width: 106px;
+    border: 0;
   }
 
-  .logo-container {
-    position: static;
-    // width: 135px;
+  .navbar-brand {
+    display: none;
   }
+}
 
-  .site-logo-link {
-    margin: 1 20px 0 -5px;
+.nav-logo {
+  // margin: 0 0 0 6px;
+  // margin: 6px 0 0 6px;
+  margin: 3px 0 3px 6px;
+  object-fit: contain;
+}
+
+.navbar-toggler {
+  margin: 5px 1rem 5px 0;
+}
+
+.navbar-collapse {
+  background: transparent;
+  border-bottom: 1px solid $nav-border-color-2;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-collapse {
+    border: 0;
   }
+}
 
-  .navbar-nav {
-    // align-items may also be unnecessary here
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 0 -24px;
-  }
+.nav-item {
+  background: $nav-bg-color;
+  padding: $nav-item-padding;
+}
 
-  .navbar-collapse {    
-    &.show .nav-link:last-child {
-      padding: 0.5rem;
+.navbar-light .navbar-nav {
+  .nav-link {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $cwl-red;
     }
   }
+}
 
+.nav-social-icons {
+  margin: 0 auto;
+  padding: $nav-item-padding 0.25rem;
+}
+
+.fab {
+  font-size: 2em;
+  margin: $nav-item-margin;
+}
+
+@include media-breakpoint-up(lg) {
   .nav-item {
+    padding: 0 0.5rem;
+  }
+
+  .nav-social-icons {
+    margin: 0 1rem 0 0;
     padding: 0 1rem;
-  }
 
-  .search-bar-top {
-    display: block;
+    .fab {
+      font-size: 1.75rem;
+      margin: 0 $nav-item-margin;
+    }
   }
-
 }
 
 @include media-breakpoint-up(xl) {
-  .top-nav {
-    // width: 100%;
-    margin: 0 auto;
-    max-width: 1170px;
-  }
-
-  .navbar-nav {
-    margin: 0;
-  }
-
-  .site-logo-link {
-    margin: 1px 0 0 -5px;
+  .nav-item {
+    padding: 0 0.75rem;
   }
 }
 
+.first-icon {
+  margin-left: 0;
+}
+
+.fa-twitter {
+  color: $twitter-blue;
+}
+
+.fa-github {
+  color: $black;
+}
