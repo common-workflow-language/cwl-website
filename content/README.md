@@ -14,9 +14,12 @@ The preview build of the site is currently found at [https://deploy-preview-75--
     - That adds a line under the table heading
   - Implementations - increase width of left-column?
   - Why is table margin repeated in both _structure.scss and _type.scss??
+  - Create Two-Col & Three-Col Fixed Width Tables
 * Add mobile nav close on click/touch outside
 * Add GH & Twitter icons to nav ul??
 * Accesibility: Skip links
+* Improve Open Stand logo markdown Community section
+* Add in class for red bullet points
 
 
 ### Cleanup & Deployment

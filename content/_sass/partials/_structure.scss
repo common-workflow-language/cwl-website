@@ -78,7 +78,6 @@
   }
 }
 
-
 ///////////////////
 // Regular pages //
 ///////////////////
@@ -149,4 +148,49 @@
 
 .table {
   margin: 0 0 2rem;
+  table-layout: fixed;
+
+  th {
+    word-break: keep-all;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .table {
+    th,
+    td {
+      &:first-of-type {
+        width: 25%;
+        word-break: keep-all;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .cols-2 {
+    th,
+    td {
+      width: 70%;
+    }
+  }
+
+  .cols-3 {
+    th,
+    td {
+      width: 60%;
+
+      &:first-of-type {
+        width: 25%;
+      }
+    }
+  }
+
+  .table th,
+  .table td {
+    &:first-of-type {
+      white-space: nowrap;
+      width: 22%;
+    }
+  }
 }
