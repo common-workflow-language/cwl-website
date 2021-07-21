@@ -96,27 +96,27 @@ CWL Community members and their contributions to the project.
 *   John Chilton, Pennsylvania State University / Galaxy Project; [https://orcid.org/0000-0002-6794-0756](https://orcid.org/0000-0002-6794-0756)
 *   Michael R. Crusoe, CWL Project Lead; [https://orcid.org/0000-0002-2961-9670](https://orcid.org/0000-0002-2961-9670)
 *   Roman Valls Guimerà; [https://orcid.org/0000-0002-0034-9697](https://orcid.org/0000-0002-0034-9697)
-*   Guillermo Carrasco Hernandez guille.ch.88@gmail.com
+*   Guillermo Carrasco Hernandez <guille.ch.88@gmail.com>
 *   Kenzo-Hugo Hillion; [https://orcid.org/0000-0002-6517-6934](https://orcid.org/0000-0002-6517-6934)
 *   Manabu Ishii, RIKEN; [https://orcid.org/0000-0002-5843-4712](https://orcid.org/0000-0002-5843-4712)
-*   Sinisa Ivkovic sinisa.ivkovic@sbgenomics.com
+*   Sinisa Ivkovic <sinisa.ivkovic@sbgenomics.com>
 *   Sehrish Kanwal; [https://orcid.org/0000-0002-5044-4692](https://orcid.org/0000-0002-5044-4692)
 *   Andrey Kartashov; [https://orcid.org/0000-0001-9102-5681](https://orcid.org/0000-0001-9102-5681)
 *   John Kern; [https://orcid.org/0000-0001-6977-458X](https://orcid.org/0000-0001-6977-458X)
 *   Farah Zaib Khan; [https://orcid.org/0000-0002-6337-3037](https://orcid.org/0000-0002-6337-3037)
 *   Dan Leehr; [https://orcid.org/0000-0003-3221-9579](https://orcid.org/0000-0003-3221-9579)
 *   Hervé Ménager, Institut Pasteur; [https://orcid.org/0000-0002-7552-1009](https://orcid.org/0000-0002-7552-1009)
-*   Maxim Mikheev mikhmv@biodatomics.com
-*   Michael Miller mdmiller53@comcast.net
+*   Maxim Mikheev <mikhmv@biodatomics.com>
+*   Michael Miller <mdmiller53@comcast.net>
 *   Tazro Ohta, DBCLS; [http://orcid.org/0000-0003-3777-5945](http://orcid.org/0000-0003-3777-5945)
-*   Tim Pierce twp@unchi.org
+*   Tim Pierce <twp@unchi.org>
 *   Josh Randall; [https://orcid.org/0000-0003-1540-203X](https://orcid.org/0000-0003-1540-203X)
 *   Mark Robinson; [https://orcid.org/0000-0002-8184-7507](https://orcid.org/0000-0002-8184-7507)
-*   Janko Simonović janko.simonovic@sbgenomics.com
+*   Janko Simonović <janko.simonovic@sbgenomics.com>
 *   Stian Soiland-Reyes, University of Manchester; [https://orcid.org/0000-0001-9842-9718](https://orcid.org/0000-0001-9842-9718)
-*   Luka Stojanovic luka.stojanovic@sbgenomics.com
+*   Luka Stojanovic <luka.stojanovic@sbgenomics.com>
 *   Tomoya Tanjo, NII; [https://orcid.org/0000-0002-4421-9659](https://orcid.org/0000-0002-4421-9659)
-*   Nebojša Tijanić nebojsa.tijanic@sbgenomics.com
+*   Nebojša Tijanić <nebojsa.tijanic@sbgenomics.com>
 *   Hiromu Ochiai; [@otiai10](https://github.com/otiai10) [https://orcid.org/0000-0001-6636-856X](https://orcid.org/0000-0001-6636-856X)
 
 ### CWL Advisors 
