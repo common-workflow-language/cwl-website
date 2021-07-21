@@ -1,0 +1,24 @@
+<div class="timeline">
+	<ul class="timeline__list">
+		{%- if site.data.timeline.timeline_events -%}
+		  {%- for item in site.data.timeline.timeline_events -%}
+			  {%- if item.long == true -%}
+				  <li class="timeline__event timeline__event--long">
+				  	<span class="timeline__event--year">{{ item.year }}</span>
+				  	<span class="timeline__event--data">{{ item.event }}</span>
+				  </li>
+
+			  {%- else -%}
+					<li class="timeline__event">
+						<span class="timeline__event--year">{{ item.year }}</span>
+						<span class="timeline__event--data">{{ item.event }}</span>
+					</li>
+				{%- endif -%}
+
+				{%- if forloop.last == false -%}
+					<div class="timeline__event--separator"></div>
+				{%- endif -%}
+			{%- endfor -%}
+		{%- endif -%}
+	</ul>
+</div>
