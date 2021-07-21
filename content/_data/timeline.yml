@@ -1,0 +1,17 @@
+timeline_events:
+  - year: 2014
+    event: "Initial Draft created <span class='no-bold'>at Bioinformatics Open Source Conference CodeFest</span>"
+  - year: 2015
+    event: "CWL “draft-2” version<br>
+      Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
+  - year: 2016
+    event: CWL v1.0 released 
+  - year: 2017
+    event: "CWL v1.0.1 and CWL v1.0.2 released<br>
+      4 public implementations"
+  - year: 2018
+    event: IBM released CWL implementation for LSF
+  - year: 2019
+    event: CWL v1.1 released
+  - year: 2020
+    event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
