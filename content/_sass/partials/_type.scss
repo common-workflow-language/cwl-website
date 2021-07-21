@@ -1,9 +1,6 @@
-body {
-  word-break: break-word;
-}
-
+body,
 a {
-  word-break: keep-all;
+  word-break: break-word;
 }
 
 h1,
