@@ -27,7 +27,7 @@ particular technology configuration they deploy and maintain.
 {:.cwl-red}
 ### In Production:
 
-{: .table .table-striped .rows-3}
+{: .table .rows-3}
 |Software|Description|Platform support|
 |--- |--- |--- |
 |[cwltool](https://github.com/common-workflow-language/cwltool)|Reference implementation of CWL|Linux, OS X, Windows, local execution only|
@@ -39,7 +39,7 @@ particular technology configuration they deploy and maintain.
 {:.cwl-red}
 ### Partial implementations:
 
-{: .table .table-striped .rows-3}
+{: .table .rows-3}
 |Software|Description|Platform support|
 |--- |--- |--- |
 |[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research.|&#8211;|
