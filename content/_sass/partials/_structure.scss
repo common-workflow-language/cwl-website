@@ -8,13 +8,27 @@
 }
 
 .content-wrapper {
-  padding-bottom: 75px;
+  padding-bottom: 76px;
 }
 
 // Account for footer wrapping
 @include media-breakpoint-up(xxs) {
   .content-wrapper {
-    padding-bottom: 146px;
+    padding-bottom: 86px;
+  }
+
+  .page-short {
+    .content-wrapper {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .page-short {
+    .content-wrapper {
+      padding-bottom: 146px;
+    }
   }
 }
 
@@ -29,6 +43,10 @@
 @include media-breakpoint-up(md) {
   .page-short .site-footer {
     position: absolute;
+  }
+
+  .post-content {
+    margin: 0 0 38px;
   }
 }
 

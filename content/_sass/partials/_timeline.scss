@@ -1,6 +1,7 @@
 @include media-breakpoint-up(md) {
   .timeline {
-    margin: 0 0 4rem;
+    // margin: 0 0 4rem;
+    margin: 0 0 2rem;
   }
 }
 
@@ -59,8 +60,15 @@
 .timeline__event--data {
   font-size: 1.025rem;
   font-weight: 700;
+  padding: 0 6px;
   text-align: center;
   width: 100%;
+}
+
+@include media-breakpoint-up(xxs) {
+  .timeline__event--data {
+    padding: 0;
+  }
 }
 
 @include media-breakpoint-up(sm) {
