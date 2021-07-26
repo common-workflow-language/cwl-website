@@ -58,13 +58,19 @@
 // Homepage //
 //////////////
 
+.page-home .content-wrapper {
+  padding-bottom: 0;
+}
+
 .page-section {
   margin: 1rem 0;
+  padding: 0 2px;
 }
 
 @include media-breakpoint-up(md) {
   .page-section {
     margin: 2rem auto;
+    padding: 0;
   }
 }
 
@@ -127,12 +133,14 @@
 }
 
 .post-content {
+  padding: 0 2px;
   position: relative;
   top: 84px;
 }
 
 @include media-breakpoint-up(sm) {
   .post-content {
+    padding: 0;
     top: 90px;
   }
 }

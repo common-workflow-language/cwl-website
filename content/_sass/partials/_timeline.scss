@@ -1,3 +1,18 @@
+// Adjusting for the .post-content padding
+.timeline {
+  position: relative;
+  width: calc(100% + 4px);
+  left: -2px;
+}
+
+@include media-breakpoint-up(sm) {
+  .timeline {
+    position: static;
+    width: initial;
+    left: initial;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .timeline {
     margin: 0 0 1.5rem;
