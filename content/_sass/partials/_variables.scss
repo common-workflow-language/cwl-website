@@ -1,11 +1,16 @@
 // Colors
 $white: #fff;
+$black: #000;
+$grey-c: #ccc;
+$grey-d: #dee2e6;
+$salmon: #f5ecdf;
+
 $cwl-red: #b5314c;
+$link-blue: #0d6efd;
 $twitter-blue: #08a0e9;
 $cwl-menu-blue: #337ab7;
 $timeline-sep-grey: #5f6063;
-$black: #000;
-$salmon: #f5ecdf;
+$table-bg-grey: #f2f2f2;
 
 $nav-border-color: #e7e7e7;
 $nav-border-color-2: rgba(0, 0, 0, 0.1);
@@ -24,3 +29,7 @@ $nav-height-mobile: 50px;
 $nav-height-desktop: 40px;
 $nav-item-margin: 0.5rem;
 $nav-item-padding: 0 1.25rem;
+
+$table--cell-striped-background: $table-bg-grey;
+$table--cell-border-bottom: $grey-d;
+$table--cell-border-bottom-alt: $grey-c;
