@@ -22,7 +22,6 @@ Researchers, scientists, and analysts share their batch data analysis workflows 
 
 ## Mission of the CWL Project 
 
-{:.cwl-red}
 #### How we plan to achieve our vision
 
 The CWL project supports open consensus-based standards for command line data analysis workflows and tools.
