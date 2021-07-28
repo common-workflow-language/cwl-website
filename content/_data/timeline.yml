@@ -15,4 +15,3 @@ timeline_events:
     event: CWL v1.1 released
   - year: 2020
     event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
-    long: true

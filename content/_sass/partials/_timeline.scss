@@ -1,8 +1,15 @@
 // Adjusting for the .post-content padding
 .timeline {
+  left: -2px;
+  margin: 0 0 1.5rem;
   position: relative;
   width: calc(100% + 4px);
-  left: -2px;
+}
+
+@include media-breakpoint-up(xxs) {
+  .timeline {
+    margin: 0 0 1rem;
+  }
 }
 
 @include media-breakpoint-up(sm) {
@@ -42,6 +49,7 @@
   align-items: center;
   display: flex;
   flex-wrap: nowrap;
+  height: 72px;
   justify-content: flex-start;
   margin: 0;
 }
@@ -49,6 +57,7 @@
 @include media-breakpoint-up(xxs) {
   .timeline__event {
     align-items: flex-start;
+    height: auto;
   }
 }
 
@@ -68,12 +77,6 @@
 }
 
 @include media-breakpoint-up(xxs) {
-  .timeline__event--year {
-    margin: 0 2rem 0 0;
-  }
-}
-
-@include media-breakpoint-up(sm) {
   .timeline__event--year {
     margin: 0 2rem 0 0;
   }
@@ -99,25 +102,18 @@
   }
 }
 
-.timeline__event--long .timeline__event--year,
-.timeline__event--long .timeline__event--data {
-  position: relative;
-  top: -13px;
-}
-
-@include media-breakpoint-up(xxs) {
-  .timeline__event--long .timeline__event--year,
-  .timeline__event--long .timeline__event--data {
-    position: static;
-    top: initial;
-  }
-}
-
 .timeline__event--separator {
   background: $timeline-sep-grey;
   content: '';
   display: block;
-  height: 36px;
+  // height: 36px;
+  height: 46px;
   margin: 0 33.5px;
   width: 4px;
+}
+
+@include media-breakpoint-up(xxs) {
+  .timeline__event--separator {
+    height: 36px;
+  }
 }
