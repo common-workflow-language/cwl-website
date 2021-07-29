@@ -12,9 +12,9 @@ $cwl-menu-blue: #337ab7;
 $timeline-sep-grey: #5f6063;
 $table-bg-grey: #f2f2f2;
 
-$nav-border-color: #e7e7e7;
-$nav-border-color-2: rgba(0, 0, 0, 0.1);
-$nav-bg-color: #f8f9fa;
+$nav--border-color: #e7e7e7;
+$nav--border-color-2: rgba(0, 0, 0, 0.1);
+$nav--bg-color: #f8f9fa;
 // $nav-item-bg-color-desktop: #f8f9fa;
 $nav-item-hover-color-desktop: #6c757d;
 $nav-link-hover-color-desktop: rgba(0, 0, 0, 0.8);
@@ -27,8 +27,12 @@ $footer-link-old-hover-color: #22527c;
 
 $nav-height-mobile: 50px;
 $nav-height-desktop: 40px;
-$nav-item-margin: 0.5rem;
-$nav-item-padding: 0 1.25rem;
+$nav--brand-height-desktop: 56px;
+// $nav-logo--margin-desktop: 8px 0 8px 6px;
+$nav--logo-height-desktop: 50px;
+$nav--logo-margin-desktop: 3px 0 3px 6px;
+$nav--item-margin: 0.5rem;
+$nav--item-padding: 0 1.25rem;
 
 $table--cell-striped-background: $table-bg-grey;
 $table--cell-border-bottom: $grey-d;

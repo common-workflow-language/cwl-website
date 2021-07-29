@@ -13,12 +13,12 @@
 }
 
 .top-nav {
-  border-bottom: 1px solid $nav-border-color;
+  border-bottom: 1px solid $nav--border-color;
   box-sizing: content-box;
 }
 
 .nav-wrap {
-  background: $nav-bg-color;
+  background: $nav--bg-color;
   border: 0;
   margin: 0 0 0 auto;
   padding: 0;
@@ -33,21 +33,28 @@
   top: 0;
 }
 
+.nav-logo {
+  // margin: 0 0 0 6px;
+  // margin: 6px 0 0 6px;
+  margin: 3px 0 3px 6px;
+  object-fit: contain;
+}
+
 @include media-breakpoint-up(lg) {
   .nav-wrap {
     border: 0;
   }
 
   .navbar-brand {
-    display: none;
+    // display: none;
+    height: $nav--brand-height-desktop;
+    padding: 0;
   }
-}
 
-.nav-logo {
-  // margin: 0 0 0 6px;
-  // margin: 6px 0 0 6px;
-  margin: 3px 0 3px 6px;
-  object-fit: contain;
+  .nav-logo {
+    height: $nav--logo-height-desktop;
+    margin: $nav--logo-margin-desktop;
+  }
 }
 
 .navbar-toggler {
@@ -56,7 +63,7 @@
 
 .navbar-collapse {
   background: transparent;
-  border-bottom: 1px solid $nav-border-color-2;
+  border-bottom: 1px solid $nav--border-color-2;
 }
 
 @include media-breakpoint-up(lg) {
@@ -66,8 +73,8 @@
 }
 
 .nav-item {
-  background: $nav-bg-color;
-  padding: $nav-item-padding;
+  background: $nav--bg-color;
+  padding: $nav--item-padding;
 }
 
 .navbar-light .navbar-nav {
@@ -77,17 +84,22 @@
     &:active {
       color: $cwl-red;
     }
+
+    &.is-current-page {
+      color: $cwl-red;
+      font-weight: 500;
+    }
   }
 }
 
 .nav-social-icons {
   margin: 0 auto;
-  padding: $nav-item-padding 0.25rem;
+  padding: $nav--item-padding 0.25rem;
 }
 
 .fab {
   font-size: 2em;
-  margin: $nav-item-margin;
+  margin: $nav--item-margin;
 }
 
 @include media-breakpoint-up(lg) {
@@ -101,7 +113,7 @@
 
     .fab {
       font-size: 1.75rem;
-      margin: 0 $nav-item-margin;
+      margin: 0 $nav--item-margin;
     }
   }
 }
@@ -122,4 +134,39 @@
 
 .fa-github {
   color: $black;
+}
+
+.skip-nav {
+  margin: 0;
+  // background: white;
+
+  li {
+    height: 0;
+    list-style: none;
+    width: 0;
+  }
+
+  .skip-link {
+    background: white;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    transition: top 1s ease-out, background 1s linear;
+      -webkit-transition: top 1s ease-out, background 1s linear;
+
+    &:focus {
+      color: $cwl-red;
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+      font-weight: 700;
+      height: auto;
+      left: 0;
+      padding: 15px 23px 14px;
+      position: absolute;
+      top: 0;
+      transition: top .1s ease-in, background .5s linear;
+        -webkit-transition: top .1s ease-in, background .5s linear;
+      z-index: 2000;
+    }
+  }
 }

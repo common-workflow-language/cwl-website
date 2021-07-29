@@ -6,26 +6,28 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 ## To-Do
 
-* Homepage: consider adding a max-height query for the header graphic
 * Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
-* Tables
-  - Add outer border?
-    - Alternately, remove this from `_structure.scss`? `.table > :not(:last-child) > :last-child > * {border-bottom: 2px solid $table-border-light; }`
-    - That adds a line under the table heading
-  - Implementations - increase width of left-column?
-  - Why is table margin repeated in both _structure.scss and _type.scss??
-  - Create Two-Col & Three-Col Fixed Width Tables
+* Check Accessibility
 * Add mobile nav close on click/touch outside
-* Add GH & Twitter icons to nav ul??
-* Accesibility: Skip links
-* Improve Open Stand logo markdown Community section
-* Add in class for red bullet points
-
+  * This should already be working?!
+* ~~Add GH & Twitter icons to nav ul??~~
+* Create class for red bullet points
+  - Or make all bullet points on site red by default??
+* Add "Back to Top" button on mobile, for long pages
 
 ### Cleanup & Deployment
 
-* Remove unnecessary img files from assets/img/ once final icons are decided on
 * Ensure hypothes.is is off for live site
+
+### Colors
+
+About pg is the only one that doesn't have h3 as red. Can I just make it consistent??
+
+```scss
+h3 {
+  color: $cwl-red;
+}
+```
 
 ## Reference
 

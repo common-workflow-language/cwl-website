@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light top-nav sticky-top" aria-label="main navigation">
   <div class="nav-wrap container-fluid">
       <a class="navbar-brand" href="/">
         <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo" height="50" width="106">
@@ -13,10 +13,10 @@
           {%- for item in site.data.navigation.header -%}
             {%- if item.type contains "dropdown" -%}
               <li class="dropdown nav-item">
-                <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
 
                 {%- if item.subfolderitems[0] -%}
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     {%- for entry in item.subfolderitems -%}
                       <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
                     {%- endfor -%}
@@ -25,17 +25,16 @@
                 {%- endif -%}
 
               {%- else -%}
-              <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+              {%- if page.title == item.title -%}
+                <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
+              {%- else -%}
+                <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+              {%- endif -%}
+
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
       </ul>
-      {% comment %}
-      <!-- <form class="form-inline my-2 my-lg-0 search-bar-top">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->      
-      {% endcomment %}
       <div class="nav-social-icons">
         <a href="{{ site.github_url }}"><i class="fab fa-github first-icon"></i></a>
         <a href="{{ site.twitter_url }}"><i class="fab fa-twitter"></i></a>
