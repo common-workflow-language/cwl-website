@@ -28,3 +28,15 @@ h2,
 .no-bold {
   font-weight: 400;
 }
+
+.heading__anchor-symbol {
+  color: transparent;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $cwl-red;
+    // color: #c9c9c9;
+  }
+}

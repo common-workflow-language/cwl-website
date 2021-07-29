@@ -12,7 +12,7 @@ descriptions for popular tools.
 {:.cwl-red}
 ### Editors and Viewers
 
-{: .table .table-striped .rows-2}
+{: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
 |[Rabix Composer](https://github.com/rabix/composer)|Graphical CWL editor|
@@ -31,7 +31,7 @@ descriptions for popular tools.
 {:.cwl-red}
 ### Utilities
 
-{: .table .table-striped .rows-2}
+{: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
 |[cwldep](https://github.com/common-workflow-language/cwldep) |CWL dependency manager, for importing tool wrappers and workflows into your own project.|
@@ -47,7 +47,7 @@ descriptions for popular tools.
 {:.cwl-red}
 ### Converters And Code Generators
 
-{: .table .table-striped .rows-2}
+{: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
 |[cwl-upgrader](https://github.com/common-workflow-language/cwl-upgrader)|Upgrade CWL documents from draft-3 to v1.0, v1.0 to v1.1, and v1.1 to v1.2.|
@@ -68,7 +68,7 @@ descriptions for popular tools.
 {:.cwl-red}
 ### Code Libraries
 
-{: .table .table-striped .rows-2}
+{: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
 |[cwltool](https://github.com/common-workflow-language/cwltool)|cwltool (can be [imported as a Python module](https://www.commonwl.org/(https://github.com/common-workflow-language/cwltool#import-as-a-module)) and [extended to create custom cwl runners](https://github.com/common-workflow-language/cwltool#extension-points)|

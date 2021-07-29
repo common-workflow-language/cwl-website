@@ -2,13 +2,13 @@
 layout: page
 permalink: /projects/
 title: Projects
-class: short
+class: page-short
 ---
 
 {:.cwl-red}
 ## Projects the CWL community is participating in 
 
-{: .table .table-striped .rows-2 }
+{: .table .table-striped .cols-2 }
 |Name|Details|
 |--- |--- |
 |[Bio-compute objects](https://osf.io/h59uh/)|"a step towards evaluation and validation of bio-medical scientific computations", CWL and researchobject.org participants are cooperating with this effort|

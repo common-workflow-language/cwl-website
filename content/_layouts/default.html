@@ -5,7 +5,7 @@
 
   <body>
 
-  <div class="site-wrapper page-{{ page.class }}">
+  <div class="site-wrapper {{ page.class }} page-{{ page.title | downcase }}">
     {%- include top_nav.html -%}
     {% if page.class contains 'home' or page.title == 'Home' %}
       {%- include header.html -%}
@@ -14,7 +14,7 @@
     <div class="container content-wrapper">
       <div class="row">
         <main class="col-md-12" role="main" id="main">
-          {{ content }}
+          {% include anchor_headings.html html=content anchorBody="§" anchorClass="heading__anchor-symbol" %}
         </main>
       </div>      
     </div>

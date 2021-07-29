@@ -11,6 +11,10 @@
   margin: 0 0 2rem;
   table-layout: fixed;
 
+  a {
+    white-space: pre-line;
+  }
+
   th,
   tr,
   td {
@@ -52,6 +56,8 @@
   }
 
   thead {
+    border-top: 1px solid #ccc;
+
     tr {
       background: $table--cell-striped-background;
       display: flex;
@@ -60,7 +66,19 @@
 
     th {
       background: $table--cell-striped-background;
+      border-bottom: 0 !important;
+      border-right: 1px solid #ccc;
       width: 33%;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
+
+  &.cols-2 thead {
+    th {
+      width: 48%;
     }
   }
 }
@@ -102,6 +120,12 @@
       }
     }
 
+    &.cols-2 thead th,
+    &.cols-2 td {
+      white-space: pre-line;
+      width: initial;
+    }
+
     td {
       background: $table--cell-striped-background;
     }
@@ -125,6 +149,16 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .table {
+    &.cols-2 {
+      th:first-of-type,
+      td:first-of-type {
+        width: 25% !important;
+        word-break: break-all !important;
+      }
+    }
+  }
+
   .cols-2 {
     th,
     td {
@@ -146,7 +180,6 @@
   .table th,
   .table td {
     &:first-of-type {
-      white-space: nowrap;
       width: 22%;
     }
   }
