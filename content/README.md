@@ -15,18 +15,52 @@ The preview build of the site is currently found at [https://deploy-preview-75--
   - Or make all bullet points on site red by default??
 * Add "Back to Top" button on mobile, for long pages
 * sort & condense table white-space styles
-* Remove hover icon from certain homepage ids??
+* Remove hover icon from certain homepage headings/ids??
 
-## WebAIM Accessibility Test
+### WebAIM Accessibility Test
 
 * Improve icon alt text
 
-### Ecosystem
+#### Ecosystem
 
 Suspicious Link Text
 
 ```md
 |[argparse2tool](https://github.com/erasche/argparse2tool#cwl-specific-functionality) |Generate CWL CommandLineTool wrappers (and/or Galaxy tool descriptions) from Python programs that use argparse.  Also supports the [click](http://click.pocoo.org/5/) argument parser.|
+```
+#### Projects
+
+Ambiguous link text:
+
+```md
+[Here](/FAIR) is a qualitative analysis of CWL and the FAIR principles.
+```
+
+WebAIM: "Links, which are often read out of context, should clearly describe the destination or function of the link. Ambiguous text, text that does not make sense out of context, and extraneous text (such as "click here") can cause confusion and should be avoided."
+
+#### Video Player
+
+* The "broken ARIA menu" seems to be an error on the WebAIM tool's part...
+  - It says that it has to have at least one item with `role="menuitem"` - which is satistfied...
+  - Test with screenreader or emulator if possible
+
+```html
+<div id="plyr-settings-9859-home">
+  <div role="menu">
+    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true">
+      <span>Captions<span class="plyr__menu__value">Disabled</span>
+      </span>
+    </button>
+    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden="">
+      <span>Quality<span class="plyr__menu__value">undefined</span>
+      </span>
+    </button>
+    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true">
+      <span>Speed<span class="plyr__menu__value">Normal</span>
+      </span>
+    </button>
+  </div>
+</div>
 ```
 
 ### Cleanup & Deployment

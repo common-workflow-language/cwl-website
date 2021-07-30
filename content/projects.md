@@ -20,5 +20,5 @@ class: page-short
 {:.cwl-red}
 ## CWL with FAIR principals
 
-It is one of the goals of the CWL project to assist workflow engines/platforms and users in realizing the FAIR (mploying FAIR (Findable, Accessible, Interoperable and Reusable) principles while not imposing a burden for lack of perfection or completion.  [Here](/FAIR) is a qualitative analysis of CWL and the FAIR principles. We examine this not just the context of the workflow and tool descriptions, but also the context of creating, sharing, and executing these descriptions. Additionally, we discuss not narrowing the adherence of inbound data by employing the FAIR principles and increasing the adherence of the FAIR principles for the outbound data.
+It is one of the goals of the CWL project to assist workflow engines/platforms and users in realizing the FAIR (mploying FAIR (Findable, Accessible, Interoperable and Reusable) principles while not imposing a burden for lack of perfection or completion. [Here](/FAIR) is a qualitative analysis of CWL and the FAIR principles. We examine this not just the context of the workflow and tool descriptions, but also the context of creating, sharing, and executing these descriptions. Additionally, we discuss not narrowing the adherence of inbound data by employing the FAIR principles and increasing the adherence of the FAIR principles for the outbound data.
 

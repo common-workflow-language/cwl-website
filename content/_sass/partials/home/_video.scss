@@ -22,6 +22,12 @@
   }
 }
 
+// Address WebAIM Low Contrast Error
+video {
+  background: #000;
+  color: #f2f2f2;
+}
+
 // Plyr
 .plyr__poster {
   background-image: url('/assets/img/intro_video_poster.png');
