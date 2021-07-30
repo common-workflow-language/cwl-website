@@ -1,13 +1,14 @@
 <header class="site-header">
   <div class="container">
     <div class="site-header-logo">
+      <h1 class="sr-only">Common Workflow Language</h1>
       <a class="" href="{{ site.url }}"><img class="" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="Common Workflow Language logo"></a>
     </div>
   </div>
 </header>
 
 {% if page.class contains "has-announcement" %}
-  <div class="cwl-announcement"><p>CWL Standard 1.2 Released in XX xx, 2021</p></div>
+  <div class="cwl-announcement"><h3>CWL Standard 1.2 Released in XX xx, 2021</h3></div>
 {% else %}
   <div class="cwl-announcement" style="height: 45px;"></div>
 {% endif %}

@@ -14,6 +14,20 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 * Create class for red bullet points
   - Or make all bullet points on site red by default??
 * Add "Back to Top" button on mobile, for long pages
+* sort & condense table white-space styles
+* Remove hover icon from certain homepage ids??
+
+## WebAIM Accessibility Test
+
+* Improve icon alt text
+
+### Ecosystem
+
+Suspicious Link Text
+
+```md
+|[argparse2tool](https://github.com/erasche/argparse2tool#cwl-specific-functionality) |Generate CWL CommandLineTool wrappers (and/or Galaxy tool descriptions) from Python programs that use argparse.  Also supports the [click](http://click.pocoo.org/5/) argument parser.|
+```
 
 ### Cleanup & Deployment
 

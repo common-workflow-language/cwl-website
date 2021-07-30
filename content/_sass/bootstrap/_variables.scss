@@ -540,7 +540,8 @@ $table-bg:                    transparent !default;
 $table-th-font-weight:        null !default;
 
 $table-striped-color:         $table-color !default;
-$table-striped-bg-factor:     .05 !default;
+// $table-striped-bg-factor:     .05 !default;
+$table-striped-bg-factor:     0;
 $table-striped-bg:            rgba($black, $table-striped-bg-factor) !default;
 
 $table-active-color:          $table-color !default;

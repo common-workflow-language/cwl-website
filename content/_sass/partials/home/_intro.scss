@@ -1,16 +1,20 @@
 .cwl-announcement {
   background-color: $cwl-red;
   color: $white;
-  // font-size: 28px;
-  font-size: 24px;
-  line-height: 2;
   padding: 0 1rem;
   text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
 }
 
 @include media-breakpoint-up(md) {
   .cwl-announcement {
-    font-size: 28px;
+    h3 {
+      font-size: 1.75rem;
+    }
   }
 
   .intro-container {
@@ -51,9 +55,9 @@
   align-items: center;
   box-shadow: 0 6px 15px #0000001a;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  // margin: 10px 0;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  flex-flow: column wrap;
   margin: 1rem;
   padding: 12px;
   text-align: center;
