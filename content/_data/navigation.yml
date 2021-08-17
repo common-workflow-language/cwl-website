@@ -3,6 +3,8 @@ header:
     url: /
   - title: About
     url: /about
+  - title: Getting Started
+    url: /getting_started
   - title: Specification
     url: /specification
   - title: Implementations
