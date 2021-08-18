@@ -2,6 +2,7 @@
 layout: page
 permalink: /cwl_adopters/
 title: CWL Adoption and Users 
+class: page-short
 ---
 
 Listing does not imply endorsements of the CWL standards by the entity nor endorsement of the entity by the CWL project
