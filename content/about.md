@@ -4,22 +4,21 @@ permalink: /about/
 title: About
 ---
 
-The problem of standardizing computational reuse is only increasing in prominence and impact.
 The CWL Project began out of a need for a standard to 
-describe multilingual analysis pipelines in a portable and reusable
+describe analysis pipelines in a portable and reusable
 manner. Common Workflow Language (CWL) is a family of standards
 for the description of command line tools and of workflows made with these standards.
 
 The CWL project delivers open standards, open-source code and an open community.
 
-
+{:.cwl-red}
 ## Vision of the CWL Project
 
 ### What this community hopes to have accomplished in the future
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
-
+{:.cwl-red}
 ## Mission of the CWL Project 
 
 ### How we plan to achieve our vision
@@ -31,11 +30,12 @@ Specifically, we support the
 *    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
 
-
+{:.cwl-red}
 ## Timeline
 
 {% include timeline.html %}
 
+{:.cwl-red}
 ## Governance
 
 ### CWL Leadership Team 
@@ -54,6 +54,8 @@ The CWL leadership team consists of the following people, listed in alphabetical
 *   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
 *   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
 
+
+{:.cwl-red}
 ## Contributors
 
 ### Participating Organizations 
@@ -148,5 +150,5 @@ CWL Community members and their contributions to the project.
 *   Nihar Sheth, DNAnexus; <https://orcid.org/0000-0003-4128-4364>
 *   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
 *   Nebojša Tijanić, Seven Bridges <https://orcid.org/0000-0001-8316-4067>
-*   Ward Vandewege, Curoverse Inc. / Arvados; <https://orcid.org/0000-0002-2527-6949>
-*   Alexander Wait Zaranek, Curoverse Inc. / Arvados; <https://orcid.org/0000-0002-0415-9655>
+*   Ward Vandewege, Curii / Arvados; <https://orcid.org/0000-0002-2527-6949>
+*   Alexander Wait Zaranek, Curii / Arvados; <https://orcid.org/0000-0002-0415-9655>

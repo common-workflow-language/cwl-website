@@ -5,6 +5,8 @@ header:
     url: /getting-started
   - title: About
     url: /about
+  - title: Getting Started
+    url: /getting_started
   - title: Specification
     url: /specification
   - title: Implementations
@@ -13,3 +15,5 @@ header:
     url: /ecosystem
   - title: Projects
     url: /projects
+  - title: CWL Adopters
+    url: /cwl_adopters
