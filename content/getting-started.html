@@ -1,3 +1,10 @@
+---
+title: Getting Started
+layout: page
+permalink: /getting-started/
+class: page-short
+---
+
 {% capture getting_started_content %}
 
 * The [CWL user guide]({{ site.url }}/user_guide/) provides a gentle introduction to learning how to write CWL command line tool and workflow descriptions.
@@ -8,11 +15,5 @@
 
 {% endcapture %}
 
-<section class="page-section indented getting-started">
-  <div class="section-header">
-    <img src="assets/img/noun_Rocket_3821424.svg" class="section-icon" alt="Rocket Icon">
-    <h2 id="getting-started">Getting Started</h2>
-  </div>
-
-  {{ getting_started_content | markdownify }}
-</section>
+{% include social_stats.html %}
+{{ getting_started_content | markdownify }}

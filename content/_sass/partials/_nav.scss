@@ -12,8 +12,14 @@
   }
 }
 
+.nav-wrap,
+.top-nav,
+.nav-item {
+  background-color: $nav--bg-color;
+}
+
 .top-nav {
-  border-bottom: 1px solid $nav--border-color;
+  border-bottom: 2px solid $nav--border-color;
   box-sizing: content-box;
 }
 
@@ -73,11 +79,11 @@
 }
 
 .nav-item {
-  background: $nav--bg-color;
+  // background: $nav--bg-color;
   padding: $nav--item-padding;
 }
 
-.navbar-light .navbar-nav {
+.top-nav .navbar-nav {
   .nav-link {
     &:hover,
     &:focus,
@@ -104,7 +110,7 @@
 
 @include media-breakpoint-up(lg) {
   .nav-item {
-    padding: 0 0.5rem;
+    padding: 0 0.3rem;
   }
 
   .nav-social-icons {
@@ -115,6 +121,12 @@
       font-size: 1.75rem;
       margin: 0 $nav--item-margin;
     }
+  }
+}
+
+@include media-breakpoint-up(lg-2) {
+  .nav-item {
+    padding: 0 0.5rem;
   }
 }
 

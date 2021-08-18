@@ -13,9 +13,12 @@ $cwl-menu-blue: #337ab7;
 $timeline-sep-grey: #5f6063;
 $table-bg-grey: #f2f2f2;
 
-$nav--border-color: #e7e7e7;
+// $nav--border-color: #e7e7e7;
+$nav--border-color: #e4e4e4;
 $nav--border-color-2: rgba(0, 0, 0, 0.1);
-$nav--bg-color: #f8f9fa;
+// $nav--bg-color: #f8f9fa;
+// $nav--bg-color: #e9ecef;
+$nav--bg-color: #f4f4f4;
 // $nav-item-bg-color-desktop: #f8f9fa;
 $nav-item-hover-color-desktop: #6c757d;
 $nav-link-hover-color-desktop: rgba(0, 0, 0, 0.8);
@@ -34,6 +37,7 @@ $nav--logo-height-desktop: 50px;
 $nav--logo-margin-desktop: 3px 0 3px 6px;
 $nav--item-margin: 0.5rem;
 $nav--item-padding: 0 1.25rem;
+$nav--item-padding-lg-2: 0 0.5rem;
 
 $table--cell-striped-background: $table-bg-grey;
 $table--cell-border-bottom: $grey-d;
