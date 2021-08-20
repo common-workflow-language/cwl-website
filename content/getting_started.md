@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /getting_started/
+permalink: /getting_started
 title: Getting Started 
 class: page-short
 ---
