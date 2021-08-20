@@ -8,6 +8,8 @@ The CWL Project began out of a need for a standard to
 describe analysis pipelines in a portable and reusable
 manner. Common Workflow Language (CWL) is a family of standards
 for the description of command line tools and of workflows made with these standards.
+CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and Machine Learning.
+
 
 The CWL project delivers open standards, open-source code and an open community.
 
@@ -29,6 +31,13 @@ Specifically, we support the
 *    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
 *    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
+
+{:.cwl-red}
+## Background
+### Why Workfows?
+### Why a Standard?
+
+A standard for sharing and reusing workflows can provide a solution to describing portable, re-usable workflows while also being workflow-engine and vendor-neutral.
 
 {:.cwl-red}
 ## Timeline
