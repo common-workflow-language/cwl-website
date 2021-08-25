@@ -30,6 +30,9 @@ locale: en_US
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
+kramdown:
+  toc_levels: 2..3
+
 plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag

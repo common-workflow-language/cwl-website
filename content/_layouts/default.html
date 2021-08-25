@@ -8,7 +8,7 @@
     <li><a class="sr-only sr-only-focusable skip-link" href="#main">Skip to main content</a></li>
     <li><a class="sr-only sr-only-focusable skip-link" href="#site_footer">Skip to footer</a></li>
   </ul>
-  <div class="site-wrapper {{ page.class }} page-{{ page.title | downcase }}">
+  <div class="site-wrapper {{ page.class }} page-{{ page.permalink | downcase | replace: "/", "" | replace: " ", "-" }}">
     {%- include top_nav.html -%}
     {% if page.class contains 'home' or page.title == 'Home' %}
       {%- include header.html -%}

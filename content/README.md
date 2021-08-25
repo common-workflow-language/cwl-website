@@ -11,11 +11,12 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 * Add mobile nav close on click/touch outside
   * This should already be working?!
 * ~~Add GH & Twitter icons to nav ul??~~
-* Create class for red bullet points
-  - Or make all bullet points on site red by default??
+* ~~Create class for red bullet points~~
+  - Make all bullet points on site red by default?
 * Add "Back to Top" button on mobile, for long pages
 * sort & condense table white-space styles
 * Remove hover icon from certain homepage headings/ids??
+* {.page-short} doesn't always work properly on mobile
 
 ### WebAIM Accessibility Test
 
