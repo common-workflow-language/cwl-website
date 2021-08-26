@@ -144,6 +144,11 @@
     margin: 0 1rem;
     max-width: 100%;
   }
+
+  // Account for lack of scrollbar on short pages
+  .page-short .navbar-nav {
+    margin: 0 2rem 0 1rem;
+  }
 }
 
 .nav--paypal-btn {
