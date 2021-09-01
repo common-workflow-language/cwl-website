@@ -16,7 +16,7 @@ The CWL project delivers open standards, open-source code and an open community.
 {:.cwl-red}
 
   <div class="section-header">
-    <img src="assets/img/noun_Community_943325.svg" class="section-icon" alt="Community Icon">
+    <img src="../assets/img/noun_Community_943325.svg" class="section-icon" alt="Community Icon">
     <h2 id="vision">Vision of the CWL Project</h2>
   </div>
 
