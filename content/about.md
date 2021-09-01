@@ -14,16 +14,20 @@ CWL is designed to meet the needs of data-intensive science, such as Bioinformat
 The CWL project delivers open standards, open-source code and an open community.
 
 {:.cwl-red}
-## Vision of the CWL Project
 
-### What this community hopes to have accomplished in the future
+  <div class="section-header">
+    <img src="../assets/img/noun_Vision_3455591.svg" class="section-icon" alt="Community Icon">
+    <h2 id="vision">Vision of the CWL Project</h2>
+  </div>
+
+*What this community hopes to have accomplished in the future*
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
 {:.cwl-red}
 ## Mission of the CWL Project 
 
-### How we plan to achieve our vision
+*How we plan to achieve our vision*
 
 The CWL project supports open consensus-based standards for command line data analysis workflows and tools.
 
