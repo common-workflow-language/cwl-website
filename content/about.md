@@ -20,9 +20,7 @@ The CWL project delivers open standards, open-source code and an open community.
     <h2 id="vision">Vision of the CWL Project</h2>
   </div>
 
-## Vision of the CWL Project
-
-### What this community hopes to have accomplished in the future
+*What this community hopes to have accomplished in the future*
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
