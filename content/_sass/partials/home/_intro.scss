@@ -16,7 +16,9 @@
       font-size: 1.75rem;
     }
   }
+}
 
+@include media-breakpoint-up(lg) {
   .intro-container {
     display: flex;
     justify-content: space-around;
@@ -25,19 +27,9 @@
   .intro-text {
     font-size: 20px;
     text-align: center;
-    width: 34%;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .intro-text {
     width: 40%;
   }
 }
-
-// .youtube-container {
-//   max-width: 560px;
-// }
 
 .features-grid {
   display: flex;
