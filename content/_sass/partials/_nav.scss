@@ -151,6 +151,18 @@
   }
 }
 
+// Fix for menu items inaccessible on landscape mode
+@media (max-height: 525px) {
+  .navbar-nav {
+    background-color: #f4f4f4;
+    /* fits exactly 10 menu items in 2 cols, starting at 206px
+    Once it's above 238px, it overflows on Nexus 5 (640x360 in dev tools)  */
+    margin-left: 0 !important;
+    max-height: 238px;
+    width: 260px;
+  }
+}
+
 .nav--paypal-btn {
   padding: 0.25rem 1.25rem 0 0.75rem;
 }
