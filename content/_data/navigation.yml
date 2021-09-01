@@ -4,7 +4,7 @@ header:
   - title: About
     url: /about
   - title: Getting Started
-    url: /getting_started
+    url: /getting-started
   - title: Specification
     url: /specification
   - title: Implementations
@@ -14,4 +14,4 @@ header:
   - title: Projects
     url: /projects
   - title: CWL Adopters
-    url: /cwl_adopters
+    url: /cwl-adopters

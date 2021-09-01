@@ -1,13 +1,7 @@
 .social-bar {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 18px 0 5px;
   margin: 0 0 5px;
 
   a,
@@ -18,7 +12,6 @@
   a:first-of-type {
     margin: 0 6px 6px 0
   }
-
 }
 
 .cwl-support {
@@ -28,23 +21,11 @@
 
 @include media-breakpoint-up(sm) {
   .cwl-support {
-    padding:0
+    padding: 0
   }
 }
 
-.section a {
-  color: transparent
-
-  &:hover,
-  &:focus {
-    color: #c9c9c9
-  }
+.paypal-btn {
+  height: 30px;
+  vertical-align: middle
 }
-
-// .paypal-btn {
-//   bottom: 0;
-//   // display: none;
-//   height: 26px;
-//   position: relative;
-//   vertical-align: middle
-// }

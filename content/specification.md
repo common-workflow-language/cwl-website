@@ -9,7 +9,7 @@ class: page-short
 
 For developers and advanced users, the current [CWL Standards v1.2.0](https://www.commonwl.org/v1.2/) provides authoritative documentation of the execution of CWL documents. The previous versions, [CWL Standards v1.0.2](https://www.commonwl.org/v1.0/) and [CWL Standards v1.1.0](https://www.commonwl.org/v1.1/), are also available.
 
-To reference the Common Workflow Language and the CWL project in scholary work, please use the following citation:
+To reference the Common Workflow Language and the CWL project in scholarly work, please use the following citation:
 
 Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Carole Goble, The CWL Community (2021):
 Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language.
