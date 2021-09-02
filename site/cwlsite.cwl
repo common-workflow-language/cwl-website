@@ -61,7 +61,7 @@ requirements:
 
 hints:
   DockerRequirement:
-    dockerPull: commonworkflowlanguage/cwltool_module
+    dockerPull: quay.io/commonwl/cwltool_module
 
 steps:
   make_rdfs:
