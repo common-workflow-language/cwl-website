@@ -136,22 +136,6 @@
   flex-direction: column;
 }
 
-.getting-started,
-.community {
-  li {
-    line-height: 1.5;
-    margin: 0 0 0.5rem;
-
-    &::marker {
-      color: $cwl-red;
-      font-size: 1.125rem;
-    }
-
-    p {
-      margin: 0;
-    }
-  }
-}
 
 ///////////////////
 // Regular pages //
