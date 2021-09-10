@@ -152,7 +152,7 @@
 }
 
 // Fix for menu items inaccessible on landscape mode
-@media (max-height: 525px) {
+@media (max-height: 525px) and (max-width: 992px) {
   .navbar-nav {
     background-color: #f4f4f4;
     /* fits exactly 10 menu items in 2 cols, starting at 206px
@@ -164,7 +164,7 @@
 }
 
 .nav--paypal-btn {
-  padding: 0.25rem 1.25rem 0 0.75rem;
+  padding: 0.25rem 1.25rem 0.25rem 0.75rem;
 }
 
 @include media-breakpoint-up(lg) {
