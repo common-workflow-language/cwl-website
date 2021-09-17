@@ -25,7 +25,10 @@ The CWL project delivers open standards, open-source code and an open community.
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
 {:.cwl-red}
-## Mission of the CWL Project 
+  <div class="section-header">
+    <img src="../assets/img/noun_Mission_2673795.svg" class="section-icon" alt="Community Icon">
+    <h2 id="vision">Mission of the CWL Project</h2>
+  </div>
 
 *How we plan to achieve our vision*
 
@@ -37,11 +40,20 @@ Specifically, we support the
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
 
 {:.cwl-red}
+  <div class="section-header">
+    <img src="../assets/img/noun_background_4073428.svg" class="section-icon" alt="Community Icon">
+    <h2 id="vision">Background of the CWL Project</h2>
+  </div>
+
 ## Background
+
+
 ### Why Workfows?
 ### Why a Standard?
 
-A standard for sharing and reusing workflows can provide a solution to describing portable, re-usable workflows while also being workflow-engine and vendor-neutral.
+A standard for sharing and reusing workflows can provide a solution to describing portable,re-usable workflows while also being workflow-engine and vendor-neutral.
+
+Although workflows are very popular, prior to the CWL standards every workflow system was incompatible with every other. This means, those users not using the CWL standards are required to express their computational workflows in a different way everytime they have to use another workflow system. This greatly hampers reuse and collaboration. 
 
 {:.cwl-red}
 ## Timeline
