@@ -6,7 +6,7 @@ title: Governance
 
 {:.cwl-red}
 
-### CWL Leadership Team 
+## CWL Leadership Team 
 
 CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/#Support) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.
 
