@@ -11,12 +11,6 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
 
 See also [the list of over 390 citations and mentions of CWL in published papers and reports](https://www.zotero.org/groups/2294829/cwl/items)
 
-{:.no_toc}
-## Table of Contents
-
-- TOC
-{:toc}
-
 <a id="Cross-domain"></a>
 ## Cross-domain
 

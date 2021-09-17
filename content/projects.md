@@ -2,7 +2,6 @@
 layout: page
 permalink: /projects/
 title: Projects
-class: page-short
 ---
 
 {:.cwl-red}

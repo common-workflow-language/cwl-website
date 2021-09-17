@@ -8,16 +8,10 @@
   }
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .youtube-container {
     margin: 0 0 0 36px;
     padding: 0 0 15px;
-    width: 55%;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .youtube-container {
     width: 40%;
   }
 }

@@ -6,17 +6,13 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 ## To-Do
 
-* Check `a { word-break: keep-all }` in Firefox and Safari, to confirm it's behaving properly
 * Check Accessibility
-* Add mobile nav close on click/touch outside
-  * This should already be working?!
-* ~~Add GH & Twitter icons to nav ul??~~
-* ~~Create class for red bullet points~~
-  - Make all bullet points on site red by default?
+* Make all bullet points red by default?
+  * CWL Adoption Red Bullets.
+* Mobile nav should close when you tap outside of it
 * Add "Back to Top" button on mobile, for long pages
-* sort & condense table white-space styles
-* Remove hover icon from certain homepage headings/ids??
-* {.page-short} doesn't always work properly on mobile
+* Sort & condense table white-space styles
+* Remove hover icon from from Features headers on homepage
 
 ### WebAIM Accessibility Test
 
@@ -67,16 +63,6 @@ WebAIM: "Links, which are often read out of context, should clearly describe the
 ### Cleanup & Deployment
 
 * Ensure hypothes.is is off for live site
-
-### Colors
-
-About pg is the only one that doesn't have h3 as red. Can I just make it consistent??
-
-```scss
-h3 {
-  color: $cwl-red;
-}
-```
 
 ## Reference
 

@@ -1,7 +1,3 @@
-///////////////////////
-// Sticky Footer Fix //
-///////////////////////
-
 .site-wrapper {
   min-height: 100vh;
   position: relative;
@@ -16,20 +12,6 @@
   .content-wrapper {
     padding-bottom: 86px;
   }
-
-  .page-short {
-    .content-wrapper {
-      padding-bottom: 75px;
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .page-short {
-    .content-wrapper {
-      padding-bottom: 146px;
-    }
-  }
 }
 
 .site-footer {
@@ -40,13 +22,78 @@
   width: 100%;
 }
 
-@include media-breakpoint-up(md) {
-  .page-short .site-footer {
+///////////////////////
+// Sticky Footer Fix //
+///////////////////////
+
+.body-page-short {
+  height: 100%;
+
+  // These should be specified in their respective places
+  .content-wrapper,
+  .post-content {
+    position: static;
+  }
+
+  .site-footer {
     position: absolute;
+    width: 100%;
+  }
+
+  .content-wrapper {
+    // Very unclear that this min-height actually works or
+    // does anything. Likely Delete.
+    min-height: calc(100vh - 96px);
   }
 
   .post-content {
-    margin: 0 0 38px;
+    padding: 84px 2px 26px;
+  }
+}
+
+@include media-breakpoint-up(xxs) {
+  .body-page-short {
+    .content-wrapper {
+      // padding-bottom: 75px;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .body-page-short {
+    .post-content {
+      margin: 0 0 38px;
+      padding: 90px 0 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .body-page-short {
+    .content-wrapper {
+      padding-bottom: 146px;
+    }
+
+    .post-content {
+      padding: 92px 0 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .body-page-short {
+    .post-content {
+      padding: 96px 0 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .body-page-short {
+    .post-content {
+      padding: 102px 0 26px;
+    }
   }
 }
 
@@ -89,22 +136,6 @@
   flex-direction: column;
 }
 
-.getting-started,
-.community {
-  li {
-    line-height: 1.5;
-    margin: 0 0 0.5rem;
-
-    &::marker {
-      color: $cwl-red;
-      font-size: 1.125rem;
-    }
-
-    p {
-      margin: 0;
-    }
-  }
-}
 
 ///////////////////
 // Regular pages //

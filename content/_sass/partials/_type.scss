@@ -37,10 +37,32 @@ h2,
   &:focus,
   &:active {
     color: $cwl-red;
-    // color: #c9c9c9;
   }
 }
 
 .float-right {
   float: right;
+}
+
+// Change bullet points to red by default
+li {
+  &::marker {
+    color: $cwl-red;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.getting-started,
+.community {
+  li {
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+
+    &::marker {
+      font-size: 1.125rem;
+    }
+  }
 }

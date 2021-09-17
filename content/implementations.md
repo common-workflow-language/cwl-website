@@ -34,7 +34,7 @@ particular technology configuration they deploy and maintain.
 |[Arvados](https://arvados.org/)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|AWS, GCP, Azure, Slurm|
 |[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
 |[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|Linux, OS X|
-|[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) [OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum))|
+|[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) [OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum)|
 
 {:.cwl-red}
 ### Partial implementations:

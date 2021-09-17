@@ -1,0 +1,24 @@
+#backToTop {
+  background: #000;
+  // bottom: 30px;
+  bottom: 50px;
+  color: #fff;
+  display: none;
+  float: right;
+  font-size: 13px;
+  height: auto;
+  line-height: 1.8;
+  padding: 5px 10px;
+  position: fixed;
+  // right: 30px;
+  right: 10px;
+  width: auto;
+  z-index: 100;
+}
+
+@media (min-width: 425px) {
+  #backToTop {
+      bottom: 30px;
+  right: 30px;
+  }
+}
