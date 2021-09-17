@@ -42,7 +42,7 @@ Specifically, we support the
 {:.cwl-red}
   <div class="section-header">
     <img src="../assets/img/noun_background_4073428.svg" class="section-icon" alt="Community Icon">
-    <h2 id="vision">Background of the CWL Project</h2>
+    <h2 id="vision">Background</h2>
   </div>
 
 ## Background
