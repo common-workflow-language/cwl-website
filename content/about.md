@@ -49,7 +49,6 @@ A standard for sharing and reusing workflows can provide a solution to describin
 
 Although workflows are very popular, prior to the CWL standards every workflow system was incompatible with every other. This means, those users not using the CWL standards are required to express their computational workflows in a different way everytime they have to use another workflow system. This greatly hampers reuse and collaboration. 
 
-{:.cwl-red}
   <div class="section-header">
     <img src="../assets/img/noun_Time_6732.svg" class="section-icon" alt="Community Icon">
     <h2 id="vision">Timeline</h2>
