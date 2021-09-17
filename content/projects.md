@@ -4,7 +4,6 @@ permalink: /projects/
 title: Projects
 ---
 
-{:.cwl-red}
 ## Projects the CWL community is participating in 
 
 {: .table .table-striped .cols-2 }
