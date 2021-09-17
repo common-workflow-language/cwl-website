@@ -13,7 +13,6 @@ CWL is designed to meet the needs of data-intensive science, such as Bioinformat
 
 The CWL project delivers open standards, open-source code and an open community.
 
-{:.cwl-red}
 
   <div class="section-header">
     <img src="../assets/img/noun_Vision_3455591.svg" class="section-icon" alt="Community Icon">
@@ -24,7 +23,6 @@ The CWL project delivers open standards, open-source code and an open community.
 
 Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
 
-{:.cwl-red}
   <div class="section-header">
     <img src="../assets/img/noun_Mission_2673795.svg" class="section-icon" alt="Community Icon">
     <h2 id="vision">Mission of the CWL Project</h2>
@@ -39,7 +37,6 @@ Specifically, we support the
 *    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
 
-{:.cwl-red}
   <div class="section-header">
     <img src="../assets/img/noun_background_4073428.svg" class="section-icon" alt="Community Icon">
     <h2 id="vision">Background</h2>
