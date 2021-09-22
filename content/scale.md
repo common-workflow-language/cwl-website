@@ -4,11 +4,11 @@ permalink: /scale/
 title: Parallelization and Scale 
 ---
 
-CWL tasks are isolated and you must be explicit about your inputs and outputs. The benefit of explicitness and isolation are flexibility, portability, and scalability: tools and workflows described with CWL can transparently leverage technologies such as Docker and be used with CWL implementations from different vendors. CWL is well suited for describing large-scale workflows in cluster, cloud and high performance computing environments where tasks are scheduled in parallel across many nodes.
+Benefits of CWL including flexibility, portability, and scalability. CWL is well suited for describing large-scale workflows in cluster, cloud and high performance computing environments where tasks are scheduled in parallel across many nodes.  
 
 ### Parallelization
 
-The steps section in a CWL workflow describes the actual steps of the workflow with explict inputs and outputs specified for each step.  Workflow steps in CWL are not necessarily run in the order they are listed, instead the order is determined by the dependencies between steps. Workflow steps which do not depend on one another may run in parallel.
+CWL workflows describe each step with explict inputs and outputs.  Workflow steps in CWL are not necessarily run in the order they are listed, instead the order is determined by the dependencies between steps. Workflow steps which do not depend on one another may run in parallel.
 
 Additionally, the scatter construct in CWL allows the repeated execution of a CWL step(perhaps overlapping in time,depending on the resources available) where most of the inputs are the same except for one or more inputs that vary. This is done without requiring the modification of the underlying tool description. 
 
