@@ -61,7 +61,11 @@ A standard for sharing and reusing workflows can provide a solution to describin
 Although workflows are very popular, prior to the CWL standards every workflow system was incompatible with every other. This means, those users not using the CWL standards are required to express their computational workflows in a different way everytime they have to use another workflow system. This greatly hampers reuse and collaboration. 
 
 ### When to Use CWL?
+The CWL standards were designed for a particular style of
+command-line tool based data analysis. 
 
+CwL is for dataflow style batch analysis consisting of command line programs. It is not designed for supporting safe interaction with stateful (web) services, real-time communication between workflow steps, or workflows that need particular steps run at or during a
+specific day/time-frame. 
 
   <div class="section-header">
     <img src="../assets/img/noun_Time_6732.svg" class="section-icon" alt="Community Icon">
