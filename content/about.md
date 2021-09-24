@@ -11,7 +11,7 @@ for the description of command line tools and of workflows made with these stand
 CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and Machine Learning.
 
 
-The CWL project delivers open standards, open-source code and an open community.
+The CWL project focus is on open standards, open-source code and an open community.
 
 
   <div class="section-header">
@@ -43,6 +43,9 @@ Specifically, we support the
   </div>
 
 ### Why Workfows?
+
+Using a workflow system rather than a series of scripts has a number of benefits including automation, scaling, abstraction and provenance (ASAP). Automation helps when running repetitive pipelines for example when running parameter sweeps or the same analysis on different sets of data.  Scaling helps make use of cluster, cloud, and high performance computing (HPC) environments and helps solve larger problems and analyze larger datasets faster. Abstraction helps with sharing, reuse and evolving or expanding an analysis. Lastly, provence helps with auditing, tranparency, and validation. Ultimately, using workflows in the long run helps save time and effort and allows for easier scaling, tracking, sharing and reuse.   
+
 ### Why a Standard?
 
 A standard for sharing and reusing workflows can provide a solution to describing portable,re-usable workflows while also being workflow-engine and vendor-neutral.
