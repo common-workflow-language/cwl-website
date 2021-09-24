@@ -44,10 +44,15 @@ Specifically, we support the
 
 ### Why Workfows?
 
-Using a workflow system rather than a series of scripts has a number of benefits including automation, scaling, abstraction and provenance (ASAP). Automation helps when running repetitive pipelines for example when running parameter sweeps or the same analysis on different sets of data.  Scaling helps make use of cluster, cloud, and high performance computing (HPC) environments and helps solve larger problems and analyze larger datasets faster. Workflows enable a clear abstraction about
-the components of the analysis, the relationships between components, and the in-
-puts and outputs of the components making a well-labeled
-analysis with documented expectations. This abstraction helps with sharing, reuse and evolving or expanding an analysis. Lastly, provence helps with auditing, tranparency, and validation. Ultimately, using workflows in the long run helps save time and effort and allows for easier scaling, tracking, sharing and reuse.   
+Using a workflow system rather than a series of scripts has a number of benefits including abstraction, scaling, automation, and provenance (ASAP). 
+
+Workflows enable a clear abstraction about the components of your analysis, the relationship between the components and the inputs and outputs for each component allows for a well-labeled analysis with documented expectation. This abstraction helps enable the other benefits of scaling, automation and provenance. 
+
+Workflow execution can be parallelized or distributed making use of cluster, cloud, and high performance computing (HPC) environments. This helps to solve larger problems and analyze larger datasets faster.
+
+Automation helps when running repetitive pipelines for example when running parameter sweeps or the same analysis on different sets of data. Workflow engines can use the inherient abstraction of workflows to efficently track, plan and manage the executation of workflow components. 
+  
+Lastly, provenance tracking helps with auditing, tranparency, and validation. Ultimately, using workflows in the long run helps save time and effort and allows for easier scaling, tracking, sharing and reuse.   
 
 ### Why a Standard?
 
