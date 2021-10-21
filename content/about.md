@@ -44,9 +44,11 @@ Specifically, we support the
 
 ### Why Workfows?
 
+Workflows and using workflow tools help make your computation methods portable, maintainable, reproducible and shareable. Often analysis methods contain many steps, perhaps in multiple languages and workflows help researchers document, run and maintain these complicated analyses. 
+
 Using a workflow system rather than a series of scripts has a number of benefits including abstraction, scaling, automation, and provenance (ASAP). 
 
-Workflows enable a clear abstraction about the components of your analysis, the relationship between the components and the inputs and outputs for each component allows for a well-labeled analysis with documented expectation. This abstraction helps enable the other benefits of scaling, automation and provenance. 
+tWorkflows enable a clear abstraction about the components of your analysis, the relationship between the components and the inputs and outputs for each component allows for a well-labeled analysis with documented expectation. This abstraction helps enable the other benefits of scaling, automation and provenance. 
 
 Workflow execution can be parallelized or distributed making use of cluster, cloud, and high performance computing (HPC) environments. This helps to solve larger problems and analyze larger datasets faster.
 
