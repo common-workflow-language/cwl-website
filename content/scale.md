@@ -17,4 +17,4 @@ Additionally, the **[scatter](https://www.commonwl.org/user_guide/23-scatter-wor
 By design, the CWL standards do not impose any technical limitations to the size of files processed or to the number of tasks run in parallel. The major scalability bottlenecks are hardware-related — not having enough machines with enough memory, compute or disk space to process more and more data at a larger scale. As these boundaries move in the future with technological advances, the CWL standards should be able to keep up and not be a cause of limitations. 
 
 Different implementations of the CWL standards can provide different capabilities in terms of scaling and access to HPC resources. 
-Different **[implementations](/implementations/) of the CWL standards can provide different levels of scability  
+Different **[implementations](/implementations/) of the CWL standards can provide different levels of scability.  
