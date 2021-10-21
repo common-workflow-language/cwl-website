@@ -10,7 +10,7 @@ Benefits of CWL including flexibility, portability, and scalability. CWL is well
 
 CWL workflows describe each step with explict inputs and outputs.  Workflow steps in CWL are not necessarily run in the order they are listed, instead the order is determined by the dependencies between steps. Workflow steps which do not depend on one another may run in parallel.
 
-Additionally, the scatter construct in CWL allows the repeated execution of a CWL step(perhaps overlapping in time,depending on the resources available) where most of the inputs are the same except for one or more inputs that vary. This is done without requiring the modification of the underlying tool description. 
+Additionally, the **[scatter](https://www.commonwl.org/user_guide/23-scatter-workflow/index.html)** feature in CWL allows the repeated execution of a CWL step(perhaps overlapping in time,depending on the resources available) over a list of inputs.  This can be done without requiring the modification of the underlying tool description. 
 
 ### Scale
 
