@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: default
-class: home has-announcement
+class: home has-announcement anchors-center-fix
 ---
 
 {% include home/intro.html %}

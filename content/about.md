@@ -2,6 +2,7 @@
 layout: page
 permalink: /about/
 title: About
+class: about anchors-center-fix
 ---
 
 The CWL Project began out of a need for a standard to 
