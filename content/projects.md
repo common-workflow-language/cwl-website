@@ -2,9 +2,10 @@
 layout: page
 permalink: /projects/
 title: Projects
+class: page-short
 ---
 
-## Projects the CWL community is participating in 
+## Projects the CWL community is participating in
 
 {: .table .table-striped .cols-2 }
 |Name|Details|
@@ -14,4 +15,3 @@ title: Projects
 |[GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas/)|a minimal common API for submitting a single job to a remote execution endpoint. Many contributions from CWL project participants.|
 |[GA4GH Workflow Execution API](https://github.com/ga4gh/workflow-execution-schemas)|a minimal common API for submitting workflow requests to workflow execution systems in a standardized way. Many contributions from CWL project participants.|
 |[ResearchObjects.org](http://www.researchobject.org/)|"an emerging approach to the publication, and exchange of scholarly information on the Web." CWL participants and RO enthusiasts have created [CWLProv](https://w3id.org/cwl/prov/), a profile for provenance research object of a CWL workflow run.|
-

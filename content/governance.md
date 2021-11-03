@@ -5,7 +5,7 @@ title: Governance
 ---
 
 {:.cwl-red}
-## CWL Leadership Team 
+## CWL Leadership Team
 
 CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/#Support) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.
 
@@ -25,7 +25,7 @@ The CWL leadership team consists of the following people, listed in alphabetical
 {:.cwl-red}
 ## Contributors
 
-### Participating Organizations 
+### Participating Organizations
 
 *   [Arvados Project](https://arvados.org/)
 *   [Curii](https://curii.com/)
@@ -51,7 +51,7 @@ The CWL leadership team consists of the following people, listed in alphabetical
 *   [DNAnexus](https://www.dnanexus.com/)
 *   [CERN](https://home.cern/)
 
-### Individual Contributors 
+### Individual Contributors
 The CWL project is grateful to the following self-identified
 CWL Community members and their contributions to the project.
 
@@ -87,7 +87,7 @@ CWL Community members and their contributions to the project.
 *   Nebojša Tijanić <nebojsa.tijanic@sbgenomics.com>
 *   Hiromu Ochiai; [@otiai10](https://github.com/otiai10) <https://orcid.org/0000-0001-6636-856X>
 
-### CWL Advisors 
+### CWL Advisors
 
 (Alphabetical)
 
