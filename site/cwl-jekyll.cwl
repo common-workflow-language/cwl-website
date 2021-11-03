@@ -35,7 +35,7 @@ arguments: [cd, site,
             {shellQuote: false, valueFrom: "&&"},
             bundle, install,
             {shellQuote: false, valueFrom: "&&"},
-            bundle, exec, jekyll, build, --safe, --trace, --destination, "../generated"]
+            bundle, exec, jekyll, build, --safe, --trace, --destination, "$(runtime.outdir)/generated"]
 
 outputs:
   generated:
