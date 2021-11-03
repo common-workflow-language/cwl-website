@@ -83,6 +83,13 @@
   }
 }
 
+.cols-equal {
+  th,
+  td{
+    width: 33% !important;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .table {
     table-layout: fixed;

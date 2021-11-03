@@ -12,7 +12,18 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 * Mobile nav should close when you tap outside of it
 * Add "Back to Top" button on mobile, for long pages
 * Sort & condense table white-space styles
-* Remove hover icon from from Features headers on homepage
+
+### CWL Adopters
+
+* Reformat as tables
+
+### Section Headers & Icons
+
+* Not aligning properly on Home and About pgs.
+
+### Footer positioning
+
+* Fix footer positioning and/or content padding on Homepage, Projects, and Specification pgs
 
 ### WebAIM Accessibility Test
 

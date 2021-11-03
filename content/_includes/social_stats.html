@@ -7,7 +7,8 @@
 		<!-- Width techcnically 79.2 -->
     <img src="https://img.shields.io/github/stars/common-workflow-language/common-workflow-language.svg" alt="GitHub stars" width="79" height="22">
   </a>
-	<a href="{{ site.url }}/#Support" class="cwl-support">CWL Community Support
-  </a>
+  {% if page.url == "/getting-started/" %}
+	  <a href="{{ site.url }}/#Support" class="cwl-support">CWL Community Support</a>
+  {% endif %}
   {% include paypal-button.html %}
 </div>
