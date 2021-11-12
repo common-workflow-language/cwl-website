@@ -1,0 +1,50 @@
+---
+layout: page
+permalink: /cwl-adopters/
+title: CWL Adoption and Users
+# class: cwl-adopters
+---
+
+{% capture intro %}
+The CWL standards have become central to a diverse community of users across multiple fields of science and engineering. Below are listed some adopters of the CWL standards.
+
+Note: Listing does not imply endorsements of the CWL standards by the entity nor endorsement of the entity by the CWL project
+
+See also [the list of over 390 citations and mentions of CWL in published papers and reports](https://www.zotero.org/groups/2294829/cwl/items)
+{% endcapture %}
+
+{{ intro | markdownify }}
+
+{% for section in site.data.adopters %}
+  {% assign title = section.title %}
+  {% assign adopters = section.adopters %}
+
+  {% if section.subsection == null %}
+    {% assign adopter_heading = "h3" %}
+  {% elsif section.subsection != null %}
+    {% assign sub_adopters = section.subsection.adopters %}
+  {% endif %}
+
+  {% if title != null %}
+    <h2 id="{{ title | downcase | replace: " ", "-" }}">{{ title }}</h2>
+  {% endif %}
+  {% if sub_title != null %}
+    <h4 id="{{ title | downcase | replace: " ", "-" }}">{{ sub_title }}</h4>
+  {% endif %}
+
+  {% for adopter in adopters %}
+    {% include adopters.html %}
+    {% for adopter in sub_adopters %}
+      {% capture loop_check %}
+      {% if forloop.first %}
+        {% increment counter %}
+      {% endif %}
+      {% endcapture %}
+    {% if counter == 1 %}
+    {% assign adopter_heading = "h4" %}
+      {% include adopters.html %}
+    {% endif %}
+    {% endfor %}    
+  {% endfor %}
+
+{% endfor %}
