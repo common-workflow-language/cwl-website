@@ -8,7 +8,7 @@
     - name: University of Manchester, eScience Lab
       url: https://esciencelab.org.uk/activities/cwl/
       description: 
-      image: https://via.placeholder.com/150
+      image: ../assets/img/logo_openscience.svg 
 - section:
   title: Radio Astronomy
   adopters:
