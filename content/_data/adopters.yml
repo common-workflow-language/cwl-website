@@ -47,8 +47,8 @@
 - section:
   adopters:
     - name: Children's Hospital of Philadelphia
-      link_text: BioCompute Object / IEEE Std 2791-2020
-      url: https://www.biocomputeobject.org/
+      link_text: CAVATICA
+      url: https://d3b.center/our-research/cavatica/
       image: https://via.placeholder.com/150
     - name: European Open Science Cloud - Life (EOSC-Life)
       link_text: European Open Science Cloud - Life (EOSC-Life)
