@@ -30,7 +30,7 @@
 }
 
 .adopter-row-top {
-  order: 1;
+  order: 2;
   word-break: break-word;
 }
 
@@ -43,73 +43,43 @@
   width: 100%;
 }
 
-.adopter-description {
-  order: 3;
-}
-
 .adopter-logo {
-  order: 2;
+  max-height: 150px;
+  max-width: 96%;
+  order: 1;
 }
 
-.adopter-other {
-  order: 4;
-}
-
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(lg) {
   .adopter-row-top {
+    margin: 0 56px 0 0;
+    max-width: 540px;
+  }
+
+  .adopter-row-top,
+  .adopter-logo {
+    order: initial;
+  }
+
+  .adopter-logo {
+    height: 100%;
     margin: 0;
-    max-width: initial;
-    width: calc(100% - 150px);
-  }
-
-  .adopter-logo {
-    height: 125px;
-    margin: 0 0 12px 25px;
-    width: 125px;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .adopter-entry {
-    display: grid;
-    grid-gap: 12px 80px;
-    grid-template-columns: fit-content(80%) auto;
-    grid-template-rows: auto;
-    margin: 0 0 26px;
-  }
-
-  .adopter-row-top {
-    grid-column: 1;
-    grid-row: 1;
-    max-width: 700px;
-    width: 100%;
-    word-break: break-word;
-  }
-
-  .adopter-description,
-  .adopter-logo {
-    grid-row: 2;
-  }
-
-  .adopter-other {
-    grid-row: 3;
-  }
-
-  .adopter-logo {
-    grid-column: 2;
-    height: auto;
-    margin: initial;
-    width: auto;
+    max-width: 300px;
   }
 }
 
 @include media-breakpoint-up(xl) {
   .adopter-entry {
-    display: grid;
-    grid-gap: 12px 80px;
-    grid-template-columns: fit-content(54%) auto;
-    grid-template-rows: auto;
-    margin: 0 0 26px;
+    display: flex;
+    grid-gap: 0;
+  }
+
+  .adopter-row-top {
+    margin: 0 120px 0 0;
+  }
+
+  .adopter-logo {
+    height: 100%;
+    max-width: 400px;
   }
 }
 

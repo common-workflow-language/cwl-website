@@ -4,23 +4,23 @@
     - name: The [Netherlands] National Plan Open Science
       url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
       description: "For all educational institutions and research domains, open access publishing and optimal reuse of research data will be the norm in 2020. The motto here is: open if possible, closed if it must. The switch to open science requires ambition, investment in people and resources, and being alert to any risks...The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance."
-      image: https://via.placeholder.com/150
+      image: /assets/img/logo_openscience.svg 
     - name: University of Manchester, eScience Lab
       url: https://esciencelab.org.uk/activities/cwl/
       description: 
-      image: ../assets/img/logo_openscience.svg 
 - section:
   title: Radio Astronomy
   adopters:
     - name: The European Open Science Cloud for Research Pilot Project
       m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
-      image: https://via.placeholder.com/150
+      image: /assets/img/eosc-pilot.png
 - section:
   title: Hydrology
   adopters:
     - name: The European Open Science Cloud for Research Pilot Project
       description: 
       m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
+      image: /assets/img/EOSC.png
 - section:
   title: Life Sciences
   adopters:
@@ -36,7 +36,6 @@
         description: none
       - name: RAPT
         url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
-        image: https://via.placeholder.com/150
       - name: NCI Cancer Genomics Cloud
         link_text: NCI Cancer Genomics Cloud
         url: https://www.cancergenomicscloud.org/
@@ -49,17 +48,20 @@
     - name: Children's Hospital of Philadelphia
       link_text: CAVATICA
       url: https://d3b.center/our-research/cavatica/
-      image: https://via.placeholder.com/150
+      image: /assets/img/Cavatica-Blue-Text-01-1-768x164.png
     - name: European Open Science Cloud - Life (EOSC-Life)
       link_text: European Open Science Cloud - Life (EOSC-Life)
       url: https://www.eosc-life.eu/
+      image: /assets/img/eosclifelogo.png
       other: <a href='https://about.workflowhub.eu/About-WorkflowHub'>https://about.workflowhub.eu/About-WorkflowHub</a>
     - name: BioExcel, Centre of Excellence for Computational Biomolecular Research
       link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
       url: https://bioexcel.eu/common-workflow-language
+      image: /assets/img/Bioexcel_logo_no_subheading_660px.png
     - name: ELIXIR
       link_text: Interoperability Platform
       url: https://elixir-europe.org/platforms/interoperability
+      image: /assets/img/elixir.png
       other: >
         <ul>
         <li><a href='https://elixir-europe.org/communities/marine-metagenomics'>Marine Metagenomics Community</a><br></li>
@@ -75,18 +77,22 @@
     - name: Memorial Sloan Kettering Cancer Center
       link_text: MSK-ACCESS team
       url: https://github.com/msk-access?q=&type=&language=common+workflow+language
+      image: /assets/img/msk-access.png
     - name: UNLOCK
       description: LOCK is an open infrastructure for exploring new horizons for research on microbial communities
       url: https://git.wur.nl/unlock/cwl
+      image: /assets/img/logo_unlock_tagline_color.png
     - name: PubSeq
       description: A public data and workflow initiative targeting COVID19 (initially). PubSeq uses RDF/SPARQL, CWL and Arvados extensively.
       url: http://covid19.genenetwork.org/
+      image: /assets/img/pubseq-aln.png
 - section:
   title: Geospatial
   adopters:
     - name: Open Geospatial Consortium
       description: Integrated CWL as part of their Exploitation (data analytics) Platforms
       url: https://www.ogc.org/
+      image: /assets/img/Blue_Horizontal_Lockup.png
       other: >
         Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
         ~5 minutes each promotional videos:<br>

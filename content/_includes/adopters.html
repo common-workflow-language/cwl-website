@@ -19,7 +19,6 @@
     {% else %}
     <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.url }}</a>
     {% endif %}
-  </div>
 
   {% unless adopter.sub_title %}
   {% if adopter.description != null %}
@@ -29,16 +28,18 @@
   {% endif %}
   {% endunless %}
 
-  {% if adopter.image != null %}
-    <img src="{{ adopter.image }}" class="adopter-logo" alt="">
-  {% endif %}
-
   {% if adopter.other != null %}
     <div class="adopter-other">
       <p><b>Additional Info:</b></p>
-      {% for item in adopter.other %}
-        {{ item }}
+      {% for info in adopter.other %}
+        {{ info }}
       {% endfor %}
     </div>
+  {% endif %}
+  </div>
+
+  {% if adopter.image != null %}
+    {% assign img_class = adopter.image | replace: ".", " " | truncate_words: 1 %}
+    <img src="{{ adopter.image }}" class="adopter-logo {{ img_class | append: "-logo" }}" alt="{{ adopter.name | append: " logo" }}">
   {% endif %}
 </div>
