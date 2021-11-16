@@ -16,7 +16,7 @@ See also [the list of over 390 citations and mentions of CWL in published papers
 
 {{ intro | markdownify }}
 
-{% for section in site.data.adopters %}
+{% for section in site.data.users-gallery %}
   {% assign title = section.title %}
   {% assign adopters = section.adopters %}
 
@@ -34,7 +34,7 @@ See also [the list of over 390 citations and mentions of CWL in published papers
   {% endif %}
 
   {% for adopter in adopters %}
-    {% include adopters.html %}
+    {% include users-gallery.html %}
     {% for adopter in sub_adopters %}
       {% capture loop_check %}
       {% if forloop.first %}
@@ -43,7 +43,7 @@ See also [the list of over 390 citations and mentions of CWL in published papers
       {% endcapture %}
     {% if counter == 1 %}
     {% assign adopter_heading = "h4" %}
-      {% include adopters.html %}
+      {% include users-gallery.html %}
     {% endif %}
     {% endfor %}    
   {% endfor %}
