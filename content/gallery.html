@@ -16,9 +16,36 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
 See also [the list of over 390 citations and mentions of CWL in published papers and reports](https://www.zotero.org/groups/2294829/cwl/items)
 {% endcapture %}
 
-{{ intro | markdownify }}
+<div class="intro">{{ intro | markdownify }}</div>
 
-{% for section in site.data.users-gallery %}
+<nav class="left-nav" aria-labelledby="left-nav-title left-nav-title-mobile">
+  <button class="navbar-toggler navbar-toggler-right ms-auto left-nav-toggle" type="button" data-toggle="collapse" data-auto-close="true" data-bs-toggle="dropdown" data-bs-auto-close="true" data-target="#leftNav" aria-controls="leftNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span id="left-nav-title-mobile">Shortcuts</span>
+  </button>
+  <div class="collapse navbar-collapse" id="leftNav">
+  <div id="#leftNav" class="left-nav-title">Shortcuts</div>
+  <ul class="left-nav-links" id="left-nav-menu">
+    {% for menu_item in site.data.users-gallery.left_nav %}
+      {% if menu_item.submenu %}
+        {% assign sub = menu_item.submenu %}
+        <li>
+          <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+        <ul class="left-subnav">
+          {% for sub_item in sub %}
+            <li class="indent"><a href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>          
+          {% endfor %}
+        </ul>
+        </li>
+      {% else %}
+        <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>        
+      {% endif %}
+    {% endfor %}
+  </ul>
+  </div>
+</nav>
+
+<div class="gallery-content">
+{% for section in site.data.users-gallery.gallery %}
   {% assign title = section.title %}
   {% assign adopters = section.adopters %}
 
@@ -51,3 +78,4 @@ See also [the list of over 390 citations and mentions of CWL in published papers
   {% endfor %}
 
 {% endfor %}
+</div>

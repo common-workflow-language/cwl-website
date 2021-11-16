@@ -1,104 +1,153 @@
-- section:
-  title: Cross-domain
-  adopters:
-    - name: The [Netherlands] National Plan Open Science
-      url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
-      description: "For all educational institutions and research domains, open access publishing and optimal reuse of research data will be the norm in 2020. The motto here is: open if possible, closed if it must. The switch to open science requires ambition, investment in people and resources, and being alert to any risks...The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance."
-      image: /assets/img/logo_openscience.svg 
-    - name: University of Manchester, eScience Lab
-      url: https://esciencelab.org.uk/activities/cwl/
-      description: 
-- section:
-  title: Radio Astronomy
-  adopters:
-    - name: The European Open Science Cloud for Research Pilot Project
-      m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
-      image: /assets/img/eosc-pilot.png
-- section:
-  title: Hydrology
-  adopters:
-    - name: The European Open Science Cloud for Research Pilot Project
-      description: 
-      m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
-      image: /assets/img/EOSC.png
-- section:
-  title: Life Sciences
-  adopters:
-    - name: US Food and Drug Administration (FDA)
-      link_text: BioCompute Object / IEEE Std 2791-2020
-      url: https://www.biocomputeobject.org/
-      other:
-        <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a>
-        <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
-  subsection:
+left_nav:
+  - title: Cross-Domain
+    url: "#cross-domain"
+    submenu:
+      - title: The [Netherlands] National Plan Open Science
+        url: "#"
+      - title: University of Manchester, eScience Lab
+        url: "#"
+  - title: Radio Astronomy
+    url: "#radio-astronomy"
+    submenu:
+      - title: The European Open Science Cloud for Research Pilot Project
+        url: "#"
+  - title: Hydrology
+    url: "#hydrology"
+    submenu: 
+      - title: The European Open Science Cloud
+        url: "#"
+  - title: Life Sciences
+    url: "#life-sciences"
+    submenu:
+      - title: US Food and Drug Administration (FDA)
+        url: "#"
+      - title: US National institute of Health
+        url: "#"
+      - title: Children's Hospital of Philadelphia
+        url: "#"
+      - title: European Open Science Cloud - Life (EOSC-Life)
+        url: "#"
+      - title: BioExcel, Centre of Excellence for Computational Biomolecular Research
+        url: "#"
+      - title: ELIXIR
+        url: "#"
+      - title: Wellcome Trust Sanger Institute
+        url: "#"
+      - title: Memorial Sloan Kettering Cancer Center
+        url: "#"
+      - title: UNLOCK
+        url: "#"
+      - title: PubSeq
+        url: "#"
+  - title: Geospatial
+    url: "#geospatial"
+    submenu:
+      - title: Open Geospatial Consortium
+        url: "#"
+
+gallery:
+  - section:
+    title: Cross-Domain
     adopters:
-      - sub_title: US National Institutes of Health (NIH)
-        description: none
-      - name: RAPT
-        url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
-      - name: NCI Cancer Genomics Cloud
-        link_text: NCI Cancer Genomics Cloud
-        url: https://www.cancergenomicscloud.org/
-        description: “Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform.”
-      - name: NIH BioData Catalyst
-        link_text: NHLBI BioData catalyst powered by Seven Bridges
-        url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
-- section:
-  adopters:
-    - name: Children's Hospital of Philadelphia
-      link_text: CAVATICA
-      url: https://d3b.center/our-research/cavatica/
-      image: /assets/img/Cavatica-Blue-Text-01-1-768x164.png
-    - name: European Open Science Cloud - Life (EOSC-Life)
-      link_text: European Open Science Cloud - Life (EOSC-Life)
-      url: https://www.eosc-life.eu/
-      image: /assets/img/eosclifelogo.png
-      other: <a href='https://about.workflowhub.eu/About-WorkflowHub'>https://about.workflowhub.eu/About-WorkflowHub</a>
-    - name: BioExcel, Centre of Excellence for Computational Biomolecular Research
-      link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
-      url: https://bioexcel.eu/common-workflow-language
-      image: /assets/img/Bioexcel_logo_no_subheading_660px.png
-    - name: ELIXIR
-      link_text: Interoperability Platform
-      url: https://elixir-europe.org/platforms/interoperability
-      image: /assets/img/elixir.png
-      other: >
-        <ul>
-        <li><a href='https://elixir-europe.org/communities/marine-metagenomics'>Marine Metagenomics Community</a><br></li>
-        <li>2018 Implementation Study: <a href='https://elixir-europe.org/about-us/implementation-studies/cwl-2018'>Enabling the reuse, extension, scaling, and reproducibility of scientific workflows</a><br></li>
-        <li>2018 Implementation Study: <a href='https://elixir-europe.org/about-us/implementation-studies/compatible-cloud-2018'>Compatible Cloud Analysis Platform</a><br></li>
-        <li>ELIXIR Cloud <a href='https://github.com/elixir-cloud-aai/cwl-WES'>CWL-WES</a><br></li>
-        </ul>
-    - name: Wellcome Trust Sanger Institute
-      link_text: Human Genetics Informatics
-      url: https://github.com/wtsi-hgi/arvados-pipelines/tree/master/cwl
-      other: 
-        - '<a href="https://www.sanger.ac.uk/science/groups/cellular-genetics-informatics">Cellular Genetics Informatics, Cellular Genetics</a>'
-    - name: Memorial Sloan Kettering Cancer Center
-      link_text: MSK-ACCESS team
-      url: https://github.com/msk-access?q=&type=&language=common+workflow+language
-      image: /assets/img/msk-access.png
-    - name: UNLOCK
-      description: LOCK is an open infrastructure for exploring new horizons for research on microbial communities
-      url: https://git.wur.nl/unlock/cwl
-      image: /assets/img/logo_unlock_tagline_color.png
-    - name: PubSeq
-      description: A public data and workflow initiative targeting COVID19 (initially). PubSeq uses RDF/SPARQL, CWL and Arvados extensively.
-      url: http://covid19.genenetwork.org/
-      image: /assets/img/pubseq-aln.png
-- section:
-  title: Geospatial
-  adopters:
-    - name: Open Geospatial Consortium
-      description: Integrated CWL as part of their Exploitation (data analytics) Platforms
-      url: https://www.ogc.org/
-      image: /assets/img/Blue_Horizontal_Lockup.png
-      other: >
-        Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
-        ~5 minutes each promotional videos:<br>
-        <ol>
-        <li><a href="https://www.youtube.com/watch?v=bWcNyIe5jiA">Terradue: Earth Observations Applications Architecture</a></li>
-        <li><a href="https://www.youtube.com/watch?v=no3REyoxE38">OGC EO Apps pilot - Applications</a></li>
-        <li><a href="https://www.youtube.com/watch?v=QkdDFGEfIAY">OGC EO Apps pilot - Platforms</a></li>
-        <li><a href="https://www.youtube.com/watch?v=L9HreYAXUNo">EO Applications Architecture for Application Developers - Urban app deployment and execution (DLR)</a></li>
-        </ol>
+      - name: The [Netherlands] National Plan Open Science
+        url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
+        description: "For all educational institutions and research domains, open access publishing and optimal reuse of research data will be the norm in 2020. The motto here is: open if possible, closed if it must. The switch to open science requires ambition, investment in people and resources, and being alert to any risks...The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance."
+        image: /assets/img/logo_openscience.svg 
+      - name: University of Manchester, eScience Lab
+        url: https://esciencelab.org.uk/activities/cwl/
+        description: 
+  - section:
+    title: Radio Astronomy
+    adopters:
+      - name: The European Open Science Cloud for Research Pilot Project
+        m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
+        image: /assets/img/eosc-pilot.png
+  - section:
+    title: Hydrology
+    adopters:
+      - name: The European Open Science Cloud
+        description: 
+        m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
+        image: /assets/img/EOSC.png
+  - section:
+    title: Life Sciences
+    adopters:
+      - name: US Food and Drug Administration (FDA)
+        link_text: BioCompute Object / IEEE Std 2791-2020
+        url: https://www.biocomputeobject.org/
+        other:
+          <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a>
+          <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
+    subsection:
+      adopters:
+        - sub_title: US National Institutes of Health (NIH)
+          description: none
+        - name: RAPT
+          url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
+        - name: NCI Cancer Genomics Cloud
+          link_text: NCI Cancer Genomics Cloud
+          url: https://www.cancergenomicscloud.org/
+          description: “Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform.”
+        - name: NIH BioData Catalyst
+          link_text: NHLBI BioData catalyst powered by Seven Bridges
+          url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
+  - section:
+    adopters:
+      - name: Children's Hospital of Philadelphia
+        link_text: CAVATICA
+        url: https://d3b.center/our-research/cavatica/
+        image: /assets/img/Cavatica-Blue-Text-01-1-768x164.png
+      - name: European Open Science Cloud - Life (EOSC-Life)
+        link_text: European Open Science Cloud - Life (EOSC-Life)
+        url: https://www.eosc-life.eu/
+        image: /assets/img/eosclifelogo.png
+        other: <a href='https://about.workflowhub.eu/About-WorkflowHub'>https://about.workflowhub.eu/About-WorkflowHub</a>
+      - name: BioExcel, Centre of Excellence for Computational Biomolecular Research
+        link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
+        url: https://bioexcel.eu/common-workflow-language
+        image: /assets/img/Bioexcel_logo_no_subheading_660px.png
+      - name: ELIXIR
+        link_text: Interoperability Platform
+        url: https://elixir-europe.org/platforms/interoperability
+        image: /assets/img/elixir.png
+        other: >
+          <ul>
+          <li><a href='https://elixir-europe.org/communities/marine-metagenomics'>Marine Metagenomics Community</a><br></li>
+          <li>2018 Implementation Study: <a href='https://elixir-europe.org/about-us/implementation-studies/cwl-2018'>Enabling the reuse, extension, scaling, and reproducibility of scientific workflows</a><br></li>
+          <li>2018 Implementation Study: <a href='https://elixir-europe.org/about-us/implementation-studies/compatible-cloud-2018'>Compatible Cloud Analysis Platform</a><br></li>
+          <li>ELIXIR Cloud <a href='https://github.com/elixir-cloud-aai/cwl-WES'>CWL-WES</a><br></li>
+          </ul>
+      - name: Wellcome Trust Sanger Institute
+        link_text: Human Genetics Informatics
+        url: https://github.com/wtsi-hgi/arvados-pipelines/tree/master/cwl
+        other: 
+          - '<a href="https://www.sanger.ac.uk/science/groups/cellular-genetics-informatics">Cellular Genetics Informatics, Cellular Genetics</a>'
+      - name: Memorial Sloan Kettering Cancer Center
+        link_text: MSK-ACCESS team
+        url: https://github.com/msk-access?q=&type=&language=common+workflow+language
+        image: /assets/img/msk-access.png
+      - name: UNLOCK
+        description: LOCK is an open infrastructure for exploring new horizons for research on microbial communities
+        url: https://git.wur.nl/unlock/cwl
+        image: /assets/img/logo_unlock_tagline_color.png
+      - name: PubSeq
+        description: A public data and workflow initiative targeting COVID19 (initially). PubSeq uses RDF/SPARQL, CWL and Arvados extensively.
+        url: http://covid19.genenetwork.org/
+        image: /assets/img/pubseq-aln.png
+  - section:
+    title: Geospatial
+    adopters:
+      - name: Open Geospatial Consortium
+        description: Integrated CWL as part of their Exploitation (data analytics) Platforms
+        url: https://www.ogc.org/
+        image: /assets/img/Blue_Horizontal_Lockup.png
+        other: >
+          Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
+          ~5 minutes each promotional videos:<br>
+          <ol>
+          <li><a href="https://www.youtube.com/watch?v=bWcNyIe5jiA">Terradue: Earth Observations Applications Architecture</a></li>
+          <li><a href="https://www.youtube.com/watch?v=no3REyoxE38">OGC EO Apps pilot - Applications</a></li>
+          <li><a href="https://www.youtube.com/watch?v=QkdDFGEfIAY">OGC EO Apps pilot - Platforms</a></li>
+          <li><a href="https://www.youtube.com/watch?v=L9HreYAXUNo">EO Applications Architecture for Application Developers - Urban app deployment and execution (DLR)</a></li>
+          </ol>
+
