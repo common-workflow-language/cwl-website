@@ -174,7 +174,18 @@
   }
 
   .cols-3 {
-    th,
+
+    thead {
+      th {
+        width: 60%;
+
+        &:first-of-type {
+          // width: 25%;
+          width: 33%;
+        }
+      }
+    }
+
     td {
       width: 60%;
 
