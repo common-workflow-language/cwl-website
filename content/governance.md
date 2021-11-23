@@ -83,7 +83,7 @@ CWL Community members and their contributions to the project.
 *   Janko Simonović <janko.simonovic@sbgenomics.com>
 *   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
 *   Luka Stojanovic <luka.stojanovic@sbgenomics.com>
-*   Tomoya Tanjo, NII; <https://orcid.org/0000-0002-4421-9659>
+*   Tomoya Tanjo, [NIG](https://www.nig.ac.jp/nig/); [https://orcid.org/0000-0002-4421-9659](https://orcid.org/0000-0002-4421-9659)
 *   Nebojša Tijanić <nebojsa.tijanic@sbgenomics.com>
 *   Hiromu Ochiai; [@otiai10](https://github.com/otiai10) <https://orcid.org/0000-0001-6636-856X>
 
