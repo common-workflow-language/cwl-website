@@ -21,15 +21,15 @@
   background-color: $nav--bg-color;
 }
 
+.top-nav {
+  border-bottom: 2px solid $nav--border-color;
+  box-sizing: content-box;
+}
+
 @include media-breakpoint-up(xl) {
   .top-nav {
     height: $nav-height-desktop;
   }
-}
-
-.top-nav {
-  border-bottom: 2px solid $nav--border-color;
-  box-sizing: content-box;
 }
 
 .nav-wrap {
@@ -96,6 +96,23 @@
   }
 }
 
+@include media-breakpoint-up(lg) {
+  .navbar-nav {
+    margin: 0 1rem 0 0;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .navbar-nav {
+    margin: 0 2rem 0 1rem;
+  }
+
+  // Account for lack of scrollbar on short pages
+  .page-short .navbar-nav {
+    margin: 0 2rem 0 1rem;
+  }
+}
+
 .nav-item {
   padding: $nav--item-padding;
 }
@@ -144,10 +161,21 @@
     margin: 0 1rem;
     max-width: 100%;
   }
+}
 
-  // Account for lack of scrollbar on short pages
-  .page-short .navbar-nav {
-    margin: 0 2rem 0 1rem;
+.nav-home-link {
+  display: block;
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-home-link {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .nav-home-link {
+    display: block;
   }
 }
 

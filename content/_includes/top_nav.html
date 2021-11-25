@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light top-nav sticky-top" aria-label="main navigation">
   <div class="nav-wrap container-fluid">
       <a class="navbar-brand" href="/">
-        <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo" height="50" width="106">
+        <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo" alt="CWL logo | Home" height="50" width="106">
       </a>
     <button class="navbar-toggler navbar-toggler-right ms-auto" type="button" data-toggle="collapse" data-auto-close="true" data-bs-toggle="dropdown" data-bs-auto-close="true" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -27,10 +27,11 @@
               {%- else -%}
               {%- if page.title == item.title -%}
                 <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
+              {% elsif item.title == "Home" %}
+                <li class="nav-item nav-home-link"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
               {%- else -%}
                 <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
               {%- endif -%}
-
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
