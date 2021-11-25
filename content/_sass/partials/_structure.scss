@@ -44,6 +44,7 @@
     // Very unclear that this min-height actually works or
     // does anything. Likely Delete.
     min-height: calc(100vh - 96px);
+    padding-bottom: 56px;
   }
 
   .post-content {
@@ -55,13 +56,18 @@
   .body-page-short {
     .content-wrapper {
       // padding-bottom: 75px;
-      padding-bottom: 26px;
+      // padding-bottom: 26px;
+      padding-bottom: 32px;
     }
   }
 }
 
 @include media-breakpoint-up(sm) {
   .body-page-short {
+    .content-wrapper {
+      padding-bottom: 0;
+    }
+
     .post-content {
       margin: 0 0 38px;
       padding: 90px 0 26px;
@@ -72,7 +78,8 @@
 @include media-breakpoint-up(md) {
   .body-page-short {
     .content-wrapper {
-      padding-bottom: 146px;
+      // padding-bottom: 146px;
+      padding-bottom: 0;
     }
 
     .post-content {
@@ -93,6 +100,20 @@
   .body-page-short {
     .post-content {
       padding: 102px 0 26px;
+    }
+  }
+}
+
+.body-home {
+  .content-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .body-home {
+    .content-wrapper {
+      padding-bottom: 0;
     }
   }
 }
