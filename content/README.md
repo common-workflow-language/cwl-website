@@ -6,45 +6,26 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 ## To-Do
 
-* Check Accessibility
-* Make all bullet points red by default?
-  * CWL Adoption Red Bullets.
+### Mobile
+
 * Mobile nav should close when you tap outside of it
-* Add "Back to Top" button on mobile, for long pages
-* Sort & condense table white-space styles
+* Ensure "Back to Top" button shows up for long pages
+* Users Gallery Submenus should be drop downs
 
-### CWL Adopters
+### Broken Links
 
-* Reformat as tables
+Users Gallery - Jekyll is inserting a blank link between US National Institutes of Health (NIH) & 
+RAPT. The code renders like this:
 
-### Section Headers & Icons
-
-* Not aligning properly on Home and About pgs.
-
-### Footer positioning
-
-* Fix footer positioning and/or content padding on Homepage, Projects, and Specification pgs
-
-### WebAIM Accessibility Test
-
-* Improve icon alt text
-
-#### Ecosystem
-
-Suspicious Link Text
-
-```md
-|[argparse2tool](https://github.com/erasche/argparse2tool#cwl-specific-functionality) |Generate CWL CommandLineTool wrappers (and/or Galaxy tool descriptions) from Python programs that use argparse.  Also supports the [click](http://click.pocoo.org/5/) argument parser.|
-```
-#### Projects
-
-Ambiguous link text:
-
-```md
-[Here](/FAIR) is a qualitative analysis of CWL and the FAIR principles.
+```html
+<div class="adopter-entry">
+  <div class="adopter-row-top">
+    <a href="" class="adopter-link"></a>
+  </div>
+</div>
 ```
 
-WebAIM: "Links, which are often read out of context, should clearly describe the destination or function of the link. Ambiguous text, text that does not make sense out of context, and extraneous text (such as "click here") can cause confusion and should be avoided."
+### WebAIM Accessibility
 
 #### Video Player
 
@@ -71,13 +52,18 @@ WebAIM: "Links, which are often read out of context, should clearly describe the
 </div>
 ```
 
+These other errors come up, but are probably not significant, since the icons are provided:
+
+* skipped heading level
+* Small text
+
 ### Cleanup & Deployment
 
 * Ensure hypothes.is is off for live site
 
 ## Reference
 
-### Bootstrap Grid Points
+### Bootstrap Grid Breakpoints
 
 Bootstrap Grid Breakpoints are as follows:
 
@@ -88,7 +74,9 @@ $grid-breakpoints: (
   sm: 576px,
   md: 768px,
   lg: 992px,
+  lg-2: 1024px,
   xl: 1200px,
+  xl-13: 1330px,
   xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints

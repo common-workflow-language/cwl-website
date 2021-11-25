@@ -26,7 +26,7 @@
   }
 
   tr {
-    background: white;
+    background: $white;
   }
 
   tr:nth-of-type(odd) td,
@@ -45,18 +45,18 @@
       border: 0;
 
       a {
-        color: white;
+        color: $white;
         font-weight: 700;
       }
     }
 
     &:nth-of-type(n+2) {
-      background: white;
+      background: $white;
     }
   }
 
   thead {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $grey-c;
 
     tr {
       background: $table--cell-striped-background;
@@ -67,7 +67,7 @@
     th {
       background: $table--cell-striped-background;
       border-bottom: 0 !important;
-      border-right: 1px solid #ccc;
+      border-right: 1px solid $grey-c;
       width: 33%;
 
       &:last-of-type {
@@ -81,14 +81,16 @@
       width: 48%;
     }
   }
-}
 
-.cols-equal {
-  th,
-  td{
-    width: 33% !important;
+  // Unused helper class - left in, in case it's useful in the future
+  &.cols-equal {
+    th,
+    td {
+      width: 33% !important;
+    }
   }
 }
+
 
 @include media-breakpoint-up(md) {
   .table {
@@ -96,8 +98,8 @@
 
     tr:nth-of-type(n+1) {
       a {
-        font-weight: 400;
         color: $table--link-color;
+        font-weight: 400;
       }
     }
 
@@ -127,10 +129,12 @@
       }
     }
 
-    &.cols-2 thead th,
-    &.cols-2 td {
-      white-space: pre-line;
-      width: initial;
+    &.cols-2 {
+      thead th,
+      td {
+        white-space: pre-line;
+        width: initial;
+      }
     }
 
     td {
@@ -157,48 +161,19 @@
 
 @include media-breakpoint-up(lg) {
   .table {
+    th,
+    td {
+      &:first-of-type {
+        width: 22%;
+      }
+    }
+
     &.cols-2 {
       th:first-of-type,
       td:first-of-type {
-        width: 25% !important;
-        word-break: break-all !important;
-      }
-    }
-  }
-
-  .cols-2 {
-    th,
-    td {
-      width: 70%;
-    }
-  }
-
-  .cols-3 {
-
-    thead {
-      th {
-        width: 60%;
-
-        &:first-of-type {
-          // width: 25%;
-          width: 33%;
-        }
-      }
-    }
-
-    td {
-      width: 60%;
-
-      &:first-of-type {
         width: 25%;
+        word-break: break-all;
       }
-    }
-  }
-
-  .table th,
-  .table td {
-    &:first-of-type {
-      width: 22%;
     }
   }
 }
