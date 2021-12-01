@@ -2,7 +2,7 @@
 layout: page
 permalink: /gallery/
 title: CWL Users Gallery
-redirect_from: 
+redirect_from:
   - /cwl-adopters
   - /users-gallery
 # class: cwl-adopters
@@ -32,12 +32,12 @@ See also [the list of over 390 citations and mentions of CWL in published papers
           <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
         <ul class="left-subnav">
           {% for sub_item in sub %}
-            <li class="indent"><a href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>          
+            <li class="indent"><a href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>
           {% endfor %}
         </ul>
         </li>
       {% else %}
-        <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>        
+        <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
       {% endif %}
     {% endfor %}
   </ul>
@@ -56,10 +56,7 @@ See also [the list of over 390 citations and mentions of CWL in published papers
   {% endif %}
 
   {% if title != null %}
-    <h2 id="{{ title | downcase | replace: " ", "-" }}">{{ title }}</h2>
-  {% endif %}
-  {% if sub_title != null %}
-    <h4 id="{{ title | downcase | replace: " ", "-" }}">{{ sub_title }}</h4>
+    <h2 id="{{ title | downcase | replace: " ", "-" }}">Title: {{ title }}</h2>
   {% endif %}
 
   {% for adopter in adopters %}
@@ -71,10 +68,10 @@ See also [the list of over 390 citations and mentions of CWL in published papers
       {% endif %}
       {% endcapture %}
     {% if counter == 1 %}
-    {% assign adopter_heading = "h4" %}
+      {% assign adopter_heading = "h4" %}
       {% include users-gallery.html %}
     {% endif %}
-    {% endfor %}    
+    {% endfor %}
   {% endfor %}
 
 {% endfor %}

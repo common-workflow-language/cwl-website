@@ -2,44 +2,44 @@
   <h3 id="{{ adopter.sub_title }}" class="adopter-sub-title">{{ adopter.sub_title }}</h3>
 {% endif %}
 
-<div class="adopter-entry">
-  <div class="adopter-row-top">
-    {% if adopter_heading == "h3" %}
-      <h3 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h3>
-    {% elsif adopter_heading == "h4" && adopter.name != null %}
-      {% if adopter.name != null %}
-        <h4 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h4>      
+{% if adopter.name != null %}
+  <div class="adopter-entry">
+    <div class="adopter-row-top">
+      {% if adopter_heading == "h3" %}
+        <h3 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h3>
+      {% elsif adopter_heading == "h4" %}
+          <h4 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h4>      
       {% endif %}
-    {% endif %}
 
-    {% if adopter.m_link != null %}
-      <p class="adopter-link">{{ adopter.m_link | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-    {% elsif adopter.link_text != null %}
-      <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.link_text }}</a>
+      {% if adopter.m_link != null %}
+        <p class="adopter-link">{{ adopter.m_link | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {% elsif adopter.link_text != null %}
+        <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.link_text }}</a>
+      {% else %}
+      <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.url }}</a>
+      {% endif %}
+
+    {% unless adopter.sub_title %}
+    {% if adopter.description != null %}
+      <p class="adopter-description">{{ adopter.description }}</p>
     {% else %}
-    <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.url }}</a>
+      <p class="adopter-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     {% endif %}
+    {% endunless %}
 
-  {% unless adopter.sub_title %}
-  {% if adopter.description != null %}
-    <p class="adopter-description">{{ adopter.description }}</p>
-  {% else %}
-    <p class="adopter-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  {% endif %}
-  {% endunless %}
-
-  {% if adopter.other != null %}
-    <div class="adopter-other">
-      <p><b>Additional Info:</b></p>
-      {% for info in adopter.other %}
-        <p>{{ info }}</p>
-      {% endfor %}
+    {% if adopter.other != null %}
+      <div class="adopter-other">
+        <p><b>Additional Info:</b></p>
+        {% for info in adopter.other %}
+          <p>{{ info }}</p>
+        {% endfor %}
+      </div>
+    {% endif %}
     </div>
-  {% endif %}
-  </div>
 
-  {% if adopter.image != null %}
-    {% assign img_class = adopter.image | replace: ".", " " | truncate_words: 1 %}
-    <div class="adopter-logo-container"><img src="{{ adopter.image }}" class="adopter-logo {{ img_class | append: "-logo" }}" alt="{{ adopter.name | append: " logo" }}"></div>
-  {% endif %}
-</div>
+    {% if adopter.image != null %}
+      {% assign img_class = adopter.image | replace: ".", " " | truncate_words: 1 %}
+      <div class="adopter-logo-container"><img src="{{ adopter.image }}" class="adopter-logo {{ img_class | append: "-logo" }}" alt="{{ adopter.name | append: " logo" }}"></div>
+    {% endif %}
+  </div>
+{% endif %}

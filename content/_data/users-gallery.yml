@@ -76,12 +76,12 @@ gallery:
         link_text: BioCompute Object / IEEE Std 2791-2020
         url: https://www.biocomputeobject.org/
         other:
-          <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a>
+          <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a><br>
           <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
     subsection:
       adopters:
         - sub_title: US National Institutes of Health (NIH)
-          description: none
+          description: null
         - name: RAPT
           url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
         - name: NCI Cancer Genomics Cloud
