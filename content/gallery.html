@@ -33,7 +33,7 @@ See also [the list of over 390 citations and mentions of CWL in published papers
   {% endif %}
 
   {% if title != null %}
-    <h2 id="{{ title | downcase | replace: " ", "-" }}">Title: {{ title }}</h2>
+    <h2 id="{{ title | downcase | replace: " ", "-" }}">{{ title }}</h2>
   {% endif %}
 
   {% for adopter in adopters %}
