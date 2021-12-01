@@ -1,5 +1,5 @@
 {% if adopter.sub_title %}
-  <h3 id="{{ adopter.sub_title }}" class="adopter-sub-title">{{ adopter.sub_title }}</h3>
+  <h3 id="{{ adopter.sub_title | downcase | replace: " ", "-" }}" class="adopter-sub-title">{{ adopter.sub_title }}</h3>
 {% endif %}
 
 {% if adopter.name != null %}
