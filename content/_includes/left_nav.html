@@ -1,0 +1,28 @@
+<nav class="left-nav" aria-labelledby="left-nav-title left-nav-title-mobile">
+  <button class="navbar-toggler navbar-toggler-right ms-auto left-nav-toggle" type="button" data-toggle="collapse" data-auto-close="true" data-bs-toggle="dropdown" data-bs-auto-close="true" data-target="#leftNav" aria-controls="leftNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span id="left-nav-title-mobile">nav_data.nav_header</span>
+  </button>
+  <div class="collapse navbar-collapse" id="leftNav">
+  <div id="#leftNav" class="left-nav-title">Shortcuts</div>
+  <ul class="left-nav-links" id="left-nav-menu">
+    {% for menu_item in nav_data %}
+      {% unless menu_item.nav_header %}
+        {% if menu_item.submenu %}
+          {% assign sub = menu_item.submenu %}
+          <li>
+            <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+          <ul class="left-subnav">
+            {% for sub_item in sub %}
+              <li class="indent"><a href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>
+            {% endfor %}
+          </ul>
+          </li>
+        {% else %}
+          <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  </ul>
+  </div>
+</nav>
+

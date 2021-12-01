@@ -1,4 +1,5 @@
 left_nav:
+  - nav_header: Shortcuts
   - title: Cross-Domain
     url: "#cross-domain"
     submenu:
@@ -55,7 +56,7 @@ gallery:
         image: /assets/img/logo_openscience.svg 
       - name: University of Manchester, eScience Lab
         url: https://esciencelab.org.uk/activities/cwl/
-        description: 
+        description: null
   - section:
     title: Radio Astronomy
     adopters:
@@ -66,7 +67,7 @@ gallery:
     title: Hydrology
     adopters:
       - name: The European Open Science Cloud
-        description: 
+        description: null
         m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
         image: /assets/img/EOSC.png
   - section:
@@ -150,4 +151,3 @@ gallery:
           <li><a href="https://www.youtube.com/watch?v=QkdDFGEfIAY">OGC EO Apps pilot - Platforms</a></li>
           <li><a href="https://www.youtube.com/watch?v=L9HreYAXUNo">EO Applications Architecture for Application Developers - Urban app deployment and execution (DLR)</a></li>
           </ol>
-
