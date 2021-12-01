@@ -6,9 +6,9 @@
   <div class="adopter-entry">
     <div class="adopter-row-top">
       {% if adopter_heading == "h3" %}
-        <h3 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h3>
+        <h3 id="{{ adopter.name | downcase | replace: " ", "-" }}" class="adopter-title">{{ adopter.name }}</h3>
       {% elsif adopter_heading == "h4" %}
-          <h4 id="{{ adopter.name }}" class="adopter-title">{{ adopter.name }}</h4>      
+          <h4 id="{{ adopter.name | downcase | replace: " ", "-" }}" class="adopter-title">{{ adopter.name }}</h4>      
       {% endif %}
 
       {% if adopter.m_link != null %}

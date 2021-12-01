@@ -4,47 +4,47 @@ left_nav:
     url: "#cross-domain"
     submenu:
       - title: The [Netherlands] National Plan Open Science
-        url: "#"
+        url: "#the-[netherlands]-national-plan-open-science"
       - title: University of Manchester, eScience Lab
-        url: "#"
+        url: "#university-of-manchester,-escience-lab"
   - title: Radio Astronomy
     url: "#radio-astronomy"
     submenu:
       - title: The European Open Science Cloud for Research Pilot Project
-        url: "#"
+        url: "#the-european-open-science-cloud-for-research-pilot-project"
   - title: Hydrology
     url: "#hydrology"
     submenu: 
       - title: The European Open Science Cloud
-        url: "#"
+        url: "#the-european-open-science-cloud"
   - title: Life Sciences
     url: "#life-sciences"
     submenu:
       - title: US Food and Drug Administration (FDA)
-        url: "#"
+        url: "#us-food-and-drug-administration-(fda)"
       - title: US National institute of Health
-        url: "#"
+        url: "#us-national-institutes-of-health-(nih)"
       - title: Children's Hospital of Philadelphia
         url: "#"
       - title: European Open Science Cloud - Life (EOSC-Life)
-        url: "#"
+        url: "#european-open-science-cloud---life-(eosc-life)"
       - title: BioExcel, Centre of Excellence for Computational Biomolecular Research
-        url: "#"
+        url: "#bioexcel,-centre-of-excellence-for-computational-biomolecular-research"
       - title: ELIXIR
-        url: "#"
+        url: "#elixir"
       - title: Wellcome Trust Sanger Institute
-        url: "#"
+        url: "#wellcome-trust-sanger-institute"
       - title: Memorial Sloan Kettering Cancer Center
-        url: "#"
+        url: "#memorial-sloan-kettering-cancer-center"
       - title: UNLOCK
-        url: "#"
+        url: "#unlock"
       - title: PubSeq
-        url: "#"
+        url: "#pubseq"
   - title: Geospatial
     url: "#geospatial"
     submenu:
       - title: Open Geospatial Consortium
-        url: "#"
+        url: "#open-geospatial-consortium"
 
 gallery:
   - section:
