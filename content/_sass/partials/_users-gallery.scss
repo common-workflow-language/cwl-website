@@ -26,64 +26,7 @@
     justify-content: space-between;
   }
 
-  .left-nav {
-    height: fit-content;
-    margin: 0 0 6px;
-  }
-
-  .left-nav-toggle {
-    background: #efefef;
-    border: 1px solid #666;
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px #888;
-
-    &:focus {
-      border: 1px solid #777;
-      box-shadow: 0 0 0 3px #777;
-    }
-  }
-
-  .left-nav-title,
-  .left-subnav {
-    padding: 0;
-  }
-
-  .left-nav-title {
-    display: none;
-    font-size: 17px;
-    font-weight: 600;
-    margin: 0 0 10px;
-  }
-
-  .left-nav a {
-    -webkit-line-clamp: 2;
-    color: #4a4a4a;
-    font-family: Lato, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-clamp: 2;
-    line-height: 1.5;
-    margin: 5px 5px 0 15px;
-    max-height: 20px;
-    overflow: hidden;
-    text-decoration: none;
-  }
-
-  .left-nav-links {
-    list-style: none;
-    padding: 2px 0;
-  }
-
-  .left-nav .indent {
-    margin: 5px 5px 5px 30px;
-    max-height: 46px;
-    overflow: hidden;
-    text-indent: -15px;
-  }
-
-  .indent a {
-    font-size: 14px;
-  }
+  @include left-nav;
 
   .adopter-entry,
   .adopter-row-top,
@@ -121,36 +64,7 @@
 
 @include media-breakpoint-up(md) {
   .page-gallery {
-    .left-nav {
-      height: fit-content;
-      // margin: 36px 0 0;
-      margin: 58px 0 0;
-      width: 200px;
-    }
-
-    .left-nav .border-collapse {
-      border: 0;
-    }
-
-    .left-nav-toggle,
-    .left-nav-title-mobile {
-      display: none;
-    }
-
-    #leftNav,
-    .left-nav-title {
-      display: block;
-    }
-
-    .left-nav-title,
-    .left-nav-links,
-    .left-subnav {
-      padding: 0;
-    }
-
-    .left-nav-links {
-      border-left: 1px solid #013243;
-    }
+    @include left-nav-md;
 
     .gallery-content {
       width: calc(100% - 210px);
@@ -164,9 +78,7 @@
       justify-content: space-between;
     }
 
-    .left-nav {
-      margin: 58px 6px 0 0;
-    }
+    @include left-nav-lg;
 
     .gallery-content,
     .adopter-entry {
@@ -249,9 +161,7 @@
       margin: 0 0 1.25rem 1rem;
     }
 
-    .left-nav {
-      margin: 58px 0 0;
-    }
+    @include left-nav-xxl;
 
     .adopter-row-top {
       margin: 0 46px 0 1rem;
