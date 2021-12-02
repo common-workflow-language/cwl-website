@@ -1,49 +1,50 @@
 <nav class="navbar navbar-expand-lg navbar-light top-nav sticky-top" aria-label="main navigation">
   <div class="nav-wrap container-fluid">
-      <a class="navbar-brand" href="/">
-        <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo | Homepage link" height="50" width="106">
-      </a>
-    <button class="navbar-toggler navbar-toggler-right ms-auto" type="button" data-toggle="collapse" data-auto-close="true" data-bs-toggle="dropdown" data-bs-auto-close="true" data-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="/">
+      <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo | Homepage link" height="50" width="106">
+    </a>
+    <button class="navbar-toggler navbar-toggler-right ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="topNav">
       <ul class="nav navbar-nav ms-auto mt-2 mt-lg-0">
-        {%- if site.data.navigation.header[0] -%}
-          {%- for item in site.data.navigation.header -%}
-            {%- if item.type contains "dropdown" -%}
-              <li class="dropdown nav-item">
-                <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+      {%- if site.data.navigation.header[0] -%}
+        {%- for item in site.data.navigation.header -%}
+          {%- if item.type contains "dropdown" -%}
+            <li class="dropdown nav-item">
+              <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
 
-                {%- if item.subfolderitems[0] -%}
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {%- for entry in item.subfolderitems -%}
-                      <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
-                    {%- endfor -%}
-                  </ul>
-              </li>
-                {%- endif -%}
-
-              {%- else -%}
-              {%- if page.title == item.title -%}
-                <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
-              {% elsif item.title == "Home" %}
-                <li class="nav-item nav-home-link"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
-              {%- else -%}
-                <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
-              {%- endif -%}
+            {%- if item.subfolderitems[0] -%}
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {%- for entry in item.subfolderitems -%}
+                  <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
+                {%- endfor -%}
+              </ul>
+          </li>
             {%- endif -%}
-          {%- endfor -%}
-        {%- endif -%}
-        
-        <li class="nav-item nav--paypal-btn">{% include paypal-button.html %}</li>
-        
-        <li class="nav-item nav-social-icons">
-          <a href="{{ site.github_url }}" aria-label="GitHub link"><i class="fab fa-github first-icon"></i></a>
-          <a href="{{ site.twitter_url }}" aria-label="Twitter link"><i class="fab fa-twitter"></i></a>
-        </li>
-      </ul>
+
+          {% else %}
+          {%- if page.title == item.title -%}
+            <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
+          {% elsif item.title == "Home" %}
+            <li class="nav-item nav-home-link"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
+          {%- else -%}
+            <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+          {%- endif -%}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      <li class="nav-item nav--paypal-btn">{% include paypal-button.html %}</li>
+      
+      <li class="nav-item nav-social-icons">
+        <a href="{{ site.github_url }}" aria-label="GitHub link"><i class="fab fa-github first-icon"></i></a>
+        <a href="{{ site.twitter_url }}" aria-label="Twitter link"><i class="fab fa-twitter"></i></a>
+      </li>
+    </ul>
     </div>
 
   <div>
 </nav>
+

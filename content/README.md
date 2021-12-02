@@ -9,7 +9,11 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 * [Editing the Site](#editing-the-site)
 * [To-Do](#to-do)
+  * [Plugins Review](#plugins-review)
   * [Nav Menu Issues](#nav-menu-issues)
+  * [Social Icons Too Prominent](#social-icons-too-prominent)
+  * [Accessibility](#accessibility)
+    * [Headings & Anchor Links](#headings--anchor-links)
   * [Video Player](#video-player)
   * [Users Gallery](#users-gallery)
     * [Organization Links](#organization-links)
@@ -28,13 +32,37 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="to-do"></a>
 ## To-Do
 
+<a id="plugins-review"></a>
+### Plugins Review
+
+* Check if there are any necessary or useful Jekyll plugins that should be added
+
 <a id="nav-menu-issues"></a>
 ### Nav Menu Issues
 
-* Nav menus don't close when clicking or tapping outside of them
+* Anchor links scroll past headings, due to sticky header 
 * Top nav: Home link currently stays bolded, even though page not on homepage
 * Left Nav: Submenu items should be collapsed under a caret. Relevant for Users Gallery page
-* Left Nav: Needs scroll fix??
+
+<a id="social-icons-too-prominent"></a>
+### Social Icons Too Prominent
+
+* Social Icons & Donate Button are too visually prominent. 
+
+<a id="accessibility"></a>
+### Accessibility
+
+* Needs further testing with Screen Reader. See discussion at <https://github.com/common-workflow-language/cwl-website/pull/75#discussion_r760642750>
+  * Add `lang` attibutes to any text in foreign languages (Japanese, Russian, etc)
+    * Currently being read by SR in very confusing manner (e.g. Orca reads Japanese as "CWL -japanese character- -chinese character- -chinese character-....")
+  * Check Skip Link and Nav Menu behavior for consistency
+
+<a id="headings--anchor-links"></a>
+#### Headings & Anchor Links
+
+* Some links to top or back(?) are announced with the headers of the page.
+  * Relevant code is in `_sass/partials/_structure.scss`
+  * Distracting for SR users, who may prefer to hit Home or reload the page instead
 
 <a id="video-player"></a>
 ### Video Player

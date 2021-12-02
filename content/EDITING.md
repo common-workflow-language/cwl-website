@@ -5,6 +5,8 @@ Instructions for editing specific pages and site components.
 <!-- MarkdownTOC -->
 
 * [Nav Menus](#nav-menus)
+  * [Left Nav @mixin](#left-nav-mixin)
+  * [Editing the Nav Menus](#editing-the-nav-menus)
 * [Homepage](#homepage)
   * [Features Boxes](#features-boxes)
 * [About page](#about-page)
@@ -31,6 +33,42 @@ There are two nav templates currently available:
 
 * `_includes/top_nav.html` - the main site nav. Relies on data in `_data/navigation.yml`
 * `_includes/left_nav.html` - left nav on an individual page. Relies on data in a page-specific file (e.g. `gallery.html` uses `_data/users-gallery.yml`)
+
+Styles are found in `_sass/partials/_nav.scss` and `_sass/partials/_left-nav.scss`. 
+
+<a id="left-nav-mixin"></a>
+### Left Nav @mixin
+
+The Left Nav styles can be included on any page via a Sass `@mixin`, which should be wrapped within the page-specific class. The responsive styles should be included within their respective breakpoints.
+
+Example:
+
+```scss
+// Default styles for mobile and up
+.page-gallery {
+  // ... code here
+
+  @include left-nav;
+}
+
+// min-width: 992px
+@include media-breakpoint-up(lg) {
+  // ... code here
+  
+  @include left-nav-lg;
+}
+
+// min-width: 1400px
+@include media-breakpoint-up(xxl) {
+  // ... code here
+  
+  @include left-nav-xxl;
+}
+
+```
+
+<a id="editing-the-nav-menus"></a>
+### Editing the Nav Menus
 
 **Top Nav:**
 
@@ -347,9 +385,9 @@ sidebarAppUrl
 <a id="jquery"></a>
 ### jQuery
 
-The Back to Top button relies on jQuery 3.5.1, which is loaded via `footer-scripts.html`
+Both `assets/js/backToTop.js` and `assets/js/navCloseFix.js` rely on jQuery 3.5.1, which is loaded via `_includes/footer-scripts.html`
 
-Bootstrap and Plyr both load their own packaged versions of jQuery.
+Plyr loads its own packaged version of jQuery.
 
 <a id="video-player"></a>
 ### Video Player

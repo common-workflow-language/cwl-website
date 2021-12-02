@@ -117,6 +117,50 @@
 // End Sticky Footer Fix //
 ///////////////////////////
 
+////////////////////////////////////////
+// Headings & Anchor Links Scroll Fix //
+////////////////////////////////////////
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Prevent the page from overscrolling,
+// so that nav menu doesn't cover content
+//
+// Not working for all About Headers. Will need to custom class it
+:target:before {
+  content: '';
+  display: block;
+  height: 76px;
+  margin: -76px 0 0;
+}
+
+@include media-breakpoint-up(lg) {
+  :target:before {
+    height: 104px;
+    margin: -104px 0 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  :target:before {
+    height: 68px;
+    margin: -68px 0 0;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  :target:before {
+    height: 74px;
+    margin: -74px 0 0;
+  }
+}
+
+////////////////////////////////////////////
+// End Headings & Anchor Links Scroll Fix //
+////////////////////////////////////////////
+
 //////////////
 // Homepage //
 //////////////
