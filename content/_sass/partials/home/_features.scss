@@ -12,10 +12,8 @@
 
 .feature-item {
   align-items: center;
-  box-shadow: 0 6px 15px #0000001a;
+  box-shadow: 0 6px 15px $box-shadow--color;
   display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
   flex-flow: column wrap;
   margin: 1rem;
   padding: 12px;
@@ -27,37 +25,29 @@
     width: 100px;
   }
 
-  // Hide the anchor symbol from jekyll-anchor-links
-  // but still make them visible to screen readers, and
-  // allow for keyboard tabbing
   @include hide-anchor-symbols;
 }
 
 @include media-breakpoint-up(md) {
   .feature-item {
-    // flex-basis: 33%;
     flex-basis: 46%;
     margin: 1rem 0;
   }
 
   .feature-title {
     font-size: 1.3rem;
-    // height: 6rem;
     height: 3rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .feature-item {
-    // flex-basis: 33%;
     flex-basis: 29%;
-    // margin: 20px 0;
     margin: 1rem;
   }
 
   .feature-title {
     font-size: calc(1.3rem + 0.4vw);
-    // height: 4.2rem;
     height: 4rem;
   }
 }

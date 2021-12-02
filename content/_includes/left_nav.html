@@ -1,7 +1,7 @@
 {% comment %}
 Expects to receive yaml nav data via an assigned nav_data variable, 
 from the including page. The first item in the yaml array 
-should be: - nav_header: Nav Name
+should be: - nav_header: Nav Title
 {% endcomment %}
 
 {% assign nav_heading = nav_data[0].nav_header %}
@@ -33,4 +33,3 @@ should be: - nav_header: Nav Name
   </ul>
   </div>
 </nav>
-

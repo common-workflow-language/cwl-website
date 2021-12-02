@@ -45,10 +45,8 @@
 
 .feature-item {
   align-items: center;
-  box-shadow: 0 6px 15px #0000001a;
+  box-shadow: 0 6px 15px $box-shadow--color;
   display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
   flex-flow: column wrap;
   margin: 1rem;
   padding: 12px;
@@ -63,53 +61,24 @@
 
 @include media-breakpoint-up(md) {
   .feature-item {
-    // flex-basis: 33%;
     flex-basis: 46%;
     margin: 1rem 0;
   }
 
   .feature-title {
     font-size: 1.3rem;
-    // height: 6rem;
     height: 3rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .feature-item {
-    // flex-basis: 33%;
     flex-basis: 29%;
-    // margin: 20px 0;
     margin: 1rem;
   }
 
   .feature-title {
     font-size: calc(1.3rem + 0.4vw);
-    // height: 4.2rem;
     height: 4rem;
   }
 }
-
-// Twitter Feed
-// .twitter-feed {
-//   clear: both;
-//   width: 80%;
-// }
-
-// .twitter-icon {
-//   width: 1.25rem;
-// }
-
-// @include media-breakpoint-up(sm) {
-//   .twitter-feed {
-//     float: right;
-//     margin: 0 0 0 36px;
-//     width: initial;
-//   }
-// }
-
-// @include media-breakpoint-up(xl) {
-//   .twitter-feed {
-//     margin: 16px 0 0 36px;
-//   }
-// }

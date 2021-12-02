@@ -14,9 +14,9 @@
 
 @include media-breakpoint-up(sm) {
   .timeline {
+    left: initial;
     position: static;
     width: initial;
-    left: initial;
   }
 }
 
@@ -67,8 +67,8 @@
   border-radius: 50%;
   color: $cwl-red;
   display: flex;
-  font-weight: 700;
   font-size: 1.025rem;
+  font-weight: 700;
   height: 72px;
   justify-content: center;
   margin: 0 1rem 0 0;
@@ -106,7 +106,6 @@
   background: $timeline-sep-grey;
   content: '';
   display: block;
-  // height: 36px;
   height: 46px;
   margin: 0 33.5px;
   width: 4px;

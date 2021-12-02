@@ -29,7 +29,6 @@
 .body-page-short {
   height: 100%;
 
-  // These should be specified in their respective places
   .content-wrapper,
   .post-content {
     position: static;
@@ -41,8 +40,6 @@
   }
 
   .content-wrapper {
-    // Very unclear that this min-height actually works or
-    // does anything. Likely Delete.
     min-height: calc(100vh - 96px);
     padding-bottom: 56px;
   }
@@ -55,8 +52,6 @@
 @include media-breakpoint-up(xxs) {
   .body-page-short {
     .content-wrapper {
-      // padding-bottom: 75px;
-      // padding-bottom: 26px;
       padding-bottom: 32px;
     }
   }
@@ -145,7 +140,6 @@
 @include media-breakpoint-up(lg) {
   .page-section {
     &.indented {
-      // margin: 2rem auto;
       width: 90%;
     }
   }
