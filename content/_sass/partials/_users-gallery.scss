@@ -4,9 +4,9 @@
     color: $cwl-red;
   }
 
-  h3 .heading__anchor-symbol,
-  h4 .heading__anchor-symbol {
-    display: none;
+  h3,
+  h4 {
+    @include hide-anchor-symbols;
   }
 }
 

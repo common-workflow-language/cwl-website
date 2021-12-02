@@ -27,22 +27,10 @@
     width: 100px;
   }
 
-  // Hide the anchor symbol from jekyll-anchor-links for this section,
+  // Hide the anchor symbol from jekyll-anchor-links
   // but still make them visible to screen readers, and
   // allow for keyboard tabbing
-  .heading__anchor-symbol {
-    &:not(:focus),
-    &:not(:active) {
-      border: 0;
-      clip: rect(0,0,0,0);
-      height: 1px;
-      margin: -1px;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      width: 1px;
-    }
-  }
+  @include hide-anchor-symbols;
 }
 
 @include media-breakpoint-up(md) {
