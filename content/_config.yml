@@ -44,6 +44,7 @@ exclude:
   - _scratch/
   - Notes
   - LICENSE
+  - EDITING.md
   - README.md
   - fresh.gif
 

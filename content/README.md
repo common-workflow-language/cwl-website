@@ -4,29 +4,76 @@ The in-progress redesign of the CWL Website
 
 The preview build of the site is currently found at [https://deploy-preview-75--cwl-website.netlify.app/](https://deploy-preview-75--cwl-website.netlify.app/)
 
+**Table of Contents:**
+<!-- MarkdownTOC -->
+
+* [Editing the Site](#editing-the-site)
+* [To-Do](#to-do)
+  * [Nav Menu Issues](#nav-menu-issues)
+  * [Video Player](#video-player)
+  * [Users Gallery](#users-gallery)
+    * [Organization Links](#organization-links)
+  * [WebAIM Accessibility](#webaim-accessibility)
+    * [Video Player](#video-player-1)
+* [Reference](#reference)
+  * [Bootstrap Grid Breakpoints](#bootstrap-grid-breakpoints)
+
+<!-- /MarkdownTOC -->
+
+<a id="editing-the-site"></a>
+## Editing the Site
+
+Instructions for editing specific parts of the site can be found in [EDITING.md](EDITING.md)
+
+<a id="to-do"></a>
 ## To-Do
 
-### Mobile
+<a id="nav-menu-issues"></a>
+### Nav Menu Issues
 
-* Mobile nav should close when you tap outside of it
-* Ensure "Back to Top" button shows up for long pages
-* Users Gallery Submenus should be drop downs
+* Nav menus don't close when clicking or tapping outside of them
+* Top nav: Home link currently stays bolded, even though page not on homepage
+* Left Nav: Submenu items should be collapsed under a caret. Relevant for Users Gallery page
+* Left Nav: Needs scroll fix??
 
-### Broken Links
+<a id="video-player"></a>
+### Video Player
 
-Users Gallery - Jekyll is inserting a blank link between US National Institutes of Health (NIH) & 
-RAPT. The code renders like this:
+* Does it make sense to include video player styles in _custom-head.html?? It's only used on the homepage
+* Wrap homepage vid player styles in page tag?? or move video player styles elsewhere?
 
-```html
-<div class="adopter-entry">
-  <div class="adopter-row-top">
-    <a href="" class="adopter-link"></a>
-  </div>
-</div>
+<a id="users-gallery"></a>
+### Users Gallery
+
+<a id="organization-links"></a>
+#### Organization Links
+
+Prettify Organization Links:
+
+Some organization links display as https links, while most display as Titles. eg: <https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16> vs [National Plan Open Science - Feb. 2019](https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16)
+
+The following lines of code would need to be added, in their respective sections:
+
+```yaml
+- name: The [Netherlands] National Plan Open Science
+  link_text: National Plan Open Science - Feb. 2019
+  url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
+- name: University of Manchester, eScience Lab
+  link_text: eScience Lab - Common Workflow Language
+  url: https://esciencelab.org.uk/activities/cwl/
+- name: RAPT
+  link_text: "NCBI Insights : Read assembly and Annotation Pipeline Tool (RAPT) is available for use and testing"
+  url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
+- name: Open Geospatial Consortium
+  description: Integrated CWL as part of their Exploitation (data analytics) Platforms
+  link_text: Open Geospatial Consortium
+  url: https://www.ogc.org/
 ```
 
+<a id="webaim-accessibility"></a>
 ### WebAIM Accessibility
 
+<a id="video-player-1"></a>
 #### Video Player
 
 * The "broken ARIA menu" seems to be an error on the WebAIM tool's part...
@@ -57,12 +104,10 @@ These other errors come up, but are probably not significant, since the icons ar
 * skipped heading level
 * Small text
 
-### Cleanup & Deployment
-
-* Ensure hypothes.is is off for live site
-
+<a id="reference"></a>
 ## Reference
 
+<a id="bootstrap-grid-breakpoints"></a>
 ### Bootstrap Grid Breakpoints
 
 Bootstrap Grid Breakpoints are as follows:
@@ -80,45 +125,4 @@ $grid-breakpoints: (
   xxl: 1400px
 ) !default;
 // scss-docs-end grid-breakpoints
-```
-
-### Hypothesi.is Annotation Config
-
-The following config options are available for hypothes.is (see [https://h.readthedocs.io/projects/client/en/latest/publishers/config/](https://h.readthedocs.io/projects/client/en/latest/publishers/config/) for more detail):
-
-```
-openSidebar
-showHighlights
-theme
-enableExperimentalNewNoteButton
-usernameUrl
-services
-apiUrl
-authority
-grantToken
-allowLeavingGroups
-enableShareLinks
-groups
-icon
-onLoginRequest
-onLogoutRequest
-onSignupRequest
-onProfileRequest
-onHelpRequest
-branding
-accentColor
-appBackgroundColor
-ctaBackgroundColor
-ctaTextColor
-selectionFontFamily
-annotationFontFamily
-onLayoutChange
-expanded
-height
-width
-externalContainerSelector
-focus
-requestConfigFromFrame
-assetRoot
-sidebarAppUrl
 ```
