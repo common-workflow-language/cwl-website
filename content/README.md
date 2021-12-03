@@ -47,8 +47,7 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 ### Accessibility
 
 * Needs further testing with Screen Reader. See discussion at <https://github.com/common-workflow-language/cwl-website/pull/75#discussion_r760642750>
-  * Add `lang` attibutes to any text in foreign languages (Japanese, Russian, etc)
-    * Currently being read by SR in very confusing manner (e.g. Orca reads Japanese as "CWL -japanese character- -chinese character- -chinese character-....")
+  * Check how SR reads Japanese & Russian text on Getting Started pg, now that `lang` & `hreflang` have been added
   * Check Skip Link and Nav Menu behavior for consistency
 
 <a id="headings--anchor-links"></a>
