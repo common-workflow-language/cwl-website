@@ -26,7 +26,7 @@ Researchers, scientists, and analysts share their batch data analysis workflows 
 
 <div class="section-header">
   <img src="../assets/img/noun_Mission_2673795.svg" class="section-icon" alt="Mission Icon - a person holding a flag reaches the top of a mountain">
-  <h2 id="vision">Mission of the CWL Project</h2>
+  <h2 id="mission">Mission of the CWL Project</h2>
 </div>
 
 #### How we plan to achieve our vision
@@ -40,7 +40,7 @@ Specifically, we support the
 
 <div class="section-header">
   <img src="../assets/img/noun_background_4073428.svg" class="section-icon" alt="Background Section Icon - a curved painting shows 3 mountains and a sun in the background">
-  <h2 id="vision">Background</h2>
+  <h2 id="background">Background</h2>
 </div>
 
 ### Why Workfows?
@@ -73,7 +73,7 @@ specific day/time-frame.
 
 <div class="section-header">
   <img src="../assets/img/noun_Time_6732.svg" class="section-icon" alt="Timeline Icon - A clock with a circular arrow, progressing in a clockwise direction">
-  <h2 id="vision">Timeline</h2>
+  <h2 id="timeline">Timeline</h2>
 </div>
 
 {% include timeline.html %}
