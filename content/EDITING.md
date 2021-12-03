@@ -17,7 +17,7 @@ Instructions for editing specific pages and site components.
 * [Tables](#tables)
 * [Developer Notes](#developer-notes)
   * [Bootstrap](#bootstrap)
-    * [Media Query Breakpoints](#media-query-breakpoints)
+    * [Media Query Grid Breakpoints](#media-query-grid-breakpoints)
   * [Hypothesi.is Annotation Config](#hypothesiis-annotation-config)
   * [jQuery](#jquery)
   * [Video Player](#video-player)
@@ -258,10 +258,10 @@ Relevant folders & files:
 
 The styles are loaded as the first import in `style.scss`. The JS code is loaded in `footer-scripts.html`
 
-<a id="media-query-breakpoints"></a>
-#### Media Query Breakpoints
+<a id="media-query-grid-breakpoints"></a>
+#### Media Query Grid Breakpoints
 
-To add or modify the Grid Breakpoints, edit `$grid-breakpoints` and `$container-max-widths` in `_sass/bootstrap/_variables.scss`
+Bootstrap grid breakpoints are originally found in ``_sass/bootstrap/_variables.scss`, and can be overriden in `_sass/partials/_variables.scss`
 
 The following breakpoints and max-widths are used for responsive design:
 

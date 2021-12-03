@@ -57,3 +57,31 @@ $table--link-color: $link-blue-dark;
 $footer-bg-color: $cwl-red;
 $footer-link-old-color: #005285;
 $footer-link-old-hover-color: #22527c;
+
+// Override default bootstrap grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  xxs: 425px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  lg-2: 1024px,
+  xl: 1200px,
+  xl-13: 1330px,
+  xxl: 1400px
+);
+// scss-docs-end grid-breakpoints
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+)
+// scss-docs-end container-max-widths
