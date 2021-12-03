@@ -14,6 +14,7 @@ Instructions for editing specific pages and site components.
 * [Users Gallery \(formerly CWL Adopters\)](#users-gallery-formerly-cwl-adopters)
   * [Left Nav Menu](#left-nav-menu)
   * [users-gallery.yml](#users-galleryyml)
+* [Foreign Languages](#foreign-languages)
 * [Tables](#tables)
 * [Developer Notes](#developer-notes)
   * [Bootstrap](#bootstrap)
@@ -227,6 +228,30 @@ Quotes: items with double quotes in them should be wrapped in single quotes, oth
 ```
 
 Items containing special characters (colons, brackets, etc) may need to be wrapped in double quotes.
+
+<a id="foreign-languages"></a>
+## Foreign Languages
+
+Text in foreign language should be entered in HTML and include the `lang` and `hreflang` attributes. You can search for the appropriate language tag via [the Language Subtag Lookup](https://r12a.github.io/app-subtags/) page. Example:
+
+```html
+
+<!-- Japanese includes hreflang attribute, since the
+linked content is in Japanese -->
+<a href="https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP" lang="ja" hreflang="ja">
+
+<!-- Russin link doesn't have hreflang, since the linked 
+website auto-translates the content, based on the user's
+region -->
+<a href="https://stepik.org/course/1612/syllabus" lang="ru">
+
+<!-- These can be mixed in with Markdown code -->
+* A series of <a href="https://stepik.org/lesson/35918/step/1?unit=15070"lang="ru" hreflang="ru"> is available 
+in Russian as part of the <a href="https://stepik.org/course/1612/syllabus" lang="ru">Управление вычислениями</a
+> (Computation Management) free online course.
+```
+
+Currently the site has some Japanese & Russian links. The corresponding codes are 
 
 <a id="tables"></a>
 ## Tables
