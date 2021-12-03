@@ -98,7 +98,9 @@
 
 @include media-breakpoint-up(lg) {
   .navbar-nav {
+    align-items: center;
     margin: 0 1rem 0 0;
+    max-width: calc(100vw - 130px);
   }
 }
 
@@ -152,14 +154,14 @@
 
 @include media-breakpoint-up(lg) {
   .navbar-nav {
-    max-width: calc(100vw - 130px);
+    max-width: calc(100vw - 160px);
   }
 }
 
 @include media-breakpoint-up(xl) {
   .navbar-nav {
     margin: 0 1rem;
-    max-width: 100%;
+    max-width: calc(100vw - 130px);
   }
 }
 
@@ -182,9 +184,9 @@
 // Fix for menu items inaccessible on landscape mode
 @media (max-height: 525px) and (max-width: 992px) {
   .navbar-nav {
-    background-color: #f4f4f4;
-    /* fits exactly 10 menu items in 2 cols, starting at 206px
-    Once it's above 238px, it overflows on Nexus 5 (640x360 in dev tools)  */
+    background-color: $nav--bg-color;
+    // fits exactly 10 menu items in 2 cols, starting at 206px
+    // Once it's above 238px, it overflows on Nexus 5 (640x360 in dev tools)
     margin-left: 0 !important;
     max-height: 238px;
     width: 260px;
@@ -192,18 +194,50 @@
 }
 
 .nav--paypal-btn {
-  padding: 0.25rem 1.25rem 0.25rem 0.75rem;
+  .paypal-btn {
+    background: transparent;
+    border: 0;
+    color: $nav-link--color;
+    padding: 0;
+
+    &:hover {
+      color: $nav-link--hover-color;
+    }
+  }
 }
 
 @include media-breakpoint-up(lg) {
   .nav--paypal-btn {
-    padding: 0;
+    // padding: 0.25rem 1.25rem 0.25rem 0.75rem;
+    padding: 0 0.5rem;
 
-    input.paypal-btn {
-      height: 30px;
-      margin: 6px 0 0;
-      width: 103px;
+    .paypal-btn {
+      padding: 0 0.5rem;
     }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-item,
+  .nav--paypal-btn {
+    padding: 0 2px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-item,
+  .nav--paypal-btn {
+    padding: 0 4px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .nav-item {
+    padding: 0 8px;
+  }
+
+  .nav--paypal-btn {
+    padding: 0;
   }
 }
 
@@ -239,13 +273,28 @@
   }
 }
 
-.fa-twitter {
-  color: $twitter-blue;
+.fa-github {
+  color: #444;
+
+  &:hover {
+    color: $black;
+  }
 }
 
-.fa-github {
-  color: $black;
+.fa-twitter {
+  color: #555;
+
+  &:hover {
+    color: $twitter-blue;
+  }
 }
+
+// .fa-github,
+// .fa-twitter {
+//   &:hover {
+//     color: $cwl-red;
+//   }
+// }
 
 .skip-nav {
   margin: 0;
@@ -266,8 +315,8 @@
       -webkit-transition: top 1s ease-out, background 1s linear;
 
     &:focus {
-      color: $cwl-red;
       box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+      color: $cwl-red;
       font-weight: 700;
       height: auto;
       left: 0;

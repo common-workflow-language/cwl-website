@@ -11,7 +11,6 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 * [To-Do](#to-do)
   * [Plugins Review](#plugins-review)
   * [Nav Menu Issues](#nav-menu-issues)
-  * [Social Icons Too Prominent](#social-icons-too-prominent)
   * [Accessibility](#accessibility)
     * [Headings & Anchor Links](#headings--anchor-links)
   * [Video Player](#video-player)
@@ -43,11 +42,6 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 * Anchor links scroll past headings, due to sticky header 
 * Top nav: Home link currently stays bolded, even though page not on homepage
 * Left Nav: Submenu items should be collapsed under a caret. Relevant for Users Gallery page
-
-<a id="social-icons-too-prominent"></a>
-### Social Icons Too Prominent
-
-* Social Icons & Donate Button are too visually prominent. 
 
 <a id="accessibility"></a>
 ### Accessibility
