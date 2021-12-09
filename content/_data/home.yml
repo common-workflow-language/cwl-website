@@ -10,7 +10,7 @@ features:
   - title: REUSABILITY AND REPRODUCIBILITY
     icon: noun_ecosystem_cycle_3389565.png
     icon-alt: Reusability icon - a Cog with a circular arrow, spinning counter-clockwise inside
-    text: Enables scientists to reuse and reproduce their data analysis workflows
+    text: Enables scientists to [reuse and reproduce](/reusablity/) their data analysis workflows
   - title: PARALLELIZATION AND SCALE
     icon: noun_Data_Model_1632661.svg
     icon-alt: Data icon - a singular data node, which then splits into 3 separate nodes
