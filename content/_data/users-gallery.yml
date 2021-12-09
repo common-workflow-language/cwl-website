@@ -56,6 +56,7 @@ gallery:
         image: /assets/img/logo_openscience.svg 
       - name: University of Manchester, eScience Lab
         url: https://esciencelab.org.uk/activities/cwl/
+        image: /assets/img/escienceLab-logo.png
         description: null
   - section:
     title: Radio Astronomy
