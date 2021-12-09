@@ -76,6 +76,7 @@ gallery:
       - name: US Food and Drug Administration (FDA)
         link_text: BioCompute Object / IEEE Std 2791-2020
         url: https://www.biocomputeobject.org/
+        image: /assets/img/escienceLab-logo.png
         other:
           <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a><br>
           <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
