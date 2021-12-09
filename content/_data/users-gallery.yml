@@ -103,7 +103,6 @@ gallery:
       - name: European Open Science Cloud - Life (EOSC-Life)
         link_text: European Open Science Cloud - Life (EOSC-Life)
         url: https://www.eosc-life.eu/
-        image: /assets/img/eosclifelogo.png
         other: <a href='https://about.workflowhub.eu/About-WorkflowHub'>https://about.workflowhub.eu/About-WorkflowHub</a>
       - name: BioExcel, Centre of Excellence for Computational Biomolecular Research
         link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
