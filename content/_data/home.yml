@@ -6,7 +6,7 @@ features:
   - title: VENDOR NEUTRALITY
     icon: noun_Scale_380185.svg
     icon-alt: Vendor Neutrality icon - an evenly weighted mechanical scale
-    text: Developed by a multi-vendor working group of organizations and individuals
+    text: Developed by a multi-vendor working group of [organizations](/governance/#participating-organizations/) and [individuals](/governance/#individual-contributors/)
   - title: REUSABILITY AND REPRODUCIBILITY
     icon: noun_ecosystem_cycle_3389565.png
     icon-alt: Reusability icon - a Cog with a circular arrow, spinning counter-clockwise inside
