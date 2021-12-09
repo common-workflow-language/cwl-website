@@ -14,7 +14,7 @@ features:
   - title: PARALLELIZATION AND SCALE
     icon: noun_Data_Model_1632661.svg
     icon-alt: Data icon - a singular data node, which then splits into 3 separate nodes
-    text: "[Scalable](/scalable/) from workstations to cluster, cloud, and high performance computing (HPC) environments"
+    text: "[Scalable](/scale/) from workstations to cluster, cloud, and high performance computing (HPC) environments"
   - title: ECOSYSTEM SUPPORT
     icon: noun_Company_ecosystem_1637685.svg
     icon-alt: Ecosystem icon - a collection of linked nodes within a circle (resembling a planet)
