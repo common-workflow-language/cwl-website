@@ -39,11 +39,6 @@ Specifically, we support the
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
 
 <div class="section-header">
-  <img src="../assets/img/noun_background_4073428.svg" class="section-icon" alt="Background Section Icon - a curved painting shows 3 mountains and a sun in the background">
-  <h2 id="background">Background</h2>
-</div>
-
-<div class="section-header">
   <img src="../assets/img/noun_Time_6732.svg" class="section-icon" alt="Timeline Icon - A clock with a circular arrow, progressing in a clockwise direction">
   <h2 id="timeline">Timeline</h2>
 </div>
