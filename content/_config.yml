@@ -13,7 +13,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Machine Learning.
 
 github_url: https://github.com/common-workflow-language/
-twitter_url: https://mobile.twitter.com/commonwl
+twitter_url: https://twitter.com/commonwl
+youtube_url: https://www.youtube.com/c/CommonWLorgStandard/
 
 # SEO - jekyll-seo-tag
 logo: "/CWL-Logo-Header.png"

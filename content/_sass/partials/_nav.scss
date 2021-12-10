@@ -282,10 +282,18 @@
 }
 
 .fa-twitter {
-  color: #555;
+  color: $grey-5;
 
   &:hover {
     color: $twitter-blue;
+  }
+}
+
+.fa-youtube {
+  color: $grey-5;
+
+  &:hover {
+    color: $youtube-red;
   }
 }
 

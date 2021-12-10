@@ -14,6 +14,17 @@
           {%- if item.type contains "dropdown" -%}
             <li class="dropdown nav-item">
               <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+              {% if item.subpages %}
+                <ul class="dropdown-menu">
+                {% for page in item.subpages %}
+                  {%- if page.url contains "http" or "http" contains page.url -%}
+                    <li><a href="{{ page.url }}" class="{{ page.title | downcase }} dropdown-item">{{ page.title }}<i class="fad fa-external-link-alt"></i></a></li>
+                  {%- else -%}
+                    <li><a href="{{ page.url | absolute_url }}" class=" dropdown-item">{{ page.title }}</a></li>
+                  {%- endif -%}
+                {% endfor %}
+                </ul>
+              {% endif %}
 
             {%- if item.subfolderitems[0] -%}
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,6 +52,7 @@
       <li class="nav-item nav-social-icons">
         <a href="{{ site.github_url }}" aria-label="GitHub link"><i class="fab fa-github first-icon"></i></a>
         <a href="{{ site.twitter_url }}" aria-label="Twitter link"><i class="fab fa-twitter"></i></a>
+        <a href="{{ site.youtube_url }}" aria-label="YouTube link"><i class="fab fa-youtube"></i></a>
       </li>
     </ul>
     </div>
