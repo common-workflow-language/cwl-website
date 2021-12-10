@@ -10,7 +10,8 @@ CWL workflows are portable, reusable, and flexible.  Reproduction, reuse, and re
 <figure>
   <img
   src="/img/cwlportable.png"
-  alt="The beautiful MDN logo.">
-  <figcaption>MDN Logo</figcaption>
+  alt="Image showing submitting CWL code to a variety of environments">
+  <figcaption> Example of CWL portablity. The same CWL workflow description can run on a laptop,
+on any batch production-environment, and on any common public or private cloud. </figcaption>
 </figure>
 
