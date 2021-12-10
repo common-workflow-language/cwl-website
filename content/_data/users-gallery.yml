@@ -90,7 +90,6 @@ gallery:
         - name: NCI Cancer Genomics Cloud
           link_text: NCI Cancer Genomics Cloud
           url: https://www.cancergenomicscloud.org/
-          description: "Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform.”
         - name: NIH BioData Catalyst
           link_text: NHLBI BioData catalyst powered by Seven Bridges
           url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
