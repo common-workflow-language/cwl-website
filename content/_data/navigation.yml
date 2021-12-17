@@ -13,13 +13,13 @@ header:
     url: "#"
     type: dropdown
     subpages:
-      - title: Software
-        url: /software
       - title: Implementations
         url: /implementations
-      - title: Projects
-        url: /projects
+      - title: Software
+        url: /software
       - title: Repositories
         url: /repos
+      - title: Projects
+        url: /projects
   - title: Users Gallery
     url: /gallery
