@@ -39,11 +39,11 @@
   padding: 0;
 }
 
-@include media-breakpoint-up(lg) {
-  .timeline__list {
-    padding: 0 0 0 2rem;
-  }
-}
+// @include media-breakpoint-up(lg) {
+//   .timeline__list {
+//     padding: 0 0 0 2rem;
+//   }
+// }
 
 .timeline__event {
   align-items: center;
