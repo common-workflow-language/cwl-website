@@ -7,3 +7,4 @@ class: home has-announcement anchors-center-fix
 {% include home/intro.html %}
 {% include home/features.html %}
 {% include home/community.html %}
+{% include home/users-mini-gallery.html %}

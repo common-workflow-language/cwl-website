@@ -9,11 +9,17 @@ header:
     url: /specification
   - title: Governance
     url: /governance
-  - title: Implementations
-    url: /implementations
   - title: Ecosystem
-    url: /ecosystem
-  - title: Projects
-    url: /projects
+    url: "#"
+    type: dropdown
+    subpages:
+      - title: Software
+        url: /software
+      - title: Implementations
+        url: /implementations
+      - title: Projects
+        url: /projects
+      - title: Repositories
+        url: /repos
   - title: Users Gallery
     url: /gallery

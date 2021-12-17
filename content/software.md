@@ -1,7 +1,8 @@
 ---
 layout: page
-permalink: /ecosystem/
-title: Ecosystem
+permalink: /software/
+title: Software
+redirect_from: /ecosystem/
 ---
 
 ## Software for working with CWL
