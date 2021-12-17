@@ -5,10 +5,6 @@ header:
     url: /about
   - title: Getting Started
     url: /getting-started
-  - title: Specification
-    url: /specification
-  - title: Governance
-    url: /governance
   - title: Ecosystem
     url: "#"
     type: dropdown
@@ -21,5 +17,9 @@ header:
         url: /repos
       - title: Projects
         url: /projects
+  - title: Governance
+    url: /governance
+  - title: Specification
+    url: /specification
   - title: Users Gallery
     url: /gallery
