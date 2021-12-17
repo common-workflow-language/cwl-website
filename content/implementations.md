@@ -25,7 +25,7 @@ plaform/service providers self-certify support for CWL, based on a
 particular technology configuration they deploy and maintain.
 
 {:.cwl-red}
-### In Production:
+### In Production
 
 {: .table .rows-3}
 |Software|Description|Platform support|
@@ -37,7 +37,7 @@ particular technology configuration they deploy and maintain.
 |[REANA](https://reana.readthedocs.io/en/latest/index.html)|RE usable ANAlyses|Kubernetes, [CERN OpenStack](https://clouddocs.web.cern.ch/clouddocs/containers/) [OpenStack Magnum](https://wiki.openstack.org/wiki/Magnum)|
 
 {:.cwl-red}
-### Partial implementations:
+### Partial implementations
 
 {: .table .cols-3}
 |Software|Description| Self-Reported Compliance | Platform support|
