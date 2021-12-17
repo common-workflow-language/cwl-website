@@ -77,7 +77,6 @@ gallery:
       - name: US Food and Drug Administration (FDA)
         link_text: BioCompute Object / IEEE Std 2791-2020
         url: https://www.biocomputeobject.org/
-        image: /assets/img/escienceLab-logo.png
         other:
           <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a><br>
           <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
@@ -119,11 +118,6 @@ gallery:
           <li>2018 Implementation Study: <a href='https://elixir-europe.org/about-us/implementation-studies/compatible-cloud-2018'>Compatible Cloud Analysis Platform</a><br></li>
           <li>ELIXIR Cloud <a href='https://github.com/elixir-cloud-aai/cwl-WES'>CWL-WES</a><br></li>
           </ul>
-      - name: Wellcome Trust Sanger Institute
-        link_text: Human Genetics Informatics
-        url: https://github.com/wtsi-hgi/arvados-pipelines/tree/master/cwl
-        other: 
-          - '<a href="https://www.sanger.ac.uk/science/groups/cellular-genetics-informatics">Cellular Genetics Informatics, Cellular Genetics</a>'
       - name: Memorial Sloan Kettering Cancer Center
         link_text: MSK-ACCESS team
         url: https://github.com/msk-access?q=&type=&language=common+workflow+language
