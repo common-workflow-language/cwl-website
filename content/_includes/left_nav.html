@@ -4,6 +4,10 @@ from the including page. The first item in the yaml array
 should be: - nav_header: Nav Title
 {% endcomment %}
 
+{% if page.left_nav_slug %}
+  {% assign nav_data = site.data.navigation[page.left_nav_slug] %}
+{% endif %}
+
 {% assign nav_heading = nav_data[0].nav_header %}
 
 <nav class="left-nav" aria-label="Page Shortcuts Menu">
@@ -18,16 +22,16 @@ should be: - nav_header: Nav Title
         {% unless menu_item.nav_header %}
           {% if menu_item.submenu %}
             {% assign sub = menu_item.submenu %}
-            <li>
+            <li class="no-indent">
               <a class="left-nav-link" href="{{ menu_item.url }}">{{ menu_item.title }}</a>
             <ul class="left-subnav">
               {% for sub_item in sub %}
-                <li class="indent"><a class="left-nav-link" href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>
+                <li class="indent"><a class="left-nav-link left-nav-sublink" href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>
               {% endfor %}
             </ul>
             </li>
           {% else %}
-            <a href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+            <li><a href="{{ menu_item.url }}">{{ menu_item.title }}</a></li>
           {% endif %}
         {% endunless %}
       {% endfor %}

@@ -1,0 +1,48 @@
+.intro-section {
+  margin: 0 0 26px;
+}
+
+.page-about {
+  .post-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+section {
+  margin-bottom: 26px;
+}
+
+@include media-breakpoint-up(lg) {
+  .page-about {
+    .section-container {
+      padding: 0 12px 0 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .page-about {
+    &.site-wrapper > .container {
+      margin: 0 auto;
+      min-width: 1200px;
+    }
+
+    .main {
+      margin: 0 auto;
+    }
+
+    .post-content {
+      justify-content: flex-start;
+    }
+
+    &.has-left-nav {
+      .intro-section {
+        margin: 1rem 0;
+      }
+    }
+  }
+}
+
+

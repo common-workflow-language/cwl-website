@@ -87,7 +87,7 @@
 
 .navbar-collapse {
   background: transparent;
-  border-bottom: 1px solid $nav--border-color-2;
+  // border-bottom: 1px solid $nav--border-color-2;
 }
 
 @include media-breakpoint-up(lg) {

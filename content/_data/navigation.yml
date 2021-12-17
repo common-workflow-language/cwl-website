@@ -23,3 +23,73 @@ header:
         url: /repos
   - title: Users Gallery
     url: /gallery
+
+about_left:
+  - nav_header: Shortcuts
+  - title: Vision of the CWL Project
+    url: "#vision"
+  - title: Mission of the CWL Project
+    url: "#mission"
+  - title: Timeline
+    url: "#timeline"
+
+getting_started_left:
+  - nav_header: Shortcuts
+  - title: Resources for Getting Started
+    url: "#resources-for-getting-started"
+  - title: Background
+    url: "#background"
+  - title: Why Use Workfows?
+    url: "#why-use-workfows"
+  - title: Why Use a Standard?
+    url: "#why-use-a standard"
+  - title: When to Use CWL?
+    url: "#when-to-use-cwl"
+
+users_gallery_left:
+  - nav_header: Shortcuts
+  - title: Cross-Domain
+    url: "#cross-domain"
+    submenu:
+      - title: The [Netherlands] National Plan Open Science
+        url: "#the-[netherlands]-national-plan-open-science"
+      - title: University of Manchester, eScience Lab
+        url: "#university-of-manchester,-escience-lab"
+  - title: Radio Astronomy
+    url: "#radio-astronomy"
+    submenu:
+      - title: The European Open Science Cloud for Research Pilot Project
+        url: "#the-european-open-science-cloud-for-research-pilot-project"
+  - title: Hydrology
+    url: "#hydrology"
+    submenu:
+      - title: The European Open Science Cloud
+        url: "#the-european-open-science-cloud"
+  - title: Life Sciences
+    url: "#life-sciences"
+    submenu:
+      - title: US Food and Drug Administration (FDA)
+        url: "#us-food-and-drug-administration-(fda)"
+      - title: US National institute of Health
+        url: "#us-national-institutes-of-health-(nih)"
+      - title: Children's Hospital of Philadelphia
+        url: "#"
+      - title: European Open Science Cloud - Life (EOSC-Life)
+        url: "#european-open-science-cloud---life-(eosc-life)"
+      - title: BioExcel, Centre of Excellence for Computational Biomolecular Research
+        url: "#bioexcel,-centre-of-excellence-for-computational-biomolecular-research"
+      - title: ELIXIR
+        url: "#elixir"
+      - title: Wellcome Trust Sanger Institute
+        url: "#wellcome-trust-sanger-institute"
+      - title: Memorial Sloan Kettering Cancer Center
+        url: "#memorial-sloan-kettering-cancer-center"
+      - title: UNLOCK
+        url: "#unlock"
+      - title: PubSeq
+        url: "#pubseq"
+  - title: Geospatial
+    url: "#geospatial"
+    submenu:
+      - title: Open Geospatial Consortium
+        url: "#open-geospatial-consortium"

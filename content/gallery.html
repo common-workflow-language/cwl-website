@@ -5,7 +5,8 @@ title: CWL Users Gallery
 redirect_from:
   - /cwl-adopters
   - /users-gallery
-# class: cwl-adopters
+left_nav_slug: users_gallery_left
+class: users-gallery has-left-nav
 ---
 
 {% capture intro %}
@@ -18,7 +19,6 @@ The CWL 2021 Mini-Conference was on February 8-10th. All videos are accessible o
 
 <div class="intro">{{ intro | markdownify }}</div>
 
-{% assign nav_data = site.data.users-gallery.left_nav %}
 {% include left_nav.html %}
 
 <div class="gallery-content">

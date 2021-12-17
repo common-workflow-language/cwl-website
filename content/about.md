@@ -2,9 +2,11 @@
 layout: page
 permalink: /about/
 title: About
-class: about anchors-center-fix
+class: about anchors-center-fix has-left-nav
+left_nav_slug: about_left
 ---
 
+{% capture intro %}
 The CWL Project began out of a need for a standard to 
 describe analysis pipelines in a portable and reusable
 manner. Common Workflow Language (CWL) is a family of standards
@@ -13,14 +15,22 @@ CWL is designed to meet the needs of data-intensive science, such as Bioinformat
 
 
 The CWL project focus is on open standards, open-source code and an open community.
+{% endcapture %}
 
+{% include left_nav.html %}
 
-<div class="section-header">
-  <img src="../assets/img/noun_Vision_3455591.svg" class="section-icon" alt="Vision Icon - two people stand together, with a 'thinking' cloud above their head">
-  <h2 id="vision">Vision of the CWL Project</h2>
+<div class="intro-section">
+  {{ intro | markdownify }}
 </div>
 
-Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+<div class="section-container">
+  <div class="section-header">
+    <img src="../assets/img/noun_Vision_3455591.svg" class="section-icon" alt="Vision Icon - two people stand together, with a 'thinking' cloud above their head">
+    <h2 id="vision">Vision of the CWL Project</h2>
+  </div>
+
+  Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+</div>
 
 <div class="section-header">
   <img src="../assets/img/noun_Mission_2673795.svg" class="section-icon" alt="Mission Icon - a person holding a flag reaches the top of a mountain">
@@ -40,4 +50,3 @@ Specifically, we support the
 </div>
 
 {% include timeline.html %}
-
