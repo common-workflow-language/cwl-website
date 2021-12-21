@@ -38,8 +38,6 @@
           {% else %}
           {%- if page.title == item.title -%}
             <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
-          {% elsif item.title == "Home" %}
-            <li class="nav-item nav-home-link"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
           {%- else -%}
             <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
           {%- endif -%}
