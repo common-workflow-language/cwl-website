@@ -21,7 +21,7 @@ bn=$(basename $repo)
 if [[ -d $bn ]] ; then
     (cd $bn && git fetch origin && git reset --hard origin/main)
 else
-    git clone $repo && git checkout main
+    git clone $repo && git checkout main ; git show --no-patch
 fi
 
 
