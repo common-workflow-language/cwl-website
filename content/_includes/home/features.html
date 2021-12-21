@@ -3,7 +3,7 @@
   <div class="feature-item">
     <h3 class="feature-title" id="{{ feature.title | downcase }}">{{ feature.title }}</h3>
     <img src="/assets/img/{{ feature.icon }}" alt="{{ feature.icon-alt }}">
-    <p class="feature-text">{{ feature.text | markdownify }}</p>
+    <p class="feature-text">{{ feature.text | markdownify | remove: "<p>" | remove: "</p>" }}</p>
   </div>
 {% endfor %}
 </section>
