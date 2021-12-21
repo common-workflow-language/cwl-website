@@ -2,6 +2,7 @@
 layout: page
 permalink: /scale/
 title: Parallelization and Scale 
+class: page-short
 ---
 
 Benefits of CWL including flexibility, portability, and scalability. CWL is well suited for describing large-scale workflows in cluster, cloud and high performance computing environments where tasks are scheduled in parallel across many nodes.  
