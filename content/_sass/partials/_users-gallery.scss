@@ -31,7 +31,7 @@
   .adopter-entry,
   .adopter-row-top,
   .adopter-logo {
-    margin: 0 0 12px;
+    margin: 0 0 1rem;
   }
 
   .adopter-entry {
@@ -50,7 +50,13 @@
     margin: 0 0 2px;
   }
 
+  .adopter-other-title {
+    margin: 0 0 0.5rem;
+  }
+
   .adopter-link {
+    display: block;
+    margin: 0 0 0.5rem;
     width: 100%;
   }
 
@@ -74,10 +80,6 @@
 
 @include media-breakpoint-up(lg) {
   .page-gallery {
-    .page-content {
-      justify-content: space-between;
-    }
-
     @include left-nav-lg;
 
     .gallery-content,
@@ -87,7 +89,14 @@
     }
 
     .gallery-content {
+      padding: 0;
       width: calc(100% - 210px);
+    }
+
+    .adopter-entry {
+      justify-content: space-between;
+      padding: 0;
+      width: 100%;
     }
 
     .adopter-row-top,
@@ -96,15 +105,16 @@
     }
 
     .adopter-row-top {
-      margin: 0;
+      margin: 0 36px 0 0;
       max-width: initial;
-      width: auto;
+      width: 400px;
     }
 
     .adopter-logo {
       height: 100%;
-      margin: 0;
+      margin: 0 0 1rem;
       max-width: 300px;
+      width: 250px;
     }
   }
 }
@@ -117,22 +127,23 @@
 
     .adopter-entry {
       display: flex;
-      grid-gap: 0;
       width: auto;
     }
 
     .adopter-row-top {
-      margin: 0 56px 0 0;
+      margin: 0 26px 0 0;
       max-width: 560px;
+      width: auto;
     }
 
     .adopter-logo-container {
-      max-width: 200px;
+      width: 300px;
     }
 
     .adopter-logo {
       height: 100%;
-      max-width: 260px;
+      max-width: 100%;
+      width: 300px;
     }
   }
 }
@@ -163,6 +174,11 @@
 
     @include left-nav-xxl;
 
+    .adopter-entry {
+      justify-content: flex-start;
+      padding: 0 12px 0 0;
+    }
+
     .adopter-row-top {
       margin: 0 46px 0 1rem;
       max-width: 760px;
@@ -173,12 +189,14 @@
       margin: 0 0 12px 1rem;
     }
 
-    .adopter-logo {
-      max-width: 290px;
+    .adopter-logo-container {
+      max-width: 200px;
+      width: auto;
     }
 
-    .adopter-blank-placeholder {
-      height: 120px;
+    .adopter-logo {
+      max-width: 290px;
+      width: auto;
     }
   }
 }
