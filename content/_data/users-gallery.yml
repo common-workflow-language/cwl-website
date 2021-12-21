@@ -51,10 +51,12 @@ gallery:
     title: Cross-Domain
     adopters:
       - name: The [Netherlands] National Plan Open Science
+        link_text: National Plan Open Science - Feb. 2019
         url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
         description: "For all educational institutions and research domains, open access publishing and optimal reuse of research data will be the norm in 2020. The motto here is: open if possible, closed if it must. The switch to open science requires ambition, investment in people and resources, and being alert to any risks...The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance."
         image: /assets/img/logo_openscience.svg 
       - name: University of Manchester, eScience Lab
+        link_text: eScience Lab - Common Workflow Language
         url: https://esciencelab.org.uk/activities/cwl/
         image: /assets/img/escienceLab-logo.png
         description: null
@@ -85,6 +87,7 @@ gallery:
         - sub_title: US National Institutes of Health (NIH)
           description: null
         - name: RAPT
+          link_text: "NCBI Insights : Read assembly and Annotation Pipeline Tool (RAPT) is available for use and testing"
           url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
         - name: NCI Cancer Genomics Cloud
           link_text: NCI Cancer Genomics Cloud
@@ -96,11 +99,11 @@ gallery:
           image: https://gdc.cancer.gov/sites/all/themes/gdc_bootstrap/logo.png
           description: All major GDC data production pipelines are written in the Common Workflow Language.
           other: >
-            CWL provides an additional transparent layer between workflow description and workflow execution, that allows even better scalability through parallel execution and portability.
+            <p>CWL provides an additional transparent layer between workflow description and workflow execution, that allows even better scalability through parallel execution and portability.</p>
 
-            Zhang, Z., Hernandez, K., Savage, J. et al. Uniform genomic data analysis in the NCI Genomic Data Commons. Nat Commun 12, 1226 (2021). https://doi.org/10.1038/s41467-021-21254-9
+            <p>Zhang, Z., Hernandez, K., Savage, J. et al. Uniform genomic data analysis in the NCI Genomic Data Commons. Nat Commun 12, 1226 (2021). <a href="https://doi.org/10.1038/s41467-021-21254-9" title="">https://doi.org/10.1038/s41467-021-21254-9</a></p>
 
-            The GDC workflows are at https://github.com/NCI-GDC/gdc-workflow-overview
+            <p>The GDC workflows are at <a href="https://github.com/NCI-GDC/gdc-workflow-overview" title="">https://github.com/NCI-GDC/gdc-workflow-overview</a></p>
         - name: NIH BioData Catalyst
           link_text: NHLBI BioData catalyst powered by Seven Bridges
           url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
@@ -108,7 +111,7 @@ gallery:
           link_text: Gabriella Miller Kids First Data Resource Center
           url: https://kidsfirstdrc.org/
           image: /assets/img/gabriella-miller-logo.png
-          description: The NIH Common Fund-supported [Gabriella Miller Kids First Data Resource Center](https://kidsfirstdrc.org/) enables researchers, clinicians, and patients to work together to accelerate research and promote new discoveries for children affected with cancer and structural birth defects. The group collects patient data and processes the data with CWL workflows in order to create a dataset that is ready for further research to better know the diseases and ultimately improve outcomes for children with similar problems in the future.
+          description: The NIH Common Fund-supported <a href="https://kidsfirstdrc.org/" title="Gabriella Miller Kids First Data Resource Center">Gabriella Miller Kids First Data Resource Center</a> enables researchers, clinicians, and patients to work together to accelerate research and promote new discoveries for children affected with cancer and structural birth defects. The group collects patient data and processes the data with CWL workflows in order to create a dataset that is ready for further research to better know the diseases and ultimately improve outcomes for children with similar problems in the future.
           other_section_title: 'Example workflows:'
           other: >
             <ul>
@@ -150,10 +153,12 @@ gallery:
         image: /assets/img/msk-access.png
       - name: UNLOCK
         description: LOCK is an open infrastructure for exploring new horizons for research on microbial communities
+        link_text: UNLOCK > CWL
         url: https://git.wur.nl/unlock/cwl
         image: /assets/img/logo_unlock_tagline_color.png
       - name: PubSeq
         description: A public data and workflow initiative targeting COVID19 (initially). PubSeq uses RDF/SPARQL, CWL and Arvados extensively.
+        link_text: 'COVID-19 PubSeq: Public SARS-CoV-2 Sequence Resource'
         url: http://covid19.genenetwork.org/
         image: /assets/img/pubseq-aln.png
   - section:
@@ -161,6 +166,7 @@ gallery:
     adopters:
       - name: Open Geospatial Consortium
         description: The Open Geospatial Consortium (OGC) is "an international consortium of more than 500 businesses, government agencies, research organizations, and universities driven to make geospatial (location) information and services FAIR - Findable, Accessible, Interoperable, and Reusable."  
+        link_text: Open Geospatial Consortium
         url: https://www.ogc.org/
         image: /assets/img/Blue_Horizontal_Lockup.png
         other: >

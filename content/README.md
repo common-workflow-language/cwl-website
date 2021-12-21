@@ -9,15 +9,13 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 * [Editing the Site](#editing-the-site)
 * [To-Do](#to-do)
+  * [General](#general)
+  * [Code Refactoring](#code-refactoring)
   * [Plugins Review](#plugins-review)
-  * [Nav Menu Issues](#nav-menu-issues)
   * [Accessibility](#accessibility)
     * [Headings & Anchor Links](#headings--anchor-links)
-  * [Video Player](#video-player)
-  * [Users Gallery](#users-gallery)
-    * [Organization Links](#organization-links)
   * [WebAIM Accessibility](#webaim-accessibility)
-    * [Video Player](#video-player-1)
+    * [Video Player](#video-player)
 * [Reference](#reference)
   * [Bootstrap Grid Breakpoints](#bootstrap-grid-breakpoints)
 
@@ -31,17 +29,35 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="to-do"></a>
 ## To-Do
 
+<a id="general"></a>
+### General
+
+* Make homepage feature boxes clickable? If so, where do they link to?
+* Mini Users Gallery styles flexbox hanging row issue
+* Mini Gallery not picking up sub-adopter logos
+* Site Logo Height issue between 1117-1169px
+* Update EDITING doc
+* Content check should be done to make sure tables on Implementations page and elsewhere are up to date
+* Reusability pg image caption
+  - Doesn't center properly, due to the image needed to be cropped, on the right side
+
+<a id="code-refactoring"></a>
+### Code Refactoring
+
+**Left Nav:**
+
+* Separate Left Nav code and styles from Gallery code and styles
+* Make Left Nav template dynamic, so it doesn't have to be manually updated, whenever new entries are added
+
+**Other**
+
+* File naming for Users Gallery vs Mini Users Gallery files
+* Check units in SCSS files - px vs em
+
 <a id="plugins-review"></a>
 ### Plugins Review
 
 * Check if there are any necessary or useful Jekyll plugins that should be added
-
-<a id="nav-menu-issues"></a>
-### Nav Menu Issues
-
-* Anchor links scroll past headings, due to sticky header 
-* Top nav: Home link currently stays bolded, even though page not on homepage
-* Left Nav: Submenu items should be collapsed under a caret. Relevant for Users Gallery page
 
 <a id="accessibility"></a>
 ### Accessibility
@@ -57,44 +73,10 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
   * Relevant code is in `_sass/partials/_structure.scss`
   * Distracting for SR users, who may prefer to hit Home or reload the page instead
 
-<a id="video-player"></a>
-### Video Player
-
-* Does it make sense to include video player styles in _custom-head.html?? It's only used on the homepage
-* Wrap homepage vid player styles in page tag?? or move video player styles elsewhere?
-
-<a id="users-gallery"></a>
-### Users Gallery
-
-<a id="organization-links"></a>
-#### Organization Links
-
-Prettify Organization Links:
-
-Some organization links display as https links, while most display as Titles. eg: <https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16> vs [National Plan Open Science - Feb. 2019](https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16)
-
-The following lines of code would need to be added, in their respective sections:
-
-```yaml
-- name: The [Netherlands] National Plan Open Science
-  link_text: National Plan Open Science - Feb. 2019
-  url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
-- name: University of Manchester, eScience Lab
-  link_text: eScience Lab - Common Workflow Language
-  url: https://esciencelab.org.uk/activities/cwl/
-- name: RAPT
-  link_text: "NCBI Insights : Read assembly and Annotation Pipeline Tool (RAPT) is available for use and testing"
-  url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
-- name: Open Geospatial Consortium
-  description: Integrated CWL as part of their Exploitation (data analytics) Platforms
-  link_text: Open Geospatial Consortium
-  url: https://www.ogc.org/
-```
-
 <a id="webaim-accessibility"></a>
 ### WebAIM Accessibility
 
-<a id="video-player-1"></a>
+<a id="video-player"></a>
 #### Video Player
 
 * The "broken ARIA menu" seems to be an error on the WebAIM tool's part...
