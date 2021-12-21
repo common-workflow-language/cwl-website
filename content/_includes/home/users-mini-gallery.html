@@ -8,13 +8,13 @@
   {% assign sub_adopters = section.sub_adopters %}
     {% for adopter in adopters %}
       {% if adopter.image %}
-      <div class="mini-gallery-img-container"><img src="{{ adopter.image }}" alt=""></div>
+      <div class="mini-gallery-img-container"><img src="{{ adopter.image | absolute_url }}" alt=""></div>
       {% endif %}
     {% endfor %}
 
     {% for sub_adopter in sub_adopters %}
       {% if sub_adopter.image %}
-        <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image }}" alt=""></div>
+        <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image | absolute_url }}" alt=""></div>
       {% endif %}
     {% endfor %}
 {% endfor %}
