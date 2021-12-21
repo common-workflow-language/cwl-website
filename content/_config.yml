@@ -12,7 +12,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and
   Machine Learning.
 
+discourse_url: https://cwl.discourse.group/
 github_url: https://github.com/common-workflow-language/
+gitter_url: https://gitter.im/common-workflow-language/common-workflow-language
 twitter_url: https://twitter.com/commonwl
 youtube_url: https://www.youtube.com/c/CommonWLorgStandard/
 
