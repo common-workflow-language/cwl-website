@@ -90,9 +90,34 @@ gallery:
           link_text: NCI Cancer Genomics Cloud
           url: https://www.cancergenomicscloud.org/
           description: "Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform."
+        - name: NCI Genomic Data Commons
+          link_text: NCI Cancer Genomics Cloud
+          url: https://www.cancergenomicscloud.org/
+          image: https://gdc.cancer.gov/sites/all/themes/gdc_bootstrap/logo.png
+          description: All major GDC data production pipelines are written in the Common Workflow Language.
+          other: >
+            CWL provides an additional transparent layer between workflow description and workflow execution, that allows even better scalability through parallel execution and portability.
+
+            Zhang, Z., Hernandez, K., Savage, J. et al. Uniform genomic data analysis in the NCI Genomic Data Commons. Nat Commun 12, 1226 (2021). https://doi.org/10.1038/s41467-021-21254-9
+
+            The GDC workflows are at https://github.com/NCI-GDC/gdc-workflow-overview
         - name: NIH BioData Catalyst
           link_text: NHLBI BioData catalyst powered by Seven Bridges
           url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
+        - name: Gabriella Miller Kids First Data Resource Center
+          link_text: Gabriella Miller Kids First Data Resource Center
+          url: https://kidsfirstdrc.org/
+          image: /assets/img/gabriella-miller-logo.png
+          description: The NIH Common Fund-supported [Gabriella Miller Kids First Data Resource Center](https://kidsfirstdrc.org/) enables researchers, clinicians, and patients to work together to accelerate research and promote new discoveries for children affected with cancer and structural birth defects. The group collects patient data and processes the data with CWL workflows in order to create a dataset that is ready for further research to better know the diseases and ultimately improve outcomes for children with similar problems in the future.
+          other_section_title: 'Example workflows:'
+          other: >
+            <ul>
+              <li><a href="https://github.com/kids-first/kf-alignment-workflow">https://github.com/kids-first/kf-alignment-workflow</a></li>
+              <li><a href="https://github.com/kids-first/kf-rnaseq-workflow">https://github.com/kids-first/kf-rnaseq-workflow</a></li>
+              <li><a href="https://github.com/kids-first/kf-somatic-workflow">https://github.com/kids-first/kf-somatic-workflow</a></li>
+              <li><a href="https://github.com/kids-first/kf-jointgenotyping-workflow">https://github.com/kids-first/kf-jointgenotyping-workflow</a></li>
+              <li><a href="https://github.com/kids-first/kf-genotype-refinement-workflow">https://github.com/kids-first/kf-genotype-refinement-workflow</a></li>
+            </ul>
   - section:
     adopters:
       - name: Children's Hospital of Philadelphia
