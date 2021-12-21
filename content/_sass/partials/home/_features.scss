@@ -6,7 +6,15 @@
 
 @include media-breakpoint-up(md) {
   .features-grid {
-    justify-content: space-around;
+    // justify-content: space-around;
+    justify-content: space-between;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .features-grid {
+    margin: 2rem auto 0;
+    padding: 0 2%;
   }
 }
 
@@ -31,7 +39,8 @@
 @include media-breakpoint-up(md) {
   .feature-item {
     flex-basis: 46%;
-    margin: 1rem 0;
+    // margin: 1rem 0;
+    margin: 1.5rem 0;
   }
 
   .feature-title {
@@ -42,12 +51,25 @@
 
 @include media-breakpoint-up(lg) {
   .feature-item {
-    flex-basis: 29%;
-    margin: 1rem;
+    // flex-basis: 29%;
+    flex-basis: 28%;
+    // margin: 1rem;
+    margin: 0 auto 2.75rem;
+  }
+
+  // Not currently implemented...
+  .bottom-row {
+    margin: 0 auto;
   }
 
   .feature-title {
     font-size: calc(1.3rem + 0.4vw);
     height: 4rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .feature-item {
+    margin: 0 auto 4rem;
   }
 }

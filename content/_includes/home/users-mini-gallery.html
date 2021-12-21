@@ -1,8 +1,8 @@
-<div class="section-header">
+<section class="page-section section-mini-gallery"><div class="section-header">
   <h2 id="cwl-users-gallery">Some Users of CWL</h2>
 </div>
 
-<div class="mini-gallery">
+<a href="{{ site.url }}/gallery"><div class="mini-gallery">
 {% for section in site.data.users-gallery.gallery %}
   {% assign adopters = section.adopters %}
   {% assign sub_adopters = section.sub_adopters %}
@@ -18,4 +18,5 @@
       {% endif %}
     {% endfor %}
 {% endfor %}
-</div>
+</div></a>
+</section>

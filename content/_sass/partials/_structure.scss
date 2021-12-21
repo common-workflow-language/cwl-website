@@ -170,14 +170,29 @@ html {
 }
 
 .page-section {
-  margin: 1rem 0;
+  // margin: 1rem 0;
+  margin: 2rem 0;
   padding: 0 2px;
+}
+
+.intro-container {
+  margin: 1rem 0;
 }
 
 @include media-breakpoint-up(md) {
   .page-section {
-    margin: 2rem auto;
+    // margin: 2rem auto;
+    margin: 4rem auto 2rem;
     padding: 0;
+  }
+
+  .intro-container {
+    margin: 2rem auto;
+  }
+
+  .community {
+    // margin: 0 auto;
+    margin: 2rem auto 0;
   }
 }
 
@@ -195,6 +210,11 @@ html {
   flex-direction: column;
 }
 
+@include media-breakpoint-up(xl) {
+  .community {
+    margin: 1rem auto 0;
+  }
+}
 
 ///////////////////
 // Regular pages //
