@@ -39,4 +39,6 @@ arguments:
  - --no-robots
  - --ignore-url
  - .*identifiers.org.*
+ - --ignore-url
+ - .*arxiv.org.*
 stdout: linkchecker-report.txt
