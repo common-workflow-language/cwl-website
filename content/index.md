@@ -13,7 +13,7 @@ permalink: '/'
 -->
 
 <div class="intro-container">
-  <a href="https://open-stand.org/about-us/principles" class="open-stand"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
+  <a href="https://open-stand.org/about-us/principles" class="open-stand"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture></a>
 
 {% capture intro_paragraphs %}
 The Common Workflow Language (CWL) is an open standard for describing analysis workflows and tools in a way that makes them portable and scalable across a variety of software and hardware environments, from workstations to cluster, cloud, and high performance computing (HPC) environments. CWL is designed to meet the needs of data-intensive science, such as Bioinformatics, Medical Imaging, Astronomy, High Energy Physics, and Machine Learning.
