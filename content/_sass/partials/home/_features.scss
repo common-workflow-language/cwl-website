@@ -6,7 +6,6 @@
 
 @include media-breakpoint-up(md) {
   .features-grid {
-    // justify-content: space-around;
     justify-content: space-between;
   }
 }
@@ -28,6 +27,12 @@
   text-align: center;
   width: 100%;
 
+  &.feature-community {
+    flex-basis: 100%;
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+  }
+
   img {
     height: 100px;
     width: 100px;
@@ -39,8 +44,11 @@
 @include media-breakpoint-up(md) {
   .feature-item {
     flex-basis: 46%;
-    // margin: 1rem 0;
     margin: 1.5rem 0;
+
+    &.feature-community {
+      margin: 1.5rem auto 1rem;
+    }
   }
 
   .feature-title {
@@ -51,15 +59,13 @@
 
 @include media-breakpoint-up(lg) {
   .feature-item {
-    // flex-basis: 29%;
     flex-basis: 28%;
-    // margin: 1rem;
     margin: 0 auto 2.75rem;
-  }
 
-  // Not currently implemented...
-  .bottom-row {
-    margin: 0 auto;
+    &.feature-community {
+      flex-basis: 95%;
+      margin: 0 auto 1rem;
+    }
   }
 
   .feature-title {
