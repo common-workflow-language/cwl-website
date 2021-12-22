@@ -32,9 +32,8 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="general"></a>
 ### General
 
+* Mini Gallery logo heights 
 * Make homepage feature boxes clickable? If so, where do they link to?
-* Mini Users Gallery styles flexbox hanging row issue
-* Mini Gallery not picking up sub-adopter logos
 * Site Logo Height issue between 1117-1169px
 * Update EDITING doc
 * Content check should be done to make sure tables on Implementations page and elsewhere are up to date

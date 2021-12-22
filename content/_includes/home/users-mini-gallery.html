@@ -1,11 +1,13 @@
-<section class="page-section section-mini-gallery"><div class="section-header">
-  <h2 id="cwl-users-gallery">Some Users of CWL</h2>
-</div>
+<section class="page-section section-mini-gallery">
+  <div class="section-header">
+    <h2 id="cwl-users-gallery">Some Users of CWL</h2>
+  </div>
 
-<a href="{{ site.url }}/gallery"><div class="mini-gallery">
-{% for section in site.data.users-gallery.gallery %}
-  {% assign adopters = section.adopters %}
-  {% assign sub_adopters = section.sub_adopters %}
+  <a class="mini-gallery-wrapper" href="{{ site.url }}/gallery"><div class="mini-gallery">
+  {% for section in site.data.users-gallery.gallery %}
+    {% assign adopters = section.adopters %}
+    {% assign sub_adopters = section.subsection.adopters %}
+
     {% for adopter in adopters %}
       {% if adopter.image %}
       <div class="mini-gallery-img-container"><img src="{{ adopter.image | absolute_url }}" alt=""></div>
@@ -17,6 +19,7 @@
         <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image | absolute_url }}" alt=""></div>
       {% endif %}
     {% endfor %}
-{% endfor %}
-</div></a>
+
+  {% endfor %}
+  </div></a>
 </section>
