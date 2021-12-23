@@ -92,11 +92,11 @@ gallery:
         - name: NCI Cancer Genomics Cloud
           link_text: NCI Cancer Genomics Cloud
           url: https://www.cancergenomicscloud.org/
+          image: /assets/img/cgc.png
           description: "Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform."
         - name: NCI Genomic Data Commons
           link_text: NCI Cancer Genomics Cloud
           url: https://www.cancergenomicscloud.org/
-          image: https://gdc.cancer.gov/sites/all/themes/gdc_bootstrap/logo.png
           description: All major GDC data production pipelines are written in the Common Workflow Language.
           other: >
             <p>CWL provides an additional transparent layer between workflow description and workflow execution, that allows even better scalability through parallel execution and portability.</p>
