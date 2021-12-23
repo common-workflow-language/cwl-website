@@ -12,6 +12,8 @@ timeline_events:
   - year: 2018
     event: IBM released CWL implementation for LSF
   - year: 2019
-    event: CWL v1.1 released
+    event: CWL v1.1 released<br><a href="https://www.meetup.com/Boston-Common-Workflow-Language-Meetup/events/264989366/">CWL 2019 Mini Conference</a> (Cambridge, MA, USA)
   - year: 2020
     event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
+  - year: 2021
+    event: 2021-02-08 <a href="https://cwl.discourse.group/c/cwlcon-2021/9">CWL 2021 Conference</a> (Online)
