@@ -170,8 +170,8 @@ html {
 }
 
 .page-section {
-  // margin: 1rem 0;
-  margin: 2rem 0;
+  margin: 1rem 0;
+  // margin: 2rem 0;
   padding: 0 2px;
 }
 
@@ -181,8 +181,8 @@ html {
 
 @include media-breakpoint-up(md) {
   .page-section {
-    // margin: 2rem auto;
-    margin: 4rem auto 2rem;
+    margin: 2rem auto;
+    // margin: 4rem auto 2rem;
     padding: 0;
   }
 
@@ -191,8 +191,8 @@ html {
   }
 
   .community {
-    // margin: 0 auto;
-    margin: 2rem auto 0;
+    margin: 0 auto;
+    // margin: 2rem auto 0;
   }
 }
 
