@@ -8,6 +8,27 @@
   h4 {
     @include hide-anchor-symbols;
   }
+
+  &.has-left-nav {
+    .left-nav {
+      a {
+        margin: 5px 5px 0 15px;
+      }
+
+      .left-nav-links {
+        list-style: none;
+        padding: 2px 0;
+
+        .no-indent {
+          margin-left: 0;
+        }
+      }
+
+      .indent {
+        margin: 5px 5px 5px 30px;
+     }
+    }
+  }
 }
 
 @include media-breakpoint-up(md) {
@@ -15,6 +36,22 @@
     h3 .heading__anchor-symbol,
     h4 .heading__anchor-symbol {
       display: inline;
+    }
+
+    &.has-left-nav {
+      .left-nav {
+        margin: 58px 0 0;
+
+        .left-nav-title,
+        .left-nav-links,
+        .left-subnav {
+          padding: 0;
+        }
+      }
+    }
+
+    .gallery-content {
+      width: calc(100% - 210px);
     }
   }
 }
@@ -26,7 +63,7 @@
     justify-content: space-between;
   }
 
-  @include left-nav;
+  // @include left-nav;
 
   .adopter-entry,
   .adopter-row-top,
@@ -70,7 +107,7 @@
 
 @include media-breakpoint-up(md) {
   .page-gallery {
-    @include left-nav-md;
+    // @include left-nav-md;
 
     .gallery-content {
       width: calc(100% - 210px);
@@ -80,7 +117,7 @@
 
 @include media-breakpoint-up(lg) {
   .page-gallery {
-    @include left-nav-lg;
+    // @include left-nav-lg;
 
     .gallery-content,
     .adopter-entry {
@@ -172,7 +209,7 @@
       margin: 0 0 1.25rem 1rem;
     }
 
-    @include left-nav-xxl;
+    // @include left-nav-xxl;
 
     .adopter-entry {
       justify-content: flex-start;
