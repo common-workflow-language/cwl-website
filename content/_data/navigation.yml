@@ -24,19 +24,6 @@ header:
   - title: Users Gallery
     url: /gallery
 
-getting_started_left:
-  - nav_header: Shortcuts
-  - title: Resources for Getting Started
-    url: "#resources-for-getting-started"
-  - title: Background
-    url: "#background"
-  - title: Why Use Workfows?
-    url: "#why-use-workfows"
-  - title: Why Use a Standard?
-    url: "#why-use-a standard"
-  - title: When to Use CWL?
-    url: "#when-to-use-cwl"
-
 users_gallery_left:
   - nav_header: Shortcuts
   - title: Cross-Domain
