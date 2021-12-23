@@ -38,6 +38,11 @@
     width: 100px;
   }
 
+  .open-stand-badge {
+    height: 128px;
+    width: 128px;
+  }
+
   @include hide-anchor-symbols;
 }
 
