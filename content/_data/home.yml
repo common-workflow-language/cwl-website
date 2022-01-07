@@ -1,6 +1,8 @@
 features:
   - title: OPEN AND FREE
-    text: CWL is a [free and open standard](/specification/) with free and [open source implementations](/implementations). 
+    text: CWL is a [free and open standard](/specification/) with free and [open source implementations](/implementations).
+    icon: freeandopen.png
+    icon-alt: Free and Open Icon - an open circular lock composed of a circle, keyhole and a open latch 
   - title: COMMUNITY FIRST
     text: Community is a core principle of the CWL Project.  
   - title: INTEROPERABILITY AND PORTABILITY
