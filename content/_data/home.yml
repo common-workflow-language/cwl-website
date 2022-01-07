@@ -1,12 +1,12 @@
 features:
   - title: OPEN AND FREE
-    text: CWL is an open-source and open-standard. 
+    text: CWL is a [free and open standard](/specification/) with free and [open source implementations](/implementations). 
   - title: COMMUNITY FIRST
     text: Community is a core principle of the CWL Project.  
   - title: INTEROPERABILITY AND PORTABILITY
     icon: noun_Interoperability_181229.svg
     icon-alt: Interoperability icon - a triangle composed of arrows, with a triangle, square, and circle as the 3 points
-    text: Portable and interoperable across a [variety of software and deployment environments](/implementations/)
+    text: Portable and interoperable across a [variety of software and deployment environments](/implementations)
   - title: VENDOR NEUTRALITY
     icon: noun_Scale_380185.svg
     icon-alt: Vendor Neutrality icon - an evenly weighted mechanical scale
