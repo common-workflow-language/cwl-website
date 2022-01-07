@@ -1,10 +1,11 @@
 <section class="features-grid">
 {% for feature in site.data.home.features %}
-  <div class="feature-item">
-    <h3 class="feature-title" id="{{ feature.title | downcase }}">{{ feature.title }}</h3>
-    <img src="/assets/img/{{ feature.icon }}" alt="{{ feature.icon-alt }}">
+  <div class="feature-item {{ feature.title | downcase | replace: " ", "-" }}">
+    <h3 class="feature-title" id="{{ feature.title | downcase | replace: " ", "-" }}">{{ feature.title }}</h3>
+    <img src="/assets/img/{{ feature.icon }}" class="feature-img" alt="{{ feature.icon-alt }}">
     <p class="feature-text">{{ feature.text | markdownify | remove: "<p>" | remove: "</p>" }}</p>
   </div>
 {% endfor %}
-  {% include home/community.html %}
 </section>
+{% include home/community.html %}
+

@@ -171,7 +171,6 @@ html {
 
 .page-section {
   margin: 1rem 0;
-  // margin: 2rem 0;
   padding: 0 2px;
 }
 
@@ -182,23 +181,29 @@ html {
 @include media-breakpoint-up(md) {
   .page-section {
     margin: 2rem auto;
-    // margin: 4rem auto 2rem;
     padding: 0;
   }
 
   .intro-container {
-    margin: 2rem auto;
-  }
-
-  .community {
-    margin: 0 auto;
-    // margin: 2rem auto 0;
+    margin: 1rem auto 2rem;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .page-section {
-    &.indented {
+    &.community {
+      width: 96%;
+    }
+  }
+
+  .intro-container {
+    margin: 2rem auto;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .page-section {
+    &.community {
       width: 90%;
     }
   }
@@ -208,12 +213,6 @@ html {
   align-items: center;
   display: flex;
   flex-direction: column;
-}
-
-@include media-breakpoint-up(xl) {
-  .community {
-    margin: 1rem auto 0;
-  }
 }
 
 ///////////////////
