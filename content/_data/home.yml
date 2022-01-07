@@ -1,4 +1,6 @@
 features:
+  - title: OPEN AND FREE
+    text: CWL is an open standard with an free and open source reference implementation. 
   - title: INTEROPERABILITY AND PORTABILITY
     icon: noun_Interoperability_181229.svg
     icon-alt: Interoperability icon - a triangle composed of arrows, with a triangle, square, and circle as the 3 points
