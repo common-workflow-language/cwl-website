@@ -5,6 +5,8 @@ header:
     url: /about
   - title: Getting Started
     url: /getting-started
+  - url: /commmunity
+    title: Community
   - title: Ecosystem
     url: "#"
     type: dropdown
