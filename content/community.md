@@ -1,8 +1,8 @@
-<section class="page-section indented community">
-  <div class="section-header">
-    <img src="assets/img/noun_Community_943325.svg" class="section-icon" alt="Community Icon - four people connected via a circle">
-    <h2 id="community">Community</h2>
-  </div>
+---
+layout: page
+permalink: /community/
+title: Community 
+---
 
 {% capture community_content %}
 
