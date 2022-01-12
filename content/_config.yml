@@ -43,9 +43,6 @@ plugins:
   - jekyll-titles-from-headings
   # - jekyll-autolink_email
 
-autolink_email:
-  escape: true
-
 exclude:
   - _archive/
   - _scratch/

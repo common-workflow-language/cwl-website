@@ -49,6 +49,7 @@ module Jekyll
 
     # A hack since Rinku doesn't offer a hook into changing what the link is
     def url_encode_email_addresses(content)
+      # content.gsub!(/mailto:(#{email_addresses.join('|')})/) do |m|
       content.gsub!(/mailto:(#{email_addresses.join('|')})/) do |m|
         m[$1] = ERB::Util.url_encode($1)
         m
