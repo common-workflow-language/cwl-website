@@ -2,7 +2,8 @@ header:
   - title: Home
     url: /
   - title: About
-    url: '#'
+    url: "#"
+    type: dropdown
     subpages:
       - title: Vision and Mission
         url: /about/#vision
