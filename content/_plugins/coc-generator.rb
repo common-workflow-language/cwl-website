@@ -15,7 +15,9 @@ def generate_front_matter()
   front_matter = (<<~FRONT_MATTER)
   ---
   layout: page
-  permalink: /codeofconduct/
+  permalink: /code-of-conduct/
+  redirect_from:
+    - /codeofconduct/
   title: Code of Conduct
   class: page-short
   ---

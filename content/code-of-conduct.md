@@ -1,6 +1,8 @@
 ---
 layout: page
-permalink: /codeofconduct/
+permalink: /code-of-conduct/
+redirect_from:
+  - /codeofconduct/
 title: Code of Conduct
 class: page-short
 ---
