@@ -1,14 +1,13 @@
-require 'open-uri'
 require 'net/http'
 require 'fileutils'
 
 def scrape_page()
   url = "https://raw.githubusercontent.com/common-workflow-language/common-workflow-language/main/CODE_OF_CONDUCT.md"
 
-  html = open(url)
-  contents = html.read
+  uri = URI.parse(url)
+  response = Net::HTTP.get_response(uri)
 
-  return contents
+  return response.body
 end
 
 def generate_front_matter()
