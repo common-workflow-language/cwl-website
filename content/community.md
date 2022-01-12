@@ -2,6 +2,7 @@
 layout: page
 permalink: /community/
 title: Community 
+class: page-short
 ---
 
 
