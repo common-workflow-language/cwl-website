@@ -2,7 +2,17 @@ header:
   - title: Home
     url: /
   - title: About
-    url: /about
+    url: "#"
+    type: dropdown
+    subpages:
+      - title: Vision and Mission
+        url: /about/#vision
+      - title: History 
+        url: /about/#timeline
+      - title: Reusablity and Reproduciblity
+        url: /reusability 
+      - title: Parallelization and Scale
+        url: /scale
   - title: Getting Started
     url: /getting-started
   - url: /community
