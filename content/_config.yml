@@ -41,6 +41,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-titles-from-headings
+  # - jekyll-autolink_email
+
+autolink_email:
+  escape: true
 
 exclude:
   - _archive/
