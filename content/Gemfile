@@ -3,6 +3,13 @@
 source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2.0"
+
+# Code of Conduct Generator
+gem "open-uri"
+gem "net-http"
+gem "fileutils"
+
+# Email Autolinker
 gem "rinku"
 
 group :jekyll_plugins do
