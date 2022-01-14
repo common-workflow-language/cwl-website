@@ -7,8 +7,14 @@ header:
     subpages:
       - title: Vision and Mission
         url: /about/#vision
-      - title: History 
+      - title: Timeline 
         url: /about/#timeline
+      - title: Governance
+        url: /governance
+  - title: Features
+    url: "#"
+    type: dropdown
+    subpages:
       - title: Reusablity and Reproduciblity
         url: /reusability 
       - title: Parallelization and Scale
@@ -29,8 +35,6 @@ header:
         url: /repos
       - title: Projects
         url: /projects
-  - title: Governance
-    url: /governance
   - title: Specification
     url: /specification
   - title: Users Gallery
