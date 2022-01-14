@@ -4,11 +4,19 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2.0"
 
+# Code of Conduct Generator
+gem "net-http"
+gem "fileutils"
+
+# Email Autolinker
+gem "rinku"
+
 group :jekyll_plugins do
 	gem "jekyll-redirect-from"
 	gem "jekyll-seo-tag"
 	gem "jekyll-sitemap"
   gem "jekyll-titles-from-headings"
+  # gem "jekyll-autolink_email"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
