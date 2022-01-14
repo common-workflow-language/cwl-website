@@ -1,6 +1,6 @@
 features:
   - title: OPEN AND FREE
-    text:  CWL is a [free and open standard](/specification/).
+    text:  "[Free and open standard](/specification/)"
     icon: freeandopen.png
     icon-alt: Free and Open Icon - an open circular lock composed of a circle, keyhole and a open latch 
   - title: COMMUNITY FIRST
