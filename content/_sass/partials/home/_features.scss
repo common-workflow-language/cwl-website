@@ -83,6 +83,8 @@
   .feature-title {
     font-size: 1.3rem;
     height: 3rem;
+    overflow-wrap: break-word;
+    word-break: normal;
   }
 }
 
