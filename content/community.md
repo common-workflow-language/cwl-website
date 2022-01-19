@@ -9,6 +9,8 @@ class: page-short
 
 CWL is developed by a multi-vendor working group consisting of organizations and individuals aiming to enable scientists to share data analysis workflows. The CWL project is maintained on Github and we follow the Open-Stand.org principles for collaborative open standards development. Legally CWL is a member project of Software Freedom Conservancy and is formally managed by the elected CWL leadership team, however every-day project decisions are made by the CWL community which is open for participation by anyone.
 
+{:.cwl-red}
+## Resources
 If you’re interested in joining the CWL community, we recommend checking out the following resources and forums:
 
 * The place to ask a question about all things CWL is on [the CWL Discourse Group](https://cwl.discourse.group/). Previously we used [biostars.org](https://www.biostars.org/t/cwl/) where you can still read older responses.
@@ -19,4 +21,68 @@ If you’re interested in joining the CWL community, we recommend checking out t
 The CWL Project is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, age, race, or religion. We do not tolerate harassment of participants in any form. This code of conduct applies to all CWL Project spaces, including the Google Group, the Gitter chat room, the Google Hangouts chats, both online and off. Anyone who violates this code of conduct may be sanctioned or expelled from these spaces at the discretion of the leadership team.
 
 For more details, see our [Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md).
+
+{:.cwl-red}
+## Contributors
+
+### Participating Organizations
+
+*   [Arvados Project](https://arvados.org/)
+*   [Curii](https://curii.com/)
+*   [Seven Bridges Genomics](https://www.sevenbridges.com/)
+*   [Galaxy Project](https://galaxyproject.org/)
+*   [Apache Taverna](https://taverna.incubator.apache.org/)
+*   [Institut Pasteur](https://www.pasteur.fr/en)
+*   [Wellcome Trust Sanger Institute](https://www.sanger.ac.uk/)
+*   [University of California Santa Cruz](https://cbse.soe.ucsc.edu/research/bioinfo)
+*   [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/)
+*   [Cincinnati Children's Hospital Medical Center](https://www.cincinnatichildrens.org/)
+*   [Broad Institute](https://www.broadinstitute.org/)
+*   [University of Melbourne Center for Cancer Research](https://umccr.github.io/)
+*   [Netherlands eScience Center](https://www.esciencecenter.nl/)
+*   [Texas Advanced Computing Center Life Science Computing Group](https://www.tacc.utexas.edu/life-sciences-computing) / [Agave Platform](https://agaveapi.co/)
+*   [CyVerse](http://www.cyverse.org/)
+*   [Institute for Systems Biology](https://www.systemsbiology.org/)
+*   [ELIXIR Europe](https://www.elixir-europe.org/)
+*   [BioExcel CoE](https://bioexcel.eu/)
+*   [BD2K](https://commonfund.nih.gov/bd2k)
+*   [EMBL Australia Bioinformatics Resource](https://www.embl-abr.org.au/)
+*   [IBM Spectrum Computing](https://www.ibm.com/spectrum-computing)
+*   [DNAnexus](https://www.dnanexus.com/)
+*   [CERN](https://home.cern/)
+
+### Individual Contributors
+The CWL project is grateful to the following self-identified
+CWL Community members and their contributions to the project.
+
+(Alphabetical)
+
+*   Peter Amstutz, Curii / Arvados Project; <https://orcid.org/0000-0003-3566-7705>
+*   Robin Andeer; <https://orcid.org/0000-0003-1132-5305>
+*   Brad Chapman; <https://orcid.org/0000-0002-3026-1856>
+*   John Chilton, Pennsylvania State University / Galaxy Project; <https://orcid.org/0000-0002-6794-0756>
+*   Michael R. Crusoe, CWL Project Lead; <https://orcid.org/0000-0002-2961-9670>
+*   Roman Valls Guimerà; <https://orcid.org/0000-0002-0034-9697>
+*   Guillermo Carrasco Hernandez <guille.ch.88@gmail.com>
+*   Kenzo-Hugo Hillion; <https://orcid.org/0000-0002-6517-6934>
+*   Manabu Ishii, RIKEN; <https://orcid.org/0000-0002-5843-4712>
+*   Sinisa Ivkovic <sinisa.ivkovic@sbgenomics.com>
+*   Sehrish Kanwal; <https://orcid.org/0000-0002-5044-4692>
+*   Andrey Kartashov; <https://orcid.org/0000-0001-9102-5681>
+*   John Kern; <https://orcid.org/0000-0001-6977-458X>
+*   Farah Zaib Khan; <https://orcid.org/0000-0002-6337-3037>
+*   Dan Leehr; <https://orcid.org/0000-0003-3221-9579>
+*   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
+*   Maxim Mikheev <mikhmv@biodatomics.com>
+*   Michael Miller <mdmiller53@comcast.net>
+*   Tazro Ohta, DBCLS; <http://orcid.org/0000-0003-3777-5945>
+*   Tim Pierce <twp@unchi.org>
+*   Josh Randall; <https://orcid.org/0000-0003-1540-203X>
+*   Mark Robinson; <https://orcid.org/0000-0002-8184-7507>
+*   Janko Simonović <janko.simonovic@sbgenomics.com>
+*   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
+*   Luka Stojanovic <luka.stojanovic@sbgenomics.com>
+*   Tomoya Tanjo, [NIG](https://www.nig.ac.jp/nig/); [https://orcid.org/0000-0002-4421-9659](https://orcid.org/0000-0002-4421-9659)
+*   Nebojša Tijanić <nebojsa.tijanic@sbgenomics.com>
+*   Hiromu Ochiai; [@otiai10](https://github.com/otiai10) <https://orcid.org/0000-0001-6636-856X>
 
