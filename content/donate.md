@@ -32,5 +32,6 @@ note that donors wishing to send a wire contact
 {:.cwl-red}
 ## Donations by PayPal
 
+Donations can also be made via PayPal in USD. 
+
 {% include paypal-button.html %}
-Donations can also be made via [PayPal in USD](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z55VS5LBBSZTJ)
