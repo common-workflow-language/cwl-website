@@ -30,5 +30,4 @@ Specifically, we support the
 
 <h2 class="cwl-red" id="timeline">Timeline</h2>
 
-{% include timeline.html %}
 
