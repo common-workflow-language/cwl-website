@@ -39,6 +39,8 @@ header:
     url: /specification
   - title: Users Gallery
     url: /gallery
+  - title: Donate
+    url: /donate
 
 users_gallery_left:
   - nav_header: Shortcuts
