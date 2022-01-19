@@ -28,6 +28,5 @@ Specifically, we support the
 *    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
 
-<h2 class="cwl-red" id="timeline">Timeline</h2>
 
 
