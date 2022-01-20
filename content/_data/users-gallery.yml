@@ -129,7 +129,7 @@ gallery:
         link_text: European Open Science Cloud - Life (EOSC-Life)
         url: https://www.eosc-life.eu/
         image: /assets/img/eosclifelogo.png 
-        description: EOSC-Life brings together the 13 Life Science ‘ESFRI’ research infrastructures (LS RIs) to create an open, digital and collaborative space for biological and medical research. The EOSC-Life Workflow Hub is a workflow registry designed around FAIR principles. Beta-released in Sept 2020, the Hub now holds nearly 100 workflows, including 36 curated COVID-19 workflows. It is a listed resource of the European. Use of the Common Workflow Language is encouraged, providing a canonical description of the workflow itself.
+        description: EOSC-Life brings together the 13 Life Science ‘ESFRI’ research infrastructures (LS RIs) to create an open, digital and collaborative space for biological and medical research. The EOSC-Life Workflow Hub is a workflow registry designed around FAIR principles. Beta-released in Sept 2020, the Hub now holds nearly 100 workflows, including 36 curated COVID-19 workflows.  Use of the Common Workflow Language is encouraged in the Workflow Hub since CWL provides a canonical description of the workflow.
         other: <a href='https://about.workflowhub.eu/About-WorkflowHub'>https://about.workflowhub.eu/About-WorkflowHub</a>
       - name: BioExcel, Centre of Excellence for Computational Biomolecular Research
         link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
