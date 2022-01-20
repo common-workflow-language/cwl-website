@@ -81,6 +81,7 @@ gallery:
         link_text: BioCompute Object / IEEE Std 2791-2020
         url: https://www.biocomputeobject.org/
         image: /assets/img/biocompute.png
+        description: FDA approved the IEEE Std 2791-2020 (also known as the "BioCompute Object" standard) for use in regulatory submissions. IEEE 2781-2020 recommends that "[i]f execution portability is desired, then the included script should be in the Common Workflow Language v1.0 (https://w3id.org/cwl/v1.0/) or later format.”
         other:
           <a href="https://standards.ieee.org/standard/2791-2020.html">https://standards.ieee.org/standard/2791-2020.html</a><br>
           <a href="https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf">https://www.govinfo.gov/content/pkg/FR-2020-07-22/pdf/2020-15907.pdf</a>
