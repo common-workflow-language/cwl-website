@@ -158,7 +158,7 @@ gallery:
         url: https://m-unlock.nl/ 
         image: /assets/img/logo_unlock_tagline_color.png
       - name: PubSeq
-        description: A public data and workflow initiative targeting COVID19 (initially). PubSeq uses RDF/SPARQL, CWL and Arvados extensively.
+        description: PubSeq is a public data and workflow initiative targeting COVID19 (initially). COVID-19 PubSeq is a free and open online bioinformatics public sequence resource with federated data using unique identifiers and with unique metadata, such as disambiguated Geo localisation. PubSeq comes with on-the-fly analysis of sequenced SARS-CoV-2 samples that allows for a quick turnaround in identification of new virus strains. PubSeq allows anyone to upload sequence material in the form of FASTA or FASTQ files with accompanying metadata through a web interface or REST API. COVID-19 PubSeq used CWL workflows running on Arvados.
         link_text: 'COVID-19 PubSeq: Public SARS-CoV-2 Sequence Resource'
         url: http://covid19.genenetwork.org/
         image: /assets/img/pubseq-aln.png
