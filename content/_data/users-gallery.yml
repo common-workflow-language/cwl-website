@@ -53,7 +53,7 @@ gallery:
       - name: The [Netherlands] National Plan Open Science
         link_text: National Plan Open Science - Feb. 2019
         url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
-        description: "For all educational institutions and research domains, open access publishing and optimal reuse of research data will be the norm in 2020. The motto here is: open if possible, closed if it must. The switch to open science requires ambition, investment in people and resources, and being alert to any risks...The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance."
+        description: The National Platform Open Science was established to join and coordinate efforts towards open science and promote its importance.
         image: /assets/img/logo_openscience.svg 
       - name: University of Manchester, eScience Lab
         link_text: eScience Lab - Common Workflow Language
