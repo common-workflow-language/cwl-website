@@ -41,4 +41,6 @@ arguments:
  - .*identifiers.org.*
  - --ignore-url
  - .*arxiv.org.*
+ - --ignore-url
+ - .*github.com.*
 stdout: linkchecker-report.txt
