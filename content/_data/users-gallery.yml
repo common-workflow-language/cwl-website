@@ -124,6 +124,7 @@ gallery:
         link_text: CAVATICA
         url: https://d3b.center/our-research/cavatica/
         image: /assets/img/Cavatica-Blue-Text-01-1-768x164.png
+        description: CAVATICA is a cloud-based platform for collaboratively accessing, sharing, and analyzing pediatric cancer data.  Cavatica is an open-access, cloud-based, biomedical data-analysis platform created as part of the White House’s launch of the Precision Medicine Initiative. Cavatica enables researchers to analyze data through portable, shareable, and reproducible CWL workflows to discover the shared mutations or characteristics across many different diseases. Cavactica was created by the Center for Data-Driven Discovery in Biomedicine in collobration with Seven Bridges and interoperates with the Cancer Genomics Cloud. Cavatica was awarded Best-in-Show at the 2017 Bio-IT World Conference and was a highlighted partner of the Biden Cancer Moonshot. 
       - name: European Open Science Cloud - Life (EOSC-Life)
         link_text: European Open Science Cloud - Life (EOSC-Life)
         url: https://www.eosc-life.eu/
