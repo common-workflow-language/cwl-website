@@ -97,9 +97,10 @@ The EOSCpilot project has been funded to support the first phase in the developm
           link_text: NCI Cancer Genomics Cloud 
           url: https://www.cancergenomicscloud.org/
           image: /assets/img/cgc.jpg
-          description:  Within the 15 months since the launch of the NCI Cancer Genomics Cloud, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation.  Powered by Seven Bridges Genomics, all production pipelines are written in the Common Workflow Language. 
+          description:  The Seven Bridges Cancer Genomics Cloud (CGC) by the US National Cancer Institute (NCI) enables researchers to rapidly access and collaborate on massive public cancer genomic datasets, including The Cancer Genome Atlas.  Within the first 15 months, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. All tools on CGC packaged within Docker containers with execution instructions described using Common Workflow Language.  . 
         - name: NIH BioData Catalyst
-          link_text: NHLBI BioData catalyst
+          link_text: NHLBI BioData Catalyst
+          description: The BioData Catalyst powered by Seven Bridges offers researchers collaborative workspaces for analyzing genomics data at scale. Researchers can find and analyze the hosted TOPMed studies by using hundreds of optimized analysis tools and workflows (pipelines); creating their own workflows; or interactive analysis. 
           url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
         - name: Gabriella Miller Kids First Data Resource Center
           link_text: Gabriella Miller Kids First Data Resource Center
