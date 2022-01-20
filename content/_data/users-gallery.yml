@@ -59,18 +59,21 @@ gallery:
         link_text: eScience Lab - Common Workflow Language
         url: https://esciencelab.org.uk/activities/cwl/
         image: /assets/img/escienceLab-logo.png
-        description: null
+        description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows. 
   - section:
     title: Radio Astronomy
     adopters:
       - name: The European Open Science Cloud for Research Pilot Project
         m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
         image: /assets/img/eosc-pilot.png
+        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. 
+The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development. 
   - section:
     title: Hydrology
     adopters:
-      - name: The European Open Science Cloud
-        description: null
+      - name: The European Open Science Cloud for Research Pilot Project
+        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. 
+The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.  
         m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
         image: /assets/img/EOSC.png
   - section:
