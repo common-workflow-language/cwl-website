@@ -87,7 +87,7 @@ gallery:
     subsection:
       adopters:
         - sub_title: US National Institutes of Health (NIH)
-          description: null
+          description: RAPT is a NCBI pipeline designed for assembling and annotating short genomic sequencing reads obtained from bacterial or archaeal isolates. RAPT is written using docker for maximal portability. A RAPT Docker container includes SKESA, a high-accuracy assembler for short reads, PGAP, the annotation pipeline written in the common workflow language (CWL) and used by RefSeq, and cwltool, the reference implementation for CWL.
         - name: RAPT
           link_text: "NCBI Insights : Read assembly and Annotation Pipeline Tool (RAPT) is available for use and testing"
           url: https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rapt-is-available-for-use-and-testing/
@@ -100,6 +100,10 @@ gallery:
           link_text: NHLBI BioData Catalyst
           description: The BioData Catalyst powered by Seven Bridges offers researchers collaborative workspaces for analyzing genomics data at scale. Researchers can find and analyze the hosted TOPMed studies by using hundreds of optimized analysis tools and workflows (pipelines); creating their own workflows; or interactive analysis. 
           url: https://biodatacatalyst.nhlbi.nih.gov/platforms/seven-bridges
+        - name: NCI Genomic Data Commons
+          link_test: GDC Data Portal and Legacy Archive 
+          description: The National Cancer Institute’s (NCI’s) Genomic Data Commons (GDC) is to provide the cancer research community with a data repository of uniformly processed genomic and associated clinical data that enables data sharing and collaborative analysis in the support of precision medicine. All major GDC data production pipelines are written in the Common Workflow Language. 
+          url: https://gdc.cancer.gov/ 
         - name: Gabriella Miller Kids First Data Resource Center
           link_text: Gabriella Miller Kids First Data Resource Center
           url: https://kidsfirstdrc.org/
