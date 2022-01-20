@@ -136,6 +136,7 @@ gallery:
         link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
         url: https://bioexcel.eu/common-workflow-language
         image: /assets/img/Bioexcel_logo_no_subheading_660px.png
+        description: The BioExcel Center of Excellence supports academia and industry with the usage of advanced techniques for high-end computing. 
       - name: ELIXIR
         link_text: Interoperability Platform
         url: https://elixir-europe.org/platforms/interoperability
