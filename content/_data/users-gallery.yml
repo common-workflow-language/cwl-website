@@ -136,12 +136,12 @@ gallery:
         link_text: BioExcel, Centre of Excellence for Computational Biomolecular Research
         url: https://bioexcel.eu/common-workflow-language
         image: /assets/img/Bioexcel_logo_no_subheading_660px.png
-        description: The BioExcel Center of Excellence supports academia and industry with the usage of advanced techniques for high-end computing. 
+        description: The BioExcel Center of Excellence supports academia and industry with the usage of advanced techniques for high-end computing. The CWL Viewer was created as a third-year project at The University of Manager and further developed as part of the BioExcel project. The CWL Viewer is available to visualize any CWL workflow definitions, show their annotations and composition. 
       - name: ELIXIR
         link_text: Interoperability Platform
         url: https://elixir-europe.org/platforms/interoperability
         image: /assets/img/elixir.png
-        description: ELIXIR coordinates and develops life science resources across Europe so that researchers can more easily find, analyse and share data, exchange expertise, and implement best practices. This makes it possible for them to gain greater insights into how living organisms work.
+        description: ELIXIR coordinates and develops life science resources across Europe so that researchers can more easily find, analyse and share data, exchange expertise, and implement best practices. This makes it possible for them to gain greater insights into how living organisms work. ELIXIR's activities are divided into five areas called 'Platforms'. These are Data, Tools, Compute, Interoperability, and Training. The Interoperability Platform focuses on develops and encourages the adoption of standards to describe life science data. One of the tasks of this plafrom is to develop a FAIR service infrastructure that incorporates tools that are fit-for-purpose. CWL is included is supported in this infrastructure to allow for workflow interoperability.  
         other: >
           <ul>
           <li><a href='https://elixir-europe.org/communities/marine-metagenomics'>Marine Metagenomics Community</a><br></li>
