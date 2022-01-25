@@ -78,13 +78,6 @@
   .navbar-brand {
     height: $nav--brand-height-desktop;
     padding: 0;
-    top: 6px;
-  }
-}
-
-// Why is this here????
-@media (min-width: 1170px) {
-  .navbar-brand {
     top: 9px;
   }
 }
