@@ -9,6 +9,8 @@ class: page-short
 
 CWL is developed by a multi-vendor working group consisting of organizations and individuals aiming to enable scientists to share data analysis workflows. The CWL project is maintained on Github and we follow the Open-Stand.org principles for collaborative open standards development. Legally CWL is a member project of Software Freedom Conservancy and is formally managed by the elected CWL leadership team, however every-day project decisions are made by the CWL community which is open for participation by anyone.
 
+{% include gitter.html %}
+
 {:.cwl-red}
 ## Resources
 If you’re interested in joining the CWL community, we recommend checking out the following resources and forums:
