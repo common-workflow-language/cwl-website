@@ -28,7 +28,14 @@
 
 @include media-breakpoint-up(xl) {
   .top-nav {
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .top-nav {
     height: $nav-height-desktop;
+    padding: 0.5rem 0;
   }
 }
 
@@ -40,6 +47,26 @@
   width: auto;
 }
 
+@include media-breakpoint-up(lg) {
+  .nav-wrap {
+    border: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-wrap {
+    // justify-content: space-between;
+    // margin: 0;
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-wrap {
+    width: auto;
+  }
+}
+
 .navbar-brand {
   box-sizing: content-box;
   left: 0;
@@ -49,14 +76,33 @@
 
 @include media-breakpoint-up(lg) {
   .navbar-brand {
-    position: absolute;
+    height: $nav--brand-height-desktop;
+    padding: 0;
     top: 6px;
   }
 }
 
+// Why is this here????
 @media (min-width: 1170px) {
   .navbar-brand {
+    top: 9px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-brand {
+    margin: 0 10px 0 0;
+    position: static;
+    width: 126px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .navbar-brand {
+    margin: 0 1rem 0 0;
+    position: absolute;
     top: 0;
+    width: auto;
   }
 }
 
@@ -66,18 +112,25 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .nav-wrap {
-    border: 0;
-  }
-
-  .navbar-brand {
-    height: $nav--brand-height-desktop;
-    padding: 0;
-  }
-
   .nav-logo {
     height: $nav--logo-height-desktop;
     margin: $nav--logo-margin-desktop;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-logo {
+    left: 6px;
+    margin: 0;
+    position: relative;
+    top: 3px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-logo {
+    margin: 3px 0 3px 6px;
+    position: static;
   }
 }
 
@@ -96,17 +149,52 @@
   }
 }
 
+@include media-breakpoint-up(xl) {
+  .navbar-collapse {
+    margin: 0 auto 0 0;
+    min-width: calc(100% - 121px);
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  // Not strictly necessary, since
+  // styles from before still work...
+  // maybe just delete this reset??
+  .navbar-collapse {
+    margin: 0;
+    min-width: initial;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .navbar-nav {
     align-items: center;
     margin: 0 1rem 0 0;
+    // max-width: calc(100vw - 160px);
     max-width: calc(100vw - 130px);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-nav {
+    // margin: 0 1rem;
+    max-width: calc(100vw - 130px);
+
+    &.ms-auto {
+      justify-self: flex-end;
+      margin: 0 0 0 auto !important;
+    }
   }
 }
 
 @include media-breakpoint-up(xl-13) {
   .navbar-nav {
     margin: 0 2rem 0 1rem;
+
+    &.ms-auto {
+      justify-self: initial;
+      margin-left: auto !important;
+    }
   }
 
   // Account for lack of scrollbar on short pages
@@ -152,16 +240,19 @@
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .navbar-nav {
-    max-width: calc(100vw - 160px);
+@include media-breakpoint-up(xl) {
+  .top-nav .navbar-nav {
+    .nav-link {
+      padding: 0 0.45rem;
+    }
   }
 }
 
-@include media-breakpoint-up(xl) {
-  .navbar-nav {
-    margin: 0 1rem;
-    max-width: calc(100vw - 130px);
+@include media-breakpoint-up(xl-13) {
+  .top-nav .navbar-nav {
+    .nav-link {
+      padding: 0.5rem;
+    }
   }
 }
 
@@ -270,6 +361,19 @@
 @include media-breakpoint-up(lg-2) {
   .nav-social-icons {
     padding: 0 0.5rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-social-icons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-social-icons {
+    display: list-item;
   }
 }
 
