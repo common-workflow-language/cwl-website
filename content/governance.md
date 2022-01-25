@@ -2,6 +2,7 @@
 layout: page
 permalink: /governance/
 title: Governance 
+class: page-short
 ---
 
 {:.cwl-red}
