@@ -272,31 +272,6 @@
   }
 }
 
-// Fix for menu items inaccessible on landscape mode
-@media (max-height: 525px) and (max-width: 992px) {
-  .navbar-nav {
-    background-color: $nav--bg-color;
-    // fits exactly 10 menu items in 2 cols, starting at 206px
-    // Once it's above 238px, it overflows on Nexus 5 (640x360 in dev tools)
-    margin-left: 0 !important;
-    max-height: 238px;
-    width: 260px;
-  }
-}
-
-.nav--paypal-btn {
-  .paypal-btn {
-    background: transparent;
-    border: 0;
-    color: $nav-link--color;
-    padding: 0;
-
-    &:hover {
-      color: $nav-link--hover-color;
-    }
-  }
-}
-
 @include media-breakpoint-up(lg) {
   .nav--paypal-btn {
     // padding: 0.25rem 1.25rem 0.25rem 0.75rem;
@@ -404,6 +379,43 @@
     color: $youtube-red;
   }
 }
+
+// Fix for menu items inaccessible on landscape mode
+@media (max-height: 525px) and (max-width: 992px) {
+  .navbar {
+    display: block;
+  }
+
+  .navbar-nav {
+    background-color: $nav--bg-color;
+    max-height: 80vh;
+    width: 100%;
+  }
+
+  .nav-social-icons {
+    a {
+      display: block;
+    }
+
+    .fab {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.nav--paypal-btn {
+  .paypal-btn {
+    background: transparent;
+    border: 0;
+    color: $nav-link--color;
+    padding: 0;
+
+    &:hover {
+      color: $nav-link--hover-color;
+    }
+  }
+}
+
 
 .skip-nav {
   margin: 0;
