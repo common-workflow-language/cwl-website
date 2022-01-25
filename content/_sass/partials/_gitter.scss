@@ -1,7 +1,8 @@
 .gitter-container {
   border: 2px inset $gitter-grey;
   border-radius: 5px;
-  height: 100vh;
+  // height: 100vh;
+  height: 85vh;
   margin: 0 0 1rem;
   overflow: hidden;
   width: 96%;
@@ -11,9 +12,19 @@
   height: 100%;
 
   iframe {
-    height: 93.5%;
+    // height: 90%;
+    height: 100%;
     max-width: 100%;
+    padding: 0 0 3.75rem;
     width: 100%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .gitter-chat {
+    iframe {
+      padding: 0 0 3rem;
+    }
   }
 }
 
