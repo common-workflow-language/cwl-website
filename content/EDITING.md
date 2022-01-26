@@ -5,13 +5,14 @@ Instructions for editing specific pages and site components.
 <!-- MarkdownTOC -->
 
 * [Nav Menus](#nav-menus)
-  * [Left Nav @mixin](#left-nav-mixin)
   * [Editing the Nav Menus](#editing-the-nav-menus)
+  * [Left Nav Menus](#left-nav-menus)
+* [Short Pages](#short-pages)
 * [Homepage](#homepage)
   * [Features Boxes](#features-boxes)
-* [About page](#about-page)
-* [Getting Started](#getting-started)
-* [Users Gallery \(formerly CWL Adopters\)](#users-gallery-formerly-cwl-adopters)
+* [Code of Conduct Syncing](#code-of-conduct-syncing)
+* [Timeline page](#timeline-page)
+* [Users Gallery](#users-gallery)
   * [Left Nav Menu](#left-nav-menu)
   * [users-gallery.yml](#users-galleryyml)
 * [Foreign Languages](#foreign-languages)
@@ -19,7 +20,9 @@ Instructions for editing specific pages and site components.
 * [Developer Notes](#developer-notes)
   * [Bootstrap](#bootstrap)
     * [Media Query Grid Breakpoints](#media-query-grid-breakpoints)
-  * [Hypothesi.is Annotation Config](#hypothesiis-annotation-config)
+  * [Code of Conduct Regeneration](#code-of-conduct-regeneration)
+  * [Gitter Feed \(Sidecar\)](#gitter-feed-sidecar)
+  * [Hypothes.is Annotation Config](#hypothesis-annotation-config)
   * [jQuery](#jquery)
   * [Video Player](#video-player)
     * [Initializing the Video Player](#initializing-the-video-player)
@@ -33,40 +36,10 @@ Instructions for editing specific pages and site components.
 There are two nav templates currently available: 
 
 * `_includes/top_nav.html` - the main site nav. Relies on data in `_data/navigation.yml`
-* `_includes/left_nav.html` - left nav on an individual page. Relies on data in a page-specific file (e.g. `gallery.html` uses `_data/users-gallery.yml`)
+* `_includes/left_nav.html` - left nav on an individual page. 
+  * Relies on data from a page-specific file (e.g. `gallery.html` uses `_data/users-gallery.yml`), or defaults to `_data/navigation.yml`
 
 Styles are found in `_sass/partials/_nav.scss` and `_sass/partials/_left-nav.scss`. 
-
-<a id="left-nav-mixin"></a>
-### Left Nav @mixin
-
-The Left Nav styles can be included on any page via a Sass `@mixin`, which should be wrapped within the page-specific class. The responsive styles should be included within their respective breakpoints.
-
-Example:
-
-```scss
-// Default styles for mobile and up
-.page-gallery {
-  // ... code here
-
-  @include left-nav;
-}
-
-// min-width: 992px
-@include media-breakpoint-up(lg) {
-  // ... code here
-  
-  @include left-nav-lg;
-}
-
-// min-width: 1400px
-@include media-breakpoint-up(xxl) {
-  // ... code here
-  
-  @include left-nav-xxl;
-}
-
-```
 
 <a id="editing-the-nav-menus"></a>
 ### Editing the Nav Menus
@@ -76,6 +49,8 @@ Example:
 Simply edit the data in `_data/navigation.yml`
 
 **Left Nav:**
+
+The Left Nav data may be found in either `_data/navigation.yml` or a page-specific file (e.g. `_data/users-gallery.yml`).
 
 The Left Nav should always have `nav_header` as the first item. This is the title displayed at the top of the nav menu:
 
@@ -91,6 +66,61 @@ left_nav:
         url: "#"
 ```
 
+<a id="left-nav-menus"></a>
+### Left Nav Menus
+
+To add a left nav menu to a page, use `{% include left_nav.html %}`, and add `class: has-left-nav` to the page's front matter. By default, the left nav template will look for the menu data in `_data/navigation.yml`, based on the page's `left_nav_slug` value. You can use a page-specific file instead, by passing a `nav_data` variable to the include, e.g. `{% include left_nav.html nav_data=path_to_nav_data_here %}`.
+
+Example using `left_nav_slug`:
+
+```html
+---
+layout: page
+permalink: /link-name/
+title: Some Page
+left_nav_slug: users_gallery_left
+class: some-page has-left-nav
+---
+
+<!-- The include below will automatically set the menu to site.data.navigation[users_gallery_left] -->
+{% include left_nav.html %}
+```
+
+Note: it's important to specify a page-specific class, before `has-left-nav`. Otherwise, the page will generate `<body class="body-has-left-nav">` instead of `<body class="body-has-left-nav">`, and the proper styles won't be applied.
+
+Example using page-specific file:
+
+```html
+---
+layout: page
+permalink: /gallery/
+title: CWL Users Gallery
+class: users-gallery has-left-nav
+---
+
+<!-- The include below will get the data from _data/users-gallery.html -->
+<!-- Note: the current users-gallery.html doesn't use a page-specifc nav file. It's just an example -->
+{% assign nav_data = site.data.users-gallery.left_nav %}
+{% include left_nav.html nav_data=nav_data %}
+```
+
+<a id="short-pages"></a>
+## Short Pages
+
+Any page with minimal content should add `class: page-short` to the front matter, so that the footer stays at the bottom of the screen. If adding a page-specific class, keep `page-short` at the beginning, e.g. `class: page-short body-page-class`, or write it as `class: page-class body-page-short`.
+
+Example:
+
+```yaml
+---
+layout: page
+permalink: /donate/
+title: Donate
+class: page-short body-donate
+# can also be class: donate body-page-short
+---
+```
+
 <a id="homepage"></a>
 ## Homepage
 
@@ -99,10 +129,8 @@ left_nav:
 * `index.md` - main file that imports the other files
 * `_includes/home/intro.html` - contains the intro paragraph and imports the video player
 * `_includes/home/features.html` - template for the "Features" boxes section. Relies on `_data/home.yml`
-* `_includes/home/community.html` - the bottom community section. Imports `_includes/social_stats.html` for the gitter bar.
+* `_includes/home/users-mini-gallery.html` - the bottom gallery of logos. Relies on data in `_data/users-gallery.html`
 * `_includes/home/video-player.html` - template code for the video player ([Plyr](https://plyr.io/)). See [Video Player](#video-player) section for more info. 
-* `_includes/social_stats.html` - code for the gitter bar. Imports `_includes/paypal-button.html`
-
 
 <a id="features-boxes"></a>
 ### Features Boxes
@@ -119,15 +147,26 @@ features:
 
 Image files must be located in `assets/img/` (e.g. `assets/img/noun_Interoperability_181229.svg`).
 
-<a id="about-page"></a>
-## About page
+<a id="code-of-conduct-syncing"></a>
+## Code of Conduct Syncing
+
+Relevant files:
+
+* `code-of-conduct.md` - Code of Conduct page
+* `_plugins/coc-generator.rb` - Regenerates Code of Conduct
+* [CWL Repo - Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md)
+
+The Code of Conduct page is setup to automatically pull the content of the [CWL Repo's Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md). After the CWL repo file has been updated, run `bundle exec jekyll serve` to automatically rebuild `code-of-conduct.md`. Then commit and push the updated Code of Conduct.
+
+<a id="timeline-page"></a>
+## Timeline page
 
 **Relevant files:**
 
-* `about.md` - main code for the page. Imports `_includes/timeline.html`
-* `_includes/timeline.html` - template file for the timeline. relies on `_data/timeline.yml` and `_sass/partials/timeline.scss`
-* `_data/timeline.yml` - contains the events listed in the timeline
-* `_sass/partials/timeline.scss` - contains the styles for the timeline.
+* `timeline.md` - main file for the page. Imports `_includes/timeline.html`
+* `_includes/timeline.html` - timeline template file. Relies on `_data/timeline.yml` and `_sass/partials/timeline.scss`
+* `_data/timeline.yml` - data for the timeline events
+* `_sass/partials/timeline.scss` - timeline styles
 
 To edit the events displayed, use `_data/timeline.yml`. The general structure is:
 
@@ -140,33 +179,25 @@ timeline_events:
       Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
 ```
 
-<a id="getting-started"></a>
-## Getting Started
-
-Relevant files:
-
-* `getting-started.html` - main code for page. imports `_includes/social_stats`
-* `_includes/social_stats.html` - the gitter bar (also imported on Homepage)
-
-<a id="users-gallery-formerly-cwl-adopters"></a>
-## Users Gallery (formerly CWL Adopters)
+<a id="users-gallery"></a>
+## Users Gallery
 
 **Relevant Files:**
 
-* `gallery.html` - the page itself. Relies on all the following files:
-* `_includes/users-gallery.html` - Generates the list of Users/Adopters. Relies on `_data/users-gallery.yml`
+* `gallery.html` - the gallery page. Relies on all the following files:
+* `_includes/users-gallery.html` - Generates the list of Users/Adopters. Relies on `_data/navigation.yml`
 * `_data/users-gallery.yml` - Contains the data for the Left Nav, and the Users Gallery list
 * `_includes/left_nav.html` - The code for the left nav menu. Relies on `_data/users-gallery.yml`
 
 <a id="left-nav-menu"></a>
 ### Left Nav Menu
 
-See [Nav Menus](#nav-menus) section above.
+The User's Gallery generates the left nav from the `users_gallery_left` section in `_data/navigation.yml`. See [Editing the Nav Menus](#editing-the-nav-menus) and [Nav Menus - Left Nav Menus](#left-nav-menus) sections above for general details about left nav menus.
 
 <a id="users-galleryyml"></a>
 ### users-gallery.yml
 
-Contains the data for the left nav data, and the gallery section. The gallery data should follow this format:
+Contains the gallery section data. The gallery data should follow this format:
 
 ```yaml
 gallery:
@@ -240,7 +271,7 @@ Text in foreign language should be entered in HTML and include the `lang` and `h
 linked content is in Japanese -->
 <a href="https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP" lang="ja" hreflang="ja">
 
-<!-- Russin link doesn't have hreflang, since the linked 
+<!-- Russian link doesn't have hreflang, since the linked 
 website auto-translates the content, based on the user's
 region -->
 <a href="https://stepik.org/course/1612/syllabus" lang="ru">
@@ -251,7 +282,7 @@ in Russian as part of the <a href="https://stepik.org/course/1612/syllabus" lang
 > (Computation Management) free online course.
 ```
 
-Currently the site has some Japanese & Russian links. The corresponding codes are 
+Currently the site has some Japanese & Russian links. The corresponding codes are `ja` and `ru`.
 
 <a id="tables"></a>
 ## Tables
@@ -365,8 +396,39 @@ Generally styles for a single element or component are grouped together, rather 
 }
 ```
 
-<a id="hypothesiis-annotation-config"></a>
-### Hypothesi.is Annotation Config
+<a id="code-of-conduct-regeneration"></a>
+### Code of Conduct Regeneration
+
+`code-of-conduct.md` is automatically synced with <https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md> via `_plugins/coc-generator.rb`. After the remote file's been updated, run `bundle exec jekyll serve` locally, and push the changes.
+
+<a id="gitter-feed-sidecar"></a>
+### Gitter Feed (Sidecar)
+
+The basic code for the Gitter feed is as follows:
+
+```html
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'common-workflow-language/common-workflow-language',
+    activationElement: 'js-gitter-toggle-chat-button',
+    targetElement: '.gitter-chat',
+    showChatByDefault: true,
+    preload: true,
+  };
+</script>
+```
+
+The following options can be set:
+
+* `options.room`: string - This is the Gitter room that sidecar will load (`common-workflow-language/common-workflow-language`)
+* `options.targetElement`: Where you want to embed the chat.
+* `options.activationElement`: When `options.showChatByDefault` is `false`, this is the element you have to click/interact with to get the chat to actually embed, "Open Chat" button.
+* `options.showChatByDefault`: Whether to embed the chat on page load(true) or wait until the `options.activation` is resolved/clicked/interacted with(false).
+* `options.useStyles`: This will embed CSS into your document to style the activation and target element. If you want to customise these, set this option to `false` and specify your own CSS.
+* `options` (getter): Get a readable copy of the options used for this chat instance
+
+<a id="hypothesis-annotation-config"></a>
+### Hypothes.is Annotation Config
 
 The following config options are available for hypothes.is (see [https://h.readthedocs.io/projects/client/en/latest/publishers/config/](https://h.readthedocs.io/projects/client/en/latest/publishers/config/) for more detail):
 

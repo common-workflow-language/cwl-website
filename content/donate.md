@@ -4,7 +4,8 @@ permalink: /donate/
 title: Donate
 class: page-short
 ---
-CWL is a member project of Software Freedom Conservancy and is required to adhere to Conservancy's [corporate policies](https://sfconservancy.org/projects/policies/), as applicable. There are several ways to donate to help support the work of the CWL Project.  
+
+CWL is a member project of Software Freedom Conservancy and is required to adhere to Conservancy's [corporate policies](https://sfconservancy.org/projects/policies/), as applicable. There are several ways to donate to help support the work of the CWL Project.
 
 {:.cwl-red}
 ## Donations by check

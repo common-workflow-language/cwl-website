@@ -62,8 +62,6 @@
 
 @include media-breakpoint-up(xl) {
   .nav-wrap {
-    // justify-content: space-between;
-    // margin: 0;
     width: 100%;
   }
 }
@@ -157,9 +155,6 @@
 }
 
 @include media-breakpoint-up(xl-13) {
-  // Not strictly necessary, since
-  // styles from before still work...
-  // maybe just delete this reset??
   .navbar-collapse {
     margin: 0;
     min-width: initial;
@@ -170,14 +165,12 @@
   .navbar-nav {
     align-items: center;
     margin: 0 1rem 0 0;
-    // max-width: calc(100vw - 160px);
     max-width: calc(100vw - 130px);
   }
 }
 
 @include media-breakpoint-up(xl) {
   .navbar-nav {
-    // margin: 0 1rem;
     max-width: calc(100vw - 130px);
 
     &.ms-auto {
@@ -197,7 +190,6 @@
     }
   }
 
-  // Account for lack of scrollbar on short pages
   .page-short .navbar-nav {
     margin: 0 2rem 0 1rem;
   }
@@ -274,7 +266,6 @@
 
 @include media-breakpoint-up(lg) {
   .nav--paypal-btn {
-    // padding: 0.25rem 1.25rem 0.25rem 0.75rem;
     padding: 0 0.5rem;
 
     .paypal-btn {
@@ -380,7 +371,6 @@
   }
 }
 
-// Fix for menu items inaccessible on landscape mode
 @media (max-height: 525px) and (max-width: 992px) {
   .navbar {
     display: block;

@@ -1,12 +1,11 @@
 {% comment %}
-Expects to receive yaml nav data via an assigned nav_data variable, 
-from the including page. The first item in the yaml array 
-should be: - nav_header: Nav Title
+Uses the yaml nav data, passed from the including, page via nav_data.
+If no nav_data was passed, then it pulls the data from _data/navigation.yml, using the page slug instead.
 {% endcomment %}
 
-{% if page.left_nav_slug %}
+{% unless nav_data %}
   {% assign nav_data = site.data.navigation[page.left_nav_slug] %}
-{% endif %}
+{% endunless %}
 
 {% assign nav_heading = nav_data[0].nav_header %}
 

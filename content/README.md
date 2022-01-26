@@ -32,25 +32,20 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="general"></a>
 ### General
 
-* Mini Gallery logo heights 
-* Make homepage feature boxes clickable? If so, where do they link to?
-* Site Logo Height issue between 1117-1169px
-* Update EDITING doc
-* Content check should be done to make sure tables on Implementations page and elsewhere are up to date
+* Mini Gallery:
+  * Logo heights
+  * Logic check to avoid repeated logos
+* Make homepage feature boxes clickable
+* Tables: Content check should be done to make sure tables on Implementations page and elsewhere are up to date
 * Reusability pg image caption
-  - Doesn't center properly, due to the image needed to be cropped, on the right side
+  - Doesn't center properly, due to the image needing to be cropped, on the right side
+  - Improve the look
+* Should `_includes/social_stats.html` be removed?
 
 <a id="code-refactoring"></a>
 ### Code Refactoring
 
-**Left Nav:**
-
-* Separate Left Nav code and styles from Gallery code and styles
-* Make Left Nav template dynamic, so it doesn't have to be manually updated, whenever new entries are added
-
-**Other**
-
-* File naming for Users Gallery vs Mini Users Gallery files
+* Refactor User's Gallery left nav to automatically parse from `_data/users-gallery.yml`, instead of having to manually update `_data/navigation.yml`?
 * Check units in SCSS files - px vs em
 
 <a id="plugins-review"></a>
