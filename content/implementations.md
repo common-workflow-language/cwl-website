@@ -15,7 +15,7 @@ Some workflow users require the maintenance and risk-mitigation
 guarantees offered by commercial operations. There are multiple
 commercially supported systems that support CWL for executing
 workflows and they are available from vendors such as Curii
-([Arvados](https://arvados.org/)), [DNAnexus](https://www.dnanexus.com/, [IBM (IBM® Spectrum LSF)](https://www.ibm.com/analytics/spectrum-computing), [Illumina
+([Arvados](https://arvados.org/)), [DNAnexus](https://www.dnanexus.com/), [IBM (IBM® Spectrum LSF)](https://www.ibm.com/analytics/spectrum-computing), [Illumina
 (Illumina Connected Analytics)](https://www.illumina.com/products/by-type/informatics-products/connected-analytics.html?scid=2021-269ECL4851), and [Seven Bridges Genomics](https://www.sevenbridges.com/).
 
 Wide adoption benefits from our principles: CWL offers 
