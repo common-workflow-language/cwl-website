@@ -17,7 +17,7 @@ The CWL project focus is on open standards, open-source code and an open communi
 
 <h2 class="cwl-red" id="vision">Vision of the CWL Project</h2>
 
-Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; and people re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem
+Researchers, scientists, and analysts share their batch data analysis workflows without technical barriers using an open standard. Sharing workflows this way is a usual occurrence and seen as a typical way of working. The workflows are complete and run on a variety of environments; people can re-use shared workflow descriptions and build new workflows from them. No vendor dominates the ecosystem.
 
 <h2 class="cwl-red" id="mission">Mission of the CWL Project</h2>
 
@@ -25,5 +25,5 @@ The CWL project supports open consensus-based standards for command line data an
 
 Specifically, we support the
 *    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
-*    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
+*    standardization process by stewarding the development and delivery of standards in accordance with the [OpenStand principles](https://open-stand.org/about-us/principles/)
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
