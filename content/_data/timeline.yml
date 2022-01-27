@@ -1,9 +1,9 @@
 timeline_events:
   - year: 2014
-    event: "Initial Draft created <span class='no-bold'>at Bioinformatics Open Source Conference CodeFest</span>"
+    event: "Initial Draft created <span class='no-bold'>at the [Bioinformatics Open Source Conference CodeFest](https://www.open-bio.org/wiki/Codefest_2014)</span>"
   - year: 2015
     event: "CWL “draft-2” version<br>
-      Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
+      Commercial vendor (Seven Bridges Genomics) releases product <span class='no-bold'>in December</span>"
   - year: 2016
     event: CWL v1.0 released 
   - year: 2017
@@ -16,4 +16,6 @@ timeline_events:
   - year: 2020
     event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
   - year: 2021
-    event: 2021-02-08 <a href="https://cwl.discourse.group/c/cwlcon-2021/9">CWL 2021 Conference</a> (Online)
+    event: February 8-10: <a href="https://cwl.discourse.group/c/cwlcon-2021/9">2021 CWL Conference</a> (Online)
+  - year: 2022
+    event: February 28 - March 4: <a href="https://cwl.discourse.group/c/cwlcon-2022/11">2022 CWL Conference</a> (Online)
