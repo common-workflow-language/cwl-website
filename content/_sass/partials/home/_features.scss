@@ -69,6 +69,10 @@
   @include hide-anchor-symbols;
 }
 
+.feature-title {
+  clear: both;
+}
+
 @include media-breakpoint-up(md) {
   .feature-title {
     font-size: 1.3rem;
@@ -86,18 +90,12 @@
 }
 
 // Attempt fix for reproducibility icon covering text @ 1366x768
-@include media-breakpoint-up(xl-13) {
-  .feature-title {
-    clear: both;
-  }
-
-  .feature-img {
-    clear: both;
-    height: 100px;
-    max-width: 100%;
-    object-fit: contain;
-    width: 100px;
-  }
+.feature-img {
+  clear: both;
+  height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  width: 100px;
 }
 
 // Temporary hack, until the actual icon file is resized
