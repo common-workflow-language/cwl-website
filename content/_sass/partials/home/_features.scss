@@ -66,18 +66,6 @@
   text-align: center;
   width: 100%;
 
-  .feature-img {
-    clear: both;
-    height: 100px;
-    margin: 0 0 2px;
-    width: 100px;
-  }
-
-  .open-stand-badge {
-    height: 128px;
-    width: 128px;
-  }
-
   @include hide-anchor-symbols;
 }
 
@@ -94,6 +82,21 @@
   .feature-title {
     font-size: 1.63rem;
     height: 4rem;
+  }
+}
+
+// Attempt fix for reproducibility icon covering text @ 1366x768
+@include media-breakpoint-up(xl-13) {
+  .feature-title {
+    clear: both;
+  }
+
+  .feature-img {
+    clear: both;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    width: 100px;
   }
 }
 
