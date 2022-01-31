@@ -1,33 +1,41 @@
 features:
   - title: OPEN AND FREE
+    box_url: /specification/
     text:  "[Free and open standard](/specification/)"
     icon: freeandopen.png
     icon-alt: Free and Open Icon - an open circular lock composed of a circle, keyhole and a open latch 
   - title: COMMUNITY FIRST
+    box_url: /community/
     text: "[Community](/community/) is a core principle of the CWL Project"  
     icon: noun_Community_943325.svg
     icon-alt: Community icon four people connected via a circle 
   - title: INTEROPERABILITY AND PORTABILITY
+    box_url: /implementations/
+    text: Portable and interoperable across a [variety of software and deployment environments](/implementations/)
     icon: noun_Interoperability_181229.svg
     icon-alt: Interoperability icon - a triangle composed of arrows, with a triangle, square, and circle as the 3 points
-    text: Portable and interoperable across a [variety of software and deployment environments](/implementations)
   - title: VENDOR NEUTRALITY
+    box_url: /community/#participating-organizations/
+    text: Developed by a multi-vendor working group of [organizations](/community/#participating-organizations/) and [individuals](/community/#individual-contributors/)
     icon: noun_Scale_380185.svg
     icon-alt: Vendor Neutrality icon - an evenly weighted mechanical scale
-    text: Developed by a multi-vendor working group of [organizations](/governance/#participating-organizations/) and [individuals](/governance/#individual-contributors/)
   - title: REUSABILITY AND REPRODUCIBILITY
+    box_url: /reusability/
+    text: Enables scientists to [reuse and reproduce](/reusability/) their data analysis workflows
     icon: noun_ecosystem_cycle_3389565.png
     icon-alt: Reusability icon - a Cog with a circular arrow, spinning counter-clockwise inside
-    text: Enables scientists to [reuse and reproduce](/reusability/) their data analysis workflows
   - title: PARALLELIZATION AND SCALE
+    box_url: /scale/
+    text: "[Scalable](/scale/) from workstations to cluster, cloud, and high performance computing (HPC) environments"
     icon: noun_Data_Model_1632661.svg
     icon-alt: Data icon - a singular data node, which then splits into 3 separate nodes
-    text: "[Scalable](/scale/) from workstations to cluster, cloud, and high performance computing (HPC) environments"
   - title: ECOSYSTEM SUPPORT
+    box_url: /ecosystem/
+    text: Supported by an [ecosystem](/ecosystem/) of tools, libraries, and editor plugins
     icon: noun_Company_ecosystem_1637685.svg
     icon-alt: Ecosystem icon - a collection of linked nodes within a circle (resembling a planet)
-    text: Supported by an [ecosystem](/ecosystem/) of tools, libraries, and editor plugins
   - title: TRANSPARENT GOVERNANCE
+    box_url: /governance/
+    text: Designed with an [open and transparent governance](/governance/)
     icon: noun_group_3144890.svg
     icon-alt: Transparent Governance icon - a crowd of 5 people stand together, as if at a town hall meeting
-    text: Designed with an [open and transparent governance](/governance/)
