@@ -41,6 +41,10 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
   - Doesn't center properly, due to the image needing to be cropped, on the right side
   - Improve the look
 * Should `_includes/social_stats.html` be removed?
+* Email Address obfuscation?
+  * https://alexwlchan.net/2019/06/a-jekyll-filter-for-obfuscating-email-addresses/
+  * https://github.com/avillafiorita/jekyll-datapage_genhttps://github.com/avillafiorita/jekyll-datapage_gen
+
 
 <a id="code-refactoring"></a>
 ### Code Refactoring

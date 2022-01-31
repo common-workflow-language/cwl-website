@@ -7,6 +7,7 @@ def scrape_page()
   uri = URI.parse(url)
   response = Net::HTTP.get_response(uri)
 
+  # return response.body.gsub(/\A(.*\n){4}/,'')
   return response.body
 end
 

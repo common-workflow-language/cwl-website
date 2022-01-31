@@ -56,6 +56,14 @@
   }
 }
 
+.feature-box-wrap-link {
+  &:hover,
+  &:active,
+  &:visited {
+    color: $cwl-red;
+  }
+}
+
 .feature-item {
   align-items: center;
   box-shadow: 0 6px 15px $box-shadow--color;
@@ -69,32 +77,23 @@
   @include hide-anchor-symbols;
 }
 
-.feature-title {
-  clear: both;
-}
-
 @include media-breakpoint-up(md) {
   .feature-title {
     font-size: 1.3rem;
-    height: 3rem;
+    min-height: 3rem;
     overflow-wrap: break-word;
-    word-break: normal;
   }
 }
 
 @include media-breakpoint-up(lg) {
   .feature-title {
     font-size: 1.63rem;
-    height: 4rem;
+    min-height: 4rem;
   }
 }
 
-// Attempt fix for reproducibility icon covering text @ 1366x768
 .feature-img {
-  clear: both;
   height: 100px;
-  max-width: 100%;
-  object-fit: contain;
   width: 100px;
 }
 
