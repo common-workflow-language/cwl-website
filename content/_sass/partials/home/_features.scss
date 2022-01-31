@@ -57,9 +57,12 @@
 }
 
 .feature-box-wrap-link {
-  &:hover,
-  &:active,
   &:visited {
+    color: $black;
+  }
+
+  &:hover,
+  &:active {
     color: $cwl-red;
   }
 }
