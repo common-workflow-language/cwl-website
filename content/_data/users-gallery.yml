@@ -11,6 +11,7 @@ gallery:
         link_text: eScience Lab - Common Workflow Language
         url: https://esciencelab.org.uk/activities/cwl/
         image: /assets/img/escienceLab-logo.png
+        image_id: manchester-escience-lab
         description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows.
   - section:
     title: Radio Astronomy
@@ -94,6 +95,7 @@ gallery:
         link_text: Interoperability Platform
         url: https://elixir-europe.org/platforms/interoperability
         image: /assets/img/elixir.png
+        image_id: elixir
         description: ELIXIR coordinates and develops life science resources across Europe so that researchers can more easily find, analyse and share data, exchange expertise, and implement best practices. This makes it possible for them to gain greater insights into how living organisms work. ELIXIR's activities are divided into five areas called 'Platforms'. These are Data, Tools, Compute, Interoperability, and Training. The Interoperability Platform focuses on developing and encouraging the adoption of standards. One of the tasks of this plafrom is to develop a FAIR service infrastructure that incorporates tools that are fit-for-purpose. CWL is supported in this infrastructure to allow for workflow interoperability.
         other: >
           <ul>
@@ -106,6 +108,7 @@ gallery:
         link_text: MSK-ACCESS team
         url: https://github.com/msk-access?q=&type=&language=common+workflow+language
         image: /assets/img/msk-access.png
+        image_id: msk-access
         description: Memorial Sloan Kettering Cancer Center has devoted more than 135 years to exceptional patient care, innovative research, and outstanding educational programs. It is one of 51 National Cancer Institute–designated Comprehensive Cancer Centers, with state-of-the-art science flourishing side by side with clinical studies and treatment. Genome scientists, bioinformaticians, and molecular pathologists at Memorial Sloan Kettering have developed MSK-Access. The MSK-ACCESS assay is a comprehensive liquid biopsy test that offers noninvasive cancer genomic profiling and disease monitoring. It is designed to detect genetic alterations in cfDNA (cell-free DNA) specimens, such as blood and other body fluids. CWL was used to create the MSK-ACCESS analysis workflows.
       - name: UNLOCK
         description: UNLOCK is an open infrastructure for exploring new horizons for research on microbial communities. It is composed of three complementary experimental platforms for high-throughput discovery and characterization of microbial communities and a FAIR-data platform for large scale data storage, data extraction and analysis of high-throughput data in a cloud-based infrastructure.
@@ -117,6 +120,7 @@ gallery:
         link_text: 'COVID-19 PubSeq: Public SARS-CoV-2 Sequence Resource'
         url: http://covid19.genenetwork.org/
         image: /assets/img/pubseq-aln.png
+        image_id: pubseq
   - section:
     title: Geospatial
     adopters:
