@@ -33,18 +33,10 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 ### General
 
 * Mini Gallery:
-  * Logo heights
-  * Logic check to avoid repeated logos
-* Make homepage feature boxes clickable
+  * Automate logic check to avoid repeated logos
+* Anchor links currently not scrolling to sections
 * Tables: Content check should be done to make sure tables on Implementations page and elsewhere are up to date
-* Reusability pg image caption
-  - Doesn't center properly, due to the image needing to be cropped, on the right side
-  - Improve the look
 * Should `_includes/social_stats.html` be removed?
-* Email Address obfuscation?
-  * https://alexwlchan.net/2019/06/a-jekyll-filter-for-obfuscating-email-addresses/
-  * https://github.com/avillafiorita/jekyll-datapage_genhttps://github.com/avillafiorita/jekyll-datapage_gen
-
 
 <a id="code-refactoring"></a>
 ### Code Refactoring

@@ -10,6 +10,7 @@ Instructions for editing specific pages and site components.
 * [Short Pages](#short-pages)
 * [Homepage](#homepage)
   * [Features Boxes](#features-boxes)
+  * [Mini Gallery](#mini-gallery)
 * [Code of Conduct Syncing](#code-of-conduct-syncing)
 * [Timeline page](#timeline-page)
 * [Users Gallery](#users-gallery)
@@ -147,6 +148,24 @@ features:
 
 Image files must be located in `assets/img/` (e.g. `assets/img/noun_Interoperability_181229.svg`).
 
+<a id="mini-gallery"></a>
+### Mini Gallery
+
+**Relevant Files:**
+
+* `_includes/home/mini-gallery.html` - Generates the mini gallery. Relies on data from `_data/users-gallery.yml`
+* `_sass/partials/home/_mini-gallery.scss` - Contains the data for the Left Nav, and the Users Gallery list
+* `_data/users-gallery.yml` - contains the data used by the mini gallery.
+
+For general info on `_data/users-gallery.yml`, see the [users-gallery.yml](#users-gallery.yml) section, under [Users Gallery](#users-gallery).
+
+**Duplicate Logos:**
+
+In order to prevent a duplicate logo from being displayed, add `duplicate_logo: true` to the logo's section in `_data/users-gallery.yml`
+
+**Logo Tweaking:**
+The mini-gallery data is in `_data/users-gallery.yml`. Some logos may need individual adjustment, for optimal display. This can be accomplished by adding an `image_id: name-here` property to the respective image. The image's styles can then be modified in `_sass/partials/home/_mini-gallery.scss`.
+
 <a id="code-of-conduct-syncing"></a>
 ## Code of Conduct Syncing
 
@@ -208,6 +227,7 @@ gallery:
         url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
         description: "description here"
         image: /assets/img/logo_openscience.svg
+        image_id: netherlands
       - name: University of Manchester, eScience Lab
         url: https://esciencelab.org.uk/activities/cwl/
         description: null

@@ -23,6 +23,11 @@ h2,
   margin: 0 0 1.25rem;
 }
 
+figcaption {
+  color: $grey-5;
+  font-style: italic;
+}
+
 .cwl-red {
   color: $cwl-red;
 }
