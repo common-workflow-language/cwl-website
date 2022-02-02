@@ -7,7 +7,7 @@ class: page-short
 
 <figure class="float-right"><a href="https://open-stand.org/about-us/principles" class="open-stand"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge - the modern paradigm for standards" width="128" height="128"></picture></a></figure>
 
-CWL is developed by a multi-vendor working group consisting of organizations and individuals aiming to enable scientists to share data analysis workflows. The CWL project is maintained on Github and we follow the Open-Stand.org principles for collaborative open standards development. Legally CWL is a member project of Software Freedom Conservancy and is formally managed by the elected CWL leadership team, however every-day project decisions are made by the CWL community which is open for participation by anyone.
+CWL is developed by a multi-vendor working group consisting of organizations and individuals aiming to enable scientists to share data analysis workflows. The CWL project is maintained on Github and we follow the [Open-Stand.org principles](https://open-stand.org/about-us/principles/) for collaborative open standards development. Legally CWL is a member project of [Software Freedom Conservancy](https://sfconservancy.org/) and is formally managed by the elected CWL leadership team, however everyday project decisions are made by the CWL community which is open for participation by anyone.
 
 {% include gitter.html %}
 

@@ -16,4 +16,6 @@ timeline_events:
   - year: 2020
     event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
   - year: 2021
-    event: 2021-02-08 <a href="https://cwl.discourse.group/c/cwlcon-2021/9">CWL 2021 Conference</a> (Online)
+    event: February 8-10: <a href="https://cwl.discourse.group/c/cwlcon-2021/9">CWL 2021 Conference</a> (Online)
+  - year: 2022
+    event: February 28 - March 4: <a href="https://cwl.discourse.group/c/cwlcon-2022/11">2022 CWL Conference</a> (Online)
