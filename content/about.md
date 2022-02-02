@@ -25,5 +25,5 @@ The CWL project supports open consensus-based standards for command line data an
 
 Specifically, we support the
 *    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
-*    standardization process by stewarding the development and delivery of standards in accordance with the Open Stand principles.
+*    standardization process by stewarding the development and delivery of standards in accordance with the [OpenStand principles](https://open-stand.org/about-us/principles/)
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
