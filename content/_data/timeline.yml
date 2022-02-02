@@ -1,9 +1,9 @@
 timeline_events:
   - year: 2014
-    event: "Initial Draft created <span class='no-bold'>at Bioinformatics Open Source Conference CodeFest</span>"
+    event: Initial Draft created <br><a href="https://www.open-bio.org/wiki/Codefest_2014> Bioinformatics Open Source Conference CodeFest</a> xx 
   - year: 2015
     event: "CWL “draft-2” version<br>
-      Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
+      Commercial vendor (Seven Bridges Genomics) releases product <span class='no-bold'>in December</span>"
   - year: 2016
     event: CWL v1.0 released 
   - year: 2017
@@ -14,6 +14,8 @@ timeline_events:
   - year: 2019
     event: CWL v1.1 released<br><a href="https://www.meetup.com/Boston-Common-Workflow-Language-Meetup/events/264989366/">CWL 2019 Mini Conference</a> (Cambridge, MA, USA)
   - year: 2020
-    event: "CWL v1.2 released <span class='no-bold'>with workflow conditionals</span><br>Work on CWL v1.2.1 <span class='no-bold'>and beyond commences</span>"
+    event: "CWL v1.2 released (with workflow conditionals) <br> Work on CWL v1.2.1 and beyond commences"
   - year: 2021
-    event: 2021-02-08 <a href="https://cwl.discourse.group/c/cwlcon-2021/9">CWL 2021 Conference</a> (Online)
+    event: "2021 CWL Conference (Online)"
+  - year: 2022
+    event: "2022 CWL Conference (Online)"

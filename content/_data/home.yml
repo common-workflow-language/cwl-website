@@ -1,7 +1,7 @@
 features:
   - title: OPEN AND FREE
     box_url: /specification/
-    text:  "[Free and open standard](/specification/)"
+    text:  "[Free and open standards](/specification/)"
     icon: freeandopen.png
     icon-alt: Free and Open Icon - an open circular lock composed of a circle, keyhole and a open latch 
   - title: COMMUNITY FIRST
