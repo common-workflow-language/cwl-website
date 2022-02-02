@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /software/
+permalink: /tools/
 title: Software
 redirect_from: /ecosystem/
 ---
