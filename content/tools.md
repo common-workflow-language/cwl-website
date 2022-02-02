@@ -1,11 +1,11 @@
 ---
 layout: page
 permalink: /tools/
-title: Software
+title: Development Tools 
 redirect_from: /ecosystem/
 ---
 
-## Software for working with CWL
+## Development tools for working with CWL
 Beyond releasing the CWL standards, the CWL community has developed many
 tools, software libraries, connected specifications, and has shared CWL
 descriptions for popular tools.
