@@ -14,7 +14,6 @@
 
 @include media-breakpoint-up(md) {
   .features-grid {
-    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 56px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 0;
@@ -31,8 +30,6 @@
 
 @include media-breakpoint-up(xl) {
   .features-grid {
-    // gap: 20px;
-    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 36px;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
@@ -49,7 +46,6 @@
 
 @include media-breakpoint-up(xxl) {
   .features-grid {
-    // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 49px;
     grid-template-columns: repeat(4, 1fr);
     padding: 0 4%;
@@ -84,14 +80,23 @@
   .feature-title {
     font-size: 1.3rem;
     min-height: 3rem;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
+
+    a {
+      min-height: 3rem;
+      overflow-wrap: normal;
+    }
   }
 }
 
 @include media-breakpoint-up(lg) {
   .feature-title {
-    font-size: 1.63rem;
+    font-size: 1.6rem;
     min-height: 4rem;
+
+    a {
+      min-height: 4rem;
+    }
   }
 }
 
