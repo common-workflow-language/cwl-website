@@ -63,8 +63,6 @@
     justify-content: space-between;
   }
 
-  // @include left-nav;
-
   .adopter-entry,
   .adopter-row-top,
   .adopter-logo {
@@ -80,7 +78,6 @@
   .adopter-row-top {
     order: 2;
     overflow-wrap: anywhere;
-    // word-break: break-word;
     word-break: normal;
   }
 
@@ -109,8 +106,6 @@
 
 @include media-breakpoint-up(md) {
   .page-gallery {
-    // @include left-nav-md;
-
     .gallery-content {
       width: calc(100% - 210px);
     }
@@ -119,8 +114,6 @@
 
 @include media-breakpoint-up(lg) {
   .page-gallery {
-    // @include left-nav-lg;
-
     .gallery-content,
     .adopter-entry {
       padding: 0 12px 0 0;
@@ -210,8 +203,6 @@
     h2 {
       margin: 0 0 1.25rem 1rem;
     }
-
-    // @include left-nav-xxl;
 
     .adopter-entry {
       justify-content: flex-start;

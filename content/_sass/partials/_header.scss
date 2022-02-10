@@ -29,3 +29,35 @@
     }
   }
 }
+
+.cwl-announcement {
+  background-color: $cwl-red;
+  color: $white;
+  padding: 0 1rem;
+  text-align: center;
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .cwl-announcement {
+    h3 {
+      font-size: 1.75rem;
+    }
+  }
+}
+

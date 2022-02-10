@@ -1,12 +1,13 @@
 ---
 layout: page
 permalink: /gallery/
-title: CWL Users Gallery
+title: CWL User Gallery
 redirect_from:
   - /cwl-adopters
   - /users-gallery
-left_nav_slug: users_gallery_left
-class: users-gallery has-left-nav
+  - /user-gallery
+left_nav_slug: user_gallery_left
+class: user-gallery has-left-nav
 ---
 
 {% capture intro %}
@@ -19,11 +20,16 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
 
 <div class="intro">{{ intro | markdownify }}</div>
 
-{% assign nav_data = site.data.users-gallery.left_nav %}
+{% assign nav_data_loc = site.data.user-gallery[left_nav] %}
+{% comment %}
+<!-- Method to use the Left Nav section in _data/user-gallery.yml -->
+{% include left_nav.html nav_data=site.data.user-gallery.left_nav %}
+{% endcomment %}
+
 {% include left_nav.html %}
 
 <div class="gallery-content">
-{% for section in site.data.users-gallery.gallery %}
+{% for section in site.data.user-gallery.gallery %}
   {% assign title = section.title %}
   {% assign adopters = section.adopters %}
 
@@ -38,7 +44,7 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
   {% endif %}
 
   {% for adopter in adopters %}
-    {% include users-gallery.html %}
+    {% include user-gallery.html %}
     {% for adopter in sub_adopters %}
       {% capture loop_check %}
       {% if forloop.first %}
@@ -47,7 +53,7 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
       {% endcapture %}
     {% if counter == 1 %}
       {% assign adopter_heading = "h4" %}
-      {% include users-gallery.html %}
+      {% include user-gallery.html %}
     {% endif %}
     {% endfor %}
   {% endfor %}

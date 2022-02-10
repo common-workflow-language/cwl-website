@@ -13,9 +13,9 @@ Instructions for editing specific pages and site components.
   * [Mini Gallery](#mini-gallery)
 * [Code of Conduct Syncing](#code-of-conduct-syncing)
 * [Timeline page](#timeline-page)
-* [Users Gallery](#users-gallery)
+* [User Gallery](#user-gallery)
   * [Left Nav Menu](#left-nav-menu)
-  * [users-gallery.yml](#users-galleryyml)
+  * [user-gallery.yml](#user-galleryyml)
 * [Foreign Languages](#foreign-languages)
 * [Tables](#tables)
 * [Developer Notes](#developer-notes)
@@ -38,7 +38,7 @@ There are two nav templates currently available:
 
 * `_includes/top_nav.html` - the main site nav. Relies on data in `_data/navigation.yml`
 * `_includes/left_nav.html` - left nav on an individual page. 
-  * Relies on data from a page-specific file (e.g. `gallery.html` uses `_data/users-gallery.yml`), or defaults to `_data/navigation.yml`
+  * Relies on data from a page-specific file (e.g. `gallery.html` uses `_data/user-gallery.yml`), or defaults to `_data/navigation.yml`
 
 Styles are found in `_sass/partials/_nav.scss` and `_sass/partials/_left-nav.scss`. 
 
@@ -51,7 +51,7 @@ Simply edit the data in `_data/navigation.yml`
 
 **Left Nav:**
 
-The Left Nav data may be found in either `_data/navigation.yml` or a page-specific file (e.g. `_data/users-gallery.yml`).
+The Left Nav data may be found in either `_data/navigation.yml` or a page-specific file (e.g. `_data/user-gallery.yml` (not currently in use)).
 
 The Left Nav should always have `nav_header` as the first item. This is the title displayed at the top of the nav menu:
 
@@ -79,11 +79,11 @@ Example using `left_nav_slug`:
 layout: page
 permalink: /link-name/
 title: Some Page
-left_nav_slug: users_gallery_left
+left_nav_slug: user_gallery_left
 class: some-page has-left-nav
 ---
 
-<!-- The include below will automatically set the menu to site.data.navigation[users_gallery_left] -->
+<!-- The include below will automatically set the menu to site.data.navigation[user_gallery_left] -->
 {% include left_nav.html %}
 ```
 
@@ -96,13 +96,13 @@ Example using page-specific file:
 layout: page
 permalink: /gallery/
 title: CWL Users Gallery
-class: users-gallery has-left-nav
+class: user-gallery has-left-nav
 ---
 
-<!-- The include below will get the data from _data/users-gallery.html -->
-<!-- Note: the current users-gallery.html doesn't use a page-specifc nav file. It's just an example -->
-{% assign nav_data = site.data.users-gallery.left_nav %}
-{% include left_nav.html nav_data=nav_data %}
+<!-- The include below will get the data from _data/user-gallery.html -->
+<!-- Note: the current user-gallery.html doesn't use a page-specifc nav file. It's just an example -->
+{% assign nav_data = site.data.user-gallery.left_nav %}
+{% include left_nav.html nav_data=site.data.user-gallery.left_nav %}
 ```
 
 <a id="short-pages"></a>
@@ -130,7 +130,7 @@ class: page-short body-donate
 * `index.md` - main file that imports the other files
 * `_includes/home/intro.html` - contains the intro paragraph and imports the video player
 * `_includes/home/features.html` - template for the "Features" boxes section. Relies on `_data/home.yml`
-* `_includes/home/users-mini-gallery.html` - the bottom gallery of logos. Relies on data in `_data/users-gallery.html`
+* `_includes/home/users-mini-gallery.html` - the bottom gallery of logos. Relies on data in `_data/user-gallery.html`
 * `_includes/home/video-player.html` - template code for the video player ([Plyr](https://plyr.io/)). See [Video Player](#video-player) section for more info. 
 
 <a id="features-boxes"></a>
@@ -153,18 +153,18 @@ Image files must be located in `assets/img/` (e.g. `assets/img/noun_Interoperabi
 
 **Relevant Files:**
 
-* `_includes/home/mini-gallery.html` - Generates the mini gallery. Relies on data from `_data/users-gallery.yml`
+* `_includes/home/mini-gallery.html` - Generates the mini gallery. Relies on data from `_data/user-gallery.yml`
 * `_sass/partials/home/_mini-gallery.scss` - Contains the data for the Left Nav, and the Users Gallery list
-* `_data/users-gallery.yml` - contains the data used by the mini gallery.
+* `_data/user-gallery.yml` - contains the data used by the mini gallery.
 
-For general info on `_data/users-gallery.yml`, see the [users-gallery.yml](#users-gallery.yml) section, under [Users Gallery](#users-gallery).
+For general info on `_data/user-gallery.yml`, see the [user-gallery.yml](#user-gallery.yml) section, under [Users Gallery](#user-gallery).
 
 **Duplicate Logos:**
 
-In order to prevent a duplicate logo from being displayed, add `duplicate_logo: true` to the logo's section in `_data/users-gallery.yml`
+In order to prevent a duplicate logo from being displayed, add `duplicate_logo: true` to the logo's section in `_data/user-gallery.yml`
 
 **Logo Tweaking:**
-The mini-gallery data is in `_data/users-gallery.yml`. Some logos may need individual adjustment, for optimal display. This can be accomplished by adding an `image_id: name-here` property to the respective image. The image's styles can then be modified in `_sass/partials/home/_mini-gallery.scss`.
+The mini-gallery data is in `_data/user-gallery.yml`. Some logos may need individual adjustment, for optimal display. This can be accomplished by adding an `image_id: name-here` property to the respective image. The image's styles can then be modified in `_sass/partials/home/_mini-gallery.scss`.
 
 <a id="code-of-conduct-syncing"></a>
 ## Code of Conduct Syncing
@@ -198,23 +198,25 @@ timeline_events:
       Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
 ```
 
-<a id="users-gallery"></a>
-## Users Gallery
+<a id="user-gallery"></a>
+## User Gallery
 
 **Relevant Files:**
 
 * `gallery.html` - the gallery page. Relies on all the following files:
-* `_includes/users-gallery.html` - Generates the list of Users/Adopters. Relies on `_data/navigation.yml`
-* `_data/users-gallery.yml` - Contains the data for the Left Nav, and the Users Gallery list
-* `_includes/left_nav.html` - The code for the left nav menu. Relies on `_data/users-gallery.yml`
+* `_includes/user-gallery.html` - Generates the list of Users/Adopters. Relies on `_data/navigation.yml`
+* `_data/user-gallery.yml` - Contains the data for the Users Gallery list (but not the left nav)
+* `_data/navigation.yml` - Contains the data for the Left Nav
+  * May be moved to `_data/user-gallery.yml` at a future date
+* `_includes/left_nav.html` - The code for the left nav menu. Relies on `_data/user-gallery.yml`
 
 <a id="left-nav-menu"></a>
 ### Left Nav Menu
 
-The User's Gallery generates the left nav from the `users_gallery_left` section in `_data/navigation.yml`. See [Editing the Nav Menus](#editing-the-nav-menus) and [Nav Menus - Left Nav Menus](#left-nav-menus) sections above for general details about left nav menus.
+The User's Gallery generates the left nav from the `user_gallery_left` section in `_data/navigation.yml`. This may be moved to `_data/user-galllery.yml` in the future. See [Editing the Nav Menus](#editing-the-nav-menus) and [Nav Menus - Left Nav Menus](#left-nav-menus) sections above for general details about left nav menus.
 
-<a id="users-galleryyml"></a>
-### users-gallery.yml
+<a id="user-galleryyml"></a>
+### user-gallery.yml
 
 Contains the gallery section data. The gallery data should follow this format:
 

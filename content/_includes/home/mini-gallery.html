@@ -1,10 +1,10 @@
 <section class="page-section section-mini-gallery">
   <div class="section-header">
-    <h2 id="cwl-users-gallery">Some Users of CWL</h2>
+    <h2 id="cwl-mini-gallery">Some Users of CWL</h2>
   </div>
 
   <a class="mini-gallery-wrapper" href="{{ site.url }}/gallery"><div class="mini-gallery">
-  {% for section in site.data.users-gallery.gallery %}
+  {% for section in site.data.user-gallery.gallery %}
     {% assign adopters = section.adopters %}
     {% assign sub_adopters = section.subsection.adopters %}
 

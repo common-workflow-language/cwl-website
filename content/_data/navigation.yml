@@ -11,14 +11,10 @@ header:
         url: /timeline
       - title: Governance
         url: /governance
+      - title: Contributors
+        url: /contributors
   - title: Features
-    url: "#"
-    type: dropdown
-    subpages:
-      - title: Reusablity and Reproduciblity
-        url: /reusability 
-      - title: Parallelization and Scale
-        url: /scale
+    url: "/features"
   - title: Getting Started
     url: /getting-started
   - url: /community
@@ -37,30 +33,13 @@ header:
         url: /projects
   - title: Specification
     url: /specification
-  - title: Users Gallery
+  - title: User Gallery
     url: /gallery
   - title: Donate
     url: /donate
 
-users_gallery_left:
+user_gallery_left:
   - nav_header: Shortcuts
-  - title: Cross-Domain
-    url: "#cross-domain"
-    submenu:
-      - title: The [Netherlands] National Plan Open Science
-        url: "#the-[netherlands]-national-plan-open-science"
-      - title: University of Manchester, eScience Lab
-        url: "#university-of-manchester,-escience-lab"
-  - title: Radio Astronomy
-    url: "#radio-astronomy"
-    submenu:
-      - title: The European Open Science Cloud for Research Pilot Project
-        url: "#the-european-open-science-cloud-for-research-pilot-project"
-  - title: Hydrology
-    url: "#hydrology"
-    submenu:
-      - title: The European Open Science Cloud
-        url: "#the-european-open-science-cloud"
   - title: Life Sciences
     url: "#life-sciences"
     submenu:
@@ -89,3 +68,20 @@ users_gallery_left:
     submenu:
       - title: Open Geospatial Consortium
         url: "#open-geospatial-consortium"
+  - title: Hydrology
+    url: "#hydrology"
+    submenu:
+      - title: The European Open Science Cloud
+        url: "#the-european-open-science-cloud"
+  - title: Radio Astronomy
+    url: "#radio-astronomy"
+    submenu:
+      - title: The European Open Science Cloud for Research Pilot Project
+        url: "#the-european-open-science-cloud-for-research-pilot-project"
+  - title: Cross-Domain
+    url: "#cross-domain"
+    submenu:
+      - title: The [Netherlands] National Plan Open Science
+        url: "#the-[netherlands]-national-plan-open-science"
+      - title: University of Manchester, eScience Lab
+        url: "#university-of-manchester,-escience-lab"

@@ -6,6 +6,12 @@
 .sass-cache
 _site
 _archive
+*_notes*
 
 # Files
 _config_local.yml
+
+# NPM
+node_modules
+package.json
+package-lock.json

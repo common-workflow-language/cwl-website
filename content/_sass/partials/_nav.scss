@@ -417,7 +417,7 @@
   }
 
   .skip-link {
-    background: white;
+    background: $white;
     left: 0;
     overflow: hidden;
     position: absolute;
@@ -426,7 +426,7 @@
       -webkit-transition: top 1s ease-out, background 1s linear;
 
     &:focus {
-      box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 2px 2px $skip-link--box-shadow-color;
       color: $cwl-red;
       font-weight: 700;
       height: auto;

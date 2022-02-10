@@ -3,9 +3,11 @@ Uses the yaml nav data, passed from the including, page via nav_data.
 If no nav_data was passed, then it pulls the data from _data/navigation.yml, using the page slug instead.
 {% endcomment %}
 
-{% unless nav_data %}
+{% if include.nav_data %}
+  {% assign nav_data = include.nav_data %}
+{% else %}
   {% assign nav_data = site.data.navigation[page.left_nav_slug] %}
-{% endunless %}
+{% endif %}
 
 {% assign nav_heading = nav_data[0].nav_header %}
 

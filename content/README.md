@@ -29,20 +29,47 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="to-do"></a>
 ## To-Do
 
+* Content Area max-width for verbose pages. Options:
+
+1. Change Bootstrap container max-widths in `_variables.scss`
+
+2. Add CSS on relevant pages only
+
+```css
+main {
+  margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    /* max-width: 320px; */
+    max-width: 1200px;
+  }
+}
+```
+
 <a id="general"></a>
 ### General
 
-* Mini Gallery:
-  * Automate logic check to avoid repeated logos
-* Anchor links currently not scrolling to sections
+* Anchor links currently not scrolling to sections, due to code in `_structure.scss` (ln 131)
 * Tables: Content check should be done to make sure tables on Implementations page and elsewhere are up to date
 * Should `_includes/social_stats.html` be removed?
+
+Needs Alt Text:
+
+* `features.md` <img src="/assets/img/cwlportable.png" alt="">
 
 <a id="code-refactoring"></a>
 ### Code Refactoring
 
-* Refactor User's Gallery left nav to automatically parse from `_data/users-gallery.yml`, instead of having to manually update `_data/navigation.yml`?
-* Check units in SCSS files - px vs em
+* User Gallery: Refactor left nav to automatically parse from `_data/users-gallery.yml`, instead of having to maintain a separate list in `_data/navigation.yml`
+* Mini Gallery - automate logic for ignoring duplicate logos, instead of relying on `duplicate_logo` parameter in `_user-gallery.yml`
+* SCSS - doublecheck units e.g. px vs em
 
 <a id="plugins-review"></a>
 ### Plugins Review

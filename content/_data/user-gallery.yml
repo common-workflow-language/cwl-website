@@ -1,34 +1,5 @@
 gallery:
   - section:
-    title: Cross-Domain
-    adopters:
-      - name: The [Netherlands] National Plan Open Science
-        link_text: National Plan Open Science - Feb. 2019
-        url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
-        description: The National Programme Open Science (NPOS) was established to join and coordinate efforts towards open science and promote its importance. The National Plan Open Science serves to implement a transition towards an open science system in the Netherlands. The National Plan Open Science contains an inventory of existing initiatives. The eScience center is recongnized for the research activity support it provides.  The eScience Center ensures that the entire scientific community has public access, on an open-source fully documented basis, to research data related to all research projects involving Dutch universities, through the eScience Technology Platform and open platforms such as GitHub and Zenodo. The eScience Center also makes an active contribution to the continued development and Dutch use of the most promising software and tools in the field of open science. Examples include the Common Workflow Language, for the description of analyses and the use of software, and Docker, which can be used to create a durable record of software for reuse. Both assist with the reproducible performance of analyses irrespective of the computer or environment.
-        image: /assets/img/logo_openscience.svg
-      - name: University of Manchester, eScience Lab
-        link_text: eScience Lab - Common Workflow Language
-        url: https://esciencelab.org.uk/activities/cwl/
-        image: /assets/img/escienceLab-logo.png
-        image_id: manchester-escience-lab
-        description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows.
-  - section:
-    title: Radio Astronomy
-    adopters:
-      - name: The European Open Science Cloud for Research Pilot Project
-        m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
-        image: /assets/img/eosc-pilot.png
-        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.
-  - section:
-    title: Hydrology
-    adopters:
-      - name: The European Open Science Cloud for Research Pilot Project
-        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.
-        m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
-        image: /assets/img/eosc-pilot.png
-        duplicate_logo: true
-  - section:
     title: Life Sciences
     adopters:
       - name: US Food and Drug Administration (FDA)
@@ -138,3 +109,32 @@ gallery:
           <li><a href="https://www.youtube.com/watch?v=QkdDFGEfIAY">OGC EO Apps pilot - Platforms</a></li>
           <li><a href="https://www.youtube.com/watch?v=L9HreYAXUNo">EO Applications Architecture for Application Developers - Urban app deployment and execution (DLR)</a></li>
           </ol>
+  - section:
+    title: Hydrology
+    adopters:
+      - name: The European Open Science Cloud for Research Pilot Project
+        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.
+        m_link: "Science Demonstrator: [Earth Sciences – Hydrology: Switching on the EOSC for Reproducible Computational Hydrology by FAIRifying eWaterCycle and SWITCH-ON](https://eoscpilot.eu/earth-sciences-%E2%80%93-hydrology-switching-eosc-reproducible-computational-hydrology-fairifying)"
+        image: /assets/img/eosc-pilot.png
+        duplicate_logo: true
+  - section:
+    title: Radio Astronomy
+    adopters:
+      - name: The European Open Science Cloud for Research Pilot Project
+        m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
+        image: /assets/img/eosc-pilot.png
+        description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.
+  - section:
+    title: Cross-Domain
+    adopters:
+      - name: The [Netherlands] National Plan Open Science
+        link_text: National Plan Open Science - Feb. 2019
+        url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
+        description: The National Programme Open Science (NPOS) was established to join and coordinate efforts towards open science and promote its importance. The National Plan Open Science serves to implement a transition towards an open science system in the Netherlands. The National Plan Open Science contains an inventory of existing initiatives. The eScience center is recongnized for the research activity support it provides.  The eScience Center ensures that the entire scientific community has public access, on an open-source fully documented basis, to research data related to all research projects involving Dutch universities, through the eScience Technology Platform and open platforms such as GitHub and Zenodo. The eScience Center also makes an active contribution to the continued development and Dutch use of the most promising software and tools in the field of open science. Examples include the Common Workflow Language, for the description of analyses and the use of software, and Docker, which can be used to create a durable record of software for reuse. Both assist with the reproducible performance of analyses irrespective of the computer or environment.
+        image: /assets/img/logo_openscience.svg
+      - name: University of Manchester, eScience Lab
+        link_text: eScience Lab - Common Workflow Language
+        url: https://esciencelab.org.uk/activities/cwl/
+        image: /assets/img/escienceLab-logo.png
+        image_id: manchester-escience-lab
+        description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows.
