@@ -4,22 +4,31 @@
   {%- include head.html -%}
 
   <body class="body-{{ page.class }}">
+
   <ul class="skip-nav" id="skipNav">
     <li><a class="sr-only sr-only-focusable skip-link" href="#main">Skip to main content</a></li>
     <li><a class="sr-only sr-only-focusable skip-link" href="#site_footer">Skip to footer</a></li>
   </ul>
+
   <div class="site-wrapper {{ page.class }} page-{{ page.permalink | downcase | replace: "/", "" | replace: " ", "-" }}" id="siteTop">
     {%- include top_nav.html -%}
+
     {% if page.class contains 'home' or page.title == 'Home' %}
       {%- include header.html -%}
     {% endif %}
 
     <div class="container content-wrapper">
       <div class="row">
-        <main class="col-md-12" role="main" id="main">
+      {% if page.class contains 'skinny-11' %}
+        <main class="col-lg-11" role="main" id="main">
+      {% elsif page.class contains 'skinny-10' %}
+        <main class="col-lg-10" role="main" id="main">
+      {% else %}
+        <main role="main" id="main">
+      {% endif %}
           {% include anchor_headings.html html=content anchorBody="§" anchorClass="heading__anchor-symbol" %}
         </main>
-      </div>      
+      </div>
     </div>
 
     {%- include footer.html -%}

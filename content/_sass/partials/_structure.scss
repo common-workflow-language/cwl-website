@@ -7,6 +7,16 @@
   padding-bottom: 76px;
 }
 
+main {
+  margin: 0 auto;
+  padding: 0 calc(var(--bs-gutter-x) * 2);
+  // padding: 0 $bs-container-padding-x;
+}
+
+////////////
+// Footer //
+////////////
+
 // Account for footer wrapping
 @include media-breakpoint-up(xxs) {
   .content-wrapper {
@@ -236,6 +246,10 @@ html {
   .post-header {
     padding-left: 24px;
   }
+}
+
+.post-title {
+  margin: 0 auto 1rem;
 }
 
 @include media-breakpoint-up(lg) {

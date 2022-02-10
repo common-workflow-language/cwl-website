@@ -2,6 +2,7 @@
 layout: page
 permalink: /community/
 title: Community 
+class: skinny-10
 ---
 
 <figure class="float-right"><a href="https://open-stand.org/about-us/principles" class="open-stand"><picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge - the modern paradigm for standards" width="128" height="128"></picture></a></figure>

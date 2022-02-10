@@ -2,6 +2,8 @@
 layout: page
 permalink: /features/
 title: Features
+columns: col-md-12 col-lg-11
+class: skinny-11
 ---
 
 {:.cwl-red}

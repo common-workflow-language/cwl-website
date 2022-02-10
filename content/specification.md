@@ -2,7 +2,7 @@
 layout: page
 permalink: /specification/
 Title: Specification
-class: page-short
+class: page-short skinny-10
 ---
 
 # Specification
