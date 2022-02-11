@@ -1,12 +1,11 @@
 ---
 layout: page
-permalink: /contributors
+permalink: /contributors/
 redirect_from:
-  - /contributers
+  - /contributers/
 title: Contributors
 ---
 
-{:.cwl-red}
 ## Contributors
 
 ### Participating Organizations

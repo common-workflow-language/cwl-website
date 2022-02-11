@@ -19,7 +19,22 @@ h6,
 
 h2,
 .h2 {
+  color: $cwl-red;
   margin: 0 0 1.25rem;
+}
+
+.body-has-black-h2s,
+.has-black-h2s {
+  h2 {
+    color: $black;
+  }
+}
+
+.body-has-red-h3s,
+.has-red-h3s {
+  h3 {
+    color: $cwl-red;
+  }
 }
 
 figcaption {

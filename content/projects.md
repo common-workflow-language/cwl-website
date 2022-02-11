@@ -5,6 +5,7 @@ title: Projects
 class: page-short
 ---
 
+{:.black-text}
 ## Projects the CWL community is participating in
 
 {: .table .table-striped .cols-2 }

@@ -19,10 +19,8 @@
 
     <div class="container content-wrapper">
       <div class="row">
-      {% if page.class contains 'skinny-11' %}
-        <main class="col-lg-11" role="main" id="main">
-      {% elsif page.class contains 'skinny-10' %}
-        <main class="col-lg-10" role="main" id="main">
+      {% if page.columns %}
+        <main class="col-lg-{{page.columns}}" role="main" id="main">
       {% else %}
         <main role="main" id="main">
       {% endif %}

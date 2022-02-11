@@ -7,6 +7,7 @@ redirect_from:
   - /repositories/
 ---
 
+{:.black-text}
 ## Repositories of CWL Tools and Workflows
 
 {: .table .table-striped .rows-2}

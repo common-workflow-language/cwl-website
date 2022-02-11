@@ -7,7 +7,6 @@ class: page-short
 
 CWL is a member project of Software Freedom Conservancy and is required to adhere to Conservancy's [corporate policies](https://sfconservancy.org/projects/policies/), as applicable. There are several ways to donate to help support the work of the CWL Project.
 
-{:.cwl-red}
 ## Donations by check
 
 We can accept check donations drawn in USD
@@ -23,7 +22,6 @@ Language" in the memo field.  Checks should then be mailed to:
         BROOKLYN, NY 11201
         USA
 
-{:.cwl-red}
 ## Donations by wire
 
 We can accept donations via wire in USD, EUR, GBP, and CAD, but we
@@ -31,7 +29,6 @@ usually send the the instructions on a case-by-case basis as they are
 different depending on the country of origin and currency.  Please just
 note that donors wishing to send a wire contact
 
-{:.cwl-red}
 ## Donations by PayPal
 
 Donations can also be made via PayPal in USD. 

@@ -2,7 +2,7 @@
 layout: page
 permalink: /implementations/
 title: Implementations
-class: skinny-11
+class: has-black-h2s has-red-h3s
 ---
 
 ## What can execute CWL descriptions?

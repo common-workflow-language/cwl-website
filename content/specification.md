@@ -2,7 +2,8 @@
 layout: page
 permalink: /specification/
 Title: Specification
-class: page-short skinny-10
+columns: 10
+class: page-short
 ---
 
 # Specification
@@ -11,7 +12,6 @@ The Common Workflow Language (CWL) project produces free and open standards for 
 
 For developers and advanced users, the current [CWL Standards v1.2.0](https://www.commonwl.org/v1.2/) provides authoritative documentation of the execution of CWL documents. The previous versions, [CWL Standards v1.0.2](https://www.commonwl.org/v1.0/) and [CWL Standards v1.1.0](https://www.commonwl.org/v1.1/), are also available.
 
-{:.cwl-red}
 ## References
 
 To reference the Common Workflow Language and the CWL project in scholarly work, please use the following citation:

@@ -7,6 +7,7 @@ Instructions for editing specific pages and site components.
 * [Nav Menus](#nav-menus)
   * [Editing the Nav Menus](#editing-the-nav-menus)
   * [Left Nav Menus](#left-nav-menus)
+* [Links](#links)
 * [Short Pages](#short-pages)
 * [Homepage](#homepage)
   * [Features Boxes](#features-boxes)
@@ -104,6 +105,11 @@ class: user-gallery has-left-nav
 {% assign nav_data = site.data.user-gallery.left_nav %}
 {% include left_nav.html nav_data=site.data.user-gallery.left_nav %}
 ```
+
+<a id="links"></a>
+## Links
+
+Prefer trailing slashes e.g. `/community/`
 
 <a id="short-pages"></a>
 ## Short Pages

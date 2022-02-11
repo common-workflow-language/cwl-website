@@ -9,6 +9,7 @@ The preview build of the site is currently found at [https://deploy-preview-75--
 
 * [Editing the Site](#editing-the-site)
 * [To-Do](#to-do)
+  * [Content Area Max-Width](#content-area-max-width)
   * [General](#general)
   * [Code Refactoring](#code-refactoring)
   * [Plugins Review](#plugins-review)
@@ -29,6 +30,24 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 <a id="to-do"></a>
 ## To-Do
 
+* Governance - where should support link go?
+`CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/#Support) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.`
+* Double check that anchor links don't have trailing slashes.
+  * Search for `(#` and `/#`
+* Absolute vs Relative URLs
+* Add note about `columns` setting to EDITING
+  * Add note about h2s and h3s colors & helper classes
+* 
+
+What's up with these in Implementation??
+|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research. | |&#8211;|
+
+|[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.| |&#8211;|
+
+
+<a id="content-area-max-width"></a>
+### Content Area Max-Width
+
 * Content Area max-width for verbose pages. Options:
 
 1. Change Bootstrap container max-widths in `_variables.scss`
@@ -36,10 +55,6 @@ Instructions for editing specific parts of the site can be found in [EDITING.md]
 2. Add CSS on relevant pages only
 
 ```css
-main {
-  margin: 0 auto;
-}
-
 @media (min-width: 1400px) {
   .container-xxl,
   .container-xl,
@@ -51,6 +66,43 @@ main {
     max-width: 1200px;
   }
 }
+
+/* .post-header {
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  .post-header {
+    padding: 10px 0 0;
+  }
+
+  .post-header h1{
+    padding: 0;
+    width: 776px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .post-header h1{
+    margin: 0 auto 1rem;
+    padding: 0;
+    width: 926px;
+  }
+}
+
+@media (min-width: 1330px) {
+  .post-header h1{
+    padding: 0;
+    width: 926px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .post-header h1{
+    padding: 0;
+    width: 1076px;
+  }
+} */
 ```
 
 <a id="general"></a>
@@ -59,6 +111,8 @@ main {
 * Anchor links currently not scrolling to sections, due to code in `_structure.scss` (ln 131)
 * Tables: Content check should be done to make sure tables on Implementations page and elsewhere are up to date
 * Should `_includes/social_stats.html` be removed?
+* Should Gitter feed on Community page be shortened, since there's less content?
+  * Let's see how the content area max-width affects it
 
 Needs Alt Text:
 
