@@ -40,7 +40,7 @@ on any batch production-environment, and on any common public or private cloud.<
 
 Benefits of CWL including flexibility, portability, and scalability. CWL is well suited for describing large-scale workflows in cluster, cloud and high performance computing environments where tasks are scheduled in parallel across many nodes.
 
-### Parallelization and Scale
+## Parallelization and Scale with CWL
 
 CWL workflows describe each step with explict inputs and outputs.  Workflow steps in CWL are not necessarily run in the order they are listed, instead the order is determined by the dependencies between steps. Workflow steps which do not depend on one another may run in parallel.
 

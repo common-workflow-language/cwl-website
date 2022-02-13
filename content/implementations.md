@@ -43,7 +43,7 @@ particular technology configuration they deploy and maintain.
 {: .table .cols-3}
 |Software|Description| Self-Reported Compliance | Platform support|
 |--- |--- |--- |--- |
-|[ep3](https://github.com/tom-tan/ep3)|Extremely Pluggable Pipeline Processor| <a href="https://github.com/tom-tan/ep3#conformance-tests-for-cwl-v10-for-the-latest-release">CWL v1.0 <img src="https://badgen.net/https/raw.githubusercontent.com/tom-tan/conformance/master/conformance/ep3/cwl_v1.0/ep3_latest/required.json?icon=commonwl" alt="ep3 Conformance Required Percentage"></a> | local |
+|[ep3](https://github.com/tom-tan/ep3)|Extremely Pluggable Pipeline Processor|[CWL v1.0 ![Required](https://badgen.net/https/raw.githubusercontent.com/tom-tan/conformance/master/ep3/cwl_v1.0/ep3_latest/required.json?icon=commonwl)](https://github.com/tom-tan/ep3#conformance-tests-for-cwl-v10-for-the-latest-release)| local |
 |[REANA](https://docs.reana.io/)|RE usable ANAlyses|[CWL v1.0 ![Required](https://badgen.net/https/raw.githubusercontent.com/reanahub/reana-workflow-engine-cwl/master/badges/v1.0/required.json?icon=commonwl)](https://github.com/reanahub/reana-workflow-engine-cwl#cwl-v10)|Kubernetes|
 |[Xenon](https://nlesc.github.io/Xenon/)|Run CWL workflows using Xenon| <a href="https://github.com/xenon-middleware/xenonflow#cwl-compliance-v10">CWL v1.0 <img src="https://badgen.net/https/raw.githubusercontent.com/xenon-middleware/xenon-flow/gh-pages/badges/required.json?icon=commonwl" alt="Xenon Conformance Required Percentage"></a> |[any Xenon backend](https://nlesc.github.io/Xenon/): local, ssh, SLURM, Torque, Grid Engine |
 |[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research. | |&#8211;|
