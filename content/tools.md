@@ -69,7 +69,7 @@ descriptions for popular tools.
 {: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
-|[cwltool](https://github.com/common-workflow-language/cwltool)|cwltool (can be [imported as a Python module](https://www.commonwl.org/(https://github.com/common-workflow-language/cwltool#import-as-a-module)) and [extended to create custom cwl runners](https://github.com/common-workflow-language/cwltool#extension-points)|
+|[cwltool](https://github.com/common-workflow-language/cwltool)|cwltool (can be [imported as a Python module](https://github.com/common-workflow-language/cwltool#import-as-a-module) and [extended to create custom cwl runners](https://github.com/common-workflow-language/cwltool#extension-points)|
 |[schema salad](https://github.com/common-workflow-language/schema_salad)|Python module and tools for working with the CWL schema.|
 |[cwljava](https://github.com/common-workflow-lab/cwljava)|Java classes for loading, modifying, and creating CWL v1.2 documents|
 |[CWL for R](https://github.com/jefferys/cwl)|Parse and work with CWL from R|
@@ -80,3 +80,4 @@ descriptions for popular tools.
 |[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
 |[Rcwl](https://github.com/hubentu/Rcwl)|Build, read, write and run CWL in R|
 |[tidycwl](https://sbg.github.io/tidycwl/)|Tidy (R) Common Workflow Language Tools and Workflows|
+|[cwl-rs](https://github.com/onnovalkering/cwl-rs)|CWL object model for Rust|

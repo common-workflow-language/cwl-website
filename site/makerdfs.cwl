@@ -18,5 +18,5 @@ outputs:
     type: string
     outputBinding:
       outputEval: $(inputs.target_path.match(/^([^/]+)\/[^/]/)[1])
-baseCommand: [python, "-mschema_salad", "--print-rdfs"]
+baseCommand: [schema-salad-tool, --print-rdfs]
 stdout: $(inputs.target_path)

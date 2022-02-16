@@ -18,5 +18,5 @@ outputs:
     type: string
     outputBinding:
       outputEval: $(inputs.target_path.match(/^([^/]+)\/[^/]/)[1])
-baseCommand: [python, "-mschema_salad", "--print-jsonld-context"]
+baseCommand: [schema-salad-tool, --print-jsonld-context]
 stdout: $(inputs.target_path)

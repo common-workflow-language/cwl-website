@@ -5,7 +5,6 @@ set -x
 
 for repo in https://github.com/common-workflow-language/common-workflow-language \
             https://github.com/common-workflow-language/cwl-v1.1 \
-            https://github.com/common-workflow-language/cwl-v1.2 \
 	    https://github.com/common-workflow-language/user_guide \
 	    https://github.com/common-workflow-lab/cwl-novice-tutorial \
 	    https://github.com/common-workflow-library/rnaseq-cwl-training ; do
@@ -16,6 +15,15 @@ for repo in https://github.com/common-workflow-language/common-workflow-language
 	git clone $repo
     fi
 done
+
+repo=https://github.com/common-workflow-language/cwl-v1.2 \
+bn=$(basename $repo)
+if [[ -d $bn ]] ; then
+    (cd $bn && git fetch origin && git reset --hard origin/main)
+else
+    git clone $repo && pushd $bn; git checkout main ; git show --no-patch ; popd
+fi
+
 
 rm -rf draft-3 v1.0 v1.1 v1.2
 ln -s common-workflow-language/draft-3 draft-3
