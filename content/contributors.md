@@ -16,7 +16,6 @@ title: Contributors
 *   [Galaxy Project](https://galaxyproject.org/)
 *   [Apache Taverna](https://taverna.incubator.apache.org/)
 *   [Institut Pasteur](https://www.pasteur.fr/en)
-*   [Wellcome Trust Sanger Institute](https://www.sanger.ac.uk/)
 *   [University of California Santa Cruz](https://cbse.soe.ucsc.edu/research/bioinfo)
 *   [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/)
 *   [Cincinnati Children's Hospital Medical Center](https://www.cincinnatichildrens.org/)
