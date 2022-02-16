@@ -1,10 +1,11 @@
 ---
 title: Repositories
 layout: page
-class: page-short
 permalink: /repos/
 redirect_from: 
   - /repositories/
+columns: 10
+class: page-short
 ---
 
 {:.black-text}

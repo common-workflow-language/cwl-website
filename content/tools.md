@@ -3,6 +3,7 @@ layout: page
 permalink: /tools/
 title: Development Tools 
 redirect_from: /ecosystem/
+columns: 10
 class: has-black-h2s has-red-h3s
 ---
 

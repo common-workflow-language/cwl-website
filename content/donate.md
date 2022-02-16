@@ -2,6 +2,7 @@
 layout: page
 permalink: /donate/
 title: Donate
+columns: 10
 class: page-short
 ---
 

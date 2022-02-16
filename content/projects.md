@@ -2,6 +2,7 @@
 layout: page
 permalink: /projects/
 title: Projects
+columns: 10
 class: page-short
 ---
 

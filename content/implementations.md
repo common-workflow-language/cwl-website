@@ -2,6 +2,7 @@
 layout: page
 permalink: /implementations/
 title: Implementations
+columns: 10
 class: has-black-h2s has-red-h3s
 ---
 
