@@ -18,7 +18,6 @@ title: Contributors
 *   [University of California Santa Cruz](https://cbse.soe.ucsc.edu/research/bioinfo)
 *   [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/)
 *   [Cincinnati Children's Hospital Medical Center](https://www.cincinnatichildrens.org/)
-*   [Broad Institute](https://www.broadinstitute.org/)
 *   [University of Melbourne Center for Cancer Research](https://umccr.github.io/)
 *   [Netherlands eScience Center](https://www.esciencecenter.nl/)
 *   [Texas Advanced Computing Center Life Science Computing Group](https://www.tacc.utexas.edu/life-sciences-computing) / [Agave Platform](https://agaveapi.co/)
