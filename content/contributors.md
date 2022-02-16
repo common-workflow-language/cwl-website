@@ -91,7 +91,7 @@ CWL Community members and their contributions to the project.
 *   Folker Meyer <https://orcid.org/0000-0003-1112-2284>
 *   Tom Morris <https://orcid.org/0000-0003-0435-7851>
 *   Anton Nekrutenko, The Pennsylvania State University / Galaxy Project; <https://orcid.org/0000-0002-5987-8032>
-*   Brian O'Connor, University of California Santa Cruz; <https://orcid.org/0000-0002-7681-6415>
+*   Brian O'Connor, Broad Institute; <https://orcid.org/0000-0002-7681-6415>
 *   Tibor Simko, CERN, <https://orcid.org/0000-0001-7202-5803>
 *   Nihar Sheth, DNAnexus; <https://orcid.org/0000-0003-4128-4364>
 *   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
