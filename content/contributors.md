@@ -77,7 +77,7 @@ CWL Community members and their contributions to the project.
 *   Kyle Cranmer, New York University; <https://orcid.org/0000-0002-5769-7094>
 *   Michael R. Crusoe, CWL Project Lead; <https://orcid.org/0000-0002-2961-9670>
 *   Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; <https://orcid.org/0000-0001-7811-8613>
-*   John Didion, DNAnexus, OpenWDL; <https://orcid.org/0000-0002-8111-6261>
+*   John Didion, OpenWDL; <https://orcid.org/0000-0002-8111-6261>
 *   Niels Drost, Netherland eScience Center; <https://orcid.org/0000-0001-9795-7981>
 *   Scott Edmunds, GigaScience; <https://orcid.org/0000-0001-6444-1436>
 *   Geet Duggal, DNAnexus; <https://orcid.org/0000-0003-3485-359X>
