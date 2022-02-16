@@ -10,18 +10,18 @@ CWL provides a
 solution to describing portable, re-usable workflows while also
 being workflow-engine and vendor-neutral.
 CWL has gained much traction and is currently widely
-supported in practice. In addition to the Free and Open Source implementations, certain platforms/engines have in-development or partial support for CWL as well.  
+supported in practice. In addition to the Free and Open Source implementations, certain platforms/engines have in-development or partial support for CWL as well.
 
 Some workflow users require the maintenance and risk-mitigation
 guarantees offered by commercial operations. There are multiple
 commercially supported systems that support CWL for executing
 workflows and they are available from vendors such as Curii
-([Arvados](https://arvados.org/)), [DNAnexus](https://www.dnanexus.com/, [IBM (IBM® Spectrum LSF)](https://www.ibm.com/analytics/spectrum-computing), [Illumina
+([Arvados](https://arvados.org/)), [DNAnexus](https://www.dnanexus.com/), [IBM (IBM® Spectrum LSF)](https://www.ibm.com/analytics/spectrum-computing), [Illumina
 (Illumina Connected Analytics)](https://www.illumina.com/products/by-type/informatics-products/connected-analytics.html?scid=2021-269ECL4851), and [Seven Bridges Genomics](https://www.sevenbridges.com/).
 
-Wide adoption benefits from our principles: CWL offers 
+Wide adoption benefits from our principles: CWL offers
 conformance tests, but the CWL community does not yet test or certify
-CWL implementations, or specific technology stacks. Instead, 
+CWL implementations, or specific technology stacks. Instead,
 plaform/service providers self-certify support for CWL, based on a
 particular technology configuration they deploy and maintain.
 
@@ -50,6 +50,6 @@ particular technology configuration they deploy and maintain.
 |[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas) | |Alicloud, AWS, Google, HPC, Local, Spark, TES|
 |[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes| |[Kubernetes](https://kubernetes.io/)|
 |[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)| |[Kubernetes](https://kubernetes.io)|
-|[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System| Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html) | |  
+|[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System| Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html) | |
 
 See also: [an ongoing analysis of CWL Implementations](https://docs.bioexcel.eu/cwl-engine-guide/about.html#summary-of-engines) by the BioExcel Center of Excellence.

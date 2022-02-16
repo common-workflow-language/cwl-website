@@ -25,7 +25,7 @@ feature_boxes:
     icon: noun_ecosystem_cycle_3389565.png
     icon-alt: Reusability icon - a Cog with a circular arrow, spinning counter-clockwise inside
   - title: PARALLELIZATION AND SCALE
-    box_url: /features/#parallelization-and-scale
+    box_url: /features/#parallelization-and-scale-with-cwl
     text: "Scalable from workstations to cluster, cloud, and high performance computing (HPC environments"
     icon: noun_Data_Model_1632661.svg
     icon-alt: Data icon - a singular data node, which then splits into 3 separate nodes

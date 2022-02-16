@@ -6,9 +6,7 @@ redirect_from:
 title: Contributors
 ---
 
-## Contributors
-
-### Participating Organizations
+## Participating Organizations
 
 *   [Arvados Project](https://arvados.org/)
 *   [Curii](https://curii.com/)
@@ -31,7 +29,7 @@ title: Contributors
 *   [DNAnexus](https://www.dnanexus.com/)
 *   [CERN](https://home.cern/)
 
-### Individual Contributors
+## Individual Contributors
 The CWL project is grateful to the following self-identified
 CWL Community members and their contributions to the project.
 
@@ -98,6 +96,3 @@ CWL Community members and their contributions to the project.
 *   Nebojša Tijanić, Seven Bridges <https://orcid.org/0000-0001-8316-4067>
 *   Ward Vandewege, Curii / Arvados; <https://orcid.org/0000-0002-2527-6949>
 *   Alexander Wait Zaranek, Curii / Arvados; <https://orcid.org/0000-0002-0415-9655>
-
-
-
