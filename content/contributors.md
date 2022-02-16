@@ -14,7 +14,6 @@ title: Contributors
 *   [Curii](https://curii.com/)
 *   [Seven Bridges Genomics](https://www.sevenbridges.com/)
 *   [Galaxy Project](https://galaxyproject.org/)
-*   [Apache Taverna](https://taverna.incubator.apache.org/)
 *   [Institut Pasteur](https://www.pasteur.fr/en)
 *   [University of California Santa Cruz](https://cbse.soe.ucsc.edu/research/bioinfo)
 *   [Harvard T.H. Chan School of Public Health](https://www.hsph.harvard.edu/)
