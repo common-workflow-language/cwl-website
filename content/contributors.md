@@ -89,7 +89,7 @@ CWL Community members and their contributions to the project.
 *   Oliver Hofmann, University of Melbourne / bcbio-nextgen; <https://orcid.org/0000-0002-7738-1513>
 *   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
 *   Folker Meyer <https://orcid.org/0000-0003-1112-2284>
-*   Tom Morris, Curoverse; <https://orcid.org/0000-0003-0435-7851>
+*   Tom Morris <https://orcid.org/0000-0003-0435-7851>
 *   Anton Nekrutenko, The Pennsylvania State University / Galaxy Project; <https://orcid.org/0000-0002-5987-8032>
 *   Brian O'Connor, University of California Santa Cruz; <https://orcid.org/0000-0002-7681-6415>
 *   Tibor Simko, CERN, <https://orcid.org/0000-0001-7202-5803>
