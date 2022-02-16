@@ -2,10 +2,11 @@
 layout: page
 permalink: /about/
 title: About
+columns: 10
 class: page-short anchors-center-fix
 ---
 
-The CWL Project began out of a need for a standard to 
+The CWL Project began out of a need for a standard to
 describe analysis pipelines in a portable and reusable
 manner. Common Workflow Language (CWL) is a family of standards
 for the description of command line tools and of workflows made with these standards.

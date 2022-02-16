@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /governance/
-title: Governance 
+title: Governance
+columns: 10
 class: page-short
 ---
 

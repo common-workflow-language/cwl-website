@@ -4,6 +4,8 @@ permalink: /contributors/
 redirect_from:
   - /contributers/
 title: Contributors
+columns: 10
+class: page-short
 ---
 
 ## Participating Organizations
