@@ -23,6 +23,7 @@ Researchers, scientists, and analysts share their batch data analysis workflows 
 
 The CWL project supports open consensus-based standards for command line data analysis workflows and tools.
 
+<picture><source srcset="https://github.com/common-workflow-language/cwl-website/raw/main/openstand-128x128-blue.webp" type="image/webp"><img src="./Common Workflow Language_files/openstand-128x128-blue.png" alt="Open Stand badge" width="128" height="128"></picture>
 Specifically, we support the
 *    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
 *    standardization process by stewarding the development and delivery of standards in accordance with the [OpenStand principles](https://open-stand.org/about-us/principles/)
