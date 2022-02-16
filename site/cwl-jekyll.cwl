@@ -8,7 +8,7 @@ hints:
     inplaceUpdate: true
   DockerRequirement:
     dockerFile: |
-      FROM debian:buster
+      FROM debian:bullseye
       RUN apt-get update && apt-get install -yq bundler nodejs locales && gem install bundler
       RUN echo en_US.UTF-8 UTF-8 > /etc/locale.gen && locale-gen
       ENV LANG en_US.UTF-8
