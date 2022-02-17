@@ -178,6 +178,10 @@
       margin: 0 0 0 auto !important;
     }
   }
+
+  .page-short .navbar-nav.ms-auto {
+    margin: 0 1rem 0 0 !important;
+  }
 }
 
 @include media-breakpoint-up(xl-13) {
@@ -186,7 +190,7 @@
 
     &.ms-auto {
       justify-self: initial;
-      margin-left: auto !important;
+      margin: 0 2rem 0 1rem;
     }
   }
 
