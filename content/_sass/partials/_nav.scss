@@ -178,9 +178,14 @@
       margin: 0 0 0 auto !important;
     }
   }
+}
 
-  .page-short .navbar-nav.ms-auto {
-    margin: 0 1rem 0 0 !important;
+// Chrome & Firefox fix for nav positioning when no scrollbar
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .page-short {
+    .navbar-nav.ms-auto {
+      margin: 0 17px 0 0 !important;
+    }
   }
 }
 
@@ -190,7 +195,7 @@
 
     &.ms-auto {
       justify-self: initial;
-      margin: 0 2rem 0 1rem;
+      margin-left: auto !important;
     }
   }
 
