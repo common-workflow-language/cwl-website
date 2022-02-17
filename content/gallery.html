@@ -21,40 +21,36 @@ Note: Listing does not imply endorsements of the CWL standards by the entity nor
 <div class="intro">{{ intro | markdownify }}</div>
 
 {% assign nav_data_loc = site.data.user-gallery[left_nav] %}
-{% comment %}
-<!-- Method to use the Left Nav section in _data/user-gallery.yml -->
-{% include left_nav.html nav_data=site.data.user-gallery.left_nav %}
-{% endcomment %}
-
 {% include left_nav.html %}
 
 <div class="gallery-content">
 {% for section in site.data.user-gallery.gallery %}
-  {% assign title = section.title %}
+  {% assign section_title = section.title %}
   {% assign adopters = section.adopters %}
 
-  {% if section.subsection == null %}
-    {% assign adopter_heading = "h3" %}
-  {% elsif section.subsection != null %}
+  {% assign adopter_heading = "h3" %}
+
+  {% if section.subsection %}
     {% assign sub_adopters = section.subsection.adopters %}
   {% endif %}
 
-  {% if title != null %}
-    <h2 id="{{ title | downcase | replace: " ", "-" }}">{{ title }}</h2>
+  {% if section_title %}
+    <h2 id="{{ section_title | downcase | replace: " ", "-" }}">{{ section_title }}</h2>
   {% endif %}
 
   {% for adopter in adopters %}
     {% include user-gallery.html %}
+
     {% for adopter in sub_adopters %}
       {% capture loop_check %}
-      {% if forloop.first %}
-        {% increment counter %}
-      {% endif %}
+        {% if forloop.first %}
+          {% increment counter %}
+        {% endif %}
       {% endcapture %}
-    {% if counter == 1 %}
-      {% assign adopter_heading = "h4" %}
-      {% include user-gallery.html %}
-    {% endif %}
+      {% if counter == 1 %}
+        {% assign adopter_heading = "h4" %}
+        {% include user-gallery.html %}
+      {% endif %}
     {% endfor %}
   {% endfor %}
 
