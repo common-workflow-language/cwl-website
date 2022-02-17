@@ -4,7 +4,6 @@ permalink: /code-of-conduct/
 redirect_from:
   - /codeofconduct/
 title: Code of Conduct
-columns: 10
 ---
 
 CWL Code of Conduct

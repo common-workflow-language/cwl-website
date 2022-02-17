@@ -100,6 +100,20 @@ main {
   }
 }
 
+// Firefox & Chrome fix for no scrollbar
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .body-page-short {
+    .content-wrapper {
+      padding: 0 2px;
+    }
+
+    .post-header {
+      padding: 10px 0 0 8px;
+    }
+  }
+}
+
+
 @include media-breakpoint-up(xl) {
   .body-page-short {
     .post-content {
