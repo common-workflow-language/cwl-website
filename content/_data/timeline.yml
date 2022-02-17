@@ -25,7 +25,7 @@ timeline_events:
   - year: 2020
     event: |
       CWL v1.2 released (with workflow conditionals) <br>
-      CWL included in the IEEE 2791™--2020 BioCompute Object standard
+      CWL included in the IEEE Std 2791™--2020 BioCompute Object standard
   - year: 2021
     event: |
       2021 CWL Conference (Online)<br>
