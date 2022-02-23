@@ -4,26 +4,26 @@
   </div>
 
   <a class="mini-gallery-wrapper" href="{{ site.url }}/gallery"><div class="mini-gallery">
-  {% for section in site.data.user-gallery.gallery %}
-    {% assign adopters = section.adopters %}
-    {% assign sub_adopters = section.subsection.adopters %}
+  {%- for section in site.data.user-gallery.gallery -%}
+    {%- assign adopters = section.adopters -%}
+    {%- assign sub_adopters = section.subsection.adopters -%}
 
-    {% for adopter in adopters %}
-      {% if adopter.image %}
-        {% unless adopter.duplicate_logo == true %}
+    {%- for adopter in adopters -%}
+      {%- if adopter.image -%}
+        {%- unless adopter.duplicate_logo == true -%}
           <div id="{{ adopter.image_id }}-container" class="mini-gallery-img-container"><img id="{{ adopter.image_id }}" class="mini-gallery-img" src="{{ adopter.image | absolute_url }}" alt=""></div>
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
 
-    {% for sub_adopter in sub_adopters %}
-      {% if sub_adopter.image %}
-        {% unless sub_adopter.duplicate_logo == true %}
+    {%- for sub_adopter in sub_adopters -%}
+      {%- if sub_adopter.image -%}
+        {%- unless sub_adopter.duplicate_logo == true -%}
           <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image | absolute_url }}" alt=""></div>
-        {% endunless %}
-      {% endif %}
-    {% endfor %}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
 
-  {% endfor %}
+  {%- endfor -%}
   </div></a>
 </section>

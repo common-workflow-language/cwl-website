@@ -13,18 +13,18 @@
   <div class="site-wrapper {{ page.class }} page-{{ page.permalink | downcase | replace: "/", "" | replace: " ", "-" }}" id="siteTop">
     {%- include top_nav.html -%}
 
-    {% if page.class contains 'home' or page.title == 'Home' %}
+    {%- if page.class contains 'home' or page.title == 'Home' -%}
       {%- include header.html -%}
-    {% endif %}
+    {%- endif -%}
 
     <div class="container content-wrapper">
       <div class="row">
-      {% if page.columns %}
+      {%- if page.columns -%}
         <main class="col-lg-{{page.columns}}" role="main" id="main">
-      {% else %}
+      {%- else -%}
         <main role="main" id="main">
-      {% endif %}
-          {% include anchor_headings.html html=content anchorBody="§" anchorClass="heading__anchor-symbol" %}
+      {%- endif -%}
+          {%- include anchor_headings.html html=content anchorBody="§" anchorClass="heading__anchor-symbol" -%}
         </main>
       </div>
     </div>

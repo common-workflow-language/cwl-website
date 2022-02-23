@@ -2,27 +2,19 @@
 layout: default
 ---
 <article class="post">
-
   <header class="post-header">
     <div class="container">
       <div class="row">
-        {% if page.columns %}
+        {%- if page.columns -%}
           <h1 class="post-title col-lg-{{page.columns}}">{{ page.title | escape }}</h1>
-        {% else %}
+        {%- else -%}
           <h1 class="post-title">{{ page.title | escape }}</h1>
-        {% endif %}
+        {%- endif -%}
       </div>
     </div>
-
-  {% comment %}
-  <div class="container">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </div>
-  {% endcomment %}
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
-
 </article>
