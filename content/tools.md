@@ -2,12 +2,15 @@
 layout: page
 permalink: /tools/
 title: Development Tools 
-redirect_from: /ecosystem/
+redirect_from:
+  - /ecosystem/
+  - /development-tools/
 columns: 10
 class: has-black-h2s has-red-h3s
 ---
 
-## Development tools for working with CWL
+<!-- ## Development tools for working with CWL -->
+
 Beyond releasing the CWL standards, the CWL community has developed many
 tools, software libraries, connected specifications, and has shared CWL
 descriptions for popular tools.
@@ -37,13 +40,13 @@ descriptions for popular tools.
 |--- |--- |
 |[cwldep](https://github.com/common-workflow-language/cwldep) |CWL dependency manager, for importing tool wrappers and workflows into your own project.|
 |[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
-|[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|generates ZSH auto completions from CWL command line tool descriptions|
+|[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|Generates ZSH auto completions from CWL command line tool descriptions|
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
 |[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
-|[looper](http://looper.databio.org/)|job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
+|[looper](http://looper.databio.org/)| Job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
 
 ### Converters And Code Generators
 
@@ -62,7 +65,7 @@ descriptions for popular tools.
 |[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
 |[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
-|[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|a tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
+|[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|A tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
 |[pegasus-cwl-converter](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|Work in progress tool to convert a CWL workflow into a Pegasus workflow.|
 
 ### Code Libraries
