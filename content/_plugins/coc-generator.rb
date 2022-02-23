@@ -19,7 +19,6 @@ def generate_front_matter()
   redirect_from:
     - /codeofconduct/
   title: Code of Conduct
-  class: page-short
   ---
 
   FRONT_MATTER
