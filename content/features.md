@@ -20,7 +20,7 @@ Lastly, provenance tracking helps with auditing, tranparency, and validation. Ul
 ### Why Use a Standard?
 
 A standard for sharing and reusing workflows can provide a solution to describing portable,re-usable workflows while also being workflow-engine and vendor-neutral.
-Although workflows are very popular, prior to the CWL standards every workflow system was incompatible with every other. This means, those users not using the CWL standards are required to express their computational workflows in a different way everytime they have to use another workflow system. This greatly hampers reuse and collaboration.
+Although workflows are [very popular](https://s.apache.org/existing-workflow-systems), prior to the CWL standards every workflow system was incompatible with every other. This means, those users not using the CWL standards are required to express their computational workflows in a different way everytime they have to use another workflow system. This greatly hampers reuse and collaboration.
 
 ### When to Use CWL?
 
@@ -34,7 +34,7 @@ CWL workflows are portable, reusable, and flexible.  Reproduction, reuse, and re
 
 <figure>
   <img src="/assets/img/cwlportable.png" alt="" style="max-width: 80%;">
-  <figcaption>Example of CWL portablity. The same CWL workflow description can run on a laptop,
+  <figcaption>Example of CWL portability. The same CWL workflow description can run on a laptop,
 on any batch production-environment, and on any common public or private cloud.</figcaption>
 </figure>
 
