@@ -1,0 +1,58 @@
+---
+layout: page
+permalink: /gallery/
+title: CWL User Gallery
+redirect_from:
+  - /cwl-adopters/
+  - /users-gallery/
+  - /user-gallery/
+left_nav_slug: user_gallery_left
+class: user-gallery has-left-nav
+---
+
+{%- capture intro -%}
+The CWL standards have become central to a diverse community of users across multiple fields of science and engineering. Below are listed some adopters of the CWL standards.
+
+The CWL 2021 Mini-Conference showcased CWL users and developers.  To see adopters talk about their use of CWL, the [CWLcon 2021](https://cwl.discourse.group/c/cwlcon-2021/9) tag links to the conference videos hosted on YouTube and ConfTube.  Additionally, see [the list of over 390 citations and mentions of CWL in published papers and reports](https://www.zotero.org/groups/2294829/cwl/items).
+
+Note: Listing does not imply endorsements of the CWL standards by the entity nor endorsement of the entity by the CWL project.
+{%- endcapture -%}
+
+<div class="intro">{{ intro | markdownify }}</div>
+
+{%- assign nav_data_loc = site.data.user-gallery[left_nav] -%}
+{%- include left_nav.html -%}
+
+<div class="gallery-content">
+{%- for section in site.data.user-gallery.gallery -%}
+  {%- assign section_title = section.title -%}
+  {%- assign adopters = section.adopters -%}
+
+  {%- assign adopter_heading = "h3" -%}
+
+  {%- if section.subsection -%}
+    {%- assign sub_adopters = section.subsection.adopters -%}
+  {%- endif -%}
+
+  {%- if section_title -%}
+    <h2 id="{{ section_title | downcase | replace: " ", "-" }}">{{ section_title }}</h2>
+  {%- endif -%}
+
+  {%- for adopter in adopters -%}
+    {%- include user-gallery.html -%}
+
+    {%- for adopter in sub_adopters -%}
+      {%- capture loop_check -%}
+        {%- if forloop.first -%}
+          {%- increment counter -%}
+        {%- endif -%}
+      {%- endcapture -%}
+      {%- if counter == 1 -%}
+        {%- assign adopter_heading = "h4" -%}
+        {%- include user-gallery.html -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+
+{%- endfor -%}
+</div>

@@ -1,13 +1,10 @@
 .site-footer {
-  background-color: $toc--background-color;
+  background-color: $footer-bg-color;
   padding: 10px 15px 0;
 
+  p,
   a {
-    color: $toc--link-color;
-
-    &:hover {
-      color: $toc--link-hover-color;
-    }
+    color: $white;
   }
 }
 

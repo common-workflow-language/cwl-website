@@ -1,15 +1,17 @@
-_site
-.sass-cache
+# Directories
+# *.gem
+# .bundle
 .jekyll-cache
 .jekyll-metadata
-vendor/bundle
-.editorconfig
-*.bak*
-*.sh
-*_archive*
-*_scratch/*
-*scratch*
-.ssl/
-.xcf
-_Notes
+.sass-cache
+_site
+_archive
+*_notes*
+
+# Files
 _config_local.yml
+
+# NPM
+node_modules
+package.json
+package-lock.json

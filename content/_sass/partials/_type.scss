@@ -1,62 +1,89 @@
-body {
-  font-size: 0.9375rem
-}
-
-h1, h2, h3, h4, h5, h6, 
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin: 20px 0 10px;
+body,
+a {
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 h1,
-.h1 {
-  margin: 20px 0 10px;
+.h1,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0 0 1rem;
 }
 
 h2,
 .h2 {
-  font-size: 1.875rem;
-  margin: 20px 0 10px;
+  color: $cwl-red;
+  margin: 0 0 1.25rem;
 }
 
-h3,
-.h3 {
-  font-size: 1.5rem;
-}
-
-ol,
-ul,
-dl {
-  // padding: 0 0 0 20px;
-  padding: 0 0 0 1.25rem;
-}
-
-
-@include media-breakpoint-up(sm) {
-  ol,
-  ul,
-  dl {
-    // padding: 0 0 0 30px;
-    padding: 0 0 0 1.875rem;
+.body-has-black-h2s,
+.has-black-h2s {
+  h2 {
+    color: $black;
   }
 }
 
-@include media-breakpoint-up(lg) {
-  ol,
-  ul,
-  dl {
-    // padding: 0 0 0 40px;
-    padding: 0 0 0 2.5rem;
+.body-has-red-h3s,
+.has-red-h3s {
+  h3 {
+    color: $cwl-red;
   }
 }
 
-code {
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-  font-size: 90%;
-  padding: 2px 4px;
+figcaption {
+  color: $grey-5;
+  font-style: italic;
 }
 
-.page-heading {
-  font-size: 2.25rem;
+.cwl-red {
+  color: $cwl-red;
+}
+
+.no-bold {
+  font-weight: 400;
+}
+
+.heading__anchor-symbol {
+  color: transparent;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $cwl-red;
+  }
+}
+
+.float-right {
+  float: right;
+}
+
+// Change bullet points to red by default
+li {
+  &::marker {
+    color: $cwl-red;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.getting-started,
+.community {
+  li {
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+
+    &::marker {
+      font-size: 1.125rem;
+    }
+  }
 }

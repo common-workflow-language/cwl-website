@@ -1,0 +1,47 @@
+{%- if adopter.sub_title -%}
+  <h3 id="{{ adopter.sub_title | downcase | replace: " ", "-" }}" class="adopter-sub-title">{{ adopter.sub_title }}</h3>
+{%- endif -%}
+
+{%- if adopter.name -%}
+  <div class="adopter-entry">
+    <div class="adopter-row-top">
+
+      {%- if adopter_heading == "h3" -%}
+        <h3 id="{{ adopter.name | downcase | replace: " ", "-" }}" class="adopter-title">{{ adopter.name }}</h3>
+      {%- elsif adopter_heading == "h4" -%}
+        <h4 id="{{ adopter.name | downcase | replace: " ", "-" }}" class="adopter-title">{{ adopter.name }}</h4>
+      {%- else -%}
+        <p>Adopter heading is neither H3 nor H4</p>
+      {%- endif -%}
+
+      {%- if adopter.m_link -%}
+        <p class="adopter-link">{{ adopter.m_link | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+      {%- elsif adopter.link_text -%}
+        <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.link_text }}</a>
+      {%- else -%}
+      <a href="{{ adopter.url }}" class="adopter-link">{{ adopter.url }}</a>
+      {%- endif -%}
+
+      {%- if adopter.description -%}
+        {{ adopter.description }}</p>
+      {%- endif -%}
+
+      {%- if adopter.other -%}
+        <div class="adopter-other">
+          {%- if adopter.other_section_title -%}
+            <p class="adopter-other-title"><b>{{ adopter.other_section_title }}</b></p>
+          {%- else -%}
+            <p class="adopter-other-title"><b>Additional Info:</b></p>
+          {%- endif -%}
+            {{ adopter.other }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if adopter.image -%}
+      {%- assign img_class = adopter.image | replace: ".", " " | truncate_words: 1 -%}
+      <div class="adopter-logo-container"><img src="{{ adopter.image | absolute_url }}" class="adopter-logo {{ img_class | append: "-logo" }}" alt="{{ adopter.name | append: " logo" }}"></div>
+    {%- endif -%}
+
+  </div>
+{%- endif -%}

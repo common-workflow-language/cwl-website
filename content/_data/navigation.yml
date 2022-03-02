@@ -1,51 +1,87 @@
 header:
+  - title: Home
+    url: /
+  - title: About
+    url: "#"
+    type: dropdown
+    subpages:
+      - title: Vision and Mission
+        url: /about/#vision
+      - title: Timeline 
+        url: /timeline
+      - title: Governance
+        url: /governance
+      - title: Contributors
+        url: /contributors
+  - title: Features
+    url: "/features"
   - title: Getting Started
-    url: "/#getting-started"
+    url: /getting-started
+  - url: /community
+    title: Community
+  - title: Ecosystem
+    url: "#"
     type: dropdown
-    subfolderitems:
-      - page: Getting Started
-        url: "/#getting-started"
-      - page: Vision for the CWL Project
-        url: "/#vision-for-cwl"
-      - page: Support, Community and Contributing
-        url: "/#support"
-      - page: Specification
-        url: "/#specification"
-  - title: Implementations
-    url: "/implementations"
-    type: dropdown
-    subfolderitems:
-      - page: Implementations
-        url: "/#implementations"
-      - page: Repositories
-        url: "/#repos"
-      - page: Software
-        url: "/#software"
-  - title: Community Projects
-    url: "/#projects"
-    type: dropdown
-    subfolderitems:
-      - page: Projects
-        url: "/#projects"
-      - page: Contributors & Governance
-        url: "#contributors-and-governance"
-
-toc:
-  - title: Getting Started
-    url: "/#Getting_Started"
-  - title: Vision for the CWL Project
-    url: "/#vision-for-cwl"
-  - title: Support, Community and Contributing
-    url: "/#Support"
+    subpages:
+      - title: Implementations
+        url: /implementations
+      - title: Development Tools 
+        url: /tools
+      - title: Repositories
+        url: /repos
+      - title: Projects
+        url: /projects
   - title: Specification
-    url: "/#Specification"
-  - title: Implementations
-    url: "/#Implementations"
-  - title: Repositories of CWL Tools and Workflows
-    url: "/#Repositories_of_CWL_Tools_and_Workflows"
-  - title: Software for working with CWL
-    url: "/#Software_for_working_with_CWL"
-  - title: Projects the CWL community is participating in
-    url: "/#Projects_the_CWL_community_is_participating_in"
-  - title: Contributors and Governance
-    url: "#Contributers_and_Governance"
+    url: /specification
+  - title: User Gallery
+    url: /gallery
+  - title: Donate
+    url: /donate
+
+user_gallery_left:
+  - nav_header: Shortcuts
+  - title: Life Sciences
+    url: "#life-sciences"
+    submenu:
+      - title: US Food and Drug Administration (FDA)
+        url: "#us-food-and-drug-administration-(fda)"
+      - title: US National institute of Health
+        url: "#us-national-institutes-of-health-(nih)"
+      - title: Children's Hospital of Philadelphia
+        url: "#"
+      - title: European Open Science Cloud - Life (EOSC-Life)
+        url: "#european-open-science-cloud---life-(eosc-life)"
+      - title: BioExcel, Centre of Excellence for Computational Biomolecular Research
+        url: "#bioexcel,-centre-of-excellence-for-computational-biomolecular-research"
+      - title: ELIXIR
+        url: "#elixir"
+      - title: Wellcome Trust Sanger Institute
+        url: "#wellcome-trust-sanger-institute"
+      - title: Memorial Sloan Kettering Cancer Center
+        url: "#memorial-sloan-kettering-cancer-center"
+      - title: UNLOCK
+        url: "#unlock"
+      - title: PubSeq
+        url: "#pubseq"
+  - title: Geospatial
+    url: "#geospatial"
+    submenu:
+      - title: Open Geospatial Consortium
+        url: "#open-geospatial-consortium"
+  - title: Hydrology
+    url: "#hydrology"
+    submenu:
+      - title: The European Open Science Cloud
+        url: "#the-european-open-science-cloud"
+  - title: Radio Astronomy
+    url: "#radio-astronomy"
+    submenu:
+      - title: The European Open Science Cloud for Research Pilot Project
+        url: "#the-european-open-science-cloud-for-research-pilot-project"
+  - title: Cross-Domain
+    url: "#cross-domain"
+    submenu:
+      - title: The [Netherlands] National Plan Open Science
+        url: "#the-[netherlands]-national-plan-open-science"
+      - title: University of Manchester, eScience Lab
+        url: "#university-of-manchester,-escience-lab"

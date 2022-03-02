@@ -1,0 +1,24 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import 'bootstrap/bootstrap';
+
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/structure';
+@import 'partials/type';
+@import 'partials/header';
+@import 'partials/nav';
+@import 'partials/left-nav';
+@import 'partials/footer';
+@import 'partials/tables';
+
+@import 'partials/helpers';
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/timeline';
+@import 'partials/social-bar';
+@import 'partials/user-gallery';
+@import 'partials/back-to-top';
+@import 'partials/gitter';

@@ -1,170 +1,451 @@
-.top-nav {
-  background: $header--background-color;
-  justify-content: space-between;
-  max-height: 50px;
-  padding: 0;
-  width: 100%;
-}
-
-.dropdown {
-  color: black;
-  padding: 0 1rem 0 0;
-}
-
-.navbar-nav {
-  align-items: flex-start;
-
-  a {
-    color: $nav--link-color;
-  }
-}
-
-.search-bar-top {
-  display: none;
-  position: absolute;
-  // 34px would match the distance of the logo
-  // right: 34px;
-  right: $navbar--right-spacing;
-}
-
-.site-logo-link {
-  align-items: center;
-  display: flex;
-  font-family: $font-family-sans-serif;
-  height: 50px;
-  line-height: 20px;
-  // margin: 1px 0 0 -5px;
-  margin: 0.5px 0 0 -5px;
-  padding: 0;
-}
-
-.site-logo-img {
-  display: block;
-  height: 61px;
-  margin: 0;
-  max-width: unset;
-  padding: 0;
-}
-
-.navbar-toggler {
-  // margin: 1px 0 0;
-  margin: 0 $navbar--right-spacing 0 0;
-  position: static;
-}
-
-.dropdown-menu {
-  justify-content: flex-end;
-  justify-self: flex-end;
-  // min-width: 60%;
-
-  &.show {
-    display: block;
-  }
-}
-
-.navbar-collapse {
-  background: $header--background-color;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 15px;
-}
-
-.collapse.show .nav-link:last-child {
-  padding: 8px 0 16px;
-}
-
-.site-header .container {
-  max-width: initial;
-}
-
-.nav-wrap {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  // width: 750px;
-  width: 100%;
-}
-
-.navbar-toggler {
-  height: 36px;
-}
-
-.navbar-toggler-icon {
-  padding: 12px 4px;
-
-}
-.navbar-nav {
-  font-size: 15px;
-  margin: 0 auto;
-  padding: 0 0 0 20px;
-  width: 750px;
-}
-
-@include media-breakpoint-up(md) {
-  .nav-wrap,
-  .navbar-nav {
-    width: 750px;
-  }
+.top-nav,
+.navbar-brand,
+.nav-logo {
+  height: $nav-height-mobile;
 }
 
 @include media-breakpoint-up(lg) {
   .top-nav {
-    margin: 0 auto;
-    max-width: 970px;
-    padding: 0.5rem 1rem 0.5rem 0;
-    width: 100%;
+    height: auto;
   }
 
-  .nav-wrap {
-    width: 106px;
+  .navbar-brand,
+  .nav-logo {
+    height: $nav-height-desktop;
   }
+}
 
-  .logo-container {
-    position: static;
-    // width: 135px;
-  }
+.nav-wrap,
+.top-nav,
+.nav-item {
+  background-color: $nav--bg-color;
+}
 
-  .site-logo-link {
-    margin: 1 20px 0 -5px;
-  }
-
-  .navbar-nav {
-    // align-items may also be unnecessary here
-    align-items: center;
-    justify-content: flex-start;
-    margin: 0 0 0 -24px;
-  }
-
-  .navbar-collapse {    
-    &.show .nav-link:last-child {
-      padding: 0.5rem;
-    }
-  }
-
-  .nav-item {
-    padding: 0 1rem;
-  }
-
-  .search-bar-top {
-    display: block;
-  }
-
+.top-nav {
+  border-bottom: 2px solid $nav--border-color;
+  box-sizing: content-box;
 }
 
 @include media-breakpoint-up(xl) {
   .top-nav {
-    // width: 100%;
-    margin: 0 auto;
-    max-width: 1170px;
-  }
-
-  .navbar-nav {
-    margin: 0;
-  }
-
-  .site-logo-link {
-    margin: 1px 0 0 -5px;
+    padding: 0;
   }
 }
 
+@include media-breakpoint-up(xl-13) {
+  .top-nav {
+    height: $nav-height-desktop;
+    padding: 0.5rem 0;
+  }
+}
+
+.nav-wrap {
+  background: $nav--bg-color;
+  border: 0;
+  margin: 0 0 0 auto;
+  padding: 0 0 0 0.25rem;
+}
+
+@include media-breakpoint-up(xxs) {
+  .nav-wrap {
+    padding: 0;
+    width: auto;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  .nav-wrap {
+    border: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-wrap {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-wrap {
+    width: auto;
+  }
+}
+
+.navbar-brand {
+  box-sizing: content-box;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-brand {
+    height: $nav--brand-height-desktop;
+    padding: 0;
+    top: 9px;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-brand {
+    margin: 0 10px 0 0;
+    position: static;
+    width: 126px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .navbar-brand {
+    margin: 0 1rem 0 0;
+    position: absolute;
+    top: 0;
+    width: auto;
+  }
+}
+
+.nav-logo {
+  margin: 3px 0 3px 6px;
+  object-fit: contain;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-logo {
+    height: $nav--logo-height-desktop;
+    margin: $nav--logo-margin-desktop;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-logo {
+    left: 6px;
+    margin: 0;
+    position: relative;
+    top: 3px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-logo {
+    margin: 3px 0 3px 6px;
+    position: static;
+  }
+}
+
+.navbar-toggler {
+  margin: 5px 1rem 5px 0;
+}
+
+.navbar-collapse {
+  background: transparent;
+  border-bottom: 1px solid $nav--border-color-2;
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-collapse {
+    border: 0;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-collapse {
+    margin: 0 auto 0 0;
+    min-width: calc(100% - 121px);
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .navbar-collapse {
+    margin: 0;
+    min-width: initial;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-nav {
+    align-items: center;
+    margin: 0 1rem 0 0;
+    max-width: calc(100vw - 130px);
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .navbar-nav {
+    max-width: calc(100vw - 130px);
+
+    &.ms-auto {
+      justify-self: flex-end;
+      margin: 0 0 0 auto !important;
+    }
+  }
+}
+
+// Chrome & Firefox fix for nav positioning when no scrollbar
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .page-short {
+    .navbar-nav.ms-auto {
+      margin: 0 17px 0 0 !important;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .navbar-nav {
+    margin: 0 2rem 0 1rem;
+
+    &.ms-auto {
+      justify-self: initial;
+      margin-left: auto !important;
+    }
+  }
+
+  .page-short .navbar-nav {
+    margin: 0 2rem 0 1rem;
+  }
+}
+
+.nav-item {
+  padding: $nav--item-padding;
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-item {
+    padding: 0 0.3rem;
+  }
+}
+
+@include media-breakpoint-up(lg-2) {
+  .nav-item {
+    padding: 0 0.25rem;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-item {
+    padding: 0 0.5rem;
+  }
+}
+
+.top-nav .navbar-nav {
+  .nav-link {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $cwl-red;
+    }
+
+    &.is-current-page {
+      color: $cwl-red;
+      font-weight: 500;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .top-nav .navbar-nav {
+    .nav-link {
+      padding: 0 0.45rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .top-nav .navbar-nav {
+    .nav-link {
+      padding: 0.5rem;
+    }
+  }
+}
+
+.nav-home-link {
+  display: block;
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-home-link {
+    display: none;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .nav-home-link {
+    display: block;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .nav--paypal-btn {
+    padding: 0 0.5rem;
+
+    .paypal-btn {
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-item,
+  .nav--paypal-btn {
+    padding: 0 2px;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-item,
+  .nav--paypal-btn {
+    padding: 0 4px;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .nav-item {
+    padding: 0 8px;
+  }
+
+  .nav--paypal-btn {
+    padding: 0;
+  }
+}
+
+.nav-social-icons {
+  margin: 0;
+  padding: $nav--item-padding 0.25rem;
+
+  .fab {
+    font-size: 2em;
+    margin: $nav--item-margin;
+  }
+
+  .first-icon {
+    margin-left: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .nav-social-icons {
+    margin: 8px 0 0;
+    padding: 0 1rem;
+
+    .fab {
+      font-size: 1.5rem;
+      margin: 0 $nav--item-margin;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg-2) {
+  .nav-social-icons {
+    padding: 0 0.5rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .nav-social-icons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .nav-social-icons {
+    display: list-item;
+  }
+}
+
+.fab {
+  color: $grey-5;
+
+  &:hover {
+    color: $cwl-red;
+  }
+}
+
+.fa-github {
+  color: $grey-4;
+
+  &:hover {
+    color: $black;
+  }
+}
+
+.fa-twitter {
+  &:hover {
+    color: $twitter-blue;
+  }
+}
+
+.fa-youtube {
+  &:hover {
+    color: $youtube-red;
+  }
+}
+
+@media (max-height: 525px) and (max-width: 992px) {
+  .navbar {
+    display: block;
+  }
+
+  .navbar-nav {
+    background-color: $nav--bg-color;
+    max-height: 80vh;
+    width: 100%;
+  }
+
+  .nav-social-icons {
+    a {
+      display: block;
+    }
+
+    .fab {
+      margin: 0.5rem 0;
+    }
+  }
+}
+
+.nav--paypal-btn {
+  .paypal-btn {
+    background: transparent;
+    border: 0;
+    color: $nav-link--color;
+    padding: 0;
+
+    &:hover {
+      color: $nav-link--hover-color;
+    }
+  }
+}
+
+
+.skip-nav {
+  margin: 0;
+
+  li {
+    height: 0;
+    list-style: none;
+    width: 0;
+  }
+
+  .skip-link {
+    background: $white;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: -40px;
+    transition: top 1s ease-out, background 1s linear;
+      -webkit-transition: top 1s ease-out, background 1s linear;
+
+    &:focus {
+      box-shadow: 0 0 2px 2px $skip-link--box-shadow-color;
+      color: $cwl-red;
+      font-weight: 700;
+      height: auto;
+      left: 0;
+      padding: 15px 23px 14px;
+      position: absolute;
+      top: 0;
+      transition: top .1s ease-in, background .5s linear;
+        -webkit-transition: top .1s ease-in, background .5s linear;
+      z-index: 2000;
+    }
+  }
+}

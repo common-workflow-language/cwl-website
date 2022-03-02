@@ -1,0 +1,19 @@
+// Hide the anchor symbol from jekyll-anchor-links
+// but keep them visible to screen readers, and
+// allow for keyboard tabbing
+@mixin hide-anchor-symbols {
+  .heading__anchor-symbol {
+    &:not(:focus),
+    &:not(:active) {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+  }
+}
+

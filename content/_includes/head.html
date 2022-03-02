@@ -1,32 +1,39 @@
 <head>
+  <title>{{ page.title }} | Common Workflow Language (CWL)</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="shortcut icon" href="/favicon/favicon-96x96.png"> -->
 
-  {% comment %}
-  Figure out whether this conditional check actually works properly the point is to keep out the staging server
-  {% endcomment %}
-  
-  {% if (site.url != 'commonwl.org') and (site.url != 'www.commonwl.org') %}
+  {%- if (site.url != 'commonwl.org') and (site.url != 'www.commonwl.org') -%}
     <meta name="robots" content="noindex" />  
-  {% endif %}
+  {%- endif -%}
   <link rel="sitemap" type="application/xml" title="Sitemap" href={{ "/sitemap.xml" | relative_url }}>
 
   {%- seo -%}
 
-  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <script type="text/javascript" src="{{ "/assets/js/redirects.js" | relative_url }}"></script>
+
+  {%- if page.url contains "gallery" -%}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  {%- endif -%}
+
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
 
   {%-if (site.url == 'commonwl.org') or (site.url == 'www.commonwl.org') -%}
   {%- include google-analytics.html -%}
   {%-endif -%}
 
+  {%- comment -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  {%- endcomment -%}
 
   {%- include custom-head.html -%}
-  
 </head>

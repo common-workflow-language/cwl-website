@@ -1,10 +1,12 @@
-<footer class="{{ page.class }} site-footer h-card">
+<footer class="{{ page.class }} site-footer" id="site_footer">
 <div class="container">
   <div class="row">
     <div class="col-xs-12 footer-text">
-    	<p>Copyright © 2014-{{ site.time | date: '%Y' }} <span>•</span> <a href="{{ site.url}}{{ site.baseurl }}">{{ site.title }}</a></p>
+    	<p>Copyright © 2014-{{ site.time | date: '%Y' }}<span> • </span><a href="{{ site.url}}{{ site.baseurl }}">{{ site.title }}</a> <span> • </span><a href="{{ "code-of-conduct" | absolute_url }}">Code of Conduct</a></p>
     </div>
   </div>
 </div>
-
 </footer>
+
+<!-- Back to Top button -->
+<a href="#siteTop" title="Back to Top" aria-label="Back to Top" class="up_btn btt-shrinked" id="backToTop" style="display: inline;"><i class="fa fa-arrow-up"></i></a>

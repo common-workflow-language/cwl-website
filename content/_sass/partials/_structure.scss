@@ -1,131 +1,305 @@
-// body {
-//   padding: 61px 0 0;
-// }
-
-/**
- * Fix for Sticky Footer
- */
 .site-wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
-  padding: 61px 0 0;
+  position: relative;
 }
 
 .content-wrapper {
-  // Double-check if these are equivalent
-  flex: 1 0 auto;
-  flex: 1;
+  padding-bottom: 76px;
 }
 
-.container-md,
-.container {
-  max-width: initial;
+main {
+  margin: 0 auto;
+  padding: 0 calc(var(--bs-gutter-x) * 2);
+  // padding: 0 $bs-container-padding-x;
 }
 
-@include media-breakpoint-up(md) {
-  .container-md,
-  .container {
-    max-width: 750px;
+////////////
+// Footer //
+////////////
+
+// Account for footer wrapping
+@include media-breakpoint-up(xxs) {
+  .content-wrapper {
+    padding-bottom: 86px;
   }
 }
 
-// Content-Area Width
+.site-footer {
+  bottom: 0;
+  margin: 24px 0 0;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+///////////////////////
+// Sticky Footer Fix //
+///////////////////////
+
+.body-page-short {
+  height: 100%;
+
+  .content-wrapper,
+  .post-content {
+    position: static;
+  }
+
+  .site-footer {
+    position: absolute;
+    width: 100%;
+  }
+
+  .content-wrapper {
+    min-height: calc(100vh - 96px);
+    padding-bottom: 56px;
+  }
+
+  .post-content {
+    padding: 84px 2px 26px;
+  }
+}
+
+@include media-breakpoint-up(xxs) {
+  .body-page-short {
+    .content-wrapper {
+      padding-bottom: 32px;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .body-page-short {
+    .content-wrapper {
+      padding-bottom: 0;
+    }
+
+    .post-content {
+      margin: 0 0 38px;
+      padding: 90px 0 26px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .body-page-short {
+    .content-wrapper {
+      padding-bottom: 0;
+    }
+
+    .post-content {
+      padding: 92px 0 26px;
+    }
+  }
+}
+
 @include media-breakpoint-up(lg) {
-  .container-lg,
-  .container {
-    max-width: 970px;
+  .body-page-short {
+    .post-content {
+      padding: 96px 0 26px;
+    }
+  }
+}
+
+// Firefox & Chrome fix for no scrollbar
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+  .body-page-short {
+    .content-wrapper {
+      padding: 0 2px;
+    }
+
+    .post-header {
+      padding: 10px 0 0 8px;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  .body-page-short {
+    .post-content {
+      padding: 102px 0 26px;
+    }
+  }
+}
+
+.body-home {
+  .content-wrapper {
+    padding-bottom: 0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .body-home {
+    .content-wrapper {
+      padding-bottom: 0;
+    }
+  }
+}
+
+///////////////////////////
+// End Sticky Footer Fix //
+///////////////////////////
+
+////////////////////////////////////////
+// Headings & Anchor Links Scroll Fix //
+////////////////////////////////////////
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Prevent the page from overscrolling,
+// so that nav menu doesn't cover content
+//
+// Not working for all About Headers. Will need to custom class it
+:target:before {
+  content: '';
+  display: block;
+  height: 76px;
+  margin: -76px 0 0;
+}
+
+@include media-breakpoint-up(lg) {
+  :target:before {
+    height: 104px;
+    margin: -104px 0 0;
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .container-xl,
+  :target:before {
+    height: 68px;
+    margin: -68px 0 0;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  :target:before {
+    height: 74px;
+    margin: -74px 0 0;
+  }
+}
+
+////////////////////////////////////////////
+// End Headings & Anchor Links Scroll Fix //
+////////////////////////////////////////////
+
+//////////////
+// Homepage //
+//////////////
+
+.page-home .content-wrapper {
+  padding-bottom: 0;
+}
+
+.page-section {
+  margin: 1rem 0;
+  padding: 0 2px;
+}
+
+.intro-container {
+  margin: 1rem 0;
+}
+
+@include media-breakpoint-up(md) {
+  .page-section {
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .intro-container {
+    margin: 1rem auto 2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .page-section {
+    &.community {
+      width: 96%;
+    }
+  }
+
+  .intro-container {
+    margin: 2rem auto;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .page-section {
+    &.community {
+      width: 90%;
+    }
+  }
+}
+
+.section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+///////////////////
+// Regular pages //
+///////////////////
+
+.post-header {
+  background: $cwl-red;
+  color: $white;
+  left: 0;
+  margin: 0;
+  padding: 10px 0 0 12px;
+  position: absolute;
+  width: 100%;
+
   .container {
-    max-width: 1170px;
+    padding-left: 0;
   }
 }
 
-/**
- * Header Offset Fix for Anchor Links
- */
-h2::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
-}
-
-h3::before {
-  content: " ";
-  display: block;
-  height: 65px;
-  margin-top: -65px;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1;
-}
-
-.anchorfix {
-  position: relative;
-  top: -65px;
-
-  span {
-    position: relative;
-    top: 65px;
+@include media-breakpoint-up(sm) {
+  .post-header {
+    padding-left: 24px;
   }
 }
 
-.longfix {
-  position: relative;
-  top: -100px;
+.post-title {
+  margin: 0 auto 1rem;
+}
 
-  span {
-    position: relative;
-    top: 100px;
+@include media-breakpoint-up(lg) {
+  .post-title {
+    font-size: 2.25rem;
+  }
+}
+
+.post-content {
+  padding: 0 2px;
+  position: relative;
+  top: 84px;
+}
+
+@include media-breakpoint-up(sm) {
+  .post-content {
+    padding: 0;
+    top: 90px;
   }
 }
 
 @include media-breakpoint-up(md) {
-  .longfix {
-    top: -65px;
-
-    span {
-      top: 65px;
-    }
+  .post-content {
+    top: 92px;
   }
 }
 
-/**
- * Tables
- */
-
-.table {
-  margin: 0 0 1.25rem;
-  // width: initial;
-
-  th,
-  td {
-    padding: 0.5rem;
-    width: 30%;
-  }
-
-  thead th {
-    border-top: 0;
-  }
-
-  a {
-    word-break: normal;
+@include media-breakpoint-up(lg) {
+  .post-content {
+    top: 96px;
   }
 }
 
-@include media-breakpoint-up(md) {
-  .table {
-    th,
-    td {
-      width: initial;
-    }
+@include media-breakpoint-up(xl) {
+  .post-content {
+    top: 102px;
   }
 }
+

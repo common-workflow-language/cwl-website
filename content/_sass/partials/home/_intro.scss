@@ -1,0 +1,12 @@
+@include media-breakpoint-up(lg) {
+  .intro-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .intro-text {
+    font-size: 20px;
+    text-align: center;
+    width: 40%;
+  }
+}

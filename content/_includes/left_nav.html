@@ -1,0 +1,41 @@
+{%- comment -%}
+Uses the yaml nav data, passed from the including, page via nav_data.
+If no nav_data was passed, then it pulls the data from _data/navigation.yml, using the page slug instead.
+{%- endcomment -%}
+
+{%- if include.nav_data -%}
+  {%- assign nav_data = include.nav_data -%}
+{%- else -%}
+  {%- assign nav_data = site.data.navigation[page.left_nav_slug] -%}
+{%- endif -%}
+
+{%- assign nav_heading = nav_data[0].nav_header -%}
+
+<nav class="left-nav" aria-label="Page Shortcuts Menu">
+  <button class="navbar-toggler left-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#leftNav" aria-controls="leftNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="left-nav-title-mobile">{{ nav_heading }}</span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="leftNav">
+    <h2 class="left-nav-title">{{ nav_heading }}</h2>
+    <ul class="left-nav-links">
+      {%- for menu_item in nav_data -%}
+        {%- unless menu_item.nav_header -%}
+          {%- if menu_item.submenu -%}
+            {%- assign sub = menu_item.submenu -%}
+            <li class="no-indent">
+              <a class="left-nav-link" href="{{ menu_item.url }}">{{ menu_item.title }}</a>
+            <ul class="left-subnav">
+              {%- for sub_item in sub -%}
+                <li class="indent"><a class="left-nav-link left-nav-sublink" href="{{ sub_item.url }}">{{ sub_item.title }}</a></li>
+              {%- endfor -%}
+            </ul>
+            </li>
+          {%- else -%}
+            <li><a href="{{ menu_item.url }}">{{ menu_item.title }}</a></li>
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    </ul>
+  </div>
+</nav>

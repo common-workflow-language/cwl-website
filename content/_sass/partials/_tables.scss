@@ -1,0 +1,179 @@
+////////////
+// Tables //
+////////////
+
+// Soften table header row bottom border (overrides bootstrap)
+.table > :not(:last-child) > :last-child > * {
+  border-bottom: 2px solid $table-border-light;
+}
+
+.table {
+  margin: 0 0 2rem;
+  table-layout: fixed;
+
+  a {
+    white-space: pre-line;
+  }
+
+  th,
+  tr,
+  td {
+    display: block;
+  }
+
+  th {
+    word-break: keep-all;
+  }
+
+  tr {
+    background: $white;
+  }
+
+  tr:nth-of-type(odd) td,
+  tr:nth-of-type(even) td {
+    background: $table--cell-striped-background;
+    border-bottom: 1px solid $table--cell-border-bottom-alt;
+
+    &:nth-of-type(1) {
+      background: $cwl-red;
+    }
+  }
+
+  td {
+    &:first-of-type {
+      background: $cwl-red;
+      border: 0;
+
+      a {
+        color: $white;
+        font-weight: 700;
+      }
+    }
+
+    &:nth-of-type(n+2) {
+      background: $white;
+    }
+  }
+
+  thead {
+    border-top: 1px solid $grey-c;
+
+    tr {
+      background: $table--cell-striped-background;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    th {
+      background: $table--cell-striped-background;
+      border-bottom: 0 !important;
+      border-right: 1px solid $grey-c;
+      width: 33%;
+
+      &:last-of-type {
+        border-right: 0;
+      }
+    }
+  }
+
+  &.cols-2 thead {
+    th {
+      width: 48%;
+    }
+  }
+
+  // Unused helper class - left in, in case it's needed in the future
+  &.cols-equal {
+    th,
+    td {
+      width: 33% !important;
+    }
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  .table {
+    table-layout: fixed;
+
+    tr:nth-of-type(n+1) {
+      a {
+        color: $table--link-color;
+        font-weight: 400;
+      }
+    }
+
+    tr {
+      display: table-row;
+
+      &:nth-of-type(odd),
+      &:nth-of-type(odd) td {
+        background: $table--cell-striped-background !important;
+        border-bottom: 1px solid $table--cell-border-bottom-alt;
+      }
+
+      &:nth-of-type(even),
+      &:nth-of-type(even) td {
+        background: $white !important;
+        border-bottom: 1px solid $table--cell-border-bottom;
+      }
+    }
+
+    th,
+    td {
+      display: table-cell;
+
+      &:first-of-type {
+        width: 22%;
+        word-break: keep-all;
+      }
+    }
+
+    &.cols-2 {
+      thead th,
+      td {
+        white-space: pre-line;
+        width: initial;
+      }
+    }
+
+    td {
+      background: $table--cell-striped-background;
+    }
+
+    thead {
+      tr {
+        display: table-row;
+      }
+
+      th {
+        background: $cwl-red;
+        color: $white;
+        width: initial;
+
+        &:first-of-type {
+          width: 22%;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .table {
+    th,
+    td {
+      &:first-of-type {
+        width: 22%;
+      }
+    }
+
+    &.cols-2 {
+      th:first-of-type,
+      td:first-of-type {
+        width: 25%;
+        word-break: break-all;
+      }
+    }
+  }
+}

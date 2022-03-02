@@ -1,0 +1,115 @@
+.features-grid {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  margin: 2rem auto 3rem;
+  padding: 0 5%;
+}
+
+@include media-breakpoint-up(sm) {
+  .features-grid {
+    padding: 0 3%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .features-grid {
+    gap: 56px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .features-grid {
+    gap: 49px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 2%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .features-grid {
+    gap: 36px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-up(xl-13) {
+  .features-grid {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  .features-grid {
+    gap: 49px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 4%;
+  }
+}
+
+.feature-box-wrap-link {
+  &:visited {
+    color: $black;
+  }
+
+  &:hover,
+  &:active {
+    color: $cwl-red;
+  }
+}
+
+.feature-item {
+  align-items: center;
+  box-shadow: 0 6px 15px $box-shadow--color;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+
+  @include hide-anchor-symbols;
+}
+
+@include media-breakpoint-up(md) {
+  .feature-title {
+    font-size: 1.3rem;
+    min-height: 3rem;
+    overflow-wrap: normal;
+
+    a {
+      min-height: 3rem;
+      overflow-wrap: normal;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .feature-title {
+    font-size: 1.6rem;
+    min-height: 4rem;
+
+    a {
+      min-height: 4rem;
+    }
+  }
+}
+
+.feature-img {
+  height: 100px;
+  width: 100px;
+}
+
+// Temporary hack, until the actual icon file is resized
+.open-and-free {
+  .feature-img {
+    height: 70px;
+    margin: 15px 0;
+    width: 70px;
+  }
+}

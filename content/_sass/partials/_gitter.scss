@@ -1,0 +1,83 @@
+.gitter-container {
+  border: 2px inset $gitter-grey;
+  border-radius: 5px;
+  height: 85vh;
+  margin: 0 0 1rem;
+  overflow: hidden;
+  width: 96%;
+}
+
+.gitter-chat {
+  height: 100%;
+
+  iframe {
+    height: 100%;
+    max-width: 100%;
+    padding: 0 0 3.75rem;
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .gitter-chat {
+    iframe {
+      padding: 0 0 3rem;
+    }
+  }
+}
+
+.gitter-chat-embed-action-bar {
+  align-items: center;
+  border-bottom: 1px solid $gitter-grey;
+  height: auto;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem 0.75rem;
+  position: static;
+
+  h2 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+}
+
+.js-gitter-toggle-chat-button {
+  display: none;
+}
+
+@include media-breakpoint-up(sm) {
+  .gitter-chat-embed-action-bar {
+    padding: 0.25rem 0.75rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .gitter-container {
+    clear: both;
+    float: right;
+    margin: 0 0 1rem 2rem;
+    width: auto;
+  }
+
+  .gitter-chat-embed-action-bar {
+    height: 50px;
+    margin: 0;
+    padding: 0 0.5rem;
+
+    h2 {
+      font-size: 1rem;
+      margin: 0 0.5rem 0 0;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .gitter-chat-embed-action-bar {
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.gitter-chat-embed-action-bar-item-collapse-chat {
+  display: none;
+}
