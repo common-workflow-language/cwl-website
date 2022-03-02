@@ -48,9 +48,9 @@ outputs:
   doc_out:
     type: File
     outputSource: merge/dir
-#  report:
-#    type: File
-#    outputSource: generate_report/report
+  report:
+    type: File
+    outputSource: generate_report/report
 
 requirements:
   ScatterFeatureRequirement: {}
@@ -177,8 +177,8 @@ steps:
     out: [dir]
     run: mergesecondary.cwl
 
-  # generate_report:
-  #   in:
-  #     inp: merge/dir
-  #   out: [report]
-  #   run: linkchecker.cwl
+  generate_report:
+    in:
+      inp: merge/dir
+    out: [report]
+    run: linkchecker.cwl
