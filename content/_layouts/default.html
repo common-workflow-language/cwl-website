@@ -11,7 +11,7 @@
   </ul>
 
   <div class="site-wrapper {{ page.class }} page-{{ page.permalink | downcase | replace: "/", "" | replace: " ", "-" }}" id="siteTop">
-    {%- include top_nav.html -%}
+    {% include top_nav.html %}
 
     {%- if page.class contains 'home' or page.title == 'Home' -%}
       {%- include header.html -%}

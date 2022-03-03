@@ -52,17 +52,6 @@
   }
 }
 
-.feature-box-wrap-link {
-  &:visited {
-    color: $black;
-  }
-
-  &:hover,
-  &:active {
-    color: $cwl-red;
-  }
-}
-
 .feature-item {
   align-items: center;
   box-shadow: 0 6px 15px $box-shadow--color;
@@ -74,6 +63,24 @@
   width: 100%;
 
   @include hide-anchor-symbols;
+}
+
+.feature-title {
+  color: $black;
+  font-size: calc(1.3rem + 0.6vw);
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  text-decoration: none;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:hover,
+  &:active {
+    color: $cwl-red;
+  }
 }
 
 @include media-breakpoint-up(md) {
