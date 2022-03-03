@@ -65,7 +65,7 @@ gallery:
       - name: ELIXIR
         link_text: Interoperability Platform
         url: https://elixir-europe.org/platforms/interoperability
-        image: /assets/img/ELIXIR_logo_white_background.svg
+        image: /assets/img/elixir.png
         image_id: elixir
         description: ELIXIR coordinates and develops life science resources across Europe so that researchers can more easily find, analyse and share data, exchange expertise, and implement best practices. This makes it possible for them to gain greater insights into how living organisms work. ELIXIR's activities are divided into five areas called 'Platforms'. These are Data, Tools, Compute, Interoperability, and Training. The Interoperability Platform focuses on developing and encouraging the adoption of standards. One of the tasks of this plafrom is to develop a FAIR service infrastructure that incorporates tools that are fit-for-purpose. CWL is supported in this infrastructure to allow for workflow interoperability.
         other: >
