@@ -1,7 +1,7 @@
 <section class="features-grid">
 {%- for feature in site.data.home.feature_boxes -%}
   <div class="feature-item {{ feature.title | downcase | replace: " ", "-" }}">
-    <a class="no-underline black-text feature-box-wrap-link" href="{{ feature.box_url }}"><h3 class="feature-title" id="{{ feature.title | downcase | replace: " ", "-" }}">{{ feature.title }}</h3></a>
+    <a class="feature-title" href="{{ feature.box_url }}">{{ feature.title }}</a>
     <a class="no-underline black-text feature-box-wrap-link" href="{{ feature.box_url }}"><img src="/assets/img/{{ feature.icon }}" class="feature-img" alt="{{ feature.icon-alt }}"></a>
     <p class="feature-text">{{ feature.text | markdownify | remove: "<p>" | remove: "</p>" }}</p>
   </div>
