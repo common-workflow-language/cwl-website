@@ -30,11 +30,13 @@ let redirects = {
   '#user-content-cwl-leadership-team': '/governance/#cwl-leadership-team',
 
   // Implementations
-  '#implementations': '/implementations/','#in_production': '/implementations/#in-production',
+  '#implementations': '/implementations/',
+  '#in_production': '/implementations/#in-production',
   '#partial_implementations': '/implementations/#partial-implementations',
 
   // Other
   '#code_of_conduct': '/code-of-conduct/',
+  '#citation': '/specification/#references',
   '#specification': '/specification/',
 
   // Projects
