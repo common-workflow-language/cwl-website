@@ -2,4 +2,3 @@ title: CWL Local Site
 url: "cwl.test" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/"
 port: 80
-staging_site: true
