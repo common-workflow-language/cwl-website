@@ -32,8 +32,6 @@ social:
 locale: en_US
 # google_site_verification:
 
-# google_analytics:
-
 show_excerpts: false # set to true to show excerpts on the homepage
 
 kramdown:
