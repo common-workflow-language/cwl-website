@@ -21,3 +21,32 @@ The CWL leadership team consists of the following people, listed in alphabetical
 *   Jeff Gentry, Foundation Medicine, OpenWDL; <https://orcid.org/0000-0001-5351-8442>
 *   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
 *   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
+
+## CWL Technical Team
+
+The team is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote. The team consists of the following people, listed in alphabetical order by their last name:
+
+* Fabrice Brito, Terradue
+  * <https://github.com/fabricebrito>
+  * <https://matrix.to/#/@fabrito:matrix.org>
+* Iacopo Colonnelli, University of Torino, Computer Science Dept.
+  * <https://github.com/glassofwhiskey>
+  * <https://matrix.to/#/@glassofwhiskey:matrix.org>
+  * <https://orcid.org/0000-0001-9290-2017>
+* Michael R. Crusoe, ELIXIR-NL
+  * <https://github.com/mr-c>
+  * <https://matrix.to/#/@mr-c:matrix.org>
+  * <https://orcid.org/0000-0002-2961-9670>
+* Bogdan Gavrilović, Seven Bridges
+  * <https://github.com/bogdang989>
+  * <https://matrix.to/#/@bogdan_gavrilovic:matrix.org>
+  * <https://orcid.org/0000-0003-1550-1716>
+  * <https://github.com/orgs/common-workflow-language/teams/tech_team>
+  * <https://matrix.to/#/#cwltool-dev:matrix.org>
+* Stian Soiland-Reyes, eScience Lab, The University of Manchester
+  * <https://github.com/stain>
+  * <https://orcid.org/0000-0001-9842-9718>
+* Tomoya Tanjo, Bioinformation and DDBJ Center, National Institute of Genetics
+  * <https://github.com/tom-tan>
+  * <https://matrix.to/#/@tom-tan:matrix.org>
+  * <https://orcid.org/0000-0002-4421-9659>
