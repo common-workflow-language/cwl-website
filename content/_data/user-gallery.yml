@@ -65,7 +65,7 @@ gallery:
       - name: ELIXIR
         link_text: Interoperability Platform
         url: https://elixir-europe.org/platforms/interoperability
-        image: /assets/img/elixir.png
+        image: /assets/img/ELIXIR_logo_white_background.svg
         image_id: elixir
         description: ELIXIR coordinates and develops life science resources across Europe so that researchers can more easily find, analyse and share data, exchange expertise, and implement best practices. This makes it possible for them to gain greater insights into how living organisms work. ELIXIR's activities are divided into five areas called 'Platforms'. These are Data, Tools, Compute, Interoperability, and Training. The Interoperability Platform focuses on developing and encouraging the adoption of standards. One of the tasks of this plafrom is to develop a FAIR service infrastructure that incorporates tools that are fit-for-purpose. CWL is supported in this infrastructure to allow for workflow interoperability.
         other: >
@@ -140,6 +140,6 @@ gallery:
         description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows.
       - name: The ACROSS European Project
         link_text: HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale
-        url: https://cordis.europa.eu/project/id/955648
+        url: https://www.acrossproject.eu/
         description: The ACROSS project (<a href="https://cordis.europa.eu/project/id/955648">G.A. 955648</a>) is an European High-Performance Computing Joint Undertaking that will co-design and develop an HPC, BD, and Artificial Intelligence (AI) convergent platform, supporting applications in the <b>Aeronautics</b>, <b>Climate and Weather</b>, and <b>Energy</b> domains. The project will leverage on effective mechanisms to describe and manage complex workflows for the next generation of heterogeneous pre-exascale infrastructures.
         image: /assets/img/ACROSS_Logo_600x159.JPG
