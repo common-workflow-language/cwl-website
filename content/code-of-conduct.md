@@ -13,7 +13,7 @@ The CWL Project is dedicated to providing a harassment-free experience for
 everyone. We do not tolerate harassment of participants in any form.
 
 This code of conduct applies to all CWL Project spaces both online and off: the
-Google Group, the Gitter chat room, the Google Hangouts chats, and any other
+Google Group, the Matrix chat room, the Google Hangouts chats, and any other
 CWL spaces. Anyone who violates this code of conduct may be sanctioned or
 expelled from these spaces at the discretion of the CWL Leadership Team.
 

@@ -311,6 +311,21 @@
   margin: 0;
   padding: $nav--item-padding 0.25rem;
 
+  .matrix-link {
+    text-decoration: none;
+  }
+
+  .matrix-svg {
+    position: relative;
+    top: 4px;
+    vertical-align: initial;
+    width: 26px;
+
+    &:hover g {
+      fill: $cwl-red;
+    }
+  }
+
   .fab {
     font-size: 2em;
     margin: $nav--item-margin;
@@ -325,6 +340,11 @@
   .nav-social-icons {
     margin: 8px 0 0;
     padding: 0 1rem;
+
+    .matrix-svg {
+      height: auto;
+      width: 24px;
+    }
 
     .fab {
       font-size: 1.5rem;
@@ -341,6 +361,7 @@
 
 @include media-breakpoint-up(xl) {
   .nav-social-icons {
+    align-items: center;
     display: flex;
     flex-wrap: nowrap;
   }
