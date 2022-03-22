@@ -13,13 +13,20 @@ If you’re interested in joining the CWL community, we recommend checking out t
 * Besides the web interface for the mailing list, one can also join by sending a blank email to [common-workflow-language+subscribe@googlegroups.com](mailto:common-workflow-language+subscribe@googlegroups.com) and replying to the automated response.
 * If you would like to receive Google Calendar invites for the CWL weekly video chat, sign up at [https://groups.google.com/g/common-workflow-language-videochat-invites](https://groups.google.com/g/common-workflow-language-videochat-invites).
 
-## Voice/Video Chats
+## CWL Online Community Meetings
 
-Agenda and note for previous and upcoming CWL meetings are kept at <https://w3id.org/cwl/meeting_minutes>.
+### Agenda and notes
 
-The [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas CWL community has a weekly voice/video chat [every Wednesday at 16:00 UTC from March-November and 17:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==)
+<https://w3id.org/cwl/meeting_minutes>.
 
-The Asia Pacific CWL Community has a monthly voice/video chat the [first Friday of every month at 01:00 UTC](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat) (06:00 Pakistan, 06:30 India, 07:00 Bangladesh, 08:00 Thailand / Indonesia, 09:00 China, 10:00 Japan / Korea, 12:00 Melbourne, 14:00 Auckland)
+### When
+
+[EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Wednesday at 16:00 UTC from March-November and 17:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==)
+
+Asia-Pacific: monthly [every first Friday of every month at 01:00 UTC](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
+(06:00 Pakistan, 06:30 India, 07:00 Bangladesh, 08:00 Thailand / Indonesia, 09:00 China, 10:00 Japan / Korea, 12:00 Melbourne, 14:00 Auckland)
+
+### Where
 
 CWL Voice/Video chats use the "CWL Conference" room in the [CWL Matrix Space](https://matrix.to/#/#cwl:matrix.org).
 
@@ -27,12 +34,18 @@ If you haven’t used Matrix before then follow these instructions:
 
 1. Go to <https://matrix.to/#/#cwl:matrix.org>
 2. Choose the “Element” App if you don’t have a Matrix client already.
+
    <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/bb192f3aeca294ddef2727e69d0b09ae6e285a85.png" alt="screenshot of Matrix app chooser dialog." />
 3. You can download the native Element app for your operating system if you want, but choosing to “Continue in your browser” is fine.
+
    <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/3b498f7ee6049bbbfd62ba1ab3d8cd6c7a8179bd.png" alt="screenshot of 'Continue in your Browser' button" />
 4. From the Element native app, or browser session choose "Join" <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/9c369ca92c995092d8f41c2c8b50f54d3455a60b.png" alt="screenshot of 'Join' button" />
-5. And then choose “Create Account” <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/c5ae4eba0d06df8d334b4c71e0f23c4c18239edf.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account. <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/9fb8f3d0499ba7c20193e83a43f6606da59489a2.png" alt="screenshot of third party login chooser dialog" />
-6. Now that you’re signed in, join the “CWL Conference” room. <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/3e6d61be4124a2a89fd173c27aea4944a2aa2818.png" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
+5. And then choose “Create Account” <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/c5ae4eba0d06df8d334b4c71e0f23c4c18239edf.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account.
+
+   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/9fb8f3d0499ba7c20193e83a43f6606da59489a2.png" alt="screenshot of third party login chooser dialog" />
+6. Now that you’re signed in, join the “CWL Conference” room.
+
+   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/3e6d61be4124a2a89fd173c27aea4944a2aa2818.png" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
 
 ## Code of Conduct
 
