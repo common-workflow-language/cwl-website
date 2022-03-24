@@ -1,159 +1,60 @@
-# Common Workflow Language Website 2.0
+# Common Workflow Language Website
+
+The main repo for the [CWL Website](https://www.commonwl.org/).
+
+GitHub: https://github.com/common-workflow-language/cwl-website/
+
+## Table of Contents
 
 <!-- MarkdownTOC -->
 
-* [Prerequisites](#prerequisites)
-* [Project & Directory Structure](#project--directory-structure)
-	* [Main Website](#main-website)
-* [Running the Site](#running-the-site)
-* [Editing the Site - General Flow](#editing-the-site---general-flow)
-	* [Config Files & Local Development](#config-files--local-development)
-* [Video Player - Plyr](#video-player---plyr)
-	* [Plyr API options](#plyr-api-options)
-* [Twitter Feed](#twitter-feed)
-* [SEO Tags](#seo-tags)
+* [Contributing](#contributing)
+* [Reporting a Vulnerability](#reporting-a-vulnerability)
+* [User Gallery Nomination](#user-gallery-nomination)
+* [Editing the Site](#editing-the-site)
 
 <!-- /MarkdownTOC -->
 
-This is the repo for the [CWL Website](https://commonwl.org).
+The main website's files are in the `/content/` directory, and built with [Jekyll](https://jekyllrb.com/).
 
-* GitHub Repo: https://github.com/common-workflow-language/
-* Staging Branch: https://github.com/common-workflow-language/cwl-website/tree/add-jekyll-site
-* Staging Site: https://www.commonwl.org/cwl-staging/
+The [CWL Specification](https://github.com/common-workflow-language/cwl-v1.2) and [User Guide](https://github.com/common-workflow-language/user_guide) are hosted separately from this repo, but built via the `/site/` directory and `./website.sh` script found here.
 
-<a id="prerequisites"></a>
-## Prerequisites
+<a id="contributing"></a>
+## Contributing
 
-You need the following in order to run the site:
+If you wish to contribute to a new Issue:
 
-* [Ruby](https://www.ruby-lang.org/en/downloads/) version **2.4.0** or higher, including all development headers (check your Ruby version using `ruby -v`)
-* [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
-* [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using `gcc -v`,`g++ -v`, and` make -v`)
+1. Create a new [GitHub Issue](https://github.com/common-workflow-language/cwl-website/issues/new/choose)
+2. In your terminal, from the `main` branch, create a new local branch by running `git checkout -b branch-name-here`
+3. Edit & Commit your changes, mentioning the Issue number in your commit, e.g. `git commit file-names-here -m "Fix XYZ from #99"`
+4. Push the changes via `git push origin branch-name-here`
+5. Find the branch on the GitHub repo (the url looks like `https://github.com/common-workflow-language/cwl-website/tree/branch-name-here`) and click "Compare and Pull Request"
+6. The reviewers will either suggest additional revisions, or approve the pull request.
 
-For Ruby, you may need additional developer packages(e.g. `ruby-dev`, `ruby-bundler`). See the following links, for detailed instructions:
+To contribute to an existing issue and branch: Checkout the existing branch via `git checkout remote-branch-name-here` (don't add the `-b`). Then follow steps 3-6 above.
 
-* [Jekyll Docs - Installation](https://jekyllrb.com/docs/installation/#requirements)
-* [macOS](https://jekyllrb.com/docs/installation/macos/)
-* [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
-* [Other Linux](https://jekyllrb.com/docs/installation/other-linux/)
-* [Windows](https://jekyllrb.com/docs/installation/windows/)
+<a id="reporting-a-vulnerability"></a>
+## Reporting a Vulnerability
 
-<a id="project--directory-structure"></a>
-## Project & Directory Structure
+See the [Security Policy](https://github.com/common-workflow-language/cwl-website/security/policy) page.
+
+<a id="user-gallery-nomination"></a>
+## User Gallery Nomination
+
+To suggest a new entry for the CWL User Gallery, create a new Issue, with the following template: [https://github.com/common-workflow-language/cwl-website/issues/new?assignees=&labels=user+gallery&template=user-gallery-nomination.md&title=User+Gallery+Nomination%3A+%5Buser%2Fproject+name+here%5D](https://github.com/common-workflow-language/cwl-website/issues/new?assignees=&labels=user+gallery&template=user-gallery-nomination.md&title=User+Gallery+Nomination%3A+%5Buser%2Fproject+name+here%5D)
+
+<a id="editing-the-site"></a>
+## Editing the Site
+
+Setup Instructions: [content/README.md - Setup and Development](content/README.md#setupt-and-development)
+
+Editing Guidelines: [content/EDITING.md](content/EDITING.md) for specific editing guidelines
 
 The root directory contains the following important files and directories:
 
-* `content` - directory for the **main website**
+* `/content/` - directory for the **main website**
+* `/site/` - directory for the docs. **Not the main site**
 * `README.md` - general readme for the repo.
-* `site` - directory for the Docs. **Not the main site**
-* `STAGING` - instructions for the staging site.
-* `website.sh` - script that builds the website
+* `website.sh` - script that builds the website (both the main site and the docs)
 
-<a id="main-website"></a>
-### Main Website
-
-The main website (https://www.commonwl.org/) is generated via [Jekyll](https://jekyllrb.com/). The files for it are found in `/content`, and the directories should look something like this
-
-```sh
-├── _data
-├── _includes
-│   └── home
-├── _layouts
-├── _sass
-│   ├── bootstrap
-│   │   ├── mixins
-│   │   ├── utilities
-│   │   └── vendor
-│   └── partials
-├── _subtitles
-├── assets
-│   ├── css
-│   ├── img
-│   ├── js
-│   ├── plyr
-│   └── video
-│       └── subtitles
-└── favicon
-```
-
-* `_data` - includes the data for the two nav menus
-* `_includes` - the templates for the site sections. Each homepage section has its own sub-template under `_includes/home`
-* `_sass` - the scss styles for the entire site. The `bootstrap` should be left alone.
-* `assets` - contains the various images, scripts, video subtitles, etc.
-* `favicon` - contains the favicon files for various browsers, generated by [RealFaviconGenerator](https://realfavicongenerator.net/)
-
-<a id="running-the-site"></a>
-## Running the Site
-
-After installing the prerequisite software, in your terminal `cd content/`, and run `bundle exec jekyll serve --config "_config.yml,_config_local.yml"` (note the lack of spaces between the two config files). You can then open up `localhost` in your web browser to view the site. It's important to specify the config files, as otherwise Jekyll will generate the site's urls with `commonwl.org`, and you won't be able to run it locally.
-
-If you receive an error message about software dependencies, packages, gems, etc, then run `bundle update` from the `content` directory. (Bundlr will be looking for `Gemfile` and `Gemfile.lock`, and can't run without them).
-
-For convenience, you may wish to specify `--host cwl.test` and `--port 80`, as follows: `bundle exec jekyll serve --config "_config.yml,_config_local.yml --host cwl.test --port 80`. NOTE: you may have to [update your hosts file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), in order for your computer to respect the hostname.
-
-Anything you specify on the command line wil override the settings in your config files. For a full list of command line options, see Jekyll - Configuration Options [Serve Commands](https://jekyllrb.com/docs/configuration/options/#serve-command-options) and [Build Commands](https://jekyllrb.com/docs/configuration/options/#build-command-options)
-
-<a id="editing-the-site---general-flow"></a>
-## Editing the Site - General Flow
-
-1. On `main`, run a `git fetch --all` to see which branches have been updated. 
-2. Run `git pull origin main` to pull in any changes from the production site.
-2. Switch to `add-jekyll-site` and then merge the changes via `git merge main`
-3. Make sure you're making your changes on the `add-jekyll-site` (or your own branch, which you can merge to `add-jekyll-site`).
-4. Push to `add-jekyll-site` and then check that everything looks good. 
-5. If all is well, head over to the [main repo](https://github.com/common-workflow-language/cwl-website) and create a Pull Request.
-
-<a id="config-files--local-development"></a>
-### Config Files & Local Development
-
-The site uses the following config files:
-
-* `_config.yml` - for the production site
-* `_config_local.yml` - for local development
-* `_config_staging.yml` - for the staging site (only appears in `add-jekyll-site` branch)
-
-If you make changes to `_config_local.yml`, please don't commit them to the repo. If you run into an issue with switching branches (you can run `git stash` or `git stash push _config_local.yml` before committing, and then `git stash pop` after, to retrieve it).
-
-<a id="video-player---plyr"></a>
-## Video Player - Plyr
-
-The video player is built using [Plyr](https://github.com/sampotts/plyr). The scripts for it are found in `assets/plyr`, and shouldn't really be touched.
-
-The HTML and JS that renders the video player is found in `_includes/home/video-player.html`. The additional styles for the video player are in `_sass/partials/home.scss`.
-
-Subtitles are found in `assets/video/subtitles`, and were extracted from the original YouTube video via [DownSub](https://downsub.com/), and converted to .vtt via [Subtitle Tools - Convert Subtitles to Vtt](https://subtitletools.com/convert-to-vtt-online/). 
-* Video players use the `srclang` attribute to indicate the language to the browser. A list of srclang codes can be found here: https://www.footprintaddons.com/my-account/articles-news/282-language-codes-subtitle-tracks
-
-<a id="plyr-api-options"></a>
-### Plyr API options
-
-```js
-controls: [
-    'play-large', // The large play button in the center
-    'restart', // Restart playback
-    'rewind', // Rewind by the seek time (default 10 seconds)
-    'play', // Play/pause playback
-    'fast-forward', // Fast forward by the seek time (default 10 seconds)
-    'progress', // The progress bar and scrubber for playback and buffering
-    'current-time', // The current time of playback
-    'duration', // The full duration of the media
-    'mute', // Toggle mute
-    'volume', // Volume control
-    'captions', // Toggle captions
-    'settings', // Settings menu
-    'pip', // Picture-in-picture (currently Safari only)
-    'airplay', // Airplay (currently Safari only)
-    'download', // Show a download button with a link to either the current source or a custom URL you specify in your options
-    'fullscreen', // Toggle fullscreen
-];
-```
-
-<a id="twitter-feed"></a>
-## Twitter Feed
-
-The twitter feed code is found in `_includes/twitter_feed.html`. It includes the `data-dnt` attribute, so as not to track user data. Despite this, the feed won't render on many mobile devices, due to default privacy settings in Chrome and Firefox. In that case the users will simply see "See Tweets by @commonwl", in place of the feed itself.
-
-<a id="seo-tags"></a>
-## SEO Tags
-
-The SEO meta for the site is auto-generated via [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag/). See [Jekyll SEO Tag - Usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) for reference.
+Note: All edits and updates should be made in `/content/` unless there is a specific reason to do otherwise.

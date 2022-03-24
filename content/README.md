@@ -1,202 +1,124 @@
-# CWL Website 2.0
+# CWL Website - Instructions
 
-The in-progress redesign of the CWL Website
+Instructions on how to run and edit the main [commonwl.org](commonwl.org) website. 
 
-The preview build of the site is currently found at [https://deploy-preview-75--cwl-website.netlify.app/](https://deploy-preview-75--cwl-website.netlify.app/)
+See the main [README.md](../README.md) for general instructions on contributing or reporting a vulnerability.
 
 **Table of Contents:**
 <!-- MarkdownTOC -->
 
-* [Editing the Site](#editing-the-site)
-* [To-Do](#to-do)
-  * [Content Area Max-Width](#content-area-max-width)
-  * [General](#general)
-  * [Code Refactoring](#code-refactoring)
-  * [Plugins Review](#plugins-review)
-  * [Accessibility](#accessibility)
-    * [Headings & Anchor Links](#headings--anchor-links)
-  * [WebAIM Accessibility](#webaim-accessibility)
-    * [Video Player](#video-player)
-* [Reference](#reference)
-  * [Bootstrap Grid Breakpoints](#bootstrap-grid-breakpoints)
+* [Setup & Development](#setup-and-development)
+  * [Prerequisites](#prerequisites)
+  * [Running the Site Locally](#running-the-site-locally)
+  * [Important Files and Directories](#important-files-and-directories)
+  * [Config Files](#config-files)
+* [Editing the Site - General Flow](#editing-the-site---general-flow)
+  * [Editing Guidelines](#editing-guidelines)
+* [User Gallery Nomination](#user-gallery-nomination)
+* [Reporting a Vulnerability](#reporting-a-vulnerability)
 
 <!-- /MarkdownTOC -->
 
-<a id="editing-the-site"></a>
-## Editing the Site
+<a id="setup-and-development"></a>
+## Setup & Development
 
-Instructions for editing specific parts of the site can be found in [EDITING.md](EDITING.md)
+<a id="prerequisites"></a>
+### Prerequisites
 
-<a id="to-do"></a>
-## To-Do
+You need the following in order to run the site:
 
-* Governance - where should support link go?
-`CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/#Support) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.`
-* Double check that anchor links don't have trailing slashes.
-  * Search for `(#` and `/#`
-* Absolute vs Relative URLs
-* Add note about `columns` setting to EDITING
-  * Add note about h2s and h3s colors & helper classes
-* 
+* [Ruby](https://www.ruby-lang.org/en/downloads/) version **2.4.0** or higher, including all development headers (check your Ruby version using `ruby -v`)
+* [RubyGems](https://rubygems.org/pages/download) (check your Gems version using `gem -v`)
+* [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using `gcc -v`,`g++ -v`, and` make -v`)
 
-What's up with these in Implementation??
-|[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research. | |&#8211;|
+For Ruby, you may need additional developer packages(e.g. `ruby-dev`, `ruby-bundler`). See the following links, for detailed instructions:
 
-|[AWE](https://github.com/MG-RAST/AWE)|Workflow and resource management system for bioinformatics data analysis.| |&#8211;|
+* [Jekyll Docs - Installation](https://jekyllrb.com/docs/installation/#requirements)
+* [macOS](https://jekyllrb.com/docs/installation/macos/)
+* [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/)
+* [Other Linux](https://jekyllrb.com/docs/installation/other-linux/)
+* [Windows](https://jekyllrb.com/docs/installation/windows/)
 
+<a id="running-the-site-locally"></a>
+### Running the Site Locally
 
-<a id="content-area-max-width"></a>
-### Content Area Max-Width
+After installing the prerequisite software, in your terminal:
 
-* Content Area max-width for verbose pages. Options:
+1. `cd content/`
+2. `bundle exec jekyll serve --config "_config.yml,_config_local.yml"` (note the lack of spaces between the two config files).
+3. In your browser, type `localhost` in your address bar, to view the site.
 
-1. Change Bootstrap container max-widths in `_variables.scss`
+It's important to specify both config files, in order. Otherwise Jekyll will generate the site's urls with `commonwl.org`, and you won't be able to run it locally.
 
-2. Add CSS on relevant pages only
+**Dependencies:** If you receive an error message about software dependencies, packages, gems, etc, then run `bundle install` or `bundle update` from the `content` directory. (Bundlr will be looking for `Gemfile` and `Gemfile.lock`, and can't run without them).
 
-```css
-@media (min-width: 1400px) {
-  .container-xxl,
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    /* max-width: 320px; */
-    max-width: 1200px;
-  }
-}
+**Use a custom url or port:** For convenience, you may wish to specify `--host cwl.test` and `--port 80` (or any other value), as follows: `bundle exec jekyll serve --config "_config.yml,_config_local.yml --host cwl.test --port 80`. **Note:** You may have to [update your hosts file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), in order for your computer to respect the custom url.
 
-/* .post-header {
-  margin: 0 auto;
-}
+**Command Line:** Anything you specify on the command line wil override the settings in your config files. For a full list of command line options, see Jekyll - Configuration Options [Serve Commands](https://jekyllrb.com/docs/configuration/options/#serve-command-options) and [Build Commands](https://jekyllrb.com/docs/configuration/options/#build-command-options)
 
-@media (min-width: 992px) {
-  .post-header {
-    padding: 10px 0 0;
-  }
+<a id="important-files-and-directories"></a>
+### Important Files and Directories
 
-  .post-header h1{
-    padding: 0;
-    width: 776px;
-  }
-}
+The directories for the main website look something like this:
 
-@media (min-width: 1200px) {
-  .post-header h1{
-    margin: 0 auto 1rem;
-    padding: 0;
-    width: 926px;
-  }
-}
-
-@media (min-width: 1330px) {
-  .post-header h1{
-    padding: 0;
-    width: 926px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .post-header h1{
-    padding: 0;
-    width: 1076px;
-  }
-} */
+```sh
+├── _data
+├── _includes
+│   └── home
+├── _layouts
+├── _plugins
+├── _sass
+│   ├── bootstrap
+│   └── partials
+│       └── home
+├── assets
+│   ├── img
+│   ├── js
+│   ├── plyr
+│   └── video
+│       └── subtitles
+│           └── srt
+└── favicon
 ```
 
-<a id="general"></a>
-### General
+Important directories:
 
-* Anchor links currently not scrolling to sections, due to code in `_structure.scss` (ln 131)
-* Tables: Content check should be done to make sure tables on Implementations page and elsewhere are up to date
-* Should `_includes/social_stats.html` be removed?
-* Should Gitter feed on Community page be shortened, since there's less content?
-  * Let's see how the content area max-width affects it
+* `_data` - holds the data for: nav menus, timeline, and user galleries
+* `_includes` - the templates for the site sections. Each homepage section has its own sub-template under `_includes/home`
+* `_sass` - the scss styles for the entire site. The `bootstrap` should be left alone.
+* `assets` - contains the various images, scripts, video subtitles, etc.
+* `favicon` - contains the favicon files for various browsers, generated by [RealFaviconGenerator](https://realfavicongenerator.net/)
 
-Needs Alt Text:
+<a id="config-files"></a>
+### Config Files
 
-* `features.md` <img src="/assets/img/cwlportable.png" alt="">
+The site uses the following config files:
 
-<a id="code-refactoring"></a>
-### Code Refactoring
+* `_config.yml` - for the production site
+* `_config_local.yml` - for local development
 
-* User Gallery: Refactor left nav to automatically parse from `_data/users-gallery.yml`, instead of having to maintain a separate list in `_data/navigation.yml`
-* Mini Gallery - automate logic for ignoring duplicate logos, instead of relying on `duplicate_logo` parameter in `_user-gallery.yml`
-* SCSS - doublecheck units e.g. px vs em
+If you make changes to `_config_local.yml`, please don't commit them to the repo. Prior to making any changes, run `'git update-index --skip-worktree _config_local.yml` If you run into an issue with switching branches (you can run `git stash` or `git stash push _config_local.yml` before committing, and then `git stash pop` afterwards, to retrieve it).
 
-<a id="plugins-review"></a>
-### Plugins Review
+<a id="editing-the-site---general-flow"></a>
+## Editing the Site - General Flow
 
-* Check if there are any necessary or useful Jekyll plugins that should be added
+1. On the `main` branch, run `git fetch --all` to see which branches have been updated.
+2. Run `git pull origin main` to pull in any changes from the production site.
+3. Create a new branch (`git checkout -b branch-name-here`) or checkout an existing branch (`git checkout branch-name-here`) to work on your updates. Note: leaving out the `-b` ensures that git knows to track the remote branch.
+4. Commit your changes, and then `git push origin branch-name-here`
+5. Create a pull request from your branch on the CWL Website Repo (the URL should look like https://github.com/common-workflow-language/cwl-website/tree/branch-name-here)
 
-<a id="accessibility"></a>
-### Accessibility
+<a id="editing-guidelines"></a>
+### Editing Guidelines
 
-* Needs further testing with Screen Reader. See discussion at <https://github.com/common-workflow-language/cwl-website/pull/75#discussion_r760642750>
-  * Check how SR reads Japanese & Russian text on Getting Started pg, now that `lang` & `hreflang` have been added
-  * Check Skip Link and Nav Menu behavior for consistency
+Instructions and guidelines for editing specific parts of the site can be found in [EDITING.md](EDITING.md)
 
-<a id="headings--anchor-links"></a>
-#### Headings & Anchor Links
+<a id="user-gallery-nomination"></a>
+## User Gallery Nomination
 
-* Some links to top or back(?) are announced with the headers of the page.
-  * Relevant code is in `_sass/partials/_structure.scss`
-  * Distracting for SR users, who may prefer to hit Home or reload the page instead
+To suggest a new entry for the CWL User Gallery, create a new Issue, with the following template: [https://github.com/common-workflow-language/cwl-website/issues/new?assignees=&labels=user+gallery&template=user-gallery-nomination.md&title=User+Gallery+Nomination%3A+%5Buser%2Fproject+name+here%5D](https://github.com/common-workflow-language/cwl-website/issues/new?assignees=&labels=user+gallery&template=user-gallery-nomination.md&title=User+Gallery+Nomination%3A+%5Buser%2Fproject+name+here%5D)
 
-<a id="webaim-accessibility"></a>
-### WebAIM Accessibility
+<a id="reporting-a-vulnerability"></a>
+## Reporting a Vulnerability
 
-<a id="video-player"></a>
-#### Video Player
-
-* The "broken ARIA menu" seems to be an error on the WebAIM tool's part...
-  - It says that it has to have at least one item with `role="menuitem"` - which is satistfied...
-  - Test with screenreader or emulator if possible
-
-```html
-<div id="plyr-settings-9859-home">
-  <div role="menu">
-    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true">
-      <span>Captions<span class="plyr__menu__value">Disabled</span>
-      </span>
-    </button>
-    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true" hidden="">
-      <span>Quality<span class="plyr__menu__value">undefined</span>
-      </span>
-    </button>
-    <button data-plyr="settings" type="button" class="plyr__control plyr__control--forward" role="menuitem" aria-haspopup="true">
-      <span>Speed<span class="plyr__menu__value">Normal</span>
-      </span>
-    </button>
-  </div>
-</div>
-```
-
-These other errors come up, but are probably not significant, since the icons are provided:
-
-* skipped heading level
-* Small text
-
-<a id="reference"></a>
-## Reference
-
-<a id="bootstrap-grid-breakpoints"></a>
-### Bootstrap Grid Breakpoints
-
-Bootstrap Grid Breakpoints are as follows:
-
-```scss
-$grid-breakpoints: (
-  xs: 0,
-  xxs: 425px,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  lg-2: 1024px,
-  xl: 1200px,
-  xl-13: 1330px,
-  xxl: 1400px
-) !default;
-// scss-docs-end grid-breakpoints
-```
+See the [Security Policy](https://github.com/common-workflow-language/cwl-website/security/policy) page.
