@@ -3,7 +3,7 @@
     <h2 class="black-text" id="cwl-mini-gallery">Some Users of CWL</h2>
   </div>
 
-  <a class="mini-gallery-wrapper" href="{{ site.url }}/gallery"><div class="mini-gallery">
+  <a class="mini-gallery-wrapper" href="gallery"><div class="mini-gallery">
   {%- for section in site.data.user-gallery.gallery -%}
     {%- assign adopters = section.adopters -%}
     {%- assign sub_adopters = section.subsection.adopters -%}
@@ -11,7 +11,7 @@
     {%- for adopter in adopters -%}
       {%- if adopter.image -%}
         {%- unless adopter.duplicate_logo == true -%}
-          <div id="{{ adopter.image_id }}-container" class="mini-gallery-img-container"><img id="{{ adopter.image_id }}" class="mini-gallery-img" src="{{ adopter.image | absolute_url }}" alt=""></div>
+          <div id="{{ adopter.image_id }}-container" class="mini-gallery-img-container"><img id="{{ adopter.image_id }}" class="mini-gallery-img" src="{{ adopter.image }}" alt=""></div>
         {%- endunless -%}
       {%- endif -%}
     {%- endfor -%}
@@ -19,7 +19,7 @@
     {%- for sub_adopter in sub_adopters -%}
       {%- if sub_adopter.image -%}
         {%- unless sub_adopter.duplicate_logo == true -%}
-          <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image | absolute_url }}" alt=""></div>
+          <div class="mini-gallery-img-container"><img src="{{ sub_adopter.image }}" alt=""></div>
         {%- endunless -%}
       {%- endif -%}
     {%- endfor -%}
