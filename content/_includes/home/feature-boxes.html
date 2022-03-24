@@ -1,4 +1,4 @@
-<section class="features-grid">
+<div class="features-grid">
 {%- for feature in site.data.home.feature_boxes -%}
   <div class="feature-item {{ feature.title | downcase | replace: " ", "-" }}">
     <a class="feature-title" href="{{ feature.box_url }}">{{ feature.title }}</a>
@@ -6,5 +6,5 @@
     <p class="feature-text">{{ feature.text | markdownify | remove: "<p>" | remove: "</p>" }}</p>
   </div>
 {%- endfor -%}
-</section>
+</div>
 

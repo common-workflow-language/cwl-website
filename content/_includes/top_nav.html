@@ -13,7 +13,7 @@
         {%- for item in site.data.navigation.header -%}
           {%- if item.type contains "dropdown" -%}
             <li class="dropdown nav-item">
-              <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown-{{ item.title }}" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
               {%- if item.subpages -%}
                 <ul class="dropdown-menu">
                 {%- for page in item.subpages -%}
@@ -27,7 +27,7 @@
               {%- endif -%}
 
             {%- if item.subfolderitems[0] -%}
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ item.title }}">
                 {%- for entry in item.subfolderitems -%}
                   <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
                 {%- endfor -%}
@@ -50,7 +50,7 @@
         <a href="{{ site.twitter_url }}" aria-label="Twitter link"><i class="fab fa-twitter"></i></a>
         <a href="{{ site.youtube_url }}" aria-label="YouTube link"><i class="fab fa-youtube"></i></a>
         <a href="{{ site.matrix_url }}" class="matrix-link" aria-label="Matrix link">
-          <svg width="26" height="29.7" class="matrix-svg" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" version="1.1" viewBox="0 0 27.9 32">
+          <svg width="26" height="29.7" class="matrix-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.9 32">
            <title>Matrix (protocol) logo</title>
            <g transform="translate(-.095 .005)" fill="#040404">
             <path d="m27.1 31.2v-30.5h-2.19v-0.732h3.04v32h-3.04v-0.732z"/>
