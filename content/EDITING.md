@@ -4,44 +4,48 @@ Instructions for editing specific pages and site components.
 
 <!-- MarkdownTOC -->
 
-* [Nav Menus](#nav-menus)
+* [Navigation Menus](#navigation-menus)
   * [Editing the Nav Menus](#editing-the-nav-menus)
   * [Left Nav Menus](#left-nav-menus)
-* [Links](#links)
+* [Links & Redirects](#links-and-redirects)
 * [Short Pages](#short-pages)
-* [Homepage](#homepage)
-  * [Features Boxes](#features-boxes)
-  * [Mini Gallery](#mini-gallery)
-* [Code of Conduct Syncing](#code-of-conduct-syncing)
-* [Timeline page](#timeline-page)
-* [User Gallery](#user-gallery)
-  * [Left Nav Menu](#left-nav-menu)
-  * [user-gallery.yml](#user-galleryyml)
+* [Specific Pages](#specific-pages)
+  * [Homepage](#homepage)
+    * [Features Boxes](#features-boxes)
+    * [Mini Gallery](#mini-gallery)
+  * [About Page - Timeline](#about-page---timeline)
+  * [Code of Conduct Syncing](#code-of-conduct-syncing)
+  * [User Gallery](#user-gallery)
+    * [Left Nav Menu](#left-nav-menu)
+    * [user-gallery.yml](#user-galleryyml)
 * [Foreign Languages](#foreign-languages)
 * [Tables](#tables)
 * [Developer Notes](#developer-notes)
+  * [Dependencies](#dependencies)
   * [Bootstrap](#bootstrap)
     * [Media Query Grid Breakpoints](#media-query-grid-breakpoints)
   * [Code of Conduct Regeneration](#code-of-conduct-regeneration)
-  * [Gitter Feed \(Sidecar\)](#gitter-feed-sidecar)
   * [Hypothes.is Annotation Config](#hypothesis-annotation-config)
   * [jQuery](#jquery)
+  * [Plugins](#plugins)
   * [Video Player](#video-player)
     * [Initializing the Video Player](#initializing-the-video-player)
     * [Customizing the Video Player](#customizing-the-video-player)
 
 <!-- /MarkdownTOC -->
 
-<a id="nav-menus"></a>
-## Nav Menus
+<a id="navigation-menus"></a>
+## Navigation Menus
 
-There are two nav templates currently available: 
+There are two nav menu templates currently available: 
 
-* `_includes/top_nav.html` - the main site nav. Relies on data in `_data/navigation.yml`
-* `_includes/left_nav.html` - left nav on an individual page. 
-  * Relies on data from a page-specific file (e.g. `gallery.html` uses `_data/user-gallery.yml`), or defaults to `_data/navigation.yml`
-
-Styles are found in `_sass/partials/_nav.scss` and `_sass/partials/_left-nav.scss`. 
+* `_includes/top_nav.html` - the main site nav
+  * Data: `_data/navigation.yml`
+  * Syles: `_sass/partials/_nav.scss`
+* `_includes/left_nav.html` - left nav on an individual page
+  * Data: `_data/navigation.yml` by default
+    * Can also pull data from a page-specific file, e.g. `gallery.html` previously used `_data/user-gallery.yml` for its left nav
+  * Styles: `_sass/partials/_left-nav.scss`
 
 <a id="editing-the-nav-menus"></a>
 ### Editing the Nav Menus
@@ -52,8 +56,9 @@ Simply edit the data in `_data/navigation.yml`
 
 **Left Nav:**
 
-The Left Nav data may be found in either `_data/navigation.yml` or a page-specific file (e.g. `_data/user-gallery.yml` (not currently in use)).
+The Left Nav data may be found in either `_data/navigation.yml` or a page-specific file like `_data/user-gallery.yml` (no longer used by the left nav)
 
+**Left Nav Structure:**
 The Left Nav should always have `nav_header` as the first item. This is the title displayed at the top of the nav menu:
 
 ```yaml
@@ -71,7 +76,10 @@ left_nav:
 <a id="left-nav-menus"></a>
 ### Left Nav Menus
 
-To add a left nav menu to a page, use `{% include left_nav.html %}`, and add `class: has-left-nav` to the page's front matter. By default, the left nav template will look for the menu data in `_data/navigation.yml`, based on the page's `left_nav_slug` value. You can use a page-specific file instead, by passing a `nav_data` variable to the include, e.g. `{% include left_nav.html nav_data=path_to_nav_data_here %}`.
+To add a left nav menu to a page:
+
+1. Add a `left_nav_slug` value and `class: has-left-nav` to the page's front matter
+2. Optionally specify a `nav_data` variable in the include, e.g. `{% include left_nav.html nav_data=path_to_nav_data_here %}`
 
 Example using `left_nav_slug`:
 
@@ -81,16 +89,16 @@ layout: page
 permalink: /link-name/
 title: Some Page
 left_nav_slug: user_gallery_left
-class: some-page has-left-nav
+class: page-class-name has-left-nav
 ---
 
 <!-- The include below will automatically set the menu to site.data.navigation[user_gallery_left] -->
 {% include left_nav.html %}
 ```
 
-Note: it's important to specify a page-specific class, before `has-left-nav`. Otherwise, the page will generate `<body class="body-has-left-nav">` instead of `<body class="body-has-left-nav">`, and the proper styles won't be applied.
+**Note:** Any page with a left nav must specify a page-specific class, before `has-left-nav` (e.g. `class: user-gallery has-left-nav`). Otherwise, the page will generate `<body class="body-has-left-nav">` instead of `<body class="body-page-class-name has-left-nav">`, and the proper styles won't be applied.
 
-Example using page-specific file:
+Example using page-specific file, instead of `left_nav_slug`:
 
 ```html
 ---
@@ -100,16 +108,15 @@ title: CWL Users Gallery
 class: user-gallery has-left-nav
 ---
 
-<!-- The include below will get the data from _data/user-gallery.html -->
-<!-- Note: the current user-gallery.html doesn't use a page-specifc nav file. It's just an example -->
+<!-- The include below would get the data from _data/user-gallery.yml -->
 {% assign nav_data = site.data.user-gallery.left_nav %}
 {% include left_nav.html nav_data=site.data.user-gallery.left_nav %}
 ```
 
-<a id="links"></a>
-## Links
+<a id="links-and-redirects"></a>
+## Links & Redirects
 
-Prefer trailing slashes e.g. `/community/`
+Prefer trailing slashes e.g. `/community/` over `/community`
 
 <a id="short-pages"></a>
 ## Short Pages
@@ -128,8 +135,13 @@ class: page-short body-donate
 ---
 ```
 
+The first version will generate `<body class="body-page-short">`, and the second will generate `<body class="body-donate body-page-short">`
+
+<a id="specific-pages"></a>
+## Specific Pages
+
 <a id="homepage"></a>
-## Homepage
+### Homepage
 
 **Relevant Files:**
 
@@ -140,7 +152,7 @@ class: page-short body-donate
 * `_includes/home/video-player.html` - template code for the video player ([Plyr](https://plyr.io/)). See [Video Player](#video-player) section for more info. 
 
 <a id="features-boxes"></a>
-### Features Boxes
+#### Features Boxes
 
 These can be edited via in `_data/home.yml`. The general structure looks like this:
 
@@ -155,7 +167,7 @@ features:
 Image files must be located in `assets/img/` (e.g. `assets/img/noun_Interoperability_181229.svg`).
 
 <a id="mini-gallery"></a>
-### Mini Gallery
+#### Mini Gallery
 
 **Relevant Files:**
 
@@ -172,19 +184,8 @@ In order to prevent a duplicate logo from being displayed, add `duplicate_logo: 
 **Logo Tweaking:**
 The mini-gallery data is in `_data/user-gallery.yml`. Some logos may need individual adjustment, for optimal display. This can be accomplished by adding an `image_id: name-here` property to the respective image. The image's styles can then be modified in `_sass/partials/home/_mini-gallery.scss`.
 
-<a id="code-of-conduct-syncing"></a>
-## Code of Conduct Syncing
-
-Relevant files:
-
-* `code-of-conduct.md` - Code of Conduct page
-* `_plugins/coc-generator.rb` - Regenerates Code of Conduct
-* [CWL Repo - Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md)
-
-The Code of Conduct page is setup to automatically pull the content of the [CWL Repo's Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md). After the CWL repo file has been updated, run `bundle exec jekyll serve` to automatically rebuild `code-of-conduct.md`. Then commit and push the updated Code of Conduct.
-
-<a id="timeline-page"></a>
-## Timeline page
+<a id="about-page---timeline"></a>
+### About Page - Timeline
 
 **Relevant files:**
 
@@ -204,25 +205,35 @@ timeline_events:
       Commercial vendor (SBG) releases product <span class='no-bold'>in December</span>"
 ```
 
+<a id="code-of-conduct-syncing"></a>
+### Code of Conduct Syncing
+
+Relevant files:
+
+* `code-of-conduct.md` - Code of Conduct page
+* `_plugins/coc-generator.rb` - Regenerates the Code of Conduct
+* [CWL Repo - Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md)
+
+The Code of Conduct page is setup to automatically pull the content from the [CWL Repo's Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md). After the CWL repo file has been updated, run `bundle exec jekyll serve` to automatically rebuild `code-of-conduct.md`. Then commit and push the updated Code of Conduct, via `git push origin main`.
+
 <a id="user-gallery"></a>
-## User Gallery
+### User Gallery
 
 **Relevant Files:**
 
-* `gallery.html` - the gallery page. Relies on all the following files:
-* `_includes/user-gallery.html` - Generates the list of Users/Adopters. Relies on `_data/navigation.yml`
-* `_data/user-gallery.yml` - Contains the data for the Users Gallery list (but not the left nav)
-* `_data/navigation.yml` - Contains the data for the Left Nav
-  * May be moved to `_data/user-gallery.yml` at a future date
-* `_includes/left_nav.html` - The code for the left nav menu. Relies on `_data/user-gallery.yml`
+* `gallery.html` - the User Gallery page itself.
+* `_data/user-gallery.yml` - Data for the Users Gallery list
+* `_data/navigation.yml` - Data for the Left Nav
+* `_includes/user-gallery.html` - Generates the list of users from `_data/user-gallery.yml`
+* `_includes/left_nav.html` - Generates the left nav menu from `_data/user-gallery.yml`
 
 <a id="left-nav-menu"></a>
-### Left Nav Menu
+#### Left Nav Menu
 
-The User's Gallery generates the left nav from the `user_gallery_left` section in `_data/navigation.yml`. This may be moved to `_data/user-galllery.yml` in the future. See [Editing the Nav Menus](#editing-the-nav-menus) and [Nav Menus - Left Nav Menus](#left-nav-menus) sections above for general details about left nav menus.
+The User's Gallery generates the left nav from the `user_gallery_left` section of `_data/navigation.yml`. See [Editing the Nav Menus](#editing-the-nav-menus) and [Nav Menus - Left Nav Menus](#left-nav-menus) sections above more specifics about left nav menus.
 
 <a id="user-galleryyml"></a>
-### user-gallery.yml
+#### user-gallery.yml
 
 Contains the gallery section data. The gallery data should follow this format:
 
@@ -241,7 +252,7 @@ gallery:
         description: null
 ```
 
-Note: empty descriptions can either be left out, or should be specified as `null`.
+**Note:** empty descriptions can either be left out, or should be specified as `null`.
 
 The subsections will look like this (the ... represents the previous code section):
 
@@ -260,9 +271,9 @@ gallery:
         description: “Within the 15 months since the launch of the CGC, over 1,900 researchers have registered on the platform, representing 150 institutions across 30 countries. In total, CGC users have deployed more than 5,000 tools or workflows and performed 80,000 executions, representing over 97 years of total computation. There is significant collaboration among users, with an average of seven members per project on the platform.”
 ```
 
-Urls: the `link_text` field is optional. If unspecified, the link will be the same as the url - e.g. <https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rap> vs [NCI Cancer Genomics Cloud](https://www.cancergenomicscloud.org/). `m_link` can be specified in place of `url` and `link text`, if you'd prefer to enter in in a markdown format
+**Urls:** the `link_text` field is optional. If unspecified, the link will be the same as the url - e.g. <https://ncbiinsights.ncbi.nlm.nih.gov/2020/11/24/read-assembly-and-annotation-pipeline-tool-rap> vs [NCI Cancer Genomics Cloud](https://www.cancergenomicscloud.org/). `m_link` can be specified in place of `url` and `link text`, if you'd prefer to enter in in a markdown format
 
-Some entries will use the `>` operator for multiline strings. The `>` will treat all lines after it as a single string, until the next `- name:` field. Example:
+**Multiline strings:** Some entries use the `>` operator for multiline strings. The `>` will treat all lines after it as a single string, until the next `- name:` field. Example:
 
 ```yaml
   ...
@@ -283,7 +294,6 @@ Quotes: items with double quotes in them should be wrapped in single quotes, oth
 
 ```yml
 - '<a href="https://www.sanger.ac.uk/science/groups/cellular-genetics-informatics">Cellular Genetics Informatics, Cellular Genetics</a>'
-
 ```
 
 Items containing special characters (colons, brackets, etc) may need to be wrapped in double quotes.
@@ -291,7 +301,9 @@ Items containing special characters (colons, brackets, etc) may need to be wrapp
 <a id="foreign-languages"></a>
 ## Foreign Languages
 
-Text in foreign language should be entered in HTML and include the `lang` and `hreflang` attributes. You can search for the appropriate language tag via [the Language Subtag Lookup](https://r12a.github.io/app-subtags/) page. Example:
+Text in foreign language should be entered in HTML and include the `lang` and `hreflang` attributes. Subtitles should include the `srclang` code Here's a list of [common language subtags](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_subtags) You can also search via [the Language Subtag Lookup](https://r12a.github.io/app-subtags/) or check whether a tag is valid (e.g. `en-us` is valid, while `en_us` is not). 
+
+Example usage:
 
 ```html
 
@@ -303,6 +315,9 @@ linked content is in Japanese -->
 website auto-translates the content, based on the user's
 region -->
 <a href="https://stepik.org/course/1612/syllabus" lang="ru">
+
+<!-- Chinese subtitles example -->
+<track src="{{ "/assets/video/subtitles/chinese_simplified.vtt" | relative_url }}" label="Chinese (Simplified)" kind="subtitles" srclang="zh-Hans">
 
 <!-- These can be mixed in with Markdown code -->
 * A series of <a href="https://stepik.org/lesson/35918/step/1?unit=15070"lang="ru" hreflang="ru"> is available 
@@ -329,6 +344,16 @@ For 3 column table, change `.cols-2` to `.cols-3`. i.e. `{: .table .table-stripe
 
 <a id="developer-notes"></a>
 ## Developer Notes
+
+<a id="dependencies"></a>
+### Dependencies
+
+* Bootstrap 5.1.3
+  * Site styles are built on top of Bootstrap 5.1.3
+  * Nav menu relies on `/assets/js/bootstrap.min.js`
+* jQuery 3.5.1 
+  * Mobile Nav relies on this in `/assets/js/navCloseFix.js`, due to a bug where it wasn't closing properly
+  * Back to the Top button relies on this
 
 <a id="bootstrap"></a>
 ### Bootstrap
@@ -427,33 +452,8 @@ Generally styles for a single element or component are grouped together, rather 
 <a id="code-of-conduct-regeneration"></a>
 ### Code of Conduct Regeneration
 
-`code-of-conduct.md` is automatically synced with <https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md> via `_plugins/coc-generator.rb`. After the remote file's been updated, run `bundle exec jekyll serve` locally, and push the changes.
+`code-of-conduct.md` is automatically synced with <https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md> via `_plugins/coc-generator.rb`. To pull the new content, after the remote file's been updated, run `bundle exec jekyll serve` locally, and push the changes.
 
-<a id="gitter-feed-sidecar"></a>
-### Gitter Feed (Sidecar)
-
-The basic code for the Gitter feed is as follows:
-
-```html
-<script>
-  ((window.gitter = {}).chat = {}).options = {
-    room: 'common-workflow-language/common-workflow-language',
-    activationElement: 'js-gitter-toggle-chat-button',
-    targetElement: '.gitter-chat',
-    showChatByDefault: true,
-    preload: true,
-  };
-</script>
-```
-
-The following options can be set:
-
-* `options.room`: string - This is the Gitter room that sidecar will load (`common-workflow-language/common-workflow-language`)
-* `options.targetElement`: Where you want to embed the chat.
-* `options.activationElement`: When `options.showChatByDefault` is `false`, this is the element you have to click/interact with to get the chat to actually embed, "Open Chat" button.
-* `options.showChatByDefault`: Whether to embed the chat on page load(true) or wait until the `options.activation` is resolved/clicked/interacted with(false).
-* `options.useStyles`: This will embed CSS into your document to style the activation and target element. If you want to customise these, set this option to `false` and specify your own CSS.
-* `options` (getter): Get a readable copy of the options used for this chat instance
 
 <a id="hypothesis-annotation-config"></a>
 ### Hypothes.is Annotation Config
@@ -502,7 +502,11 @@ sidebarAppUrl
 
 Both `assets/js/backToTop.js` and `assets/js/navCloseFix.js` rely on jQuery 3.5.1, which is loaded via `_includes/footer-scripts.html`
 
-Plyr loads its own packaged version of jQuery.
+<a id="plugins"></a>
+### Plugins
+
+* `_plugins/coc-generator.rb` - regenerates the Code of Conduct page, after it's been updated on the main [CWL Repo - Code of Conduct](https://github.com/common-workflow-language/common-workflow-language/blob/main/CODE_OF_CONDUCT.md)
+* `_plugins/jekyll-autolink_email.rb` - renders email addresses as clickable links, e.g. `email@domain.com` becomes `<a href="mailto:name@domain.com">name@domain.com</a>`
 
 <a id="video-player"></a>
 ### Video Player
