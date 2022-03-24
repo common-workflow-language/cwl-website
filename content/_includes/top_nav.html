@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light top-nav sticky-top" aria-label="main navigation">
   <div class="nav-wrap container-fluid">
     <a class="navbar-brand" href="/">
-      <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" | relative_url }}" alt="CWL logo | Homepage link" height="50" width="106">
+      <img class="nav-logo" src="{{ "assets/img/CWL-Logo-HD-cropped2.png" }}" alt="CWL logo | Homepage link" height="50" width="106">
     </a>
     <button class="navbar-toggler navbar-toggler-right ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
                   {%- if page.url contains "http" or "http" contains page.url -%}
                     <li><a href="{{ page.url }}" class="{{ page.title | downcase }} dropdown-item">{{ page.title }}<i class="fad fa-external-link-alt"></i></a></li>
                   {%- else -%}
-                    <li><a href="{{ page.url | absolute_url }}" class=" dropdown-item">{{ page.title }}</a></li>
+                    <li><a href="{{ page.url }}" class=" dropdown-item">{{ page.title }}</a></li>
                   {%- endif -%}
                 {%- endfor -%}
                 </ul>
@@ -29,7 +29,7 @@
             {%- if item.subfolderitems[0] -%}
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {%- for entry in item.subfolderitems -%}
-                  <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
+                  <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url }}">{{ entry.page }}</a></li>
                 {%- endfor -%}
               </ul>
           </li>
@@ -37,9 +37,9 @@
 
           {%- else -%}
           {%- if page.title == item.title -%}
-            <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url | absolute_url }}" aria-current="page">{{ item.title }}</a></li>
+            <li class="nav-item"><a class="nav-link is-current-page" href="{{ item.url }}" aria-current="page">{{ item.title }}</a></li>
           {%- else -%}
-            <li class="nav-item"><a class="nav-link" href="{{ item.url | absolute_url }}">{{ item.title }}</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ item.url }}">{{ item.title }}</a></li>
           {%- endif -%}
           {%- endif -%}
         {%- endfor -%}

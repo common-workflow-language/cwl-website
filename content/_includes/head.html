@@ -5,11 +5,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href={{ "/sitemap.xml" | relative_url }}>
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
   {%- seo -%}
 
-  <script type="text/javascript" src="{{ "/assets/js/redirects.js" | relative_url }}"></script>
+  <script type="text/javascript" src="/assets/js/redirects.js"></script>
 
   {%- if page.url contains "gallery" -%}
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
 
 
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-iKbFRxucmOHIcpWdX9NTZ5WETOPm0Goy0WmfyNcl52qSYtc2Buk0NCe6jU1sWWNB" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ "/style.css" | relative_url }}">
+  <link rel="stylesheet" href="/style.css">
 
   {%- if (site.url contains 'commonwl.org' and site.google_analytics -%}
     {%- include google-analytics.html -%}
