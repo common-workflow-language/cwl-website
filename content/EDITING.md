@@ -26,7 +26,6 @@ Instructions for editing specific pages and site components.
     * [Media Query Grid Breakpoints](#media-query-grid-breakpoints)
   * [Code of Conduct Regeneration](#code-of-conduct-regeneration)
   * [Hypothes.is Annotation Config](#hypothesis-annotation-config)
-  * [jQuery](#jquery)
   * [Plugins](#plugins)
   * [Video Player](#video-player)
     * [Initializing the Video Player](#initializing-the-video-player)
@@ -407,7 +406,7 @@ Breakpoints can be used in SCSS files as follows:
 }
 ```
 
-Generally styles for a single element or component are grouped together, rather than having an entire separate media queries section. e.g.:
+Media Queries for a specific element or component are usually grouped together:
 
 ```scss
 // Adjusting for the .post-content padding
@@ -496,11 +495,6 @@ requestConfigFromFrame
 assetRoot
 sidebarAppUrl
 ```
-
-<a id="jquery"></a>
-### jQuery
-
-Both `assets/js/backToTop.js` and `assets/js/navCloseFix.js` rely on jQuery 3.5.1, which is loaded via `_includes/footer-scripts.html`
 
 <a id="plugins"></a>
 ### Plugins
