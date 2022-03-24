@@ -35,17 +35,20 @@ If you haven’t used Matrix before then follow these instructions:
 1. Go to <https://matrix.to/#/#cwl:matrix.org>
 2. Choose the “Element” App if you don’t have a Matrix client already.
 
-   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/bb192f3aeca294ddef2727e69d0b09ae6e285a85.png" alt="screenshot of Matrix app chooser dialog." />
+   <img src="/assets/img/matrix-element-app.png" class="mb-12 mt-12 w-480" alt="screenshot of Matrix app chooser dialog." />
+
 3. You can download the native Element app for your operating system if you want, but choosing to “Continue in your browser” is fine.
 
-   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/3b498f7ee6049bbbfd62ba1ab3d8cd6c7a8179bd.png" alt="screenshot of 'Continue in your Browser' button" />
-4. From the Element native app, or browser session choose "Join" <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/9c369ca92c995092d8f41c2c8b50f54d3455a60b.png" alt="screenshot of 'Join' button" />
-5. And then choose “Create Account” <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/c5ae4eba0d06df8d334b4c71e0f23c4c18239edf.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account.
+   <img src="/assets/img/continue-in-your-browser.png" class="mb-12 mt-12" alt="screenshot of 'Continue in your Browser' button" />
 
-   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/9fb8f3d0499ba7c20193e83a43f6606da59489a2.png" alt="screenshot of third party login chooser dialog" />
+4. From the Element native app, or browser session choose "Join" <img src="/assets/img/join.png" alt="screenshot of 'Join' button" />
+5. And then choose “Create Account” <img src="/assets/img/create-account.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account.
+
+   <img src="/assets/img/continue-with-icons.png" class="mb-12 mt-12 w-480" alt="screenshot of third party login chooser dialog" />
+
 6. Now that you’re signed in, join the “CWL Conference” room.
 
-   <img src="https://aws1.discourse-cdn.com/free1/uploads/cwl1/original/1X/3e6d61be4124a2a89fd173c27aea4944a2aa2818.png" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
+   <img src="/assets/img/cwl-conference-suggested-rooms.png" class="mb-12 mt-12" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
 
 ## Code of Conduct
 
