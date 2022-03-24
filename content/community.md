@@ -23,7 +23,7 @@ If you’re interested in joining the CWL community, we recommend checking out t
 
 [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Wednesday at 16:00 UTC from March-November and 17:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==)
 
-Asia-Pacific: monthly [every first Friday of every month at 01:00 UTC](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
+[APAC](https://en.wikipedia.org/wiki/Asia-Pacific): monthly [every first Friday of every month at 01:00 UTC](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
 (06:00 Pakistan, 06:30 India, 07:00 Bangladesh, 08:00 Thailand / Indonesia, 09:00 China, 10:00 Japan / Korea, 12:00 Melbourne, 14:00 Auckland)
 
 ### Where
