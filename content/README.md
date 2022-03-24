@@ -2,7 +2,7 @@
 
 Instructions on how to run and edit the main [commonwl.org](commonwl.org) website. 
 
-See the main [README.md](../README.md) for general instructions on contributing or reporting a vulnerability.
+See the main [README.md](../README.md) for general [instructions](../README.md#contributing) on contributing. See the [Security Policy](https://github.com/common-workflow-language/cwl-website/security/policy) page to report a vulnerability.
 
 **Table of Contents:**
 <!-- MarkdownTOC -->
