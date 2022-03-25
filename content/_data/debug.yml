@@ -1,0 +1,11 @@
+header:
+  - title: Home
+    url: /
+  - title: About
+    url: "#"
+    type: dropdown
+    subpages:
+      - title: Timeline
+        url: /timeline
+  - title: Features
+    url: "/features"
