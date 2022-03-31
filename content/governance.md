@@ -24,7 +24,7 @@ The CWL leadership team consists of the following people, listed in alphabetical
 
 ## CWL Technical Team
 
-The team is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote. The team consists of the following people, listed in alphabetical order by their last name:
+The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote. The team consists of the following people, listed in alphabetical order by their last name:
 
 * Fabrice Brito, Terradue
   * <https://github.com/fabricebrito>
