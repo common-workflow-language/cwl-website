@@ -38,21 +38,18 @@ If you haven’t used Matrix before then follow these instructions:
 
 1. Go to <https://matrix.to/#/#cwl:matrix.org>
 2. Choose the “Element” App if you don’t have a Matrix client already.
-
-   <img src="/assets/img/matrix-element-app.png" class="mb-12 mt-12 w-480" alt="screenshot of Matrix app chooser dialog." />
+    ![screenshot of Matrix app chooser dialog.](/assets/img/matrix-element-app.png){:.matrix-tutorial-img}
 
 3. You can download the native Element app for your operating system if you want, but choosing to “Continue in your browser” is fine.
+    ![screenshot of 'Continue in your Browser' button](/assets/img/continue-in-your-browser.png){:.mt-16 .mb-10}
 
-   <img src="/assets/img/continue-in-your-browser.png" class="mb-12 mt-12" alt="screenshot of 'Continue in your Browser' button" />
+4. From the Element native app, or browser session choose "Join" ![screenshot of 'Join' button](/assets/img/join.png)
 
-4. From the Element native app, or browser session choose "Join" <img src="/assets/img/join.png" alt="screenshot of 'Join' button" />
-5. And then choose “Create Account” <img src="/assets/img/create-account.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account.
-
-   <img src="/assets/img/continue-with-icons.png" class="mb-12 mt-12 w-480" alt="screenshot of third party login chooser dialog" />
+5. And then choose “Create Account” ![screenshot of 'Create Account' button](/assets/img/create-account.png) using your own Google, GitHub, or GitLab, account.
+    ![screenshot of third party login chooser dialog](/assets/img/continue-with-icons.png){:.matrix-tutorial-img}
 
 6. Now that you’re signed in, join the “CWL Conference” room.
-
-   <img src="/assets/img/cwl-conference-suggested-rooms.png" class="mb-12 mt-12" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
+    ![screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space.](/assets/img/cwl-conference-suggested-rooms.png){:.matrix-tutorial-img}
 
 ## Code of Conduct
 

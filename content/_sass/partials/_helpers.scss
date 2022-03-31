@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.box-shadow-grey {
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.41);
+}
+
 .black-text {
   color: $black;
 }
@@ -21,6 +25,15 @@
   font-weight: normal;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mbt-12 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -29,6 +42,35 @@
   margin-top: 12px;
 }
 
+.mbt-16 {
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.ml-2em {
+  margin-left: 2em;
+}
+
 .w-480 {
   width: 480px;
 }
+
+.d-block {
+  display: block;
+}
+
+.matrix-tutorial-img {
+  display: block;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.41);
+  margin: 16px 0;
+  max-width: 480px;
+}
+
