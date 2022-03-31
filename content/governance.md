@@ -50,3 +50,15 @@ The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/
   * <https://github.com/tom-tan>
   * <https://matrix.to/#/@tom-tan:matrix.org>
   * <https://orcid.org/0000-0002-4421-9659>
+* Peter Amstutz, Curii Corporation / Arvados
+  * <https://github.com/tetron>
+  * <https://matrix.to/#/@tetron:matrix.org>
+  * <https://orcid.org/0000-0003-3566-7705>
+* Lon Blauvelt, University of California Santa Cruz / Toil Project
+  * https://github.com/DailyDreaming
+  * https://matrix.to/#/@dailydreaming:matrix.org
+  * https://orcid.org/0000-0001-8352-873X
+* Manabu Ishii, Genome Analytics Japan Inc.
+  * https://github.com/manabuishii
+  * https://matrix.to/#/@manabuishii:matrix.org
+  * https://orcid.org/0000-0002-5843-4712
