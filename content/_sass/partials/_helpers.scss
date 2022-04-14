@@ -25,7 +25,7 @@
   width: 480px;
 }
 
-@include media-breakpoint-up(md) {
+@include media-breakpoint-up(lg) {
   .mobile-br  {
     display: none;
   }
