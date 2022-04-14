@@ -11,7 +11,11 @@
     {%- for adopter in adopters -%}
       {%- if adopter.image -%}
         {%- unless adopter.duplicate_logo == true -%}
-          <div id="{{ adopter.image_id }}-container" class="mini-gallery-img-container"><img id="{{ adopter.image_id }}" class="mini-gallery-img" src="{{ adopter.image | absolute_url }}" alt=""></div>
+          {%- if adopter.image_id -%}
+            <div id="{{ adopter.image_id }}-container" class="mini-gallery-img-container"><img id="{{ adopter.image_id }}" class="mini-gallery-img" src="{{ adopter.image | absolute_url }}" alt=""></div>
+          {% else %}
+          <div class="mini-gallery-img-container"><img class="mini-gallery-img" src="{{ adopter.image | absolute_url }}" alt=""></div>
+          {% endif %}
         {%- endunless -%}
       {%- endif -%}
     {%- endfor -%}

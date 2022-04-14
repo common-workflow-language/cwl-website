@@ -13,7 +13,7 @@
         {%- for item in site.data.navigation.header -%}
           {%- if item.type contains "dropdown" -%}
             <li class="dropdown nav-item">
-              <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle nav-link" id="navbarDropdown-{{ item.title }}" data-bs-toggle="dropdown" role="button" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
               {%- if item.subpages -%}
                 <ul class="dropdown-menu">
                 {%- for page in item.subpages -%}
@@ -27,7 +27,7 @@
               {%- endif -%}
 
             {%- if item.subfolderitems[0] -%}
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown-{{ item.title }}">
                 {%- for entry in item.subfolderitems -%}
                   <li class="dropdown-item nav-item"><a class="nav-link" href="{{ entry.url | absolute_url }}">{{ entry.page }}</a></li>
                 {%- endfor -%}
