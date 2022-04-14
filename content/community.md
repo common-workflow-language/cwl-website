@@ -15,40 +15,41 @@ If you’re interested in joining the CWL community, we recommend checking out t
 
 ## CWL Online Community Meetings
 
+{:.fsize-1-25 .h3-sm .fw-normal}
 ### Agenda and notes
 
-<https://w3id.org/cwl/meeting_minutes>.
+* <https://w3id.org/cwl/meeting_minutes>.
 
+{:.fsize-1-25 .h3-sm .fw-normal}
 ### When
 
-[EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Wednesday at 16:00 UTC from March-November and 17:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==)
-
-[APAC](https://en.wikipedia.org/wiki/Asia-Pacific): monthly [every first Friday of every month at 00:00 UTC April-September and 01:00 UTC October-March](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
+* [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Wednesday at 16:00 UTC from March-November and 17:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==)
+* [APAC](https://en.wikipedia.org/wiki/Asia-Pacific): monthly [every first Friday of every month at 00:00 UTC April-September and 01:00 UTC October-March](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
 (06:00 Pakistan, 06:30 India, 07:00 Bangladesh, 08:00 Thailand / Indonesia, 09:00 China, 10:00 Japan / Korea, 12:00 Melbourne, 14:00 Auckland)
 
+{:.fsize-1-25 .h3-sm .fw-normal}
 ### Where
 
-CWL Voice/Video chats use the "CWL Conference" room in the [CWL Matrix Space](https://matrix.to/#/#cwl:matrix.org).
+* CWL Voice/Video chats use the "CWL Conference" room in the [CWL Matrix Space](https://matrix.to/#/#cwl:matrix.org).
+
+## Using Matrix
 
 If you haven’t used Matrix before then follow these instructions:
 
 1. Go to <https://matrix.to/#/#cwl:matrix.org>
 2. Choose the “Element” App if you don’t have a Matrix client already.
-
-   <img src="/assets/img/matrix-element-app.png" class="mb-12 mt-12 w-480" alt="screenshot of Matrix app chooser dialog." />
+    ![screenshot of Matrix app chooser dialog.](/assets/img/matrix-element-app.png){:.matrix-tutorial-img}
 
 3. You can download the native Element app for your operating system if you want, but choosing to “Continue in your browser” is fine.
+    ![screenshot of 'Continue in your Browser' button](/assets/img/continue-in-your-browser.png){:.mt-16 .mb-10}
 
-   <img src="/assets/img/continue-in-your-browser.png" class="mb-12 mt-12" alt="screenshot of 'Continue in your Browser' button" />
+4. From the Element native app, or browser session choose "Join" ![screenshot of 'Join' button](/assets/img/join.png)
 
-4. From the Element native app, or browser session choose "Join" <img src="/assets/img/join.png" alt="screenshot of 'Join' button" />
-5. And then choose “Create Account” <img src="/assets/img/create-account.png" alt="screenshot of 'Create Account' button" > using your own Google, GitHub, or GitLab, account.
-
-   <img src="/assets/img/continue-with-icons.png" class="mb-12 mt-12 w-480" alt="screenshot of third party login chooser dialog" />
+5. And then choose “Create Account” ![screenshot of 'Create Account' button](/assets/img/create-account.png) using your own Google, GitHub, or GitLab, account.
+    ![screenshot of third party login chooser dialog](/assets/img/continue-with-icons.png){:.matrix-tutorial-img}
 
 6. Now that you’re signed in, join the “CWL Conference” room.
-
-   <img src="/assets/img/cwl-conference-suggested-rooms.png" class="mb-12 mt-12" alt="screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space." />
+    ![screenshot of 'CWL Conference' under 'Suggested Rooms' in the CWL Matrix Space.](/assets/img/cwl-conference-suggested-rooms.png){:.matrix-tutorial-img}
 
 ## Code of Conduct
 
