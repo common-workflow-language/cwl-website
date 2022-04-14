@@ -24,3 +24,9 @@
 .w-480 {
   width: 480px;
 }
+
+@include media-breakpoint-up(md) {
+  .mobile-br  {
+    display: none;
+  }
+}

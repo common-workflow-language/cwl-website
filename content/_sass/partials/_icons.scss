@@ -1,0 +1,15 @@
+.fas,
+.fab {
+  &.govern-icon {
+    font-size: 1.5rem;
+    padding: 0 4px;
+  }
+}
+
+.fa-orcid {
+  color: $orcid-green;
+
+  &.govern-icon {
+    padding: 0 8px 0 4px;
+  }
+}
