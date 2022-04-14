@@ -44,7 +44,7 @@ The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/
 * Bogdan Gavrilović, Seven Bridges <a href="https://orcid.org/0000-0003-1550-1716"><img alt="ORCID logo" src="/assets/img/orcid_16x16.png" width=15 height=16 />https://orcid.org/0000-0003-1550-1716</a>
   * <https://github.com/bogdang989>
   * <https://matrix.to/#/@bogdan_gavrilovic:matrix.org>
-* Stian Soiland-Reyes, eScience Lab, The University of Manchester <a href="https://orcid.org/0000-0001-9842-9718"><img alt="ORCID logo" src="/assets/img/orcid_16x16.png" width=15 height=16 />https://orcid.org/0000-0001-9842-9718/a>
+* Stian Soiland-Reyes, eScience Lab, The University of Manchester <a href="https://orcid.org/0000-0001-9842-9718"><img alt="ORCID logo" src="/assets/img/orcid_16x16.png" width=15 height=16 />https://orcid.org/0000-0001-9842-9718</a>
   * <https://github.com/stain>
   * <https://matrix.to/#/@soilandreyes:matrix.org>
 * Tomoya Tanjo, Bioinformation and DDBJ Center, National Institute of Genetics <a href="https://orcid.org/0000-0002-4421-9659"><img alt="ORCID logo" src="/assets/img/orcid_16x16.png" width=15 height=16 />https://orcid.org/0000-0002-4421-9659</a>
