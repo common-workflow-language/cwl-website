@@ -46,41 +46,50 @@ The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/
 {% assign orcid_icon = '<i class="fab fa-orcid govern-icon" alt="ORCID icon" title="ORCID Profile"></i>' %}
 
 * Fabrice Brito, Terradue<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/fabricebrito)
-  [{{ chat_icon }}](https://matrix.to/#/@fabrito:matrix.org)
+  [{{ github_icon }}](https://github.com/fabricebrito){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@fabrito:matrix.org){:aria-label="Matrix Link"}
 * Iacopo Colonnelli, University of Torino, Computer Science Dept<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/glassofwhiskey)
-  [{{ chat_icon }}](https://matrix.to/#/@glassofwhiskey:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0001-9290-2017](https://orcid.org/0000-0001-9290-2017)
+  [{{ github_icon }}](https://github.com/glassofwhiskey){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@glassofwhiskey:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0001-9290-2017){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0001-9290-2017>
 * Michael R. Crusoe, ELIXIR-NL<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/mr-c)
-  [{{ chat_icon }}](https://matrix.to/#/@mr-c:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0002-2961-9670](https://orcid.org/0000-0002-2961-9670)
+  [{{ github_icon }}](https://github.com/mr-c){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@mr-c:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0002-2961-9670){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0002-2961-9670>
 * Bogdan Gavrilović, Seven Bridges<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/bogdang989)
-  [{{ chat_icon }}](https://matrix.to/#/@bogdan_gavrilovic:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0003-1550-1716](https://orcid.org/0000-0003-1550-1716)
+  [{{ github_icon }}](https://github.com/bogdang989){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@bogdan_gavrilovic:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0003-1550-1716){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0003-1550-1716>
 * Stian Soiland-Reyes, eScience Lab, The University of Manchester<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/stain)
-  [{{ chat_icon }}](https://matrix.to/#/@soilandreyes:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0001-9842-9718](https://orcid.org/0000-0001-9842-9718)
+  [{{ github_icon }}](https://github.com/stain){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@soilandreyes:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0001-9842-9718){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0001-9842-9718>
 * Tomoya Tanjo, Bioinformation and DDBJ Center, National Institute of Genetics<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/tom-tan)
-  [{{ chat_icon }}](https://matrix.to/#/@tom-tan:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0002-4421-9659](https://orcid.org/0000-0002-4421-9659)
+  [{{ github_icon }}](https://github.com/tom-tan){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@tom-tan:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0002-4421-9659){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0002-4421-9659>
 * Peter Amstutz, Curii Corporation / Arvados<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/tetron)
-  [{{ chat_icon }}](https://matrix.to/#/@tetron:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0003-3566-7705](https://orcid.org/0000-0003-3566-7705)
+  [{{ github_icon }}](https://github.com/tetron){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@tetron:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0003-3566-7705){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0003-3566-7705>
 * Lon Blauvelt, University of California Santa Cruz / Toil Project<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/DailyDreaming)
-  [{{ chat_icon }}](https://matrix.to/#/@dailydreaming:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0001-8352-873X](https://orcid.org/0000-0001-8352-873X)
+  [{{ github_icon }}](https://github.com/DailyDreaming){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@dailydreaming:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0001-8352-873X){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0001-8352-873X>
 * Manabu Ishii, Genome Analytics Japan Inc.<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/manabuishii)
-  [{{ chat_icon }}](https://matrix.to/#/@manabuisii:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0002-5843-4712](https://orcid.org/0000-0002-5843-4712)
+  [{{ github_icon }}](https://github.com/manabuishii){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@manabuisii:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0002-5843-4712){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0002-5843-4712>
 * Marius van den Beek, Galaxy Project<br class="mobile-br" />
-  [{{ github_icon }}](https://github.com/mvdbeek)
-  [{{ chat_icon }}](https://matrix.to/#/@mvdbeek:matrix.org)
-  [{{ orcid_icon }}https://orcid.org/0000-0002-9676-7032](https://orcid.org/0000-0002-9676-7032)
+  [{{ github_icon }}](https://github.com/mvdbeek){:aria-label="Github Link"}
+  [{{ chat_icon }}](https://matrix.to/#/@mvdbeek:matrix.org){:aria-label="Matrix Link"}
+  [{{ orcid_icon }}](https://orcid.org/0000-0002-9676-7032){:aria-label="Orcid Link"}
+  <https://orcid.org/0000-0002-9676-7032>
