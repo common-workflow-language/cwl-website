@@ -6,11 +6,19 @@ columns: 10
 class: page-short
 ---
 
+## Software Freedom Conservancy
+
+![Software Freedom Conservancy](/assets/img/conservancy-header.svg)
+
+CWL is a member project of the [Software Freedom Conservancy](https://sfconservancy.org/), a non-profit organization that provides a legal home for free and open source software (FOSS) projects. 
+
+The day-to-day governance of CWL is largely self-managed by the [CWL community](/community/) with oversight from the CWL leadership team (below), while the Conservancy is our host organization for any legal, licensing and financial issues.
+
 ## CWL Leadership Team
 
-CWL is a member project of the Software Freedom Conservancy. In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/community/) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.
+In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/community/) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.
 
-To contact just the CWL leadership team, please email <cwl-leadership@googlegroups.com>.
+To contact just the CWL leadership team, please email <cwl-leadership@googlegroups.com> which are treated confidentially.
 
 The CWL leadership team consists of the following people, listed in alphabetical order by their last name:
 
@@ -20,9 +28,7 @@ The CWL leadership team consists of the following people, listed in alphabetical
 *   Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; <https://orcid.org/0000-0001-7811-8613>
 *   Jeff Gentry, Foundation Medicine, OpenWDL; <https://orcid.org/0000-0001-5351-8442>
 *   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
-*   Stian Soiland-Reyes, University of Manchester; <https://orcid.org/0000-0001-9842-9718>
-
-## CWL Technical Team
+*   Stian Soiland-Reyes, The University of Manchester; <https://orcid.org/0000-0001-9842-9718>
 
 The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote and their chat room is at <https://matrix.to/#/#cwltool-dev:matrix.org>.The team consists of the following people, listed in alphabetical order by their last name:
 
