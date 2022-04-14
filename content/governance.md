@@ -8,7 +8,7 @@ class: page-short
 
 ## Software Freedom Conservancy
 
-![Software Freedom Conservancy](/assets/img/conservancy-header.svg()
+![Software Freedom Conservancy](/assets/img/conservancy-header.svg)
 
 CWL is a member project of the [Software Freedom Conservancy](https://sfconservancy.org/), a non-profit organization that provides a legal home for free and open source software (FOSS) projects. 
 
