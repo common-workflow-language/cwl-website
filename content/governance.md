@@ -24,7 +24,7 @@ The CWL leadership team consists of the following people, listed in alphabetical
 
 ## CWL Technical Team
 
-The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote. The team consists of the following people, listed in alphabetical order by their last name:
+The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote and their chat room is at <https://matrix.to/#/#cwltool-dev:matrix.org>.The team consists of the following people, listed in alphabetical order by their last name:
 
 * Fabrice Brito, Terradue
   * <https://github.com/fabricebrito>
@@ -41,11 +41,10 @@ The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/
   * <https://github.com/bogdang989>
   * <https://matrix.to/#/@bogdan_gavrilovic:matrix.org>
   * <https://orcid.org/0000-0003-1550-1716>
-  * <https://github.com/orgs/common-workflow-language/teams/tech_team>
-  * <https://matrix.to/#/#cwltool-dev:matrix.org>
 * Stian Soiland-Reyes, eScience Lab, The University of Manchester
   * <https://github.com/stain>
   * <https://orcid.org/0000-0001-9842-9718>
+  * <https://matrix.to/#/@soilandreyes:matrix.org>
 * Tomoya Tanjo, Bioinformation and DDBJ Center, National Institute of Genetics
   * <https://github.com/tom-tan>
   * <https://matrix.to/#/@tom-tan:matrix.org>
