@@ -22,13 +22,20 @@ To contact just the CWL leadership team, please email <cwl-leadership@googlegrou
 
 The CWL leadership team consists of the following people, listed in alphabetical order by their last name:
 
-*   Peter Amstutz, Curii / Arvados Project; <https://orcid.org/0000-0003-3566-7705>
-*   John Chilton, Pennsylvania State University / Galaxy Project; <https://orcid.org/0000-0002-6794-0756>
-*   Michael R. Crusoe, CWL Project Lead; <https://orcid.org/0000-0002-2961-9670>
-*   Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.; <https://orcid.org/0000-0001-7811-8613>
-*   Jeff Gentry, Foundation Medicine, OpenWDL; <https://orcid.org/0000-0001-5351-8442>
-*   Hervé Ménager, Institut Pasteur; <https://orcid.org/0000-0002-7552-1009>
-*   Stian Soiland-Reyes, The University of Manchester; <https://orcid.org/0000-0001-9842-9718>
+* Peter Amstutz, Curii / Arvados Project;
+  <https://orcid.org/0000-0003-3566-7705>
+* John Chilton, Pennsylvania State University / Galaxy Project;
+  <https://orcid.org/0000-0002-6794-0756>
+* Michael R. Crusoe, CWL Project Lead;
+  <https://orcid.org/0000-0002-2961-9670>
+* Brandi Davis Dusenbery, Seven Bridges Genomics, Inc.;
+  <https://orcid.org/0000-0001-7811-8613>
+* Jeff Gentry, Foundation Medicine, OpenWDL;
+  <https://orcid.org/0000-0001-5351-8442>
+* Hervé Ménager, Institut Pasteur;
+  <https://orcid.org/0000-0002-7552-1009>
+* Stian Soiland-Reyes, The University of Manchester;
+  <https://orcid.org/0000-0001-9842-9718>
 
 The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote and their chat room is at <https://matrix.to/#/#cwltool-dev:matrix.org>.The team consists of the following people, listed in alphabetical order by their last name:
 
