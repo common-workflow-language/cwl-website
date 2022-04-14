@@ -61,3 +61,7 @@ The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/
   * https://github.com/manabuishii
   * https://matrix.to/#/@manabuishii:matrix.org
   * https://orcid.org/0000-0002-5843-4712
+* Marius van den Beek, Galaxy Project
+  * https://github.com/mvdbeek
+  * https://matrix.to/#/@mvdbeek:matrix.org
+  * https://orcid.org/0000-0002-9676-7032
