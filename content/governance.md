@@ -37,6 +37,8 @@ The CWL leadership team consists of the following people, listed in alphabetical
 * Stian Soiland-Reyes, The University of Manchester;
   <https://orcid.org/0000-0001-9842-9718>
 
+## CWL Technical Team
+
 The [CWL Technical Team](https://github.com/orgs/common-workflow-language/teams/tech_team) is initially responsible for approving new versions of the CWL standards before that proposal goes to the CWL Leadership Team for the final vote and their chat room is at <https://matrix.to/#/#cwltool-dev:matrix.org>.The team consists of the following people, listed in alphabetical order by their last name:
 
 {% assign github_icon = '<i class="fab fa-github govern-icon" alt="GitHub logo" title="GitHub Profile"></i>' %}
