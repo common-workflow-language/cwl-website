@@ -6,8 +6,7 @@ set -x
 for repo in https://github.com/common-workflow-language/common-workflow-language \
             https://github.com/common-workflow-language/cwl-v1.1 \
 	    https://github.com/common-workflow-language/user_guide \
-	    https://github.com/common-workflow-lab/cwl-novice-tutorial \
-	    https://github.com/common-workflow-library/rnaseq-cwl-training ; do
+	    https://github.com/common-workflow-lab/cwl-novice-tutorial ; do
     bn=$(basename $repo)
     if [[ -d $bn ]] ; then
 	(cd $bn && git fetch origin && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD))

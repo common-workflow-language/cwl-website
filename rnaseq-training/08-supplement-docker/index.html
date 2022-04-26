@@ -1,0 +1,801 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-04-26 15:35:11 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lesson.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/syntax.css" />
+    <link rel="license" href="#license-info" />
+    <script type="text/javascript" src="../assets/js/tabs.js"></script>
+    <link rel="stylesheet" href="../assets/css/tabs.css">
+
+    
+    <meta http-equiv="refresh" content="0; url=https://doc.arvados.org/rnaseq-cwl-training/08-supplement-docker/index.html" />
+    
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/favicons/swc/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/favicons/swc/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/favicons/swc/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/favicons/swc/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/favicons/swc/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/favicons/swc/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/favicons/swc/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/favicons/swc/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Software Carpentry - Getting started with CWL"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../assets/favicons/swc/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../assets/favicons/swc/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../assets/favicons/swc/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../assets/favicons/swc/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../assets/favicons/swc/mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Supplement: Creating Docker Images for Workflows &ndash; Getting started with CWL
+  </title>
+
+  </head>
+  <body>
+
+    
+
+
+<div class="panel panel-default life-cycle">
+  <div id="life-cycle" class="panel-body beta">
+    This lesson is being piloted (Beta version)
+  </div>
+</div>
+
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="https://software-carpentry.org" class="pull-left">
+        <img class="navbar-logo" src="../assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="../index.html">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="../CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="../setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="../01-introduction/index.html">Introduction</a></li>
+            
+            
+            <li><a href="../02-workflow/index.html">Create a Workflow by Composing Tools</a></li>
+            
+            
+            <li><a href="../03-running/index.html">Running and Debugging a Workflow</a></li>
+            
+            
+            <li><a href="../04-commandlinetool/index.html">Writing a Tool Wrapper</a></li>
+            
+            
+            <li><a href="../05-scatter/index.html">Analyzing Multiple Samples</a></li>
+            
+            
+            <li><a href="../06-expressions/index.html">Dynamic Workflow Behavior</a></li>
+            
+            
+            <li><a href="../07-resources/index.html"> Resources for further learning</a></li>
+            
+            
+            <li><a href="../08-supplement-docker/index.html">Supplement: Creating Docker Images for Workflows</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="../aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../reference.html">Reference</a></li>
+            
+            
+            <li><a href="../about/index.html">About</a></li>
+            
+            
+            <li><a href="../discuss/index.html">Discussion</a></li>
+            
+            
+            <li><a href="../figures/index.html">Figures</a></li>
+            
+            
+            <li><a href="../guide/index.html">Instructor Notes</a></li>
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="../LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//_episodes/08-supplement-docker.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../07-resources/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle"><a href="../">Getting started with CWL</a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    </h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Supplement: Creating Docker Images for Workflows</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2>Overview</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 10 min
+      <br/>
+      <strong>Exercises:</strong> 1 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>How do I create Docker images from scratch?</p>
+</li>
+	
+	<li><p>What some best practices for Docker images?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Understand how to get started writing Dockerfiles</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>This lesson has migrated to https://doc.arvados.org/rnaseq-cwl-training/08-supplement-docker/index.html</p>
+
+<p>Common Workflow Language supports running tasks inside software
+containers.  Software container systems (such as Docker) create an
+execution environment that is isolated from the host system, so that
+software installed on the host system does not conflict with the
+software installed inside the container.</p>
+
+<p>Programs running inside a software container get a different (and
+generally restricted) view of the system than processes running
+outside the container.  One of the most important and useful features
+is that the containerized program has a different view of the file
+system.  A program running inside a container, searching for
+libraries, modules, configuration files, data files, etc, only sees
+the files defined inside the container.</p>
+
+<p>This means that, usually, a given file <em>path</em> refers to <em>different
+actual files</em> depending from the persective of being inside or outside
+the container.  It is also possible to have a file from the host
+system appear at some location inside the container, meaning that the
+<em>same file</em> appears at <em>different paths</em> depending from the persective
+of being inside or outside the container.</p>
+
+<p>The complexity of translating between the container and its host
+environment is handled by the Common Workflow Language runner.  As a
+workflow author, you only need to worry about the environment <em>inside</em>
+the container.</p>
+
+<h1 id="what-are-docker-images">What are Docker images?</h1>
+
+<p>The Docker image describes the starting conditions for the container.
+Most importantly, this includes starting layout and contents of the
+container’s file system.  This file system is typically a lightweight
+POSIX environment, providing a standard set of POSIX utilities like a
+<code class="language-plaintext highlighter-rouge">sh</code>, <code class="language-plaintext highlighter-rouge">ls</code>, <code class="language-plaintext highlighter-rouge">cat</code>, etc and organized into standard POSIX directories
+like <code class="language-plaintext highlighter-rouge">/bin</code> and <code class="language-plaintext highlighter-rouge">/lib</code>.</p>
+
+<p>The image is is made up of multiple “layers”.  Each layer modifies the
+layer below it by adding, removing or modifying files to produce a new
+layer.  This allows lower layers to be re-used.</p>
+
+<h1 id="writing-a-dockerfile">Writing a Dockerfile</h1>
+
+<p>In this example, we will build a Docker image containing the
+Burrows-Wheeler Aligner (BWA) by Heng Li.  This is just for
+demonstration, in practice you should prefer to use existing
+containers from <a href="https://biocontainers.pro/">BioContainers</a>, which
+includes <code class="language-plaintext highlighter-rouge">bwa</code>.</p>
+
+<p>Each line of the Docker file consists of a COMMAND in all caps,
+following by the parameters of that command.</p>
+
+<p>The first line of the file will specify the base image that we are
+going to build from.  As mentioned, images are divided up into
+“layers”, so this tells Docker what to use for the first layer.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM debian:10-slim
+</code></pre></div></div>
+
+<p>This starts from the lightweight (“slim”) Debian 10 Docker image.</p>
+
+<p>Docker images have a special naming scheme.</p>
+
+<p>A bare name like “debian” or “ubuntu” means it is an official Docker
+image.  It has an implied prefix of “library”, so you may see the
+image referred to as “library/debian”.  Official images are published
+on <a href="https://hub.docker.com/search?type=image&amp;image_filter=official">Docker Hub</a>.</p>
+
+<p>A name with two parts separated by a slash is published on Docker Hub
+by someone else.  For example, <code class="language-plaintext highlighter-rouge">amazon/aws-cli</code> is published by
+Amazon.  These can also be found on <a href="https://hub.docker.com/search?type=image">Docker Hub</a>.</p>
+
+<p>A name with three parts separated by slashes means it is published on
+a different container register.  For example,
+<code class="language-plaintext highlighter-rouge">quay.io/biocontainers/subread</code> is published by <code class="language-plaintext highlighter-rouge">quay.io</code>.</p>
+
+<p>Following image name, separated by a colon is the “tag”.  This is
+typically the version of the image.  If not provided, the default tag
+is “latest”.  In this example, the tag is “10-slim” indicating Debian
+release 10.</p>
+
+<p>The Docker file should also include a MAINTAINER (this is purely
+metadata, it is stored in the image but not used for execution).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MAINTAINER Peter Amstutz &lt;peter.amstutz@curii.com&gt;
+</code></pre></div></div>
+
+<p>Next is the default user inside the image.  By making choosing root,
+we can change anything inside the image (but not outside).</p>
+
+<p>The body of the Dockerfile is a series of <code class="language-plaintext highlighter-rouge">RUN</code> commands.</p>
+
+<p>Each command is run with <code class="language-plaintext highlighter-rouge">/bin/sh</code> inside the Docker container.</p>
+
+<p>Each <code class="language-plaintext highlighter-rouge">RUN</code> command creates a new layer.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">RUN</code> command can span multiple lines by using a trailing
+backslash.</p>
+
+<p>For the first command, we use <code class="language-plaintext highlighter-rouge">apt-get</code> to install some packages that
+will be needed to compile <code class="language-plaintext highlighter-rouge">bwa</code>.  The <code class="language-plaintext highlighter-rouge">build-essential</code> package
+installs <code class="language-plaintext highlighter-rouge">gcc</code>, <code class="language-plaintext highlighter-rouge">make</code>, etc.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RUN apt-get update -qy &amp;&amp; \
+	apt-get install -qy build-essential wget unzip
+</code></pre></div></div>
+
+<p>Now we do everything else: download the source code of bwa, unzip it,
+make it, copy the resulting binary to <code class="language-plaintext highlighter-rouge">/usr/bin</code>, and clean up.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Install BWA 07.7.17
+RUN wget https://github.com/lh3/bwa/archive/v0.7.17.zip &amp;&amp; \
+	unzip v0.7.17 &amp;&amp; \
+	cd bwa-0.7.17 &amp;&amp; \
+	make &amp;&amp; \
+	cp bwa /usr/bin &amp;&amp; \
+	cd .. &amp;&amp; \
+	rm -rf bwa-0.7.17
+</code></pre></div></div>
+
+<p>Because each <code class="language-plaintext highlighter-rouge">RUN</code> command creates a new layer, having the build and
+clean up in separate <code class="language-plaintext highlighter-rouge">RUN</code> commands would mean creating a layer that
+includes the intermediate object files from the build.  These would
+then be carried around as part of the container image forever, despite
+being useless.  By doing the entire build and clean up in one <code class="language-plaintext highlighter-rouge">RUN</code>
+command, only the final state of the file system, with the binary
+copied to <code class="language-plaintext highlighter-rouge">/usr/bin</code>, is committed to a layer.</p>
+
+<p>To build a Docker image from a Dockerfile, use <code class="language-plaintext highlighter-rouge">docker build</code>.</p>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">-t</code> option to specify the name of the image.  Use <code class="language-plaintext highlighter-rouge">-f</code> if the
+file isn’t named exactly <code class="language-plaintext highlighter-rouge">Dockerfile</code>.  The last part is the directory
+where it will find the <code class="language-plaintext highlighter-rouge">Dockerfile</code> and any files that are referenced
+by <code class="language-plaintext highlighter-rouge">COPY</code> (described below).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t training/bwa -f Dockerfile.single-stage .
+</code></pre></div></div>
+
+<blockquote class="challenge">
+  <h2 id="exercise">Exercise</h2>
+
+  <p>Create a <code class="language-plaintext highlighter-rouge">Dockerfile</code> based on this lesson and build it for yourself.</p>
+
+  <blockquote class="solution">
+    <h2 id="solution">Solution</h2>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>FROM debian:10-slim
+MAINTAINER Peter Amstutz &lt;peter.amstutz@curii.com&gt;
+
+RUN apt-get update -qy
+RUN apt-get install -qy build-essential wget unzip zlib1g-dev
+
+# Install BWA 07.7.17
+RUN wget https://github.com/lh3/bwa/archive/v0.7.17.zip &amp;&amp; \
+	unzip v0.7.17 &amp;&amp; \
+	cd bwa-0.7.17 &amp;&amp; \
+	make &amp;&amp; \
+	cp bwa /usr/bin &amp;&amp; \
+	cd .. &amp;&amp; \
+	rm -rf bwa-0.7.17
+</code></pre></div>    </div>
+
+  </blockquote>
+</blockquote>
+
+<h1 id="adding-files-to-the-image-during-the-build">Adding files to the image during the build</h1>
+
+<p>Using the <code class="language-plaintext highlighter-rouge">COPY</code> command, you can copy files from the source directory
+(this is the directory your Dockerfile was located) into the image
+during the build.  For example, you have a <code class="language-plaintext highlighter-rouge">requirements.txt</code> next to
+Dockerfile:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>COPY requirements.txt /tmp/
+RUN pip install --requirement /tmp/requirements.txt
+</code></pre></div></div>
+
+<h1 id="multi-stage-builds">Multi-stage builds</h1>
+
+<p>As noted, it is good practice to avoiding leaving files in the Docker
+image that were required to build the program, but not to run it, as
+those files are simply useless bloat.  Docker offers a more
+sophisticated way to create clean builds by separating the build steps
+from the creation of the final container.  These are called
+“multi-stage” builds.</p>
+
+<p>A multi stage build has multiple <code class="language-plaintext highlighter-rouge">FROM</code> lines.  Each <code class="language-plaintext highlighter-rouge">FROM</code> line is a
+separate container build.  The last <code class="language-plaintext highlighter-rouge">FROM</code> in the file describes the
+final container image that will be created.</p>
+
+<p>The key benefit is that the different stages are independent, but you
+can copy files from one stage to another.</p>
+
+<p>Here is an example of the bwa build as a multi-stage build.  It is a
+little bit more complicated, but the outcome is a smaller image,
+because the “build-essential” tools are not included in the final
+image.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Build the base image.  This is the starting point for both the build
+# stage and the final stage.
+# the "AS base" names the image within the Dockerfile
+FROM debian:10-slim AS base
+MAINTAINER Peter Amstutz &lt;peter.amstutz@curii.com&gt;
+
+# Install libz, because the bwa binary will depend on it.
+# As it happens, this already included in the base Debian distribution
+# because lots of things use libz specifically, but it is good practice
+# to explicitly declare that we need it.
+RUN apt-get update -qy
+RUN apt-get install -qy zlib1g
+
+
+# This is the builder image.  It has the commands to install the
+# prerequisites and then build the bwa binary.
+FROM base as builder
+RUN apt-get install -qy build-essential wget unzip zlib1g-dev
+
+# Install BWA 07.7.17
+RUN wget https://github.com/lh3/bwa/archive/v0.7.17.zip
+RUN unzip v0.7.17
+RUN cd bwa-0.7.17 &amp;&amp; \
+    make &amp;&amp; \
+    cp bwa /usr/bin
+
+
+# Build the final image.  It starts from base (where we ensured that
+# libz was installed) and then copies the bwa binary from the builder
+# image.  The result is the final image only has the compiled bwa
+# binary, but not the clutter from build-essentials or from compiling
+# the program.
+FROM base AS final
+
+# This is the key command, we use the COPY command described earlier,
+# but instead of copying from the host, the --from option copies from
+# the builder image.
+COPY --from=builder /usr/bin/bwa /usr/bin/bwa
+</code></pre></div></div>
+
+<h1 id="best-practices-for-docker-images">Best practices for Docker images</h1>
+
+<p><a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/">Docker has published guidelines on building efficient images.</a></p>
+
+<p>Some additional considerations when building images for use with Workflows:</p>
+
+<h2 id="store-dockerfiles-in-git-alongside-workflow-definitions">Store Dockerfiles in git, alongside workflow definitions</h2>
+
+<p>Dockerfiles are scripts and should be managed with version control
+just like other kinds of code.</p>
+
+<h2 id="be-specific-about-software-versions">Be specific about software versions</h2>
+
+<p>Instead of blindly installing the latest version of a package, or
+checking out the <code class="language-plaintext highlighter-rouge">master</code> branch of a git repository and building from
+that, be specific in your Dockerfile about what version of the
+software you are installing.  This will greatly aid the
+reproducibility of your Docker image builds.</p>
+
+<p>Similarly, be as specific as possible about the version of the base
+image you want to use in your <code class="language-plaintext highlighter-rouge">FROM</code> command.  If you don’t specify a
+tag, the default tag is called “latest”, which can change at any time.</p>
+
+<h2 id="tag-your-builds">Tag your builds</h2>
+
+<p>Use meaningful tags on your own Docker image so you can tell versions
+of your Docker image apart as it is updated over time.  These can
+reflect the version of the underlying software, or a version you
+assign to the Dockerfile itself.  These can be manually assigned
+version numbers (e.g. 1.0, 1.1, 1.2, 2.0), timestamps (e.g. YYYYMMDD
+like 20220126) or the hash of a git commit.</p>
+
+<h2 id="avoid-putting-reference-data-to-docker-images">Avoid putting reference data to Docker images</h2>
+
+<p>Bioinformatics tools often require large reference data sets to run.
+These should be supplied externally (as workflow inputs) rather than
+added to the container image.  This makes it easy to update reference
+data instead of having to rebuild a new Docker image every time, which
+is much more time consuming.</p>
+
+<h2 id="small-scripts-can-be-inputs-too">Small scripts can be inputs, too</h2>
+
+<p>If you have a small script, e.g. a self-contained single-file Python
+script which imports Python modules installed inside the container,
+you can supply the script as a workflow input.  This makes it easy to
+update the script instead of having to rebuild a new Docker image
+every time, which is much more time consuming.</p>
+
+<h2 id="dont-use-entrypoint">Don’t use ENTRYPOINT</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">ENTRYPOINT</code> Dockerfile command modifies the command line that is
+executed inside the container.  This can produce confusion when the
+command line that supplied to the container and the command that
+actually runs are different.</p>
+
+<h2 id="be-careful-about-the-build-cache">Be careful about the build cache</h2>
+
+<p>Docker build has a useful feature where if it has a record of the
+exact <code class="language-plaintext highlighter-rouge">RUN</code> command against the exact base layer, it can re-use the
+layer from cache instead of re-running it every time.  This is a great
+time-saver during development, but can also be a source of
+frustration: build steps often download files from the Internet.  If
+the file being downloaded changes without the command being used to
+download it changing, it will reuse the cached step with the old copy
+of the file, instead of re-downloading it.  If this happens, use
+<code class="language-plaintext highlighter-rouge">--no-cache</code> to force it to re-run the steps.</p>
+
+<blockquote class="solution">
+  <h2 id="episode-solution">Episode solution</h2>
+  <ul>
+    <li><a href="../assets/answers/ep8/Dockerfile.single-stage">Dockerfile.single-stage</a></li>
+    <li><a href="../assets/answers/ep8/Dockerfile.multi-stage">Dockerfile.multi-stage</a></li>
+  </ul>
+</blockquote>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2>Key Points</h2>
+  <ul>
+    
+    <li><p>Docker images contain the initial state of the filesystem for a container</p>
+</li>
+    
+    <li><p>Docker images are made up of layers</p>
+</li>
+    
+    <li><p>Dockerfiles consist of a series of commands to install software into the container.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../07-resources/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span><span class="sr-only">lesson home</span></a>
+      
+    </h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> 2016–2018
+	by <a href="https://software-carpentry.org">Software Carpentry Foundation</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="/edit//_episodes/08-supplement-docker.md" data-checker-ignore>Edit on GitHub</a>
+	
+	/
+	<a href="/blob//CONTRIBUTING.md" data-checker-ignore>Contributing</a>
+	/
+	<a href="/">Source</a>
+	/
+	<a href="/blob//CITATION" data-checker-ignore>Cite</a>
+	/
+	<a href="mailto:info@curii.com">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/lesson.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-37305346-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

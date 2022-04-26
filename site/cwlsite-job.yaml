@@ -3,7 +3,7 @@ cwl:tool: cwlsite.cwl
 jekyll-site: {class: Directory, location: ../content}
 user_guide: {class: Directory, location: ../user_guide}
 novice-tutorial: {class: Directory, location: ../cwl-novice-tutorial}
-rnaseq-training: {class: Directory, location: ../rnaseq-cwl-training}
+rnaseq-training: {class: Directory, location: ../rnaseq-training}
 render:
 - {$import: cwlsite-draft3-job.json}
 - {$import: cwlsite-v1.0.0-job.json}

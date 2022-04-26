@@ -1,0 +1,731 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="last-modified" content="2022-04-26 15:35:11 +0000">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- meta "search-domain" used for google site search function google_search() -->
+    <meta name="search-domain" value="">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/lesson.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/syntax.css" />
+    <link rel="license" href="#license-info" />
+    <script type="text/javascript" src="../assets/js/tabs.js"></script>
+    <link rel="stylesheet" href="../assets/css/tabs.css">
+
+    
+    <meta http-equiv="refresh" content="0; url=https://doc.arvados.org/rnaseq-cwl-training/05-scatter/index.html" />
+    
+
+    
+
+
+
+    <!-- Favicons for everyone -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/favicons/swc/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/favicons/swc/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/favicons/swc/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/favicons/swc/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="../assets/favicons/swc/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="../assets/favicons/swc/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="../assets/favicons/swc/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../assets/favicons/swc/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="../assets/favicons/swc/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="Software Carpentry - Getting started with CWL"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="../assets/favicons/swc/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="../assets/favicons/swc/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="../assets/favicons/swc/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="../assets/favicons/swc/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="../assets/favicons/swc/mstile-310x310.png" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+  <title>
+  Analyzing Multiple Samples &ndash; Getting started with CWL
+  </title>
+
+  </head>
+  <body>
+
+    
+
+
+<div class="panel panel-default life-cycle">
+  <div id="life-cycle" class="panel-body beta">
+    This lesson is being piloted (Beta version)
+  </div>
+</div>
+
+
+
+
+    <div class="container">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      
+      
+      <a href="https://software-carpentry.org" class="pull-left">
+        <img class="navbar-logo" src="../assets/img/swc-icon-blue.svg" alt="Software Carpentry logo" />
+      </a>
+      
+
+      
+      <a class="navbar-brand" href="../index.html">Home</a>
+
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+	
+        <li><a href="../CODE_OF_CONDUCT.html">Code of Conduct</a></li>
+
+        
+	
+        <li><a href="../setup.html">Setup</a></li>
+
+        
+        
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Episodes <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            
+            <li><a href="../01-introduction/index.html">Introduction</a></li>
+            
+            
+            <li><a href="../02-workflow/index.html">Create a Workflow by Composing Tools</a></li>
+            
+            
+            <li><a href="../03-running/index.html">Running and Debugging a Workflow</a></li>
+            
+            
+            <li><a href="../04-commandlinetool/index.html">Writing a Tool Wrapper</a></li>
+            
+            
+            <li><a href="../05-scatter/index.html">Analyzing Multiple Samples</a></li>
+            
+            
+            <li><a href="../06-expressions/index.html">Dynamic Workflow Behavior</a></li>
+            
+            
+            <li><a href="../07-resources/index.html"> Resources for further learning</a></li>
+            
+            
+            <li><a href="../08-supplement-docker/index.html">Supplement: Creating Docker Images for Workflows</a></li>
+            
+	    <li role="separator" class="divider"></li>
+            <li><a href="../aio/index.html">All in one page (Beta)</a></li>
+          </ul>
+        </li>
+        
+	
+
+	
+	
+        <li class="dropdown">
+          <a href="../" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Extras <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../reference.html">Reference</a></li>
+            
+            
+            <li><a href="../about/index.html">About</a></li>
+            
+            
+            <li><a href="../discuss/index.html">Discussion</a></li>
+            
+            
+            <li><a href="../figures/index.html">Figures</a></li>
+            
+            
+            <li><a href="../guide/index.html">Instructor Notes</a></li>
+            
+          </ul>
+        </li>
+	
+
+	
+        <li><a href="../LICENSE.html">License</a></li>
+	
+	<li><a href="/edit//_episodes/05-scatter.md" data-checker-ignore>Improve this page <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a></li>
+	
+      </ul>
+      <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">
+        <div class="form-group">
+          <input type="text" id="google-search" placeholder="Search..." aria-label="Google site search">
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../04-commandlinetool/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+    <h3 class="maintitle"><a href="../">Getting started with CWL</a></h3>
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../06-expressions/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
+
+<article>
+<div class="row">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-10">
+    <h1 class="maintitle">Analyzing Multiple Samples</h1>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<blockquote class="objectives">
+  <h2>Overview</h2>
+
+  <div class="row">
+    <div class="col-md-3">
+      <strong>Teaching:</strong> 30 min
+      <br/>
+      <strong>Exercises:</strong> 30 min
+    </div>
+    <div class="col-md-9">
+      <strong>Questions</strong>
+      <ul>
+	
+	<li><p>How can you run the same workflow over multiple samples?</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-9">
+      <strong>Objectives</strong>
+      <ul>
+	
+	<li><p>Modify the workflow to process multiple samples, then perform a joint analysis.</p>
+</li>
+	
+      </ul>
+    </div>
+  </div>
+
+</blockquote>
+
+<p>This lesson has migrated to https://doc.arvados.org/rnaseq-cwl-training/05-scatter/index.html</p>
+
+<p>In the previous lesson, we completed converting the function of the
+original source shell script into CWL.  This lesson expands the scope
+by demonstrating what changes to make to the workflow to be able to
+analyze multiple samples in parallel.</p>
+
+<h1 id="subworkflows">Subworkflows</h1>
+
+<p>In addition to running command line tools, a workflow step can also
+execute another workflow.</p>
+
+<p>First, copy <code class="language-plaintext highlighter-rouge">main.cwl</code> to <code class="language-plaintext highlighter-rouge">alignment.cwl</code>.</p>
+
+<p>Next, open <code class="language-plaintext highlighter-rouge">main.cwl</code> for editing.  We are going to replace the <code class="language-plaintext highlighter-rouge">steps</code> and <code class="language-plaintext highlighter-rouge">outputs</code> sections.</p>
+
+<p>Remove all the steps and replace them with a single <code class="language-plaintext highlighter-rouge">alignment</code> step
+which invokes the <code class="language-plaintext highlighter-rouge">alignment.cwl</code> we just copied.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">steps</span><span class="pi">:</span>
+  <span class="na">alignment</span><span class="pi">:</span>
+    <span class="na">run</span><span class="pi">:</span> <span class="s">alignment.cwl</span>
+    <span class="na">in</span><span class="pi">:</span>
+      <span class="na">fq</span><span class="pi">:</span> <span class="s">fq</span>
+      <span class="na">genome</span><span class="pi">:</span> <span class="s">genome</span>
+      <span class="na">gtf</span><span class="pi">:</span> <span class="s">gtf</span>
+    <span class="na">out</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">qc_html</span><span class="pi">,</span> <span class="nv">bam_sorted_indexed</span><span class="pi">,</span> <span class="nv">featurecounts</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>In the <code class="language-plaintext highlighter-rouge">outputs</code> section, all the output sources are from the alignment step:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">outputs</span><span class="pi">:</span>
+  <span class="na">qc_html</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/qc_html</span>
+  <span class="na">bam_sorted_indexed</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/bam_sorted_indexed</span>
+  <span class="na">featurecounts</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/featurecounts</span>
+</code></pre></div></div>
+
+<p>We also need add “SubworkflowFeatureRequirement” to tell the workflow
+runner that we are using subworkflows:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">requirements</span><span class="pi">:</span>
+  <span class="na">SubworkflowFeatureRequirement</span><span class="pi">:</span> <span class="pi">{}</span>
+</code></pre></div></div>
+
+<blockquote class="challenge">
+  <h2 id="running-the-workflow">Running the workflow</h2>
+
+  <p>Run this workflow.  You should get exactly the same results as
+before, as all we have done so far is to wrap the inner workflow with
+an outer workflow.</p>
+
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="part-1-solution">Part 1 solution</h2>
+  <ul>
+    <li><a href="../assets/answers/ep5/part1/main.cwl">main.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part1/alignment.cwl">alignment.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part1/featureCounts.cwl">featureCounts.cwl</a></li>
+  </ul>
+</blockquote>
+
+<h1 id="scattering">Scattering</h1>
+
+<p>The “wrapper” step lets us do something useful.  We can modify the
+outer workflow to accept a list of files, and then invoke the inner
+workflow step for every one of those files.  We will need to modify
+the <code class="language-plaintext highlighter-rouge">inputs</code>, <code class="language-plaintext highlighter-rouge">steps</code>, <code class="language-plaintext highlighter-rouge">outputs</code>, and <code class="language-plaintext highlighter-rouge">requirements</code> sections.</p>
+
+<p>First we change the <code class="language-plaintext highlighter-rouge">fq</code> parameter to expect a list of files:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">inputs</span><span class="pi">:</span>
+  <span class="na">fq</span><span class="pi">:</span> <span class="s">File[]</span>
+  <span class="na">genome</span><span class="pi">:</span> <span class="s">Directory</span>
+  <span class="na">gtf</span><span class="pi">:</span> <span class="s">File</span>
+</code></pre></div></div>
+
+<p>Next, we add <code class="language-plaintext highlighter-rouge">scatter</code> to the alignment step.  The means we want to
+run run <code class="language-plaintext highlighter-rouge">alignment.cwl</code> for each value in the list in the <code class="language-plaintext highlighter-rouge">fq</code>
+parameter.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">steps</span><span class="pi">:</span>
+  <span class="na">alignment</span><span class="pi">:</span>
+    <span class="na">run</span><span class="pi">:</span> <span class="s">alignment.cwl</span>
+    <span class="na">scatter</span><span class="pi">:</span> <span class="s">fq</span>
+    <span class="na">in</span><span class="pi">:</span>
+      <span class="na">fq</span><span class="pi">:</span> <span class="s">fq</span>
+      <span class="na">genome</span><span class="pi">:</span> <span class="s">genome</span>
+      <span class="na">gtf</span><span class="pi">:</span> <span class="s">gtf</span>
+    <span class="na">out</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">qc_html</span><span class="pi">,</span> <span class="nv">bam_sorted_indexed</span><span class="pi">,</span> <span class="nv">featurecounts</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>Because the scatter produces multiple outputs, each output parameter
+becomes a list as well:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">outputs</span><span class="pi">:</span>
+  <span class="na">qc_html</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File[]</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/qc_html</span>
+  <span class="na">bam_sorted_indexed</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File[]</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/bam_sorted_indexed</span>
+  <span class="na">featurecounts</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File[]</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">alignment/featurecounts</span>
+</code></pre></div></div>
+
+<p>We also need add “ScatterFeatureRequirement” to tell the workflow
+runner that we are using scatter:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">requirements</span><span class="pi">:</span>
+  <span class="na">SubworkflowFeatureRequirement</span><span class="pi">:</span> <span class="pi">{}</span>
+  <span class="na">ScatterFeatureRequirement</span><span class="pi">:</span> <span class="pi">{}</span>
+</code></pre></div></div>
+
+<blockquote class="solution">
+  <h2 id="part-2-solution">Part 2 solution</h2>
+  <ul>
+    <li><a href="../assets/answers/ep5/part2/main.cwl">main.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part2/alignment.cwl">alignment.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part2/featureCounts.cwl">featureCounts.cwl</a></li>
+  </ul>
+</blockquote>
+
+<h1 id="input-parameter-lists">Input parameter lists</h1>
+
+<p>The <code class="language-plaintext highlighter-rouge">fq</code> parameter needs to be a list.  You write a list in yaml by
+starting each list item with a dash.  Example <code class="language-plaintext highlighter-rouge">main-input.yaml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">fq</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Mov10_oe_1.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Mov10_oe_2.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Mov10_oe_3.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Irrel_kd_1.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Irrel_kd_2.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+  <span class="pi">-</span> <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/raw_fastq/Irrel_kd_3.subset.fq</span>
+    <span class="na">format</span><span class="pi">:</span> <span class="s">http://edamontology.org/format_1930</span>
+<span class="na">genome</span><span class="pi">:</span>
+  <span class="na">class</span><span class="pi">:</span> <span class="s">Directory</span>
+  <span class="na">location</span><span class="pi">:</span> <span class="s">hg19-chr1-STAR-index</span>
+<span class="na">gtf</span><span class="pi">:</span>
+  <span class="na">class</span><span class="pi">:</span> <span class="s">File</span>
+  <span class="na">location</span><span class="pi">:</span> <span class="s">rnaseq/reference_data/chr1-hg19_genes.gtf</span>
+</code></pre></div></div>
+
+<blockquote class="challenge">
+  <h2 id="running-the-workflow-1">Running the workflow</h2>
+
+  <p>Run this workflow.  You will now get results for each one of the
+input fastq files.</p>
+
+</blockquote>
+
+<h1 id="combining-results">Combining results</h1>
+
+<p>Each instance of the alignment workflow produces its own
+<code class="language-plaintext highlighter-rouge">featurecounts.tsv</code> file.  However, to be able to compare results
+easily, we would like single file with all the results.</p>
+
+<p>We can modify the workflow to run <code class="language-plaintext highlighter-rouge">featureCounts</code> once at the end of
+the workflow, taking all the bam files listed on the command line.</p>
+
+<p>We will need to change a few things.</p>
+
+<p>First, in <code class="language-plaintext highlighter-rouge">featureCounts.cwl</code> we need to modify it to accept either a
+single bam file or list of bam files.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">inputs</span><span class="pi">:</span>
+  <span class="na">gtf</span><span class="pi">:</span> <span class="s">File</span>
+  <span class="na">counts_input_bam</span><span class="pi">:</span>
+   <span class="pi">-</span> <span class="s">File</span>
+   <span class="pi">-</span> <span class="s">File[]</span>
+</code></pre></div></div>
+
+<p>Second, in <code class="language-plaintext highlighter-rouge">alignment.cwl</code> we need to remove the <code class="language-plaintext highlighter-rouge">featureCounts</code> step from alignment.cwl, as well as the <code class="language-plaintext highlighter-rouge">featurecounts</code> output parameter.</p>
+
+<p>Third, in <code class="language-plaintext highlighter-rouge">main.cwl</code> we need to remove <code class="language-plaintext highlighter-rouge">featurecounts</code> from the <code class="language-plaintext highlighter-rouge">alignment</code> step
+outputs, and add a new step:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">steps</span><span class="pi">:</span>
+  <span class="na">alignment</span><span class="pi">:</span>
+    <span class="na">run</span><span class="pi">:</span> <span class="s">alignment.cwl</span>
+    <span class="na">scatter</span><span class="pi">:</span> <span class="s">fq</span>
+    <span class="na">in</span><span class="pi">:</span>
+      <span class="na">fq</span><span class="pi">:</span> <span class="s">fq</span>
+      <span class="na">genome</span><span class="pi">:</span> <span class="s">genome</span>
+      <span class="na">gtf</span><span class="pi">:</span> <span class="s">gtf</span>
+    <span class="na">out</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">qc_html</span><span class="pi">,</span> <span class="nv">bam_sorted_indexed</span><span class="pi">]</span>
+  <span class="na">featureCounts</span><span class="pi">:</span>
+    <span class="na">requirements</span><span class="pi">:</span>
+      <span class="na">ResourceRequirement</span><span class="pi">:</span>
+        <span class="na">ramMin</span><span class="pi">:</span> <span class="m">500</span>
+    <span class="na">run</span><span class="pi">:</span> <span class="s">featureCounts.cwl</span>
+    <span class="na">in</span><span class="pi">:</span>
+      <span class="na">counts_input_bam</span><span class="pi">:</span> <span class="s">alignment/bam_sorted_indexed</span>
+      <span class="na">gtf</span><span class="pi">:</span> <span class="s">gtf</span>
+    <span class="na">out</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">featurecounts</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>Last, we modify the <code class="language-plaintext highlighter-rouge">featurecounts</code> output parameter.  Instead of a
+list of files produced by the <code class="language-plaintext highlighter-rouge">alignment</code> step, it is now a single
+file produced by the new <code class="language-plaintext highlighter-rouge">featureCounts</code> step.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">outputs</span><span class="pi">:</span>
+  <span class="s">...</span>
+  <span class="s">featurecounts</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">File</span>
+    <span class="na">outputSource</span><span class="pi">:</span> <span class="s">featureCounts/featurecounts</span>
+</code></pre></div></div>
+
+<blockquote class="challenge">
+  <h2 id="running-the-workflow-2">Running the workflow</h2>
+
+  <p>Run this workflow.  You will still have separate results from fastq
+and and STAR, but now you will only have a single
+<code class="language-plaintext highlighter-rouge">featurecounts.tsv</code> file with a column for each bam file.</p>
+
+</blockquote>
+
+<blockquote class="solution">
+  <h2 id="episode-solution">Episode solution</h2>
+  <ul>
+    <li><a href="../assets/answers/ep5/part4/main.cwl">main.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part4/alignment.cwl">alignment.cwl</a></li>
+    <li><a href="../assets/answers/ep5/part4/featureCounts.cwl">featureCounts.cwl</a></li>
+  </ul>
+</blockquote>
+
+
+
+
+
+<blockquote class="keypoints">
+  <h2>Key Points</h2>
+  <ul>
+    
+    <li><p>Separate the part of the workflow that you want to run multiple times into a subworkflow.</p>
+</li>
+    
+    <li><p>Use a scatter step to run the subworkflow over a list of inputs.</p>
+</li>
+    
+    <li><p>The result of a scatter is an array, which can be used in a combine step to get a single result.</p>
+</li>
+    
+  </ul>
+</blockquote>
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="col-xs-1">
+    <h3 class="text-left">
+      
+      <a href="../04-commandlinetool/index.html"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span><span class="sr-only">previous episode</span></a>
+      
+    </h3>
+  </div>
+  <div class="col-xs-10">
+    
+  </div>
+  <div class="col-xs-1">
+    <h3 class="text-right">
+      
+      <a href="../06-expressions/index.html"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span><span class="sr-only">next episode</span></a>
+      
+    </h3>
+  </div>
+</div>
+
+
+      
+      
+
+
+
+
+
+
+<footer>
+  <div class="row">
+    <div class="col-md-6 license" id="license-info" align="left">
+	
+	Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> 2018–2022
+	by <a href="https://carpentries.org/">The Carpentries</a>
+        <br>
+        Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> 2016–2018
+	by <a href="https://software-carpentry.org">Software Carpentry Foundation</a>
+	
+    </div>
+    <div class="col-md-6 help-links" align="right">
+	
+	<a href="/edit//_episodes/05-scatter.md" data-checker-ignore>Edit on GitHub</a>
+	
+	/
+	<a href="/blob//CONTRIBUTING.md" data-checker-ignore>Contributing</a>
+	/
+	<a href="/">Source</a>
+	/
+	<a href="/blob//CITATION" data-checker-ignore>Cite</a>
+	/
+	<a href="mailto:info@curii.com">Contact</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12" align="center">
+      Using <a href="https://github.com/carpentries/styles/">The Carpentries style</a>
+      version <a href="https://github.com/carpentries/styles/releases/tag/v9.5.3">9.5.3</a>.
+    </div>
+  </div>
+</footer>
+
+      
+    </div>
+    
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/lesson.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-37305346-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+  </body>
+</html>

@@ -42,7 +42,7 @@ inputs:
   rnaseq-training: Directory
   rnaseq-training-targetdir:
     type: string
-    default: "rnaseq-training"
+    default: ""
 
 outputs:
   doc_out:
@@ -139,10 +139,10 @@ steps:
     out: [generated]
     run: cwl-jekyll.cwl
 
-  jekyll-rnaseq-training:
-    in: {site: rnaseq-training}
-    out: [generated]
-    run: cwl-jekyll.cwl
+  # jekyll-rnaseq-training:
+  #   in: {site: rnaseq-training}
+  #   out: [generated]
+  #   run: cwl-jekyll.cwl
 
 #  jekyll-novice-tutorial:
 #    in: {site: novice-tutorial}
@@ -160,7 +160,7 @@ steps:
           - docs/extra_out
           - graph_inheritance/svg
           - jekyll_user_guide/generated
-          - jekyll-rnaseq-training/generated
+          - rnaseq-training
 #          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
       dirs:

@@ -3,7 +3,10 @@ class: ExpressionTool
 cwlVersion: v1.0
 inputs:
   primary: File
-  secondary: File[]
+  secondary:
+    type:
+      type: array
+      items: [File, Directory]
   dirs: string[]
 outputs:
   dir: File
