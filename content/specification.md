@@ -20,9 +20,7 @@ For developers and advanced users, the current [CWL Standards v1.2.0](https://ww
 
 To reference the Common Workflow Language and the CWL project in scholarly work, please use the following citation:
 
-* Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, The CWL Community (2021):
-**Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**.
-Communication of the ACM.  https://doi.org/10.1145/3486897 Retrieved from  *arXiv* **2105.07028** [cs.DC] <https://arxiv.org/abs/2105.07028>
+* Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, and The CWL Community. 2022. **Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language**. Commun. ACM 65, 6 (June 2022), 54–63. https://doi.org/10.1145/3486897
 
 To reference the CWL specification in scholary work, please use the following citation inclusive of the DOI:
 
