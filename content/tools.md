@@ -27,10 +27,24 @@ Other tools are also available in [Common Workflow Language Lab](https://github.
 |[cwl-mode](https://github.com/tom-tan/cwl-mode)|CWL editing mode for Emacs (instructions [english](https://qiita.com/tm_tn/items/6c9653847412d115bec0), [日本語](https://qiita.com/tm_tn/items/79eec754338d152b092d))|
 |[vue-cwl](https://github.com/TMiguelT/vue-cwl)|Visualizer of CWL workflows for the [Vue JavaScript framework](https://vuejs.org/) using [cwl-svg](https://github.com/rabix/cwl-svg)|
 |[cwl-for-remote-container-template](https://github.com/tom-tan/cwl-for-remote-container-template)|A template to write CWL documents with VSCode with remote container extension|
-|[atom-cwl](https://github.com/manabuishii/language-cwl)|CWL editing mode for Atom|
+|[atom language-cwl](https://github.com/manabuishii/language-cwl)|CWL editing mode for Atom|
 |[vim-cwl](https://github.com/manabuishii/vim-cwl)|CWL editing mode for Vim|
 |[vscode-cwl](https://github.com/manabuishii/vscode-cwl)|CWL support in Visual Studio Code|
 |[bioSyntax](http://biosyntax.org/)|Includes CWL syntax highliting for [gedit](https://wiki.gnome.org/Apps/Gedit)|
+
+### Execution frameworks {#execution}
+
+While [CWL implementations](/implementations/) can execute workflows on different compute backends, the frameworks below 
+can be used to provide a programmatic API or user interface to orchestrate execution with an CWL implementation.
+
+{: .table .table-striped .cols-2}
+|Software|Description|
+|--- |--- |
+|[cwl-WES](https://github.com/elixir-cloud-aai/cwl-WES)|Microservice implementing GA4GH [Workflow Execution Service](https://github.com/ga4gh/workflow-execution-service-schemas) (WES) API specification to run CWL workflows|
+|[SCHeMa](https://github.com/athenarc/schema)|Web interface for running CWL workflows on Kubernetes/minikube clusters, based on cwl-WES |
+|[WfExS](https://github.com/inab/WfExS-backend)|Workflow Execution Service supporting GA4GH Tools Registry Service ([TRS](https://github.com/ga4gh/tool-registry-service-schemas)) API, [RO-Crate](https://w3id.org/ro/crate), Nextflow and CWL|
+|[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
+|[workflUX](https://github.com/workflux/workflUX)|Web interface for simplified execution of CWL workflows|
 
 ### Utilities
 
@@ -40,12 +54,13 @@ Other tools are also available in [Common Workflow Language Lab](https://github.
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
 |[looper](http://looper.databio.org/)| Job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
 |[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
-|[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
 |[cwldep](https://github.com/common-workflow-language/cwldep) |CWL dependency manager, for importing tool wrappers and workflows into your own project.|
 |[cwlprov-py](http://github.com/common-workflow-language/cwlprov-py)|Command line tool and Python API to explore [CWLProv](https://w3id.org/cwl/prov/) Research Objects containing provenance of Common Workflow Language executions|
 |[Cerise](https://github.com/MD-Studio/cerise)|A REST service for running CWL workflows on remote clusters|
 |[cwl2zshcomp](https://github.com/kloetzl/cwl2zshcomp)|Generates ZSH auto completions from CWL command line tool descriptions|
+|[CWL-metrics](https://inutano.github.io/cwl-metrics/)|Collect/analyze computational resource use of CWL workflow runs|
+
 
 ### Converters And Code Generators
 
@@ -66,6 +81,10 @@ Other tools are also available in [Common Workflow Language Lab](https://github.
 |[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
 |[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|A tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
 |[pegasus-cwl-converter](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|Work in progress tool to convert a CWL workflow into a Pegasus workflow.|
+|[galaxy2cwl](https://github.com/workflowhub-eu/galaxy2cwl)|Convert a Galaxy `.ga` workflow to [Abstract CWL](https://github.com/common-workflow-language/cwl-v1.2/pull/3)|
+|[gxformat2](https://github.com/galaxyproject/gxformat2)|Converter for Galaxy's workflow formats, can generate [Abstract CWL](https://github.com/common-workflow-language/cwl-v1.2/pull/3)|
+|[wdl-cwl-translator](https://github.com/common-workflow-lab/wdl-cwl-translator)|Translate WDL workflows to CWL|
+
 
 ### Code Libraries
 
@@ -81,7 +100,22 @@ Other tools are also available in [Common Workflow Language Lab](https://github.
 |[tidycwl](https://sbg.github.io/tidycwl/)|Tidy (R) Common Workflow Language Tools and Workflows|
 |[cwl-rs](https://github.com/onnovalkering/cwl-rs)|CWL object model for Rust|
 |[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
-|[buchanae/cwl](https://github.com/buchanae/cwl)|CWL document parsing and processing utilities in Go.|
-|[CWL for Go](https://github.com/otiai10/cwl.go)|Parser of CWL file and CWL input objects (JSON/YAML) files in Go.|
+|[buchanae/cwl](https://github.com/buchanae/cwl)|CWL document parsing and processing utilities in Go|
+|[CWL for Go](https://github.com/otiai10/cwl.go)|Parser of CWL file and CWL input objects (JSON/YAML) files in Go|
 |[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
+|[ro-crate-py](https://github.com/ResearchObject/ro-crate-py)|Create an [RO-Crate](https://w3id.org/ro/crate) of workflow, can generate Abstract CWL|
 
+### Related specifications and frameworks
+
+{: .table .table-striped .cols-2}
+|Software|Description|
+|--- |--- |
+|[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile for [Research Object](https://www.researchobject.org/) for provenance of a CWL workflow run|
+|[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://www.researchobject.org/ro-crate/1.1/workflows.html) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
+|[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](/user_guide/17-metadata/)|
+|[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](/user_guide/17-metadata/)|
+|[bioschemas](https://bioschemas.org/)|[Profiles](https://bioschemas.org/profiles/) for annotating life science on the Web, including [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) and [ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE)|
+|[GA4GH TRS](https://github.com/ga4gh/tool-registry-service-schemas)|Tool Registry Service API specification for discovering tools/workflows. Used by [workflow registries](repositories.md) incl. WorkflowHub and Dockstore |
+|[GA4GH TES](https://github.com/ga4gh/task-execution-schemas)|Task Execution Service API specification for batch run of container command line tools. Used by [cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes) |
+|[GA4GH WES](https://github.com/ga4gh/workflow-execution-service-schemas)|Workflow Execution Service API specification, see implementations [above](#execution)|
+|[WDL](https://github.com/openwdl/wdl)|Workflow Description Language implemented by Cromwell & dxWDL. See [comparable](https://github.com/dnanexus/dxCompiler/blob/main/doc/CWL_v1.2.0_to_WDL_v1.md) to CWL. |
