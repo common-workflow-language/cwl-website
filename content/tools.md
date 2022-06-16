@@ -111,7 +111,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |Software|Description|
 |--- |--- |
 |[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile for [Research Object](https://www.researchobject.org/) for provenance of a CWL workflow run|
-|[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://www.researchobject.org/ro-crate/1.1/workflows.html) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
+|[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://w3id.org/workflowhub/workflow-ro-crate/) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
 |[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](/user_guide/17-metadata/)|
 |[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](/user_guide/17-metadata/)|
 |[bioschemas](https://bioschemas.org/)|[Profiles](https://bioschemas.org/profiles/) for annotating life science on the Web, including [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) and [ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE)|
