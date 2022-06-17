@@ -121,10 +121,10 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |--- |--- |
 |[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile of [Research Object](https://www.researchobject.org/) and [W3C PROV](https://www.w3.org/TR/prov-overview/) for provenance of a CWL workflow run|
 |[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://w3id.org/workflowhub/workflow-ro-crate/) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
-|[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](/user_guide/17-metadata/)|
-|[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](/user_guide/17-metadata/)|
+|[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](https://www.commonwl.org/user_guide/17-metadata/)|
+|[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](https://www.commonwl.org/user_guide/17-metadata/)|
 |[bioschemas](https://bioschemas.org/)|[Profiles](https://bioschemas.org/profiles/) for annotating life science on the Web, including [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) and [ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE)|
-|[GA4GH TRS](https://github.com/ga4gh/tool-registry-service-schemas)|Tool Registry Service API specification for discovering tools/workflows. Used by [workflow registries](repositories.md) incl. WorkflowHub and Dockstore |
+|[GA4GH TRS](https://github.com/ga4gh/tool-registry-service-schemas)|Tool Registry Service API specification for discovering tools/workflows. Used by [workflow registries](/repos/) incl. WorkflowHub and Dockstore |
 |[GA4GH TES](https://github.com/ga4gh/task-execution-schemas)|Task Execution Service API specification for batch run of container command line tools. Used by [cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes) |
 |[GA4GH WES](https://github.com/ga4gh/workflow-execution-service-schemas)|Workflow Execution Service API specification, see implementations [above](#execution)|
 |[WDL](https://github.com/openwdl/wdl)|Workflow Description Language implemented by Cromwell & dxWDL. See [comparable](https://github.com/dnanexus/dxCompiler/blob/main/doc/CWL_v1.2.0_to_WDL_v1.md) to CWL. |
