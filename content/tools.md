@@ -16,7 +16,16 @@ tools, software libraries, connected specifications, and has shared CWL
 descriptions for popular tools.
 Other tools are also available in [Common Workflow Language Lab](https://github.com/common-workflow-lab).
 
-### Editors and Viewers
+**Table of contents**:
+
+* [Editors and Viewers](#editors)
+* [Execution frameworks](#execution)
+* [Utilities](#utils)
+* [Converters And Code Generators](#converters)
+* [Code Libraries](#libs)
+* [Related specifications and frameworks](#specs)
+
+### Editors and Viewers {#editors}
 
 {: .table .table-striped .cols-2}
 |Software|Description|
@@ -46,7 +55,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[workflUX](https://github.com/workflux/workflUX)|Web interface for simplified execution of CWL workflows|
 
-### Utilities
+### Utilities {#utils}
 
 {: .table .table-striped .cols-2}
 |Software|Description|
@@ -62,7 +71,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[CWL-metrics](https://inutano.github.io/cwl-metrics/)|Collect/analyze computational resource use of CWL workflow runs|
 
 
-### Converters And Code Generators
+### Converters And Code Generators {#converters}
 
 {: .table .table-striped .cols-2}
 |Software|Description|
@@ -86,7 +95,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[wdl-cwl-translator](https://github.com/common-workflow-lab/wdl-cwl-translator)|Translate WDL workflows to CWL|
 
 
-### Code Libraries
+### Code Libraries {#libs}
 
 {: .table .table-striped .cols-2}
 |Software|Description|
@@ -105,7 +114,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[cwl-proto](https://github.com/broadinstitute/cwl-proto)|Reading and writing Common Workflow Language to Protocol Buffers|
 |[ro-crate-py](https://github.com/ResearchObject/ro-crate-py)|Create an [RO-Crate](https://w3id.org/ro/crate) of workflow, can generate Abstract CWL|
 
-### Related specifications and frameworks
+### Related specifications and frameworks {#specs}
 
 {: .table .table-striped .cols-2}
 |Software|Description|
@@ -120,3 +129,4 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[GA4GH WES](https://github.com/ga4gh/workflow-execution-service-schemas)|Workflow Execution Service API specification, see implementations [above](#execution)|
 |[WDL](https://github.com/openwdl/wdl)|Workflow Description Language implemented by Cromwell & dxWDL. See [comparable](https://github.com/dnanexus/dxCompiler/blob/main/doc/CWL_v1.2.0_to_WDL_v1.md) to CWL. |
 |[IEEE 2791-2020](https://doi.org/10.1109/IEEESTD.2020.9094416)|Standard for [BioCompute Objects](https://biocomputeobject.org/), recommends CWL. See [preprint](https://www.research.manchester.ac.uk/portal/en/publications/ieee-standard-for-bioinformatics-analyses-generated-by-highthroughput-sequencing-hts-to-facilitate-communication(936de52b-ac53-4f0e-9927-77fd7073e88d).html)) |
+
