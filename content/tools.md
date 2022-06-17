@@ -110,7 +110,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 {: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
-|[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile for [Research Object](https://www.researchobject.org/) for provenance of a CWL workflow run|
+|[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile of [Research Object](https://www.researchobject.org/) and [W3C PROV](https://www.w3.org/TR/prov-overview/) for provenance of a CWL workflow run|
 |[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://w3id.org/workflowhub/workflow-ro-crate/) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
 |[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](/user_guide/17-metadata/)|
 |[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](/user_guide/17-metadata/)|
@@ -119,3 +119,4 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[GA4GH TES](https://github.com/ga4gh/task-execution-schemas)|Task Execution Service API specification for batch run of container command line tools. Used by [cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes) |
 |[GA4GH WES](https://github.com/ga4gh/workflow-execution-service-schemas)|Workflow Execution Service API specification, see implementations [above](#execution)|
 |[WDL](https://github.com/openwdl/wdl)|Workflow Description Language implemented by Cromwell & dxWDL. See [comparable](https://github.com/dnanexus/dxCompiler/blob/main/doc/CWL_v1.2.0_to_WDL_v1.md) to CWL. |
+|[IEEE 2791-2020](https://doi.org/10.1109/IEEESTD.2020.9094416)|Standard for [BioCompute Objects](https://biocomputeobject.org/), recommends CWL. See [preprint](https://www.research.manchester.ac.uk/portal/en/publications/ieee-standard-for-bioinformatics-analyses-generated-by-highthroughput-sequencing-hts-to-facilitate-communication(936de52b-ac53-4f0e-9927-77fd7073e88d).html)) |
