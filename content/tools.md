@@ -60,7 +60,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 {: .table .table-striped .cols-2}
 |Software|Description|
 |--- |--- |
-|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the new Python 3.6+ CWL parsing library|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Example scripts using the Python 3.6+ CWL parsing library|
 |[looper](http://looper.databio.org/)| Job submitting engine with support for [CWL whole workflow/tool scattering](http://looper.databio.org/en/latest/pre-submission-hooks/#included-plugin-looperwrite_sample_yaml_cwl)|
 |[cwltest](https://github.com/common-workflow-language/cwltest)|CWL testing framework,  automated testing of tools and workflows written with CWL|
 |[cwl-inspector](https://github.com/tom-tan/cwl-inspector)|Tool to inspect properties of tools or workflows written in CWL|
@@ -87,7 +87,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[Beatrice](https://github.com/Parsoa/Beatrice)|Pipeline Assembler For CWL|
 |[zatsu-cwl-generator](https://github.com/tom-tan/zatsu-cwl-generator)|A simple CWL document generator from given execution commands|
 |[Janis](https://github.com/PMCC-BioinformaticsCore/janis)|A Python API that generates portable CWL and WDL workflows|
-|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|New Python 3.6+ CWL parsing library|
+|[cwl-utils](https://github.com/common-workflow-language/cwl-utils)|Python 3.6+ CWL parsing library|
 |[ipython2cwl](https://github.com/giannisdoukas/ipython2cwl)|A tool for converting IPython Jupyter Notebooks to CWL CommandLineTools via typing annotations|
 |[pegasus-cwl-converter](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html)|Work in progress tool to convert a CWL workflow into a Pegasus workflow.|
 |[galaxy2cwl](https://github.com/workflowhub-eu/galaxy2cwl)|Convert a Galaxy `.ga` workflow to [Abstract CWL](https://github.com/common-workflow-language/cwl-v1.2/pull/3)|
