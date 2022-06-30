@@ -92,6 +92,12 @@ gallery:
         url: http://covid19.genenetwork.org/
         image: /assets/img/pubseq-aln.png
         image_id: pubseq
+      - name: DataPLANT
+        description: Together with other disciplines, plant research increasingly relying on effective research data management services and infrastructures that facilitate the acquisition, archival, exchange, and processing of research data sets, to enable the exchange of interdisciplinary expertise. While various suggestions on best practices for FAIR data have been made, it is nevertheless always up to individual researchers` initiative and additional effort to adhere to them. Focused on its core mission to minimize the additional work of research data management, DataPLANT wants to support plant researchers in practice, providing technical services and infrastructure and personal support. Therefore, DataPLANT as the NFDI (Nationale Forschungsdateninfrastruktur) for plant research, works in a data-centric way and builds on existing structures. A central element for achieving the goal is the Annotated Research Context (ARC), which acts as single entry point and will define the structure of a future data publication. ARCs are FAIR Digital Objects covering the entire research cycle, from the experiment to the computational aspects to the actual data and metadata, as well as the resulting data publications using existing repositories. The computations that are stored inside an ARC are powered by the Common Workflow Language standards which enable researchers to describe standalone- or delegation workflows. This allows the integration and combination of workflows that were created using various workflow systems and languages while maintaining a uniform metadata description format on the top layer. Several tools and services are already available to ensure working with ARCs without friction in a collaborative research environment. Accordingly, DataPLANT represents the central point of contact for plant researchers to set up appropriate research data management.
+        link_text: 'DataPLANT'
+        url: https://nfdi4plants.org/
+        image: /assets/img/dataplant.png
+        image_id: dataplant
   - section:
     title: Geospatial
     adopters:
