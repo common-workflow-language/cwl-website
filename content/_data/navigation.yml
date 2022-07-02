@@ -63,7 +63,7 @@ user_gallery_left:
         url: "#unlock"
       - title: PubSeq
         url: "#pubseq"
-      - title: DataPlant
+      - title: DataPLANT
         url: "#dataplant"
   - title: Geospatial
     url: "#geospatial"
