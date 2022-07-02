@@ -64,8 +64,7 @@ user_gallery_left:
       - title: PubSeq
         url: "#pubseq"
       - title: DataPlant
-        url: "#dataplant
-
+        url: "#dataplant"
   - title: Geospatial
     url: "#geospatial"
     submenu:
