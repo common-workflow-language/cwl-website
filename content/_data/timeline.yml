@@ -31,4 +31,6 @@ timeline_events:
       2021 CWL Conference (Online)<br>
       Support for CWL in Illumina Connected Analytics
   - year: 2022
-    event: "2022 CWL Conference (Online)"
+    event: |
+      2022 CWL Conference (Online)<br>
+      <a href="https://www.commonwl.org/specification/#references">Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language</a> published in Communications of the ACM by the CWL Community."
