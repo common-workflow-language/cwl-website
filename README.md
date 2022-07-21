@@ -22,7 +22,9 @@ GitHub: https://github.com/common-workflow-language/cwl-website/
 
 The main website's files are in the `/content/` directory, and built with [Jekyll](https://jekyllrb.com/).
 
-The [CWL Specification](https://github.com/common-workflow-language/cwl-v1.2) and [User Guide](https://github.com/common-workflow-language/user_guide) are hosted separately from this repo, but built via the `/site/` directory and `./website.sh` script found here.
+The [CWL Specification](https://github.com/common-workflow-language/cwl-v1.2) is
+hosted separately from this repo, but built via the `/site/` directory and
+`./website.sh` script found here.
 
 <a id="getting-started"></a>
 ## Getting Started

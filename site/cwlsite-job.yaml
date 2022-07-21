@@ -1,7 +1,6 @@
 #!/usr/bin/env cwl-runner
 cwl:tool: cwlsite.cwl
 jekyll-site: {class: Directory, location: ../content}
-user_guide: {class: Directory, location: ../user_guide}
 novice-tutorial: {class: Directory, location: ../cwl-novice-tutorial}
 rnaseq-training: {class: Directory, location: ../rnaseq-training}
 render:
