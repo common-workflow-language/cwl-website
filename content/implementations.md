@@ -50,7 +50,6 @@ particular technology configuration they deploy and maintain.
 |[Galaxy](https://galaxyproject.org/)|Web-based platform for data intensive biomedical research. | |&#8211;|
 |[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas) | |Alicloud, AWS, Google, HPC, local, Spark, TES|
 |[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes| |[Kubernetes](https://kubernetes.io/)|
-|[Mariner](https://github.com/uc-cdis/mariner)|"The Gen3 Workflow Execution Service", Apache 2.0 licensed, written in Go, also implements the [GA4GH WES API](https://ga4gh.github.io/workflow-execution-service-schemas)| |[Kubernetes](https://kubernetes.io)|
 |[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System| Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html) | |
 
 See also: [an ongoing analysis of CWL Implementations](https://docs.bioexcel.eu/cwl-engine-guide/about.html#summary-of-engines) by the BioExcel Center of Excellence.
