@@ -31,3 +31,17 @@ Specifically, we support the
 *    pre-standards process by providing a neutral place of convening to discuss, propose and test ideas about command-line tool based workflow standards and related topics
 *    standardization process by stewarding the development and delivery of standards in accordance with the [OpenStand principles](https://open-stand.org/about-us/principles/)
 *    post-standards life cycle by (1) promoting the released standards, (2) developing and maintaining related training and tools, and by (3) tracking deficits and other post-standardization feedback
+
+## Citation
+
+To reference the Common Workflow Language and the CWL project in scholarly work, please use the following citation:
+
+* Michael R. Crusoe, Sanne Abeln, Alexandru Iosup, Peter Amstutz, John Chilton, Nebojša Tijanić, Hervé Ménager, Stian Soiland-Reyes, Bogdan Gavrilović, Carole Goble, and The CWL Community. 2022. **[Methods Included: Standardizing Computational Reuse and Portability with the Common Workflow Language](https://cacm.acm.org/magazines/2022/6/261172-methods-included/fulltext)**. Commun. ACM 65, 6 (June 2022), 54–63. https://doi.org/10.1145/3486897
+
+To reference the CWL standards in scholary work, please use the following citation inclusive of the DOI:
+
+* Peter Amstutz, Michael R. Crusoe, Nebojša Tijanić (editors), Brad Chapman, John Chilton, Michael Heuer, Andrey Kartashov, Dan Leehr, Hervé Ménager, Maya Nedeljkovich, Matt Scales, Stian Soiland-Reyes, Luka Stojanovic (2016):
+Common Workflow Language, v1.0.
+Specification, Common Workflow Language working group. <https://w3id.org/cwl/v1.0/> <https://doi.org/10.6084/m9.figshare.3115156.v2>
+
+A collection of existing references to CWL can be found at <https://zotero.org/groups/cwl>
