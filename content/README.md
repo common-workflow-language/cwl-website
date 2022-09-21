@@ -1,6 +1,6 @@
 # CWL Website - Instructions
 
-Instructions on how to run and edit the main [commonwl.org](commonwl.org) website. 
+Instructions on how to run and edit the main [commonwl.org](commonwl.org) website.
 
 See the main [README.md](../README.md) for general [instructions](../README.md#contributing) on contributing. See the [Security Policy](https://github.com/common-workflow-language/cwl-website/security/policy) page to report a vulnerability.
 
@@ -54,7 +54,7 @@ It's important to specify both config files, in order. Otherwise Jekyll will gen
 
 **Use a custom url or port:** For convenience, you may wish to specify `--host cwl.test` and `--port 80` (or any other value), as follows: `bundle exec jekyll serve --config "_config.yml,_config_local.yml --host cwl.test --port 80`. **Note:** You may have to [update your hosts file](https://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file/), in order for your computer to respect the custom url.
 
-**Command Line:** Anything you specify on the command line wil override the settings in your config files. For a full list of command line options, see Jekyll - Configuration Options [Serve Commands](https://jekyllrb.com/docs/configuration/options/#serve-command-options) and [Build Commands](https://jekyllrb.com/docs/configuration/options/#build-command-options)
+**Command Line:** Anything you specify on the command line will override the settings in your config files. For a full list of command line options, see Jekyll - Configuration Options [Serve Commands](https://jekyllrb.com/docs/configuration/options/#serve-command-options) and [Build Commands](https://jekyllrb.com/docs/configuration/options/#build-command-options)
 
 <a id="important-files-and-directories"></a>
 ### Important Files and Directories

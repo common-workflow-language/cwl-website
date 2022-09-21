@@ -23,7 +23,7 @@ workflows and they are available from vendors such as Curii
 Wide adoption benefits from our principles: CWL offers
 conformance tests, but the CWL community does not yet test or certify
 CWL implementations, or specific technology stacks. Instead,
-plaform/service providers self-certify support for CWL, based on a
+platform/service providers self-certify support for CWL, based on a
 particular technology configuration they deploy and maintain.
 
 {:.cwl-red}

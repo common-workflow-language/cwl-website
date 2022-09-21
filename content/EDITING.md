@@ -29,11 +29,11 @@ Instructions for editing specific pages and site components.
 <a id="navigation-menus"></a>
 ## Navigation Menus
 
-There are two nav menu templates currently available: 
+There are two nav menu templates currently available:
 
 * `_includes/top_nav.html` - the main site nav
   * Data: `_data/navigation.yml`
-  * Syles: `_sass/partials/_nav.scss`
+  * Styles: `_sass/partials/_nav.scss`
 * `_includes/left_nav.html` - left nav on an individual page
   * Data: `_data/navigation.yml` by default
     * Can also pull data from a page-specific file, e.g. `gallery.html` previously used `_data/user-gallery.yml` for its left nav
@@ -141,7 +141,7 @@ The first version will generate `<body class="body-page-short">`, and the second
 * `_includes/home/intro.html` - contains the intro paragraph and imports the video player
 * `_includes/home/features.html` - template for the "Features" boxes section. Relies on `_data/home.yml`
 * `_includes/home/users-mini-gallery.html` - the bottom gallery of logos. Relies on data in `_data/user-gallery.html`
-* `_includes/home/video-player.html` - template code for the video player ([Plyr](https://plyr.io/)). See [Video Player](#video-player) section for more info. 
+* `_includes/home/video-player.html` - template code for the video player ([Plyr](https://plyr.io/)). See [Video Player](#video-player) section for more info.
 
 <a id="features-boxes"></a>
 #### Features Boxes
@@ -293,7 +293,7 @@ Items containing special characters (colons, brackets, etc) may need to be wrapp
 <a id="foreign-languages"></a>
 ## Foreign Languages
 
-Text in foreign language should be entered in HTML and include the `lang` and `hreflang` attributes. Subtitles should include the `srclang` code Here's a list of [common language subtags](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_subtags) You can also search via [the Language Subtag Lookup](https://r12a.github.io/app-subtags/) or check whether a tag is valid (e.g. `en-us` is valid, while `en_us` is not). 
+Text in foreign language should be entered in HTML and include the `lang` and `hreflang` attributes. Subtitles should include the `srclang` code Here's a list of [common language subtags](https://en.wikipedia.org/wiki/IETF_language_tag#List_of_subtags) You can also search via [the Language Subtag Lookup](https://r12a.github.io/app-subtags/) or check whether a tag is valid (e.g. `en-us` is valid, while `en_us` is not).
 
 Example usage:
 
@@ -303,7 +303,7 @@ Example usage:
 linked content is in Japanese -->
 <a href="https://github.com/pitagora-galaxy/cwl/wiki/CWL-Start-Guide-JP" lang="ja" hreflang="ja">
 
-<!-- Russian link doesn't have hreflang, since the linked 
+<!-- Russian link doesn't have hreflang, since the linked
 website auto-translates the content, based on the user's
 region -->
 <a href="https://stepik.org/course/1612/syllabus" lang="ru">
@@ -312,7 +312,7 @@ region -->
 <track src="{{ "/assets/video/subtitles/chinese_simplified.vtt" | relative_url }}" label="Chinese (Simplified)" kind="subtitles" srclang="zh-Hans">
 
 <!-- These can be mixed in with Markdown code -->
-* A series of <a href="https://stepik.org/lesson/35918/step/1?unit=15070"lang="ru" hreflang="ru"> is available 
+* A series of <a href="https://stepik.org/lesson/35918/step/1?unit=15070"lang="ru" hreflang="ru"> is available
 in Russian as part of the <a href="https://stepik.org/course/1612/syllabus" lang="ru">Управление вычислениями</a
 > (Computation Management) free online course.
 ```
@@ -324,7 +324,7 @@ Currently the site has some Japanese & Russian links. The corresponding codes ar
 
 For any markdown tables, prepend the following classes: `.table`, `.table-striped`, `.cols-2` or `.cols-3`:
 
-2 Column Table Example: 
+2 Column Table Example:
 
 ```markdown
 {: .table .table-striped .cols-2 }
@@ -343,14 +343,14 @@ For 3 column table, change `.cols-2` to `.cols-3`. i.e. `{: .table .table-stripe
 * Bootstrap 5.1.3
   * Site styles are built on top of Bootstrap 5.1.3
   * Nav menu relies on `/assets/js/bootstrap.min.js`
-* jQuery 3.5.1 
+* jQuery 3.5.1
   * Mobile Nav relies on this in `/assets/js/navCloseFix.js`, due to a bug where it wasn't closing properly
   * Back to the Top button relies on this
 
 <a id="bootstrap"></a>
 ### Bootstrap
 
-The site uses [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (specifically v5.0.0-beta3) for the base styles, and the nav menus. 
+The site uses [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) (specifically v5.0.0-beta3) for the base styles, and the nav menus.
 
 Relevant folders & files:
 
@@ -362,7 +362,7 @@ The styles are loaded as the first import in `style.scss`. The JS code is loaded
 <a id="media-query-grid-breakpoints"></a>
 #### Media Query Grid Breakpoints
 
-Bootstrap grid breakpoints are originally found in ``_sass/bootstrap/_variables.scss`, and can be overriden in `_sass/partials/_variables.scss`
+Bootstrap grid breakpoints are originally found in ``_sass/bootstrap/_variables.scss`, and can be overridden in `_sass/partials/_variables.scss`
 
 The following breakpoints and max-widths are used for responsive design:
 
