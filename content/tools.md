@@ -105,7 +105,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[cwljava](https://github.com/common-workflow-lab/cwljava)|Java classes for loading, modifying, and creating CWL v1.2 documents|
 |[cwlScala](https://github.com/dnanexus/cwlScala/)|A Scala wrapper around cwljava; Also included is an evaluation engine for CWL expressions.|
 |[cwl-ts-auto](https://github.com/common-workflow-lab/cwl-ts-auto)|TypeScript objects and utilities for parsing and creating CWL v1.2 documents.|
-|[Rcwl](https://github.com/hubentu/Rcwl)|Build, read, write and run CWL in R|
+|[Rcwl](https://doi.org/doi:10.18129/B9.bioc.Rcwl)|Build, read, write and run CWL in R|
 |[tidycwl](https://sbg.github.io/tidycwl/)|Tidy (R) Common Workflow Language Tools and Workflows|
 |[cwl-rs](https://github.com/onnovalkering/cwl-rs)|CWL object model for Rust|
 |[CmdParser](https://github.com/CBICA/CmdParser)|Reading and Writing Common Workflow Language spec files from C++ applications. Includes a Command Line Parser|
