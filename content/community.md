@@ -21,7 +21,7 @@ If you’re interested in joining the CWL community, we recommend checking out t
 
 ### When
 
-[EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Monday at 15:00 UTC from March-November and 16:00 UTC from November-March]([https://arewemeetingyet.com/New%20York/2021-07-21/12:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL21lZXQuaml0LnNpL0NvbXBldGVudEJyYW5jaGVzTm9taW5hdGVXZWFrbHkifQ==](https://arewemeetingyet.com/New%20York/2022-10-03/11:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL3d3dy5jb21tb253bC5vcmcvY29tbXVuaXR5LyNjd2wtb25saW5lLWNvbW11bml0eS1tZWV0aW5ncyJ9))
+[EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa)-Americas: weekly [every Monday at 15:00 UTC from March-November and 16:00 UTC from November-March](https://arewemeetingyet.com/New%20York/2022-10-03/11:00/w/Weekly%20CWL%20Video%20Chat#eyJ1cmwiOiJodHRwczovL3d3dy5jb21tb253bC5vcmcvY29tbXVuaXR5LyNjd2wtb25saW5lLWNvbW11bml0eS1tZWV0aW5ncyJ9)
 
 [APAC](https://en.wikipedia.org/wiki/Asia-Pacific): monthly [every first Friday of every month at 00:00 UTC April-September and 01:00 UTC October-March](https://arewemeetingyet.com/UTC/2022-04-01/01:00/q/Monthly%20CWL%20Video%20Chat)
 (06:00 Pakistan, 06:30 India, 07:00 Bangladesh, 08:00 Thailand / Indonesia, 09:00 China, 10:00 Japan / Korea, 12:00 Melbourne, 14:00 Auckland)
