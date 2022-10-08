@@ -16,7 +16,7 @@ Workflow execution can be parallelized or distributed making use of cluster, clo
 
 Automation helps when running repetitive pipelines, for example when running
 parameter sweeps or the same analysis on different sets of data. Workflow engines
-can use the inherient abstraction of workflows to efficiently track, plan and
+can use the inherent abstraction of workflows to efficiently track, plan and
 manage the execution of workflow components.
 Lastly, provenance tracking helps with auditing, tranparency, and validation.
 Ultimately, using workflows in the long run helps save time and effort and
