@@ -1,0 +1,32 @@
+name: build_and_deploy
+
+on:
+  push:
+    branches: [ main, ci_build ]
+  pull_request:
+    branches: [ main, ci_build ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+      - name: Install dependencies
+        run:  pip install -U setuptools pip wheel && pip install cwltool
+      - name: checkout exiting website
+        run: git clone http://github.com/common-workflow-language/common-workflow-language.github.io.git
+     - name: Build the website
+        run:  ./website.sh --force-docker-pull --parallel
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: common-workflow-language.github.io/
+          destination-github-username: common-workflow-language
+          destination-repository-name: common-workflow-language.github.io
+          user-email: cwl-bot@users.noreply.github.com
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+          target-branch: master
