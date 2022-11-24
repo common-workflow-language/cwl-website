@@ -1,0 +1,47 @@
+name: build_and_deploy
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v4
+      - name: Install dependencies
+        run:  pip install -U setuptools pip wheel && pip install cwltool
+      - name: checkout exiting website
+        run: git clone http://github.com/common-workflow-language/common-workflow-language.github.io.git
+      - name: pull the latest cwltool container and store the hash
+        id: main_container_pull
+        run: |
+          docker pull quay.io/commonwl/cwltool_module
+          echo "hash=$(docker inspect --format='{{index .RepoDigests 0}}' quay.io/commonwl/cwltool_module)" >> $GITHUB_OUTPUT
+      - name: restore cache
+        uses: actions/cache@v3
+        with:
+          path: cache
+          key: ${{ steps.main_container_pull.outputs.hash }}
+      - uses: jpribyl/action-docker-layer-caching@v0.1.0
+        # In this step, this action saves a list of existing images,
+        # the cache is created without them in the post run.
+        # It also restores the cache if it exists.
+        # Ignore the failure of a step and avoid terminating the job.
+        continue-on-error: true
+      - name: Build the website
+        run:  ./website.sh --force-docker-pull --parallel
+      - name: Pushes to another repository
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: common-workflow-language.github.io/
+          destination-github-username: common-workflow-language
+          destination-repository-name: common-workflow-language.github.io
+          user-email: cwl-bot@users.noreply.github.com
+          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+          target-branch: master
