@@ -149,3 +149,8 @@ gallery:
         url: https://www.acrossproject.eu/
         description: The ACROSS project (<a href="https://cordis.europa.eu/project/id/955648">G.A. 955648</a>) is an European High-Performance Computing Joint Undertaking that will co-design and develop an HPC, BD, and Artificial Intelligence (AI) convergent platform, supporting applications in the <b>Aeronautics</b>, <b>Climate and Weather</b>, and <b>Energy</b> domains. The project will leverage on effective mechanisms to describe and manage complex workflows for the next generation of heterogeneous pre-exascale infrastructures.
         image: /assets/img/ACROSS_Logo_600x159.JPG
+      - name: The EUPEX European Project
+        link_text: European Pilot for Exascale
+        url: https://eupex.eu/
+        description: The EUPEX pilot (<a href="https://cordis.europa.eu/project/id/101033975">G.A. 101033975</a>) brings together academic and commercial stakeholders to co-design a European modular Exascale-ready pilot system. Together, they will deploy a pilot hardware and software platform integrating the full spectrum of European technologies, and will demonstrate the readiness and scalability of these technologies, and particularly of the Modular Supercomputing Architecture (MSA), towards Exascale. EUPEX’s ambition is to support actively the European industrial ecosystem around HPC, as well as to prepare applications and users to efficiently exploit future European exascale supercomputers.
+        image: /assets/img/EUPEX_Logo.svg
