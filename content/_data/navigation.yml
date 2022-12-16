@@ -7,7 +7,7 @@ header:
     subpages:
       - title: Vision and Mission
         url: /about/#vision
-      - title: Timeline 
+      - title: Timeline
         url: /timeline
       - title: Governance
         url: /governance
@@ -25,7 +25,7 @@ header:
     subpages:
       - title: Implementations
         url: /implementations
-      - title: Development Tools 
+      - title: Development Tools
         url: /tools
       - title: Repositories
         url: /repos
@@ -87,3 +87,7 @@ user_gallery_left:
         url: "#the-[netherlands]-national-plan-open-science"
       - title: University of Manchester, eScience Lab
         url: "#university-of-manchester,-escience-lab"
+      - title: The ACROSS European Project
+        url: "#the-across-european-project"
+      - title: The EUPEX European Project
+        url: "#the-eupex-european-project"
