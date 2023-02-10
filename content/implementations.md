@@ -35,7 +35,7 @@ particular technology configuration they deploy and maintain.
 |[cwltool](https://github.com/common-workflow-language/cwltool)|Reference implementation of CWL|CWL v1.0 - v1.2|Linux, OS X, Windows, local execution only|
 |[Arvados](https://arvados.org/)|Distributed computing platform for data analysis on massive data sets. [Using CWL on Arvados](https://doc.arvados.org/user/cwl/cwl-runner.html)|[CWL v1.0 - v1.2 ![Required](https://badgen.net/https/jutro-4zz18-ytx3kamvs9vo8q5.collections.jutro.arvadosapi.com/required.json?icon=commonwl)](https://dev.arvados.org/projects/arvados/wiki/CWL_Conformance)|AWS, GCP, Azure, Slurm, LSF|
 |[Toil](https://github.com/BD2KGenomics/toil)|Toil is a workflow engine entirely written in Python.|CWL v1.0 - v1.2|AWS, Azure, GCP, Grid Engine, HTCondor, LSF, Mesos, OpenStack, Slurm, PBS/Torque|
-|[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|CWL v1.0 - v1.2|Linux, OS X|
+|[CWL-Airflow](https://github.com/Barski-lab/cwl-airflow)|Package to run CWL workflows in Apache-Airflow (supported by BioWardrobe Team, CCHMC)|CWL v1.0 - v1.1|Linux, OS X|
 |[StreamFlow](https://streamflow.di.unito.it/)|Workflow Management System for hybrid HPC-Cloud infrastructures|[CWL v1.0 - v1.2 ![Required](https://badgen.net/https/streamflow.di.unito.it/cwl-conformance/v1.2/required.json?icon=commonwl)](https://github.com/alpha-unito/streamflow#cwl-compatibility)<br />(and [nearly all optional features](https://github.com/alpha-unito/streamflow#cwl-compatibility))|Kubernetes, HPC with Singularity (PBS, Slurm), [Occam](https://c3s.unito.it/index.php/super-computer), multi-node SSH, local-only (Docker, Singularity)|
 
 {:.cwl-red}
