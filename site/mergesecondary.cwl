@@ -1,6 +1,6 @@
 #!/usr/bin/env cwl-runner
+cwlVersion: v1.2
 class: ExpressionTool
-cwlVersion: v1.0
 inputs:
   primary: File
   secondary:
@@ -8,8 +8,6 @@ inputs:
       type: array
       items: [File, Directory]
   dirs: string[]
-outputs:
-  dir: File
 expression: |
   ${
     if (!inputs.primary.secondaryFiles) {
@@ -29,3 +27,5 @@ expression: |
     }
     return {dir: inputs.primary};
   }
+outputs:
+  dir: File

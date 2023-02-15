@@ -1,8 +1,24 @@
+#!/usr/bin/env cwl-runner
+cwlVersion: v1.1
 class: CommandLineTool
-cwlVersion: v1.2
-inputs:
-  site: Directory
+requirements:
 
+  InitialWorkDirRequirement:
+    listing:
+    - entryname: site
+      entry: $(inputs.site)
+      writable: true
+
+  EnvVarRequirement:
+    envDef:
+      BUNDLE_PATH: "$(runtime.outdir)/site/vendor/bundle"
+      LANG: en_US.UTF-8
+      LANGUAGE: en_US:en
+      LC_ALL: en_US.UTF-8
+
+  ShellCommandRequirement: {}
+  NetworkAccess:
+    networkAccess: true
 hints:
   InplaceUpdateRequirement:
     inplaceUpdate: true
@@ -17,29 +33,12 @@ hints:
 
     dockerImageId: cwl-jekyll-image
 
-requirements:
+inputs:
+  site: Directory
 
-  InitialWorkDirRequirement:
-    listing:
-      - entryname: site
-        entry: $(inputs.site)
-        writable: true
-
-  EnvVarRequirement:
-    envDef:
-      BUNDLE_PATH: "$(runtime.outdir)/site/vendor/bundle"
-      LANG: en_US.UTF-8
-      LANGUAGE: en_US:en
-      LC_ALL: en_US.UTF-8
-
-  ShellCommandRequirement: {}
-
-arguments: [cd, site,
-            {shellQuote: false, valueFrom: "&&"},
-            bundle, install,
-            {shellQuote: false, valueFrom: "&&"},
-            bundle, exec, jekyll, build, --safe, --trace, --destination, "$(runtime.outdir)/generated"]
-
+arguments: [cd, site, {shellQuote: false, valueFrom: "&&"}, bundle, install, {shellQuote: false,
+    valueFrom: "&&"}, bundle, exec, jekyll, build, --safe, --trace, --destination,
+  "$(runtime.outdir)/generated"]
 outputs:
   generated:
     type: File

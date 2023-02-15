@@ -1,31 +1,31 @@
 #!/usr/bin/env cwl-runner
-cwlVersion: v1.0
+cwlVersion: v1.2
 class: CommandLineTool
 requirements:
   InlineJavascriptRequirement:
     expressionLib:
-      - $include: cwlpath.js
+    - $include: cwlpath.js
 hints:
   ResourceRequirement:
-   ramMin: 2300
-   ramMax: 2600
+    ramMin: 2300
+    ramMax: 2600
 inputs:
   source:
     type: File
     inputBinding: {position: 1}
   renderlist:
     type:
-      - "null"
-      - type: array
-        items: string
-        inputBinding: {prefix: "--only"}
+    - "null"
+    - type: array
+      items: string
+      inputBinding: {prefix: "--only"}
     inputBinding: {position: 2}
   redirect:
     type:
-      - "null"
-      - type: array
-        items: string
-        inputBinding: {prefix: "--redirect"}
+    - "null"
+    - type: array
+      items: string
+      inputBinding: {prefix: "--redirect"}
     inputBinding: {position: 2}
   brand:
     type: string
@@ -42,6 +42,8 @@ inputs:
     type: string?
     inputBinding: {prefix: "--primtype"}
   extra: File
+baseCommand: schema-salad-doc
+stdout: $(inputs.target)
 outputs:
   html: stdout
   targetdir:
@@ -59,5 +61,3 @@ outputs:
     type: File
     outputBinding:
       outputEval: $(inputs.extra)
-baseCommand: schema-salad-doc
-stdout: $(inputs.target)
