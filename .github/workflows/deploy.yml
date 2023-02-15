@@ -25,7 +25,7 @@ jobs:
         with:
           path: cache
           key: ${{ steps.main_container_pull.outputs.hash }}
-      - uses: jpribyl/action-docker-layer-caching@v0.1.0
+      - uses: jpribyl/action-docker-layer-caching@v0.1.1
         # In this step, this action saves a list of existing images,
         # the cache is created without them in the post run.
         # It also restores the cache if it exists.
