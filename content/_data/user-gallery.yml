@@ -107,8 +107,11 @@ gallery:
         url: https://www.ogc.org/
         image: /assets/img/Blue_Horizontal_Lockup.png
         other: >
-          Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
-          ~5 minutes each promotional videos:<br>
+          <p>The OGC document <a href="https://docs.ogc.org/bp/20-089r1.html">"OGC Best Practice for Earth Observation Application Package"</a>
+          explains how CWL can be used for data processing within GIS, what is CWL, usage scenarios, and also lists free and open source implementations of the CWL standard.</p>
+          
+          <p>Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
+          ~5 minutes each promotional videos:</p>
           <ol>
           <li><a href="https://www.youtube.com/watch?v=bWcNyIe5jiA">Terradue: Earth Observations Applications Architecture</a></li>
           <li><a href="https://www.youtube.com/watch?v=no3REyoxE38">OGC EO Apps pilot - Applications</a></li>
