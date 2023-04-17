@@ -40,14 +40,7 @@ inputs:
     type: string
     default: ""
   jekyll-site: Directory
-  novice-tutorial: Directory
-  novice-tutorial-targetdir:
-    type: string
-    default: "novice-tutorial"
   rnaseq-training: Directory
-  rnaseq-training-targetdir:
-    type: string
-    default: ""
 
 steps:
   make_rdfs:
@@ -120,16 +113,6 @@ steps:
     out: [generated]
     run: cwl-jekyll.cwl
 
-  # jekyll-rnaseq-training:
-  #   in: {site: rnaseq-training}
-  #   out: [generated]
-  #   run: cwl-jekyll.cwl
-
-#  jekyll-novice-tutorial:
-#    in: {site: novice-tutorial}
-#    out: [generated]
-#    run: cwl-jekyll.cwl
-
   merge:
     in:
       primary: jekyll/generated
@@ -141,7 +124,6 @@ steps:
         - docs/extra_out
         - graph_inheritance/svg
         - rnaseq-training
-#          - jekyll-novice-tutorial/generated
         linkMerge: merge_flattened
       dirs:
         source:
@@ -151,7 +133,6 @@ steps:
         - docs/targetdir
         - graph_inheritance/targetdir
         - rnaseq-training-targetdir
-#          - novice-tutorial-targetdir
         linkMerge: merge_flattened
     out: [dir]
     run: mergesecondary.cwl
