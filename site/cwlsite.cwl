@@ -41,6 +41,9 @@ inputs:
     default: ""
   jekyll-site: Directory
   rnaseq-training: Directory
+  rnaseq-training-targetdir:
+    type: string
+    default: ""
 
 steps:
   make_rdfs:
