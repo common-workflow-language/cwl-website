@@ -51,5 +51,12 @@ particular technology configuration they deploy and maintain.
 |[cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)|CWL engine backended by the [GA4GH Task Execution API](https://github.com/ga4gh/task-execution-schemas) | |Alicloud, AWS, Google, HPC, local, Spark, TES|
 |[Calrissian](https://github.com/Duke-GCB/calrissian)|CWL Engine built for Kubernetes| |[Kubernetes](https://kubernetes.io/)|
 |[Pegasus](https://pegasus.isi.edu/documentation/reference-guide/cwl-support.html)|Pegasus Workflow Management System| Partial support for importing CWL workflows is [under development](https://pegasus.isi.edu/documentation/manpages/pegasus-cwl-converter.html) | |
+|[Weaver](https://github.com/crim-ca/weaver)|Workflow Execution Management Service (EMS) and Application, Deployment and Execution Service (ADES) that can interact and chain [OGC API - Processes][OAPIP], [Web Processing Service][WPS] (WPS) and [Earth System Grid Federation][ESGF] (ESGF) [Compute API][ESGF-CWT] processes using CWL. | CWL v1.0 - v1.2 <br> Partial support according to possible conversions between processes (see [Application Package][AppPkg] for details). | Docker, CUDA GPU, [OGC API - Procsses][OAPIP], [WPS][WPS], [ESGF-CWT][ESGF-CWT], remote Web API, local CLI | 
+
+[AppPkg]: https://pavics-weaver.readthedocs.io/en/latest/package.html
+[ESGF]: https://esgf.llnl.gov/
+[ESGF-CWT]: https://github.com/ESGF/esgf-compute-api
+[OAPIP]: https://github.com/opengeospatial/ogcapi-processes
+[WPS]: https://www.ogc.org/standard/wps/
 
 See also: [an ongoing analysis of CWL Implementations](https://docs.bioexcel.eu/cwl-engine-guide/about.html#summary-of-engines) by the BioExcel Center of Excellence.
