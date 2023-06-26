@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:06,962
+Monet tieteenalat vaativat suurten tietomäärien analysointia (esim. bioinformatiikka, lääketieteellinen kuvantaminen, ja astronomia).
+
+2
+00:00:06,962 --> 00:00:10,769
+Analysointi koostuu toistuvista ja raskaista, peräkkäin ajettavista laskentaprosesseista
+
+3
+00:00:10,769 --> 00:00:15,240
+käsittäen erilaisten työkalujen hyödyntämistä - tätä prosessia kutsutaan työvuoksi.
+
+4
+00:00:15,240 --> 00:00:18,930
+Näiden laskentaprosessien käsinajaminen työkalusta toiseen on usein hyvin työlästä,
+
+5
+00:00:18,930 --> 00:00:21,548
+sillä yhden työkalun tulosteen on sovittava toisen työkalun syötteeksi, ja tämä tavallisesti vaatii tietorakenteen muokkaamista.
+
+6
+00:00:21,548 --> 00:00:26,130
+Työvuonhallintaohjelmat on suunniteltu helpottamaan tätä taakkaa
+
+7
+00:00:26,130 --> 00:00:30,090
+tarjoamalla rakenteellisen menetelmän kuvata työvuon kulun ja alustan, jonka avulla työvuo voidaan ajaa ja sen toimintaa seurata.
+
+8
+00:00:30,090 --> 00:00:34,290
+Nämä rakenteelliset menetelmät kuvata työvoita mahdollistavat tutkijoita jakamaan
+
+9
+00:00:34,290 --> 00:00:38,399
+ja uudelleenkäyttämään tutkimustietojaan paremmin. 
+
+10
+00:00:38,399 --> 00:00:43,110
+Tämä on erityisen tärkeää vahvistettaessa tutkimustiedon luotettavuutta tieteellisiä julkaisuja varten.
+
+11
+00:00:43,110 --> 00:00:46,579
+Markkinoilla on tarjolla useita kilpailevia tapoja kuvata työvoita, joka voi olla myös haitaksi tiedon jakamiselle.
+
+12
+00:00:46,579 --> 00:00:49,960
+Erilaisia työvuonhallintaohjelmia on saatavilla yli sata erilaista laatua,
+
+13
+00:00:49,960 --> 00:00:53,574
+ja niiden välinen yhteensopivuus on puutteellista.
+
+14
+00:00:53,574 --> 00:00:58,469
+Tämä on luonut tarpeen "Yhtenäiselle Työvuokielelle", jonka johdosta CWL projekti käynnistettiin. 
+
+15
+00:00:58,469 --> 00:01:05,519
+CWL:n tehtävänä on luoda yhtenäinen tapa kuvata työvoita YAML tiedostorakenteella.
+
