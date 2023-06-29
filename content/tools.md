@@ -54,6 +54,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[WfExS](https://github.com/inab/WfExS-backend)|Workflow Execution Service supporting GA4GH Tools Registry Service ([TRS](https://github.com/ga4gh/tool-registry-service-schemas)) API, [RO-Crate](https://w3id.org/ro/crate), Nextflow and CWL|
 |[workflow-service](https://github.com/common-workflow-language/workflow-service)|An implementation of the [GA4GH Workflow Execution Service (WES)](https://github.com/ga4gh/workflow-execution-service-schemas) API to run CWL workflows on remote clusters|
 |[workflUX](https://github.com/workflux/workflUX)|Web interface for simplified execution of CWL workflows|
+|[Sapporo](https://github.com/sapporo-wes/sapporo)|An implementation of Workflow Execution Service (WES) or so-called Workflow-as-a-Service|
 
 ### Utilities {#utils}
 
