@@ -40,6 +40,7 @@ particular technology configuration they deploy and maintain.
 
 {:.cwl-red}
 ### In Production for CommandLineTool
+
 {: .table .cols-3}
 |Software|Description| Self-Reported Compliance | Platform support|
 |--- |--- |--- |--- |
