@@ -39,7 +39,7 @@ particular technology configuration they deploy and maintain.
 |[StreamFlow](https://streamflow.di.unito.it/)|Workflow Management System for hybrid HPC-Cloud infrastructures|[CWL v1.0 - v1.2 ![Required](https://badgen.net/https/streamflow.di.unito.it/cwl-conformance/v1.2/required.json?icon=commonwl)](https://github.com/alpha-unito/streamflow#cwl-compatibility)<br />(and [nearly all optional features](https://github.com/alpha-unito/streamflow#cwl-compatibility))|Kubernetes, HPC with Singularity (PBS, Slurm), [Occam](https://c3s.unito.it/index.php/super-computer), multi-node SSH, local-only (Docker, Singularity)|
 
 {:.cwl-red}
-### In Production for CommandLineTool
+### In Production for CommandLineTools only
 
 {: .table .cols-3}
 |Software|Description| Self-Reported Compliance | Platform support|
