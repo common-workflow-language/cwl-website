@@ -9,7 +9,7 @@ class: page-short
 If you’re interested in joining the CWL community, we recommend checking out the following resources and forums:
 
 * The place to ask a question about all things CWL is [the CWL Discourse Group](https://cwl.discourse.group/). Previously we used [biostars.org](https://www.biostars.org/t/cwl/) where you can still read older responses.
-* If you are interested in learning more or contributing ideas or code, [come chat with us on Matrix](https://matrix.to/#/#common-workflow-language_common-workflow-language:gitter.im), check out [#CommonWL on Twitter](https://twitter.com/search?q=%23CommonWL), and join the [CWL announcement email list](https://groups.google.com/forum/#!forum/common-workflow-language)!
+* If you are interested in learning more or contributing ideas or code, [come chat with us on Matrix](https://matrix.to/#/#common-workflow-language_common-workflow-language:gitter.im), and join the [CWL announcement email list](https://groups.google.com/forum/#!forum/common-workflow-language)!
 * Besides the web interface for the mailing list, one can also join by sending a blank email to [common-workflow-language+subscribe@googlegroups.com](mailto:common-workflow-language+subscribe@googlegroups.com) and replying to the automated response.
 * If you would like to receive Google Calendar invites for the CWL weekly video chat, sign up at [https://groups.google.com/g/common-workflow-language-videochat-invites](https://groups.google.com/g/common-workflow-language-videochat-invites).
 
