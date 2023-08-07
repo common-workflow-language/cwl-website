@@ -113,7 +113,7 @@ gallery:
         other: >
           <p>The OGC document <a href="https://docs.ogc.org/bp/20-089r1.html">"OGC Best Practice for Earth Observation Application Package"</a>
           explains how CWL can be used for data processing within GIS, what is CWL, usage scenarios, and also lists free and open source implementations of the CWL standard.</p>
-          
+
           <p>Webinar: <a href='https://register.gotowebinar.com/recording/4458989551587584774' style='overflow-wrap: anywhere;word-break:break-all;'>https://register.gotowebinar.com/recording/4458989551587584774</a><br><br>
           ~5 minutes each promotional videos:</p>
           <ol>
@@ -165,3 +165,9 @@ gallery:
         url: https://eupex.eu/
         description: The EUPEX pilot (<a href="https://cordis.europa.eu/project/id/101033975">G.A. 101033975</a>) brings together academic and commercial stakeholders to co-design a European modular Exascale-ready pilot system. Together, they will deploy a pilot hardware and software platform integrating the full spectrum of European technologies, and will demonstrate the readiness and scalability of these technologies, and particularly of the Modular Supercomputing Architecture (MSA), towards Exascale. EUPEX’s ambition is to support actively the European industrial ecosystem around HPC, as well as to prepare applications and users to efficiently exploit future European exascale supercomputers.
         image: /assets/img/EUPEX_Logo.svg
+      - name: The NBDC-DDBJ Imputation Server
+        url: https://sc.ddbj.nig.ac.jp/en/advanced_guides/imputation_server/
+        description: |
+          The NBDC-DDBJ Imputation Server enables accurate genotype imputation by leveraging controlled access datasets of the Japanese population. The server is made up of three modules: a workflow execution system, computational workflows specifying the inputs, steps, and outputs of genotype imputation, and a secure web user interface that allows users to specify parameters. Additionally, the server offers reference panels that are ready to use, saving users from having to perform laborious computations on whole-genome sequencing data. With its fully containerized implementation in CWL, the entire system is portable.
+        other: |
+          <a href="https://github.com/ddbj/imputation-server-wf">https://github.com/ddbj/imputation-server-wf</a>
