@@ -147,6 +147,10 @@ gallery:
         image: /assets/img/escienceLab-logo.png
         image_id: manchester-escience-lab
         description: The eScience Lab team is focused on research and development around a set of tools designed for data driven and computational research. The eScience Lab has participated in the CWL project since its early days, contributing with our workflow and reproducibility expertise from Apache Taverna, Research Objects and myExperiment. The CWL Viewer, developed by the eScience Lab with support from BioExcel, provides a graphical visualization of CWL workflows.
+      - name: WorkflowHub
+        url: https://www.workflowhub.org
+        description: <p>WorkflowHub is a registry for describing, sharing and publishing scientific computational workflows.</p><p>The registry supports any workflow in its native repository.</p><p>WorkflowHub aims to facilitate discovery and re-use of workflows in an accessible and interoperable way. This is achieved through extensive use of open standards and tools, including Common Workflow Language (CWL), RO-Crate, BioSchemas and TRS, in accordance with the FAIR principles.</p>
+        image: /assets/img/workflowhub.svg
       - name: The ACROSS European Project
         link_text: HPC Big Data Artificial Intelligence Cross Stack Platform Towards Exascale
         url: https://www.acrossproject.eu/
