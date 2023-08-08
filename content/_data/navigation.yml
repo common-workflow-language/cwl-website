@@ -47,24 +47,36 @@ user_gallery_left:
         url: "#us-food-and-drug-administration-(fda)"
       - title: US National institute of Health
         url: "#us-national-institutes-of-health-(nih)"
+      - title: RAPT
+        url: "#rapt"
+      - title: NCI Cancer Genomics Cloud
+        url: "#nci-cancer-genomics-cloud"
+      - title: NIH BioData Catalyst
+        url: "#nih-biodata-catalyst"
+      - title: NCI Genomic Data Commons
+        url: "#nci-genomic-data-commons"
+      - title: Gabriella Miller Kids First Data Resource Center
+        url: "#gabriella-miller-kids-first-data-resource-center"
       - title: Children's Hospital of Philadelphia
-        url: "#"
+        url: "#children's-hospital-of-philadelphia"
       - title: European Open Science Cloud - Life (EOSC-Life)
         url: "#european-open-science-cloud---life-(eosc-life)"
       - title: BioExcel, Centre of Excellence for Computational Biomolecular Research
         url: "#bioexcel,-centre-of-excellence-for-computational-biomolecular-research"
       - title: ELIXIR
         url: "#elixir"
-      - title: Wellcome Trust Sanger Institute
-        url: "#wellcome-trust-sanger-institute"
       - title: Memorial Sloan Kettering Cancer Center
         url: "#memorial-sloan-kettering-cancer-center"
+      - title: MGnify
+        url: "#mgnify"
       - title: UNLOCK
         url: "#unlock"
       - title: PubSeq
         url: "#pubseq"
       - title: DataPLANT
         url: "#dataplant"
+      - title: The NBDC-DDBJ Imputation Server
+        url: "#the-nbdc-ddbj-imputation-server"
   - title: Geospatial
     url: "#geospatial"
     submenu:
@@ -87,6 +99,8 @@ user_gallery_left:
         url: "#the-[netherlands]-national-plan-open-science"
       - title: University of Manchester, eScience Lab
         url: "#university-of-manchester,-escience-lab"
+      - title: WorkflowHub
+        url: "#workflowhub"
       - title: The ACROSS European Project
         url: "#the-across-european-project"
       - title: The EUPEX European Project
