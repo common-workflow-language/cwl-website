@@ -1,0 +1,70 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.629
+Voor veel wetenschapsgebieden (zoals bio-
+informatica, medische beeldvorming, en
+
+00:00:03.629 --> 00:00:06.299
+astronomie) moeten grote hoeveelheden
+data worden geanalyseerd. Dat kan
+
+00:00:06.299 --> 00:00:10.769
+grootschalige en herhalende processen betreffen
+in lange series van verschillende programma’s
+
+00:00:10.769 --> 00:00:15.240
+— dit worden "workflows" genoemd. Het kan
+veel tijd kosten om data handmatig met al
+
+00:00:15.240 --> 00:00:18.930
+deze programma’s te verwerken en de output om
+te zetten naar verschillende formaten om ze
+
+00:00:18.930 --> 00:00:21.949
+gedschikt te maken voor de volgende
+bewerkingsstap. Workflow management
+
+00:00:21.949 --> 00:00:26.130
+systemen zijn gemaakt om dit probleem te
+verminderen door het mogelijk te maken deze
+
+00:00:26.130 --> 00:00:30.090
+workflows formeel te beschrijven en
+infrastructuur te bieden om ze op te stellen,
+
+00:00:30.090 --> 00:00:34.290
+uit te voeren en in de gaten te houden. De
+formele beschrijving van workflows maakt het
+
+00:00:34.290 --> 00:00:38.399
+voor wetenschappers mogelijk om ze eenvoudig
+te delen en hergebruiken. Van groot belang is
+
+00:00:38.399 --> 00:00:43.110
+dat ze ook kunnen worden gebruikt om de
+uitkomst van berekeningen uit publicaties te
+verifiëren. Er zijn echter veel verschillende
+
+00:00:43.110 --> 00:00:46.579
+met elkaar concurrerende manieren om workflows
+te beschrijven, wat een hindernis oplevert om
+dit doel te bereiken.
+
+00:00:46.579 --> 00:00:50.399
+Op het moment zijn er meer dan honderd
+verschillende data analyse workflow systemen
+
+00:00:50.399 --> 00:00:55.020
+die niet samen kunnen werken. Er is een
+noodzaak om één gemeenschappelijke standaard
+
+00:00:55.020 --> 00:00:58.469
+te hebben, en daarom is het "Common Workflow
+Language" project ontstaan: een open
+
+00:00:58.469 --> 00:01:02.430
+standaard gemaakt om workflows en programma’s
+te beschrijven in groepen van tekst files
+
+00:01:02.430 --> 00:01:05.539
+in YAML formaat.
