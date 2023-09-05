@@ -26,7 +26,8 @@ allows for easier scaling, tracking, sharing and reuse.
 
 A standard for sharing and reusing workflows can provide a solution to describing
 portable,re-usable workflows while also being workflow-engine and vendor-neutral.
-Although workflows are [very popular](https://s.apache.org/existing-workflow-systems),
+Although workflows are very popular
+(see our list of [existing workflow systems](https://s.apache.org/existing-workflow-systems)),
 prior to the CWL standards every workflow system was incompatible with every other.
 This means, those users not using the CWL standards are required to express their
 computational workflows in a different way every time they have to use another
