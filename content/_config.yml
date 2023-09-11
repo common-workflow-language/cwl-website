@@ -16,6 +16,7 @@ discourse_url: https://cwl.discourse.group/
 github_url: https://github.com/common-workflow-language/
 matrix_url: https://matrix.to/#/#common-workflow-language_common-workflow-language:gitter.im
 youtube_url: https://www.youtube.com/c/CommonWLorgStandard/
+mastodon_url: https://floss.social/@cwl
 
 # SEO - jekyll-seo-tag
 logo: "/CWL-Logo-Header.png"
@@ -23,6 +24,7 @@ social:
   name: Common Workflow Language (CWL)
   links:
     - https://www.youtube.com/c/CommonWLorgStandard
+    - https://floss.social/@cwl
 locale: en_US
 # google_site_verification:
 
