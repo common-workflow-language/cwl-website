@@ -108,6 +108,19 @@ gallery:
           The NBDC-DDBJ Imputation Server enables accurate genotype imputation by leveraging controlled access datasets of the Japanese population. The server is made up of three modules: a workflow execution system, computational workflows specifying the inputs, steps, and outputs of genotype imputation, and a secure web user interface that allows users to specify parameters. Additionally, the server offers reference panels that are ready to use, saving users from having to perform laborious computations on whole-genome sequencing data. With its fully containerized implementation in CWL, the entire system is portable.
         other: |
           <a href="https://github.com/ddbj/imputation-server-wf">https://github.com/ddbj/imputation-server-wf</a>
+      - name: "MGX 2.0"
+        url: https://mgx-metagenomics.github.io/
+        image: /assets/img/mgx_logo.png
+        image_id: mgx2.0
+        description: |
+          MGX uses an in-house developed workflow engine for read-level analysis
+          of metagenomic sequence datasets. That workflow engine (Conveyor) keeps
+          data in system memory and only writes it to files when e.g. external
+          programs are invoked to process the data. Since this is rather
+          impractical for metagenomic assembly, we added support for CWL and
+          implemented corresponding analysis workflows.
+        other: |
+          <a href="https://github.com/MGX-metagenomics/cwl">CWL tool wrappers and the implemented workflows are publicly available</a>
   - section:
     title: Geospatial
     adopters:

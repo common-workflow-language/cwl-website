@@ -77,6 +77,8 @@ user_gallery_left:
         url: "#dataplant"
       - title: The NBDC-DDBJ Imputation Server
         url: "#the-nbdc-ddbj-imputation-server"
+      - title: MGX 2.0
+        url: "#mgx-2.0"
   - title: Geospatial
     url: "#geospatial"
     submenu:
