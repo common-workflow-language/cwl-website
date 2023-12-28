@@ -104,6 +104,7 @@ gallery:
         image_id: dataplant
       - name: The NBDC-DDBJ Imputation Server
         url: https://sc.ddbj.nig.ac.jp/en/advanced_guides/imputation_server/
+        image: /assets/img/nbdc-ddbj-imputation-server.png
         description: |
           The NBDC-DDBJ Imputation Server enables accurate genotype imputation by leveraging controlled access datasets of the Japanese population. The server is made up of three modules: a workflow execution system, computational workflows specifying the inputs, steps, and outputs of genotype imputation, and a secure web user interface that allows users to specify parameters. Additionally, the server offers reference panels that are ready to use, saving users from having to perform laborious computations on whole-genome sequencing data. With its fully containerized implementation in CWL, the entire system is portable.
         other: |
