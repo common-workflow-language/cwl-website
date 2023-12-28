@@ -1,0 +1,19 @@
+# Site cache
+cache*/
+
+# Site build
+common-workflow-language.github.io/
+
+# Vendor directory
+content/vendor/
+
+# Sub modules
+draft-3/
+common-workflow-language/
+cwl-novice-tutorial/
+cwl-v1.1/
+cwl-v1.2/
+v1.0/
+v1.1/
+v1.2/
+
