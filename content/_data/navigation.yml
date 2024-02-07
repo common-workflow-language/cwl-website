@@ -31,6 +31,8 @@ header:
         url: /repos
       - title: Projects
         url: /projects
+      - title: Working Groups
+        url: /working-groups
   - title: Specification
     url: /specification
   - title: User Gallery
