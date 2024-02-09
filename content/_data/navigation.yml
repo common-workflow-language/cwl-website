@@ -79,6 +79,8 @@ user_gallery_left:
         url: "#the-nbdc-ddbj-imputation-server"
       - title: MGX 2.0
         url: "#mgx-2.0"
+      - title: SUS-MIRRI.IT
+        url: "#sus-mirri.it"
   - title: Geospatial
     url: "#geospatial"
     submenu:

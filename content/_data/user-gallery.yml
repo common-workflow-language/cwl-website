@@ -122,6 +122,20 @@ gallery:
           implemented corresponding analysis workflows.
         other: |
           <a href="https://github.com/MGX-metagenomics/cwl">CWL tool wrappers and the implemented workflows are publicly available</a>
+      - name: "SUS-MIRRI.IT"
+        link_text: "Strengthening the MIRRI Italian Research Infrastructure for Sustainable Bioscience and Bioeconomy"
+        url: https://www.sus-mirri.it/
+        image: /assets/img/sus-mirri-it-logo.png
+        description: |
+          SUS-MIRRI.IT is a research project targeting Italian microbial Culture Collections (CCs), financed by European
+          funds of the National Recovery and Resilience Plan (PNRR) for about 17 Million Euros. The project is coordinated
+          by the University of Turin and involves 24 Operative Units, belonging to 15 different Research Institutions,
+          spread across the whole Italian territory. SUS-MIRRI.IT objectives include: the harmonization of the procedures
+          for the certification of Italian CCs to meet international quality standards; the establishment of an efficient
+          system for their management; the creation of a unique on-line platform to access Italian microbial resources
+          along with their associated metadata, cutting-edge technologies, services, and expertise offered by the collections
+          to National and International stakeholders. The microbial analysis workflows developed in the project
+          will be made available as a service, leveraging CWL as a canonical description of the workflow.  
   - section:
     title: Geospatial
     adopters:
