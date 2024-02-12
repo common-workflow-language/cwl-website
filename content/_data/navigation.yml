@@ -96,6 +96,11 @@ user_gallery_left:
     submenu:
       - title: The European Open Science Cloud for Research Pilot Project
         url: "#the-european-open-science-cloud-for-research-pilot-project"
+  - title: Gamma-ray Astronomy
+    url: "#gamma-ray-astronomy"
+    submenu:
+      - title: The Cherenkov Telescope Array Observatory
+        url: "#the-cherenkov-telescope-array-observatory"
   - title: Cross-Domain
     url: "#cross-domain"
     submenu:
