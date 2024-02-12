@@ -11,7 +11,7 @@ assignees: ''
 [Required] What is the name of the user or project that you'd like to nominate for inclusion in the [CWL User Gallery](https://www.commonwl.org/gallery/)?
 
 **Section to list under**
-[Required] The CWL User Gallery is organized by domain of analysis. Currently we have `Life Sciences`, `Geospatial`, `Hydrology`, `Radio Astronomy` as well as `Cross-Domain` users/projects. Please choose one of these, or propose a new section.
+[Required] The CWL User Gallery is organized by domain of analysis. Currently we have `Life Sciences`, `Geospatial`, `Hydrology`, `Radio Astronomy`, `Gamma-ray Astronomy`, as well as `Cross-Domain` users/projects. Please choose one of these, or propose a new section.
 
 **Link (URL) to website**
 [Required] Please share a link/URL where readers can get more information about the user/project. Ideally CWL is mentioned at the website.

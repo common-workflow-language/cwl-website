@@ -135,7 +135,7 @@ gallery:
           system for their management; the creation of a unique on-line platform to access Italian microbial resources
           along with their associated metadata, cutting-edge technologies, services, and expertise offered by the collections
           to National and International stakeholders. The microbial analysis workflows developed in the project
-          will be made available as a service, leveraging CWL as a canonical description of the workflow.  
+          will be made available as a service, leveraging CWL as a canonical description of the workflow.
   - section:
     title: Geospatial
     adopters:
@@ -171,6 +171,14 @@ gallery:
         m_link: "Science Demonstrator: [LOFAR data](https://www.eoscpilot.eu/science-demos/lofar-data)"
         image: /assets/img/eosc-pilot.png
         description: The European Open Science Cloud will offer 1.7 million European researchers and 70 million professionals in science and technology a virtual environment with open and seamless services for storage, management, analysis and re-use of research data, across borders and scientific disciplines by federating existing scientific data infrastructures, today scattered across disciplines and Member States. The EOSCpilot project has been funded to support the first phase in the development of the European Open Science Cloud (EOSC). Within this pilot, science demonstrators show the relevance and usefulness of EOSC Services and how they enable data reuse, and will drive EOSC development.
+  - section:
+    title: Gamma-ray Astronomy
+    adopters:
+      - name: The Cherenkov Telescope Array Observatory
+        url: https://www.cta-observatory.org/
+        image: /assets/img/ctao.png
+        description: |
+          The Cherenkov Telescope Array Observatory (CTAO) is the next generation observatory for gamma-ray astronomy. It will consist of two arrays of Cherenkov telescopes, spread between two sites: one in the Northern hemisphere in La Palma (Spain), and one in the Southern hemisphere in Paranal (Chile). Currently under construction, CTAO will start scientific operations in the next years for about 30 years. To process observation data and run Monte Carlo simulations to derive the instrument response functions of the telescopes, CTAO has developed a production system prototype. It is based on the <a href="https://dirac.readthedocs.io/en/latest/index.html">DIRAC</a> framework and manages the workload on a distributed infrastructure. The interface to this production system allows for the configuration and submission of simulation and data processing workflows described in CWL.
   - section:
     title: Cross-Domain
     adopters:
