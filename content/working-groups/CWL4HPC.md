@@ -15,8 +15,8 @@ The CWL4HPC Working group aims to identify workflow patterns capable of modellin
 The main activities of the group are listed in the table below. For each CWL enhancement proposal, the group aims to:
  - Motivate it with two real use cases that would benefit from the proposed feature;
  - Agree on a first draft of the syntax and semantics of the proposed feature;
- - Implement it as an extension on `cwltool` (the CWL reference implementation) and at least another CWL-compliant workflow system;
- - Validate it on at least two real CWL workflows.
+ - Implement it as an extension on `cwltool` (the CWL reference implementation) and at least another CWL-compliant workflow system, together with a suite of conformance tests;
+ - Validate it on at least two existing CWL workflows where the proposal is applied, or with new example workflows created on purpose.
 
 The process just described is iterative. If some criticalities of further enhancements emerge during the implementation or validation phases, the syntax and semantics can be refined and the process restarts. After reaching a sufficient level of maturity, the group agrees to present the proposal to the CWL community for inclusion in the following standard version.
 
