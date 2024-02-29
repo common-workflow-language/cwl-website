@@ -18,7 +18,7 @@ The day-to-day governance of CWL is largely self-managed by the [CWL community](
 
 In general, [discussions about CWL should happen on open forums](https://www.commonwl.org/community/) but you can also contact the CWL leadership team & Conservancy directly via <commonworkflowlanguage@sfconservancy.org>. This address should be CC'ed regarding all activities that involve activities of Common Workflow Language that are related to things other than software development and documentation, and particularly any activities that expect to make use of Software Freedom Conservancy's non-profit status.
 
-To contact just the CWL leadership team, please email <cwl-leadership@googlegroups.com> which are treated confidentially.
+To contact just the CWL leadership team, please email <leadership@commonwl.org> which are treated confidentially.
 
 The CWL leadership team consists of the following people, listed in alphabetical order by their last name:
 
