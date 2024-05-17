@@ -1,0 +1,11 @@
+- context_target: v1.3/cwl-context.json
+  rdfs_target: v1.3/cwl.ttl
+  graph_target: v1.3/cwl.svg
+  schema_in:
+    class: File
+    path: ../v1.3/CommonWorkflowLanguage.yml
+    secondaryFiles: {$import: v1.3-deps.yaml}
+- context_target: v1.3/salad-context.json
+  rdfs_target: v1.3/salad.ttl
+  graph_target: v1.3/salad.svg
+  schema_in: {$import: v1.3-metaschema.yaml}
