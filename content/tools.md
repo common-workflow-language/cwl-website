@@ -122,7 +122,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |--- |--- |
 |[CWLProv](https://github.com/common-workflow-language/cwlprov)|Profile of [Research Object](https://www.researchobject.org/) and [W3C PROV](https://www.w3.org/TR/prov-overview/) for provenance of a CWL workflow run|
 |[RO-Crate](https://w3id.org/ro/crate)|Research Object Crate, packaging research data with schema.org metadata. Profiles for [workflows](https://w3id.org/workflowhub/workflow-ro-crate/) and [workflow runs](https://www.researchobject.org/workflow-run-crate/)|
-|[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](https://www.commonwl.org/user_guide/17-metadata/). Primarily used in bioscientific domains.|
+|[EDAM](https://edamontology.org/)|Ontology for categorizing operations and formats, useful in [CWL metadata](https://www.commonwl.org/user_guide/topics/metadata-and-authorship.html#metadata-and-authorship). Primarily used in bioscientific domains.|
 |[schema.org](https://schema.org/)|Vocabulary typically used in Web markup and in [CWL metadata](https://www.commonwl.org/user_guide/17-metadata/)|
 |[bioschemas](https://bioschemas.org/)|[Profiles](https://bioschemas.org/profiles/) for annotating life science on the Web, including [ComputationalWorkflow](https://bioschemas.org/profiles/ComputationalWorkflow/1.0-RELEASE) and [ComputationalTool](https://bioschemas.org/profiles/ComputationalTool/1.0-RELEASE)|
 |[GA4GH TRS](https://github.com/ga4gh/tool-registry-service-schemas)|Tool Registry Service API specification for discovering tools/workflows. Used by [workflow registries](/repos/) incl. WorkflowHub and Dockstore |
