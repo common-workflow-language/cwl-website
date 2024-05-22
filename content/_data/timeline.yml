@@ -38,3 +38,6 @@ timeline_events:
     event: |
       <a href="https://cwl.discourse.group/c/cwlcon-2023/13">2023 CWL Conference</a> (Online)<br>
       <a href="https://aws.amazon.com/about-aws/whats-new/2023/06/amazon-omics-common-workflow-language/">Support for CWL in AWS HealthOmics</a>
+  - year: 2024
+    event: |
+      <a href="https://cwl.discourse.group/c/cwlcon-2024/14">2024 CWL Conference<a> (VU Amsterdam, Netherlands and Online)<br>
