@@ -77,8 +77,8 @@ user_gallery_left:
         url: "#pubseq"
       - title: DataPLANT
         url: "#dataplant"
-      - title: The NBDC-DDBJ Imputation Server
-        url: "#the-nbdc-ddbj-imputation-server"
+      - title: The TogoImputation
+        url: "#the-togoimputation"
       - title: MGX 2.0
         url: "#mgx-2.0"
       - title: SUS-MIRRI.IT
