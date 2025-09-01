@@ -11,21 +11,18 @@
 
   &.has-left-nav {
     .left-nav {
-      a {
-        margin: 5px 5px 0 15px;
-      }
-
       .left-nav-links {
         list-style: none;
         padding: 2px 0;
 
         .no-indent {
-          margin-left: 0;
+          margin: 5px 5px 0 15px;
         }
       }
 
       .indent {
-        margin: 5px 5px 5px 30px;
+        margin: 5px 5px 5px 15px;
+        text-indent: 0;
      }
     }
   }
