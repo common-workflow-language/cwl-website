@@ -197,7 +197,7 @@ gallery:
     adopters:
       - name: The [Netherlands] National Plan Open Science
         link_text: National Plan Open Science - Feb. 2019
-        url: https://www.openscience.nl/files/openscience/2019-02/nationalplanopenscience_en.pdf#page=16
+        url: https://www.openscience.nl/sites/open_science/files/media-files/national_plan_open_science_the_netherlands.pdf#page=17
         description: The National Programme Open Science (NPOS) was established to join and coordinate efforts towards open science and promote its importance. The National Plan Open Science serves to implement a transition towards an open science system in the Netherlands. The National Plan Open Science contains an inventory of existing initiatives. The eScience center is recongnized for the research activity support it provides.  The eScience Center ensures that the entire scientific community has public access, on an open-source fully documented basis, to research data related to all research projects involving Dutch universities, through the eScience Technology Platform and open platforms such as GitHub and Zenodo. The eScience Center also makes an active contribution to the continued development and Dutch use of the most promising software and tools in the field of open science. Examples include the Common Workflow Language, for the description of analyses and the use of software, and Docker, which can be used to create a durable record of software for reuse. Both assist with the reproducible performance of analyses irrespective of the computer or environment.
         image: /assets/img/logo_openscience.svg
       - name: University of Manchester, eScience Lab
