@@ -104,11 +104,14 @@ user_gallery_left:
       - title: The Cherenkov Telescope Array Observatory
         url: "#the-cherenkov-telescope-array-observatory"
   - title: High-Performance Computing
+    url: "#high-performance-computing"
     submenu:
       - title: The ACROSS European Project
         url: "#the-across-european-project"
       - title: The EUPEX European Project
         url: "#the-eupex-european-project"
+      - title: The DARE European Project
+        url: "#the-dare-european-project"
   - title: Cross-Domain
     url: "#cross-domain"
     submenu:
