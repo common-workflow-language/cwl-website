@@ -192,6 +192,11 @@ gallery:
         url: https://eupex.eu/
         description: The EUPEX pilot (<a href="https://cordis.europa.eu/project/id/101033975">G.A. 101033975</a>) brings together academic and commercial stakeholders to co-design a European modular Exascale-ready pilot system. Together, they will deploy a pilot hardware and software platform integrating the full spectrum of European technologies, and will demonstrate the readiness and scalability of these technologies, and particularly of the Modular Supercomputing Architecture (MSA), towards Exascale. EUPEX’s ambition is to support actively the European industrial ecosystem around HPC, as well as to prepare applications and users to efficiently exploit future European exascale supercomputers.
         image: /assets/img/EUPEX_Logo.svg
+      - name: The DARE European Project
+        link_text: Digital Autonomy with RISC-V in Europe
+        url: https://dare-riscv.eu/
+        description: The DARE SGA 1 project (<a href="https://cordis.europa.eu/project/id/101202459">G.A. 101202459</a>)  is a groundbreaking initiative driving Europe’s independence in high-performance computing (HPC) and artificial intelligence (AI). By leveraging open-source technologies, DARE is developing cutting-edge chiplet processors — the essential building blocks for next-generation supercomputers. This effort is a critical first phase in a long-term plan to ensure secure, efficient, and scalable computing solutions tailored to European needs. In detail, the DARE SGA1 initiative aims to develop a comprehensive European supercomputing hardware/software stack for HPC and AI, featuring high-performance and energy-efficient processors designed and developed in Europe. Through a co-design approach, cutting-edge chiplet technology, and open-source innovation, DARE brings together performance, energy efficiency, and modularity to build flexible, sovereign systems that meet Europe’s most demanding computing needs. In particular, the DARE Project will enable CWL workflows to target the rapidly evolving RISC-V ISA ecosystem effectively and will make the StreamFlow WMS fully functional and ready for use on RISC-V systems.
+        image: /assets/img/DARE_Logo.svg
   - section:
     title: Cross-Domain
     adopters:
