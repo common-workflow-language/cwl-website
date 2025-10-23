@@ -88,6 +88,8 @@ user_gallery_left:
     submenu:
       - title: Open Geospatial Consortium
         url: "#open-geospatial-consortium"
+      - title: Serverless Scientific Computing for Earth Observation and Sustainability Research
+        url: "#serverless-scientific-computing-for-earth-observation-and-sustainability-research"
   - title: Hydrology
     url: "#hydrology"
     submenu:
