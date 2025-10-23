@@ -157,7 +157,7 @@ gallery:
           <li><a href="https://www.youtube.com/watch?v=L9HreYAXUNo">EO Applications Architecture for Application Developers - Urban app deployment and execution (DLR)</a></li>
           </ol>
       - name: Serverless Scientific Computing for Earth Observation and Sustainability Research
-        description: SOS is an interdisciplinary DFG research unit formed by members of the German Aerospace Center, Max-Planck-Gesellschaft, Leibnitz Supercomputing Center and the University of Würzburg. The main goal of this research group is to develop a framework consisting of a set of methods, models, and architectures that serve as the foundation for serverless scientific computing and engineering. They are applying the Common Workflow Language for modelling and composing workflows.
+        description: SOS is an interdisciplinary DFG research unit formed by members of the German Aerospace Center, Max-Planck-Gesellschaft, Leibniz Supercomputing Centre, and the University of Würzburg. The main goal of this research group is to develop a framework consisting of a set of methods, models, and architectures that serve as the foundation for serverless scientific computing and engineering. They are applying the Common Workflow Language for modelling and composing workflows.
         link_text: SOS Website 
         url: https://dfg-sos.de/
         image: /assets/img/sos-logo-light.png
