@@ -94,6 +94,7 @@ can be used to provide a programmatic API or user interface to orchestrate execu
 |[galaxy2cwl](https://github.com/workflowhub-eu/galaxy2cwl)|Convert a Galaxy `.ga` workflow to [Abstract CWL](https://github.com/common-workflow-language/cwl-v1.2/pull/3)|
 |[gxformat2](https://github.com/galaxyproject/gxformat2)|Converter for Galaxy's workflow formats, can generate [Abstract CWL](https://github.com/common-workflow-language/cwl-v1.2/pull/3)|
 |[wdl-cwl-translator](https://github.com/common-workflow-lab/wdl-cwl-translator)|Translate WDL workflows to CWL|
+|[cwl2click](https://github.com/Terradue/cwl2click/)|Boostrap a Python CLI using [click](https://click.palletsprojects.com/en/stable/) from a CWL `CommandLineTool`(s).|
 
 
 ### Code Libraries {#libs}
