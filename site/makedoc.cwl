@@ -41,7 +41,7 @@ inputs:
   primtype:
     type: string?
     inputBinding: {prefix: "--primtype"}
-  extra: File
+  extra: File[]
 baseCommand: schema-salad-doc
 stdout: $(inputs.target)
 outputs:
@@ -58,6 +58,6 @@ outputs:
             return "";
         }
   extra_out:
-    type: File
+    type: File[]
     outputBinding:
       outputEval: $(inputs.extra)

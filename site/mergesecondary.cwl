@@ -6,7 +6,11 @@ inputs:
   secondary:
     type:
       type: array
-      items: [File, Directory]
+      items:
+        - File
+        - type: array
+          items: File
+        - Directory
   dirs: string[]
 expression: |
   ${
@@ -19,7 +23,7 @@ expression: |
         inputs.primary.secondaryFiles.push({
             class: "Directory",
             basename: inputs.dirs[i],
-            listing: [k]
+            listing: Array.isArray(k) ? k: [k]
         });
       } else {
         inputs.primary.secondaryFiles.push(k);
