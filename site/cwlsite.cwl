@@ -25,7 +25,7 @@ inputs:
           brandlink: string
           brandimg: string
           primtype: string?
-          extra: File
+          extra: File[]
   schemas:
     type:
       type: array
