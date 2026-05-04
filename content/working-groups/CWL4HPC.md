@@ -33,6 +33,7 @@ Domain experts, HPC administrators, workflow designers and maintainers, and work
 |Feature|Status|
 |--- |--- |
 | Iterative patterns| A `cwltool:Loop` requirement has been [proposed](https://github.com/common-workflow-language/common-workflow-language/issues/495) and implemented as a CWL extension in [cwltool](https://github.com/common-workflow-language/cwltool) and [StreamFlow](https://streamflow.di.unito.it). Currently, its inclusion in the CWL v1.3 standard as a [native feature](https://github.com/common-workflow-language/cwltool/pull/1779) is under discussion |
+| Master's thesis | [Bruno P. Kinoshita](https://orcid.org/0000-0001-8250-4074) thesis "CWL workflows with MPI in bare-metal, containers, cloud, and HPC" at the Universities of Santiago de Compostela (USC) and Da Coruña (UDC). |
 
 ### Publications
 
