@@ -29,5 +29,11 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
-
 gem "webrick", "~> 1.8"
+
+gem "base64"
+# for safe_yaml
+gem "bigdecimal"
+# for liquid
+gem "csv"
+# for jekyll
