@@ -10,7 +10,7 @@ for repo in https://github.com/common-workflow-language/common-workflow-language
 	    https://github.com/common-workflow-lab/cwl-novice-tutorial ; do
     bn=$(basename $repo)
     if [[ -d $bn ]] ; then
-	(cd $bn && git fetch origin && git reset --hard origin/$(git rev-parse --abbrev-ref HEAD))
+	(cd "$bn" && git fetch origin && git reset --hard "origin/$(git rev-parse --abbrev-ref HEAD)")
     else
 	git clone $repo
     fi
@@ -23,10 +23,17 @@ ln -s cwl-v1.1 v1.1
 ln -s cwl-v1.2 v1.2
 ln -s cwl-v1.3 v1.3
 
+for ver in v1.0 v1.1 v1.2 v1.3 ; do
+	cd "${ver}" && \
+	  git grep -l /metaschema_base | xargs sed -i 's=salad/schema_salad/metaschema/metaschema_base.yml=metaschema_base.yml=g' && \
+          cp salad/schema_salad/metaschema/metaschema_base.yml metaschema_base.yml
+	cd -
+done
+
 if [[ -z "$WORKSPACE" ]] ; then
     WORKSPACE=$PWD
 fi
 
 mkdir -p common-workflow-language.github.io
 cd common-workflow-language.github.io
-cwltool $@ --cache $WORKSPACE/cache --relax-path-checks $WORKSPACE/site/cwlsite.cwl $WORKSPACE/site/cwlsite-job.yaml
+cwltool "$@" --cache "$WORKSPACE/cache" --relax-path-checks "$WORKSPACE/site/cwlsite.cwl" "$WORKSPACE/site/cwlsite-job.yaml"
