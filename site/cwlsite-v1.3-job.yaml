@@ -6,7 +6,19 @@
   renderlist: []
   source: {class: File, path: ../v1.3/index.md}
   target: v1.3/index.html
-  extra: []
+  extra: [
+    {class: File, path: ../v1.3/CommonWorkflowLanguage.yml},
+    {class: File, path: ../v1.3/Base.yml},
+    {class: File, path: ../v1.3/Process.yml},
+    {class: File, path: ../v1.3/Operation.yml},
+    {class: File, path: ../v1.3/CommandLineTool.yml},
+    {class: File, path: ../v1.3/Workflow.yml},
+    {class: File, path: ../v1.3/metaschema_base.yml},
+    {class: File, path: ../v1.3/concepts.md},
+    {class: File, path: ../v1.3/invocation.md},
+    {class: File, path: ../v1.3/intro.md},
+    {class: File, path: ../v1.3/contrib.md},
+  ]
 - brandimg: '<img src=''../CWL-Logo-Header.png'' style=''height: 61px; margin-top:
     -20px; margin-left: -20px''></img>'
   brandlink: index.html
